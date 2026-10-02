@@ -1,0 +1,23 @@
+{
+  "id": "gaia-benchmark",
+  "name": "GAIA",
+  "category": "information",
+  "summary": "Benchmark for general AI assistants (\"Benchmarking General AI Agents\"), published as a Hugging Face dataset under the gaia-benchmark org.",
+  "url": "https://huggingface.co/gaia-benchmark",
+  "docs": "https://huggingface.co/datasets/gaia-benchmark/GAIA",
+  "tags": [
+    "benchmark",
+    "agents",
+    "dataset",
+    "evals"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://huggingface.co/gaia-benchmark",
+    "https://huggingface.co/datasets/gaia-benchmark/GAIA"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

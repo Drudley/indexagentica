@@ -1,0 +1,29 @@
+{
+  "id": "arazzo",
+  "name": "Arazzo Specification",
+  "category": "protocols",
+  "summary": "OpenAPI Initiative spec for describing deterministic sequences of API calls and their dependencies as workflows.",
+  "description": "Latest published version at spec.openapis.org is 1.1.0.",
+  "url": "https://spec.openapis.org/arazzo/latest.html",
+  "repo": "https://github.com/OAI/Arazzo-Specification",
+  "tags": [
+    "api-description",
+    "workflows",
+    "openapi",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "openapi"
+  ],
+  "sources": [
+    "https://spec.openapis.org/arazzo/latest.html",
+    "https://github.com/OAI/Arazzo-Specification"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAPI Initiative"
+}

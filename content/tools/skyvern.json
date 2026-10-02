@@ -1,0 +1,24 @@
+{
+  "id": "skyvern",
+  "name": "Skyvern",
+  "category": "tools",
+  "summary": "Automates browser-based workflows with AI: describe tasks in plain English and Skyvern drives a real browser using vision.",
+  "url": "https://www.skyvern.com",
+  "repo": "https://github.com/Skyvern-AI/skyvern",
+  "docs": "https://www.skyvern.com/docs/",
+  "tags": [
+    "browser-automation",
+    "computer-vision",
+    "workflows"
+  ],
+  "license": "AGPL-3.0",
+  "status": "active",
+  "sources": [
+    "https://github.com/Skyvern-AI/skyvern",
+    "https://www.skyvern.com/docs/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Skyvern"
+}

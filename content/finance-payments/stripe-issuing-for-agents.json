@@ -1,0 +1,28 @@
+{
+  "id": "stripe-issuing-for-agents",
+  "name": "Stripe Issuing for Agents",
+  "category": "finance-payments",
+  "summary": "Issue cards and credentials that agents can use to purchase autonomously, with spend controls, real-time authorization decisioning and full visibility.",
+  "url": "https://docs.stripe.com/issuing/agents",
+  "tags": [
+    "cards",
+    "spend-controls",
+    "stripe",
+    "agent-commerce"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.stripe.com/llms.txt"
+  },
+  "related": [
+    "stripe-agentic-commerce",
+    "stripe-agents"
+  ],
+  "sources": [
+    "https://docs.stripe.com/issuing/agents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stripe"
+}

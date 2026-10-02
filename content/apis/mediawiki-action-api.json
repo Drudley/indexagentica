@@ -1,0 +1,30 @@
+{
+  "id": "mediawiki-action-api",
+  "name": "MediaWiki Action API (Wikipedia)",
+  "category": "apis",
+  "summary": "The MediaWiki Action API used by Wikipedia and other wikis to query and retrieve page content and metadata.",
+  "url": "https://www.mediawiki.org/wiki/API:Main_page",
+  "docs": "https://www.mediawiki.org/wiki/Wikimedia_APIs",
+  "tags": [
+    "knowledge-base",
+    "wikipedia",
+    "encyclopedia"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Example: https://en.wikipedia.org/w/api.php?action=query&titles=Agent&format=json (send a descriptive User-Agent)."
+  },
+  "related": [
+    "wikidata-query-service"
+  ],
+  "sources": [
+    "https://www.mediawiki.org/wiki/API:Main_page",
+    "https://en.wikipedia.org/w/api.php?action=query&titles=Agent&format=json"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Wikimedia Foundation"
+}

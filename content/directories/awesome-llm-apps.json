@@ -1,0 +1,23 @@
+{
+  "id": "awesome-llm-apps",
+  "name": "Awesome LLM Apps",
+  "category": "directories",
+  "summary": "Collection of 100+ free, open-source AI agents, agent skills and RAG apps with runnable code.",
+  "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+  "repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+  "tags": [
+    "agents",
+    "awesome-list",
+    "rag",
+    "examples"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://github.com/Shubhamsaboo/awesome-llm-apps"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "vercel-sandbox",
+  "name": "Vercel Sandbox",
+  "category": "tools",
+  "summary": "Ephemeral compute primitive that runs untrusted or agent-generated code in isolated Linux microVMs.",
+  "url": "https://vercel.com/docs/sandbox",
+  "repo": "https://github.com/vercel/sandbox",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "microvm",
+    "hosting"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://vercel.com/llms.txt"
+  },
+  "related": [
+    "e2b",
+    "cloudflare-sandbox"
+  ],
+  "sources": [
+    "https://github.com/vercel/sandbox",
+    "https://vercel.com/docs/sandbox"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

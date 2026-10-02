@@ -1,0 +1,24 @@
+{
+  "id": "aws-mcp-servers",
+  "name": "AWS MCP Servers (awslabs)",
+  "category": "mcp-servers",
+  "summary": "Suite of open-source, specialized MCP servers from AWS Labs for working with AWS services.",
+  "url": "https://awslabs.github.io/mcp/",
+  "repo": "https://github.com/awslabs/mcp",
+  "tags": [
+    "mcp",
+    "aws",
+    "cloud"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/awslabs/mcp",
+    "https://awslabs.github.io/mcp/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "AWS Labs"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pay-sh",
+  "name": "pay.sh",
+  "category": "finance-payments",
+  "summary": "Single-binary CLI that transparently handles HTTP 402 (x402 and MPP) payments so agents can call paid APIs with no sign-up.",
+  "description": "Sandbox mode creates and funds an ephemeral wallet; mainnet wallets are stored in the OS keystore. The repo describes it as a CLI for agentic payments (x402, MPP, AP2).",
+  "url": "https://pay.sh",
+  "repo": "https://github.com/solana-foundation/pay",
+  "docs": "https://pay.sh/docs",
+  "tags": [
+    "payments",
+    "cli",
+    "x402",
+    "mpp",
+    "http-402",
+    "agent-commerce"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://pay.sh/llms.txt"
+  },
+  "related": [
+    "x402",
+    "machine-payments-protocol"
+  ],
+  "sources": [
+    "https://pay.sh/llms.txt",
+    "https://github.com/solana-foundation/pay",
+    "https://pay.sh/docs"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Solana Foundation"
+}

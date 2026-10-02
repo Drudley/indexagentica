@@ -1,0 +1,29 @@
+{
+  "id": "openllmetry",
+  "name": "OpenLLMetry",
+  "category": "tools",
+  "summary": "Traceloop's open-source observability for GenAI/LLM applications, built on OpenTelemetry.",
+  "url": "https://www.traceloop.com/openllmetry",
+  "repo": "https://github.com/traceloop/openllmetry",
+  "docs": "https://www.traceloop.com/docs",
+  "tags": [
+    "observability",
+    "opentelemetry",
+    "tracing",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "otel-genai-semconv"
+  ],
+  "sources": [
+    "https://github.com/traceloop/openllmetry",
+    "https://www.traceloop.com/openllmetry"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Traceloop"
+}

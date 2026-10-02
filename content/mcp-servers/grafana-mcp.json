@@ -1,0 +1,24 @@
+{
+  "id": "grafana-mcp",
+  "name": "Grafana MCP Server",
+  "category": "mcp-servers",
+  "summary": "Grafana's MCP server for querying dashboards, data sources and observability data from AI agents.",
+  "url": "https://github.com/grafana/mcp-grafana",
+  "repo": "https://github.com/grafana/mcp-grafana",
+  "tags": [
+    "mcp",
+    "observability",
+    "grafana",
+    "monitoring"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/grafana/mcp-grafana"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Grafana Labs"
+}

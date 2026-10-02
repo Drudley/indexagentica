@@ -1,0 +1,26 @@
+{
+  "id": "hf-datasets",
+  "name": "Hugging Face Datasets Hub",
+  "category": "information",
+  "summary": "Hugging Face hub of ready-to-use datasets for AI models, plus the open-source `datasets` library for loading and manipulating them.",
+  "url": "https://huggingface.co/datasets",
+  "repo": "https://github.com/huggingface/datasets",
+  "docs": "https://huggingface.co/docs/datasets",
+  "tags": [
+    "dataset",
+    "open-data",
+    "hugging-face"
+  ],
+  "status": "active",
+  "related": [
+    "huggingface-mcp"
+  ],
+  "sources": [
+    "https://huggingface.co/datasets",
+    "https://github.com/huggingface/datasets"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hugging Face"
+}

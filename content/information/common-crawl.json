@@ -1,0 +1,21 @@
+{
+  "id": "common-crawl",
+  "name": "Common Crawl",
+  "category": "information",
+  "summary": "Open repository of web crawl data that anyone can access and analyze.",
+  "url": "https://commoncrawl.org",
+  "tags": [
+    "dataset",
+    "web-crawl",
+    "open-data"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://commoncrawl.org"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Common Crawl Foundation"
+}

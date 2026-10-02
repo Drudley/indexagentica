@@ -1,0 +1,25 @@
+{
+  "id": "deepeval",
+  "name": "DeepEval",
+  "category": "tools",
+  "summary": "Open-source LLM evaluation framework with 50+ plug-and-play metrics for agents, RAG and chatbots.",
+  "url": "https://deepeval.com",
+  "repo": "https://github.com/confident-ai/deepeval",
+  "tags": [
+    "evals",
+    "testing",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/confident-ai/deepeval",
+    "https://deepeval.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Confident AI"
+}

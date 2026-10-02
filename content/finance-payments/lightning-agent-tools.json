@@ -1,0 +1,28 @@
+{
+  "id": "lightning-agent-tools",
+  "name": "Lightning Agent Tools",
+  "category": "finance-payments",
+  "summary": "Lightning Labs toolkit of seven composable skills plus an MCP server letting agents run a Lightning node, pay for L402 APIs and host paid endpoints.",
+  "description": "Defaults to a remote-signer architecture that keeps private keys off the agent's machine.",
+  "url": "https://github.com/lightninglabs/lightning-agent-tools",
+  "repo": "https://github.com/lightninglabs/lightning-agent-tools",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "l402",
+    "agent-skills",
+    "mcp"
+  ],
+  "status": "active",
+  "related": [
+    "l402",
+    "nostr-wallet-connect"
+  ],
+  "sources": [
+    "https://github.com/lightninglabs/lightning-agent-tools"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Lightning Labs"
+}

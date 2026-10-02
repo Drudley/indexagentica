@@ -1,0 +1,27 @@
+{
+  "id": "anchor-browser",
+  "name": "Anchor Browser",
+  "category": "tools",
+  "summary": "Cloud browser infrastructure for computer-use and browser agents; agents can obtain an API key programmatically.",
+  "url": "https://anchorbrowser.io",
+  "docs": "https://docs.anchorbrowser.io",
+  "tags": [
+    "browser-automation",
+    "computer-use",
+    "cloud"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.anchorbrowser.io/llms.txt",
+    "auth": "api-key",
+    "notes": "Agent self-onboarding: https://docs.anchorbrowser.io/quickstart/agent-access"
+  },
+  "sources": [
+    "https://anchorbrowser.io",
+    "https://docs.anchorbrowser.io"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anchor"
+}

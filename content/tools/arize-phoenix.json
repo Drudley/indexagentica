@@ -1,0 +1,28 @@
+{
+  "id": "arize-phoenix",
+  "name": "Arize Phoenix",
+  "category": "tools",
+  "summary": "Open-source AI observability and evaluation platform from Arize.",
+  "url": "https://arize.com/phoenix/",
+  "repo": "https://github.com/Arize-ai/phoenix",
+  "docs": "https://arize.com/docs/phoenix",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing",
+    "open-source"
+  ],
+  "status": "active",
+  "related": [
+    "langfuse",
+    "openllmetry"
+  ],
+  "sources": [
+    "https://github.com/Arize-ai/phoenix",
+    "https://arize.com/docs/phoenix"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Arize AI"
+}

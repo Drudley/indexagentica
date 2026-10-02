@@ -1,0 +1,23 @@
+{
+  "id": "figma-mcp",
+  "name": "Figma MCP Server",
+  "category": "mcp-servers",
+  "summary": "Brings Figma design context to AI agents generating code from designs and lets agents write native Figma content; remote and desktop servers.",
+  "url": "https://developers.figma.com/docs/figma-mcp-server/",
+  "repo": "https://github.com/figma/mcp-server-guide",
+  "tags": [
+    "mcp",
+    "design",
+    "figma",
+    "design-to-code"
+  ],
+  "status": "active",
+  "sources": [
+    "https://developers.figma.com/docs/figma-mcp-server/",
+    "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Figma"
+}

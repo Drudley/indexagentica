@@ -1,0 +1,25 @@
+{
+  "id": "awesome-claude-skills-travisvn",
+  "name": "Awesome Claude Skills (travisvn)",
+  "category": "directories",
+  "summary": "Curated list of Claude Skills, resources and tools for customizing Claude workflows, particularly Claude Code.",
+  "url": "https://github.com/travisvn/awesome-claude-skills",
+  "repo": "https://github.com/travisvn/awesome-claude-skills",
+  "tags": [
+    "agent-skills",
+    "awesome-list",
+    "claude"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "awesome-claude-skills",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/travisvn/awesome-claude-skills"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "privy-agentic-wallets",
+  "name": "Privy Agentic Wallets",
+  "category": "finance-payments",
+  "summary": "Privy server wallets for agents and autonomous systems that execute onchain transactions independently under strict policy controls.",
+  "url": "https://docs.privy.io/recipes/agent-integrations/agentic-wallets",
+  "docs": "https://docs.privy.io",
+  "tags": [
+    "wallet",
+    "policy-controls",
+    "onchain"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.privy.io/llms.txt"
+  },
+  "sources": [
+    "https://docs.privy.io/recipes/agent-integrations/agentic-wallets.md"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Privy"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "universal-commerce-protocol",
+  "name": "Universal Commerce Protocol (UCP)",
+  "category": "finance-payments",
+  "summary": "Open standard giving platforms (AI agents, apps), businesses, payment service providers and credential providers a common language for commerce.",
+  "description": "Enables gen AI agents to safely and privately execute commerce actions such as discovering and buying on behalf of users. Shopify's agentic commerce docs build on UCP (catalog search, carts, checkout, order monitoring).",
+  "url": "https://ucp.dev",
+  "repo": "https://github.com/Universal-Commerce-Protocol/ucp",
+  "docs": "https://ucp.dev/latest/specification/overview/",
+  "tags": [
+    "agent-commerce",
+    "protocol",
+    "checkout",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://ucp.dev/llms.txt"
+  },
+  "related": [
+    "agentic-commerce-protocol",
+    "agent-payments-protocol",
+    "shopify-agentic-commerce"
+  ],
+  "sources": [
+    "https://ucp.dev",
+    "https://ucp.dev/llms.txt",
+    "https://github.com/Universal-Commerce-Protocol/ucp",
+    "https://shopify.dev/docs/agents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

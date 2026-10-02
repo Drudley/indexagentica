@@ -1,0 +1,31 @@
+{
+  "id": "cloudflare-sandbox",
+  "name": "Cloudflare Sandboxes",
+  "category": "tools",
+  "summary": "Execute untrusted or generated code on Cloudflare in Linux VMs (Containers) or isolated Dynamic Workers, via the Sandbox SDK.",
+  "url": "https://developers.cloudflare.com/sandbox/",
+  "repo": "https://github.com/cloudflare/sandbox-sdk",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "edge",
+    "hosting"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.cloudflare.com/sandbox/llms.txt"
+  },
+  "related": [
+    "cloudflare-agents",
+    "vercel-sandbox"
+  ],
+  "sources": [
+    "https://developers.cloudflare.com/sandbox/",
+    "https://developers.cloudflare.com/sandbox/llms.txt",
+    "https://github.com/cloudflare/sandbox-sdk"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cloudflare"
+}

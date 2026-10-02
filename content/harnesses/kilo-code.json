@@ -1,0 +1,25 @@
+{
+  "id": "kilo-code",
+  "name": "Kilo Code",
+  "category": "harnesses",
+  "summary": "Open-source AI coding agent for VS Code, JetBrains, CLI and cloud, with access to 500+ models and bring-your-own-key.",
+  "url": "https://kilo.ai/",
+  "repo": "https://github.com/Kilo-Org/kilocode",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "cli",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/Kilo-Org/kilocode",
+    "https://kilo.ai/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kilo"
+}

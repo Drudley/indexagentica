@@ -1,0 +1,28 @@
+{
+  "id": "neon-agent-skills",
+  "name": "Neon Agent Skills",
+  "category": "skills",
+  "summary": "Agent Skills for Neon serverless Postgres.",
+  "url": "https://github.com/neondatabase/agent-skills",
+  "repo": "https://github.com/neondatabase/agent-skills",
+  "tags": [
+    "agent-skills",
+    "postgres",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "neon-mcp-server",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/neondatabase/agent-skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Neon"
+}

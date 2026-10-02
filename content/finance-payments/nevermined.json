@@ -1,0 +1,32 @@
+{
+  "id": "nevermined",
+  "name": "Nevermined",
+  "category": "finance-payments",
+  "summary": "Payments infrastructure for AI agents: delegated spending, usage metering, payment plans and settlement across MCP, x402 and A2A.",
+  "url": "https://nevermined.ai",
+  "repo": "https://github.com/nevermined-io/payments",
+  "docs": "https://nevermined.ai/docs/getting-started/overview",
+  "tags": [
+    "payments",
+    "metering",
+    "agent-commerce",
+    "x402"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://nevermined.ai/docs/llms.txt"
+  },
+  "related": [
+    "x402",
+    "a2a-protocol"
+  ],
+  "sources": [
+    "https://nevermined.ai",
+    "https://nevermined.ai/docs/llms.txt",
+    "https://github.com/nevermined-io/payments"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Nevermined"
+}

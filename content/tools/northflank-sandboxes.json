@@ -1,0 +1,21 @@
+{
+  "id": "northflank-sandboxes",
+  "name": "Northflank Sandboxes",
+  "category": "tools",
+  "summary": "Secure microVM sandboxes for running untrusted, multi-tenant code at scale, in Northflank's cloud or your VPC.",
+  "url": "https://northflank.com/product/sandboxes",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "hosting",
+    "byoc"
+  ],
+  "status": "active",
+  "sources": [
+    "https://northflank.com/product/sandboxes"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Northflank"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "impeccable",
+  "name": "Impeccable",
+  "category": "skills",
+  "summary": "Design language skill that makes AI coding harnesses better at front-end design.",
+  "url": "https://impeccable.style",
+  "repo": "https://github.com/pbakaus/impeccable",
+  "tags": [
+    "agent-skills",
+    "design",
+    "frontend"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/pbakaus/impeccable",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Paul Bakaus"
+}

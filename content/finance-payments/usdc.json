@@ -1,0 +1,30 @@
+{
+  "id": "usdc",
+  "name": "USDC",
+  "category": "finance-payments",
+  "summary": "Fully reserved dollar stablecoin issued by Circle, the settlement asset used by many agent payment rails including x402.",
+  "url": "https://www.circle.com/usdc",
+  "docs": "https://developers.circle.com",
+  "tags": [
+    "stablecoin",
+    "usdc",
+    "settlement"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt"
+  },
+  "related": [
+    "circle-cctp",
+    "x402",
+    "circle-gateway"
+  ],
+  "sources": [
+    "https://www.circle.com/usdc",
+    "https://docs.cdp.coinbase.com/x402/welcome"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

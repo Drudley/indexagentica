@@ -1,0 +1,26 @@
+{
+  "id": "milvus",
+  "name": "Milvus",
+  "category": "tools",
+  "summary": "High-performance, cloud-native open-source vector database built for scalable approximate-nearest-neighbor search.",
+  "url": "https://github.com/milvus-io/milvus",
+  "repo": "https://github.com/milvus-io/milvus",
+  "tags": [
+    "vector-database",
+    "retrieval",
+    "open-source",
+    "scalable"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://milvus.io/llms.txt"
+  },
+  "sources": [
+    "https://github.com/milvus-io/milvus",
+    "https://milvus.io/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

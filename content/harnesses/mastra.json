@@ -1,0 +1,30 @@
+{
+  "id": "mastra",
+  "name": "Mastra",
+  "category": "harnesses",
+  "summary": "TypeScript framework for AI agents and apps with memory, tools, MCP and observability built in.",
+  "url": "https://mastra.ai",
+  "repo": "https://github.com/mastra-ai/mastra",
+  "docs": "https://mastra.ai/docs",
+  "tags": [
+    "framework",
+    "typescript",
+    "mcp-client",
+    "memory"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://mastra.ai/llms.txt"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/mastra-ai/mastra",
+    "https://mastra.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Mastra"
+}

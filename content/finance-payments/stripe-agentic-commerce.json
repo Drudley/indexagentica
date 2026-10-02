@@ -1,0 +1,32 @@
+{
+  "id": "stripe-agentic-commerce",
+  "name": "Stripe Agentic Commerce",
+  "category": "finance-payments",
+  "summary": "Stripe integrations for selling through agents and embedding commerce in AI interfaces, including Shared Payment Tokens for agent-initiated purchases.",
+  "description": "Sellers can make goods, subscriptions, digital content or APIs available on agent platforms; agent builders can let agents buy with a customer-controlled wallet. Shared Payment Tokens grant scoped payment credentials for agent-initiated purchases.",
+  "url": "https://docs.stripe.com/agentic-commerce",
+  "docs": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+  "tags": [
+    "agent-commerce",
+    "checkout",
+    "stripe",
+    "payment-tokens"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.stripe.com/llms.txt"
+  },
+  "related": [
+    "agentic-commerce-protocol",
+    "stripe-agents",
+    "stripe-issuing-for-agents"
+  ],
+  "sources": [
+    "https://docs.stripe.com/agentic-commerce",
+    "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stripe"
+}

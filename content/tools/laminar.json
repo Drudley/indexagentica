@@ -1,0 +1,24 @@
+{
+  "id": "laminar",
+  "name": "Laminar",
+  "category": "tools",
+  "summary": "Open-source observability platform purpose-built for AI agents: trace, evaluate and debug agent failures.",
+  "url": "https://laminar.sh",
+  "repo": "https://github.com/lmnr-ai/lmnr",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "sources": [
+    "https://github.com/lmnr-ai/lmnr",
+    "https://laminar.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Laminar"
+}

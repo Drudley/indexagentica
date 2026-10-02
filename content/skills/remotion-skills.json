@@ -1,0 +1,25 @@
+{
+  "id": "remotion-skills",
+  "name": "Remotion Skills",
+  "category": "skills",
+  "summary": "Agent Skills from the Remotion team for creating videos programmatically with Remotion.",
+  "url": "https://github.com/remotion-dev/skills",
+  "repo": "https://github.com/remotion-dev/skills",
+  "tags": [
+    "agent-skills",
+    "video",
+    "react"
+  ],
+  "status": "active",
+  "related": [
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/remotion-dev/skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Remotion"
+}

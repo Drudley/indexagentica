@@ -1,0 +1,24 @@
+{
+  "id": "kernel",
+  "name": "Kernel",
+  "category": "tools",
+  "summary": "Browsers-as-a-service for web agents and automations: anti-bot handling, reusable sessions, fast spin-up and autoscaling.",
+  "url": "https://www.kernel.sh",
+  "repo": "https://github.com/kernel/kernel-images",
+  "docs": "https://www.kernel.sh/docs/",
+  "tags": [
+    "browser-automation",
+    "headless-browser",
+    "cloud"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "sources": [
+    "https://www.kernel.sh",
+    "https://github.com/kernel/kernel-images"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kernel"
+}

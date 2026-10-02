@@ -1,0 +1,27 @@
+{
+  "id": "turnkey",
+  "name": "Turnkey",
+  "category": "finance-payments",
+  "summary": "Wallet and private-key infrastructure with policy-scoped signing, used for embedded wallets, server-side automation and AI agent wallets.",
+  "url": "https://www.turnkey.com",
+  "docs": "https://docs.turnkey.com",
+  "tags": [
+    "wallet",
+    "key-management",
+    "policy-controls"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.turnkey.com/llms.txt",
+    "openapi": "https://docs.turnkey.com/public_api.swagger.json",
+    "auth": "api-key"
+  },
+  "sources": [
+    "https://www.turnkey.com",
+    "https://docs.turnkey.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Turnkey"
+}

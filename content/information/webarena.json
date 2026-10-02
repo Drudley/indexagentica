@@ -1,0 +1,27 @@
+{
+  "id": "webarena",
+  "name": "WebArena",
+  "category": "information",
+  "summary": "A realistic web environment for building autonomous agents, with benchmark tasks used to evaluate web agents.",
+  "url": "https://webarena.dev",
+  "repo": "https://github.com/web-arena-x/webarena",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "browser-automation",
+    "evals"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "osworld"
+  ],
+  "sources": [
+    "https://webarena.dev",
+    "https://github.com/web-arena-x/webarena"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

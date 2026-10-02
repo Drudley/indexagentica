@@ -1,0 +1,28 @@
+{
+  "id": "deepwiki-mcp",
+  "name": "DeepWiki MCP",
+  "category": "mcp-servers",
+  "summary": "Official DeepWiki MCP server: programmatic access to DeepWiki's public repository documentation and search (Ask Devin).",
+  "url": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+  "tags": [
+    "mcp",
+    "documentation",
+    "github",
+    "code-search"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.deepwiki.com/mcp",
+    "auth": "none"
+  },
+  "related": [
+    "context7"
+  ],
+  "sources": [
+    "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+    "https://mcp.deepwiki.com/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

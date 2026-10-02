@@ -1,0 +1,25 @@
+{
+  "id": "erc-8004",
+  "name": "ERC-8004: Trustless Agents",
+  "category": "protocols",
+  "summary": "Ethereum standard proposal for discovering agents and establishing trust through reputation and validation.",
+  "url": "https://eips.ethereum.org/EIPS/eip-8004",
+  "repo": "https://github.com/ethereum/ERCs",
+  "tags": [
+    "agent-identity",
+    "reputation",
+    "ethereum",
+    "open-standard",
+    "identity"
+  ],
+  "status": "unknown",
+  "related": [
+    "a2a-protocol"
+  ],
+  "sources": [
+    "https://eips.ethereum.org/EIPS/eip-8004"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

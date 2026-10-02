@@ -1,0 +1,32 @@
+{
+  "id": "langfuse",
+  "name": "Langfuse",
+  "category": "tools",
+  "summary": "Open-source agent evals and observability platform: trace, evaluate and improve LLM applications and agents.",
+  "url": "https://langfuse.com",
+  "repo": "https://github.com/langfuse/langfuse",
+  "docs": "https://langfuse.com/docs",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing",
+    "open-source"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://langfuse.com/llms.txt"
+  },
+  "related": [
+    "langsmith",
+    "arize-phoenix"
+  ],
+  "sources": [
+    "https://github.com/langfuse/langfuse",
+    "https://langfuse.com",
+    "https://langfuse.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Langfuse"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "circle-skills",
+  "name": "Circle Skills",
+  "category": "skills",
+  "summary": "Circle's open-source Agent Skills for USDC, CCTP bridging, Circle Wallets, Gateway nanopayments and the Arc chain.",
+  "description": "Installable via `npx skills add circlefin/skills` or as a Claude Code plugin marketplace (`/plugin marketplace add circlefin/skills`). Circle's docs recommend pairing them with the Circle MCP server.",
+  "url": "https://github.com/circlefin/skills",
+  "repo": "https://github.com/circlefin/skills",
+  "tags": [
+    "agent-skills",
+    "stablecoin",
+    "usdc",
+    "wallet"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt"
+  },
+  "related": [
+    "usdc",
+    "circle-agent-stack",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/circlefin/skills",
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

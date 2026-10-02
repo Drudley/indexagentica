@@ -1,0 +1,33 @@
+{
+  "id": "pinecone",
+  "name": "Pinecone",
+  "category": "tools",
+  "summary": "Managed vector database for AI agents and applications: semantic search, knowledge retrieval and long-term memory at scale.",
+  "url": "https://www.pinecone.io",
+  "repo": "https://github.com/pinecone-io/python-sdk",
+  "docs": "https://docs.pinecone.io",
+  "tags": [
+    "vector-database",
+    "memory",
+    "retrieval",
+    "managed"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.pinecone.io/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "weaviate",
+    "qdrant"
+  ],
+  "sources": [
+    "https://docs.pinecone.io",
+    "https://docs.pinecone.io/llms.txt",
+    "https://github.com/pinecone-io/python-sdk"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pinecone"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "microsoft-learn-mcp",
+  "name": "Microsoft Learn MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official remote MCP server giving agents real-time, trusted Microsoft documentation and code samples from Microsoft Learn.",
+  "url": "https://learn.microsoft.com/en-us/training/support/mcp",
+  "repo": "https://github.com/MicrosoftDocs/mcp",
+  "tags": [
+    "mcp",
+    "documentation",
+    "microsoft"
+  ],
+  "license": "CC-BY-4.0",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://learn.microsoft.com/api/mcp",
+    "auth": "none"
+  },
+  "related": [
+    "context7"
+  ],
+  "sources": [
+    "https://github.com/MicrosoftDocs/mcp",
+    "https://learn.microsoft.com/en-us/training/support/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

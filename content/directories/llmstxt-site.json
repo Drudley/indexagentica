@@ -1,0 +1,24 @@
+{
+  "id": "llmstxt-site",
+  "name": "llmstxt.site",
+  "category": "directories",
+  "summary": "Directory of llms.txt files from products and services, following the llmstxt.org standard.",
+  "url": "https://llmstxt.site",
+  "tags": [
+    "llms-txt",
+    "directory",
+    "documentation"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "llms-txt",
+    "llmstxt-directory"
+  ],
+  "sources": [
+    "https://llmstxt.site"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

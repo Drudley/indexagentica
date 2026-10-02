@@ -1,0 +1,23 @@
+{
+  "id": "pipedream-mcp",
+  "name": "Pipedream MCP",
+  "category": "directories",
+  "summary": "Pipedream's hosted MCP servers for more than 3,000 APIs with 10,000 prebuilt tools.",
+  "url": "https://mcp.pipedream.com",
+  "docs": "https://pipedream.com/docs/connect/mcp",
+  "tags": [
+    "mcp",
+    "integrations",
+    "catalog",
+    "hosting"
+  ],
+  "status": "active",
+  "sources": [
+    "https://mcp.pipedream.com",
+    "https://pipedream.com/docs/connect/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pipedream"
+}

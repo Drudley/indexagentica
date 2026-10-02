@@ -1,0 +1,30 @@
+{
+  "id": "zep",
+  "name": "Zep",
+  "category": "tools",
+  "summary": "Unified context layer that combines business data, documents and conversations into governed context and memory for agents.",
+  "url": "https://www.getzep.com",
+  "repo": "https://github.com/getzep/zep",
+  "docs": "https://help.getzep.com",
+  "tags": [
+    "memory",
+    "context-engine",
+    "knowledge-graph"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://help.getzep.com/llms.txt"
+  },
+  "related": [
+    "graphiti"
+  ],
+  "sources": [
+    "https://www.getzep.com",
+    "https://help.getzep.com",
+    "https://github.com/getzep/zep"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zep"
+}

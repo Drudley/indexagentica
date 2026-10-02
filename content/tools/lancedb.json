@@ -1,0 +1,28 @@
+{
+  "id": "lancedb",
+  "name": "LanceDB",
+  "category": "tools",
+  "summary": "Developer-friendly, open-source embedded retrieval library and multimodal lakehouse for AI.",
+  "url": "https://lancedb.com",
+  "repo": "https://github.com/lancedb/lancedb",
+  "docs": "https://docs.lancedb.com/",
+  "tags": [
+    "vector-database",
+    "embedded",
+    "multimodal",
+    "retrieval"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.lancedb.com/llms.txt"
+  },
+  "sources": [
+    "https://github.com/lancedb/lancedb",
+    "https://lancedb.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LanceDB"
+}

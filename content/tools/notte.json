@@ -1,0 +1,22 @@
+{
+  "id": "notte",
+  "name": "Notte",
+  "category": "tools",
+  "summary": "Cloud browser infrastructure and web automation platform for AI and coding agents.",
+  "url": "https://www.notte.cc",
+  "repo": "https://github.com/nottelabs/notte",
+  "tags": [
+    "browser-automation",
+    "cloud",
+    "web-agents"
+  ],
+  "status": "active",
+  "sources": [
+    "https://github.com/nottelabs/notte",
+    "https://www.notte.cc"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Notte"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "caveman",
+  "name": "Caveman",
+  "category": "skills",
+  "summary": "Viral skill plus proxy for coding agents that cuts tokens by having the agent talk tersely, like a caveman.",
+  "description": "The repo claims roughly 65% token reduction. Several caveman skills (caveman, caveman-commit, caveman-review) rank on skills.sh.",
+  "url": "https://docs.caveman.so/docs/quickstart",
+  "repo": "https://github.com/JuliusBrussee/caveman",
+  "tags": [
+    "agent-skills",
+    "token-efficiency",
+    "coding-agents"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/JuliusBrussee/caveman",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

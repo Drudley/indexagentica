@@ -1,0 +1,28 @@
+{
+  "id": "braintrust",
+  "name": "Braintrust",
+  "category": "tools",
+  "summary": "AI observability platform for agents: trace production, run evals and catch regressions before users see them.",
+  "url": "https://www.braintrust.dev",
+  "repo": "https://github.com/braintrustdata/autoevals",
+  "docs": "https://www.braintrust.dev/docs",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.braintrust.dev/docs/llms.txt",
+    "auth": "api-key"
+  },
+  "sources": [
+    "https://www.braintrust.dev",
+    "https://www.braintrust.dev/docs/llms.txt",
+    "https://github.com/braintrustdata/autoevals"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Braintrust"
+}

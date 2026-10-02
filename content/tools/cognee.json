@@ -1,0 +1,33 @@
+{
+  "id": "cognee",
+  "name": "Cognee",
+  "category": "tools",
+  "summary": "Open-source AI memory platform for agents that turns documents and conversations into graph, vector and relational memory.",
+  "url": "https://www.cognee.ai",
+  "repo": "https://github.com/topoteretes/cognee",
+  "docs": "https://docs.cognee.ai",
+  "tags": [
+    "memory",
+    "knowledge-graph",
+    "python",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cognee.ai/llms.txt"
+  },
+  "related": [
+    "graphiti",
+    "mem0"
+  ],
+  "sources": [
+    "https://github.com/topoteretes/cognee",
+    "https://www.cognee.ai",
+    "https://docs.cognee.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cognee"
+}

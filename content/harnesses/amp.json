@@ -1,0 +1,19 @@
+{
+  "id": "amp",
+  "name": "Amp",
+  "category": "harnesses",
+  "summary": "Coding agent and development environment; run agents unsupervised in cloud orbs or locally with the CLI.",
+  "url": "https://ampcode.com/docs",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "cloud"
+  ],
+  "status": "active",
+  "sources": [
+    "https://ampcode.com/docs"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

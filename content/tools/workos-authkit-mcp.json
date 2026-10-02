@@ -1,0 +1,27 @@
+{
+  "id": "workos-authkit-mcp",
+  "name": "WorkOS AuthKit for MCP",
+  "category": "tools",
+  "summary": "WorkOS AuthKit guide and support for securing MCP servers that require authentication.",
+  "url": "https://workos.com/docs/authkit/mcp",
+  "tags": [
+    "identity",
+    "auth",
+    "oauth",
+    "mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://workos.com/docs/llms.txt"
+  },
+  "related": [
+    "mcp-authorization"
+  ],
+  "sources": [
+    "https://workos.com/docs/authkit/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "WorkOS"
+}

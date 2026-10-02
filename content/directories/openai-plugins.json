@@ -1,0 +1,29 @@
+{
+  "id": "openai-plugins",
+  "name": "OpenAI Plugins (Codex)",
+  "category": "directories",
+  "summary": "OpenAI's repository of plugins (skills and integrations) for Codex and ChatGPT surfaces; successor to openai/skills.",
+  "url": "https://github.com/openai/plugins",
+  "repo": "https://github.com/openai/plugins",
+  "docs": "https://learn.chatgpt.com/docs/plugins",
+  "tags": [
+    "plugins",
+    "agent-skills",
+    "codex",
+    "openai"
+  ],
+  "status": "active",
+  "related": [
+    "codex-cli",
+    "agent-plugins"
+  ],
+  "sources": [
+    "https://github.com/openai/plugins",
+    "https://github.com/openai/skills",
+    "https://learn.chatgpt.com/docs/plugins"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

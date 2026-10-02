@@ -1,0 +1,30 @@
+{
+  "id": "hyperbrowser",
+  "name": "Hyperbrowser",
+  "category": "tools",
+  "summary": "Fast cloud browsers for AI agents and automation, with an official MCP server.",
+  "url": "https://www.hyperbrowser.ai",
+  "docs": "https://www.hyperbrowser.ai/docs/home",
+  "tags": [
+    "browser-automation",
+    "headless-browser",
+    "cloud",
+    "mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.hyperbrowser.ai/docs/llms.txt"
+  },
+  "related": [
+    "steel"
+  ],
+  "sources": [
+    "https://www.hyperbrowser.ai",
+    "https://www.hyperbrowser.ai/docs/home",
+    "https://github.com/hyperbrowserai/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hyperbrowser"
+}

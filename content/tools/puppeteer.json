@@ -1,0 +1,23 @@
+{
+  "id": "puppeteer",
+  "name": "Puppeteer",
+  "category": "tools",
+  "summary": "JavaScript API for controlling Chrome and Firefox, commonly used for headless browser automation.",
+  "url": "https://pptr.dev",
+  "repo": "https://github.com/puppeteer/puppeteer",
+  "tags": [
+    "browser-automation",
+    "javascript",
+    "headless-browser"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/puppeteer/puppeteer",
+    "https://pptr.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

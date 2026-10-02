@@ -1,0 +1,28 @@
+{
+  "id": "vercel-ai-sdk",
+  "name": "AI SDK (Vercel)",
+  "category": "harnesses",
+  "summary": "Free, open-source TypeScript toolkit from Vercel for building AI apps and agents with streaming, fallbacks and multi-model support.",
+  "url": "https://ai-sdk.dev",
+  "repo": "https://github.com/vercel/ai",
+  "tags": [
+    "framework",
+    "typescript",
+    "streaming",
+    "multi-model"
+  ],
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://ai-sdk.dev/llms.txt"
+  },
+  "sources": [
+    "https://github.com/vercel/ai",
+    "https://ai-sdk.dev",
+    "https://ai-sdk.dev/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

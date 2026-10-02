@@ -1,0 +1,23 @@
+{
+  "id": "lightpanda",
+  "name": "Lightpanda",
+  "category": "tools",
+  "summary": "Headless browser built from scratch for AI and automation, designed for speed and a minimal memory footprint.",
+  "url": "https://lightpanda.io",
+  "repo": "https://github.com/lightpanda-io/browser",
+  "tags": [
+    "browser-automation",
+    "headless-browser",
+    "open-source"
+  ],
+  "license": "AGPL-3.0",
+  "status": "active",
+  "sources": [
+    "https://github.com/lightpanda-io/browser",
+    "https://lightpanda.io"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Lightpanda"
+}

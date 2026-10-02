@@ -1,0 +1,30 @@
+{
+  "id": "semantic-scholar-api",
+  "name": "Semantic Scholar Academic Graph API",
+  "category": "apis",
+  "summary": "API over Semantic Scholar's academic graph of papers, authors and citations; an API key unlocks some endpoints and higher rate limits.",
+  "url": "https://www.semanticscholar.org/product/api",
+  "docs": "https://api.semanticscholar.org/api-docs/",
+  "tags": [
+    "research",
+    "papers",
+    "citations",
+    "scholarly"
+  ],
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Unauthenticated access is heavily rate-limited (HTTP 429)."
+  },
+  "related": [
+    "openalex-api"
+  ],
+  "sources": [
+    "https://www.semanticscholar.org/product/api",
+    "https://api.semanticscholar.org/api-docs/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Allen Institute for AI"
+}

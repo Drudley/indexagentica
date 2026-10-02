@@ -1,0 +1,27 @@
+{
+  "id": "semantic-kernel",
+  "name": "Semantic Kernel",
+  "category": "harnesses",
+  "summary": "Microsoft's open-source SDK for integrating LLM capabilities quickly and easily into your apps.",
+  "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/",
+  "repo": "https://github.com/microsoft/semantic-kernel",
+  "tags": [
+    "framework",
+    "sdk",
+    "microsoft"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "microsoft-agent-framework"
+  ],
+  "sources": [
+    "https://github.com/microsoft/semantic-kernel",
+    "https://learn.microsoft.com/en-us/semantic-kernel/overview/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

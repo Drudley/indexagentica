@@ -1,0 +1,27 @@
+{
+  "id": "web-bot-auth",
+  "name": "Web Bot Auth",
+  "category": "protocols",
+  "summary": "IETF draft architecture for identifying automated traffic (bots and agents) by cryptographically signing HTTP requests with HTTP Message Signatures.",
+  "description": "Cloudflare documents Web Bot Auth as a way to verify bot identity using cryptographic HTTP message signatures.",
+  "url": "https://datatracker.ietf.org/doc/draft-meunier-web-bot-auth-architecture/",
+  "docs": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/",
+  "tags": [
+    "identity",
+    "http-signatures",
+    "bots",
+    "ietf-draft",
+    "auth"
+  ],
+  "status": "beta",
+  "related": [
+    "visa-trusted-agent-protocol"
+  ],
+  "sources": [
+    "https://datatracker.ietf.org/doc/draft-meunier-web-bot-auth-architecture/",
+    "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

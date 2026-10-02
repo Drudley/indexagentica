@@ -1,0 +1,23 @@
+{
+  "id": "mle-bench",
+  "name": "MLE-bench",
+  "category": "information",
+  "summary": "OpenAI benchmark measuring how well AI agents perform machine learning engineering tasks.",
+  "url": "https://github.com/openai/mle-bench",
+  "repo": "https://github.com/openai/mle-bench",
+  "tags": [
+    "benchmark",
+    "machine-learning",
+    "agents",
+    "evals"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://github.com/openai/mle-bench"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "qdrant",
+  "name": "Qdrant",
+  "category": "tools",
+  "summary": "Open-source vector search engine and database written in Rust, self-hosted or as Qdrant Cloud.",
+  "url": "https://qdrant.tech",
+  "repo": "https://github.com/qdrant/qdrant",
+  "docs": "https://qdrant.tech/documentation/",
+  "tags": [
+    "vector-database",
+    "memory",
+    "retrieval",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://qdrant.tech/llms.txt"
+  },
+  "related": [
+    "weaviate",
+    "pinecone"
+  ],
+  "sources": [
+    "https://github.com/qdrant/qdrant",
+    "https://qdrant.tech"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Qdrant"
+}

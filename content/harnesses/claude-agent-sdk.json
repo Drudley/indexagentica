@@ -1,0 +1,32 @@
+{
+  "id": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "category": "harnesses",
+  "summary": "Anthropic's SDK for building production agents with Claude Code as a library, in Python and TypeScript.",
+  "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+  "repo": "https://github.com/anthropics/claude-agent-sdk-python",
+  "tags": [
+    "sdk",
+    "python",
+    "typescript",
+    "anthropic"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://code.claude.com/docs/llms.txt"
+  },
+  "related": [
+    "claude-code"
+  ],
+  "sources": [
+    "https://code.claude.com/docs/en/agent-sdk/overview",
+    "https://github.com/anthropics/claude-agent-sdk-python",
+    "https://github.com/anthropics/claude-agent-sdk-typescript"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

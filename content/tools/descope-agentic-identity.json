@@ -1,0 +1,24 @@
+{
+  "id": "descope-agentic-identity",
+  "name": "Descope Agentic Identity Hub",
+  "category": "tools",
+  "summary": "Manage authentication, authorization and external credentials for AI agents and MCP servers with Descope.",
+  "url": "https://docs.descope.com/agentic-identity-hub",
+  "tags": [
+    "identity",
+    "auth",
+    "oauth",
+    "mcp"
+  ],
+  "status": "active",
+  "related": [
+    "mcp-authorization"
+  ],
+  "sources": [
+    "https://docs.descope.com/agentic-identity-hub"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Descope"
+}

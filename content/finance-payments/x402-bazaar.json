@@ -1,0 +1,32 @@
+{
+  "id": "x402-bazaar",
+  "name": "x402 Bazaar",
+  "category": "finance-payments",
+  "summary": "Public catalog of x402 payment-gated services discovered by the CDP Facilitator; search by intent, browse resources or look up by merchant address.",
+  "url": "https://docs.cdp.coinbase.com/x402/buyer/discover-services",
+  "tags": [
+    "x402",
+    "service-discovery",
+    "catalog",
+    "payments",
+    "agent-commerce"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt",
+    "notes": "Discovery APIs and SDK functions need no CDP API key."
+  },
+  "related": [
+    "x402",
+    "cdp-x402"
+  ],
+  "sources": [
+    "https://docs.cdp.coinbase.com/x402/buyer/discover-services.md"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

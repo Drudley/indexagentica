@@ -1,0 +1,24 @@
+{
+  "id": "metr-time-horizons",
+  "name": "METR Task-Completion Time Horizons",
+  "category": "information",
+  "summary": "METR's up-to-date measurements of how long tasks frontier AI models can complete autonomously (time horizons).",
+  "url": "https://metr.org/time-horizons",
+  "tags": [
+    "benchmark",
+    "agents",
+    "ai-trends",
+    "research",
+    "evals"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://metr.org/time-horizons",
+    "https://metr.org"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "METR"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "aider-leaderboards",
+  "name": "Aider LLM Leaderboards",
+  "category": "information",
+  "summary": "Quantitative benchmarks of LLM code-editing skill maintained by the Aider project.",
+  "url": "https://aider.chat/docs/leaderboards/",
+  "tags": [
+    "benchmark",
+    "coding",
+    "leaderboard",
+    "evals"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "aider"
+  ],
+  "sources": [
+    "https://aider.chat/docs/leaderboards/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

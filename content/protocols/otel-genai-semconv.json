@@ -1,0 +1,30 @@
+{
+  "id": "otel-genai-semconv",
+  "name": "OpenTelemetry GenAI Semantic Conventions",
+  "category": "protocols",
+  "summary": "OpenTelemetry conventions for spans, metrics and events emitted by GenAI clients, MCP and model providers, for interoperable agent observability.",
+  "description": "Moved from the core open-telemetry/semantic-conventions repo into a dedicated GenAI repository (the old opentelemetry.io page now says it has moved).",
+  "url": "https://github.com/open-telemetry/semantic-conventions-genai",
+  "repo": "https://github.com/open-telemetry/semantic-conventions-genai",
+  "tags": [
+    "observability",
+    "opentelemetry",
+    "tracing",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "openllmetry",
+    "langfuse"
+  ],
+  "sources": [
+    "https://github.com/open-telemetry/semantic-conventions-genai",
+    "https://opentelemetry.io/docs/specs/semconv/gen-ai/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenTelemetry"
+}

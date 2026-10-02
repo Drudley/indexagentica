@@ -1,0 +1,25 @@
+{
+  "id": "mastercard-agent-suite",
+  "name": "Mastercard Agent Suite for Merchants",
+  "category": "finance-payments",
+  "summary": "Mastercard developer product to bring agentic commerce to merchants through a single integration.",
+  "url": "https://developer.mastercard.com/product/agent-suite-for-merchants/",
+  "tags": [
+    "agent-commerce",
+    "cards",
+    "merchants",
+    "mastercard"
+  ],
+  "status": "unknown",
+  "agent_access": {
+    "llms_txt": "https://developer.mastercard.com/llms.txt"
+  },
+  "sources": [
+    "https://developer.mastercard.com/llms.txt",
+    "https://developer.mastercard.com/product/agent-suite-for-merchants/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Mastercard"
+}

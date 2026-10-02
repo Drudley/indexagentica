@@ -1,0 +1,29 @@
+{
+  "id": "circle-mcp",
+  "name": "Circle MCP Server",
+  "category": "mcp-servers",
+  "summary": "Circle's MCP server providing live SDK signatures, contract addresses and chain IDs for building with USDC and Circle products.",
+  "url": "https://developers.circle.com",
+  "tags": [
+    "mcp",
+    "stablecoin",
+    "usdc",
+    "developer-docs"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.circle.com/v1/codegen/mcp",
+    "llms_txt": "https://developers.circle.com/llms.txt"
+  },
+  "related": [
+    "circle-skills",
+    "usdc"
+  ],
+  "sources": [
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

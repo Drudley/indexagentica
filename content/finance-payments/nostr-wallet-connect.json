@@ -1,0 +1,31 @@
+{
+  "id": "nostr-wallet-connect",
+  "name": "Nostr Wallet Connect (NWC)",
+  "category": "finance-payments",
+  "summary": "Open protocol (Nostr NIP-47, draft) that lets clients and apps access a remote Bitcoin Lightning wallet in a standardized way.",
+  "url": "https://nwc.dev",
+  "repo": "https://github.com/nostr-protocol/nips",
+  "docs": "https://docs.nwc.dev",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "wallet",
+    "protocol"
+  ],
+  "pricing": "open-source",
+  "agent_access": {
+    "llms_txt": "https://docs.nwc.dev/llms.txt"
+  },
+  "related": [
+    "l402",
+    "lightning-agent-tools"
+  ],
+  "sources": [
+    "https://nwc.dev",
+    "https://docs.nwc.dev",
+    "https://github.com/nostr-protocol/nips/blob/master/47.md"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

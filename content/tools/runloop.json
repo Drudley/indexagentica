@@ -1,0 +1,33 @@
+{
+  "id": "runloop",
+  "name": "Runloop",
+  "category": "tools",
+  "summary": "Managed isolated Linux sandboxes (Devboxes) for AI coding agents, plus evaluations and production infrastructure.",
+  "url": "https://runloop.ai",
+  "repo": "https://github.com/runloopai/api-client-python",
+  "docs": "https://docs.runloop.ai",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "coding-agents",
+    "evals"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.runloop.ai/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "e2b",
+    "daytona"
+  ],
+  "sources": [
+    "https://runloop.ai",
+    "https://docs.runloop.ai/llms.txt",
+    "https://github.com/runloopai/api-client-python"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Runloop"
+}

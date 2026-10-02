@@ -1,0 +1,29 @@
+{
+  "id": "chroma",
+  "name": "Chroma",
+  "category": "tools",
+  "summary": "Open-source search and data infrastructure for AI (vector database).",
+  "url": "https://www.trychroma.com/",
+  "repo": "https://github.com/chroma-core/chroma",
+  "docs": "https://docs.trychroma.com",
+  "tags": [
+    "vector-database",
+    "memory",
+    "retrieval",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.trychroma.com/llms.txt"
+  },
+  "sources": [
+    "https://github.com/chroma-core/chroma",
+    "https://www.trychroma.com/",
+    "https://docs.trychroma.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Chroma"
+}

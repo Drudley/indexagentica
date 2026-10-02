@@ -1,0 +1,20 @@
+{
+  "id": "catena",
+  "name": "Catena",
+  "category": "finance-payments",
+  "summary": "Banking and governance platform for AI agents supporting payments, treasury and other financial services.",
+  "url": "https://catena.com",
+  "tags": [
+    "banking",
+    "agent-commerce",
+    "treasury"
+  ],
+  "status": "unknown",
+  "sources": [
+    "https://catena.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Catena Labs"
+}

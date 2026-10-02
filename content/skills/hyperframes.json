@@ -1,0 +1,27 @@
+{
+  "id": "hyperframes",
+  "name": "HyperFrames",
+  "category": "skills",
+  "summary": "HeyGen's agent-oriented toolkit and skills for writing HTML and rendering it to video.",
+  "url": "https://github.com/heygen-com/hyperframes",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "tags": [
+    "agent-skills",
+    "video",
+    "html"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/heygen-com/hyperframes",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "HeyGen"
+}

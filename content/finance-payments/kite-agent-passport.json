@@ -1,0 +1,28 @@
+{
+  "id": "kite-agent-passport",
+  "name": "Kite Agent Passport",
+  "category": "finance-payments",
+  "summary": "Agentic payment infrastructure giving AI agents identity, a funded wallet, delegated spending rules and onchain settlement with verifiable receipts.",
+  "url": "https://gokite.ai",
+  "docs": "https://docs.gokite.ai",
+  "tags": [
+    "wallet",
+    "agent-identity",
+    "stablecoin",
+    "spend-controls",
+    "identity"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.gokite.ai/llms.txt"
+  },
+  "sources": [
+    "https://gokite.ai",
+    "https://docs.gokite.ai",
+    "https://docs.gokite.ai/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kite"
+}

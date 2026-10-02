@@ -1,0 +1,30 @@
+{
+  "id": "supermemory",
+  "name": "Supermemory",
+  "category": "tools",
+  "summary": "Memory and context engine for AI agents with a Memory API; can run fully locally or hosted.",
+  "url": "https://supermemory.ai",
+  "repo": "https://github.com/supermemoryai/supermemory",
+  "docs": "https://supermemory.ai/docs",
+  "tags": [
+    "memory",
+    "context-engine",
+    "api"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://supermemory.ai/docs/llms.txt"
+  },
+  "related": [
+    "mem0"
+  ],
+  "sources": [
+    "https://github.com/supermemoryai/supermemory",
+    "https://supermemory.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Supermemory"
+}

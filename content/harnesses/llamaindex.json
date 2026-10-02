@@ -1,0 +1,24 @@
+{
+  "id": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "harnesses",
+  "summary": "Document-processing platform for AI (open-source LlamaIndex library plus hosted LlamaParse APIs that turn PDFs, scans and Office files into markdown or JSON).",
+  "url": "https://developers.llamaindex.ai",
+  "repo": "https://github.com/run-llama/llama_index",
+  "tags": [
+    "framework",
+    "python",
+    "rag",
+    "document-parsing"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "sources": [
+    "https://github.com/run-llama/llama_index",
+    "https://developers.llamaindex.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LlamaIndex"
+}

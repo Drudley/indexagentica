@@ -1,0 +1,19 @@
+{
+  "id": "kiro",
+  "name": "Kiro",
+  "category": "harnesses",
+  "summary": "Agentic engineering environment that turns prompts into executable specs and builds across large codebases with parallel agents.",
+  "url": "https://kiro.dev",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "spec-driven"
+  ],
+  "status": "active",
+  "sources": [
+    "https://kiro.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mcp-so",
+  "name": "MCP.so",
+  "category": "directories",
+  "summary": "MCP marketplace for discovering MCP servers and clients.",
+  "url": "https://mcp.so",
+  "tags": [
+    "mcp",
+    "directory",
+    "marketplace"
+  ],
+  "status": "active",
+  "related": [
+    "official-mcp-registry"
+  ],
+  "sources": [
+    "https://mcp.so"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

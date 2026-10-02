@@ -1,0 +1,30 @@
+{
+  "id": "cloudflare-mcp",
+  "name": "Cloudflare MCP Servers",
+  "category": "mcp-servers",
+  "summary": "Cloudflare's own remote MCP servers for managing and querying Cloudflare services from MCP clients.",
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+  "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "tags": [
+    "mcp",
+    "cloudflare",
+    "infrastructure"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.cloudflare.com/mcp",
+    "auth": "oauth"
+  },
+  "related": [
+    "cloudflare-agents"
+  ],
+  "sources": [
+    "https://github.com/cloudflare/mcp-server-cloudflare",
+    "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cloudflare"
+}

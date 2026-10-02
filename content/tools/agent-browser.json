@@ -1,0 +1,30 @@
+{
+  "id": "agent-browser",
+  "name": "agent-browser",
+  "category": "tools",
+  "summary": "Vercel Labs' browser automation CLI built for AI agents.",
+  "description": "Its companion skill is among the most-installed on skills.sh.",
+  "url": "https://agent-browser.dev",
+  "repo": "https://github.com/vercel-labs/agent-browser",
+  "tags": [
+    "browser-automation",
+    "cli",
+    "agent-skills"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "playwright-cli"
+  ],
+  "sources": [
+    "https://github.com/vercel-labs/agent-browser",
+    "https://agent-browser.dev",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

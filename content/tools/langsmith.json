@@ -1,0 +1,32 @@
+{
+  "id": "langsmith",
+  "name": "LangSmith",
+  "category": "tools",
+  "summary": "LangChain's agent and LLM observability and evaluation platform: tracing, monitoring, cost and latency tracking.",
+  "url": "https://www.langchain.com/langsmith",
+  "repo": "https://github.com/langchain-ai/langsmith-sdk",
+  "docs": "https://docs.langchain.com/langsmith/observability",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.langchain.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "langgraph",
+    "langfuse"
+  ],
+  "sources": [
+    "https://www.langchain.com/langsmith",
+    "https://docs.langchain.com/langsmith/observability",
+    "https://github.com/langchain-ai/langsmith-sdk"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

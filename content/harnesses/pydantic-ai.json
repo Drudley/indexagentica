@@ -1,0 +1,27 @@
+{
+  "id": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "harnesses",
+  "summary": "Typed Python agent framework from the Pydantic team covering agents, realtime voice, image generation and embeddings across many models.",
+  "url": "https://pydantic.dev/docs/ai/overview/",
+  "repo": "https://github.com/pydantic/pydantic-ai",
+  "tags": [
+    "framework",
+    "python",
+    "type-safety"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://pydantic.dev/docs/ai/llms.txt"
+  },
+  "sources": [
+    "https://github.com/pydantic/pydantic-ai",
+    "https://pydantic.dev/docs/ai/overview/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pydantic"
+}

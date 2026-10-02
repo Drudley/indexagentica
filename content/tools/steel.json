@@ -1,0 +1,32 @@
+{
+  "id": "steel",
+  "name": "Steel",
+  "category": "tools",
+  "summary": "Open-source browser API and sandbox for AI agents, with managed cloud browsers offering stealth, proxies, CAPTCHA solving and session replays.",
+  "url": "https://steel.dev",
+  "repo": "https://github.com/steel-dev/steel-browser",
+  "docs": "https://docs.steel.dev",
+  "tags": [
+    "browser-automation",
+    "headless-browser",
+    "cloud"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.steel.dev/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "browserbase",
+    "hyperbrowser"
+  ],
+  "sources": [
+    "https://github.com/steel-dev/steel-browser",
+    "https://docs.steel.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Steel"
+}

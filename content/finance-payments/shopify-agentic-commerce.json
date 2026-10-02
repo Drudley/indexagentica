@@ -1,0 +1,26 @@
+{
+  "id": "shopify-agentic-commerce",
+  "name": "Shopify Agentic Commerce",
+  "category": "finance-payments",
+  "summary": "Shopify developer platform for AI agents that authenticate with Shopify, search the Catalog, build carts and checkouts, and monitor orders via UCP.",
+  "description": "Shopify's older Storefront MCP catalog and cart tools were removed; its docs include a migration guide.",
+  "url": "https://shopify.dev/docs/agents",
+  "tags": [
+    "agent-commerce",
+    "checkout",
+    "shopify",
+    "ucp"
+  ],
+  "status": "active",
+  "related": [
+    "universal-commerce-protocol"
+  ],
+  "sources": [
+    "https://shopify.dev/docs/agents",
+    "https://shopify.dev/docs/apps/build/storefront-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Shopify"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "mcp-authorization",
+  "name": "MCP Authorization (OAuth 2.1 for MCP)",
+  "category": "protocols",
+  "summary": "The MCP specification's transport-level authorization flow for HTTP-based MCP servers, based on a subset of OAuth 2.1 and related RFCs.",
+  "description": "Authorization is optional; HTTP-based implementations SHOULD conform, STDIO implementations SHOULD instead read credentials from the environment. Builds on OAuth 2.1 (IETF draft), RFC 6750 bearer tokens, RFC 8414 authorization server metadata and related specs.",
+  "url": "https://modelcontextprotocol.io/specification/latest/basic/authorization",
+  "tags": [
+    "auth",
+    "oauth",
+    "mcp",
+    "identity",
+    "open-standard"
+  ],
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://modelcontextprotocol.io/llms.txt"
+  },
+  "related": [
+    "model-context-protocol",
+    "auth0-for-ai-agents",
+    "workos-authkit-mcp",
+    "stytch-connected-apps"
+  ],
+  "sources": [
+    "https://modelcontextprotocol.io/specification/latest/basic/authorization"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MCP project"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "circle-cctp",
+  "name": "Circle CCTP",
+  "category": "finance-payments",
+  "summary": "Cross-Chain Transfer Protocol: permissionless cross-chain transfers of USDC, EURC and registered third-party tokens.",
+  "description": "CCTP V2 natively transfers USDC and EURC via burn-and-mint; Circle's docs recommend V2 except on chains that still require V1.",
+  "url": "https://developers.circle.com/cctp",
+  "tags": [
+    "stablecoin",
+    "cross-chain",
+    "usdc",
+    "bridging"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt"
+  },
+  "related": [
+    "usdc"
+  ],
+  "sources": [
+    "https://developers.circle.com/cctp",
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

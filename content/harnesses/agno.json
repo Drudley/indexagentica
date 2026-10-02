@@ -1,0 +1,28 @@
+{
+  "id": "agno",
+  "name": "Agno",
+  "category": "harnesses",
+  "summary": "Framework and runtime to build, run and manage agent platforms (Python SDK plus runtime).",
+  "url": "https://docs.agno.com",
+  "repo": "https://github.com/agno-agi/agno",
+  "tags": [
+    "framework",
+    "python",
+    "runtime",
+    "multi-agent"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.agno.com/llms.txt"
+  },
+  "sources": [
+    "https://github.com/agno-agi/agno",
+    "https://docs.agno.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Agno"
+}

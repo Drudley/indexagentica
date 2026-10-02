@@ -1,0 +1,27 @@
+{
+  "id": "tempo",
+  "name": "Tempo",
+  "category": "finance-payments",
+  "summary": "Payments-first Layer 1 blockchain incubated by Stripe and Paradigm, purpose-built for stablecoin payments at scale; co-developer of MPP.",
+  "url": "https://tempo.xyz",
+  "docs": "https://tempo.xyz/developers",
+  "tags": [
+    "blockchain",
+    "stablecoin",
+    "payments",
+    "settlement"
+  ],
+  "status": "active",
+  "related": [
+    "machine-payments-protocol"
+  ],
+  "sources": [
+    "https://tempo.xyz",
+    "https://tempo.xyz/developers",
+    "https://mpp.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Tempo"
+}

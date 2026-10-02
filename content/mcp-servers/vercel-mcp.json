@@ -1,0 +1,24 @@
+{
+  "id": "vercel-mcp",
+  "name": "Vercel MCP",
+  "category": "mcp-servers",
+  "summary": "Vercel's remote MCP server with tools for searching docs, managing teams, projects and deployments, and querying Web Analytics.",
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "tags": [
+    "mcp",
+    "deployment",
+    "hosting"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.vercel.com",
+    "auth": "oauth"
+  },
+  "sources": [
+    "https://vercel.com/docs/agent-resources/vercel-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

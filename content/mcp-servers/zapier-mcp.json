@@ -1,0 +1,23 @@
+{
+  "id": "zapier-mcp",
+  "name": "Zapier MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server connecting MCP clients to 9,000+ app integrations with OAuth handling and dynamic tool discovery.",
+  "url": "https://zapier.com/mcp",
+  "repo": "https://github.com/zapier/zapier-mcp",
+  "docs": "https://docs.zapier.com/mcp/home",
+  "tags": [
+    "mcp",
+    "integrations",
+    "automation"
+  ],
+  "status": "active",
+  "sources": [
+    "https://docs.zapier.com/mcp/home",
+    "https://github.com/zapier/zapier-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zapier"
+}

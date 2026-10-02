@@ -1,0 +1,26 @@
+{
+  "id": "webmcp",
+  "name": "WebMCP",
+  "category": "protocols",
+  "summary": "Proposed web API letting sites expose JavaScript functions or HTML forms as tools with natural-language descriptions and schemas for in-browser AI agents.",
+  "description": "Tools can be invoked by agents built into the browser, hosted in iframes, or running in extensions. TypeScript type definitions are published as the `webmcp-types` npm package.",
+  "url": "https://webmachinelearning.github.io/webmcp/",
+  "repo": "https://github.com/webmachinelearning/webmcp",
+  "tags": [
+    "browser",
+    "web-standard",
+    "tool-use",
+    "mcp"
+  ],
+  "status": "beta",
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/webmachinelearning/webmcp",
+    "https://webmachinelearning.github.io/webmcp/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

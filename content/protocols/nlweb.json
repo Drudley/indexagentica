@@ -1,0 +1,28 @@
+{
+  "id": "nlweb",
+  "name": "NLWeb",
+  "category": "protocols",
+  "summary": "Open protocols and reference implementation for natural-language interfaces to websites, using Schema.org/RSS and natively supporting MCP.",
+  "description": "Originally published by Microsoft (microsoft/NLWeb, now redirecting to nlweb-ai/NLWeb).",
+  "url": "https://github.com/nlweb-ai/NLWeb",
+  "repo": "https://github.com/nlweb-ai/NLWeb",
+  "tags": [
+    "web-standard",
+    "schema-org",
+    "mcp",
+    "natural-language"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "llms-txt"
+  ],
+  "sources": [
+    "https://github.com/nlweb-ai/NLWeb"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "circle-gateway",
+  "name": "Circle Gateway (Nanopayments)",
+  "category": "finance-payments",
+  "summary": "Unified USDC balance across chains with instant cross-chain minting; Gateway Nanopayments enable gasless sub-cent USDC micropayments via x402.",
+  "description": "Per Circle's docs: deposit USDC to non-custodial Gateway Wallet contracts and mint on any supported destination chain in under 500 ms with one API call; permissionless with no sign-up. Nanopayments go down to $0.000001 using x402 and batched settlement.",
+  "url": "https://developers.circle.com/gateway",
+  "tags": [
+    "stablecoin",
+    "usdc",
+    "micropayments",
+    "x402",
+    "cross-chain"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt"
+  },
+  "related": [
+    "circle-agent-stack",
+    "x402",
+    "usdc"
+  ],
+  "sources": [
+    "https://developers.circle.com/gateway.md",
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

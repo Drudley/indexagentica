@@ -1,0 +1,25 @@
+{
+  "id": "mcpservers-org",
+  "name": "mcpservers.org (Awesome MCP Servers)",
+  "category": "directories",
+  "summary": "Curated directory of 9,800+ official and community MCP servers with setup guides, backed by the wong2/awesome-mcp-servers list.",
+  "url": "https://mcpservers.org",
+  "repo": "https://github.com/wong2/awesome-mcp-servers",
+  "tags": [
+    "mcp",
+    "directory",
+    "awesome-list"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "related": [
+    "awesome-mcp-servers"
+  ],
+  "sources": [
+    "https://mcpservers.org",
+    "https://github.com/wong2/awesome-mcp-servers"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

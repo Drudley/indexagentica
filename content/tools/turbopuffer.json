@@ -1,0 +1,26 @@
+{
+  "id": "turbopuffer",
+  "name": "turbopuffer",
+  "category": "tools",
+  "summary": "Vector and full-text search engine built from first principles on object storage, aimed at low cost and high scale.",
+  "url": "https://turbopuffer.com",
+  "docs": "https://turbopuffer.com/docs",
+  "tags": [
+    "vector-database",
+    "full-text-search",
+    "object-storage"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://turbopuffer.com/llms.txt",
+    "auth": "api-key"
+  },
+  "sources": [
+    "https://turbopuffer.com",
+    "https://turbopuffer.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "turbopuffer"
+}

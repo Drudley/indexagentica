@@ -1,0 +1,24 @@
+{
+  "id": "linear-mcp",
+  "name": "Linear MCP Server",
+  "category": "mcp-servers",
+  "summary": "Linear's hosted remote MCP server for accessing your Linear workspace from MCP clients.",
+  "url": "https://linear.app/docs/mcp",
+  "tags": [
+    "mcp",
+    "issue-tracking",
+    "project-management"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.linear.app/mcp",
+    "auth": "oauth"
+  },
+  "sources": [
+    "https://linear.app/docs/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Linear"
+}

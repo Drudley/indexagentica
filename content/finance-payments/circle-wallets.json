@@ -1,0 +1,30 @@
+{
+  "id": "circle-wallets",
+  "name": "Circle Wallets",
+  "category": "finance-payments",
+  "summary": "APIs and SDKs for developer-controlled, user-controlled and modular (smart contract) wallets across multiple blockchains.",
+  "url": "https://developers.circle.com/wallets",
+  "tags": [
+    "wallet",
+    "stablecoin",
+    "custody",
+    "smart-accounts"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "circle-agent-stack",
+    "usdc"
+  ],
+  "sources": [
+    "https://developers.circle.com/wallets",
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

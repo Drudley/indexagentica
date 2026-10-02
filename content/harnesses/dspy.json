@@ -1,0 +1,24 @@
+{
+  "id": "dspy",
+  "name": "DSPy",
+  "category": "harnesses",
+  "summary": "Stanford NLP framework for programming, not prompting, language models.",
+  "url": "https://dspy.ai",
+  "repo": "https://github.com/stanfordnlp/dspy",
+  "tags": [
+    "framework",
+    "python",
+    "prompt-optimization"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/stanfordnlp/dspy",
+    "https://dspy.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stanford NLP"
+}

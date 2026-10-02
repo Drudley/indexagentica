@@ -1,0 +1,22 @@
+{
+  "id": "pgvector",
+  "name": "pgvector",
+  "category": "tools",
+  "summary": "Open-source vector similarity search extension for Postgres.",
+  "url": "https://github.com/pgvector/pgvector",
+  "repo": "https://github.com/pgvector/pgvector",
+  "tags": [
+    "vector-database",
+    "postgres",
+    "retrieval",
+    "open-source"
+  ],
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/pgvector/pgvector"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

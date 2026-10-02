@@ -1,0 +1,24 @@
+{
+  "id": "humanitys-last-exam",
+  "name": "Humanity's Last Exam",
+  "category": "information",
+  "summary": "Multi-modal benchmark of 2,500 expert-written questions at the frontier of human knowledge, from the Center for AI Safety and Scale AI.",
+  "url": "https://lastexam.ai",
+  "repo": "https://github.com/centerforaisafety/hle",
+  "tags": [
+    "benchmark",
+    "dataset",
+    "frontier-models",
+    "evals"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://lastexam.ai",
+    "https://github.com/centerforaisafety/hle"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

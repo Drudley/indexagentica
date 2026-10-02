@@ -1,0 +1,25 @@
+{
+  "id": "haystack",
+  "name": "Haystack",
+  "category": "harnesses",
+  "summary": "deepset's open-source orchestration framework for production-ready, context-engineered LLM applications and agents.",
+  "url": "https://haystack.deepset.ai",
+  "repo": "https://github.com/deepset-ai/haystack",
+  "tags": [
+    "framework",
+    "python",
+    "rag",
+    "orchestration"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/deepset-ai/haystack",
+    "https://haystack.deepset.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "deepset"
+}

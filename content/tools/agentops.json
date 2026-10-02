@@ -1,0 +1,28 @@
+{
+  "id": "agentops",
+  "name": "AgentOps",
+  "category": "tools",
+  "summary": "Python SDK and platform for AI agent monitoring, LLM cost tracking, benchmarking, testing and debugging.",
+  "url": "https://agentops.ai",
+  "repo": "https://github.com/AgentOps-AI/agentops",
+  "docs": "https://docs.agentops.ai",
+  "tags": [
+    "observability",
+    "monitoring",
+    "agents",
+    "python"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.agentops.ai/llms.txt"
+  },
+  "sources": [
+    "https://github.com/AgentOps-AI/agentops",
+    "https://docs.agentops.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "AgentOps"
+}

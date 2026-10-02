@@ -1,0 +1,29 @@
+{
+  "id": "google-agents-cli",
+  "name": "Google Agents CLI",
+  "category": "skills",
+  "summary": "CLI and skills that turn any coding assistant into an expert at creating, evaluating and deploying AI agents on Google Cloud.",
+  "url": "https://google.github.io/agents-cli/",
+  "repo": "https://github.com/google/agents-cli",
+  "tags": [
+    "agent-skills",
+    "cli",
+    "google-cloud",
+    "adk"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "google-adk",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/google/agents-cli",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

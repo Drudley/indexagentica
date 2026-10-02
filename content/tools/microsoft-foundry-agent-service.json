@@ -1,0 +1,24 @@
+{
+  "id": "microsoft-foundry-agent-service",
+  "name": "Microsoft Foundry Agent Service",
+  "category": "tools",
+  "summary": "Azure service for building and running AI agents with managed tools and runtime features in Microsoft Foundry.",
+  "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+  "tags": [
+    "hosting",
+    "agent-runtime",
+    "azure",
+    "enterprise"
+  ],
+  "status": "active",
+  "related": [
+    "microsoft-agent-framework"
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/azure/foundry/agents/overview"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

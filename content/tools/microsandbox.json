@@ -1,0 +1,27 @@
+{
+  "id": "microsandbox",
+  "name": "microsandbox",
+  "category": "tools",
+  "summary": "Easy, fast, programmable, local-first microVM runtime for untrusted workloads.",
+  "url": "https://docs.microsandbox.dev",
+  "repo": "https://github.com/superradcompany/microsandbox",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "self-hosted",
+    "code-execution"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "e2b"
+  ],
+  "sources": [
+    "https://github.com/superradcompany/microsandbox",
+    "https://docs.microsandbox.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

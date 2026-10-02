@@ -1,0 +1,26 @@
+{
+  "id": "blaxel",
+  "name": "Blaxel",
+  "category": "tools",
+  "summary": "Infrastructure for autonomous agents: fast-resuming microVM sandboxes, agent hosting, MCP server hosting, batch jobs and a model gateway.",
+  "url": "https://blaxel.ai",
+  "docs": "https://docs.blaxel.ai",
+  "tags": [
+    "sandbox",
+    "hosting",
+    "microvm",
+    "mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.blaxel.ai/llms.txt"
+  },
+  "sources": [
+    "https://blaxel.ai",
+    "https://docs.blaxel.ai/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Blaxel"
+}

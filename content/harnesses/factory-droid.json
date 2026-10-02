@@ -1,0 +1,22 @@
+{
+  "id": "factory-droid",
+  "name": "Factory Droids",
+  "category": "harnesses",
+  "summary": "Factory's AI coding agents (Droids) that automate coding, testing and deployment.",
+  "url": "https://factory.ai",
+  "docs": "https://docs.factory.com/",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "enterprise"
+  ],
+  "status": "active",
+  "sources": [
+    "https://factory.ai",
+    "https://docs.factory.com/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Factory"
+}

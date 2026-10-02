@@ -1,0 +1,25 @@
+{
+  "id": "arxiv-cs-ai",
+  "name": "arXiv cs.AI (Artificial Intelligence)",
+  "category": "information",
+  "summary": "arXiv's listing of the latest preprints in Artificial Intelligence, a primary source for new agent research.",
+  "url": "https://arxiv.org/list/cs.AI/recent",
+  "tags": [
+    "research",
+    "papers",
+    "preprints"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "hf-daily-papers",
+    "arxiv-api"
+  ],
+  "sources": [
+    "https://arxiv.org/list/cs.AI/recent"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "arXiv (Cornell)"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "wandb-weave",
+  "name": "W&B Weave",
+  "category": "tools",
+  "summary": "Weights & Biases toolkit for tracking, testing and improving LLM-powered applications.",
+  "url": "https://wandb.ai/site/weave/",
+  "repo": "https://github.com/wandb/weave",
+  "docs": "https://docs.coreweave.com/products/wandb/weave",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "sources": [
+    "https://github.com/wandb/weave",
+    "https://docs.coreweave.com/products/wandb/weave"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Weights & Biases (CoreWeave)"
+}

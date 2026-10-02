@@ -1,0 +1,22 @@
+{
+  "id": "metamask-smart-accounts-kit",
+  "name": "MetaMask Smart Accounts Kit",
+  "category": "finance-payments",
+  "summary": "MetaMask toolkit for smart contract accounts built on the open-source Delegation Framework contracts, supporting delegated execution on an account's behalf.",
+  "url": "https://docs.metamask.io/smart-accounts-kit/",
+  "repo": "https://github.com/MetaMask/delegation-framework",
+  "tags": [
+    "wallet",
+    "smart-accounts",
+    "delegation"
+  ],
+  "status": "active",
+  "sources": [
+    "https://docs.metamask.io/smart-accounts-kit/",
+    "https://github.com/MetaMask/delegation-framework"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MetaMask (Consensys)"
+}

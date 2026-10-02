@@ -1,0 +1,24 @@
+{
+  "id": "stytch-connected-apps",
+  "name": "Stytch Connected Apps (MCP auth)",
+  "category": "tools",
+  "summary": "Stytch Connected Apps: authorization for remote MCP servers and connected agent integrations.",
+  "url": "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview",
+  "tags": [
+    "identity",
+    "auth",
+    "oauth",
+    "mcp"
+  ],
+  "status": "active",
+  "related": [
+    "mcp-authorization"
+  ],
+  "sources": [
+    "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stytch"
+}

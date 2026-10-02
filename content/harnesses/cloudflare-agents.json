@@ -1,0 +1,33 @@
+{
+  "id": "cloudflare-agents",
+  "name": "Cloudflare Agents SDK",
+  "category": "harnesses",
+  "summary": "SDK for stateful AI agents on Cloudflare with persistent state, real-time WebSockets, scheduled tasks and remote MCP servers.",
+  "url": "https://developers.cloudflare.com/agents/",
+  "repo": "https://github.com/cloudflare/agents",
+  "tags": [
+    "framework",
+    "typescript",
+    "hosting",
+    "edge",
+    "mcp"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.cloudflare.com/agents/llms.txt"
+  },
+  "related": [
+    "model-context-protocol",
+    "cloudflare-sandbox"
+  ],
+  "sources": [
+    "https://github.com/cloudflare/agents",
+    "https://developers.cloudflare.com/agents/",
+    "https://developers.cloudflare.com/agents/model-context-protocol/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cloudflare"
+}

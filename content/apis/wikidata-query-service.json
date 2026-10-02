@@ -1,0 +1,30 @@
+{
+  "id": "wikidata-query-service",
+  "name": "Wikidata Query Service",
+  "category": "apis",
+  "summary": "SPARQL endpoint for querying Wikidata's structured knowledge graph.",
+  "url": "https://query.wikidata.org/",
+  "docs": "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service",
+  "tags": [
+    "knowledge-graph",
+    "sparql",
+    "open-data"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "GET https://query.wikidata.org/sparql?query=...&format=json"
+  },
+  "related": [
+    "mediawiki-action-api"
+  ],
+  "sources": [
+    "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service",
+    "https://query.wikidata.org/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Wikimedia Foundation"
+}

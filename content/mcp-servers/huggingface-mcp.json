@@ -1,0 +1,31 @@
+{
+  "id": "huggingface-mcp",
+  "name": "Hugging Face MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Hugging Face MCP server connecting agents to Hugging Face Hub tools and Spaces.",
+  "url": "https://huggingface.co/mcp",
+  "repo": "https://github.com/huggingface/hf-mcp-server",
+  "docs": "https://huggingface.co/docs/hub/agents-mcp",
+  "tags": [
+    "mcp",
+    "hugging-face",
+    "models",
+    "datasets"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://huggingface.co/mcp"
+  },
+  "related": [
+    "huggingface-skills"
+  ],
+  "sources": [
+    "https://github.com/huggingface/hf-mcp-server",
+    "https://huggingface.co/docs/hub/agents-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hugging Face"
+}

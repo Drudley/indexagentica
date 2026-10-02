@@ -1,0 +1,30 @@
+{
+  "id": "arxiv-api",
+  "name": "arXiv API",
+  "category": "apis",
+  "summary": "Programmatic search and metadata access to arXiv preprints via an Atom-based query interface.",
+  "url": "https://info.arxiv.org/help/api/index.html",
+  "tags": [
+    "research",
+    "papers",
+    "preprints"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Example: https://export.arxiv.org/api/query?search_query=all:agent&max_results=1"
+  },
+  "related": [
+    "arxiv-cs-ai",
+    "openalex-api"
+  ],
+  "sources": [
+    "https://info.arxiv.org/help/api/index.html",
+    "https://export.arxiv.org/api/query?search_query=all:agent&max_results=1"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "arXiv (Cornell)"
+}

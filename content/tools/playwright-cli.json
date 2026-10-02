@@ -1,0 +1,28 @@
+{
+  "id": "playwright-cli",
+  "name": "Playwright CLI",
+  "category": "tools",
+  "summary": "CLI for common Playwright actions (record, inspect selectors, screenshots), recommended with skills as a token-efficient alternative to Playwright MCP for coding agents.",
+  "url": "https://github.com/microsoft/playwright-cli",
+  "repo": "https://github.com/microsoft/playwright-cli",
+  "tags": [
+    "browser-automation",
+    "cli",
+    "agent-skills"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "playwright-mcp",
+    "playwright"
+  ],
+  "sources": [
+    "https://github.com/microsoft/playwright-cli",
+    "https://github.com/microsoft/playwright-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

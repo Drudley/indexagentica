@@ -1,0 +1,31 @@
+{
+  "id": "weaviate",
+  "name": "Weaviate",
+  "category": "tools",
+  "summary": "Open-source vector database (written in Go) that stores both objects and vectors.",
+  "url": "https://weaviate.io",
+  "repo": "https://github.com/weaviate/weaviate",
+  "docs": "https://docs.weaviate.io",
+  "tags": [
+    "vector-database",
+    "memory",
+    "retrieval",
+    "open-source"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://weaviate.io/llms.txt"
+  },
+  "related": [
+    "pinecone",
+    "qdrant"
+  ],
+  "sources": [
+    "https://github.com/weaviate/weaviate",
+    "https://weaviate.io/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Weaviate"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "visa-trusted-agent-protocol",
+  "name": "Visa Trusted Agent Protocol",
+  "category": "finance-payments",
+  "summary": "Signature-based framework (Oct 2025) letting merchants verify trusted commerce agents, distinguish them from malicious bots and receive consumer and payment context.",
+  "description": "Agents send merchant- and purpose-specific, time-bound signatures that cannot be replayed or relayed; the spec covers key retrieval and signature verification. Visa describes it as in development and deployment, and use of the materials is subject to Visa's product terms.",
+  "url": "https://developer.visa.com/capabilities/trusted-agent-protocol",
+  "repo": "https://github.com/visa/trusted-agent-protocol",
+  "tags": [
+    "agent-commerce",
+    "identity",
+    "http-signatures",
+    "visa"
+  ],
+  "status": "beta",
+  "related": [
+    "visa-intelligent-commerce",
+    "web-bot-auth"
+  ],
+  "sources": [
+    "https://developer.visa.com/capabilities/trusted-agent-protocol",
+    "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.21716.html",
+    "https://github.com/visa/trusted-agent-protocol"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Visa"
+}

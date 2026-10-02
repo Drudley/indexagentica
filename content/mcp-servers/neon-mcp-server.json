@@ -1,0 +1,30 @@
+{
+  "id": "neon-mcp-server",
+  "name": "Neon MCP Server",
+  "category": "mcp-servers",
+  "summary": "Lets AI assistants manage Neon serverless Postgres projects and databases through the Neon Management API.",
+  "url": "https://neon.com/docs/ai/neon-mcp-server",
+  "repo": "https://github.com/neondatabase/mcp-server-neon",
+  "tags": [
+    "mcp",
+    "postgres",
+    "database"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.neon.tech/mcp",
+    "auth": "oauth"
+  },
+  "related": [
+    "neon-agent-skills"
+  ],
+  "sources": [
+    "https://github.com/neondatabase/mcp-server-neon",
+    "https://neon.com/docs/ai/neon-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Neon"
+}

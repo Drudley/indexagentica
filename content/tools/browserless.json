@@ -1,0 +1,25 @@
+{
+  "id": "browserless",
+  "name": "Browserless",
+  "category": "tools",
+  "summary": "Hosted or self-hosted (Docker) headless browsers for AI agents, reachable over MCP, Puppeteer or Playwright.",
+  "description": "The self-hosted image is free for non-commercial use per the repo description.",
+  "url": "https://www.browserless.io",
+  "repo": "https://github.com/browserless/browserless",
+  "docs": "https://docs.browserless.io",
+  "tags": [
+    "browser-automation",
+    "headless-browser",
+    "docker",
+    "mcp"
+  ],
+  "status": "active",
+  "sources": [
+    "https://www.browserless.io",
+    "https://github.com/browserless/browserless"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browserless"
+}

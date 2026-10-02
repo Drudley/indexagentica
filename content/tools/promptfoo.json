@@ -1,0 +1,28 @@
+{
+  "id": "promptfoo",
+  "name": "Promptfoo",
+  "category": "tools",
+  "summary": "Open-source tool to test and red-team prompts, agents and RAG: automated evals, vulnerability scanning and model comparison.",
+  "url": "https://www.promptfoo.dev",
+  "repo": "https://github.com/promptfoo/promptfoo",
+  "docs": "https://www.promptfoo.dev/docs/intro/",
+  "tags": [
+    "evals",
+    "red-teaming",
+    "security",
+    "cli"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.promptfoo.dev/llms.txt"
+  },
+  "sources": [
+    "https://github.com/promptfoo/promptfoo",
+    "https://www.promptfoo.dev/docs/intro/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Promptfoo"
+}

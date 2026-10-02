@@ -1,0 +1,28 @@
+{
+  "id": "inspect-ai",
+  "name": "Inspect",
+  "category": "tools",
+  "summary": "Open-source framework for large language model and agent evaluations from the UK AI Security Institute.",
+  "url": "https://inspect.aisi.org.uk/",
+  "repo": "https://github.com/UKGovernmentBEIS/inspect_ai",
+  "tags": [
+    "evals",
+    "benchmarking",
+    "python",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://inspect.aisi.org.uk/llms.txt"
+  },
+  "sources": [
+    "https://github.com/UKGovernmentBEIS/inspect_ai",
+    "https://inspect.aisi.org.uk/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "UK AI Security Institute"
+}

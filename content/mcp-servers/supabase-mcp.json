@@ -1,0 +1,31 @@
+{
+  "id": "supabase-mcp",
+  "name": "Supabase MCP Server",
+  "category": "mcp-servers",
+  "summary": "Connects AI assistants to your Supabase projects over MCP (hosted with OAuth 2.1, or locally via the Supabase CLI).",
+  "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+  "repo": "https://github.com/supabase/mcp",
+  "tags": [
+    "mcp",
+    "postgres",
+    "database",
+    "supabase"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.supabase.com/mcp",
+    "auth": "oauth"
+  },
+  "related": [
+    "supabase-agent-skills"
+  ],
+  "sources": [
+    "https://github.com/supabase/mcp",
+    "https://supabase.com/docs/guides/ai-tools/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Supabase"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "circle-agent-stack",
+  "name": "Circle Agent Stack",
+  "category": "finance-payments",
+  "summary": "Circle's agent-native tooling (Circle CLI, agent wallets, nanopayments) for agents to hold and move USDC, pay for x402 services and stay within compliance guardrails.",
+  "url": "https://developers.circle.com/agent-stack",
+  "tags": [
+    "wallet",
+    "stablecoin",
+    "usdc",
+    "x402"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.circle.com/llms.txt",
+    "mcp_endpoint": "https://api.circle.com/v1/codegen/mcp"
+  },
+  "related": [
+    "usdc",
+    "circle-gateway",
+    "circle-skills",
+    "x402"
+  ],
+  "sources": [
+    "https://developers.circle.com/agent-stack.md",
+    "https://developers.circle.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Circle"
+}

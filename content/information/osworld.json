@@ -1,0 +1,26 @@
+{
+  "id": "osworld",
+  "name": "OSWorld",
+  "category": "information",
+  "summary": "NeurIPS 2024 benchmark of multimodal agents on open-ended tasks in real computer environments.",
+  "url": "https://github.com/xlang-ai/OSWorld",
+  "repo": "https://github.com/xlang-ai/OSWorld",
+  "tags": [
+    "benchmark",
+    "computer-use",
+    "multimodal",
+    "evals"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "webarena"
+  ],
+  "sources": [
+    "https://github.com/xlang-ai/OSWorld"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-mcp-servers",
+  "name": "Microsoft MCP Servers",
+  "category": "mcp-servers",
+  "summary": "Catalog of official Microsoft MCP server implementations (Azure and other Microsoft products).",
+  "description": "The standalone Azure/azure-mcp repo is archived; Azure MCP now lives in this catalog.",
+  "url": "https://github.com/microsoft/mcp",
+  "repo": "https://github.com/microsoft/mcp",
+  "tags": [
+    "mcp",
+    "azure",
+    "microsoft"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "microsoft-learn-mcp",
+    "azure-skills"
+  ],
+  "sources": [
+    "https://github.com/microsoft/mcp",
+    "https://github.com/Azure/azure-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

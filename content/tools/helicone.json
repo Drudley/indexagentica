@@ -1,0 +1,28 @@
+{
+  "id": "helicone",
+  "name": "Helicone",
+  "category": "tools",
+  "summary": "Open-source AI gateway and LLM observability platform for routing, monitoring, evaluating and experimenting.",
+  "url": "https://www.helicone.ai",
+  "repo": "https://github.com/Helicone/helicone",
+  "docs": "https://docs.helicone.ai",
+  "tags": [
+    "observability",
+    "llm-gateway",
+    "monitoring",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.helicone.ai/llms.txt"
+  },
+  "sources": [
+    "https://github.com/Helicone/helicone",
+    "https://www.helicone.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Helicone"
+}

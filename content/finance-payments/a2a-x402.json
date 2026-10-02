@@ -1,0 +1,29 @@
+{
+  "id": "a2a-x402",
+  "name": "A2A x402 Extension",
+  "category": "finance-payments",
+  "summary": "Extension bringing x402 crypto payments to the Agent2Agent (A2A) protocol so agents can monetize services with on-chain payments.",
+  "url": "https://github.com/google-agentic-commerce/a2a-x402",
+  "repo": "https://github.com/google-agentic-commerce/a2a-x402",
+  "tags": [
+    "x402",
+    "a2a",
+    "payments",
+    "extension",
+    "agent-commerce"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "a2a-protocol",
+    "x402",
+    "agent-payments-protocol"
+  ],
+  "sources": [
+    "https://github.com/google-agentic-commerce/a2a-x402"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

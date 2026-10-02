@@ -1,0 +1,29 @@
+{
+  "id": "paypal-agent-toolkit",
+  "name": "PayPal Agent Toolkit and MCP Server",
+  "category": "finance-payments",
+  "summary": "PayPal toolkit (TypeScript) exposing PayPal APIs such as invoicing to OpenAI Agents SDK, LangChain, Vercel AI SDK and MCP, plus a hosted remote MCP server.",
+  "url": "https://github.com/paypal/agent-toolkit",
+  "repo": "https://github.com/paypal/agent-toolkit",
+  "docs": "https://developer.paypal.com/ai-tools/mcp-server",
+  "tags": [
+    "payments",
+    "paypal",
+    "mcp",
+    "invoicing",
+    "agent-commerce"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "notes": "PayPal docs list remote MCP endpoints https://mcp.paypal.com/http and /sse (sandbox: mcp.sandbox.paypal.com); an unauthenticated probe of /http returned 404 on 2026-10-02."
+  },
+  "sources": [
+    "https://github.com/paypal/agent-toolkit",
+    "https://developer.paypal.com/ai-tools/mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "PayPal"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "coinbase-cdp-wallets",
+  "name": "Coinbase CDP Non-Custodial Wallets",
+  "category": "finance-payments",
+  "summary": "Coinbase Developer Platform wallets for users (social login, no seed phrases) and for systems and agents (API key, keys held in a TEE).",
+  "url": "https://docs.cdp.coinbase.com/wallets/non-custodial-wallets/overview",
+  "repo": "https://github.com/coinbase/cdp-sdk",
+  "tags": [
+    "wallet",
+    "tee",
+    "evm",
+    "solana"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "coinbase-agentkit",
+    "coinbase-agentic-wallet",
+    "cdp-x402"
+  ],
+  "sources": [
+    "https://docs.cdp.coinbase.com/wallets/non-custodial-wallets/overview",
+    "https://github.com/coinbase/cdp-sdk"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

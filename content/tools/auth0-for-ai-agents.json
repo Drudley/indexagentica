@@ -1,0 +1,28 @@
+{
+  "id": "auth0-for-ai-agents",
+  "name": "Auth0 for AI Agents",
+  "category": "tools",
+  "summary": "Auth0's identity toolkit for AI agents: user authentication, delegated authorization, human-in-the-loop (CIBA) and fine-grained authorization for RAG.",
+  "url": "https://auth0.com/solutions/ship-ai-agents",
+  "repo": "https://github.com/auth0/auth0-ai-js",
+  "docs": "https://auth0.com/ai/docs/overview",
+  "tags": [
+    "identity",
+    "auth",
+    "oauth",
+    "agents"
+  ],
+  "status": "active",
+  "related": [
+    "mcp-authorization"
+  ],
+  "sources": [
+    "https://auth0.com/ai/docs/overview",
+    "https://auth0.com/solutions/ship-ai-agents",
+    "https://github.com/auth0/auth0-ai-js"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Auth0 (Okta)"
+}

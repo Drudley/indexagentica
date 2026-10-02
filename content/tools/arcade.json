@@ -1,0 +1,32 @@
+{
+  "id": "arcade",
+  "name": "Arcade",
+  "category": "tools",
+  "summary": "Actions runtime for enterprise AI agents: agent authorization, agent-optimized tools (MCP servers) and governance, plus an open-source MCP framework.",
+  "url": "https://www.arcade.dev",
+  "repo": "https://github.com/ArcadeAI/arcade-mcp",
+  "docs": "https://docs.arcade.dev",
+  "tags": [
+    "identity",
+    "auth",
+    "tool-integration",
+    "mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.arcade.dev/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "composio"
+  ],
+  "sources": [
+    "https://www.arcade.dev",
+    "https://docs.arcade.dev",
+    "https://github.com/ArcadeAI/arcade-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Arcade"
+}

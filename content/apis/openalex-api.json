@@ -1,0 +1,34 @@
+{
+  "id": "openalex-api",
+  "name": "OpenAlex API",
+  "category": "apis",
+  "summary": "Index of half a billion scholarly works with their authors, institutions, sources and topics, available via API and bulk download.",
+  "description": "Pricing per OpenAlex docs: $1 of free API usage per day, then pay-as-you-go or annual plans; a free public snapshot bucket is also available.",
+  "url": "https://openalex.org",
+  "docs": "https://help.openalex.org/",
+  "tags": [
+    "dataset",
+    "research",
+    "papers",
+    "scholarly"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://help.openalex.org/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "semantic-scholar-api",
+    "arxiv-api"
+  ],
+  "sources": [
+    "https://openalex.org",
+    "https://help.openalex.org/llms.txt",
+    "https://api.openalex.org/works?per-page=1"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OurResearch"
+}
