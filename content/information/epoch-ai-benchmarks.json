@@ -1,0 +1,21 @@
+{
+  "id": "epoch-ai-benchmarks",
+  "name": "Epoch AI Benchmarking Hub",
+  "category": "information",
+  "summary": "Epoch AI's hub of benchmark results for leading AI models, with trends over time by benchmark and by model.",
+  "url": "https://epoch.ai/benchmarks",
+  "tags": [
+    "benchmark",
+    "ai-trends",
+    "research"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://epoch.ai/benchmarks"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Epoch AI"
+}

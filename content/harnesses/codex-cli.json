@@ -1,0 +1,28 @@
+{
+  "id": "codex-cli",
+  "name": "OpenAI Codex CLI",
+  "category": "harnesses",
+  "summary": "OpenAI's lightweight open-source coding agent that runs in your terminal.",
+  "url": "https://github.com/openai/codex",
+  "repo": "https://github.com/openai/codex",
+  "docs": "https://developers.openai.com/codex",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "openai"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "agents-md",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/openai/codex"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

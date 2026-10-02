@@ -1,0 +1,33 @@
+{
+  "id": "stagehand",
+  "name": "Stagehand",
+  "category": "tools",
+  "summary": "Browserbase's SDK for browser agents to extract data and interact with any site: Playwright-style API and self-healing selectors in TypeScript, Python and Go.",
+  "url": "https://stagehand.dev",
+  "repo": "https://github.com/browserbase/stagehand",
+  "docs": "https://docs.stagehand.dev",
+  "tags": [
+    "browser-automation",
+    "sdk",
+    "typescript",
+    "web-agents"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.stagehand.dev/llms.txt"
+  },
+  "related": [
+    "browserbase",
+    "browser-use"
+  ],
+  "sources": [
+    "https://github.com/browserbase/stagehand",
+    "https://stagehand.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browserbase"
+}

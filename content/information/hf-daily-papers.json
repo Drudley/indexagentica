@@ -1,0 +1,21 @@
+{
+  "id": "hf-daily-papers",
+  "name": "Hugging Face Daily Papers",
+  "category": "information",
+  "summary": "Daily curated feed of new AI research papers on Hugging Face.",
+  "url": "https://huggingface.co/papers",
+  "tags": [
+    "research",
+    "papers",
+    "daily-feed"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "sources": [
+    "https://huggingface.co/papers"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hugging Face"
+}

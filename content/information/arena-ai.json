@@ -1,0 +1,25 @@
+{
+  "id": "arena-ai",
+  "name": "Arena (formerly LMArena)",
+  "category": "information",
+  "summary": "Public, crowd-voted leaderboard comparing AI models on text, image and code through real-world head-to-head evaluation.",
+  "description": "lmarena.ai now redirects to arena.ai.",
+  "url": "https://arena.ai",
+  "tags": [
+    "leaderboard",
+    "llm-evaluation",
+    "human-preference"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "artificial-analysis"
+  ],
+  "sources": [
+    "https://arena.ai",
+    "https://lmarena.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

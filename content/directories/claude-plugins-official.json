@@ -1,0 +1,30 @@
+{
+  "id": "claude-plugins-official",
+  "name": "Claude Code Plugins Directory (official)",
+  "category": "directories",
+  "summary": "Anthropic-managed directory of Claude Code plugins, with internal Anthropic plugins and vetted third-party plugins.",
+  "description": "Install with `/plugin install {plugin-name}@claude-plugins-official` in Claude Code. Plugins can bundle MCP server configs, skills and commands; Anthropic advises trusting a plugin before installing.",
+  "url": "https://github.com/anthropics/claude-plugins-official",
+  "repo": "https://github.com/anthropics/claude-plugins-official",
+  "docs": "https://code.claude.com/docs/en/plugins",
+  "tags": [
+    "claude-code",
+    "plugins",
+    "marketplace"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "claude-code",
+    "anthropic-skills"
+  ],
+  "sources": [
+    "https://github.com/anthropics/claude-plugins-official",
+    "https://code.claude.com/docs/en/plugins"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pulsemcp",
+  "name": "PulseMCP",
+  "category": "directories",
+  "summary": "Site for browsing and discovering MCP servers, clients, use cases and news.",
+  "url": "https://www.pulsemcp.com",
+  "tags": [
+    "mcp",
+    "directory",
+    "news"
+  ],
+  "status": "active",
+  "sources": [
+    "https://www.pulsemcp.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

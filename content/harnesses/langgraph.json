@@ -1,0 +1,28 @@
+{
+  "id": "langgraph",
+  "name": "LangGraph",
+  "category": "harnesses",
+  "summary": "Low-level orchestration framework from LangChain for building resilient, stateful agents as graphs.",
+  "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+  "repo": "https://github.com/langchain-ai/langgraph",
+  "tags": [
+    "framework",
+    "python",
+    "orchestration",
+    "stateful-agents"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.langchain.com/llms.txt"
+  },
+  "sources": [
+    "https://github.com/langchain-ai/langgraph",
+    "https://docs.langchain.com/oss/python/langgraph/overview"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

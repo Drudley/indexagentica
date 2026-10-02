@@ -1,0 +1,28 @@
+{
+  "id": "smolagents",
+  "name": "smolagents",
+  "category": "harnesses",
+  "summary": "Hugging Face's barebones Python library for agents that think in code.",
+  "url": "https://huggingface.co/docs/smolagents",
+  "repo": "https://github.com/huggingface/smolagents",
+  "tags": [
+    "framework",
+    "python",
+    "code-agents",
+    "hugging-face"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://huggingface.co/docs/smolagents/llms.txt"
+  },
+  "sources": [
+    "https://github.com/huggingface/smolagents",
+    "https://huggingface.co/docs/smolagents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hugging Face"
+}

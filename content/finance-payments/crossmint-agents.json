@@ -1,0 +1,26 @@
+{
+  "id": "crossmint-agents",
+  "name": "Crossmint Agent Payments",
+  "category": "finance-payments",
+  "summary": "Crossmint's payment infrastructure for AI agents: scoped agent cards, agent wallets and agent checkouts across many blockchains.",
+  "url": "https://docs.crossmint.com/agents/overview",
+  "docs": "https://docs.crossmint.com",
+  "tags": [
+    "agent-wallets",
+    "agent-cards",
+    "stablecoins",
+    "checkout"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.crossmint.com/llms.txt"
+  },
+  "sources": [
+    "https://docs.crossmint.com/llms.txt",
+    "https://www.crossmint.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Crossmint"
+}

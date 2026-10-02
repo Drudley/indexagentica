@@ -1,0 +1,35 @@
+{
+  "id": "official-mcp-registry",
+  "name": "Official MCP Registry",
+  "category": "directories",
+  "summary": "Community-driven registry service from the MCP project listing published MCP servers, with a public REST API (like an app store for MCP servers).",
+  "description": "Launched in preview on 2025-09-08; the v0.1 API entered an API freeze on 2025-10-24 ahead of a GA v1. Server entries follow the `server.json` schema and list packages and remote endpoints.",
+  "url": "https://registry.modelcontextprotocol.io",
+  "repo": "https://github.com/modelcontextprotocol/registry",
+  "docs": "https://registry.modelcontextprotocol.io/docs",
+  "tags": [
+    "mcp",
+    "registry",
+    "api"
+  ],
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "auth": "none",
+    "notes": "List servers: GET https://registry.modelcontextprotocol.io/v0.1/servers?limit=N (paginated JSON)."
+  },
+  "related": [
+    "model-context-protocol",
+    "mcp-reference-servers",
+    "github-mcp-registry"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/registry",
+    "https://registry.modelcontextprotocol.io/docs",
+    "https://registry.modelcontextprotocol.io/v0.1/servers?limit=1"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MCP project"
+}

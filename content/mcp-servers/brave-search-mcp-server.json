@@ -1,0 +1,32 @@
+{
+  "id": "brave-search-mcp-server",
+  "name": "Brave Search MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official MCP server for the Brave Search API: web, local, image, video and news search plus LLM context and summarization (stdio or HTTP).",
+  "description": "Replaces the archived Brave Search server from the MCP reference repo. Published on npm as `@brave/brave-search-mcp-server`; defaults to STDIO since v2.",
+  "url": "https://github.com/brave/brave-search-mcp-server",
+  "repo": "https://github.com/brave/brave-search-mcp-server",
+  "tags": [
+    "mcp",
+    "web-search",
+    "brave"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Requires a Brave Search API key."
+  },
+  "related": [
+    "brave-search-api",
+    "mcp-reference-servers"
+  ],
+  "sources": [
+    "https://github.com/brave/brave-search-mcp-server",
+    "https://github.com/modelcontextprotocol/servers"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Brave"
+}

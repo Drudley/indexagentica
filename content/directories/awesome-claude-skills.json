@@ -1,0 +1,26 @@
+{
+  "id": "awesome-claude-skills",
+  "name": "Awesome Claude Skills (Composio)",
+  "category": "directories",
+  "summary": "Curated GitHub list of Claude Skills, resources and tools for customizing Claude workflows.",
+  "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "tags": [
+    "agent-skills",
+    "awesome-list",
+    "claude"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "anthropic-skills"
+  ],
+  "sources": [
+    "https://github.com/ComposioHQ/awesome-claude-skills"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Composio"
+}

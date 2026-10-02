@@ -1,0 +1,29 @@
+{
+  "id": "coinbase-agentkit",
+  "name": "Coinbase AgentKit",
+  "category": "finance-payments",
+  "summary": "Coinbase Developer Platform's framework- and wallet-agnostic toolkit for giving AI agents a crypto wallet and onchain actions (Node.js and Python).",
+  "description": "Published as `@coinbase/agentkit` (npm) and `coinbase-agentkit` (PyPI). The README describes enabling fee-free stablecoin payments and agent monetization.",
+  "url": "https://github.com/coinbase/agentkit",
+  "repo": "https://github.com/coinbase/agentkit",
+  "tags": [
+    "wallet",
+    "onchain",
+    "crypto",
+    "sdk",
+    "coinbase"
+  ],
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "coinbase-agentic-wallet",
+    "x402"
+  ],
+  "sources": [
+    "https://github.com/coinbase/agentkit"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

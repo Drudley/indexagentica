@@ -1,0 +1,28 @@
+{
+  "id": "supabase-agent-skills",
+  "name": "Supabase Agent Skills",
+  "category": "skills",
+  "summary": "Agent Skills that help AI agents build with Supabase, including Postgres best practices.",
+  "url": "https://supabase.com/docs/guides/ai-tools/ai-skills",
+  "repo": "https://github.com/supabase/agent-skills",
+  "tags": [
+    "agent-skills",
+    "postgres",
+    "database",
+    "supabase"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/supabase/agent-skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Supabase"
+}

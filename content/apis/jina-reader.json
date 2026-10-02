@@ -1,0 +1,28 @@
+{
+  "id": "jina-reader",
+  "name": "Jina Reader",
+  "category": "apis",
+  "summary": "Converts any URL into LLM-friendly Markdown by prefixing it with https://r.jina.ai/.",
+  "description": "Usable without a key at a base rate limit; adding a Jina API key raises the limit.",
+  "url": "https://jina.ai/reader",
+  "repo": "https://github.com/jina-ai/reader",
+  "tags": [
+    "url-to-markdown",
+    "web-reading",
+    "grounding"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "GET https://r.jina.ai/<url>; optional API key for higher rate limits."
+  },
+  "sources": [
+    "https://github.com/jina-ai/reader",
+    "https://jina.ai/reader"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Jina AI"
+}

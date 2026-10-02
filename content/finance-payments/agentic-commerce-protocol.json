@@ -1,0 +1,34 @@
+{
+  "id": "agentic-commerce-protocol",
+  "name": "Agentic Commerce Protocol (ACP)",
+  "category": "finance-payments",
+  "summary": "Open standard from OpenAI and Stripe for programmatic checkout flows between buyers, their AI agents and businesses.",
+  "description": "Merchants remain merchant of record; supports physical and digital goods, subscriptions and asynchronous purchases. Specification currently maintained by OpenAI and Stripe.",
+  "url": "https://www.agenticcommerce.dev/",
+  "repo": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+  "tags": [
+    "commerce",
+    "checkout",
+    "protocol",
+    "stripe",
+    "openai"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://agenticcommerce.dev/llms.txt"
+  },
+  "related": [
+    "stripe-agents",
+    "agent-payments-protocol"
+  ],
+  "sources": [
+    "https://www.agenticcommerce.dev/",
+    "https://agenticcommerce.dev/llms.txt",
+    "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bfcl",
+  "name": "Berkeley Function Calling Leaderboard (BFCL)",
+  "category": "information",
+  "summary": "UC Berkeley leaderboard evaluating how accurately LLMs call functions and tools; part of the Gorilla project.",
+  "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+  "repo": "https://github.com/ShishirPatil/gorilla",
+  "tags": [
+    "benchmark",
+    "function-calling",
+    "tool-use",
+    "leaderboard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "tau-bench"
+  ],
+  "sources": [
+    "https://gorilla.cs.berkeley.edu/leaderboard.html",
+    "https://github.com/ShishirPatil/gorilla"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "UC Berkeley Gorilla team"
+}

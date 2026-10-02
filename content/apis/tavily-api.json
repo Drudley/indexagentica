@@ -1,0 +1,34 @@
+{
+  "id": "tavily-api",
+  "name": "Tavily API",
+  "category": "apis",
+  "summary": "Real-time web layer for AI agents: search, extract, crawl, map and cited research returned as clean LLM-ready content.",
+  "description": "Per Tavily's llms.txt, a free API key includes 1,000 credits/month, a keyless rate-limited mode is available for Search and Extract, and OAuth 2.0 is supported for MCP clients.",
+  "url": "https://www.tavily.com",
+  "docs": "https://docs.tavily.com",
+  "tags": [
+    "web-search",
+    "extraction",
+    "crawling",
+    "research"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.tavily.com/llms.txt",
+    "mcp_endpoint": "https://mcp.tavily.com/mcp/",
+    "auth": "api-key"
+  },
+  "related": [
+    "tavily-mcp",
+    "exa-api"
+  ],
+  "sources": [
+    "https://www.tavily.com",
+    "https://www.tavily.com/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Tavily"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "agent-plugins",
+  "name": "Agent Plugins",
+  "category": "protocols",
+  "summary": "Vendor-neutral standard (v1.0.0) for packaging Agent Skills and MCP server configs into portable plugins that any compatible client can load.",
+  "description": "A plugin is a directory with a required `plugin.json` manifest, optional `skills/` (Agent Skills format) and `mcp.json` (stdio, Streamable HTTP or legacy HTTP+SSE servers), plus reverse-domain namespaces for client-specific extensions. Initial Technical Steering Committee includes maintainers from Amazon, Cursor, Microsoft, OpenAI and Vercel.",
+  "url": "https://agent-plugins.org/",
+  "tags": [
+    "plugins",
+    "agent-skills",
+    "mcp",
+    "open-standard",
+    "packaging"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://agent-plugins.org/llms.txt"
+  },
+  "related": [
+    "agent-skills-spec",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://agent-plugins.org/",
+    "https://github.com/stripe/ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

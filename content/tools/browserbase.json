@@ -1,0 +1,29 @@
+{
+  "id": "browserbase",
+  "name": "Browserbase",
+  "category": "tools",
+  "summary": "Hosted headless-browser infrastructure that gives agents access to the whole web.",
+  "url": "https://www.browserbase.com",
+  "docs": "https://docs.browserbase.com",
+  "tags": [
+    "browser-infrastructure",
+    "headless-browser",
+    "cloud"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.browserbase.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "stagehand"
+  ],
+  "sources": [
+    "https://www.browserbase.com",
+    "https://docs.browserbase.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browserbase"
+}

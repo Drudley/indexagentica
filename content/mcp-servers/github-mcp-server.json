@@ -1,0 +1,33 @@
+{
+  "id": "github-mcp-server",
+  "name": "GitHub MCP Server",
+  "category": "mcp-servers",
+  "summary": "GitHub's official MCP server: lets agents read repos and code, manage issues and PRs, analyze code and monitor Actions workflows.",
+  "url": "https://github.com/github/github-mcp-server",
+  "repo": "https://github.com/github/github-mcp-server",
+  "tags": [
+    "mcp",
+    "github",
+    "git",
+    "issues",
+    "pull-requests"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.githubcopilot.com/mcp/",
+    "auth": "oauth",
+    "notes": "Remote server hosted by GitHub (OAuth or PAT); can also run locally."
+  },
+  "related": [
+    "github-mcp-registry"
+  ],
+  "sources": [
+    "https://github.com/github/github-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

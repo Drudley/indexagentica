@@ -1,0 +1,29 @@
+{
+  "id": "chrome-devtools-mcp",
+  "name": "Chrome DevTools MCP",
+  "category": "mcp-servers",
+  "summary": "Lets coding agents control and inspect a live Chrome browser via MCP (or CLI): automation, debugging, performance traces and Lighthouse audits.",
+  "url": "https://developer.chrome.com/docs/devtools/agents",
+  "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "tags": [
+    "mcp",
+    "browser",
+    "chrome",
+    "debugging",
+    "performance"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "playwright-mcp"
+  ],
+  "sources": [
+    "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "https://developer.chrome.com/docs/devtools/agents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Chrome DevTools team (Google)"
+}

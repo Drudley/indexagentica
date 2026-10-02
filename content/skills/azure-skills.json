@@ -1,0 +1,29 @@
+{
+  "id": "azure-skills",
+  "name": "Microsoft Azure Skills",
+  "category": "skills",
+  "summary": "Official Microsoft agent plugin providing skills and MCP server configurations for Azure scenarios (diagnostics, cost, deployment and more).",
+  "url": "https://github.com/microsoft/azure-skills",
+  "repo": "https://github.com/microsoft/azure-skills",
+  "tags": [
+    "agent-skills",
+    "azure",
+    "cloud",
+    "agent-plugins"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "agent-plugins"
+  ],
+  "sources": [
+    "https://github.com/microsoft/azure-skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

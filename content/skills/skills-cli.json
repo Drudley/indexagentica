@@ -1,0 +1,30 @@
+{
+  "id": "skills-cli",
+  "name": "skills CLI (npx skills)",
+  "category": "skills",
+  "summary": "Vercel's open agent skills tool: install, update and manage Agent Skills for many coding agents with `npx skills add <source>`.",
+  "description": "The CLI behind skills.sh. Several vendors document it as their install path, e.g. `npx skills add coinbase/agentic-wallet-skills` and `npx skills add https://docs.stripe.com`.",
+  "url": "https://skills.sh",
+  "repo": "https://github.com/vercel-labs/skills",
+  "tags": [
+    "agent-skills",
+    "cli",
+    "package-manager"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "agent-skills-spec"
+  ],
+  "sources": [
+    "https://github.com/vercel-labs/skills",
+    "https://skills.sh",
+    "https://github.com/stripe/ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

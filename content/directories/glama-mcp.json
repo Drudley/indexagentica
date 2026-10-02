@@ -1,0 +1,31 @@
+{
+  "id": "glama-mcp",
+  "name": "Glama MCP Directory",
+  "category": "directories",
+  "summary": "Large directory of MCP servers, clients and remote connectors, each scanned, scored and testable in the browser, with a public API.",
+  "description": "Glama's llms.txt describes it as a superset of the official MCP Registry (95,118 servers and 26,108 remote connectors as of 2026-10-02) and offers a REST API for search.",
+  "url": "https://glama.ai/mcp/servers",
+  "tags": [
+    "mcp",
+    "registry",
+    "directory",
+    "api"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://glama.ai/llms.txt",
+    "notes": "REST API reference at https://glama.ai/mcp/reference."
+  },
+  "related": [
+    "official-mcp-registry",
+    "awesome-mcp-servers"
+  ],
+  "sources": [
+    "https://glama.ai/mcp/servers",
+    "https://glama.ai/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Glama"
+}

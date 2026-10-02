@@ -1,0 +1,29 @@
+{
+  "id": "daytona",
+  "name": "Daytona",
+  "category": "tools",
+  "summary": "Secure and elastic infrastructure (sandboxes) for running AI-generated code.",
+  "url": "https://www.daytona.io",
+  "repo": "https://github.com/daytonaio/daytona",
+  "docs": "https://www.daytona.io/docs/",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "infrastructure"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.daytona.io/docs/llms.txt"
+  },
+  "related": [
+    "e2b"
+  ],
+  "sources": [
+    "https://github.com/daytonaio/daytona",
+    "https://www.daytona.io/docs/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Daytona"
+}

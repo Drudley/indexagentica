@@ -1,0 +1,31 @@
+{
+  "id": "cdp-x402",
+  "name": "Coinbase CDP x402 Facilitator",
+  "category": "finance-payments",
+  "summary": "Coinbase Developer Platform's x402 offering: a hosted facilitator that verifies and settles x402 payments, plus seller and buyer SDK quickstarts.",
+  "description": "Per the CDP docs, CDP has processed more than 100 million x402 payments across Base and Solana; sellers can receive to any address they control.",
+  "url": "https://docs.cdp.coinbase.com/x402/welcome",
+  "tags": [
+    "x402",
+    "facilitator",
+    "stablecoins",
+    "base",
+    "solana"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt"
+  },
+  "related": [
+    "x402",
+    "coinbase-agentic-wallet",
+    "coinbase-agentkit"
+  ],
+  "sources": [
+    "https://docs.cdp.coinbase.com/x402/welcome"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

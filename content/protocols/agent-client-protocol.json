@@ -1,0 +1,26 @@
+{
+  "id": "agent-client-protocol",
+  "name": "Agent Client Protocol (ACP)",
+  "category": "protocols",
+  "summary": "Protocol for connecting any code editor to any coding agent, standardizing editor-agent communication.",
+  "url": "https://agentclientprotocol.com",
+  "repo": "https://github.com/agentclientprotocol/agent-client-protocol",
+  "tags": [
+    "editor-integration",
+    "coding-agents",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://agentclientprotocol.com/llms.txt"
+  },
+  "sources": [
+    "https://agentclientprotocol.com",
+    "https://github.com/agentclientprotocol/agent-client-protocol"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

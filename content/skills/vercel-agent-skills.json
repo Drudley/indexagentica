@@ -1,0 +1,27 @@
+{
+  "id": "vercel-agent-skills",
+  "name": "Vercel Agent Skills",
+  "category": "skills",
+  "summary": "Vercel's official collection of Agent Skills, including React best practices, composition patterns and web design guidelines.",
+  "url": "https://github.com/vercel-labs/agent-skills",
+  "repo": "https://github.com/vercel-labs/agent-skills",
+  "tags": [
+    "agent-skills",
+    "react",
+    "nextjs",
+    "frontend"
+  ],
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/vercel-labs/agent-skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

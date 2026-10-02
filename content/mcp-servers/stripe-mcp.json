@@ -1,0 +1,30 @@
+{
+  "id": "stripe-mcp",
+  "name": "Stripe MCP Server",
+  "category": "mcp-servers",
+  "summary": "Stripe's hosted remote MCP server giving agents OAuth-secured access to the Stripe API and documentation.",
+  "url": "https://docs.stripe.com/mcp",
+  "repo": "https://github.com/stripe/ai",
+  "tags": [
+    "mcp",
+    "payments",
+    "stripe"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.stripe.com",
+    "auth": "oauth",
+    "llms_txt": "https://docs.stripe.com/llms.txt"
+  },
+  "related": [
+    "stripe-agents"
+  ],
+  "sources": [
+    "https://github.com/stripe/ai",
+    "https://docs.stripe.com/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stripe"
+}

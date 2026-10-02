@@ -1,0 +1,31 @@
+{
+  "id": "google-adk",
+  "name": "Google Agent Development Kit (ADK)",
+  "category": "harnesses",
+  "summary": "Open-source, code-first toolkit from Google for building, evaluating and deploying multi-agent systems.",
+  "url": "https://adk.dev/",
+  "repo": "https://github.com/google/adk-python",
+  "tags": [
+    "framework",
+    "python",
+    "google",
+    "multi-agent"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://adk.dev/llms.txt"
+  },
+  "related": [
+    "a2a-protocol"
+  ],
+  "sources": [
+    "https://github.com/google/adk-python",
+    "https://adk.dev/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

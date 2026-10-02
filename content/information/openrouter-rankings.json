@@ -1,0 +1,25 @@
+{
+  "id": "openrouter-rankings",
+  "name": "OpenRouter LLM Rankings",
+  "category": "information",
+  "summary": "LLM leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API.",
+  "url": "https://openrouter.ai/rankings",
+  "tags": [
+    "leaderboard",
+    "usage-data",
+    "models"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "openrouter",
+    "models-dev"
+  ],
+  "sources": [
+    "https://openrouter.ai/rankings"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenRouter"
+}

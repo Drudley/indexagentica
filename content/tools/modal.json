@@ -1,0 +1,31 @@
+{
+  "id": "modal",
+  "name": "Modal",
+  "category": "tools",
+  "summary": "Cloud platform for production AI: inference, training, sandboxes and serverless functions on one platform.",
+  "url": "https://modal.com",
+  "repo": "https://github.com/modal-labs/modal-client",
+  "docs": "https://modal.com/docs",
+  "tags": [
+    "serverless",
+    "gpu",
+    "sandbox",
+    "python"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://modal.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "e2b"
+  ],
+  "sources": [
+    "https://modal.com",
+    "https://github.com/modal-labs/modal-client"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Modal Labs"
+}

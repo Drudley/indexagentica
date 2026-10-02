@@ -1,0 +1,31 @@
+{
+  "id": "parallel-api",
+  "name": "Parallel Web APIs",
+  "category": "apis",
+  "summary": "Web APIs for AI agents (Search, Extract, Task/Deep Research, FindAll, Monitor) for research, extraction and continuous monitoring.",
+  "url": "https://parallel.ai",
+  "docs": "https://docs.parallel.ai",
+  "tags": [
+    "web-search",
+    "deep-research",
+    "extraction",
+    "monitoring"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.parallel.ai/llms.txt",
+    "openapi": "https://docs.parallel.ai/docs-latest-openapi.json",
+    "auth": "api-key"
+  },
+  "related": [
+    "exa-api"
+  ],
+  "sources": [
+    "https://parallel.ai",
+    "https://docs.parallel.ai/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Parallel Web Systems"
+}

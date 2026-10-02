@@ -1,0 +1,30 @@
+{
+  "id": "tavily-mcp",
+  "name": "Tavily MCP Server",
+  "category": "mcp-servers",
+  "summary": "Tavily's MCP server with real-time web search, extract, map and crawl tools.",
+  "url": "https://github.com/tavily-ai/tavily-mcp",
+  "repo": "https://github.com/tavily-ai/tavily-mcp",
+  "tags": [
+    "mcp",
+    "web-search",
+    "crawling",
+    "extraction"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.tavily.com/mcp/",
+    "auth": "api-key"
+  },
+  "related": [
+    "tavily-api"
+  ],
+  "sources": [
+    "https://github.com/tavily-ai/tavily-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Tavily"
+}

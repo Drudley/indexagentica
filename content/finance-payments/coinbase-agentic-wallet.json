@@ -1,0 +1,31 @@
+{
+  "id": "coinbase-agentic-wallet",
+  "name": "Coinbase Agentic Wallet",
+  "category": "finance-payments",
+  "summary": "Wallet tooling that lets AI agents hold, spend, trade and earn stablecoins with guardrails, via the awal CLI + skills or an MCP server.",
+  "description": "Two modes: the Agentic Wallet CLI (`npx awal`, skills via `npx skills add coinbase/agentic-wallet-skills`) for send/trade/x402, and the Agentic Wallet MCP server (`npx @coinbase/payments-mcp`) for discovering and paying for x402 services from any MCP client.",
+  "url": "https://docs.cdp.coinbase.com/agentic-wallet/welcome",
+  "tags": [
+    "wallet",
+    "stablecoins",
+    "x402",
+    "mcp",
+    "coinbase"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt"
+  },
+  "related": [
+    "coinbase-agentic-wallet-skills",
+    "x402",
+    "cdp-x402"
+  ],
+  "sources": [
+    "https://docs.cdp.coinbase.com/agentic-wallet/welcome"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

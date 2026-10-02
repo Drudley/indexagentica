@@ -1,0 +1,23 @@
+{
+  "id": "docker-mcp-catalog",
+  "name": "Docker MCP Catalog",
+  "category": "directories",
+  "summary": "Docker Hub's catalog of containerized, ready-to-use MCP servers, backed by the open docker/mcp-registry repo.",
+  "url": "https://hub.docker.com/mcp",
+  "repo": "https://github.com/docker/mcp-registry",
+  "tags": [
+    "mcp",
+    "docker",
+    "containers",
+    "catalog"
+  ],
+  "status": "active",
+  "sources": [
+    "https://hub.docker.com/mcp",
+    "https://github.com/docker/mcp-registry"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Docker"
+}

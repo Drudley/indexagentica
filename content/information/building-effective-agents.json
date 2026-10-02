@@ -1,0 +1,23 @@
+{
+  "id": "building-effective-agents",
+  "name": "Building Effective AI Agents (Anthropic)",
+  "category": "information",
+  "summary": "Anthropic engineering essay (Dec 19, 2024) on agent design patterns: workflows vs. agents, and when to use simple composable patterns.",
+  "url": "https://www.anthropic.com/engineering/building-effective-agents",
+  "tags": [
+    "guide",
+    "agent-design",
+    "patterns"
+  ],
+  "pricing": "free",
+  "related": [
+    "claude-code"
+  ],
+  "sources": [
+    "https://www.anthropic.com/engineering/building-effective-agents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

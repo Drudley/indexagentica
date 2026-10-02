@@ -1,0 +1,33 @@
+{
+  "id": "models-dev",
+  "name": "Models.dev",
+  "category": "information",
+  "summary": "Open-source database of AI model specifications, pricing and features, also served as JSON.",
+  "url": "https://models.dev",
+  "repo": "https://github.com/anomalyco/models.dev",
+  "tags": [
+    "model-database",
+    "pricing",
+    "specs",
+    "open-data"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Full dataset as JSON at https://models.dev/api.json."
+  },
+  "related": [
+    "openrouter",
+    "opencode"
+  ],
+  "sources": [
+    "https://models.dev",
+    "https://models.dev/api.json",
+    "https://github.com/anomalyco/models.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

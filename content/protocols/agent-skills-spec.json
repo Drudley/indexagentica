@@ -1,0 +1,34 @@
+{
+  "id": "agent-skills-spec",
+  "name": "Agent Skills Specification",
+  "category": "protocols",
+  "summary": "Open format for packaging agent capabilities as folders with a SKILL.md (YAML frontmatter + instructions) plus optional scripts and resources.",
+  "description": "\"A standardized way to give AI agents new capabilities and expertise.\" Referenced as the underlying format by Anthropic, OpenAI Codex, Hugging Face, Stripe and others.",
+  "url": "https://agentskills.io",
+  "repo": "https://github.com/agentskills/agentskills",
+  "tags": [
+    "agent-skills",
+    "skill-md",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://agentskills.io/llms.txt"
+  },
+  "related": [
+    "anthropic-skills",
+    "agent-plugins",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://agentskills.io",
+    "https://github.com/agentskills/agentskills",
+    "https://github.com/huggingface/skills",
+    "https://github.com/stripe/ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "firecrawl-mcp-server",
+  "name": "Firecrawl MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Firecrawl MCP server adding web scraping, crawling and search to Cursor, Claude and other MCP clients.",
+  "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repo": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "tags": [
+    "mcp",
+    "web-scraping",
+    "crawling",
+    "search"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.firecrawl.dev/v2/mcp",
+    "auth": "api-key"
+  },
+  "related": [
+    "firecrawl-api"
+  ],
+  "sources": [
+    "https://github.com/firecrawl/firecrawl-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Firecrawl"
+}

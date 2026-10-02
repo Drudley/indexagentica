@@ -1,0 +1,30 @@
+{
+  "id": "graphiti",
+  "name": "Graphiti",
+  "category": "tools",
+  "summary": "Zep's open-source framework for building real-time knowledge graphs for AI agents.",
+  "url": "https://help.getzep.com/graphiti",
+  "repo": "https://github.com/getzep/graphiti",
+  "tags": [
+    "memory",
+    "knowledge-graph",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://help.getzep.com/llms.txt"
+  },
+  "related": [
+    "mem0"
+  ],
+  "sources": [
+    "https://github.com/getzep/graphiti",
+    "https://help.getzep.com/graphiti"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zep"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "awesome-ai-agents",
+  "name": "Awesome AI Agents (E2B)",
+  "category": "directories",
+  "summary": "E2B's curated GitHub list of autonomous AI agents, open-source and closed-source.",
+  "url": "https://github.com/e2b-dev/awesome-ai-agents",
+  "repo": "https://github.com/e2b-dev/awesome-ai-agents",
+  "tags": [
+    "agents",
+    "awesome-list",
+    "github"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "e2b"
+  ],
+  "sources": [
+    "https://github.com/e2b-dev/awesome-ai-agents"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "E2B"
+}

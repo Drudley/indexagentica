@@ -1,0 +1,28 @@
+{
+  "id": "exa-mcp-server",
+  "name": "Exa MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Exa MCP server connecting agents to Exa for web search, content fetching and multi-step research.",
+  "url": "https://exa.ai/docs/reference/exa-mcp",
+  "repo": "https://github.com/exa-labs/exa-mcp-server",
+  "tags": [
+    "mcp",
+    "web-search",
+    "research"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.exa.ai/mcp"
+  },
+  "related": [
+    "exa-api"
+  ],
+  "sources": [
+    "https://github.com/exa-labs/exa-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Exa"
+}

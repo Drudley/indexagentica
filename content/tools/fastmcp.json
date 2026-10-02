@@ -1,0 +1,32 @@
+{
+  "id": "fastmcp",
+  "name": "FastMCP",
+  "category": "tools",
+  "summary": "The fast, Pythonic framework for building MCP servers, clients and interactive applications.",
+  "description": "Repository moved from jlowin/fastmcp to PrefectHQ/fastmcp (GitHub redirects the old path).",
+  "url": "https://gofastmcp.com",
+  "repo": "https://github.com/PrefectHQ/fastmcp",
+  "tags": [
+    "mcp",
+    "python",
+    "framework",
+    "server-sdk"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://gofastmcp.com/llms.txt"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/PrefectHQ/fastmcp",
+    "https://gofastmcp.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Prefect"
+}

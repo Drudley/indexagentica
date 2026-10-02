@@ -1,0 +1,27 @@
+{
+  "id": "terminal-bench",
+  "name": "Terminal-Bench",
+  "category": "information",
+  "summary": "Benchmark and leaderboard measuring how well AI agents complete complicated tasks in the terminal.",
+  "url": "https://www.tbench.ai",
+  "repo": "https://github.com/harbor-framework/terminal-bench-1",
+  "tags": [
+    "benchmark",
+    "agents",
+    "terminal",
+    "leaderboard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "swe-bench"
+  ],
+  "sources": [
+    "https://www.tbench.ai",
+    "https://github.com/harbor-framework/terminal-bench-1"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

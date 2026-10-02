@@ -1,0 +1,31 @@
+{
+  "id": "opencode",
+  "name": "OpenCode",
+  "category": "harnesses",
+  "summary": "The open-source AI coding agent, built for the terminal.",
+  "description": "Repository moved from sst/opencode to anomalyco/opencode (GitHub redirects the old path).",
+  "url": "https://opencode.ai",
+  "repo": "https://github.com/anomalyco/opencode",
+  "docs": "https://opencode.ai/docs",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "open-source",
+    "tui"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "models-dev"
+  ],
+  "sources": [
+    "https://github.com/anomalyco/opencode",
+    "https://opencode.ai",
+    "https://opencode.ai/docs"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anomaly (formerly SST)"
+}

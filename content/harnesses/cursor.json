@@ -1,0 +1,30 @@
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "category": "harnesses",
+  "summary": "AI code editor and coding agent with Agent mode, Rules, Skills, MCP servers and a CLI.",
+  "url": "https://cursor.com",
+  "docs": "https://cursor.com/docs",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "mcp-client",
+    "agent-skills"
+  ],
+  "license": "proprietary",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://cursor.com/llms.txt"
+  },
+  "related": [
+    "model-context-protocol",
+    "agents-md"
+  ],
+  "sources": [
+    "https://cursor.com",
+    "https://cursor.com/docs"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "autogen",
+  "name": "AutoGen",
+  "category": "harnesses",
+  "summary": "Microsoft Research's multi-agent programming framework, now in maintenance mode; new projects are pointed to Microsoft Agent Framework.",
+  "description": "Per its README, AutoGen is in maintenance mode: no new features, community managed, contributions limited to bug fixes, security patches and docs. Microsoft recommends Microsoft Agent Framework for new projects and publishes a migration guide.",
+  "url": "https://microsoft.github.io/autogen/",
+  "repo": "https://github.com/microsoft/autogen",
+  "tags": [
+    "framework",
+    "python",
+    "multi-agent",
+    "microsoft"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "open-source",
+  "status": "deprecated",
+  "related": [
+    "microsoft-agent-framework"
+  ],
+  "sources": [
+    "https://github.com/microsoft/autogen"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft (community managed)"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "github-mcp-registry",
+  "name": "GitHub MCP Registry",
+  "category": "directories",
+  "summary": "GitHub's registry centralizing MCP servers for discovery and integration with GitHub Copilot and other tools.",
+  "url": "https://github.com/mcp",
+  "tags": [
+    "mcp",
+    "registry",
+    "github"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "official-mcp-registry",
+    "github-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

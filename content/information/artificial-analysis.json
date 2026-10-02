@@ -1,0 +1,24 @@
+{
+  "id": "artificial-analysis",
+  "name": "Artificial Analysis",
+  "category": "information",
+  "summary": "Independent benchmarks comparing AI models and API providers on quality, price, output speed and latency.",
+  "url": "https://artificialanalysis.ai",
+  "tags": [
+    "benchmark",
+    "model-comparison",
+    "pricing",
+    "latency"
+  ],
+  "status": "active",
+  "related": [
+    "arena-ai",
+    "openrouter-rankings"
+  ],
+  "sources": [
+    "https://artificialanalysis.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

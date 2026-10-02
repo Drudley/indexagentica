@@ -1,0 +1,29 @@
+{
+  "id": "agents-md",
+  "name": "AGENTS.md",
+  "category": "protocols",
+  "summary": "Simple, open format for guiding coding agents: a README for agents placed in your repo.",
+  "description": "The site states it is used by over 60k open-source projects. Repo moved from openai/agents.md to agentsmd/agents.md.",
+  "url": "https://agents.md/",
+  "repo": "https://github.com/agentsmd/agents.md",
+  "tags": [
+    "coding-agents",
+    "repo-conventions",
+    "open-format"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "codex-cli",
+    "cursor",
+    "llms-txt"
+  ],
+  "sources": [
+    "https://agents.md/",
+    "https://github.com/agentsmd/agents.md"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

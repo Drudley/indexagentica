@@ -1,0 +1,23 @@
+{
+  "id": "llmstxt-directory",
+  "name": "llms.txt Directory",
+  "category": "directories",
+  "summary": "Directory of websites that publish an llms.txt file, for finding LLM-friendly documentation entry points.",
+  "url": "https://directory.llmstxt.cloud",
+  "tags": [
+    "llms-txt",
+    "directory",
+    "documentation"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "llms-txt"
+  ],
+  "sources": [
+    "https://directory.llmstxt.cloud"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

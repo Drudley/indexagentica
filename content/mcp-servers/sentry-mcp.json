@@ -1,0 +1,27 @@
+{
+  "id": "sentry-mcp",
+  "name": "Sentry MCP",
+  "category": "mcp-servers",
+  "summary": "Sentry's remote MCP server for coding agents, focused on developer debugging workflows over the Sentry API.",
+  "url": "https://mcp.sentry.dev",
+  "repo": "https://github.com/getsentry/toolkit",
+  "tags": [
+    "mcp",
+    "observability",
+    "debugging",
+    "errors"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.sentry.dev/mcp",
+    "auth": "oauth"
+  },
+  "sources": [
+    "https://github.com/getsentry/toolkit",
+    "https://mcp.sentry.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Sentry"
+}

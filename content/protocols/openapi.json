@@ -1,0 +1,27 @@
+{
+  "id": "openapi",
+  "name": "OpenAPI Specification",
+  "category": "protocols",
+  "summary": "Language-agnostic standard for describing HTTP APIs, widely used to generate agent tools from API definitions.",
+  "description": "The latest published version at spec.openapis.org is 3.2.1. Maintained by the OpenAPI Initiative.",
+  "url": "https://www.openapis.org",
+  "repo": "https://github.com/OAI/OpenAPI-Specification",
+  "docs": "https://spec.openapis.org/oas/latest.html",
+  "tags": [
+    "api-description",
+    "http",
+    "open-standard",
+    "tooling"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://spec.openapis.org/oas/latest.html",
+    "https://github.com/OAI/OpenAPI-Specification"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAPI Initiative"
+}

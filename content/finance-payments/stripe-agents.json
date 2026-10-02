@@ -1,0 +1,36 @@
+{
+  "id": "stripe-agents",
+  "name": "Stripe for Agents (Stripe AI)",
+  "category": "finance-payments",
+  "summary": "Stripe's agent toolkit: plugins, remote MCP, agent skills and SDKs for usage-based billing, agentic commerce and machine payments.",
+  "description": "The stripe/ai repo (formerly stripe/agent-toolkit) includes `@stripe/ai-sdk` and `@stripe/token-meter` for billing LLM usage, official plugins for Claude Code, Codex, Cursor and others, and skills installable with `npx skills add https://docs.stripe.com`.",
+  "url": "https://docs.stripe.com/agents",
+  "repo": "https://github.com/stripe/ai",
+  "tags": [
+    "payments",
+    "billing",
+    "stripe",
+    "mcp",
+    "agent-skills"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.stripe.com/llms.txt",
+    "mcp_endpoint": "https://mcp.stripe.com",
+    "auth": "oauth"
+  },
+  "related": [
+    "stripe-mcp",
+    "agentic-commerce-protocol",
+    "machine-payments-protocol"
+  ],
+  "sources": [
+    "https://docs.stripe.com/agents",
+    "https://github.com/stripe/ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stripe"
+}

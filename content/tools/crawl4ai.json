@@ -1,0 +1,27 @@
+{
+  "id": "crawl4ai",
+  "name": "Crawl4AI",
+  "category": "tools",
+  "summary": "Open-source LLM-friendly web crawler and scraper that turns any website into clean Markdown; self-host or use the hosted cloud.",
+  "url": "https://crawl4ai.com",
+  "repo": "https://github.com/unclecode/crawl4ai",
+  "docs": "https://docs.crawl4ai.com",
+  "tags": [
+    "web-crawling",
+    "scraping",
+    "markdown",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "related": [
+    "firecrawl-api"
+  ],
+  "sources": [
+    "https://github.com/unclecode/crawl4ai",
+    "https://crawl4ai.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

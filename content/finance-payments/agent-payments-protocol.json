@@ -1,0 +1,33 @@
+{
+  "id": "agent-payments-protocol",
+  "name": "Agent Payments Protocol (AP2)",
+  "category": "finance-payments",
+  "summary": "Open protocol for AI agents to make payments on behalf of users securely, complementing A2A and MCP.",
+  "url": "https://ap2-protocol.org/",
+  "repo": "https://github.com/google-agentic-commerce/AP2",
+  "tags": [
+    "payments",
+    "protocol",
+    "agentic-commerce",
+    "a2a"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://ap2-protocol.org/llms.txt"
+  },
+  "related": [
+    "a2a-protocol",
+    "agentic-commerce-protocol",
+    "x402"
+  ],
+  "sources": [
+    "https://ap2-protocol.org/",
+    "https://ap2-protocol.org/llms.txt",
+    "https://github.com/google-agentic-commerce/AP2"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

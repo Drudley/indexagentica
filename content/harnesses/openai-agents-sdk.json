@@ -1,0 +1,29 @@
+{
+  "id": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "harnesses",
+  "summary": "Lightweight framework from OpenAI for multi-agent workflows in Python (with a JS/TS sibling SDK).",
+  "url": "https://openai.github.io/openai-agents-python/",
+  "repo": "https://github.com/openai/openai-agents-python",
+  "tags": [
+    "framework",
+    "python",
+    "openai",
+    "multi-agent"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://openai.github.io/openai-agents-python/llms.txt"
+  },
+  "sources": [
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/openai/openai-agents-js",
+    "https://openai.github.io/openai-agents-python/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "playwright-mcp",
+  "name": "Playwright MCP",
+  "category": "mcp-servers",
+  "summary": "Microsoft's MCP server for browser automation with Playwright, letting LLMs act on web pages via structured accessibility snapshots instead of screenshots.",
+  "description": "Published on npm as `@playwright/mcp`. The README notes that coding agents may prefer the token-efficient Playwright CLI + skills (microsoft/playwright-cli) instead of MCP.",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "repo": "https://github.com/microsoft/playwright-mcp",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "playwright",
+    "accessibility-tree"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "chrome-devtools-mcp"
+  ],
+  "sources": [
+    "https://github.com/microsoft/playwright-mcp"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "coinbase-agentic-wallet-skills",
+  "name": "Coinbase Agentic Wallet Skills",
+  "category": "skills",
+  "summary": "Pre-built agent skills for wallet operations (authenticate, fund, send USDC, trade, pay for x402 services) via Coinbase's awal CLI.",
+  "url": "https://github.com/coinbase/agentic-wallet-skills",
+  "repo": "https://github.com/coinbase/agentic-wallet-skills",
+  "docs": "https://docs.cdp.coinbase.com/agentic-wallet/cli/skills/overview",
+  "tags": [
+    "agent-skills",
+    "wallet",
+    "x402",
+    "usdc",
+    "coinbase"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt",
+    "notes": "Install with `npx skills add coinbase/agentic-wallet-skills`."
+  },
+  "related": [
+    "coinbase-agentic-wallet",
+    "x402",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/coinbase/agentic-wallet-skills",
+    "https://docs.cdp.coinbase.com/agentic-wallet/welcome"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coinbase"
+}

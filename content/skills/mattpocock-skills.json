@@ -1,0 +1,30 @@
+{
+  "id": "mattpocock-skills",
+  "name": "Matt Pocock's Skills",
+  "category": "skills",
+  "summary": "Engineering-focused Agent Skills from Matt Pocock (e.g. tdd, code-review, grill-me), among the most-installed skill packs on skills.sh.",
+  "description": "Described by the author as \"Skills for Real Engineers. Straight from my .agents directory.\" Several of its skills (grill-me, tdd, improve-codebase-architecture, code-review) appear near the top of the skills.sh install leaderboard.",
+  "url": "https://github.com/mattpocock/skills",
+  "repo": "https://github.com/mattpocock/skills",
+  "tags": [
+    "agent-skills",
+    "coding-agents",
+    "typescript",
+    "engineering"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/mattpocock/skills",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Matt Pocock"
+}

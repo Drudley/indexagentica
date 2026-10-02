@@ -1,0 +1,33 @@
+{
+  "id": "e2b",
+  "name": "E2B",
+  "category": "tools",
+  "summary": "Open-source, secure cloud sandboxes for AI agents: an isolated machine per agent to run code, browse and use tools.",
+  "url": "https://e2b.dev",
+  "repo": "https://github.com/e2b-dev/E2B",
+  "docs": "https://e2b.dev/docs",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "cloud",
+    "isolation"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://e2b.dev/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "daytona",
+    "modal"
+  ],
+  "sources": [
+    "https://github.com/e2b-dev/E2B",
+    "https://e2b.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "E2B"
+}

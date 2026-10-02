@@ -1,0 +1,33 @@
+{
+  "id": "openhands",
+  "name": "OpenHands",
+  "category": "harnesses",
+  "summary": "Open-source, model-agnostic platform for cloud coding agents.",
+  "url": "https://openhands.dev",
+  "repo": "https://github.com/OpenHands/OpenHands",
+  "docs": "https://docs.openhands.dev",
+  "tags": [
+    "coding-agent",
+    "open-source",
+    "cloud",
+    "sdk"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.openhands.dev/llms.txt"
+  },
+  "related": [
+    "swe-bench"
+  ],
+  "sources": [
+    "https://github.com/OpenHands/OpenHands",
+    "https://openhands.dev",
+    "https://docs.openhands.dev"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenHands"
+}

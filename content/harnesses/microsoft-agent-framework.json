@@ -1,0 +1,33 @@
+{
+  "id": "microsoft-agent-framework",
+  "name": "Microsoft Agent Framework",
+  "category": "harnesses",
+  "summary": "Framework for building, orchestrating and deploying AI agents and multi-agent workflows in Python and .NET; successor to AutoGen.",
+  "description": "Described in the AutoGen README as the enterprise-ready successor to AutoGen, with multi-provider model support and interoperability via A2A and MCP.",
+  "url": "https://learn.microsoft.com/en-us/agent-framework/",
+  "repo": "https://github.com/microsoft/agent-framework",
+  "tags": [
+    "framework",
+    "python",
+    "dotnet",
+    "multi-agent",
+    "microsoft"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "autogen",
+    "a2a-protocol",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/microsoft/agent-framework",
+    "https://github.com/microsoft/autogen",
+    "https://learn.microsoft.com/en-us/agent-framework/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

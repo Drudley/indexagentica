@@ -1,0 +1,31 @@
+{
+  "id": "browser-use",
+  "name": "Browser Use",
+  "category": "tools",
+  "summary": "Open-source library for agents that use the browser, plus a cloud offering of browser agents and managed browsers via SDK, REST or CDP.",
+  "url": "https://browser-use.com",
+  "repo": "https://github.com/browser-use/browser-use",
+  "docs": "https://docs.browser-use.com",
+  "tags": [
+    "browser-automation",
+    "python",
+    "web-agents"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.browser-use.com/llms.txt"
+  },
+  "related": [
+    "stagehand",
+    "browserbase"
+  ],
+  "sources": [
+    "https://github.com/browser-use/browser-use",
+    "https://browser-use.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browser Use"
+}

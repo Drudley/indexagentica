@@ -1,0 +1,33 @@
+{
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "category": "apis",
+  "summary": "Unified API for hundreds of LLMs from many providers behind one endpoint and key, with model and price comparison.",
+  "url": "https://openrouter.ai",
+  "docs": "https://openrouter.ai/docs",
+  "tags": [
+    "llm-gateway",
+    "model-routing",
+    "inference"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://openrouter.ai/docs/llms.txt",
+    "openapi": "https://openrouter.ai/openapi.json",
+    "auth": "api-key",
+    "notes": "Public model list at https://openrouter.ai/api/v1/models."
+  },
+  "related": [
+    "openrouter-rankings",
+    "models-dev"
+  ],
+  "sources": [
+    "https://openrouter.ai",
+    "https://openrouter.ai/docs/llms.txt",
+    "https://openrouter.ai/openapi.json"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenRouter"
+}

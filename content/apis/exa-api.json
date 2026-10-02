@@ -1,0 +1,35 @@
+{
+  "id": "exa-api",
+  "name": "Exa API",
+  "category": "apis",
+  "summary": "Search and retrieval API built for AI agents, backed by Exa's own continuously updated web index and search models.",
+  "description": "Search, content retrieval and research endpoints. Per Exa's llms.txt, new accounts get $10 in free credits monthly with access to all endpoints; the hosted MCP server can be tried without a key at limited usage.",
+  "url": "https://exa.ai",
+  "docs": "https://exa.ai/docs",
+  "tags": [
+    "web-search",
+    "retrieval",
+    "research",
+    "neural-search"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://exa.ai/llms.txt",
+    "mcp_endpoint": "https://mcp.exa.ai/mcp",
+    "auth": "api-key"
+  },
+  "related": [
+    "exa-mcp-server",
+    "tavily-api",
+    "parallel-api"
+  ],
+  "sources": [
+    "https://exa.ai",
+    "https://exa.ai/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Exa"
+}

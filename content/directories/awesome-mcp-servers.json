@@ -1,0 +1,25 @@
+{
+  "id": "awesome-mcp-servers",
+  "name": "Awesome MCP Servers (punkpeye)",
+  "category": "directories",
+  "summary": "Popular community-curated GitHub list of MCP servers, mirrored on Glama.",
+  "url": "https://github.com/punkpeye/awesome-mcp-servers",
+  "repo": "https://github.com/punkpeye/awesome-mcp-servers",
+  "tags": [
+    "mcp",
+    "awesome-list",
+    "github"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "glama-mcp"
+  ],
+  "sources": [
+    "https://github.com/punkpeye/awesome-mcp-servers"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

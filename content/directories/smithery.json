@@ -1,0 +1,24 @@
+{
+  "id": "smithery",
+  "name": "Smithery",
+  "category": "directories",
+  "summary": "Platform for connecting agents to thousands of tools and services (MCP), with auth, credentials and sessions handled for you.",
+  "url": "https://smithery.ai",
+  "tags": [
+    "mcp",
+    "marketplace",
+    "hosting",
+    "auth"
+  ],
+  "status": "active",
+  "related": [
+    "official-mcp-registry"
+  ],
+  "sources": [
+    "https://smithery.ai"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Smithery"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "tau-bench",
+  "name": "τ-bench (tau2-bench)",
+  "category": "information",
+  "summary": "Sierra's benchmark for tool-agent-user interaction in real-world domains.",
+  "description": "Successor repository to the original sierra-research/tau-bench.",
+  "url": "https://github.com/sierra-research/tau2-bench",
+  "repo": "https://github.com/sierra-research/tau2-bench",
+  "tags": [
+    "benchmark",
+    "tool-use",
+    "conversational-agents"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "bfcl"
+  ],
+  "sources": [
+    "https://github.com/sierra-research/tau2-bench",
+    "https://github.com/sierra-research/tau-bench"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Sierra"
+}

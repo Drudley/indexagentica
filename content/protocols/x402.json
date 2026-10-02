@@ -1,0 +1,39 @@
+{
+  "id": "x402",
+  "name": "x402",
+  "category": "protocols",
+  "summary": "Open standard for internet-native payments built on HTTP 402, letting APIs and agents pay per request across crypto and fiat networks.",
+  "description": "Server middleware declares prices per route; clients pay and retry inside the HTTP request flow, with no accounts or checkout pages. Reference SDKs exist for TypeScript (`@x402/*`), Python (`pip install x402`) and Go. The canonical repo is x402-foundation/x402 (coinbase/x402 is now a fork).",
+  "url": "https://x402.org",
+  "repo": "https://github.com/x402-foundation/x402",
+  "docs": "https://docs.x402.org",
+  "tags": [
+    "payments",
+    "http-402",
+    "stablecoins",
+    "micropayments",
+    "open-standard"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.x402.org/llms.txt",
+    "auth": "none"
+  },
+  "related": [
+    "cdp-x402",
+    "machine-payments-protocol",
+    "l402",
+    "coinbase-agentic-wallet"
+  ],
+  "sources": [
+    "https://x402.org",
+    "https://github.com/x402-foundation/x402",
+    "https://docs.x402.org"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "x402 Foundation"
+}

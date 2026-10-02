@@ -1,0 +1,29 @@
+{
+  "id": "notion-mcp",
+  "name": "Notion MCP",
+  "category": "mcp-servers",
+  "summary": "Notion's hosted remote MCP server that lets MCP clients search, read and write in your Notion workspace.",
+  "description": "Notion recommends the remote server at `https://mcp.notion.com/mcp`; the open-source local server (makenotion/notion-mcp-server) receives limited support.",
+  "url": "https://developers.notion.com/guides/mcp/overview",
+  "repo": "https://github.com/makenotion/notion-mcp-server",
+  "tags": [
+    "mcp",
+    "notion",
+    "knowledge-base",
+    "productivity"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.notion.com/llms.txt",
+    "mcp_endpoint": "https://mcp.notion.com/mcp",
+    "auth": "oauth"
+  },
+  "sources": [
+    "https://developers.notion.com/guides/mcp/get-started-with-mcp.md",
+    "https://github.com/makenotion/notion-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Notion"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "huggingface-skills",
+  "name": "Hugging Face Skills",
+  "category": "skills",
+  "summary": "Agent Skills for AI/ML work on the Hugging Face Hub: dataset creation, model training, evaluation and core hf CLI operations.",
+  "description": "Skills follow the standardized Agent Skills format. The recommended starting point is the `hf-cli` skill, which teaches an agent the `hf` commands (search models, manage datasets and buckets, launch Spaces, run jobs); further workflow skills install with `hf skills add <skill-name>`.",
+  "url": "https://github.com/huggingface/skills",
+  "repo": "https://github.com/huggingface/skills",
+  "tags": [
+    "agent-skills",
+    "machine-learning",
+    "hugging-face",
+    "datasets"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "agent-skills-spec"
+  ],
+  "sources": [
+    "https://github.com/huggingface/skills"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hugging Face"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "firecrawl-api",
+  "name": "Firecrawl API",
+  "category": "apis",
+  "summary": "Web data API for AI agents: search the web, scrape any page to clean data and interact with it through one API.",
+  "description": "Open-source core (AGPL-3.0) with a hosted API. Docs publish llms.txt and OpenAPI specs (v1, v2, webhooks).",
+  "url": "https://www.firecrawl.dev",
+  "repo": "https://github.com/firecrawl/firecrawl",
+  "docs": "https://docs.firecrawl.dev",
+  "tags": [
+    "web-scraping",
+    "crawling",
+    "search",
+    "markdown"
+  ],
+  "license": "AGPL-3.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.firecrawl.dev/llms.txt",
+    "openapi": "https://docs.firecrawl.dev/api-reference/v2-openapi.json",
+    "mcp_endpoint": "https://mcp.firecrawl.dev/v2/mcp",
+    "auth": "api-key"
+  },
+  "related": [
+    "firecrawl-mcp-server",
+    "crawl4ai"
+  ],
+  "sources": [
+    "https://github.com/firecrawl/firecrawl",
+    "https://docs.firecrawl.dev",
+    "https://docs.firecrawl.dev/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Firecrawl"
+}

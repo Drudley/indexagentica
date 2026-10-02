@@ -1,0 +1,30 @@
+{
+  "id": "l402",
+  "name": "L402 (Lightning HTTP 402)",
+  "category": "finance-payments",
+  "summary": "Lightning Labs standard for paying for and authenticating to APIs with Bitcoin Lightning payments; Aperture is the reference reverse proxy.",
+  "url": "https://l402.tech/",
+  "repo": "https://github.com/lightninglabs/aperture",
+  "docs": "https://docs.lightning.engineering/the-lightning-network/l402",
+  "tags": [
+    "payments",
+    "http-402",
+    "lightning",
+    "bitcoin",
+    "protocol"
+  ],
+  "status": "active",
+  "related": [
+    "x402",
+    "machine-payments-protocol"
+  ],
+  "sources": [
+    "https://l402.tech/",
+    "https://docs.lightning.engineering/the-lightning-network/l402",
+    "https://github.com/lightninglabs/aperture"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Lightning Labs"
+}

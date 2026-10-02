@@ -1,0 +1,32 @@
+{
+  "id": "gemini-cli",
+  "name": "Gemini CLI",
+  "category": "harnesses",
+  "summary": "Open-source AI agent from Google that brings Gemini models directly into your terminal.",
+  "url": "https://geminicli.com",
+  "repo": "https://github.com/google-gemini/gemini-cli",
+  "docs": "https://geminicli.com/docs/",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "google",
+    "gemini"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://geminicli.com/llms.txt"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/google-gemini/gemini-cli",
+    "https://geminicli.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

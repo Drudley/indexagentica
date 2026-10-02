@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-api",
+  "name": "Perplexity API Platform",
+  "category": "apis",
+  "summary": "Perplexity's API platform with Agent, Search and Embeddings APIs for real-time, web-grounded research and Q&A.",
+  "url": "https://docs.perplexity.ai",
+  "docs": "https://docs.perplexity.ai",
+  "tags": [
+    "web-search",
+    "answer-engine",
+    "llm-api",
+    "research"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.perplexity.ai/llms.txt",
+    "openapi": "https://docs.perplexity.ai/openapi.json",
+    "auth": "api-key"
+  },
+  "sources": [
+    "https://docs.perplexity.ai",
+    "https://docs.perplexity.ai/llms.txt",
+    "https://docs.perplexity.ai/openapi.json"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Perplexity"
+}

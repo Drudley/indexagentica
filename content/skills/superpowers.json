@@ -1,0 +1,31 @@
+{
+  "id": "superpowers",
+  "name": "Superpowers",
+  "category": "skills",
+  "summary": "Agentic skills framework and software-development methodology for coding agents, built from composable skills such as brainstorming, TDD and systematic debugging.",
+  "description": "Superpowers bundles a set of composable skills plus initial instructions so a coding agent steps back to clarify a spec, plans, and then executes with practices like test-driven development and verification-before-completion. The README documents installation for many harnesses including Claude Code, Codex CLI, Cursor, Gemini CLI, OpenCode and GitHub Copilot CLI.",
+  "url": "https://github.com/obra/superpowers",
+  "repo": "https://github.com/obra/superpowers",
+  "tags": [
+    "agent-skills",
+    "coding-agents",
+    "methodology",
+    "tdd"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "anthropic-skills",
+    "claude-code",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/obra/superpowers",
+    "https://skills.sh"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Jesse Vincent (obra)"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "anthropic-skills",
+  "name": "Anthropic Agent Skills (anthropics/skills)",
+  "category": "skills",
+  "summary": "Anthropic's public repository of example Agent Skills: folders with a SKILL.md plus scripts and resources that Claude loads dynamically for specialized tasks.",
+  "description": "Example skills covering creative, technical and enterprise tasks; each skill is a self-contained folder with a `SKILL.md` (instructions + metadata). Many skills are Apache-2.0; the document skills (`docx`, `pdf`, `pptx`, `xlsx`) are source-available rather than open source. The README describes the skills as provided for demonstration and education. The Agent Skills format itself is specified at agentskills.io.",
+  "url": "https://github.com/anthropics/skills",
+  "repo": "https://github.com/anthropics/skills",
+  "docs": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+  "tags": [
+    "agent-skills",
+    "skill-md",
+    "claude",
+    "examples"
+  ],
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public GitHub repo; skills can also be installed from Claude Code's plugin system."
+  },
+  "related": [
+    "agent-skills-spec",
+    "claude-code",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/anthropics/skills",
+    "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

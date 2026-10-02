@@ -1,0 +1,27 @@
+{
+  "id": "skills-sh",
+  "name": "skills.sh",
+  "category": "directories",
+  "summary": "The open Agent Skills directory: browse skills ranked by installs and install them into your agent with one command.",
+  "url": "https://skills.sh",
+  "tags": [
+    "agent-skills",
+    "directory",
+    "leaderboard"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "skills-cli",
+    "agent-skills-spec",
+    "anthropic-skills"
+  ],
+  "sources": [
+    "https://skills.sh",
+    "https://github.com/vercel-labs/skills"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vercel"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "brave-search-api",
+  "name": "Brave Search API",
+  "category": "apis",
+  "summary": "Web search API on Brave's independent index of 40+ billion pages, with specialized endpoints for search, AI grounding and more.",
+  "url": "https://brave.com/search/api/",
+  "docs": "https://api-dashboard.search.brave.com/app/documentation",
+  "tags": [
+    "web-search",
+    "independent-index",
+    "news",
+    "images"
+  ],
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key"
+  },
+  "related": [
+    "brave-search-mcp-server"
+  ],
+  "sources": [
+    "https://brave.com/search/api/",
+    "https://github.com/brave/brave-search-mcp-server"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Brave"
+}

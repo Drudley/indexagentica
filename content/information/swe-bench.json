@@ -1,0 +1,26 @@
+{
+  "id": "swe-bench",
+  "name": "SWE-bench",
+  "category": "information",
+  "summary": "Benchmark and leaderboards (Verified, Lite, Multimodal, Multilingual) testing whether LLM agents can resolve real-world GitHub issues.",
+  "url": "https://www.swebench.com",
+  "repo": "https://github.com/SWE-bench/SWE-bench",
+  "tags": [
+    "benchmark",
+    "coding-agents",
+    "leaderboard"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "terminal-bench"
+  ],
+  "sources": [
+    "https://www.swebench.com",
+    "https://github.com/SWE-bench/SWE-bench"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

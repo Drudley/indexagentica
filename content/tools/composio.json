@@ -1,0 +1,29 @@
+{
+  "id": "composio",
+  "name": "Composio",
+  "category": "tools",
+  "summary": "Tool platform for agents: 1,000+ toolkits with tool search, delegated authentication and sandboxed execution.",
+  "url": "https://composio.dev",
+  "repo": "https://github.com/ComposioHQ/composio",
+  "docs": "https://docs.composio.dev",
+  "tags": [
+    "tool-integration",
+    "auth",
+    "toolkits"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.composio.dev/llms.txt",
+    "auth": "api-key"
+  },
+  "sources": [
+    "https://github.com/ComposioHQ/composio",
+    "https://composio.dev",
+    "https://docs.composio.dev/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Composio"
+}

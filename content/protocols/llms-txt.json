@@ -1,0 +1,29 @@
+{
+  "id": "llms-txt",
+  "name": "llms.txt",
+  "category": "protocols",
+  "summary": "Proposal to standardize a /llms.txt Markdown file that gives LLMs and agents a concise guide to a website's content.",
+  "url": "https://llmstxt.org/",
+  "repo": "https://github.com/AnswerDotAI/llms-txt",
+  "tags": [
+    "llms-txt",
+    "documentation",
+    "web-standard",
+    "markdown"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "llmstxt-directory",
+    "agents-md"
+  ],
+  "sources": [
+    "https://llmstxt.org/",
+    "https://github.com/AnswerDotAI/llms-txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Answer.AI"
+}

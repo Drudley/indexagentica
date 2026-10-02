@@ -1,0 +1,33 @@
+{
+  "id": "cline",
+  "name": "Cline",
+  "category": "harnesses",
+  "summary": "Open-source autonomous coding agent available as an SDK, IDE extension or CLI, with Plan/Act modes and MCP integration.",
+  "url": "https://cline.bot",
+  "repo": "https://github.com/cline/cline",
+  "docs": "https://docs.cline.bot",
+  "tags": [
+    "coding-agent",
+    "vscode",
+    "mcp-client",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cline.bot/llms.txt"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/cline/cline",
+    "https://cline.bot",
+    "https://docs.cline.bot"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cline"
+}

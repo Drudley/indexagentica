@@ -1,0 +1,32 @@
+{
+  "id": "goose",
+  "name": "goose",
+  "category": "harnesses",
+  "summary": "Open-source, extensible AI agent (desktop app, CLI and API) that can install, execute, edit and test with any LLM.",
+  "description": "Originally created at Block (block/goose); the GitHub repository now lives at aaif-goose/goose.",
+  "url": "https://goose-docs.ai/",
+  "repo": "https://github.com/aaif-goose/goose",
+  "tags": [
+    "agent",
+    "cli",
+    "desktop",
+    "mcp-client",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://goose-docs.ai/llms.txt"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/aaif-goose/goose",
+    "https://goose-docs.ai/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator"
+}

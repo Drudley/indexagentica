@@ -1,0 +1,26 @@
+{
+  "id": "skyfire",
+  "name": "Skyfire",
+  "category": "finance-payments",
+  "summary": "Identity and payments layer for AI agents: verified agent identity plus token-based payment credentials and stablecoin payments.",
+  "url": "https://skyfire.xyz",
+  "docs": "https://docs.skyfire.xyz",
+  "tags": [
+    "agent-identity",
+    "payments",
+    "stablecoins",
+    "kya"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.skyfire.xyz/llms.txt"
+  },
+  "sources": [
+    "https://skyfire.xyz",
+    "https://docs.skyfire.xyz/llms.txt"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Skyfire"
+}

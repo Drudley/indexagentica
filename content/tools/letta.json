@@ -1,0 +1,32 @@
+{
+  "id": "letta",
+  "name": "Letta",
+  "category": "tools",
+  "summary": "Platform for stateful agents with memory, identity and the ability to learn over time (formerly MemGPT); terminal UI, App Server, desktop app and Agent SDK.",
+  "description": "Current source lives in `letta-ai/letta-code` (npm: `@letta-ai/letta-code`); the original `letta-ai/letta` repo now points there and keeps the retired V1 API server on an `archive` branch.",
+  "url": "https://www.letta.com",
+  "repo": "https://github.com/letta-ai/letta-code",
+  "docs": "https://docs.letta.com/",
+  "tags": [
+    "memory",
+    "stateful-agents",
+    "platform"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.letta.com/llms.txt"
+  },
+  "related": [
+    "mem0"
+  ],
+  "sources": [
+    "https://github.com/letta-ai/letta",
+    "https://github.com/letta-ai/letta-code",
+    "https://docs.letta.com/"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Letta"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "context7",
+  "name": "Context7",
+  "category": "mcp-servers",
+  "summary": "Upstash's MCP server and platform that pulls up-to-date, version-specific library documentation and code examples into AI coding tools.",
+  "url": "https://context7.com",
+  "repo": "https://github.com/upstash/context7",
+  "tags": [
+    "mcp",
+    "documentation",
+    "coding-agents",
+    "libraries"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.context7.com/mcp",
+    "notes": "Remote Streamable HTTP endpoint; also available as the npm package @upstash/context7-mcp."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/upstash/context7",
+    "https://context7.com"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Upstash"
+}
