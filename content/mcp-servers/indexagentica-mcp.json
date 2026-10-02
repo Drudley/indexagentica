@@ -1,0 +1,40 @@
+{
+  "id": "indexagentica-mcp",
+  "name": "Index Agentica MCP Server",
+  "category": "mcp-servers",
+  "summary": "Remote, read-only MCP server for searching this directory (Index Agentica): search, get_entry, get_content and list_categories over Streamable HTTP, no auth.",
+  "description": "Stateless remote MCP server on Cloudflare Workers that serves the published Index Agentica index (directory entries plus guides, comparisons, stacks and skills). Tools: `search` (query, type, category, tags, limit), `get_entry` (id), `get_content` (type, id) and `list_categories`. Supports MCP 2026-07-28 (per-request metadata, server/discover) and the 2025-03-26 to 2025-11-25 initialize handshake without sessions. Also exposes a REST mirror (/search, /entries/{id}, /categories, /content) with an OpenAPI document. Rate limited to 120 requests per minute per IP.\n\nDisclosure: this server is run by the maintainers of Index Agentica, so this entry lists our own project. It launched on 2026-10-02.",
+  "url": "https://mcp.indexagentica.com/",
+  "repo": "https://github.com/Drudley/indexagentica-mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "streamable-http",
+    "search",
+    "directory",
+    "cloudflare-workers"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.indexagentica.com/mcp",
+    "openapi": "https://mcp.indexagentica.com/openapi.json",
+    "llms_txt": "https://indexagentica.com/llms.txt",
+    "auth": "none",
+    "notes": "Read-only. 120 requests/min per IP (HTTP 429 with Retry-After). Data refreshed from https://indexagentica.com/api/index.json about every 10 minutes."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/Drudley/indexagentica-mcp",
+    "https://mcp.indexagentica.com/",
+    "https://mcp.indexagentica.com/.well-known/mcp/server-card.json"
+  ],
+  "added": "2026-10-02",
+  "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Index Agentica"
+}

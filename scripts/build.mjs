@@ -8,6 +8,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES } from './site.config.mjs';
+// Remote MCP server + REST mirror (separate repo: https://github.com/Drudley/indexagentica-mcp).
+const MCP_BASE = 'https://mcp.indexagentica.com';
+const MCP_URL = `${MCP_BASE}/mcp`;
+const MCP_REPO_URL = 'https://github.com/Drudley/indexagentica-mcp';
 import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
 import { issueBodyTemplate, formFields } from './lib/forms.mjs';
@@ -441,6 +445,19 @@ write(P.agents, page({
 curl -fsSL ${esc(SITE_URL)}/skills/&lt;id&gt;.zip -o /tmp/skill.zip
 unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 <p>Or fetch just the file: <code>mkdir -p ~/.claude/skills/&lt;id&gt; &amp;&amp; curl -fsSL ${esc(SITE_URL)}/skills/&lt;id&gt;/SKILL.md -o ~/.claude/skills/&lt;id&gt;/SKILL.md</code>. Other agents that support Agent Skills load the same folder from their own skills directory. Read a skill before installing it.</p>
+<h2 id="mcp">Use it over MCP</h2>
+<p>A remote MCP server serves the same published data: <a href="${MCP_URL}"><code>${MCP_URL}</code></a> (Streamable HTTP, no auth, read-only). It supports MCP <code>2026-07-28</code> and the <code>2025-03-26</code> to <code>2025-11-25</code> handshake, statelessly (no session id).</p>
+<pre><code class="language-sh">claude mcp add --transport http indexagentica ${MCP_URL}</code></pre>
+<p>JSON config (e.g. Claude Code's <code>.mcp.json</code>; Claude Code requires <code>"type": "http"</code> for remote servers):</p>
+<pre><code class="language-json">${esc(`{ "mcpServers": { "indexagentica": { "type": "http", "url": "${MCP_URL}" } } }`)}</code></pre>
+<p>Other clients use their own name for Streamable HTTP (Cline: <code>"type": "streamableHttp"</code>; some accept just <code>"url"</code>).</p>
+<ul>
+<li><code>search</code>: query, optional <code>type</code> (entry, guide, comparison, stack, skill), <code>category</code>, <code>tags</code> (all must match), <code>limit</code>.</li>
+<li><code>get_entry</code>: the full record of one directory entry by <code>id</code>.</li>
+<li><code>get_content</code>: a guide, comparison, stack or skill by <code>type</code> and <code>id</code>, with its markdown.</li>
+<li><code>list_categories</code>: category slugs and counts.</li>
+</ul>
+<p>Data is refreshed from <a href="${href(P.api)}"><code>${P.api}</code></a> about every 10 minutes. A plain REST mirror lives at <code>${MCP_BASE}</code>: <a href="${MCP_BASE}/search?q=mcp"><code>/search?q=</code></a>, <code>/entries/{id}</code>, <code>/categories</code>, <code>/content</code>, described by <a href="${MCP_BASE}/openapi.json"><code>/openapi.json</code></a>. Unlike the static site, the server is rate limited: 120 requests per minute per IP (HTTP 429 with <code>Retry-After</code>). Source: <a href="${MCP_REPO_URL}">${MCP_REPO_URL.replace('https://', '')}</a>.</p>
 <h2 id="contribute">Contributing</h2>
 <p>${esc(CONTRIBUTE.summary)} Machine-readable version of this section: <a href="${href(P.contribute)}"><code>${P.contribute}</code></a> (also embedded in <a href="${href(P.api)}"><code>${P.api}</code></a> as <code>contribute</code>).</p>
 <h3 id="rules">Rules</h3>
@@ -470,9 +487,10 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 // llms.txt
 const lfHeading = (t) => (t === 'skill' ? 'Downloadable skills (Agent Skills)' : LF[t].name); // avoid clashing with the "Skills" entry category
 const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr')} across ${CATEGORIES.length} categories. Static, no auth, crawl freely. Contribute via pull request to ${REPO_URL}.`, '',
-  // Shortest paths first (link-list format per llmstxt.org). Add the MCP search line (see indexagentica-mcp/docs/site-snippets.md) only once
-  // https://mcp.indexagentica.com/mcp is live.
+  // Shortest paths first (link-list format per llmstxt.org).
   '## Start here (agents)', '',
+  `- [MCP server](${MCP_URL}): remote MCP (Streamable HTTP, no auth, read-only). Tools: search, get_entry, get_content, list_categories`,
+  `- [REST search API](${MCP_BASE}/search?q=mcp): base ${MCP_BASE}; GET /search?q=, /entries/{id}, /categories, /content; OpenAPI at ${MCP_BASE}/openapi.json`,
   `- [JSON index](${abs(P.api)}): everything at once, as JSON`,
   `- [llms-full.txt](${abs(P.llmsFull)}): everything at once, as markdown`,
   `- [One entry](${SITE_URL}/entries/{id}.md): markdown; JSON at ${SITE_URL}/api/entries/{id}.json`,
