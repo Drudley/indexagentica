@@ -1,0 +1,12 @@
+{
+  "id": "zz-invalid-test",
+  "name": "ZZ Invalid Test",
+  "category": "apis",
+  "summary": "Too short",
+  "url": "example.com",
+  "tags": ["Has Spaces"],
+  "pricing": "cheap",
+  "related": ["does-not-exist"],
+  "homepage": "https://example.com",
+  "added": "02/10/2026"
+}
