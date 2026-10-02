@@ -1,7 +1,7 @@
 {
   "id": "fly-io",
   "name": "Fly.io",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Global public cloud with hardware-isolated Fly Machines for running full-stack and AI applications, driven by the flyctl CLI.",
   "url": "https://fly.io",
   "repo": "https://github.com/superfly/flyctl",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Fly.io"
 }

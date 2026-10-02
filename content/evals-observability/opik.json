@@ -1,7 +1,7 @@
 {
   "id": "opik",
   "name": "Opik",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Comet's open-source platform to debug, evaluate and monitor LLM apps, RAG systems and agentic workflows.",
   "url": "https://www.comet.com/docs/opik/",
   "repo": "https://github.com/comet-ml/opik",
@@ -19,6 +19,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Comet"
 }

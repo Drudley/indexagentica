@@ -1,7 +1,7 @@
 {
   "id": "helicone",
   "name": "Helicone",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source AI gateway and LLM observability platform for routing, monitoring, evaluating and experimenting.",
   "url": "https://www.helicone.ai",
   "repo": "https://github.com/Helicone/helicone",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Helicone"
 }

@@ -1,7 +1,7 @@
 {
   "id": "inspect-ai",
   "name": "Inspect",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source framework for large language model and agent evaluations from the UK AI Security Institute.",
   "url": "https://inspect.aisi.org.uk/",
   "repo": "https://github.com/UKGovernmentBEIS/inspect_ai",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "UK AI Security Institute"
 }

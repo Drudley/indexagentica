@@ -1,7 +1,7 @@
 {
   "id": "arize-phoenix",
   "name": "Arize Phoenix",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source AI observability and evaluation platform from Arize.",
   "url": "https://arize.com/phoenix/",
   "repo": "https://github.com/Arize-ai/phoenix",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Arize AI"
 }

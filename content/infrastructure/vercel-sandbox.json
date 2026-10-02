@@ -1,7 +1,7 @@
 {
   "id": "vercel-sandbox",
   "name": "Vercel Sandbox",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Ephemeral compute primitive that runs untrusted or agent-generated code in isolated Linux microVMs.",
   "url": "https://vercel.com/docs/sandbox",
   "repo": "https://github.com/vercel/sandbox",
@@ -26,6 +26,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Vercel"
 }

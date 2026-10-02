@@ -1,7 +1,7 @@
 {
   "id": "modal",
   "name": "Modal",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Cloud platform for production AI: inference, training, sandboxes and serverless functions on one platform.",
   "url": "https://modal.com",
   "repo": "https://github.com/modal-labs/modal-client",
@@ -26,6 +26,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Modal Labs"
 }

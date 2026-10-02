@@ -1,7 +1,7 @@
 {
   "id": "blaxel",
   "name": "Blaxel",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Infrastructure for autonomous agents: fast-resuming microVM sandboxes, agent hosting, MCP server hosting, batch jobs and a model gateway.",
   "url": "https://blaxel.ai",
   "docs": "https://docs.blaxel.ai",
@@ -21,6 +21,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Blaxel"
 }

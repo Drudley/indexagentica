@@ -1,7 +1,7 @@
 {
   "id": "microsandbox",
   "name": "microsandbox",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Easy, fast, programmable, local-first microVM runtime for untrusted workloads.",
   "url": "https://docs.microsandbox.dev",
   "repo": "https://github.com/superradcompany/microsandbox",
@@ -23,5 +23,6 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator"
 }

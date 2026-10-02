@@ -1,7 +1,7 @@
 {
   "id": "openllmetry",
   "name": "OpenLLMetry",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Traceloop's open-source observability for GenAI/LLM applications, built on OpenTelemetry.",
   "url": "https://www.traceloop.com/openllmetry",
   "repo": "https://github.com/traceloop/openllmetry",
@@ -24,6 +24,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Traceloop"
 }

@@ -1,7 +1,7 @@
 {
   "id": "mcp-inspector",
   "name": "MCP Inspector",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Official interactive developer tool for testing and debugging MCP servers in the browser, on the command line or in the terminal.",
   "url": "https://modelcontextprotocol.io/docs/tools/inspector",
   "repo": "https://github.com/modelcontextprotocol/inspector",
@@ -22,6 +22,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "MCP project"
 }

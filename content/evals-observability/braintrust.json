@@ -1,7 +1,7 @@
 {
   "id": "braintrust",
   "name": "Braintrust",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "AI observability platform for agents: trace production, run evals and catch regressions before users see them.",
   "url": "https://www.braintrust.dev",
   "repo": "https://github.com/braintrustdata/autoevals",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Braintrust"
 }

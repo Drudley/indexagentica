@@ -1,7 +1,7 @@
 {
   "id": "daytona",
   "name": "Daytona",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Secure and elastic infrastructure (sandboxes) for running AI-generated code.",
   "url": "https://www.daytona.io",
   "repo": "https://github.com/daytonaio/daytona",
@@ -24,6 +24,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Daytona"
 }

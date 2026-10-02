@@ -1,7 +1,7 @@
 {
   "id": "deepeval",
   "name": "DeepEval",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source LLM evaluation framework with 50+ plug-and-play metrics for agents, RAG and chatbots.",
   "url": "https://deepeval.com",
   "repo": "https://github.com/confident-ai/deepeval",
@@ -20,6 +20,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Confident AI"
 }

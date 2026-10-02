@@ -1,7 +1,7 @@
 {
   "id": "e2b",
   "name": "E2B",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Open-source, secure cloud sandboxes for AI agents: an isolated machine per agent to run code, browse and use tools.",
   "url": "https://e2b.dev",
   "repo": "https://github.com/e2b-dev/E2B",
@@ -28,6 +28,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "E2B"
 }

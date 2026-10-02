@@ -1,7 +1,7 @@
 {
   "id": "langfuse",
   "name": "Langfuse",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source agent evals and observability platform: trace, evaluate and improve LLM applications and agents.",
   "url": "https://langfuse.com",
   "repo": "https://github.com/langfuse/langfuse",
@@ -27,6 +27,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Langfuse"
 }

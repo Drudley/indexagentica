@@ -1,7 +1,7 @@
 {
   "id": "agentops",
   "name": "AgentOps",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Python SDK and platform for AI agent monitoring, LLM cost tracking, benchmarking, testing and debugging.",
   "url": "https://agentops.ai",
   "repo": "https://github.com/AgentOps-AI/agentops",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "AgentOps"
 }

@@ -1,7 +1,7 @@
 {
   "id": "promptfoo",
   "name": "Promptfoo",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "Open-source tool to test and red-team prompts, agents and RAG: automated evals, vulnerability scanning and model comparison.",
   "url": "https://www.promptfoo.dev",
   "repo": "https://github.com/promptfoo/promptfoo",
@@ -23,6 +23,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Promptfoo"
 }

@@ -1,7 +1,7 @@
 {
   "id": "runloop",
   "name": "Runloop",
-  "category": "tools",
+  "category": "infrastructure",
   "summary": "Managed isolated Linux sandboxes (Devboxes) for AI coding agents, plus evaluations and production infrastructure.",
   "url": "https://runloop.ai",
   "repo": "https://github.com/runloopai/api-client-python",
@@ -28,6 +28,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Runloop"
 }

@@ -1,7 +1,7 @@
 {
   "id": "langsmith",
   "name": "LangSmith",
-  "category": "tools",
+  "category": "evals-observability",
   "summary": "LangChain's agent and LLM observability and evaluation platform: tracing, monitoring, cost and latency tracking.",
   "url": "https://www.langchain.com/langsmith",
   "repo": "https://github.com/langchain-ai/langsmith-sdk",
@@ -27,6 +27,7 @@
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "agentica-curator",
   "maintainer": "LangChain"
 }
