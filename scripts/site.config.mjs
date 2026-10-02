@@ -1,3 +1,5 @@
+import { loadCategories } from './lib/categories.mjs';
+
 // Site-wide configuration. Override via environment variables:
 //   SITE_URL   absolute base URL (default https://indexagentica.com)
 //   BASE_PATH  path prefix for links (default: path component of SITE_URL, i.e. empty for the apex domain;
@@ -13,14 +15,5 @@ export const SITE_URL = (process.env.SITE_URL || 'https://indexagentica.com').re
 export const BASE_PATH = (process.env.BASE_PATH ?? new URL(SITE_URL).pathname).replace(/\/+$/, '');
 export const CNAME = (process.env.CNAME || '').trim();
 
-export const CATEGORIES = [
-  { slug: 'skills', name: 'Skills', description: 'Reusable agent skills, skill packs and prompt-and-script bundles an agent can load.' },
-  { slug: 'harnesses', name: 'Harnesses', description: 'Agent runtimes, frameworks and harnesses: CLIs, SDKs and orchestration loops.' },
-  { slug: 'mcp-servers', name: 'MCP Servers', description: 'Model Context Protocol servers, local or remote, that give agents tools and data.' },
-  { slug: 'tools', name: 'Tools', description: 'Standalone tools agents use: browsers, sandboxes, code execution, search and more.' },
-  { slug: 'protocols', name: 'Protocols', description: 'Open protocols and standards for agents and agent interoperability.' },
-  { slug: 'apis', name: 'APIs', description: 'Agent-friendly web APIs with clear docs, OpenAPI specs or llms.txt.' },
-  { slug: 'information', name: 'Information', description: 'Knowledge sources, documentation hubs, datasets, benchmarks and research.' },
-  { slug: 'finance-payments', name: 'Finance & Payments', description: 'Payment rails, wallets, billing and financial infrastructure usable by agents.' },
-  { slug: 'directories', name: 'Directories', description: 'Other directories, registries, awesome-lists and link hubs for the agent ecosystem.' },
-];
+// Categories live in schema/categories.json (single source of truth; see scripts/sync.mjs).
+export const CATEGORIES = loadCategories();

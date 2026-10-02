@@ -5,9 +5,19 @@
   "description": "One entry in the Index Agentica directory. Stored at content/<category>/<id>.json, one entry per file.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "category", "summary", "url", "added"],
+  "required": [
+    "id",
+    "name",
+    "category",
+    "summary",
+    "url",
+    "added"
+  ],
   "properties": {
-    "$schema": { "type": "string", "description": "Optional pointer to this schema (ignored by the build)." },
+    "$schema": {
+      "type": "string",
+      "description": "Optional pointer to this schema (ignored by the build)."
+    },
     "id": {
       "type": "string",
       "description": "Kebab-case slug. Must equal the filename without .json and be unique across all categories.",
@@ -15,53 +25,163 @@
       "minLength": 2,
       "maxLength": 80
     },
-    "name": { "type": "string", "minLength": 1, "maxLength": 120, "description": "Human/agent-readable display name." },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "Human/agent-readable display name."
+    },
     "category": {
       "type": "string",
       "description": "Must equal the folder the file lives in.",
-      "enum": ["skills", "harnesses", "mcp-servers", "tools", "protocols", "apis", "information", "finance-payments", "directories"]
+      "enum": [
+        "skills",
+        "harnesses",
+        "mcp-servers",
+        "tools",
+        "protocols",
+        "apis",
+        "information",
+        "finance-payments",
+        "directories"
+      ]
     },
-    "summary": { "type": "string", "minLength": 10, "maxLength": 200, "description": "One line, plain text, <=200 chars, no trailing newline." },
-    "description": { "type": "string", "maxLength": 10000, "description": "Longer markdown description." },
-    "url": { "type": "string", "format": "uri", "pattern": "^https?://", "description": "Canonical homepage." },
-    "repo": { "type": "string", "format": "uri", "pattern": "^https?://", "description": "Source repository." },
-    "docs": { "type": "string", "format": "uri", "pattern": "^https?://", "description": "Documentation URL." },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 200,
+      "description": "One line, plain text, <=200 chars, no trailing newline."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 10000,
+      "description": "Longer markdown description."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "Canonical homepage."
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "Source repository."
+    },
+    "docs": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "Documentation URL."
+    },
     "tags": {
       "type": "array",
       "uniqueItems": true,
       "maxItems": 20,
-      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 40 }
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 40
+      }
     },
-    "license": { "type": "string", "maxLength": 80, "description": "SPDX identifier where possible (e.g. MIT, Apache-2.0), or 'proprietary'." },
-    "pricing": { "type": "string", "enum": ["free", "freemium", "paid", "open-source", "unknown"] },
-    "status": { "type": "string", "enum": ["active", "beta", "deprecated", "unknown"] },
+    "license": {
+      "type": "string",
+      "maxLength": 80,
+      "description": "SPDX identifier where possible (e.g. MIT, Apache-2.0), or 'proprietary'."
+    },
+    "pricing": {
+      "type": "string",
+      "enum": [
+        "free",
+        "freemium",
+        "paid",
+        "open-source",
+        "unknown"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "beta",
+        "deprecated",
+        "unknown"
+      ]
+    },
     "agent_access": {
       "type": "object",
       "description": "How an agent can consume this resource programmatically.",
       "additionalProperties": false,
       "properties": {
-        "llms_txt": { "type": "string", "format": "uri", "pattern": "^https?://" },
-        "openapi": { "type": "string", "format": "uri", "pattern": "^https?://" },
-        "mcp_endpoint": { "type": "string", "format": "uri", "pattern": "^(https?|wss?)://" },
-        "auth": { "type": "string", "enum": ["none", "api-key", "oauth", "other"] },
-        "notes": { "type": "string", "maxLength": 1000 }
+        "llms_txt": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "openapi": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "mcp_endpoint": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^(https?|wss?)://"
+        },
+        "auth": {
+          "type": "string",
+          "enum": [
+            "none",
+            "api-key",
+            "oauth",
+            "other"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 1000
+        }
       }
     },
     "related": {
       "type": "array",
       "uniqueItems": true,
       "description": "ids of other entries in this directory. Every id must exist.",
-      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
     },
     "sources": {
       "type": "array",
       "uniqueItems": true,
       "description": "URLs used to verify the facts in this entry.",
-      "items": { "type": "string", "format": "uri", "pattern": "^https?://" }
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://"
+      }
     },
-    "added": { "type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "updated": { "type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "submitted_by": { "type": "string", "maxLength": 120, "description": "Agent or human who submitted the entry (e.g. 'Curator (agent)', 'github:username')." },
-    "maintainer": { "type": "string", "maxLength": 120, "description": "Who maintains the listed resource, if known." }
+    "added": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "submitted_by": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Agent or human who submitted the entry (e.g. 'Curator (agent)', 'github:username')."
+    },
+    "maintainer": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Who maintains the listed resource, if known."
+    }
   }
 }

@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES } from './site.config.mjs';
 import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
+import { issueBodyTemplate, formFields } from './lib/forms.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -33,7 +34,7 @@ const P = {
   home: '/', agents: '/agents/', schema: '/schema/', schemaJson: '/schema/entry.schema.json',
   category: (c) => `/categories/${c}/`, entry: (id) => `/entries/${id}/`, entryMd: (id) => `/entries/${id}.md`,
   api: '/api/index.json', apiCat: (c) => `/api/${c}.json`, apiEntry: (id) => `/api/entries/${id}.json`, apiCats: '/api/categories.json',
-  openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', sitemap: '/sitemap.xml', robots: '/robots.txt',
+  contribute: '/contribute.json', openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', sitemap: '/sitemap.xml', robots: '/robots.txt',
 };
 
 // ---------- fs helpers ----------
@@ -131,7 +132,7 @@ function apiEntry(e) {
 const meta = (extra = {}) => ({
   name: SITE_NAME, description: TAGLINE, version: VERSION, generated: GENERATED, site_url: SITE_URL,
   schema: abs(P.schemaJson), openapi: abs(P.openapi), llms_txt: abs(P.llms), repository: REPO_URL,
-  contribute: abs(P.agents) + '#contribute', license: { content: 'CC-BY-4.0', code: 'MIT' }, ...extra,
+  contribute_url: abs(P.contribute), license: { content: 'CC-BY-4.0', code: 'MIT' }, ...extra,
 });
 const categorySummary = () => CATEGORIES.map((c) => ({ slug: c.slug, name: c.name, description: c.description, count: byCat[c.slug].length, html: abs(P.category(c.slug)), json: abs(P.apiCat(c.slug)) }));
 
@@ -151,6 +152,55 @@ function entryMarkdown(e, level = 1) {
   if (e.description) L.push('', e.description.trim().replace(/^(#{1,4})\s/gm, (m, hs) => '#'.repeat(Math.min(6, hs.length + level)) + ' '));
   return L.join('\n') + '\n';
 }
+
+// ---------- contribution info (single source for /contribute.json, /api/index.json, /agents/, llms*.txt) ----------
+const TEMPLATE = JSON.parse(fs.readFileSync(path.join(ROOT, 'schema/entry.template.json'), 'utf8'));
+const ISSUE_FORM_URL = `${REPO_URL}/issues/new?template=new-entry.yml`;
+const CORRECTION_FORM_URL = `${REPO_URL}/issues/new?template=correction.yml`;
+const ISSUE_BODY = issueBodyTemplate();
+const CONTRIBUTE = {
+  summary: `Add or fix entries via a pull request (preferred) or a structured GitHub issue. Agents are first-class contributors; say that you are an agent and who you act for. Merges are always done by a human maintainer.`,
+  repository: REPO_URL,
+  schema: abs(P.schemaJson),
+  schema_docs: abs(P.schema),
+  categories: CATEGORIES.map((c) => c.slug),
+  file_path: 'content/{category}/{id}.json',
+  rules: [
+    'One entry per file at content/{category}/{id}.json; id is kebab-case, unique across all categories, and equals the filename.',
+    'category equals the folder name.',
+    `Required fields: ${SCHEMA.required.join(', ')}. Unknown fields are rejected (additionalProperties: false).`,
+    'summary is one neutral line, 10-200 characters; no marketing copy.',
+    'List the URLs you used to verify facts in sources; omit any field you cannot verify.',
+    'Every id in related must already exist.',
+  ],
+  entry_template: TEMPLATE,
+  pull_request: {
+    steps: [
+      `Fork ${REPO_URL} and create a branch.`,
+      'Copy entry_template to content/{category}/{id}.json and fill it in (delete optional fields you cannot verify; set added to today, YYYY-MM-DD).',
+      'Run: node scripts/validate.mjs   (Node >= 18, zero dependencies; must print a check mark and exit 0).',
+      `Open a pull request against main using the PR template. CI validates and posts file/line annotations with fixes.`,
+    ],
+    validate_command: 'node scripts/validate.mjs',
+    pr_template: `${REPO_URL}/blob/main/.github/pull_request_template.md`,
+    guide: `${REPO_URL}/blob/main/CONTRIBUTING.md`,
+  },
+  issue: {
+    form_url: ISSUE_FORM_URL,
+    api: {
+      method: 'POST',
+      url: `https://api.github.com/repos/${REPO}/issues`,
+      title: '[New entry]: {name}',
+      body_format: 'Markdown sections "### <Label>" followed by the value, exactly as in body_template; use "_No response_" for empty optional fields. Lists: comma-separated (Tags, Related entry ids) or one URL per line (Sources).',
+      body_template: ISSUE_BODY,
+      gh_cli: `gh issue create -R ${REPO} --title "[New entry]: <name>" --body-file body.md`,
+      fields: formFields().map((f) => ({ label: f.label, field: f.key, required: !!f.required, ...(f.options ? { options: f.options } : {}), ...(f.list ? { list: f.list === 'comma' ? 'comma-separated' : 'one per line' } : {}) })),
+    },
+    review: 'A maintainer reviews the issue. Adding the `approved` label (write access required) runs a workflow that writes content/{category}/{id}.json, validates it, and opens a pull request that closes the issue. If validation fails, the workflow comments the errors on the issue instead. A human merges the PR.',
+  },
+  corrections: { form_url: CORRECTION_FORM_URL, note: 'Report wrong facts, broken links or request removal. Or edit the JSON file directly in a PR and set updated.' },
+  policy: ['Useful to AI agents or people building them.', 'Publicly reachable; facts verifiable from the listed sources.', 'No spam, affiliate links or SEO-only pages; disclose any affiliation.'],
+};
 
 // ---------- build ----------
 fs.rmSync(DIST, { recursive: true, force: true });
@@ -233,7 +283,8 @@ ${e.sources?.length ? `<h2>Sources</h2><ul>${e.sources.map((s) => `<li>${link(s)
 }
 
 // API index
-write(P.api, json({ ...meta(), counts: { total: entries.length, by_category: Object.fromEntries(CATEGORIES.map((c) => [c.slug, byCat[c.slug].length])) }, categories: categorySummary(), entries: entries.map(apiEntry) }));
+write(P.contribute, json({ ...meta(), contribute: CONTRIBUTE }));
+write(P.api, json({ ...meta(), contribute: CONTRIBUTE, counts: { total: entries.length, by_category: Object.fromEntries(CATEGORIES.map((c) => [c.slug, byCat[c.slug].length])) }, categories: categorySummary(), entries: entries.map(apiEntry) }));
 write(P.apiCats, json({ ...meta(), categories: categorySummary() }));
 
 // Schema
@@ -273,22 +324,30 @@ write(P.agents, page({
 <tr><td>Per entry</td><td><code>/api/entries/&lt;id&gt;.json</code>, <code>/entries/&lt;id&gt;.md</code></td><td>Single entry as JSON or markdown.</td></tr>
 <tr><td>OpenAPI</td><td><a href="${href(P.openapi)}"><code>${P.openapi}</code></a></td><td>OpenAPI 3.1 description of the read-only JSON endpoints.</td></tr>
 <tr><td>Schema</td><td><a href="${href(P.schemaJson)}"><code>${P.schemaJson}</code></a></td><td>JSON Schema for one entry (<a href="${href(P.schema)}">human-readable</a>).</td></tr>
+<tr><td>Contribute</td><td><a href="${href(P.contribute)}"><code>${P.contribute}</code></a></td><td>How to submit entries: rules, template, PR and issue paths.</td></tr>
 <tr><td>Sitemap</td><td><a href="${href(P.sitemap)}"><code>${P.sitemap}</code></a></td><td>Every HTML page.</td></tr>
 </tbody></table>
 <p>Base URL: <code>${esc(SITE_URL)}</code>. All responses are static files served by GitHub Pages; please cache and use conditional requests. Crawling is explicitly welcome; see <a href="${href(P.robots)}"><code>robots.txt</code></a>.</p>
-<h2 id="contribute">Contributing an entry</h2>
-<p>Submissions are pull requests against <a href="${REPO_URL}">${REPO}</a>. Agents are first-class contributors; please say in the PR that you are an agent and who you act for.</p>
+<h2 id="contribute">Contributing</h2>
+<p>${esc(CONTRIBUTE.summary)} Machine-readable version of this section: <a href="${href(P.contribute)}"><code>${P.contribute}</code></a> (also embedded in <a href="${href(P.api)}"><code>${P.api}</code></a> as <code>contribute</code>).</p>
+<h3 id="rules">Rules</h3>
+<ul>${CONTRIBUTE.rules.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+<p>Categories: ${CATEGORIES.map((c) => `<code>${c.slug}</code>`).join(', ')}. Schema: <a href="${href(P.schemaJson)}"><code>${P.schemaJson}</code></a> (<a href="${href(P.schema)}">field reference</a>).</p>
+<h3 id="contribute-pr">Path A: pull request (preferred)</h3>
+<ol>${CONTRIBUTE.pull_request.steps.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
+<p>Guide: <a href="${CONTRIBUTE.pull_request.guide}">CONTRIBUTING.md</a>. Fixing an existing entry: edit its file and set <code>updated</code>.</p>
+<h4 id="entry-template">Entry template (copy, then delete what you can't verify)</h4>
+<pre><code class="language-json">${esc(JSON.stringify(TEMPLATE, null, 2))}</code></pre>
+<h3 id="contribute-issue">Path B: structured issue</h3>
 <ol>
-<li>Fork <a href="${REPO_URL}">${REPO}</a> and create a branch.</li>
-<li>Pick a category: ${CATEGORIES.map((c) => `<code>${c.slug}</code>`).join(', ')}.</li>
-<li>Add <code>content/&lt;category&gt;/&lt;id&gt;.json</code> where <code>id</code> is a kebab-case slug equal to the filename. Follow the <a href="${href(P.schema)}">schema</a>. Required: <code>id</code>, <code>name</code>, <code>category</code>, <code>summary</code> (one line, ≤200 chars), <code>url</code>, <code>added</code> (YYYY-MM-DD).</li>
-<li>Include <code>sources</code>, the URLs you used to verify the facts. Don't guess: omit fields you cannot verify.</li>
-<li>Run <code>node scripts/validate.mjs</code> (Node ≥ 18, zero dependencies) and fix any errors.</li>
-<li>Open a pull request with the template filled in. CI re-runs validation and the build.</li>
+<li>Humans: open the <a href="${ISSUE_FORM_URL}">New entry form</a>.</li>
+<li>Agents via API: <code>POST https://api.github.com/repos/${REPO}/issues</code> with title <code>[New entry]: &lt;name&gt;</code> and the body below (sections <code>### &lt;Label&gt;</code>; <code>_No response_</code> for empty optional fields), e.g. <code>${esc(CONTRIBUTE.issue.api.gh_cli)}</code>.</li>
+<li>${esc(CONTRIBUTE.issue.review)}</li>
 </ol>
-<p>To fix an existing entry, edit its JSON file and set <code>updated</code>. See <a href="${REPO_URL}/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
-<h2 id="minimal-example">Minimal entry</h2>
-<pre><code class="language-json">${esc(JSON.stringify({ id: 'example-tool', name: 'Example Tool', category: 'tools', summary: 'One-line description of what it does for agents.', url: 'https://example.com', sources: ['https://example.com'], added: GENERATED.slice(0, 10) }, null, 2))}</code></pre>
+<h4 id="issue-body-template">Issue body template</h4>
+<pre><code class="language-markdown">${esc(ISSUE_BODY)}</code></pre>
+<h3 id="corrections">Corrections and removals</h3>
+<p>Use the <a href="${CORRECTION_FORM_URL}">Correction / removal form</a>, or edit the JSON in a pull request.</p>
 <h2 id="policy">Inclusion policy</h2>
 <ul><li>Useful to AI agents or people building them.</li><li>Publicly reachable; facts verifiable from the listed sources.</li><li>No spam, affiliate links, or SEO-only pages. Summaries are neutral, not marketing copy.</li></ul>`,
 }));
@@ -301,7 +360,13 @@ const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr
   `- [JSON index](${abs(P.api)}): all entries with metadata and counts`,
   `- [OpenAPI](${abs(P.openapi)}): OpenAPI 3.1 description of the JSON endpoints`,
   `- [Entry schema](${abs(P.schemaJson)}): JSON Schema (draft 2020-12) for one entry`,
-  `- [For agents](${abs(P.agents)}): how to consume and contribute`, ''];
+  `- [For agents](${abs(P.agents)}): how to consume and contribute`, '',
+  '## Contribute', '',
+  `- [contribute.json](${abs(P.contribute)}): machine-readable contribution guide: rules, entry template, PR steps, issue body template`,
+  `- [Pull request path](${abs(P.agents)}#contribute-pr): add content/{category}/{id}.json to ${REPO_URL}, run node scripts/validate.mjs, open a PR`,
+  `- [Issue path](${abs(P.agents)}#contribute-issue): open a structured "New entry" issue (form: ${ISSUE_FORM_URL}); a maintainer's approved label turns it into a PR`,
+  `- [Entry template](${REPO_URL}/blob/main/schema/entry.template.json): copy-paste JSON`,
+  `- [Corrections / removals](${CORRECTION_FORM_URL})`, ''];
 for (const c of CATEGORIES) {
   llms.push(`## ${c.name}`, '', `${c.description} JSON: ${abs(P.apiCat(c.slug))}`, '');
   byCat[c.slug].forEach((e) => llms.push(`- [${e.name}](${abs(P.entryMd(e.id))}): ${e.summary}`));
@@ -311,7 +376,11 @@ for (const c of CATEGORIES) {
 llms.push('## Optional', '', `- [Contributing guide](${REPO_URL}/blob/main/CONTRIBUTING.md): PR-based submission process`, `- [Sitemap](${abs(P.sitemap)})`, '');
 write(P.llms, llms.join('\n'));
 
-const full = [`# ${SITE_NAME}: full directory`, '', `> ${TAGLINE}`, '', `Generated: ${GENERATED}. Entries: ${entries.length}. Source: ${REPO_URL}. JSON: ${abs(P.api)}`, ''];
+const full = [`# ${SITE_NAME}: full directory`, '', `> ${TAGLINE}`, '', `Generated: ${GENERATED}. Entries: ${entries.length}. Source: ${REPO_URL}. JSON: ${abs(P.api)}`, '',
+  '## Contributing', '', CONTRIBUTE.summary, '', `Machine-readable: ${abs(P.contribute)}`, '', '### Rules', '', ...CONTRIBUTE.rules.map((r) => `- ${r}`), '',
+  '### Pull request path', '', ...CONTRIBUTE.pull_request.steps.map((x, i) => `${i + 1}. ${x}`), '', 'Entry template:', '', '```json', JSON.stringify(TEMPLATE, null, 2), '```', '',
+  '### Issue path', '', `Form: ${ISSUE_FORM_URL}. API: POST https://api.github.com/repos/${REPO}/issues with title "[New entry]: <name>" and this body:`, '', '```markdown', ISSUE_BODY.trim(), '```', '', CONTRIBUTE.issue.review, '',
+  `Corrections and removals: ${CORRECTION_FORM_URL}`, ''];
 for (const c of CATEGORIES) {
   full.push(`## ${c.name} (${c.slug})`, '', c.description, '');
   byCat[c.slug].forEach((e) => full.push(entryMarkdown(e, 3)));
@@ -321,7 +390,7 @@ write(P.llmsFull, full.join('\n'));
 
 // OpenAPI
 const ref = (n) => ({ $ref: `#/components/schemas/${n}` });
-const metaProps = { name: { type: 'string' }, description: { type: 'string' }, version: { type: 'string' }, generated: { type: 'string', format: 'date-time' }, site_url: { type: 'string', format: 'uri' }, schema: { type: 'string', format: 'uri' }, openapi: { type: 'string', format: 'uri' }, llms_txt: { type: 'string', format: 'uri' }, repository: { type: 'string', format: 'uri' }, contribute: { type: 'string', format: 'uri' }, license: { type: 'object' } };
+const metaProps = { name: { type: 'string' }, description: { type: 'string' }, version: { type: 'string' }, generated: { type: 'string', format: 'date-time' }, site_url: { type: 'string', format: 'uri' }, schema: { type: 'string', format: 'uri' }, openapi: { type: 'string', format: 'uri' }, llms_txt: { type: 'string', format: 'uri' }, repository: { type: 'string', format: 'uri' }, contribute_url: { type: 'string', format: 'uri' }, license: { type: 'object' } };
 const { $schema: _s, $id: _i, ...entrySchema } = SCHEMA;
 const entryOut = { ...entrySchema, properties: { ...entrySchema.properties, links: { type: 'object', properties: { html: { type: 'string', format: 'uri' }, markdown: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' }, source: { type: 'string', format: 'uri' } } } } };
 delete entryOut.properties.$schema;
@@ -338,13 +407,14 @@ write(P.openapi, json({
     '/api/entries/{id}.json': { get: { operationId: 'getEntry', summary: 'One entry by id', parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string', pattern: SCHEMA.properties.id.pattern } }], responses: ok(ref('Entry'), 'Entry') } },
     '/entries/{id}.md': { get: { operationId: 'getEntryMarkdown', summary: 'One entry as markdown', parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }], responses: ok({ type: 'string' }, 'Markdown', 'text/markdown') } },
     '/schema/entry.schema.json': { get: { operationId: 'getEntrySchema', summary: 'JSON Schema for one entry', responses: ok({ type: 'object' }, 'JSON Schema', 'application/schema+json') } },
+    '/contribute.json': { get: { operationId: 'getContributionGuide', summary: 'Machine-readable contribution guide (rules, entry template, PR and issue paths)', responses: ok({ type: 'object', properties: { ...metaProps, contribute: { type: 'object' } } }, 'Contribution guide') } },
     '/llms.txt': { get: { operationId: 'getLlmsTxt', summary: 'llms.txt index', responses: ok({ type: 'string' }, 'llms.txt', 'text/plain') } },
     '/llms-full.txt': { get: { operationId: 'getLlmsFullTxt', summary: 'All entries as markdown', responses: ok({ type: 'string' }, 'llms-full.txt', 'text/plain') } },
   },
   components: { schemas: {
     Entry: entryOut,
     CategorySummary: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, description: { type: 'string' }, count: { type: 'integer' }, html: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' } } },
-    Index: { type: 'object', properties: { ...metaProps, counts: { type: 'object', properties: { total: { type: 'integer' }, by_category: { type: 'object', additionalProperties: { type: 'integer' } } } }, categories: { type: 'array', items: ref('CategorySummary') }, entries: { type: 'array', items: ref('Entry') } } },
+    Index: { type: 'object', properties: { ...metaProps, contribute: { type: 'object', description: 'Same as /contribute.json' }, counts: { type: 'object', properties: { total: { type: 'integer' }, by_category: { type: 'object', additionalProperties: { type: 'integer' } } } }, categories: { type: 'array', items: ref('CategorySummary') }, entries: { type: 'array', items: ref('Entry') } } },
     CategoryResponse: { type: 'object', properties: { ...metaProps, category: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, description: { type: 'string' } } }, count: { type: 'integer' }, entries: { type: 'array', items: ref('Entry') } } },
   } },
 }));

@@ -1,0 +1,89 @@
+name: Submission to PR
+
+# When a maintainer adds the `approved` label to a "New entry" issue, turn the issue-form
+# answers into content/<category>/<id>.json, validate it, and open a pull request that
+# closes the issue. Only users with write access can add labels, which is the gate.
+# PRs are never merged automatically.
+#
+# Security: issue content is untrusted. It is passed only through environment variables
+# (never interpolated into run scripts), and the entry is only written after its id
+# and category pass schema validation (slug pattern + enum), so paths/branch names are safe.
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: submission-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  to-pr:
+    if: github.event.label.name == 'approved' && github.event.issue.state == 'open' && !github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # push the submission branch
+      pull-requests: write  # open the PR
+      issues: write         # comment / relabel the issue
+      actions: write        # dispatch CI on the new branch
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Parse issue form and write entry
+        id: parse
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: node scripts/issue-to-entry.mjs
+
+      - name: Report problems on the issue
+        if: steps.parse.outputs.ok != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh label create needs-changes --color D93F0B --description "Submission needs changes before it can become a PR" 2>/dev/null || true
+          gh issue comment "$ISSUE_NUMBER" --body-file submission-result.md
+          gh issue edit "$ISSUE_NUMBER" --remove-label approved --add-label needs-changes
+          echo "::warning::Submission #$ISSUE_NUMBER has validation problems; commented on the issue."
+
+      - name: Validate everything
+        if: steps.parse.outputs.ok == 'true'
+        run: node scripts/validate.mjs
+
+      - name: Open pull request
+        if: steps.parse.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ENTRY_ID: ${{ steps.parse.outputs.id }}
+          ENTRY_NAME: ${{ steps.parse.outputs.name }}
+          ENTRY_PATH: ${{ steps.parse.outputs.path }}
+        run: |
+          set -euo pipefail
+          branch="submission/${ENTRY_ID}-issue-${ISSUE_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- "$ENTRY_PATH"
+          git commit -m "Add ${ENTRY_ID} (submission #${ISSUE_NUMBER})"
+          git push --force -u origin "$branch"
+          pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$pr" ]; then
+            gh pr create --base main --head "$branch" --title "Add ${ENTRY_NAME} (${ENTRY_ID})" --body-file pr-body.md
+            pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number')
+          fi
+          # PRs opened with GITHUB_TOKEN don't trigger pull_request workflows; run CI explicitly.
+          gh workflow run ci.yml --ref "$branch"
+          gh issue edit "$ISSUE_NUMBER" --remove-label needs-changes 2>/dev/null || true
+          gh issue comment "$ISSUE_NUMBER" --body "Opened #${pr} with \`${ENTRY_PATH}\`. CI validation is running on it; a maintainer will review and merge. This issue closes when the PR is merged."
+          echo "### Opened PR #${pr} for \`${ENTRY_PATH}\`" >> "$GITHUB_STEP_SUMMARY"

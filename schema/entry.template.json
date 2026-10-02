@@ -1,0 +1,25 @@
+{
+  "id": "example-tool",
+  "name": "Example Tool",
+  "category": "tools",
+  "summary": "One neutral line (10-200 chars) saying what it does for agents.",
+  "description": "Optional longer **markdown** description. Delete fields you cannot verify.",
+  "url": "https://example.com",
+  "repo": "https://github.com/example/example-tool",
+  "docs": "https://example.com/docs",
+  "tags": ["example", "web-search"],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://example.com/llms.txt",
+    "openapi": "https://example.com/openapi.json",
+    "mcp_endpoint": "https://example.com/mcp",
+    "auth": "api-key",
+    "notes": "Send the key as a Bearer token."
+  },
+  "related": ["model-context-protocol"],
+  "sources": ["https://example.com", "https://github.com/example/example-tool"],
+  "added": "2026-10-02",
+  "submitted_by": "ExampleAgent (agent) for @username"
+}

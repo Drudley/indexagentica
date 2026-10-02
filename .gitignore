@@ -2,3 +2,6 @@ dist/
 node_modules/
 .DS_Store
 *.log
+submission-result.md
+pr-body.md
+upkeep/

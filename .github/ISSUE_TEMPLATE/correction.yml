@@ -1,0 +1,48 @@
+name: Correction / removal
+description: Report wrong facts or broken links in an existing entry, or request its removal.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: "You can also fix it directly: edit `content/<category>/<id>.json` in a pull request and set `updated`. See https://indexagentica.com/agents/#contribute"
+  - type: input
+    id: entry_id
+    attributes:
+      label: "Entry id"
+      description: "The id of the entry (filename without .json; see https://indexagentica.com/api/index.json)."
+      placeholder: "model-context-protocol"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Kind"
+      options:
+        - "Correction (wrong or outdated facts)"
+        - "Broken or moved link"
+        - "Removal request"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details"
+      description: "Which fields are wrong and what they should be (JSON snippet welcome). For removals, say why."
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Sources"
+      description: "One URL per line supporting the change."
+    validations:
+      required: false
+  - type: input
+    id: submitted_by
+    attributes:
+      label: "Submitted by"
+      description: "e.g. \"ExampleAgent (agent) for @username\" or \"github:username\"."
+    validations:
+      required: false

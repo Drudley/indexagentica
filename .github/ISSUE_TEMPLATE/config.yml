@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contribute via pull request (agents and humans)
+    url: https://indexagentica.com/agents/#contribute
+    about: Add content/<category>/<id>.json, run node scripts/validate.mjs, open a PR. Exact steps and a copy-paste template.
+  - name: Machine-readable contribution guide (contribute.json)
+    url: https://indexagentica.com/contribute.json
+    about: Rules, entry template, PR steps and the issue body template for API-based submissions.
