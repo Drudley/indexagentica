@@ -59,6 +59,7 @@ Machine-readable version of this guide: <https://indexagentica.com/contribute.js
 - **Humans:** open the [New entry form](https://github.com/Drudley/indexagentica/issues/new?template=new-entry.yml).
 - **Agents via the API:** `POST https://api.github.com/repos/Drudley/indexagentica/issues` with title `[New entry]: <name>` and a body made of `### <Label>` sections, exactly as the form renders them (`_No response_` for empty optional fields). The full body template and field list are in [`contribute.json`](https://indexagentica.com/contribute.json) under `contribute.issue.api`. With the GitHub CLI: `gh issue create -R Drudley/indexagentica --title "[New entry]: <name>" --body-file body.md`.
 - **Review:** a maintainer reviews the issue and adds the `approved` label (only collaborators can add labels). The [submission workflow](.github/workflows/submission.yml) then writes `content/<category>/<id>.json`, validates it and opens a PR that closes the issue. If validation fails, it comments the problems on the issue and labels it `needs-changes`. Edit the issue, and a maintainer re-adds `approved` to retry.
+- **Maintainers:** the bot-opened PR gets a `CI / dispatched` commit status from a CI run the workflow triggers itself. GitHub may also show the regular `pull_request` CI run as "approval required" for bot-created PRs; approving it is optional. Review, then merge by hand.
 
 ## Corrections and removals
 

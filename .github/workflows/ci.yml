@@ -1,14 +1,17 @@
 name: CI
 
 # Validates content and builds the site for pull requests.
-# Also dispatchable on any branch: the submission workflow triggers it on the PR branches it opens,
-# because PRs created with GITHUB_TOKEN don't trigger pull_request workflows by themselves.
+# Also dispatchable on any branch: the submission workflow triggers it on the PR branches it opens.
+# PRs created with GITHUB_TOKEN either don't trigger pull_request runs or need a maintainer to
+# approve them ("action required"), so the dispatched run reports a commit status ("CI / dispatched")
+# that shows up on the PR without any manual step.
 on:
   pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
+  statuses: write   # only used on workflow_dispatch to report the result on the commit (see last step)
 
 concurrency:
   group: ci-${{ github.event.pull_request.number || github.ref }}
@@ -29,3 +32,15 @@ jobs:
         run: node scripts/build.mjs
       - name: Check dist
         run: node scripts/check-dist.mjs
+      - name: Report result as a commit status (dispatched runs only)
+        if: always() && github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          state=failure; desc="Validation or build failed; see run for annotations"
+          if [ "$JOB_STATUS" = "success" ]; then state=success; desc="Content valid, site builds"; fi
+          gh api -X POST "repos/$GH_REPO/statuses/$SHA" -f state="$state" -f context="CI / dispatched" -f description="$desc" -f target_url="$RUN_URL" >/dev/null
