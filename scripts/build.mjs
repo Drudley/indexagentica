@@ -52,6 +52,25 @@ function write(rel, data) {
   written.push(rel);
 }
 const json = (o) => JSON.stringify(o, null, 2) + '\n';
+// static/ is copied verbatim (dotfiles and dot-directories such as .well-known included) after
+// everything else is generated; a static file may not shadow a generated one.
+const STATIC = path.join(ROOT, 'static');
+function copyStatic(dir = STATIC) {
+  if (!fs.existsSync(dir)) return 0;
+  let n = 0;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const src = path.join(dir, e.name);
+    if (e.isDirectory()) { n += copyStatic(src); continue; }
+    if (!e.isFile()) continue;
+    const rel = '/' + path.relative(STATIC, src).split(path.sep).join('/');
+    if (fs.existsSync(path.join(DIST, rel))) { console.error(`static${rel} would overwrite a generated file; rename or remove it.`); process.exit(1); }
+    fs.mkdirSync(path.dirname(path.join(DIST, rel)), { recursive: true });
+    fs.copyFileSync(src, path.join(DIST, rel));
+    written.push(rel);
+    n++;
+  }
+  return n;
+}
 
 // ---------- html ----------
 const CSS = `:root{--fg:#1a1a1a;--muted:#555;--bg:#fdfdfc;--card:#f3f3f0;--link:#0645ad;--accent:#6b3fa0}
@@ -508,4 +527,5 @@ Allow: /
 Sitemap: ${abs(P.sitemap)}
 `);
 
-console.log(`Built ${written.length} files into dist/ (${plural(entries.length, 'entr')}, ${CATEGORIES.length} categories) for ${SITE_URL} (base path "${BASE_PATH || '/'}")${CNAME ? `, CNAME=${CNAME}` : ', no CNAME'}.`);
+const nStatic = copyStatic();
+console.log(`Built ${written.length} files (${nStatic} from static/) into dist/ (${plural(entries.length, 'entr')}, ${CATEGORIES.length} categories) for ${SITE_URL} (base path "${BASE_PATH || '/'}")${CNAME ? `, CNAME=${CNAME}` : ', no CNAME'}.`);

@@ -30,6 +30,7 @@ The site is plain semantic HTML with no JavaScript, plus machine-readable output
 content/<category>/<id>.json   one directory entry per file (see content/README.md)
 content-long/                  guides, comparisons, stacks, skills: markdown + front matter (see content-long/README.md)
 schema/longform/               JSON Schemas for long-form front matter
+static/                        copied verbatim into dist/ (dotfiles included, e.g. .well-known/); may not shadow generated files
 schema/categories.json         categories: single source of truth (run scripts/sync.mjs after editing)
 schema/entry.schema.json       JSON Schema (draft 2020-12) for an entry; category enum generated
 schema/entry.template.json     copy-paste entry template (validated in CI)

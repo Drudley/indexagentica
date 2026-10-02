@@ -57,5 +57,19 @@ for (const f of files) {
     }
   }
 }
+// Every file under static/ (including dotfiles such as .well-known/*) must land in dist/ byte-for-byte.
+const STATIC = path.resolve(DIST, '../static');
+let nStatic = 0;
+(function walkStatic(d) {
+  if (!fs.existsSync(d)) return;
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) { walkStatic(p); continue; }
+    const rel = path.relative(STATIC, p), out = path.join(DIST, rel);
+    nStatic++;
+    if (!fs.existsSync(out)) errors.push(`static/${rel}: missing from dist/`);
+    else if (!fs.readFileSync(out).equals(fs.readFileSync(p))) errors.push(`static/${rel}: differs in dist/`);
+  }
+})(STATIC);
 if (errors.length) { errors.forEach((e) => console.error('✗ ' + e)); console.error(`\n${errors.length} problem(s).`); process.exit(1); }
-console.log(`✓ dist OK: ${files.length} files, ${links} internal links/URLs checked, all JSON parses.`);
+console.log(`✓ dist OK: ${files.length} files (${nStatic} static), ${links} internal links/URLs checked, all JSON parses.`);

@@ -44,6 +44,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+          # Without this the action's tar step excludes dotfiles, which would silently drop
+          # dist/.well-known/* (copied from static/) and .nojekyll.
+          include-hidden-files: true
 
   deploy:
     if: github.ref == 'refs/heads/main'
