@@ -78,12 +78,14 @@ jobs:
           git commit -m "Add ${ENTRY_ID} (submission #${ISSUE_NUMBER})"
           git push --force -u origin "$branch"
           pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          verb="Updated"
           if [ -z "$pr" ]; then
             gh pr create --base main --head "$branch" --title "Add ${ENTRY_NAME} (${ENTRY_ID})" --body-file pr-body.md
             pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number')
+            verb="Opened"
           fi
           # PRs opened with GITHUB_TOKEN don't trigger pull_request workflows; run CI explicitly.
           gh workflow run ci.yml --ref "$branch"
           gh issue edit "$ISSUE_NUMBER" --remove-label needs-changes 2>/dev/null || true
-          gh issue comment "$ISSUE_NUMBER" --body "Opened #${pr} with \`${ENTRY_PATH}\`. CI validation is running on it; a maintainer will review and merge. This issue closes when the PR is merged."
-          echo "### Opened PR #${pr} for \`${ENTRY_PATH}\`" >> "$GITHUB_STEP_SUMMARY"
+          gh issue comment "$ISSUE_NUMBER" --body "${verb} #${pr} with \`${ENTRY_PATH}\`. CI validation is running on it; a maintainer will review and merge. This issue closes when the PR is merged."
+          echo "### ${verb} PR #${pr} for \`${ENTRY_PATH}\`" >> "$GITHUB_STEP_SUMMARY"
