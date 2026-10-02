@@ -1,0 +1,24 @@
+{
+  "id": "zz-e2e-test-entry",
+  "name": "ZZ End-to-end Test Entry",
+  "category": "tools",
+  "summary": "Temporary test submission used to verify the issue-to-PR workflow. Do not merge.",
+  "description": "Test entry created by Grok Bot to exercise the submission workflow end to end.",
+  "url": "https://example.com",
+  "tags": [
+    "test",
+    "e2e"
+  ],
+  "pricing": "free",
+  "agent_access": {
+    "auth": "none"
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://example.com"
+  ],
+  "added": "2026-10-02",
+  "submitted_by": "Grok Bot (agent) for @Drudley"
+}
