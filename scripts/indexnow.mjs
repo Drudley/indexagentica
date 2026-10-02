@@ -94,14 +94,22 @@ async function submit(listPath = 'indexnow/urls.txt', dryRun = false) {
     if (!(await waitFor('New sitemap', `${SITE_URL}/sitemap.xml`, (t) => t === want))) warn('live sitemap still differs from this build (CDN cache?); pinging anyway');
   }
 
-  let res;
-  try {
-    res = await fetch(ENDPOINT, { method: 'POST', signal: AbortSignal.timeout(30000), headers: { 'content-type': 'application/json; charset=utf-8', 'user-agent': 'indexagentica-indexnow/1.0' }, body: JSON.stringify({ host, key, keyLocation, urlList: list }) });
-  } catch (e) { warn(`request failed: ${e.message}`); return; }
-  const body = (await res.text().catch(() => '')).slice(0, 300);
-  const why = { 400: 'bad request', 403: 'key not valid / key file not found', 422: 'URLs do not belong to host or key mismatch', 429: 'too many requests (rate limited); will be retried on the next content change' }[res.status];
+  // A brand-new key returns 403 SiteVerificationNotCompleted until the engine has fetched the key file;
+  // retry a few times before giving up.
+  let res, body = '';
+  for (let attempt = 1; ; attempt++) {
+    try {
+      res = await fetch(ENDPOINT, { method: 'POST', signal: AbortSignal.timeout(30000), headers: { 'content-type': 'application/json; charset=utf-8', 'user-agent': 'indexagentica-indexnow/1.0' }, body: JSON.stringify({ host, key, keyLocation, urlList: list }) });
+    } catch (e) { warn(`request failed: ${e.message}`); return; }
+    body = (await res.text().catch(() => '')).slice(0, 300);
+    if (!(res.status === 403 && /SiteVerificationNotCompleted/.test(body)) || attempt >= 5) break;
+    console.log(`HTTP 403 SiteVerificationNotCompleted (attempt ${attempt}); retrying in 60 s.`);
+    await sleep(60000);
+  }
+  const why = { 400: 'bad request', 403: 'key not valid / key file not found', 422: 'URLs do not belong to host or key mismatch', 429: 'too many requests (rate limited)' }[res.status];
   if (res.status === 200 || res.status === 202) console.log(`IndexNow: submitted ${list.length} URL(s): HTTP ${res.status}${res.status === 202 ? ' (accepted, key validation pending)' : ''}.`);
-  else warn(`HTTP ${res.status}${why ? ` (${why})` : ''}${body ? `: ${body}` : ''}`);
+  // The next push diffs against the then-live sitemap, so these URLs are not re-sent automatically.
+  else warn(`HTTP ${res.status}${why ? ` (${why})` : ''}${body ? `: ${body}` : ''}. ${list.length} URL(s) not submitted; to resend, run pages.yml manually with indexnow_full.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
