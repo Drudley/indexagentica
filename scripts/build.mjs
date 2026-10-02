@@ -33,6 +33,7 @@ const catName = Object.fromEntries(CATEGORIES.map((c) => [c.slug, c.name]));
 // ---------- url helpers ----------
 const href = (p) => `${BASE_PATH}${p}`;          // site-relative link with base path
 const abs = (p) => `${SITE_URL}${p}`;            // absolute URL
+const ID = { website: abs('/#website'), org: abs('/#org'), dataset: abs('/#dataset') }; // JSON-LD node ids
 const P = {
   home: '/', agents: '/agents/', schema: '/schema/', schemaJson: '/schema/entry.schema.json',
   category: (c) => `/categories/${c}/`, entry: (id) => `/entries/${id}/`, entryMd: (id) => `/entries/${id}.md`,
@@ -42,6 +43,30 @@ const P = {
 
 // ---------- long-form ----------
 const LONG = prepareLongform({ ROOT, entryIds: new Set(entries.map((e) => e.id)), byId, href, abs, P, REPO_URL, includeDrafts: process.env.INCLUDE_DRAFTS === '1' });
+
+// <lastmod> must reflect when the page's content last changed (it also drives the changed-URLs-only IndexNow
+// ping in pages.yml), so never use the build time. Entries: latest of added/updated/last_verified. Category
+// pages and the home page: latest of what they list. Long-form: see build-longform.mjs. /agents/ and /schema/
+// are template-driven: last commit touching their sources (omitted if git history is unavailable or shallow).
+const day = (d) => (d ? String(d).slice(0, 10) : null);
+const latest = (ds) => ds.map(day).filter(Boolean).sort().pop() || null;
+const entryDate = (e) => latest([e.added, e.updated, e.last_verified]);
+const gitDate = (...files) => {
+  try {
+    const g = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    if (g('rev-parse', '--is-shallow-repository') === 'true') return null;
+    return g('log', '-1', '--format=%cs', '--', ...files) || null;
+  } catch { return null; }
+};
+const allLong = LONG.sitemapPaths().map((p) => LONG.lastmod(p));
+const LASTMOD = {
+  '/': latest([...entries.map(entryDate), ...allLong]),
+  [P.agents]: gitDate('scripts/build.mjs', 'scripts/site.config.mjs', 'scripts/lib/forms.mjs'),
+  [P.schema]: latest([gitDate('schema/entry.schema.json', 'scripts/lib/categories.mjs', 'scripts/site.config.mjs'), entryDate(byId['model-context-protocol'] || entries[0] || {})]),
+  ...Object.fromEntries(CATEGORIES.map((c) => [P.category(c.slug), latest(byCat[c.slug].map(entryDate))])),
+  ...Object.fromEntries(entries.map((e) => [P.entry(e.id), entryDate(e)])),
+};
+const lastmod = (p) => { const l = LONG.lastmod(p); return l !== undefined ? l : LASTMOD[p] ?? null; };
 const { LF, LP } = LONG;
 
 // ---------- fs helpers ----------
@@ -95,6 +120,11 @@ nav.crumbs ol{list-style:none;padding:0;margin:0 0 .5rem;display:flex;flex-wrap:
 `;
 
 function page({ title, description, pathName, body, crumbs = [], jsonld, alternates = [], ogType = 'website' }) {
+  // JSON-LD: the page's own entity plus a BreadcrumbList mirroring the HTML crumbs, combined in one @graph.
+  const crumbLd = crumbs.length ? { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], ...crumbs].map(([t, p], i) => ({ '@type': 'ListItem', position: i + 1, name: t, ...(p ? { item: abs(p) } : {}) })) } : null;
+  const own = jsonld ? (jsonld['@graph'] || [(({ '@context': _, ...rest }) => rest)(jsonld)]) : [];
+  const graph = [...own, ...(crumbLd ? [crumbLd] : [])];
+  const ld = graph.length ? { '@context': 'https://schema.org', '@graph': graph } : null;
   const fullTitle = pathName === '/' ? `${SITE_NAME}: agent-first directory` : `${title} | ${SITE_NAME}`;
   const crumbHtml = crumbs.length
     ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('/')}">Home</a></li>${crumbs.map(([t, p]) => p ? `<li><a href="${href(p)}">${esc(t)}</a></li>` : `<li aria-current="page">${esc(t)}</li>`).join('')}</ol></nav>`
@@ -128,7 +158,7 @@ ${alternates.map(([type, t, p]) => `<link rel="alternate" type="${type}" title="
 <meta name="twitter:title" content="${esc(fullTitle)}">
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${esc(abs('/og.png'))}">
-${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
+${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` : ''}
 </head>
 <body>
 <header class="site">
@@ -256,7 +286,16 @@ if (CNAME) write('/CNAME', CNAME + '\n');
 // Home
 write('/', page({
   title: SITE_NAME, description: TAGLINE, pathName: '/',
-  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: abs('/'), description: TAGLINE },
+  jsonld: { '@graph': [
+    { '@type': 'WebSite', '@id': ID.website, name: SITE_NAME, url: abs('/'), description: TAGLINE, publisher: { '@id': ID.org }, inLanguage: 'en' },
+    { '@type': 'Organization', '@id': ID.org, name: SITE_NAME, url: abs('/'), logo: abs('/logo-512.png'), sameAs: [REPO_URL] },
+    { '@type': 'Dataset', '@id': ID.dataset, name: `${SITE_NAME} directory`,
+      description: `Curated, machine-readable directory of ${entries.length} resources for AI agents (${CATEGORIES.map((c) => c.name).join(', ')}), each with sources, license, pricing and last-verified date. Also ${LONG.items.length} guides, comparisons, stacks and skills.`,
+      url: abs('/'), license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@id': ID.org }, publisher: { '@id': ID.org }, isAccessibleForFree: true,
+      keywords: ['AI agents', 'MCP servers', 'agent skills', 'llms.txt', 'agent protocols', 'agent APIs'],
+      ...(LASTMOD['/'] ? { dateModified: LASTMOD['/'] } : {}), variableMeasured: ['category', 'tags', 'license', 'pricing', 'status', 'last_verified'],
+      distribution: [['application/json', P.api], ['text/markdown', P.llmsFull], ['text/plain', P.llms]].map(([encodingFormat, p]) => ({ '@type': 'DataDownload', encodingFormat, contentUrl: abs(p) })) },
+  ] },
   body: `<h1>${SITE_NAME}</h1>
 <p class="lede">${esc(TAGLINE)}</p>
 <p>This site is designed to be read by AI agents first: every page is plain semantic HTML with no JavaScript, and the whole directory is also available as <a href="${href(P.llms)}">llms.txt</a>, <a href="${href(P.llmsFull)}">llms-full.txt</a>, a <a href="${href(P.api)}">JSON API</a> described by <a href="${href(P.openapi)}">OpenAPI</a>, and per-entry markdown. Agents can contribute entries by pull request. See <a href="${href(P.agents)}">For agents</a>.</p>
@@ -309,7 +348,13 @@ for (const e of entries) {
     '@context': 'https://schema.org',
     '@type': SOFTWARE.has(e.category) ? 'SoftwareApplication' : e.category === 'apis' ? 'WebAPI' : 'CreativeWork',
     name: e.name, description: e.summary, url: e.url, sameAs: [e.repo, e.docs].filter(Boolean), keywords: e.tags?.join(', '),
-    license: e.license, dateCreated: e.added, dateModified: e.updated || e.added, ...(SOFTWARE.has(e.category) ? { applicationCategory: catName[e.category] } : {}),
+    license: e.license, dateCreated: e.added, dateModified: e.updated || e.added,
+    // DeveloperApplication is a Google-recognised applicationCategory; the site category goes to genre.
+    ...(SOFTWARE.has(e.category) ? { applicationCategory: 'DeveloperApplication', genre: catName[e.category] } : {}),
+    // isPartOf/genre are CreativeWork properties (SoftwareApplication, CreativeWork), not valid on WebAPI (a Service).
+    ...(e.category !== 'apis' ? { isPartOf: { '@id': ID.dataset } } : {}),
+    // Price 0 only when the thing itself costs nothing (free or open-source); freemium/paid/unknown get no offer.
+    ...(SOFTWARE.has(e.category) && (e.pricing === 'free' || e.pricing === 'open-source') ? { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } } : {}),
   };
   write(P.entry(e.id), page({ ogType: 'article',
     title: e.name, description: e.summary, pathName: P.entry(e.id), crumbs: [[catName[e.category], P.category(e.category)], [e.name]], jsonld: ld,
@@ -425,6 +470,14 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 // llms.txt
 const lfHeading = (t) => (t === 'skill' ? 'Downloadable skills (Agent Skills)' : LF[t].name); // avoid clashing with the "Skills" entry category
 const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr')} across ${CATEGORIES.length} categories. Static, no auth, crawl freely. Contribute via pull request to ${REPO_URL}.`, '',
+  // Shortest paths first (link-list format per llmstxt.org). Add the MCP search line (see indexagentica-mcp/docs/site-snippets.md) only once
+  // https://mcp.indexagentica.com/mcp is live.
+  '## Start here (agents)', '',
+  `- [JSON index](${abs(P.api)}): everything at once, as JSON`,
+  `- [llms-full.txt](${abs(P.llmsFull)}): everything at once, as markdown`,
+  `- [One entry](${SITE_URL}/entries/{id}.md): markdown; JSON at ${SITE_URL}/api/entries/{id}.json`,
+  `- [Long-form index](${abs(LP.api)}): guides, comparisons, stacks and skills`,
+  `- [Contribute](${abs(P.contribute)}): how to add an entry`, '',
   `Each entry is available as HTML (${SITE_URL}/entries/{id}/), markdown (${SITE_URL}/entries/{id}.md) and JSON (${SITE_URL}/api/entries/{id}.json).`, '',
   '## Machine-readable', '',
   `- [llms-full.txt](${abs(P.llmsFull)}): every entry in full markdown`,
@@ -522,29 +575,6 @@ write('/404.html', page({ title: 'Not found', description: 'Page not found.', pa
 
 // sitemap + robots
 const htmlPages = ['/', P.agents, P.schema, ...CATEGORIES.map((c) => P.category(c.slug)), ...LONG.sitemapPaths(), ...entries.map((e) => P.entry(e.id))];
-// <lastmod> must reflect when the page's content last changed (it also drives the changed-URLs-only IndexNow
-// ping in pages.yml), so never use the build time. Entries: latest of added/updated/last_verified. Category
-// pages and the home page: latest of what they list. Long-form: see build-longform.mjs. /agents/ and /schema/
-// are template-driven: last commit touching their sources (omitted if git history is unavailable or shallow).
-const day = (d) => (d ? String(d).slice(0, 10) : null);
-const latest = (ds) => ds.map(day).filter(Boolean).sort().pop() || null;
-const entryDate = (e) => latest([e.added, e.updated, e.last_verified]);
-const gitDate = (...files) => {
-  try {
-    const g = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
-    if (g('rev-parse', '--is-shallow-repository') === 'true') return null;
-    return g('log', '-1', '--format=%cs', '--', ...files) || null;
-  } catch { return null; }
-};
-const allLong = LONG.sitemapPaths().map((p) => LONG.lastmod(p));
-const LASTMOD = {
-  '/': latest([...entries.map(entryDate), ...allLong]),
-  [P.agents]: gitDate('scripts/build.mjs', 'scripts/site.config.mjs', 'scripts/lib/forms.mjs'),
-  [P.schema]: latest([gitDate('schema/entry.schema.json', 'scripts/lib/categories.mjs', 'scripts/site.config.mjs'), entryDate(byId['model-context-protocol'] || entries[0] || {})]),
-  ...Object.fromEntries(CATEGORIES.map((c) => [P.category(c.slug), latest(byCat[c.slug].map(entryDate))])),
-  ...Object.fromEntries(entries.map((e) => [P.entry(e.id), entryDate(e)])),
-};
-const lastmod = (p) => { const l = LONG.lastmod(p); return l !== undefined ? l : LASTMOD[p] ?? null; };
 write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc>${lastmod(p) ? `<lastmod>${lastmod(p)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
 const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot', 'SmitheryBot'];
 write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
