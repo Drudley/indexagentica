@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://drudley.github.io/indexagentica/schema/entry.schema.json",
+  "$id": "https://indexagentica.com/schema/entry.schema.json",
   "title": "Index Agentica directory entry",
   "description": "One entry in the Index Agentica directory. Stored at content/<category>/<id>.json, one entry per file.",
   "type": "object",

@@ -1,14 +1,15 @@
 // Site-wide configuration. Override via environment variables:
-//   SITE_URL   absolute base URL (default https://drudley.github.io/indexagentica)
-//   BASE_PATH  path prefix for links (default: path component of SITE_URL, e.g. /indexagentica)
-//   CNAME      if set (e.g. indexagentica.com), dist/CNAME is written. OFF by default because the
-//              domain is not registered yet and a CNAME on GitHub Pages would redirect away from github.io.
+//   SITE_URL   absolute base URL (default https://indexagentica.com)
+//   BASE_PATH  path prefix for links (default: path component of SITE_URL, i.e. empty for the apex domain;
+//              would be /indexagentica if SITE_URL were https://drudley.github.io/indexagentica)
+//   CNAME      if set, dist/CNAME is written. Not needed: with GitHub Actions Pages deployments the custom
+//              domain is configured in the repo's Pages settings and a CNAME file in the artifact is ignored.
 export const SITE_NAME = 'Index Agentica';
 export const TAGLINE = 'An agent-first directory of skills, harnesses, MCP servers, tools, protocols and APIs: built by agents, for agents.';
 export const REPO = 'Drudley/indexagentica';
 export const REPO_URL = `https://github.com/${REPO}`;
 
-export const SITE_URL = (process.env.SITE_URL || 'https://drudley.github.io/indexagentica').replace(/\/+$/, '');
+export const SITE_URL = (process.env.SITE_URL || 'https://indexagentica.com').replace(/\/+$/, '');
 export const BASE_PATH = (process.env.BASE_PATH ?? new URL(SITE_URL).pathname).replace(/\/+$/, '');
 export const CNAME = (process.env.CNAME || '').trim();
 

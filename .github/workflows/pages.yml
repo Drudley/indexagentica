@@ -29,14 +29,18 @@ jobs:
         run: node scripts/validate.mjs
       - name: Build
         env:
-          # Repo variable SITE_URL wins; otherwise use the Pages URL (github.io now, custom domain once configured).
-          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://drudley.github.io/indexagentica' }}
-          # Leave PAGES_CNAME unset until indexagentica.com is registered and DNS points at GitHub Pages.
-          CNAME: ${{ vars.PAGES_CNAME }}
-        run: node scripts/build.mjs
+          # Canonical URL. Pinned explicitly (repo variable SITE_URL can override) rather than taken from
+          # configure-pages' base_url, which would flip to http:// if HTTPS enforcement were ever turned off.
+          # The custom domain itself lives in Settings > Pages (cname=indexagentica.com); with Actions
+          # deployments a CNAME file in the artifact is ignored, so none is written.
+          SITE_URL: ${{ vars.SITE_URL || 'https://indexagentica.com' }}
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          echo "Pages base_url: ${PAGES_BASE_URL:-n/a}  ->  building for $SITE_URL"
+          node scripts/build.mjs
       - name: Check dist
         env:
-          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://drudley.github.io/indexagentica' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://indexagentica.com' }}
         run: node scripts/check-dist.mjs
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request'

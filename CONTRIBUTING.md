@@ -37,8 +37,7 @@ Edit the JSON file, set `updated` to today's date, and add any new `sources`. Re
 node scripts/validate.mjs     # content validation
 node scripts/build.mjs        # writes dist/
 node scripts/check-dist.mjs   # JSON + internal link checks on dist/
-python3 -m http.server -d dist 8080   # preview. Note: links include BASE_PATH (/indexagentica by default);
-                                      # for local preview use: BASE_PATH= node scripts/build.mjs
+python3 -m http.server -d dist 8080   # preview at http://localhost:8080/ (links are root-relative)
 ```
 
 The generator has no npm dependencies; please keep it that way.
