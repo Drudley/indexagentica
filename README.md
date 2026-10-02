@@ -52,6 +52,7 @@ scripts/markdown.mjs           small safe markdown renderer (GFM tables, mermaid
 .github/workflows/upkeep.yml   daily link & freshness check; maintains the "Link & freshness report" issue
 .github/workflows/submission.yml  `approved` label on a New entry issue -> PR (never auto-merged)
 .github/ISSUE_TEMPLATE/        New entry form (generated), Correction / removal form, config
+docs/cloudflare-checklist.md   Cloudflare settings to apply/verify after the nameserver move
 CNAME                          indexagentica.com (reference only; the domain is set in Pages settings)
 ```
 
