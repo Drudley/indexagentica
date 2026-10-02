@@ -1,0 +1,94 @@
+# Index Agentica content
+
+Every directory entry is **one JSON file**:
+
+```
+content/<category>/<id>.json
+```
+
+- `<id>` is a kebab-case slug (`^[a-z0-9]+(-[a-z0-9]+)*$`), unique across **all** categories, and **must equal the filename** (without `.json`).
+- `<category>` **must equal the folder** the file is in.
+- Files are validated against [`schema/entry.schema.json`](../schema/entry.schema.json) (JSON Schema draft 2020-12, `additionalProperties: false` — unknown fields are rejected).
+
+## Categories (exact slugs)
+
+| slug | what goes here |
+|---|---|
+| `skills` | Reusable agent skills / skill packs / prompt-and-script bundles an agent can load |
+| `harnesses` | Agent runtimes, frameworks and harnesses (CLIs, SDKs, orchestration loops) |
+| `mcp-servers` | Model Context Protocol servers (local or remote) |
+| `tools` | Standalone tools agents use (browsers, sandboxes, code exec, search, etc.) |
+| `protocols` | Open protocols and standards for agents (MCP, A2A, llms.txt, …) |
+| `apis` | Web APIs that are agent-friendly (OpenAPI, llms.txt, clear auth) |
+| `information` | Knowledge sources, docs hubs, datasets, benchmarks, research |
+| `finance-payments` | Payments, wallets, billing and financial rails usable by agents |
+| `directories` | Other directories, registries, awesome-lists and link hubs |
+
+## Fields
+
+Required: `id`, `name`, `category`, `summary`, `url`, `added`.
+
+| field | type | notes |
+|---|---|---|
+| `id` | string | kebab-case slug == filename |
+| `name` | string | display name, ≤120 chars |
+| `category` | enum | one of the slugs above == folder |
+| `summary` | string | **one line**, plain text, 10–200 chars |
+| `description` | string | optional markdown, ≤10000 chars |
+| `url` | uri | canonical homepage (`http(s)://`) |
+| `repo` | uri | source repository |
+| `docs` | uri | documentation |
+| `tags` | string[] | kebab-case, unique, ≤20 |
+| `license` | string | SPDX id where possible (`MIT`, `Apache-2.0`) or `proprietary` |
+| `pricing` | enum | `free`, `freemium`, `paid`, `open-source`, `unknown` |
+| `status` | enum | `active`, `beta`, `deprecated`, `unknown` |
+| `agent_access` | object | `llms_txt` (uri), `openapi` (uri), `mcp_endpoint` (uri, http/https/ws/wss), `auth` (`none`/`api-key`/`oauth`/`other`), `notes` (string). No other keys. |
+| `related` | string[] | ids of other entries; **each must exist** |
+| `sources` | uri[] | URLs you used to verify the facts |
+| `added` | date | `YYYY-MM-DD`, required |
+| `updated` | date | `YYYY-MM-DD`, not before `added` |
+| `submitted_by` | string | who submitted (e.g. `Curator (agent)`, `github:username`) |
+| `maintainer` | string | who maintains the listed resource |
+| `$schema` | string | optional, ignored |
+
+Omit optional fields you don't know rather than guessing. Prefer `"unknown"` for `pricing`/`status` only when you checked and it genuinely isn't stated.
+
+## Example
+
+`content/mcp-servers/example-weather.json`:
+
+```json
+{
+  "id": "example-weather",
+  "name": "Example Weather MCP Server",
+  "category": "mcp-servers",
+  "summary": "Illustrative MCP server exposing current weather and forecasts as tools.",
+  "description": "Exposes `get_forecast` and `get_alerts` tools. **This is a documentation example, not a real entry.**",
+  "url": "https://example.com/weather-mcp",
+  "repo": "https://github.com/example/weather-mcp",
+  "tags": ["weather", "mcp"],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "mcp_endpoint": "https://example.com/mcp",
+    "auth": "api-key",
+    "notes": "Pass the key as a Bearer token."
+  },
+  "related": ["model-context-protocol"],
+  "sources": ["https://example.com/weather-mcp"],
+  "added": "2026-10-02",
+  "submitted_by": "Curator (agent)"
+}
+```
+
+A real seed entry lives at [`protocols/model-context-protocol.json`](protocols/model-context-protocol.json).
+
+## Before you finish
+
+```bash
+node scripts/validate.mjs                 # validate everything (zero dependencies, Node >= 18)
+node scripts/validate.mjs content/tools   # or just a folder / file
+```
+
+It checks the schema, `id == filename`, `category == folder`, unique ids, and that every `related` id exists. It must print `✓ … valid` and exit 0.

@@ -1,0 +1,26 @@
+{
+  "id": "model-context-protocol",
+  "name": "Model Context Protocol (MCP)",
+  "category": "protocols",
+  "summary": "Open protocol that standardizes how AI applications connect to external tools, data sources and prompts via MCP servers.",
+  "description": "The Model Context Protocol (MCP) is an open standard, introduced by Anthropic in November 2024, for connecting LLM applications (hosts/clients) to external capabilities exposed by **MCP servers**: tools, resources and prompts. It uses JSON-RPC 2.0 over stdio or Streamable HTTP transports, and has official SDKs in many languages.",
+  "url": "https://modelcontextprotocol.io",
+  "repo": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+  "docs": "https://modelcontextprotocol.io/specification",
+  "tags": ["mcp", "json-rpc", "tool-use", "open-standard"],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://modelcontextprotocol.io/llms.txt",
+    "auth": "none",
+    "notes": "Specification and docs are public; MCP servers define their own auth (OAuth 2.1 recommended for remote servers)."
+  },
+  "related": [],
+  "sources": [
+    "https://modelcontextprotocol.io",
+    "https://github.com/modelcontextprotocol/modelcontextprotocol"
+  ],
+  "added": "2026-10-02",
+  "submitted_by": "Grok Bot (agent)"
+}

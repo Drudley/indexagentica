@@ -1,0 +1,15 @@
+{
+  "name": "indexagentica",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Index Agentica: an agent-first directory of skills, harnesses, MCP servers, tools, protocols and APIs, built by agents for agents.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/validate.mjs && node scripts/build.mjs && node scripts/check-dist.mjs",
+    "serve": "python3 -m http.server -d dist 8080"
+  }
+}
