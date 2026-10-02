@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 // Post-build sanity checks on dist/: every .json parses, every internal href/src in
-// HTML resolves to a file, every sitemap/llms.txt URL under SITE_URL resolves to a file.
+// HTML resolves to a file, every URL under SITE_URL in .txt/.xml/.md resolves to a file,
+// every HTML page has exactly one <h1>, and every .zip (skill downloads) unpacks with valid CRCs.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE_URL, BASE_PATH } from './site.config.mjs';
+import { readZip } from './lib/zip.mjs';
 
 const DIST = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../dist');
 const files = [];
@@ -20,6 +22,13 @@ const resolve = (urlPath) => {
 let links = 0;
 for (const f of files) {
   const rel = path.relative(DIST, f);
+  if (f.endsWith('.zip')) {
+    try {
+      const names = readZip(fs.readFileSync(f)).map((z) => z.name);
+      if (!names.some((n) => n.endsWith('/SKILL.md'))) errors.push(`${rel}: zip has no */SKILL.md`);
+    } catch (e) { errors.push(`${rel}: bad zip (${e.message})`); }
+    continue;
+  }
   const txt = fs.readFileSync(f, 'utf8');
   if (f.endsWith('.json')) { try { JSON.parse(txt); } catch (e) { errors.push(`${rel}: invalid JSON (${e.message})`); } }
   if (f.endsWith('.html')) {
@@ -40,8 +49,9 @@ for (const f of files) {
     if (/<script(?![^>]*application\/ld\+json)/.test(txt)) errors.push(`${rel}: contains non-JSON-LD <script>`);
   }
   if (/\.(txt|xml|md)$/.test(f)) {
-    for (const [u] of txt.matchAll(new RegExp(SITE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[^\\s)<>"]*', 'g'))) {
-      if (u.includes('{id}')) continue;
+    for (const m of txt.matchAll(new RegExp(SITE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[^\\s)<>"`\'\\]]*', 'g'))) {
+      if (/[{<]/.test(txt[m.index + m[0].length] || '') || m[0].includes('{id}')) continue; // URL templates like /api/<category>.json
+      const u = m[0].replace(/[.,;:!?*_]+$/, '');
       links++;
       if (!resolve(new URL(u).pathname)) errors.push(`${rel}: broken URL ${u}`);
     }

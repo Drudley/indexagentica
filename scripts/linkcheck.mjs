@@ -1,17 +1,21 @@
 #!/usr/bin/env node
-// Zero-dependency link & freshness checker for all entries. Never modifies content.
-// Checks url, repo, docs, agent_access.{llms_txt,openapi,mcp_endpoint} and sources.
+// Zero-dependency link & freshness checker for all entries and published long-form items. Never modifies content.
+// Entries: url, repo, docs, agent_access.{llms_txt,openapi,mcp_endpoint} and sources.
+// Long-form (content-long/, drafts skipped): sources (skills: metadata.sources) and external links in the body
+// (outside code blocks).
 //   - HEAD first, GET fallback; redirects followed manually (max 10) so permanent moves are visible
 //   - timeout per request, one retry for timeouts / network errors / 5xx / 429
 //   - global + per-host concurrency limits, browser-like User-Agent (honestly suffixed)
 //   - 401/403/429/999 and bot challenges => "unverified" (not counted as broken)
-//   - entries whose last_verified (else updated, else added) is older than STALE_DAYS => "stale"
-// Usage: node scripts/linkcheck.mjs [--out dir] [--only id,id] [--limit N]
+//   - entries whose last_verified (else updated, else added) is older than STALE_DAYS => "stale";
+//     long-form items: last_verified, else updated, else published
+// Usage: node scripts/linkcheck.mjs [--out dir] [--only id,id] [--limit N] [--no-longform]
 // Writes <out>/report.md and <out>/result.json; sets GITHUB_OUTPUT problems=<n>.
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib/categories.mjs';
 import { loadEntries } from './validate.mjs';
+import { loadLongform } from './lib/longform.mjs';
 
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > -1 ? process.argv[i + 1] : d; };
 const OUT = path.resolve(arg('--out', 'upkeep'));
@@ -28,11 +32,34 @@ const today = now.toISOString().slice(0, 10);
 
 // ---------- collect ----------
 let entries = loadEntries().map((f) => ({ file: path.relative(ROOT, f), data: JSON.parse(fs.readFileSync(f, 'utf8')) }));
+entries.forEach((e) => { e.fresh = ['last_verified', 'updated', 'added']; });
+// Long-form items join the same pipeline; data.name is the display name used in the report.
+const TYPE_LABEL = { guide: 'Guide', comparison: 'Comparison', stack: 'Stack', skill: 'Skill' };
+const longform = process.argv.includes('--no-longform') ? [] : loadLongform().filter((x) => x.item.status !== 'draft').map((x) => ({
+  file: x.rel, longform: x.type, body: x.body,
+  data: { ...x.item, name: `${TYPE_LABEL[x.type] || x.type}: ${x.item.title}`, sources: undefined }, lfSources: x.item.sources || [],
+  fresh: ['last_verified', 'updated', 'published'], prefix: x.type === 'skill' ? 'metadata.' : '',
+}));
+entries.push(...longform);
 if (ONLY) entries = entries.filter((e) => ONLY.has(e.data.id));
+const bodyLinks = (md) => {
+  const text = String(md || '').replace(/^(```|~~~)[\s\S]*?^\1\s*$/gm, '').replace(/`[^`\n]*`/g, '');
+  const out = new Set();
+  for (const m of text.matchAll(/https?:\/\/[^\s)<>"'`\]]+/g)) {
+    if (/[{<]/.test(text[m.index + m[0].length] || '')) continue; // URL templates
+    out.add(m[0].replace(/[.,;:!?*_]+$/, ''));
+  }
+  return [...out];
+};
 const refs = new Map(); // url -> [{ entry, field }]
 const add = (url, entry, field) => { if (typeof url !== 'string' || !url) return; if (!refs.has(url)) refs.set(url, []); refs.get(url).push({ entry, field }); };
 for (const e of entries) {
   const d = e.data;
+  if (e.longform) {
+    e.lfSources.forEach((s, i) => add(s?.url, e, `${e.prefix}sources[${i}]`));
+    bodyLinks(e.body).forEach((u) => add(u, e, 'body link'));
+    continue;
+  }
   add(d.url, e, 'url'); add(d.repo, e, 'repo'); add(d.docs, e, 'docs');
   for (const k of ['llms_txt', 'openapi', 'mcp_endpoint']) add(d.agent_access?.[k], e, `agent_access.${k}`);
   (d.sources || []).forEach((s, i) => add(s, e, `sources[${i}]`));
@@ -152,10 +179,11 @@ for (const [url, res] of results) {
   if (['broken', 'moved', 'unverified'].includes(res.kind)) for (const ref of refs.get(url)) item(ref.entry, { kind: res.kind, field: ref.field, url, reason: res.reason, target: res.target });
 }
 for (const e of entries) {
-  const field = e.data.last_verified ? 'last_verified' : e.data.updated ? 'updated' : 'added';
-  const last = e.data[field];
+  const field = e.fresh.find((k) => e.data[k]);
+  const last = field && e.data[field];
+  if (!last) continue;
   const days = Math.floor((now - new Date(last + 'T00:00:00Z')) / 86400000);
-  if (days > STALE_DAYS) { counts.stale++; item(e, { kind: 'stale', field, reason: `${field.replace('_', ' ')} ${last} (${days} days ago)` }); }
+  if (days > STALE_DAYS) { counts.stale++; item(e, { kind: 'stale', field, reason: `${(e.prefix || '') + field.replace('_', ' ')} ${last} (${days} days ago)` }); }
 }
 const problemItems = [...perEntry.values()].flatMap((p) => p.items).filter((i) => i.kind !== 'unverified');
 const problems = problemItems.length;
@@ -166,20 +194,21 @@ const ICON = { broken: '❌ **broken**', moved: '↪️ **moved**', stale: '🕰
 const line = (i) => i.kind === 'stale' ? `- ${ICON.stale}: ${i.reason}; re-verify the facts and links, then set \`last_verified\` (and \`updated\` if you changed anything)`
   : i.kind === 'moved' ? `- ${ICON.moved} \`${i.field}\`: ${i.url} → ${i.target} (${i.reason}); update the link`
   : `- ${ICON[i.kind]} \`${i.field}\`: ${i.url} (${i.reason})`;
-const sortP = (a, b) => a.e.data.name.localeCompare(b.e.data.name);
+const sortP = (a, b) => (a.e.longform ? 1 : 0) - (b.e.longform ? 1 : 0) || a.e.data.name.localeCompare(b.e.data.name);
+const nLong = entries.filter((e) => e.longform).length;
 const head = [
   '<!-- upkeep-report -->',
-  `**${problems} problem(s) in ${problemEntries.length} entr${problemEntries.length === 1 ? 'y' : 'ies'}.** Checked ${results.size} unique URLs across ${entries.length} entries on ${today} (UTC) in ${Math.round((Date.now() - t0) / 1000)}s${RUN_URL ? ` · [workflow run](${RUN_URL})` : ''}.`, '',
+  `**${problems} problem(s) in ${problemEntries.length} item${problemEntries.length === 1 ? '' : 's'}.** Checked ${results.size} unique URLs across ${entries.length - nLong} entries and ${nLong} long-form item${nLong === 1 ? '' : 's'} on ${today} (UTC) in ${Math.round((Date.now() - t0) / 1000)}s${RUN_URL ? ` · [workflow run](${RUN_URL})` : ''}.`, '',
   '| Check | Count |', '|---|---|',
   `| ❌ Broken links (404/410, DNS/TLS/connection errors, persistent 5xx) | ${counts.broken} |`,
   `| ↪️ Permanent redirects (301/308 to a different URL) | ${counts.moved} |`,
-  `| 🕰️ Stale entries (\`last_verified\`, else \`updated\`, else \`added\` older than ${STALE_DAYS} days) | ${counts.stale} |`,
+  `| 🕰️ Stale (\`last_verified\`, else \`updated\`, else \`added\`/\`published\` older than ${STALE_DAYS} days) | ${counts.stale} |`,
   `| ❔ Unverified (bot protection, auth, rate limit, timeout; not counted as problems) | ${counts.unverified} |`,
   `| ✅ OK | ${counts.ok} |`, '',
 ];
 const body = [];
 if (problemEntries.length) {
-  body.push('## Problems by entry', '');
+  body.push('## Problems by entry / long-form item', '');
   for (const p of problemEntries.sort(sortP)) body.push(`### ${p.e.data.name} · [\`${p.e.file}\`](../blob/main/${p.e.file})`, '', ...p.items.filter((i) => i.kind !== 'unverified').map(line), '');
 }
 const unv = [...perEntry.values()].filter((p) => p.items.some((i) => i.kind === 'unverified')).sort(sortP);
@@ -196,7 +225,7 @@ report = report.replace(/\]\(\.\.\/blob\/main\//g, '](https://github.com/Drudley
 
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'report.md'), report + '\n');
-fs.writeFileSync(path.join(OUT, 'result.json'), JSON.stringify({ generated: now.toISOString(), problems, counts, entries: entries.length, urls: results.size, results: [...results.values()] }, null, 2) + '\n');
+fs.writeFileSync(path.join(OUT, 'result.json'), JSON.stringify({ generated: now.toISOString(), problems, counts, entries: entries.length - nLong, longform: nLong, urls: results.size, results: [...results.values()] }, null, 2) + '\n');
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `problems=${problems}\n`);
 if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `# Link & freshness report\n\n${report}\n`);
 console.log(`${problems} problem(s): broken ${counts.broken}, moved ${counts.moved}, stale ${counts.stale}; unverified ${counts.unverified}; ok ${counts.ok}; ${results.size} URLs in ${Math.round((Date.now() - t0) / 1000)}s. Report: ${path.relative(process.cwd(), OUT)}/report.md`);

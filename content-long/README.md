@@ -2,7 +2,7 @@
 
 Guides, comparisons, stacks and downloadable skills. Each item is one Markdown file with YAML front matter. Directory entries in `content/` are separate and stay as they are.
 
-| Type (`type:`) | Folder (locked) | Route (step 2) | File |
+| Type (`type:`) | Folder (locked) | Route | File |
 |---|---|---|---|
 | `guide` | `content-long/guides/` | `/guides/<id>/` | `<id>.md` |
 | `comparison` | `content-long/compare/` | `/compare/<id>/` | `<id>.md` |
@@ -66,7 +66,24 @@ Other string keys under `metadata` are allowed. The SKILL.md body is served raw 
 - GitHub-flavored Markdown: headings (start at `##`, because the title is rendered as the page's `h1`), lists, tables, and fenced code with a language tag (```` ```bash ````).
 - Diagrams: ```` ```mermaid ```` fences. The site has no JavaScript, so they render as `<pre class="mermaid">` with the source visible.
 - **Linking:** `[text](entry:<entry-id>)` links a directory entry. `[text](guide:<id>)`, `(comparison:<id>)`, `(stack:<id>)` and `(skill:<id>)` link long-form items. Validate checks that every target exists and has the right type. The build rewrites them to site URLs. Normal `https://` links are fine too.
-- The raw `.md` of every item will be fetchable (step 2).
+- The raw `.md` of every item is served at `/<route>/<id>.md` with its front matter; scheme links are rewritten to absolute `https://indexagentica.com/...` URLs there, in the API and in llms-full.txt.
+
+## Where it is published
+
+Drafts appear nowhere (pages, raw files, API, llms*.txt, sitemap). Published items get:
+
+| Output | Path |
+|---|---|
+| Index pages | `/guides/`, `/compare/`, `/stacks/`, `/skills/` |
+| Item page (no-JS HTML; comparison table and stack components rendered from front matter) | `/<route>/<id>/` |
+| Raw markdown with front matter | `/<route>/<id>.md` |
+| Skill files | `/skills/<id>/SKILL.md` (plus any other files in the folder), `/skills/<id>.zip` (unpacks to `<id>/...`) |
+| JSON | `/api/longform.json` (all items), `/api/longform/<route>.json` (per type), `/api/longform/<route>/<id>.json` (front matter, raw markdown, HTML, comparison rows / stack components, links) |
+| llms.txt / llms-full.txt | one section per type; llms-full.txt has the full markdown |
+
+Entry pages list the published items that reference them (`entries`, comparison `subjects`, stack `components`, and `entry:` links in the body) under **Guides & comparisons**, and `/api/entries/<id>.json` has the same list as `longform`.
+
+Long-form is written by maintainers; there is no issue form for it. Preview drafts locally with `INCLUDE_DRAFTS=1 node scripts/build.mjs` (never set this in CI). The daily upkeep check also covers published items: their `sources`, external links in the body, and freshness (`last_verified`, else `updated`, else `published`, older than 90 days).
 
 ## YAML subset (zero-dependency parser: `scripts/lib/yaml.mjs`)
 

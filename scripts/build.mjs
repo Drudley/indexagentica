@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Zero-dependency static site generator for Index Agentica.
 // Reads content/<category>/<id>.json and writes dist/.
-// Usage: node scripts/build.mjs   (env: SITE_URL, BASE_PATH, CNAME; see scripts/site.config.mjs)
+// Usage: node scripts/build.mjs   (env: SITE_URL, BASE_PATH, CNAME; see scripts/site.config.mjs;
+//        INCLUDE_DRAFTS=1 also publishes long-form drafts, for local previews only)
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,6 +10,7 @@ import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGOR
 import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
 import { issueBodyTemplate, formFields } from './lib/forms.mjs';
+import { prepareLongform } from './build-longform.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -34,8 +36,12 @@ const P = {
   home: '/', agents: '/agents/', schema: '/schema/', schemaJson: '/schema/entry.schema.json',
   category: (c) => `/categories/${c}/`, entry: (id) => `/entries/${id}/`, entryMd: (id) => `/entries/${id}.md`,
   api: '/api/index.json', apiCat: (c) => `/api/${c}.json`, apiEntry: (id) => `/api/entries/${id}.json`, apiCats: '/api/categories.json',
-  contribute: '/contribute.json', openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', sitemap: '/sitemap.xml', robots: '/robots.txt',
+  contribute: '/contribute.json', longform: '/api/longform.json', openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', sitemap: '/sitemap.xml', robots: '/robots.txt',
 };
+
+// ---------- long-form ----------
+const LONG = prepareLongform({ ROOT, entryIds: new Set(entries.map((e) => e.id)), byId, href, abs, P, REPO_URL, includeDrafts: process.env.INCLUDE_DRAFTS === '1' });
+const { LF, LP } = LONG;
 
 // ---------- fs helpers ----------
 const written = [];
@@ -61,7 +67,9 @@ ul.entries,ul.cats{list-style:none;padding:0}ul.entries li,ul.cats li{background
 ul.entries li p,ul.cats li p{margin:.15rem 0 0;color:var(--muted)}.count{color:var(--muted);font-weight:400}
 dl.meta{display:grid;grid-template-columns:max-content 1fr;gap:.3rem 1rem}dl.meta dt{font-weight:600}dl.meta dd{margin:0;overflow-wrap:anywhere}
 .tags{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.35rem}.tags li{background:var(--card);border-radius:999px;padding:.05rem .6rem;font-size:.85rem}
-table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;border-bottom:1px solid var(--card);padding:.35rem .5rem;vertical-align:top}
+table{border-collapse:collapse;width:100%;font-size:.92rem}caption{text-align:left;font-weight:600;padding:.3rem 0}.table-wrap{overflow-x:auto}
+figure.diagram{margin:1rem 0}figure.diagram pre{background:var(--card);padding:.75rem;overflow-x:auto}figure.diagram figcaption{color:var(--muted);font-size:.85rem}
+th,td{text-align:left;border-bottom:1px solid var(--card);padding:.35rem .5rem;vertical-align:top}
 footer.site{margin-top:3rem;border-top:1px solid var(--card);padding-top:1rem;color:var(--muted);font-size:.9rem}
 nav.crumbs ol{list-style:none;padding:0;margin:0 0 .5rem;display:flex;flex-wrap:wrap;gap:.4rem;font-size:.9rem}nav.crumbs li+li::before{content:"›";margin-right:.4rem;color:var(--muted)}
 `;
@@ -95,6 +103,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <a class="brand" href="${href('/')}">${SITE_NAME}</a>
 <nav aria-label="Main"><ul>
 <li><a href="${href('/#categories')}">Categories</a></li>
+${LONG.ORDER.map((t) => `<li><a href="${href(LP.index(t))}">${t === 'comparison' ? 'Compare' : LF[t].name}</a></li>`).join('\n')}
 <li><a href="${href(P.agents)}">For agents</a></li>
 <li><a href="${href(P.llms)}">llms.txt</a></li>
 <li><a href="${href(P.api)}">JSON API</a></li>
@@ -126,13 +135,14 @@ const link = (u) => `<a href="${esc(u)}" rel="noopener">${esc(u)}</a>`;
 function apiEntry(e) {
   return {
     ...e,
+    longform: LONG.backrefs(e.id),
     links: { html: abs(P.entry(e.id)), markdown: abs(P.entryMd(e.id)), json: abs(P.apiEntry(e.id)), source: `${REPO_URL}/blob/main/content/${e.category}/${e.id}.json` },
   };
 }
 const meta = (extra = {}) => ({
   name: SITE_NAME, description: TAGLINE, version: VERSION, generated: GENERATED, site_url: SITE_URL,
   schema: abs(P.schemaJson), openapi: abs(P.openapi), llms_txt: abs(P.llms), repository: REPO_URL,
-  contribute_url: abs(P.contribute), license: { content: 'CC-BY-4.0', code: 'MIT' }, ...extra,
+  contribute_url: abs(P.contribute), longform: abs(P.longform), license: { content: 'CC-BY-4.0', code: 'MIT' }, ...extra,
 });
 const categorySummary = () => CATEGORIES.map((c) => ({ slug: c.slug, name: c.name, description: c.description, count: byCat[c.slug].length, html: abs(P.category(c.slug)), json: abs(P.apiCat(c.slug)) }));
 
@@ -146,6 +156,7 @@ function entryMarkdown(e, level = 1) {
     ['auth', e.agent_access?.auth], ['access notes', e.agent_access?.notes],
     ['related', e.related?.length ? e.related.map((r) => `${byId[r]?.name || r} (${abs(P.entry(r))})`).join('; ') : null],
     ['sources', e.sources?.length ? e.sources.join(' , ') : null], ['added', e.added], ['updated', e.updated], ['last verified', e.last_verified],
+    ['featured in', LONG.backrefs(e.id).map((r) => `${r.title} (${r.url})`).join('; ') || null],
     ['maintainer', e.maintainer], ['submitted by', e.submitted_by], ['page', abs(P.entry(e.id))], ['json', abs(P.apiEntry(e.id))],
   ].filter(([, v]) => v);
   kv.forEach(([k, v]) => L.push(`- ${k}: ${v}`));
@@ -200,6 +211,7 @@ const CONTRIBUTE = {
   },
   corrections: { form_url: CORRECTION_FORM_URL, note: 'Report wrong facts, broken links or request removal. Or edit the JSON file directly in a PR and set updated.' },
   policy: ['Useful to AI agents or people building them.', 'Publicly reachable; facts verifiable from the listed sources.', 'No spam, affiliate links or SEO-only pages; disclose any affiliation.'],
+  longform: { note: 'Guides, comparisons, stacks and skills are written by maintainers. There is no issue form for them yet; to suggest a topic or report a problem, use the correction form or open a regular issue.', file_paths: ['content-long/guides/{id}.md', 'content-long/compare/{id}.md', 'content-long/stacks/{id}.md', 'content-long/skills/{id}/SKILL.md'], docs: `${REPO_URL}/blob/main/content-long/README.md` },
 };
 
 // ---------- build ----------
@@ -218,6 +230,10 @@ write('/', page({
 <p>This site is designed to be read by AI agents first: every page is plain semantic HTML with no JavaScript, and the whole directory is also available as <a href="${href(P.llms)}">llms.txt</a>, <a href="${href(P.llmsFull)}">llms-full.txt</a>, a <a href="${href(P.api)}">JSON API</a> described by <a href="${href(P.openapi)}">OpenAPI</a>, and per-entry markdown. Agents can contribute entries by pull request. See <a href="${href(P.agents)}">For agents</a>.</p>
 <section aria-labelledby="categories"><h2 id="categories">Categories</h2>
 <ul class="cats">${CATEGORIES.map((c) => `<li><a href="${href(P.category(c.slug))}"><strong>${esc(c.name)}</strong></a> <span class="count">(${byCat[c.slug].length})</span><p>${esc(c.description)}</p></li>`).join('')}</ul>
+</section>
+<section aria-labelledby="longform"><h2 id="longform">Guides, comparisons, stacks and skills</h2>
+<ul class="cats">${LONG.ORDER.map((t) => `<li><a href="${href(LP.index(t))}"><strong>${LF[t].name}</strong></a> <span class="count">(${LONG.counts()[t]})</span><p>${esc(LF[t].description)}</p></li>`).join('')}</ul>
+${LONG.items.length ? `<ul>${LONG.items.slice(0, 8).map((x) => `<li><a href="${href(LP.page(x.type, x.item.id))}">${esc(x.item.title)}</a> (${LF[x.type].singular}): ${esc(x.item.summary || x.item.description || '')}</li>`).join('')}</ul>` : ''}
 </section>
 <section aria-labelledby="recent"><h2 id="recent">Recently added</h2>
 ${entryList([...entries].sort((a, b) => (b.updated || b.added).localeCompare(a.updated || a.added) || a.name.localeCompare(b.name)).slice(0, 20))}
@@ -274,6 +290,7 @@ ${e.tags?.length ? `<h2>Tags</h2><ul class="tags">${e.tags.map((t) => `<li>${esc
 ${e.description ? `<h2>Description</h2>\n${markdown(e.description)}` : ''}
 ${accessRows.length ? `<h2>Agent access</h2>${dl(accessRows)}` : ''}
 ${e.related?.length ? `<h2>Related</h2><ul>${e.related.map((r) => `<li><a href="${href(P.entry(r))}">${esc(byId[r].name)}</a>: ${esc(byId[r].summary)}</li>`).join('')}</ul>` : ''}
+${LONG.entryHtml(e.id)}
 ${e.sources?.length ? `<h2>Sources</h2><ul>${e.sources.map((s) => `<li>${link(s)}</li>`).join('')}</ul>` : ''}
 <h2>Machine-readable</h2>
 <ul><li><a href="${href(P.apiEntry(e.id))}">JSON</a></li><li><a href="${href(P.entryMd(e.id))}">Markdown</a></li><li><a href="${REPO_URL}/blob/main/content/${e.category}/${e.id}.json">Source file on GitHub</a> (edit via pull request)</li></ul>
@@ -283,9 +300,13 @@ ${e.sources?.length ? `<h2>Sources</h2><ul>${e.sources.map((s) => `<li>${link(s)
   write(P.entryMd(e.id), entryMarkdown(e));
 }
 
+// Long-form pages, raw markdown, skill files/zips and API
+LONG.writePages({ write, page });
+const lfCounts = LONG.writeApi({ write, json, meta });
+
 // API index
 write(P.contribute, json({ ...meta(), contribute: CONTRIBUTE }));
-write(P.api, json({ ...meta(), contribute: CONTRIBUTE, counts: { total: entries.length, by_category: Object.fromEntries(CATEGORIES.map((c) => [c.slug, byCat[c.slug].length])) }, categories: categorySummary(), entries: entries.map(apiEntry) }));
+write(P.api, json({ ...meta(), contribute: CONTRIBUTE, counts: { total: entries.length, by_category: Object.fromEntries(CATEGORIES.map((c) => [c.slug, byCat[c.slug].length])), longform: { total: LONG.items.length, by_type: lfCounts } }, categories: categorySummary(), entries: entries.map(apiEntry) }));
 write(P.apiCats, json({ ...meta(), categories: categorySummary() }));
 
 // Schema
@@ -323,12 +344,26 @@ write(P.agents, page({
 <tr><td>Categories</td><td><a href="${href(P.apiCats)}"><code>${P.apiCats}</code></a></td><td>Category list with counts.</td></tr>
 <tr><td>Per category</td><td><code>/api/&lt;category&gt;.json</code></td><td>e.g. <a href="${href(P.apiCat('mcp-servers'))}"><code>/api/mcp-servers.json</code></a></td></tr>
 <tr><td>Per entry</td><td><code>/api/entries/&lt;id&gt;.json</code>, <code>/entries/&lt;id&gt;.md</code></td><td>Single entry as JSON or markdown.</td></tr>
+<tr><td>Long-form index</td><td><a href="${href(LP.api)}"><code>${LP.api}</code></a></td><td>Every published guide, comparison, stack and skill with metadata and links. Per type: ${LONG.ORDER.map((t) => `<a href="${href(LP.apiType(t))}"><code>${LP.apiType(t)}</code></a>`).join(', ')}.</td></tr>
+<tr><td>Per long-form item</td><td><code>/api/longform/&lt;route&gt;/&lt;id&gt;.json</code>, <code>/&lt;route&gt;/&lt;id&gt;.md</code></td><td>Front matter, raw markdown, rendered HTML, comparison rows or stack components, and links. Routes: ${LONG.ORDER.map((t) => `<code>${LF[t].route}</code>`).join(', ')}.</td></tr>
 <tr><td>OpenAPI</td><td><a href="${href(P.openapi)}"><code>${P.openapi}</code></a></td><td>OpenAPI 3.1 description of the read-only JSON endpoints.</td></tr>
 <tr><td>Schema</td><td><a href="${href(P.schemaJson)}"><code>${P.schemaJson}</code></a></td><td>JSON Schema for one entry (<a href="${href(P.schema)}">human-readable</a>).</td></tr>
 <tr><td>Contribute</td><td><a href="${href(P.contribute)}"><code>${P.contribute}</code></a></td><td>How to submit entries: rules, template, PR and issue paths.</td></tr>
 <tr><td>Sitemap</td><td><a href="${href(P.sitemap)}"><code>${P.sitemap}</code></a></td><td>Every HTML page.</td></tr>
 </tbody></table>
 <p>Base URL: <code>${esc(SITE_URL)}</code>. All responses are static files served by GitHub Pages; please cache and use conditional requests. Crawling is explicitly welcome; see <a href="${href(P.robots)}"><code>robots.txt</code></a>.</p>
+<h2 id="skills-download">Downloading skills</h2>
+<p><a href="${href(LP.index('skill'))}">Skills</a> are <a href="https://agentskills.io/specification">Agent Skills</a>: a folder with a <code>SKILL.md</code> (YAML front matter plus instructions). Each published skill is available three ways:</p>
+<ul>
+<li>Raw: <code>/skills/&lt;id&gt;/SKILL.md</code> (and any other files in the folder at <code>/skills/&lt;id&gt;/&lt;file&gt;</code>).</li>
+<li>Zip of the whole folder: <code>/skills/&lt;id&gt;.zip</code> (unpacks to <code>&lt;id&gt;/SKILL.md</code>).</li>
+<li>JSON with metadata and the raw markdown: <code>/api/longform/skills/&lt;id&gt;.json</code>.</li>
+</ul>
+<p>Install for Claude Code (personal skills directory; use <code>.claude/skills/</code> inside a project to scope it to that project):</p>
+<pre><code class="language-sh">mkdir -p ~/.claude/skills
+curl -fsSL ${esc(SITE_URL)}/skills/&lt;id&gt;.zip -o /tmp/skill.zip
+unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
+<p>Or fetch just the file: <code>mkdir -p ~/.claude/skills/&lt;id&gt; &amp;&amp; curl -fsSL ${esc(SITE_URL)}/skills/&lt;id&gt;/SKILL.md -o ~/.claude/skills/&lt;id&gt;/SKILL.md</code>. Other agents that support Agent Skills load the same folder from their own skills directory. Read a skill before installing it.</p>
 <h2 id="contribute">Contributing</h2>
 <p>${esc(CONTRIBUTE.summary)} Machine-readable version of this section: <a href="${href(P.contribute)}"><code>${P.contribute}</code></a> (also embedded in <a href="${href(P.api)}"><code>${P.api}</code></a> as <code>contribute</code>).</p>
 <h3 id="rules">Rules</h3>
@@ -347,6 +382,8 @@ write(P.agents, page({
 </ol>
 <h4 id="issue-body-template">Issue body template</h4>
 <pre><code class="language-markdown">${esc(ISSUE_BODY)}</code></pre>
+<h3 id="contribute-longform">Guides, comparisons, stacks and skills</h3>
+<p>${esc(CONTRIBUTE.longform.note)} Format reference: <a href="${CONTRIBUTE.longform.docs}">content-long/README.md</a>.</p>
 <h3 id="corrections">Corrections and removals</h3>
 <p>Use the <a href="${CORRECTION_FORM_URL}">Correction / removal form</a>, or edit the JSON in a pull request.</p>
 <h2 id="policy">Inclusion policy</h2>
@@ -354,6 +391,7 @@ write(P.agents, page({
 }));
 
 // llms.txt
+const lfHeading = (t) => (t === 'skill' ? 'Downloadable skills (Agent Skills)' : LF[t].name); // avoid clashing with the "Skills" entry category
 const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr')} across ${CATEGORIES.length} categories. Static, no auth, crawl freely. Contribute via pull request to ${REPO_URL}.`, '',
   `Each entry is available as HTML (${SITE_URL}/entries/{id}/), markdown (${SITE_URL}/entries/{id}.md) and JSON (${SITE_URL}/api/entries/{id}.json).`, '',
   '## Machine-readable', '',
@@ -361,13 +399,22 @@ const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr
   `- [JSON index](${abs(P.api)}): all entries with metadata and counts`,
   `- [OpenAPI](${abs(P.openapi)}): OpenAPI 3.1 description of the JSON endpoints`,
   `- [Entry schema](${abs(P.schemaJson)}): JSON Schema (draft 2020-12) for one entry`,
+  `- [Long-form index](${abs(LP.api)}): guides, comparisons, stacks and skills with metadata (per item: ${SITE_URL}/api/longform/{route}/{id}.json)`,
   `- [For agents](${abs(P.agents)}): how to consume and contribute`, '',
   '## Contribute', '',
   `- [contribute.json](${abs(P.contribute)}): machine-readable contribution guide: rules, entry template, PR steps, issue body template`,
   `- [Pull request path](${abs(P.agents)}#contribute-pr): add content/{category}/{id}.json to ${REPO_URL}, run node scripts/validate.mjs, open a PR`,
   `- [Issue path](${abs(P.agents)}#contribute-issue): open a structured "New entry" issue (form: ${ISSUE_FORM_URL}); a maintainer's approved label turns it into a PR`,
   `- [Entry template](${REPO_URL}/blob/main/schema/entry.template.json): copy-paste JSON`,
-  `- [Corrections / removals](${CORRECTION_FORM_URL})`, ''];
+  `- [Corrections / removals](${CORRECTION_FORM_URL})`,
+  `- Guides, comparisons, stacks and skills are written by maintainers (no issue form yet)`, ''];
+for (const t of LONG.ORDER) {
+  const list = LONG.items.filter((x) => x.type === t);
+  llms.push(`## ${lfHeading(t)}`, '', `${LF[t].description} HTML: ${abs(LP.index(t))} JSON: ${abs(LP.apiType(t))}`, '');
+  list.forEach((x) => llms.push(`- [${x.item.title}](${abs(LP.md(t, x.item.id))}): ${x.item.summary || x.item.description}${t === 'skill' ? ` (zip: ${abs(LP.zip(x.item.id))})` : ''}`));
+  if (!list.length) llms.push('- (nothing published yet)');
+  llms.push('');
+}
 for (const c of CATEGORIES) {
   llms.push(`## ${c.name}`, '', `${c.description} JSON: ${abs(P.apiCat(c.slug))}`, '');
   byCat[c.slug].forEach((e) => llms.push(`- [${e.name}](${abs(P.entryMd(e.id))}): ${e.summary}`));
@@ -381,7 +428,13 @@ const full = [`# ${SITE_NAME}: full directory`, '', `> ${TAGLINE}`, '', `Generat
   '## Contributing', '', CONTRIBUTE.summary, '', `Machine-readable: ${abs(P.contribute)}`, '', '### Rules', '', ...CONTRIBUTE.rules.map((r) => `- ${r}`), '',
   '### Pull request path', '', ...CONTRIBUTE.pull_request.steps.map((x, i) => `${i + 1}. ${x}`), '', 'Entry template:', '', '```json', JSON.stringify(TEMPLATE, null, 2), '```', '',
   '### Issue path', '', `Form: ${ISSUE_FORM_URL}. API: POST https://api.github.com/repos/${REPO}/issues with title "[New entry]: <name>" and this body:`, '', '```markdown', ISSUE_BODY.trim(), '```', '', CONTRIBUTE.issue.review, '',
-  `Corrections and removals: ${CORRECTION_FORM_URL}`, ''];
+  `Corrections and removals: ${CORRECTION_FORM_URL}`, '', CONTRIBUTE.longform.note, ''];
+for (const t of LONG.ORDER) {
+  const list = LONG.items.filter((x) => x.type === t);
+  full.push(`## ${lfHeading(t)}`, '', LF[t].description, '');
+  list.forEach((x) => full.push(LONG.itemMarkdown(x, 3)));
+  if (!list.length) full.push('(nothing published yet)', '');
+}
 for (const c of CATEGORIES) {
   full.push(`## ${c.name} (${c.slug})`, '', c.description, '');
   byCat[c.slug].forEach((e) => full.push(entryMarkdown(e, 3)));
@@ -391,9 +444,11 @@ write(P.llmsFull, full.join('\n'));
 
 // OpenAPI
 const ref = (n) => ({ $ref: `#/components/schemas/${n}` });
-const metaProps = { name: { type: 'string' }, description: { type: 'string' }, version: { type: 'string' }, generated: { type: 'string', format: 'date-time' }, site_url: { type: 'string', format: 'uri' }, schema: { type: 'string', format: 'uri' }, openapi: { type: 'string', format: 'uri' }, llms_txt: { type: 'string', format: 'uri' }, repository: { type: 'string', format: 'uri' }, contribute_url: { type: 'string', format: 'uri' }, license: { type: 'object' } };
+const metaProps = { name: { type: 'string' }, description: { type: 'string' }, version: { type: 'string' }, generated: { type: 'string', format: 'date-time' }, site_url: { type: 'string', format: 'uri' }, schema: { type: 'string', format: 'uri' }, openapi: { type: 'string', format: 'uri' }, llms_txt: { type: 'string', format: 'uri' }, repository: { type: 'string', format: 'uri' }, contribute_url: { type: 'string', format: 'uri' }, longform: { type: 'string', format: 'uri' }, license: { type: 'object' } };
+const lfRoute = { name: 'route', in: 'path', required: true, schema: { type: 'string', enum: LONG.ORDER.map((t) => LF[t].route) } };
+const lfId = { name: 'id', in: 'path', required: true, schema: { type: 'string', pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$' } };
 const { $schema: _s, $id: _i, ...entrySchema } = SCHEMA;
-const entryOut = { ...entrySchema, properties: { ...entrySchema.properties, links: { type: 'object', properties: { html: { type: 'string', format: 'uri' }, markdown: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' }, source: { type: 'string', format: 'uri' } } } } };
+const entryOut = { ...entrySchema, properties: { ...entrySchema.properties, longform: { type: 'array', description: 'Published long-form items that reference this entry', items: { type: 'object', properties: { type: { type: 'string' }, id: { type: 'string' }, title: { type: 'string' }, url: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' } } } }, links: { type: 'object', properties: { html: { type: 'string', format: 'uri' }, markdown: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' }, source: { type: 'string', format: 'uri' } } } } };
 delete entryOut.properties.$schema;
 const ok = (schema, desc, type = 'application/json') => ({ 200: { description: desc, content: { [type]: { schema } } }, ...(type === 'application/json' ? { 404: { description: 'Not found' } } : {}) });
 write(P.openapi, json({
@@ -407,6 +462,12 @@ write(P.openapi, json({
     '/api/{category}.json': { get: { operationId: 'getCategory', summary: 'All entries in one category', parameters: [{ name: 'category', in: 'path', required: true, schema: { type: 'string', enum: CATEGORIES.map((c) => c.slug) } }], responses: ok(ref('CategoryResponse'), 'Category entries') } },
     '/api/entries/{id}.json': { get: { operationId: 'getEntry', summary: 'One entry by id', parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string', pattern: SCHEMA.properties.id.pattern } }], responses: ok(ref('Entry'), 'Entry') } },
     '/entries/{id}.md': { get: { operationId: 'getEntryMarkdown', summary: 'One entry as markdown', parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }], responses: ok({ type: 'string' }, 'Markdown', 'text/markdown') } },
+    '/api/longform.json': { get: { operationId: 'getLongformIndex', summary: 'All published guides, comparisons, stacks and skills (metadata only)', responses: ok(ref('LongformIndex'), 'Long-form index') } },
+    '/api/longform/{route}.json': { get: { operationId: 'getLongformType', summary: 'Published long-form items of one type', parameters: [lfRoute], responses: ok({ type: 'object', properties: { ...metaProps, type: { type: 'string', enum: LONG.ORDER }, name: { type: 'string' }, count: { type: 'integer' }, items: { type: 'array', items: ref('LongformSummary') } } }, 'Long-form items of one type') } },
+    '/api/longform/{route}/{id}.json': { get: { operationId: 'getLongformItem', summary: 'One long-form item: front matter, raw markdown, rendered HTML, comparison rows or stack components, links', parameters: [lfRoute, lfId], responses: ok(ref('LongformItem'), 'Long-form item') } },
+    '/{route}/{id}.md': { get: { operationId: 'getLongformMarkdown', summary: 'One long-form item as markdown with front matter (scheme links resolved to absolute URLs)', parameters: [lfRoute, lfId], responses: ok({ type: 'string' }, 'Markdown', 'text/markdown') } },
+    '/skills/{id}/SKILL.md': { get: { operationId: 'getSkillFile', summary: 'Raw SKILL.md of a published skill', parameters: [lfId], responses: ok({ type: 'string' }, 'SKILL.md', 'text/markdown') } },
+    '/skills/{id}.zip': { get: { operationId: 'getSkillZip', summary: 'Zip of a published skill folder (unpacks to {id}/SKILL.md)', parameters: [lfId], responses: ok({ type: 'string', contentEncoding: 'binary' }, 'Zip archive', 'application/zip') } },
     '/schema/entry.schema.json': { get: { operationId: 'getEntrySchema', summary: 'JSON Schema for one entry', responses: ok({ type: 'object' }, 'JSON Schema', 'application/schema+json') } },
     '/contribute.json': { get: { operationId: 'getContributionGuide', summary: 'Machine-readable contribution guide (rules, entry template, PR and issue paths)', responses: ok({ type: 'object', properties: { ...metaProps, contribute: { type: 'object' } } }, 'Contribution guide') } },
     '/llms.txt': { get: { operationId: 'getLlmsTxt', summary: 'llms.txt index', responses: ok({ type: 'string' }, 'llms.txt', 'text/plain') } },
@@ -415,7 +476,11 @@ write(P.openapi, json({
   components: { schemas: {
     Entry: entryOut,
     CategorySummary: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, description: { type: 'string' }, count: { type: 'integer' }, html: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' } } },
-    Index: { type: 'object', properties: { ...metaProps, contribute: { type: 'object', description: 'Same as /contribute.json' }, counts: { type: 'object', properties: { total: { type: 'integer' }, by_category: { type: 'object', additionalProperties: { type: 'integer' } } } }, categories: { type: 'array', items: ref('CategorySummary') }, entries: { type: 'array', items: ref('Entry') } } },
+    Index: { type: 'object', properties: { ...metaProps, contribute: { type: 'object', description: 'Same as /contribute.json' }, counts: { type: 'object', properties: { total: { type: 'integer' }, by_category: { type: 'object', additionalProperties: { type: 'integer' } }, longform: { type: 'object' } } }, categories: { type: 'array', items: ref('CategorySummary') }, entries: { type: 'array', items: ref('Entry') } } },
+    LongformLinks: { type: 'object', properties: { html: { type: 'string', format: 'uri' }, markdown: { type: 'string', format: 'uri' }, json: { type: 'string', format: 'uri' }, source: { type: 'string', format: 'uri' }, skill_md: { type: 'string', format: 'uri' }, zip: { type: 'string', format: 'uri' } } },
+    LongformSummary: { type: 'object', required: ['type', 'id', 'title', 'links'], properties: { type: { type: 'string', enum: LONG.ORDER }, id: { type: 'string' }, title: { type: 'string' }, summary: { type: 'string' }, author: { type: 'string' }, tags: { type: 'array', items: { type: 'string' } }, published: { type: 'string', format: 'date' }, updated: { type: 'string', format: 'date' }, last_verified: { type: 'string', format: 'date' }, entries: { type: 'array', items: { type: 'string' }, description: 'Directory entry ids this item references' }, links: ref('LongformLinks') } },
+    LongformItem: { allOf: [ref('LongformSummary'), { type: 'object', properties: { front_matter: { type: 'object' }, markdown: { type: 'string', description: 'Body with scheme links resolved to absolute URLs' }, raw: { type: 'string', description: 'Full file as published (front matter plus body)' }, html: { type: 'string' }, comparison: { type: 'object', description: 'Comparisons: subjects, criteria, table (one row per entry with values per criterion) and verdict' }, stack: { type: 'object', description: 'Stacks: use_case and components (role, entry, name, url, why)', properties: { use_case: { type: 'string' }, components: { type: 'array', items: { type: 'object' } } } }, entries_detail: { type: 'array', items: { type: 'object' } }, related: { type: 'array', items: { type: 'object' } }, sources: { type: 'array', items: { type: 'object' } } } }] },
+    LongformIndex: { type: 'object', properties: { ...metaProps, counts: { type: 'object', properties: { total: { type: 'integer' }, by_type: { type: 'object', additionalProperties: { type: 'integer' } } } }, types: { type: 'array', items: { type: 'object' } }, items: { type: 'array', items: ref('LongformSummary') } } },
     CategoryResponse: { type: 'object', properties: { ...metaProps, category: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, description: { type: 'string' } } }, count: { type: 'integer' }, entries: { type: 'array', items: ref('Entry') } } },
   } },
 }));
@@ -424,8 +489,8 @@ write(P.openapi, json({
 write('/404.html', page({ title: 'Not found', description: 'Page not found.', pathName: '/404.html', body: `<h1>Not found</h1><p>That page does not exist. Try the <a href="${href('/')}">home page</a>, <a href="${href(P.llms)}">llms.txt</a> or the <a href="${href(P.api)}">JSON index</a>.</p>` }));
 
 // sitemap + robots
-const htmlPages = ['/', P.agents, P.schema, ...CATEGORIES.map((c) => P.category(c.slug)), ...entries.map((e) => P.entry(e.id))];
-const lastmod = (p) => { const id = p.match(/^\/entries\/(.+)\/$/)?.[1]; return id ? (byId[id].updated || byId[id].added) : GENERATED.slice(0, 10); };
+const htmlPages = ['/', P.agents, P.schema, ...CATEGORIES.map((c) => P.category(c.slug)), ...LONG.sitemapPaths(), ...entries.map((e) => P.entry(e.id))];
+const lastmod = (p) => { const l = LONG.lastmod(p); if (l) return l; const id = p.match(/^\/entries\/(.+)\/$/)?.[1]; return id ? (byId[id].updated || byId[id].added) : GENERATED.slice(0, 10); };
 write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc><lastmod>${lastmod(p)}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot'];
 write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
@@ -433,6 +498,7 @@ write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
 # Machine-readable index: ${abs(P.llms)}
 # Full content: ${abs(P.llmsFull)}
 # JSON API: ${abs(P.api)} (OpenAPI: ${abs(P.openapi)})
+# Guides, comparisons, stacks, skills: ${abs(LP.api)}
 
 ${BOTS.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}
 

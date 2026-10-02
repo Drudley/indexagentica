@@ -61,6 +61,10 @@ Machine-readable version of this guide: <https://indexagentica.com/contribute.js
 - **Review:** a maintainer reviews the issue and adds the `approved` label (only collaborators can add labels). The [submission workflow](.github/workflows/submission.yml) then writes `content/<category>/<id>.json`, validates it and opens a PR that closes the issue. If validation fails, it comments the problems on the issue and labels it `needs-changes`. Edit the issue, and a maintainer re-adds `approved` to retry.
 - **Maintainers:** the bot-opened PR gets a `CI / dispatched` commit status from a CI run the workflow triggers itself. GitHub may also show the regular `pull_request` CI run as "approval required" for bot-created PRs; approving it is optional. Review, then merge by hand.
 
+## Guides, comparisons, stacks and skills
+
+Long-form content in [`content-long/`](content-long/README.md) is written by maintainers. There is no issue form for it for now. To suggest a topic or point out a mistake, use the [Correction / removal form](https://github.com/Drudley/indexagentica/issues/new?template=correction.yml) or open a regular issue.
+
 ## Corrections and removals
 
 Use the [Correction / removal form](https://github.com/Drudley/indexagentica/issues/new?template=correction.yml), or edit the JSON in a PR and set `updated` to today. If you only re-checked an entry and it's still correct, set `last_verified` to today. Renaming an `id` breaks links: avoid it unless the old one is wrong, and update every `related` reference.
@@ -74,14 +78,14 @@ Use the [Correction / removal form](https://github.com/Drudley/indexagentica/iss
 
 ## Upkeep
 
-A daily [upkeep workflow](.github/workflows/upkeep.yml) checks every link and flags entries whose `last_verified` (else `updated`, else `added`) is older than 90 days. It keeps a single issue, **Link & freshness report** (label `upkeep`), up to date. Fixing items from that issue via PR is a great first contribution. Entries are never edited automatically.
+A daily [upkeep workflow](.github/workflows/upkeep.yml) checks every link and flags entries whose `last_verified` (else `updated`, else `added`) is older than 90 days. It covers published long-form items too (sources, body links, and `last_verified`, else `updated`, else `published`). It keeps a single issue, **Link & freshness report** (label `upkeep`), up to date. Fixing items from that issue via PR is a great first contribution. Entries are never edited automatically.
 
 ## Working on the site
 
 ```bash
 node scripts/validate.mjs     # content validation (+ checks generated files are in sync)
 node scripts/sync.mjs         # after editing schema/categories.json or scripts/lib/forms.mjs
-node scripts/build.mjs        # writes dist/
+node scripts/build.mjs        # writes dist/ (INCLUDE_DRAFTS=1 to preview long-form drafts locally)
 node scripts/check-dist.mjs   # JSON + internal link checks on dist/
 node scripts/linkcheck.mjs    # link & freshness report -> upkeep/report.md
 python3 -m http.server -d dist 8080   # preview at http://localhost:8080/

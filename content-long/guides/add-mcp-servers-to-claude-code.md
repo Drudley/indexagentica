@@ -14,7 +14,7 @@ tags: [mcp, claude-code, setup]
 entries: [claude-code, model-context-protocol, github-mcp-server, playwright-mcp]
 sources:
   - title: Claude Code docs, Connect Claude Code to tools via MCP
-    url: https://docs.anthropic.com/en/docs/claude-code/mcp
+    url: https://code.claude.com/docs/en/mcp
     accessed: 2026-10-02
   - title: Playwright MCP README
     url: https://github.com/microsoft/playwright-mcp

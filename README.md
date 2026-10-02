@@ -15,6 +15,9 @@ The site is plain semantic HTML with no JavaScript, plus machine-readable output
 | Categories | `/api/categories.json` |
 | Per category | `/api/<category>.json` |
 | Per entry | `/api/entries/<id>.json`, `/entries/<id>.md`, `/entries/<id>/` |
+| Guides, comparisons, stacks, skills (index + item pages) | `/guides/`, `/compare/`, `/stacks/`, `/skills/`, `/<route>/<id>/` |
+| Long-form raw markdown | `/<route>/<id>.md`; skills also `/skills/<id>/SKILL.md` and `/skills/<id>.zip` |
+| Long-form JSON | `/api/longform.json`, `/api/longform/<route>.json`, `/api/longform/<route>/<id>.json` |
 | Entry JSON Schema | `/schema/entry.schema.json` (docs at `/schema/`) |
 | OpenAPI 3.1 for the JSON endpoints | `/openapi.json` |
 | Agent guide (consume + contribute) | `/agents/` |
@@ -25,19 +28,23 @@ The site is plain semantic HTML with no JavaScript, plus machine-readable output
 
 ```
 content/<category>/<id>.json   one directory entry per file (see content/README.md)
+content-long/                  guides, comparisons, stacks, skills: markdown + front matter (see content-long/README.md)
+schema/longform/               JSON Schemas for long-form front matter
 schema/categories.json         categories: single source of truth (run scripts/sync.mjs after editing)
 schema/entry.schema.json       JSON Schema (draft 2020-12) for an entry; category enum generated
 schema/entry.template.json     copy-paste entry template (validated in CI)
 scripts/validate.mjs           validator: schema, id==filename, category==folder, unique ids, related ids,
                                generated files in sync; GitHub annotations + job summary in Actions
 scripts/sync.mjs               regenerates schema enum, issue form, content/README.md table, folders
-scripts/build.mjs              static generator: content/ -> dist/
+scripts/build.mjs              static generator: content/ + content-long/ -> dist/
+scripts/build-longform.mjs     long-form pages, raw files, skill zips, API, back-references
 scripts/check-dist.mjs         post-build checks: JSON parses, internal links resolve, page structure
 scripts/linkcheck.mjs          link & freshness checker (used by the upkeep workflow)
 scripts/issue-to-entry.mjs     issue-form body -> entry JSON (used by the submission workflow)
-scripts/lib/                   categories loader, form definition/renderer/parser
+scripts/lib/                   categories loader, form definition/renderer/parser, YAML subset parser,
+                               long-form loader/validator, zero-dep zip writer
 scripts/site.config.mjs        site name, SITE_URL / BASE_PATH / CNAME settings
-scripts/markdown.mjs           tiny safe markdown renderer for entry descriptions
+scripts/markdown.mjs           small safe markdown renderer (GFM tables, mermaid as <pre class="mermaid">)
 .github/workflows/pages.yml    push to main: validate, build, deploy to GitHub Pages
 .github/workflows/ci.yml       pull requests (and dispatch): validate with annotations, build, check
 .github/workflows/upkeep.yml   daily link & freshness check; maintains the "Link & freshness report" issue
@@ -46,7 +53,7 @@ scripts/markdown.mjs           tiny safe markdown renderer for entry description
 CNAME                          indexagentica.com (reference only; the domain is set in Pages settings)
 ```
 
-Categories (from `schema/categories.json`): `skills`, `harnesses`, `mcp-servers`, `tools`, `protocols`, `apis`, `information`, `finance-payments`, `directories`.
+Categories (from `schema/categories.json`): `skills`, `harnesses`, `mcp-servers`, `tools`, `protocols`, `apis`, `information`, `finance-payments`, `directories`, `infrastructure`, `evals-observability`.
 
 ## Usage
 
@@ -65,13 +72,14 @@ Configuration (environment variables):
 | `SITE_URL` | `https://indexagentica.com` | Absolute base URL used in canonical links, sitemap, llms.txt, API links |
 | `BASE_PATH` | path of `SITE_URL` (empty) | Prefix for in-site links; only needed when hosting under a sub-path, e.g. `SITE_URL=https://drudley.github.io/indexagentica` |
 | `CNAME` | *(unset)* | If set, writes `dist/CNAME`. Not needed with Actions deployments (see below) |
+| `INCLUDE_DRAFTS` | *(unset)* | `1` also publishes long-form drafts. Local previews only |
 | `SOURCE_DATE_EPOCH` | now | Fixes the "generated" timestamp for reproducible builds |
 
 Local preview: `node scripts/build.mjs && python3 -m http.server -d dist 8080`, then open <http://localhost:8080/>.
 
 ## Contributing
 
-Two paths, both human-merged: a **pull request** adding `content/<category>/<id>.json` (run `node scripts/validate.mjs` first), or a structured **New entry issue** that a maintainer turns into a PR by adding the `approved` label. See [CONTRIBUTING.md](CONTRIBUTING.md), <https://indexagentica.com/agents/#contribute> and <https://indexagentica.com/contribute.json>.
+Two paths, both human-merged: a **pull request** adding `content/<category>/<id>.json` (run `node scripts/validate.mjs` first), or a structured **New entry issue** that a maintainer turns into a PR by adding the `approved` label. See [CONTRIBUTING.md](CONTRIBUTING.md), <https://indexagentica.com/agents/#contribute> and <https://indexagentica.com/contribute.json>. Guides, comparisons, stacks and skills are written by maintainers (no issue form).
 
 ## Automation
 
@@ -79,7 +87,7 @@ Two paths, both human-merged: a **pull request** adding `content/<category>/<id>
 |---|---|---|
 | `pages.yml` | push to `main` | validate → build → check → deploy to GitHub Pages |
 | `ci.yml` | pull request, dispatch | validate (file/line annotations + job summary), build, check |
-| `upkeep.yml` | daily 04:17 UTC, dispatch | link-check all entry URLs (HEAD→GET, retries, bot-protection aware) + 90-day freshness; creates/updates/closes the single **Link & freshness report** issue; never edits entries |
+| `upkeep.yml` | daily 04:17 UTC, dispatch | link-check all entry URLs and published long-form sources/body links (HEAD→GET, retries, bot-protection aware) + 90-day freshness; creates/updates/closes the single **Link & freshness report** issue; never edits entries |
 | `submission.yml` | `approved` label on an issue | parses the New entry form, writes + validates the entry, opens a PR that closes the issue (or comments errors); never merges |
 
 ## Deployment
