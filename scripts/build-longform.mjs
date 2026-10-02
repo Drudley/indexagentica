@@ -183,7 +183,7 @@ ${lfList(list)}`,
 <h3>Description</h3><p>${esc(d.description)}</p>`;
       }
       const src = sourcesOf(x) || [];
-      write(LP.page(t, it.id), page({
+      write(LP.page(t, it.id), page({ ogType: 'article',
         title: it.title, description: it.summary, pathName: LP.page(t, it.id), crumbs: [[LF[t].name, LP.index(t)], [it.title]],
         alternates: [['application/json', `${it.title} JSON`, LP.apiItem(t, it.id)], ['text/markdown', `${it.title} markdown`, LP.md(t, it.id)]],
         jsonld: { '@context': 'https://schema.org', '@type': t === 'guide' ? 'HowTo' : t === 'skill' ? 'SoftwareSourceCode' : 'Article', name: it.title, headline: it.title, description: it.summary, author: { '@type': 'Organization', name: it.author }, ...(it.published ? { datePublished: it.published } : {}), dateModified: it.updated || it.last_verified, keywords: (it.tags || []).join(', '), url: abs(LP.page(t, it.id)) },

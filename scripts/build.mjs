@@ -93,7 +93,7 @@ footer.site{margin-top:3rem;border-top:1px solid var(--card);padding-top:1rem;co
 nav.crumbs ol{list-style:none;padding:0;margin:0 0 .5rem;display:flex;flex-wrap:wrap;gap:.4rem;font-size:.9rem}nav.crumbs li+li::before{content:"›";margin-right:.4rem;color:var(--muted)}
 `;
 
-function page({ title, description, pathName, body, crumbs = [], jsonld, alternates = [] }) {
+function page({ title, description, pathName, body, crumbs = [], jsonld, alternates = [], ogType = 'website' }) {
   const fullTitle = pathName === '/' ? `${SITE_NAME}: agent-first directory` : `${title} | ${SITE_NAME}`;
   const crumbHtml = crumbs.length
     ? `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="${href('/')}">Home</a></li>${crumbs.map(([t, p]) => p ? `<li><a href="${href(p)}">${esc(t)}</a></li>` : `<li aria-current="page">${esc(t)}</li>`).join('')}</ol></nav>`
@@ -107,6 +107,9 @@ function page({ title, description, pathName, body, crumbs = [], jsonld, alterna
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${esc(abs(pathName))}">
 <link rel="stylesheet" href="${href('/style.css')}">
+<link rel="icon" href="${href('/favicon.ico')}" sizes="32x32">
+<link rel="icon" href="${href('/favicon.svg')}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="${href('/apple-touch-icon.png')}">
 <link rel="alternate" type="text/plain" title="llms.txt" href="${href(P.llms)}">
 <link rel="alternate" type="application/json" title="Full JSON index" href="${href(P.api)}">
 ${alternates.map(([type, t, p]) => `<link rel="alternate" type="${type}" title="${esc(t)}" href="${href(p)}">`).join('\n')}
@@ -114,7 +117,16 @@ ${alternates.map(([type, t, p]) => `<link rel="alternate" type="${type}" title="
 <meta property="og:title" content="${esc(fullTitle)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(abs(pathName))}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="${ogType}">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:image" content="${esc(abs('/og.png'))}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${SITE_NAME}: agent-first directory of skills, MCP servers, tools, protocols and APIs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(fullTitle)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="${esc(abs('/og.png'))}">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
 </head>
 <body>
@@ -298,7 +310,7 @@ for (const e of entries) {
     name: e.name, description: e.summary, url: e.url, sameAs: [e.repo, e.docs].filter(Boolean), keywords: e.tags?.join(', '),
     license: e.license, dateCreated: e.added, dateModified: e.updated || e.added, ...(SOFTWARE.has(e.category) ? { applicationCategory: catName[e.category] } : {}),
   };
-  write(P.entry(e.id), page({
+  write(P.entry(e.id), page({ ogType: 'article',
     title: e.name, description: e.summary, pathName: P.entry(e.id), crumbs: [[catName[e.category], P.category(e.category)], [e.name]], jsonld: ld,
     alternates: [['application/json', `${e.name} JSON`, P.apiEntry(e.id)], ['text/markdown', `${e.name} markdown`, P.entryMd(e.id)]],
     body: `<article>
