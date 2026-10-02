@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES } from './site.config.mjs';
 import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
@@ -521,9 +522,31 @@ write('/404.html', page({ title: 'Not found', description: 'Page not found.', pa
 
 // sitemap + robots
 const htmlPages = ['/', P.agents, P.schema, ...CATEGORIES.map((c) => P.category(c.slug)), ...LONG.sitemapPaths(), ...entries.map((e) => P.entry(e.id))];
-const lastmod = (p) => { const l = LONG.lastmod(p); if (l) return l; const id = p.match(/^\/entries\/(.+)\/$/)?.[1]; return id ? (byId[id].updated || byId[id].added) : GENERATED.slice(0, 10); };
-write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc><lastmod>${lastmod(p)}</lastmod></url>`).join('\n')}\n</urlset>\n`);
-const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot'];
+// <lastmod> must reflect when the page's content last changed (it also drives the changed-URLs-only IndexNow
+// ping in pages.yml), so never use the build time. Entries: latest of added/updated/last_verified. Category
+// pages and the home page: latest of what they list. Long-form: see build-longform.mjs. /agents/ and /schema/
+// are template-driven: last commit touching their sources (omitted if git history is unavailable or shallow).
+const day = (d) => (d ? String(d).slice(0, 10) : null);
+const latest = (ds) => ds.map(day).filter(Boolean).sort().pop() || null;
+const entryDate = (e) => latest([e.added, e.updated, e.last_verified]);
+const gitDate = (...files) => {
+  try {
+    const g = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    if (g('rev-parse', '--is-shallow-repository') === 'true') return null;
+    return g('log', '-1', '--format=%cs', '--', ...files) || null;
+  } catch { return null; }
+};
+const allLong = LONG.sitemapPaths().map((p) => LONG.lastmod(p));
+const LASTMOD = {
+  '/': latest([...entries.map(entryDate), ...allLong]),
+  [P.agents]: gitDate('scripts/build.mjs', 'scripts/site.config.mjs', 'scripts/lib/forms.mjs'),
+  [P.schema]: latest([gitDate('schema/entry.schema.json', 'scripts/lib/categories.mjs', 'scripts/site.config.mjs'), entryDate(byId['model-context-protocol'] || entries[0] || {})]),
+  ...Object.fromEntries(CATEGORIES.map((c) => [P.category(c.slug), latest(byCat[c.slug].map(entryDate))])),
+  ...Object.fromEntries(entries.map((e) => [P.entry(e.id), entryDate(e)])),
+};
+const lastmod = (p) => { const l = LONG.lastmod(p); return l !== undefined ? l : LASTMOD[p] ?? null; };
+write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc>${lastmod(p) ? `<lastmod>${lastmod(p)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
+const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot', 'SmitheryBot'];
 write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
 # AI crawlers, agents and LLM trainers are explicitly welcome to read and index everything here.
 # Machine-readable index: ${abs(P.llms)}

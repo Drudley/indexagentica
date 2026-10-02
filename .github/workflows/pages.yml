@@ -5,6 +5,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      indexnow_full:
+        description: Ping IndexNow with every sitemap URL instead of only new/changed ones
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -18,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Full history: sitemap <lastmod> for template-driven pages (/agents/, /schema/) is the date of the
+          # last commit touching their sources (scripts/build.mjs). The repo is small.
+          fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
           node-version: 22
@@ -41,6 +50,19 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://indexagentica.com' }}
         run: node scripts/check-dist.mjs
+      - name: IndexNow diff (new/changed URLs vs the live sitemap)
+        if: github.ref == 'refs/heads/main'
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://indexagentica.com' }}
+          FULL: ${{ inputs.indexnow_full && 'true' || 'false' }}
+        run: node scripts/indexnow.mjs diff dist/sitemap.xml indexnow/urls.txt $([ "$FULL" = true ] && echo --full)
+      - name: Upload IndexNow list
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v7
+        with:
+          name: indexnow
+          path: indexnow/
+          retention-days: 7
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -61,3 +83,24 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # Pings IndexNow (Bing, Yandex, Seznam, Naver, Yep, ...; engines share submissions) once per deploy with
+  # the URLs whose <lastmod> changed. Waits for the key file and new sitemap to be live. Never fails the run:
+  # 429 and other errors are warnings. Google has no ping; it reads the Sitemap: line in robots.txt.
+  indexnow:
+    if: github.ref == 'refs/heads/main'
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v8
+        with:
+          name: indexnow
+          path: indexnow
+      - name: Ping IndexNow
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://indexagentica.com' }}
+        run: node scripts/indexnow.mjs submit indexnow/urls.txt

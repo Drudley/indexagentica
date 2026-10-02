@@ -41,6 +41,7 @@ scripts/build.mjs              static generator: content/ + content-long/ -> dis
 scripts/build-longform.mjs     long-form pages, raw files, skill zips, API, back-references
 scripts/check-dist.mjs         post-build checks: JSON parses, internal links resolve, page structure
 scripts/linkcheck.mjs          link & freshness checker (used by the upkeep workflow)
+scripts/indexnow.mjs           IndexNow: diff live vs new sitemap, ping changed URLs after deploy
 scripts/issue-to-entry.mjs     issue-form body -> entry JSON (used by the submission workflow)
 scripts/lib/                   categories loader, form definition/renderer/parser, YAML subset parser,
                                long-form loader/validator, zero-dep zip writer
@@ -86,7 +87,7 @@ Two paths, both human-merged: a **pull request** adding `content/<category>/<id>
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `pages.yml` | push to `main` | validate → build → check → deploy to GitHub Pages |
+| `pages.yml` | push to `main`, dispatch | validate → build → check → deploy to GitHub Pages → IndexNow ping of changed URLs |
 | `ci.yml` | pull request, dispatch | validate (file/line annotations + job summary), build, check |
 | `upkeep.yml` | daily 04:17 UTC, dispatch | link-check all entry URLs and published long-form sources/body links (HEAD→GET, retries, bot-protection aware) + 90-day freshness; creates/updates/closes the single **Link & freshness report** issue; never edits entries |
 | `submission.yml` | `approved` label on an issue | parses the New entry form, writes + validates the entry, opens a PR that closes the issue (or comments errors); never merges |
@@ -97,6 +98,14 @@ Two paths, both human-merged: a **pull request** adding `content/<category>/<id>
 One-time setup after the repo is created: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 The workflow builds for `SITE_URL=https://indexagentica.com` (pinned in the workflow; repo variable `SITE_URL` overrides it). It also logs the `actions/configure-pages` `base_url` for comparison.
+
+### Sitemap `lastmod` and IndexNow
+
+Each sitemap URL's `<lastmod>` is the date its content last changed, never the build time: entries use the latest of `added`/`updated`/`last_verified`; long-form items the latest of `published`/`updated`/`last_verified`; category, type-index and home pages the latest of what they list; `/agents/` and `/schema/` the last commit touching their sources (hence `fetch-depth: 0` in the checkout).
+
+[IndexNow](https://www.indexnow.org/documentation) (Bing, Yandex, Seznam, Naver, Yep and others; engines share submissions): before deploying, the build job diffs the live `sitemap.xml` against the new one and uploads the new/changed URLs as the `indexnow` artifact. After `deploy`, the `indexnow` job waits until the key file and new sitemap are served, then POSTs the list once to `https://api.indexnow.org/indexnow`. Nothing changed means no ping. 429 and other errors are warnings and never fail the run. To re-submit everything (e.g. after a long outage), run the workflow manually with **indexnow_full** checked. Google has no ping endpoint; it uses the `Sitemap:` line in `robots.txt` and Search Console.
+
+The key is the public file `static/<key>.txt` (content = key; served at `https://indexagentica.com/<key>.txt`). To rotate it, replace that file with a new `openssl rand -hex 16` key. There must be only one.
 
 ## Custom domain
 

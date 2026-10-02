@@ -223,7 +223,15 @@ ${src.length ? `<h2>Sources</h2><ul>${src.map((s) => `<li><a href="${esc(s.url)}
     backrefs: (id) => (refsByEntry[id] || []).map(backref),
     counts: () => Object.fromEntries(ORDER.map((t) => [t, items.filter((x) => x.type === t).length])),
     sitemapPaths: () => [...ORDER.map(LP.index), ...items.map((x) => LP.page(x.type, x.item.id))],
-    lastmod: (p) => { const x = items.find((i) => LP.page(i.type, i.item.id) === p); return x ? (x.item.updated || x.item.last_verified) : null; },
+    // Sitemap <lastmod>: latest of published/updated/last_verified (all are shown on the page). Type index
+    // pages take the latest of their items. Returns undefined for paths that are not long-form pages.
+    lastmod: (p) => {
+      const d = (x) => [x.item.published, x.item.updated, x.item.last_verified].filter(Boolean).map(String).sort().pop() || null;
+      const t = ORDER.find((k) => LP.index(k) === p);
+      if (t) return items.filter((x) => x.type === t).map(d).filter(Boolean).sort().pop() || null;
+      const x = items.find((i) => LP.page(i.type, i.item.id) === p);
+      return x ? d(x) : undefined;
+    },
     entryHtml: (id) => {
       const list = refsByEntry[id] || [];
       return list.length ? `<h2>Guides &amp; comparisons</h2><ul>${list.map((x) => `<li><a href="${href(LP.page(x.type, x.item.id))}">${esc(x.item.title)}</a> (${LF[x.type].singular}): ${esc(x.item.summary)}</li>`).join('')}</ul>` : '';
