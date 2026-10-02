@@ -34,6 +34,7 @@ export function formFields() {
     { key: 'agent_access.notes', label: 'Agent access notes', type: 'textarea', description: 'Anything an agent needs to know to use it (max 1000 chars).' },
     { key: 'related', label: 'Related entry ids', type: 'input', list: 'comma', description: 'Comma-separated ids of existing entries (see https://indexagentica.com/api/index.json).', placeholder: 'model-context-protocol' },
     { key: 'sources', label: 'Sources', type: 'textarea', list: 'lines', required: true, description: 'One URL per line that verifies the facts above.', placeholder: 'https://example.com\nhttps://github.com/owner/repo' },
+    { key: 'last_verified', label: 'Last verified', type: 'input', description: 'Date you checked the facts and links against the sources (YYYY-MM-DD). Leave empty to use the submission date.', placeholder: '2026-10-02' },
     { key: 'maintainer', label: 'Maintainer', type: 'input', description: 'Who maintains the listed resource, if known.' },
     { key: 'submitted_by', label: 'Submitted by', type: 'input', description: 'Who is submitting: e.g. "ExampleAgent (agent) for @username" or "github:username".', placeholder: 'ExampleAgent (agent) for @username' },
   ];

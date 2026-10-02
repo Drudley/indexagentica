@@ -145,7 +145,7 @@ function entryMarkdown(e, level = 1) {
     ['llms.txt', e.agent_access?.llms_txt], ['openapi', e.agent_access?.openapi], ['mcp endpoint', e.agent_access?.mcp_endpoint],
     ['auth', e.agent_access?.auth], ['access notes', e.agent_access?.notes],
     ['related', e.related?.length ? e.related.map((r) => `${byId[r]?.name || r} (${abs(P.entry(r))})`).join('; ') : null],
-    ['sources', e.sources?.length ? e.sources.join(' , ') : null], ['added', e.added], ['updated', e.updated],
+    ['sources', e.sources?.length ? e.sources.join(' , ') : null], ['added', e.added], ['updated', e.updated], ['last verified', e.last_verified],
     ['maintainer', e.maintainer], ['submitted by', e.submitted_by], ['page', abs(P.entry(e.id))], ['json', abs(P.apiEntry(e.id))],
   ].filter(([, v]) => v);
   kv.forEach(([k, v]) => L.push(`- ${k}: ${v}`));
@@ -249,7 +249,8 @@ for (const e of entries) {
     ['Website', link(e.url)], e.repo && ['Repository', link(e.repo)], e.docs && ['Docs', link(e.docs)],
     e.status && ['Status', esc(e.status)], e.pricing && ['Pricing', esc(e.pricing)], e.license && ['License', esc(e.license)],
     e.maintainer && ['Maintainer', esc(e.maintainer)], ['Added', `<time datetime="${e.added}">${e.added}</time>`],
-    e.updated && ['Updated', `<time datetime="${e.updated}">${e.updated}</time>`], e.submitted_by && ['Submitted by', esc(e.submitted_by)],
+    e.updated && ['Updated', `<time datetime="${e.updated}">${e.updated}</time>`],
+    e.last_verified && ['Last verified', `<time datetime="${e.last_verified}">${e.last_verified}</time>`], e.submitted_by && ['Submitted by', esc(e.submitted_by)],
   ].filter(Boolean);
   const accessRows = [
     aa.llms_txt && ['llms.txt', link(aa.llms_txt)], aa.openapi && ['OpenAPI', link(aa.openapi)],
@@ -298,7 +299,7 @@ write(P.schema, page({
 <p class="lede">Every entry is one JSON file at <code>content/&lt;category&gt;/&lt;id&gt;.json</code> in <a href="${REPO_URL}">${REPO}</a>, validated against this JSON Schema (draft 2020-12).</p>
 <p>Download: <a href="${href(P.schemaJson)}"><code>/schema/entry.schema.json</code></a>. Unknown properties are rejected (<code>additionalProperties: false</code>).</p>
 <h2>Rules beyond the schema</h2>
-<ul><li><code>id</code> must equal the filename (without <code>.json</code>) and be unique across all categories.</li><li><code>category</code> must equal the folder name.</li><li>Every id in <code>related</code> must exist.</li><li><code>updated</code> must not be before <code>added</code>.</li><li>Run <code>node scripts/validate.mjs</code> (zero dependencies) before opening a pull request.</li></ul>
+<ul><li><code>id</code> must equal the filename (without <code>.json</code>) and be unique across all categories.</li><li><code>category</code> must equal the folder name.</li><li>Every id in <code>related</code> must exist.</li><li><code>updated</code> and <code>last_verified</code> must not be before <code>added</code>.</li><li>Run <code>node scripts/validate.mjs</code> (zero dependencies) before opening a pull request.</li></ul>
 <h2>Fields</h2>
 <table><thead><tr><th scope="col">Field</th><th scope="col">Required</th><th scope="col">Type</th><th scope="col">Notes</th></tr></thead><tbody>
 ${Object.entries(sp).filter(([k]) => k !== '$schema').map(([k, s]) => `<tr><th scope="row"><code>${k}</code></th><td>${SCHEMA.required.includes(k) ? 'yes' : ''}</td><td>${typeDesc(s)}</td><td>${esc([s.description, s.maxLength && s.type === 'string' ? `max ${s.maxLength} chars` : '', s.pattern && !s.format ? `pattern ${s.pattern}` : ''].filter(Boolean).join('. '))}</td></tr>`).join('\n')}

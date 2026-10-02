@@ -5,7 +5,7 @@
 //   - timeout per request, one retry for timeouts / network errors / 5xx / 429
 //   - global + per-host concurrency limits, browser-like User-Agent (honestly suffixed)
 //   - 401/403/429/999 and bot challenges => "unverified" (not counted as broken)
-//   - entries whose `updated` (or `added`) is older than STALE_DAYS => "stale"
+//   - entries whose last_verified (else updated, else added) is older than STALE_DAYS => "stale"
 // Usage: node scripts/linkcheck.mjs [--out dir] [--only id,id] [--limit N]
 // Writes <out>/report.md and <out>/result.json; sets GITHUB_OUTPUT problems=<n>.
 import fs from 'node:fs';
@@ -152,9 +152,10 @@ for (const [url, res] of results) {
   if (['broken', 'moved', 'unverified'].includes(res.kind)) for (const ref of refs.get(url)) item(ref.entry, { kind: res.kind, field: ref.field, url, reason: res.reason, target: res.target });
 }
 for (const e of entries) {
-  const last = e.data.updated || e.data.added;
+  const field = e.data.last_verified ? 'last_verified' : e.data.updated ? 'updated' : 'added';
+  const last = e.data[field];
   const days = Math.floor((now - new Date(last + 'T00:00:00Z')) / 86400000);
-  if (days > STALE_DAYS) { counts.stale++; item(e, { kind: 'stale', field: e.data.updated ? 'updated' : 'added', reason: `last ${e.data.updated ? 'updated' : 'added'} ${last} (${days} days ago)` }); }
+  if (days > STALE_DAYS) { counts.stale++; item(e, { kind: 'stale', field, reason: `${field.replace('_', ' ')} ${last} (${days} days ago)` }); }
 }
 const problemItems = [...perEntry.values()].flatMap((p) => p.items).filter((i) => i.kind !== 'unverified');
 const problems = problemItems.length;
@@ -162,7 +163,7 @@ const problemEntries = [...perEntry.values()].filter((p) => p.items.some((i) => 
 
 // ---------- report ----------
 const ICON = { broken: '❌ **broken**', moved: '↪️ **moved**', stale: '🕰️ **stale**', unverified: '❔ unverified' };
-const line = (i) => i.kind === 'stale' ? `- ${ICON.stale}: ${i.reason}; re-verify the facts and set \`updated\``
+const line = (i) => i.kind === 'stale' ? `- ${ICON.stale}: ${i.reason}; re-verify the facts and links, then set \`last_verified\` (and \`updated\` if you changed anything)`
   : i.kind === 'moved' ? `- ${ICON.moved} \`${i.field}\`: ${i.url} → ${i.target} (${i.reason}); update the link`
   : `- ${ICON[i.kind]} \`${i.field}\`: ${i.url} (${i.reason})`;
 const sortP = (a, b) => a.e.data.name.localeCompare(b.e.data.name);
@@ -172,7 +173,7 @@ const head = [
   '| Check | Count |', '|---|---|',
   `| ❌ Broken links (404/410, DNS/TLS/connection errors, persistent 5xx) | ${counts.broken} |`,
   `| ↪️ Permanent redirects (301/308 to a different URL) | ${counts.moved} |`,
-  `| 🕰️ Stale entries (\`updated\`/\`added\` older than ${STALE_DAYS} days) | ${counts.stale} |`,
+  `| 🕰️ Stale entries (\`last_verified\`, else \`updated\`, else \`added\` older than ${STALE_DAYS} days) | ${counts.stale} |`,
   `| ❔ Unverified (bot protection, auth, rate limit, timeout; not counted as problems) | ${counts.unverified} |`,
   `| ✅ OK | ${counts.ok} |`, '',
 ];

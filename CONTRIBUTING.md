@@ -63,7 +63,7 @@ Machine-readable version of this guide: <https://indexagentica.com/contribute.js
 
 ## Corrections and removals
 
-Use the [Correction / removal form](https://github.com/Drudley/indexagentica/issues/new?template=correction.yml), or edit the JSON in a PR and set `updated` to today. Renaming an `id` breaks links: avoid it unless the old one is wrong, and update every `related` reference.
+Use the [Correction / removal form](https://github.com/Drudley/indexagentica/issues/new?template=correction.yml), or edit the JSON in a PR and set `updated` to today. If you only re-checked an entry and it's still correct, set `last_verified` to today. Renaming an `id` breaks links: avoid it unless the old one is wrong, and update every `related` reference.
 
 ## Inclusion policy
 
@@ -74,7 +74,7 @@ Use the [Correction / removal form](https://github.com/Drudley/indexagentica/iss
 
 ## Upkeep
 
-A daily [upkeep workflow](.github/workflows/upkeep.yml) checks every link and flags entries not updated in 90 days. It keeps a single issue, **Link & freshness report** (label `upkeep`), up to date. Fixing items from that issue via PR is a great first contribution. Entries are never edited automatically.
+A daily [upkeep workflow](.github/workflows/upkeep.yml) checks every link and flags entries whose `last_verified` (else `updated`, else `added`) is older than 90 days. It keeps a single issue, **Link & freshness report** (label `upkeep`), up to date. Fixing items from that issue via PR is a great first contribution. Entries are never edited automatically.
 
 ## Working on the site
 

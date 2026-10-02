@@ -18,7 +18,7 @@ const out = (k, v) => process.env.GITHUB_OUTPUT && fs.appendFileSync(process.env
 const { entry: parsed, problems } = parseIssueBody(body);
 const today = new Date().toISOString().slice(0, 10);
 // Field order follows the schema for readable diffs.
-const ORDER = ['id', 'name', 'category', 'summary', 'description', 'url', 'repo', 'docs', 'tags', 'license', 'pricing', 'status', 'agent_access', 'related', 'sources', 'added', 'updated', 'maintainer', 'submitted_by'];
+const ORDER = ['id', 'name', 'category', 'summary', 'description', 'url', 'repo', 'docs', 'tags', 'license', 'pricing', 'status', 'agent_access', 'related', 'sources', 'added', 'updated', 'last_verified', 'maintainer', 'submitted_by'];
 const draft = { ...parsed, added: today, submitted_by: parsed.submitted_by || (user ? `github:${user}` : undefined) };
 const entry = Object.fromEntries(ORDER.filter((k) => draft[k] !== undefined).map((k) => [k, draft[k]]));
 

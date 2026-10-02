@@ -110,7 +110,9 @@ export function validateEntry(data, { slug, folder, idsElsewhere = new Set() } =
     if (r === data.id) errs.push({ field: 'related', message: 'an entry cannot list itself as related', hint: `remove "${r}"` });
     else if (typeof r === 'string' && !idsElsewhere.has(r)) errs.push({ field: 'related', message: `unknown entry id "${r}"`, hint: 'remove it, or add that entry first (ids are filenames under content/; list: https://indexagentica.com/api/index.json)' });
   }
-  if (data.updated && data.added && data.updated < data.added) errs.push({ field: 'updated', message: `${data.updated} is before added (${data.added})`, hint: 'set "updated" to the date of the latest change' });
+  const isDate = (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v);
+  if (isDate(data.last_verified) && isDate(data.added) && data.last_verified < data.added) errs.push({ field: 'last_verified', message: `${data.last_verified} is before added (${data.added})`, hint: 'set "last_verified" to the date you checked the facts (on or after added)' });
+  if (isDate(data.updated) && isDate(data.added) && data.updated < data.added) errs.push({ field: 'updated', message: `${data.updated} is before added (${data.added})`, hint: 'set "updated" to the date of the latest change' });
   return errs;
 }
 

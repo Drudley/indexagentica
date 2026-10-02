@@ -45,6 +45,16 @@
       "slug": "directories",
       "name": "Directories",
       "description": "Other directories, registries, awesome-lists and link hubs for the agent ecosystem."
+    },
+    {
+      "slug": "infrastructure",
+      "name": "Infrastructure",
+      "description": "Hosting, sandboxes and runtimes that agents run on or execute code in."
+    },
+    {
+      "slug": "evals-observability",
+      "name": "Evals & Observability",
+      "description": "Evaluation, tracing and observability for agents and LLM applications."
     }
   ]
 }

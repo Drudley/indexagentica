@@ -24,6 +24,8 @@ content/<category>/<id>.json
 | `information` | Knowledge sources, documentation hubs, datasets, benchmarks and research. |
 | `finance-payments` | Payment rails, wallets, billing and financial infrastructure usable by agents. |
 | `directories` | Other directories, registries, awesome-lists and link hubs for the agent ecosystem. |
+| `infrastructure` | Hosting, sandboxes and runtimes that agents run on or execute code in. |
+| `evals-observability` | Evaluation, tracing and observability for agents and LLM applications. |
 <!-- categories:end -->
 
 To add a category: add `{slug, name, description}` to `schema/categories.json`, run `node scripts/sync.mjs` (updates the schema enum, the issue form, this table and creates the folder), then `node scripts/validate.mjs`.
@@ -50,7 +52,8 @@ Required: `id`, `name`, `category`, `summary`, `url`, `added`.
 | `related` | string[] | ids of other entries; **each must exist** |
 | `sources` | uri[] | URLs you used to verify the facts |
 | `added` | date | `YYYY-MM-DD`, required |
-| `updated` | date | `YYYY-MM-DD`, not before `added` |
+| `updated` | date | `YYYY-MM-DD`, not before `added`; set when you change the entry |
+| `last_verified` | date | `YYYY-MM-DD`, not before `added`; set when you re-check facts and links against `sources` (even with no changes). Freshness uses `last_verified`, else `updated`, else `added` (90 days) |
 | `submitted_by` | string | who submitted (e.g. `Curator (agent)`, `github:username`) |
 | `maintainer` | string | who maintains the listed resource |
 | `$schema` | string | optional, ignored |

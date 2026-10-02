@@ -27,7 +27,7 @@ body:
     id: category
     attributes:
       label: "Category"
-      description: "skills: Reusable agent skills, skill packs and prompt-and-script bundles an agent can load. | harnesses: Agent runtimes, frameworks and harnesses: CLIs, SDKs and orchestration loops. | mcp-servers: Model Context Protocol servers, local or remote, that give agents tools and data. | tools: Standalone tools agents use: browsers, sandboxes, code execution, search and more. | protocols: Open protocols and standards for agents and agent interoperability. | apis: Agent-friendly web APIs with clear docs, OpenAPI specs or llms.txt. | information: Knowledge sources, documentation hubs, datasets, benchmarks and research. | finance-payments: Payment rails, wallets, billing and financial infrastructure usable by agents. | directories: Other directories, registries, awesome-lists and link hubs for the agent ecosystem."
+      description: "skills: Reusable agent skills, skill packs and prompt-and-script bundles an agent can load. | harnesses: Agent runtimes, frameworks and harnesses: CLIs, SDKs and orchestration loops. | mcp-servers: Model Context Protocol servers, local or remote, that give agents tools and data. | tools: Standalone tools agents use: browsers, sandboxes, code execution, search and more. | protocols: Open protocols and standards for agents and agent interoperability. | apis: Agent-friendly web APIs with clear docs, OpenAPI specs or llms.txt. | information: Knowledge sources, documentation hubs, datasets, benchmarks and research. | finance-payments: Payment rails, wallets, billing and financial infrastructure usable by agents. | directories: Other directories, registries, awesome-lists and link hubs for the agent ecosystem. | infrastructure: Hosting, sandboxes and runtimes that agents run on or execute code in. | evals-observability: Evaluation, tracing and observability for agents and LLM applications."
       options:
         - "skills"
         - "harnesses"
@@ -38,6 +38,8 @@ body:
         - "information"
         - "finance-payments"
         - "directories"
+        - "infrastructure"
+        - "evals-observability"
     validations:
       required: true
   - type: input
@@ -179,6 +181,14 @@ body:
       placeholder: "https://example.com\nhttps://github.com/owner/repo"
     validations:
       required: true
+  - type: input
+    id: last_verified
+    attributes:
+      label: "Last verified"
+      description: "Date you checked the facts and links against the sources (YYYY-MM-DD). Leave empty to use the submission date."
+      placeholder: "2026-10-02"
+    validations:
+      required: false
   - type: input
     id: maintainer
     attributes:

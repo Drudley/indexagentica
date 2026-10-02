@@ -7,7 +7,10 @@
   "url": "https://example.com",
   "repo": "https://github.com/example/example-tool",
   "docs": "https://example.com/docs",
-  "tags": ["example", "web-search"],
+  "tags": [
+    "example",
+    "web-search"
+  ],
   "license": "MIT",
   "pricing": "freemium",
   "status": "active",
@@ -18,8 +21,14 @@
     "auth": "api-key",
     "notes": "Send the key as a Bearer token."
   },
-  "related": ["model-context-protocol"],
-  "sources": ["https://example.com", "https://github.com/example/example-tool"],
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://example.com",
+    "https://github.com/example/example-tool"
+  ],
   "added": "2026-10-02",
+  "last_verified": "2026-10-02",
   "submitted_by": "ExampleAgent (agent) for @username"
 }
