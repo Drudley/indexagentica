@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://indexagentica.com/schema/longform/comparison.schema.json",
+  "title": "Index Agentica comparison front matter",
+  "description": "YAML front matter of content-long/compare/<id>.md. All scalar values are strings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "title",
+    "summary",
+    "author",
+    "last_verified",
+    "subjects",
+    "criteria",
+    "rows",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "Slug; must equal the filename (content-long/compare/<id>.md). Unique across all long-form items."
+    },
+    "type": {
+      "type": "string",
+      "const": "comparison",
+      "description": "Content type; must match the folder."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "description": "Page title."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 300,
+      "description": "1-2 sentences, plain text, 20-300 chars. Used in listings, llms.txt and the API."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Optional longer plain-text description for meta tags."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "Who wrote it, e.g. \"Agentica Author\"."
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 20,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 40
+      },
+      "description": "kebab-case tags."
+    },
+    "entries": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "description": "Directory entry ids this item discusses (content/<category>/<id>.json). Each must exist. Used for cross-links from entry pages."
+    },
+    "related": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "description": "ids of other long-form items (any type). Each must exist."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url",
+          "accessed"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Date you read the source (YYYY-MM-DD)."
+          }
+        }
+      },
+      "description": "Sources with title, url and accessed date.",
+      "minItems": 1
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the facts were last checked against the sources (YYYY-MM-DD). Freshness uses this."
+    },
+    "published": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Optional first publication date (YYYY-MM-DD)."
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Optional date of the last substantive change (YYYY-MM-DD)."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "description": "Optional. \"draft\" items are validated but not published. Default: published."
+    },
+    "subjects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "description": "Entry ids being compared (>= 2). Each must exist; each needs a row.",
+      "minItems": 2,
+      "maxItems": 12
+    },
+    "criteria": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 60
+      },
+      "description": "Table column names, in display order."
+    },
+    "rows": {
+      "type": "object",
+      "minProperties": 2,
+      "description": "Map of subject entry id -> map of criterion -> value (string). Keys must be exactly the subjects and criteria.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "maxLength": 300
+        }
+      }
+    },
+    "verdict": {
+      "type": "string",
+      "maxLength": 600,
+      "description": "Optional one-paragraph bottom line (plain text)."
+    }
+  }
+}

@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, SCHEMA_PATH, loadCategories } from './lib/categories.mjs';
 import { checkSync } from './sync.mjs';
+import { validateLongform } from './lib/longform.mjs';
 
 const SCHEMA = JSON.parse(fs.readFileSync(SCHEMA_PATH, 'utf8'));
 const CONTENT = path.join(ROOT, 'content');
@@ -49,6 +50,7 @@ export function validateAgainst(schema, value, at = '$', errors = []) {
     const ok = schema.type === t || (schema.type === 'number' && t === 'integer');
     if (!ok) { push(`expected ${schema.type === 'array' ? 'an array' : schema.type === 'object' ? 'an object' : `a ${schema.type}`}, got ${t}`, schema.type === 'array' ? `wrap the value in [ ], e.g. ["value"]` : `change "${field}" to a ${schema.type}`); return errors; }
   }
+  if (schema.const !== undefined && value !== schema.const) push(`must be ${JSON.stringify(schema.const)} (got ${JSON.stringify(value)})`, `set it to ${JSON.stringify(schema.const)}`);
   if (schema.enum && !schema.enum.includes(value)) push(`${JSON.stringify(value)} is not an allowed value`, `use one of: ${schema.enum.join(', ')}`);
   if (typeof value === 'string') {
     const n = [...value].length;
@@ -62,6 +64,7 @@ export function validateAgainst(schema, value, at = '$', errors = []) {
     }
   }
   if (Array.isArray(value)) {
+    if (schema.minItems != null && value.length < schema.minItems) push(`has ${value.length} item(s) (minimum ${schema.minItems})`, `add at least ${schema.minItems - value.length} more`);
     if (schema.maxItems != null && value.length > schema.maxItems) push(`has ${value.length} items (maximum ${schema.maxItems})`, `remove ${value.length - schema.maxItems} item(s)`);
     if (schema.uniqueItems) {
       const seen = new Set(); const dups = new Set();
@@ -72,9 +75,12 @@ export function validateAgainst(schema, value, at = '$', errors = []) {
   }
   if (typeOf(value) === 'object') {
     const props = schema.properties || {};
+    if (schema.minProperties != null && Object.keys(value).length < schema.minProperties) push(`has ${Object.keys(value).length} key(s) (minimum ${schema.minProperties})`, `add at least ${schema.minProperties - Object.keys(value).length} more`);
     for (const r of schema.required || []) if (!(r in value)) errors.push({ field: at === '$' ? r : `${field}.${r}`, message: 'required field is missing', hint: requiredHint(r) });
     for (const [k, v] of Object.entries(value)) {
-      if (props[k]) validateAgainst(props[k], v, at === '$' ? `$.${k}` : `${at}.${k}`, errors);
+      const sub = at === '$' ? `$.${k}` : `${at}.${k}`;
+      if (props[k]) validateAgainst(props[k], v, sub, errors);
+      else if (schema.additionalProperties && typeof schema.additionalProperties === 'object') validateAgainst(schema.additionalProperties, v, sub, errors);
       else if (schema.additionalProperties === false) errors.push({ field: at === '$' ? k : `${field}.${k}`, message: 'unknown field', hint: `remove it or fix the spelling; allowed fields: ${Object.keys(props).filter((p) => p !== '$schema').join(', ')}` });
     }
   }
@@ -131,7 +137,7 @@ function main() {
   const args = process.argv.slice(2);
   const all = loadEntries();
   const walk = (p) => fs.statSync(p).isDirectory() ? fs.readdirSync(p).flatMap((f) => walk(path.join(p, f))) : p.endsWith('.json') ? [p] : [];
-  const targets = args.length ? [...new Set(args.flatMap((a) => walk(path.resolve(a))))].sort() : all;
+  const targets = args.length ? [...new Set(args.flatMap((a) => walk(path.resolve(a))))].filter((f) => f.startsWith(CONTENT + path.sep)).sort() : all;
   const problems = []; // { file, line, field, message, hint }
 
   for (const e of fs.readdirSync(CONTENT, { withFileTypes: true })) {
@@ -169,6 +175,15 @@ function main() {
     for (const e of errs) problems.push({ file: rel, line: lineOf(texts.get(file), e.field), ...e });
   }
 
+  // Long-form content (content-long/): validated on full runs, or when a content-long path is passed.
+  const lfArgs = args.filter((a) => path.resolve(a).startsWith(path.join(ROOT, 'content-long')));
+  let longformCount = 0;
+  if (!args.length || lfArgs.length) {
+    const lf = validateLongform({ entryIds: ids, only: lfArgs.length ? lfArgs.map((a) => path.resolve(a)) : null });
+    longformCount = lf.count;
+    problems.push(...lf.problems);
+  }
+
   // The copy-paste template must stay valid as the schema evolves.
   const tplPath = path.join(ROOT, 'schema/entry.template.json');
   if (!args.length && fs.existsSync(tplPath)) {
@@ -199,7 +214,7 @@ function main() {
   }
 
   if (problems.length) { console.error(`\n${problems.length} problem(s) in ${files.size} file(s); ${n} entr${n === 1 ? 'y' : 'ies'} checked.`); process.exit(1); }
-  console.log(`✓ ${n} entr${n === 1 ? 'y' : 'ies'} valid (${ids.size} unique ids across ${CATEGORIES.length} categories).`);
+  console.log(`✓ ${n} entr${n === 1 ? 'y' : 'ies'} valid (${ids.size} unique ids across ${CATEGORIES.length} categories)${longformCount ? `; ${longformCount} long-form item(s) valid` : ''}.`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main();

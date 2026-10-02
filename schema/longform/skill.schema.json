@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://indexagentica.com/schema/longform/skill.schema.json",
+  "title": "Index Agentica skill (SKILL.md front matter)",
+  "description": "Agent Skills spec (https://agentskills.io/specification) front matter. Only the spec's top-level keys are allowed (the reference validator rejects others), so Index Agentica metadata lives under `metadata`, whose values must be strings per the spec. List values in metadata are comma-separated (entries, tags, related) or space-separated (sources).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "description",
+    "metadata"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Spec: lowercase letters, digits, single hyphens; must equal the folder name. This is the skill's id."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024,
+      "description": "Spec: what the skill does and when to use it."
+    },
+    "license": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "compatibility": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "allowed-tools": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "author",
+        "last_verified"
+      ],
+      "description": "Spec: string-to-string map. Known keys are validated; other string keys are allowed.",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 120,
+          "description": "Display title (default: name)."
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 300,
+          "description": "1-2 sentences for listings (default: description)."
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "last_verified": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "published": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "published"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "tags": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:\\s*,\\s*[a-z0-9]+(?:-[a-z0-9]+)*)*$",
+          "description": "Comma-separated kebab-case tags."
+        },
+        "entries": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:\\s*,\\s*[a-z0-9]+(?:-[a-z0-9]+)*)*$",
+          "description": "Comma-separated directory entry ids; each must exist."
+        },
+        "related": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:\\s*,\\s*[a-z0-9]+(?:-[a-z0-9]+)*)*$",
+          "description": "Comma-separated long-form ids; each must exist."
+        },
+        "sources": {
+          "type": "string",
+          "pattern": "^https?://\\S+(?:\\s+https?://\\S+)*$",
+          "description": "Space-separated source URLs."
+        }
+      }
+    }
+  }
+}

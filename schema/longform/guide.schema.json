@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://indexagentica.com/schema/longform/guide.schema.json",
+  "title": "Index Agentica guide front matter",
+  "description": "YAML front matter of content-long/guides/<id>.md. All scalar values are strings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "title",
+    "summary",
+    "author",
+    "last_verified",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "Slug; must equal the filename (content-long/guides/<id>.md). Unique across all long-form items."
+    },
+    "type": {
+      "type": "string",
+      "const": "guide",
+      "description": "Content type; must match the folder."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "description": "Page title."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 300,
+      "description": "1-2 sentences, plain text, 20-300 chars. Used in listings, llms.txt and the API."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Optional longer plain-text description for meta tags."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "Who wrote it, e.g. \"Agentica Author\"."
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 20,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 40
+      },
+      "description": "kebab-case tags."
+    },
+    "entries": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "description": "Directory entry ids this item discusses (content/<category>/<id>.json). Each must exist. Used for cross-links from entry pages."
+    },
+    "related": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "description": "ids of other long-form items (any type). Each must exist."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url",
+          "accessed"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Date you read the source (YYYY-MM-DD)."
+          }
+        }
+      },
+      "description": "Sources with title, url and accessed date.",
+      "minItems": 1
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the facts were last checked against the sources (YYYY-MM-DD). Freshness uses this."
+    },
+    "published": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Optional first publication date (YYYY-MM-DD)."
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Optional date of the last substantive change (YYYY-MM-DD)."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "description": "Optional. \"draft\" items are validated but not published. Default: published."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "description": "Optional."
+    },
+    "prerequisites": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "description": "Optional list of things the reader needs first (plain text; may contain entry:<id> links)."
+    },
+    "time_estimate": {
+      "type": "string",
+      "pattern": "^\\d+(?:\\.\\d+)? ?(?:min|h)$",
+      "description": "Optional, e.g. \"20 min\" or \"1.5 h\"."
+    }
+  }
+}
