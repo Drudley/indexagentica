@@ -30,7 +30,8 @@
     <text x="470" y="270" font-size="84" font-weight="800" letter-spacing="-2">Index Agentica</text>
     <text x="472" y="340" font-size="38" font-weight="500" fill="#3d3d3d">The agent-first directory of skills,</text>
     <text x="472" y="388" font-size="38" font-weight="500" fill="#3d3d3d">MCP servers, tools, protocols and APIs</text>
-    <text x="472" y="468" font-size="30" font-weight="600" fill="#6b3fa0">llms.txt · JSON API · OpenAPI · Agent Skills</text>
+    <text x="472" y="468" font-size="30" font-weight="600" fill="#6b3fa0">llms.txt · JSON API · MCP server · Agent Skills</text>
+    <text x="472" y="512" font-size="26" font-weight="500" fill="#555">MCP: mcp.indexagentica.com/mcp</text>
   </g>
   <text x="1110" y="590" text-anchor="end" font-family="Pretendard" font-size="26" font-weight="600" fill="#555">indexagentica.com</text>
 </svg>
