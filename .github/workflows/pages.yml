@@ -1,0 +1,58 @@
+name: Validate, build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Configure Pages
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+      - name: Validate content
+        run: node scripts/validate.mjs
+      - name: Build
+        env:
+          # Repo variable SITE_URL wins; otherwise use the Pages URL (github.io now, custom domain once configured).
+          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://drudley.github.io/indexagentica' }}
+          # Leave PAGES_CNAME unset until indexagentica.com is registered and DNS points at GitHub Pages.
+          CNAME: ${{ vars.PAGES_CNAME }}
+        run: node scripts/build.mjs
+      - name: Check dist
+        env:
+          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://drudley.github.io/indexagentica' }}
+        run: node scripts/check-dist.mjs
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

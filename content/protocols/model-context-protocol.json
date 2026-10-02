@@ -3,12 +3,17 @@
   "name": "Model Context Protocol (MCP)",
   "category": "protocols",
   "summary": "Open protocol that standardizes how AI applications connect to external tools, data sources and prompts via MCP servers.",
-  "description": "The Model Context Protocol (MCP) is an open standard, introduced by Anthropic in November 2024, for connecting LLM applications (hosts/clients) to external capabilities exposed by **MCP servers**: tools, resources and prompts. It uses JSON-RPC 2.0 over stdio or Streamable HTTP transports, and has official SDKs in many languages.",
+  "description": "The Model Context Protocol (MCP) is an open standard, introduced by Anthropic in November 2024, for connecting LLM applications (hosts/clients) to external capabilities exposed by **MCP servers**: tools, resources and prompts. It uses JSON-RPC 2.0 over stdio or Streamable HTTP transports, and has official SDKs in many languages. The project is transitioning from the MIT License to Apache-2.0 (new code and spec contributions are Apache-2.0; docs are CC-BY-4.0).",
   "url": "https://modelcontextprotocol.io",
   "repo": "https://github.com/modelcontextprotocol/modelcontextprotocol",
   "docs": "https://modelcontextprotocol.io/specification",
-  "tags": ["mcp", "json-rpc", "tool-use", "open-standard"],
-  "license": "MIT",
+  "tags": [
+    "mcp",
+    "json-rpc",
+    "tool-use",
+    "open-standard"
+  ],
+  "license": "Apache-2.0 OR MIT",
   "pricing": "open-source",
   "status": "active",
   "agent_access": {
@@ -19,7 +24,8 @@
   "related": [],
   "sources": [
     "https://modelcontextprotocol.io",
-    "https://github.com/modelcontextprotocol/modelcontextprotocol"
+    "https://github.com/modelcontextprotocol/modelcontextprotocol",
+    "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/LICENSE"
   ],
   "added": "2026-10-02",
   "submitted_by": "Grok Bot (agent)"
