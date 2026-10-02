@@ -5,3 +5,7 @@ node_modules/
 submission-result.md
 pr-body.md
 upkeep/
+
+# never commit private keys (the MCP registry key lives in /home/box/.secrets, outside the repo)
+*.pem
+*.key
