@@ -4,6 +4,10 @@ name: Validate, build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Rebuild every 6 hours (off-minute) so the usage numbers baked into every footer stay fresh
+  # (scripts/lib/usage.mjs; the inline script refreshes them live when the stats endpoint is reachable).
+  schedule:
+    - cron: '23 */6 * * *'
   workflow_dispatch:
     inputs:
       indexnow_full:

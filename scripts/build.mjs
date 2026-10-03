@@ -16,7 +16,7 @@ import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
 import { issueBodyTemplate, formFields } from './lib/forms.mjs';
 import { prepareLongform } from './build-longform.mjs';
-import { usageFooter, STATS_URL } from './lib/usage.mjs';
+import { usageFooter, fetchStats, STATS_URL } from './lib/usage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -47,6 +47,9 @@ const P = {
 };
 
 // ---------- long-form ----------
+// Last known usage numbers, baked into every footer (null if unreachable; never invented).
+const USAGE = await fetchStats();
+
 const LONG = prepareLongform({ ROOT, entryIds: new Set(entries.map((e) => e.id)), byId, href, abs, P, REPO_URL, includeDrafts: process.env.INCLUDE_DRAFTS === '1' });
 
 // <lastmod> must reflect when the page's content last changed (it also drives the changed-URLs-only IndexNow
@@ -121,7 +124,7 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}caption{text-align:le
 figure.diagram{margin:1rem 0}figure.diagram pre{background:var(--card);padding:.75rem;overflow-x:auto}figure.diagram figcaption{color:var(--muted);font-size:.85rem}
 th,td{text-align:left;border-bottom:1px solid var(--card);padding:.35rem .5rem;vertical-align:top}
 footer.site{margin-top:3rem;border-top:1px solid var(--card);padding-top:1rem;color:var(--muted);font-size:.9rem}
-footer.site section.usage{margin-top:1rem}footer.site table.usage{width:auto;font-size:.85rem;margin:.3rem 0}footer.site table.usage td{text-align:right;font-variant-numeric:tabular-nums}
+footer.site section.usage{margin-top:1rem}footer.site table.usage{width:auto;font-size:.85rem;margin:.3rem 0}footer.site table.usage td{text-align:right;font-variant-numeric:tabular-nums}footer.site #ia-usage-status{font-size:.85rem}
 nav.crumbs ol{list-style:none;padding:0;margin:0 0 .5rem;display:flex;flex-wrap:wrap;gap:.4rem;font-size:.9rem}nav.crumbs li+li::before{content:"›";margin-right:.4rem;color:var(--muted)}
 `;
 
@@ -187,7 +190,7 @@ ${body}
 <p>${SITE_NAME}: ${esc(TAGLINE)} ${plural(entries.length, 'entr')}. Generated ${GENERATED.slice(0, 10)}.
 Machine-readable: <a href="${href(P.llms)}">llms.txt</a> · <a href="${href(P.llmsFull)}">llms-full.txt</a> · <a href="${href(P.api)}">api/index.json</a> · <a href="${href(P.openapi)}">openapi.json</a> · <a href="${href(P.sitemap)}">sitemap.xml</a>.
 Contribute via pull request at <a href="${REPO_URL}">${REPO}</a>.</p>
-${usageFooter({ pathName, privacyHref: `${href(P.agents)}#privacy`, esc })}
+${usageFooter({ pathName, privacyHref: `${href(P.agents)}#privacy`, esc, stats: USAGE })}
 </footer>
 </body>
 </html>
