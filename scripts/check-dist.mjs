@@ -46,7 +46,11 @@ for (const f of files) {
       if (o !== 1 || c !== 1) errors.push(`${rel}: expected exactly one <${tag}> (open ${o}, close ${c})`);
     }
     if ((txt.match(/<h1[\s>]/g) || []).length !== 1) errors.push(`${rel}: expected exactly one <h1>`);
-    if (/<script(?![^>]*application\/ld\+json)/.test(txt)) errors.push(`${rel}: contains non-JSON-LD <script>`);
+    // The only allowed non-JSON-LD script is the inline usage counter (scripts/lib/usage.mjs), once per page.
+    const scripts = [...txt.matchAll(/<script(?![^>]*application\/ld\+json)([^>]*)>/g)];
+    if (scripts.some(([, attrs]) => attrs.trim() !== 'id="ia-usage"')) errors.push(`${rel}: contains a <script> other than JSON-LD and the usage counter`);
+    if (scripts.length !== 1 || !txt.includes('id="ia-usage-out"')) errors.push(`${rel}: expected exactly one usage counter script and its footer block`);
+    if (/<script[^>]*\ssrc=/.test(txt)) errors.push(`${rel}: external <script src> is not allowed`);
   }
   if (/\.(txt|xml|md)$/.test(f)) {
     for (const m of txt.matchAll(new RegExp(SITE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[^\\s)<>"`\'\\]]*', 'g'))) {

@@ -16,6 +16,7 @@ import { markdown, esc } from './markdown.mjs';
 import { loadEntries, validateAgainst } from './validate.mjs';
 import { issueBodyTemplate, formFields } from './lib/forms.mjs';
 import { prepareLongform } from './build-longform.mjs';
+import { usageFooter, STATS_URL } from './lib/usage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -120,6 +121,7 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}caption{text-align:le
 figure.diagram{margin:1rem 0}figure.diagram pre{background:var(--card);padding:.75rem;overflow-x:auto}figure.diagram figcaption{color:var(--muted);font-size:.85rem}
 th,td{text-align:left;border-bottom:1px solid var(--card);padding:.35rem .5rem;vertical-align:top}
 footer.site{margin-top:3rem;border-top:1px solid var(--card);padding-top:1rem;color:var(--muted);font-size:.9rem}
+footer.site section.usage{margin-top:1rem}footer.site table.usage{width:auto;font-size:.85rem;margin:.3rem 0}footer.site table.usage td{text-align:right;font-variant-numeric:tabular-nums}
 nav.crumbs ol{list-style:none;padding:0;margin:0 0 .5rem;display:flex;flex-wrap:wrap;gap:.4rem;font-size:.9rem}nav.crumbs li+li::before{content:"›";margin-right:.4rem;color:var(--muted)}
 `;
 
@@ -185,6 +187,7 @@ ${body}
 <p>${SITE_NAME}: ${esc(TAGLINE)} ${plural(entries.length, 'entr')}. Generated ${GENERATED.slice(0, 10)}.
 Machine-readable: <a href="${href(P.llms)}">llms.txt</a> · <a href="${href(P.llmsFull)}">llms-full.txt</a> · <a href="${href(P.api)}">api/index.json</a> · <a href="${href(P.openapi)}">openapi.json</a> · <a href="${href(P.sitemap)}">sitemap.xml</a>.
 Contribute via pull request at <a href="${REPO_URL}">${REPO}</a>.</p>
+${usageFooter({ pathName, privacyHref: `${href(P.agents)}#privacy`, esc })}
 </footer>
 </body>
 </html>
@@ -195,7 +198,8 @@ const entryList = (list) => list.length
   ? `<ul class="entries">${list.map((e) => `<li><a href="${href(P.entry(e.id))}"><strong>${esc(e.name)}</strong></a>${e.status && e.status !== 'active' ? ` <small>(${esc(e.status)})</small>` : ''}<p>${esc(e.summary)}</p></li>`).join('')}</ul>`
   : `<p>No entries yet. <a href="${href(P.agents)}#contribute">Submit one</a>.</p>`;
 
-const link = (u) => `<a href="${esc(u)}" rel="noopener">${esc(u)}</a>`;
+// Outbound listing links (entry pages only); data-out marks them for the click counter (see lib/usage.mjs).
+const link = (u) => `<a href="${esc(u)}" rel="noopener" data-out>${esc(u)}</a>`;
 
 // ---------- data shapes ----------
 function apiEntry(e) {
@@ -302,7 +306,7 @@ write('/', page({
   ] },
   body: `<h1>${SITE_NAME}</h1>
 <p class="lede">${esc(TAGLINE)}</p>
-<p>This site is designed to be read by AI agents first: every page is plain semantic HTML with no JavaScript, and the whole directory is also available as <a href="${href(P.llms)}">llms.txt</a>, <a href="${href(P.llmsFull)}">llms-full.txt</a>, a <a href="${href(P.api)}">JSON API</a> described by <a href="${href(P.openapi)}">OpenAPI</a>, and per-entry markdown. Agents can contribute entries by pull request. See <a href="${href(P.agents)}">For agents</a>.</p>
+<p>This site is designed to be read by AI agents first: every page is plain semantic HTML that works without JavaScript (the only script is a small cookieless usage counter; see <a href="${href(P.agents)}#privacy">what is counted</a>), and the whole directory is also available as <a href="${href(P.llms)}">llms.txt</a>, <a href="${href(P.llmsFull)}">llms-full.txt</a>, a <a href="${href(P.api)}">JSON API</a> described by <a href="${href(P.openapi)}">OpenAPI</a>, and per-entry markdown. Agents can contribute entries by pull request. See <a href="${href(P.agents)}">For agents</a>.</p>
 <section aria-labelledby="categories"><h2 id="categories">Categories</h2>
 <ul class="cats">${CATEGORIES.map((c) => `<li><a href="${href(P.category(c.slug))}"><strong>${esc(c.name)}</strong></a> <span class="count">(${byCat[c.slug].length})</span><p>${esc(c.description)}</p></li>`).join('')}</ul>
 </section>
@@ -416,7 +420,7 @@ ${Object.entries(sp).filter(([k]) => k !== '$schema').map(([k, s]) => `<tr><th s
 write(P.agents, page({
   title: 'For agents', description: 'How AI agents consume and contribute to Index Agentica: llms.txt, JSON API, schema, OpenAPI and PR-based submissions.', pathName: P.agents, crumbs: [['For agents']],
   body: `<h1>For agents</h1>
-<p class="lede">${SITE_NAME} is built by agents, for agents. Everything here is static, unauthenticated, free to crawl, and has no JavaScript and no rate-limited backend.</p>
+<p class="lede">${SITE_NAME} is built by agents, for agents. Everything here is static, unauthenticated, free to crawl and readable without JavaScript, with no rate-limited backend.</p>
 <h2 id="consume">Consuming the directory</h2>
 <table><thead><tr><th scope="col">Resource</th><th scope="col">URL</th><th scope="col">Use it for</th></tr></thead><tbody>
 <tr><td>llms.txt</td><td><a href="${href(P.llms)}"><code>${P.llms}</code></a></td><td>Compact index of every category and entry (<a href="https://llmstxt.org/">llmstxt.org</a> format). Start here.</td></tr>
@@ -430,6 +434,7 @@ write(P.agents, page({
 <tr><td>OpenAPI</td><td><a href="${href(P.openapi)}"><code>${P.openapi}</code></a></td><td>OpenAPI 3.1 description of the read-only JSON endpoints.</td></tr>
 <tr><td>Schema</td><td><a href="${href(P.schemaJson)}"><code>${P.schemaJson}</code></a></td><td>JSON Schema for one entry (<a href="${href(P.schema)}">human-readable</a>).</td></tr>
 <tr><td>Contribute</td><td><a href="${href(P.contribute)}"><code>${P.contribute}</code></a></td><td>How to submit entries: rules, template, PR and issue paths.</td></tr>
+<tr><td>Usage stats</td><td><a href="${STATS_URL}"><code>${STATS_URL}</code></a></td><td>Live usage counts as JSON (page views, outbound clicks, skill downloads, MCP tool calls, API requests, agent/human split). Shown in every page footer; see <a href="${href(P.agents)}#privacy">what is counted</a>.</td></tr>
 <tr><td>Sitemap</td><td><a href="${href(P.sitemap)}"><code>${P.sitemap}</code></a></td><td>Every HTML page.</td></tr>
 </tbody></table>
 <p>Base URL: <code>${esc(SITE_URL)}</code>. All responses are static files served by GitHub Pages; please cache and use conditional requests. Crawling is explicitly welcome; see <a href="${href(P.robots)}"><code>robots.txt</code></a>.</p>
@@ -457,7 +462,7 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 <li><code>get_content</code>: a guide, comparison, stack or skill by <code>type</code> and <code>id</code>, with its markdown.</li>
 <li><code>list_categories</code>: category slugs and counts.</li>
 </ul>
-<p>Data is refreshed from <a href="${href(P.api)}"><code>${P.api}</code></a> about every 10 minutes. A plain REST mirror lives at <code>${MCP_BASE}</code>: <a href="${MCP_BASE}/search?q=mcp"><code>/search?q=</code></a>, <code>/entries/{id}</code>, <code>/categories</code>, <code>/content</code>, described by <a href="${MCP_BASE}/openapi.json"><code>/openapi.json</code></a>. Unlike the static site, the server is rate limited: 120 requests per minute per IP (HTTP 429 with <code>Retry-After</code>). Source: <a href="${MCP_REPO_URL}">${MCP_REPO_URL.replace('https://', '')}</a>.</p>
+<p>Data is refreshed from <a href="${href(P.api)}"><code>${P.api}</code></a> about every 10 minutes. A plain REST mirror lives at <code>${MCP_BASE}</code>: <a href="${MCP_BASE}/search?q=mcp"><code>/search?q=</code></a>, <code>/entries/{id}</code>, <code>/categories</code>, <code>/content</code>, described by <a href="${MCP_BASE}/openapi.json"><code>/openapi.json</code></a>. Unlike the static site, the server is rate limited: 120 requests per minute per IP (HTTP 429 with <code>Retry-After</code>). Public usage numbers: <a href="${STATS_URL}"><code>${STATS_URL}</code></a>. Source: <a href="${MCP_REPO_URL}">${MCP_REPO_URL.replace('https://', '')}</a>.</p>
 <h2 id="contribute">Contributing</h2>
 <p>${esc(CONTRIBUTE.summary)} Machine-readable version of this section: <a href="${href(P.contribute)}"><code>${P.contribute}</code></a> (also embedded in <a href="${href(P.api)}"><code>${P.api}</code></a> as <code>contribute</code>).</p>
 <h3 id="rules">Rules</h3>
@@ -480,6 +485,17 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 <p>${esc(CONTRIBUTE.longform.note)} Format reference: <a href="${CONTRIBUTE.longform.docs}">content-long/README.md</a>.</p>
 <h3 id="corrections">Corrections and removals</h3>
 <p>Use the <a href="${CORRECTION_FORM_URL}">Correction / removal form</a>, or edit the JSON in a pull request.</p>
+<h2 id="privacy">Usage counting and privacy</h2>
+<p>We publish usage numbers in every page footer and as JSON at <a href="${STATS_URL}"><code>${STATS_URL}</code></a>. Counting started on 2026-10-03 for the site and on 2026-10-02 for the MCP server and API; nothing earlier is estimated. What is counted:</p>
+<ul>
+<li><strong>Page views</strong>: the page's path, sent by one small inline script when a page loads in a browser with JavaScript.</li>
+<li><strong>Outbound clicks</strong> on a listing's links on its entry page: the entry id and the destination host (not the full URL).</li>
+<li><strong>Skill downloads</strong> clicked on the site: the skill id and whether it was the zip or <code>SKILL.md</code>.</li>
+<li><strong>MCP and REST API requests</strong> to <code>mcp.indexagentica.com</code>: route, tool name, client name and version, a truncated User-Agent and whether it looks like a browser (counted as human) or not (counted as agent), country and network (ASN) as reported by Cloudflare, and result count and query length (not the query text).</li>
+</ul>
+<p>What is not collected: no cookies, no localStorage, no user or device identifiers, no fingerprinting, no referrers or query strings, no third-party scripts, ads or trackers. IP addresses are used transiently by Cloudflare for rate limiting and are not stored. The script sends nothing if your browser has Do Not Track or Global Privacy Control turned on, or if it is an automated browser (<code>navigator.webdriver</code>).</p>
+<p>Storage: Cloudflare Workers Analytics Engine (kept 3 months) plus per-day totals in Workers KV for the all-time figures. Code: <a href="${MCP_REPO_URL}/blob/main/src/hits.js"><code>src/hits.js</code></a> and <a href="${MCP_REPO_URL}/blob/main/src/stats.js"><code>src/stats.js</code></a>; the script is in this repo's <a href="${REPO_URL}/blob/main/scripts/lib/usage.mjs"><code>scripts/lib/usage.mjs</code></a>.</p>
+<p>Limits: this site is static (GitHub Pages) and has no server logs, so visits without JavaScript, including most crawlers and agents reading pages, <code>llms.txt</code> or the JSON files directly, are not counted. Real readership is therefore higher than the page views shown. The human/agent split is a User-Agent heuristic, not identity.</p>
 <h2 id="policy">Inclusion policy</h2>
 <ul><li>Useful to AI agents or people building them.</li><li>Publicly reachable; facts verifiable from the listed sources.</li><li>No spam, affiliate links, or SEO-only pages. Summaries are neutral, not marketing copy.</li></ul>`,
 }));
@@ -491,6 +507,7 @@ const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr
   '## Start here (agents)', '',
   `- [MCP server](${MCP_URL}): remote MCP (Streamable HTTP, no auth, read-only). Tools: search, get_entry, get_content, list_categories`,
   `- [REST search API](${MCP_BASE}/search?q=mcp): base ${MCP_BASE}; GET /search?q=, /entries/{id}, /categories, /content; OpenAPI at ${MCP_BASE}/openapi.json`,
+  `- [Usage stats](${STATS_URL}): live JSON usage counts (page views, outbound clicks, skill downloads, MCP tool calls per tool, API requests, agent/human split) for 24h, 7 days and all time; what is counted: ${abs(P.agents)}#privacy`,
   `- [JSON index](${abs(P.api)}): everything at once, as JSON`,
   `- [llms-full.txt](${abs(P.llmsFull)}): everything at once, as markdown`,
   `- [One entry](${SITE_URL}/entries/{id}.md): markdown; JSON at ${SITE_URL}/api/entries/{id}.json`,

@@ -50,7 +50,7 @@ export function markdown(src = '', opts = {}) {
       i++;
       while (i < lines.length && !lines[i].trim().startsWith(fence[1])) buf.push(lines[i++]);
       i++;
-      if (lang === 'mermaid') out.push(`<figure class="diagram"><pre class="mermaid">${esc(buf.join('\n'))}</pre><figcaption>Mermaid diagram (source shown; this site uses no JavaScript)</figcaption></figure>`);
+      if (lang === 'mermaid') out.push(`<figure class="diagram"><pre class="mermaid">${esc(buf.join('\n'))}</pre><figcaption>Mermaid diagram (source shown; not rendered client-side)</figcaption></figure>`);
       else out.push(`<pre><code${lang ? ` class="language-${esc(lang)}"` : ''}>${esc(buf.join('\n'))}</code></pre>`);
     } else if (/^\s*$/.test(line)) {
       i++;

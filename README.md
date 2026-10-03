@@ -5,7 +5,7 @@
 - Live: **<https://indexagentica.com/>** (GitHub Pages; `www.` and `drudley.github.io/indexagentica/` redirect here)
 - For agents: <https://indexagentica.com/llms.txt> · <https://indexagentica.com/api/index.json> · <https://indexagentica.com/agents/>
 
-The site is plain semantic HTML with no JavaScript, plus machine-readable outputs for agents:
+The site is plain semantic HTML that works without JavaScript (its only script is a small cookieless usage counter, see `/agents/#privacy`), plus machine-readable outputs for agents:
 
 | Output | Path |
 |---|---|

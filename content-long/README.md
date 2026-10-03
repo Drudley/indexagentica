@@ -64,7 +64,7 @@ Other string keys under `metadata` are allowed. The SKILL.md body is served raw 
 ## Body (guide, comparison, stack)
 
 - GitHub-flavored Markdown: headings (start at `##`, because the title is rendered as the page's `h1`), lists, tables, and fenced code with a language tag (```` ```bash ````).
-- Diagrams: ```` ```mermaid ```` fences. The site has no JavaScript, so they render as `<pre class="mermaid">` with the source visible.
+- Diagrams: ```` ```mermaid ```` fences. Diagrams are not rendered with JavaScript, so they appear as `<pre class="mermaid">` with the source visible.
 - **Linking:** `[text](entry:<entry-id>)` links a directory entry. `[text](guide:<id>)`, `(comparison:<id>)`, `(stack:<id>)` and `(skill:<id>)` link long-form items. Validate checks that every target exists and has the right type. The build rewrites them to site URLs. Normal `https://` links are fine too.
 - The raw `.md` of every item is served at `/<route>/<id>.md` with its front matter; scheme links are rewritten to absolute `https://indexagentica.com/...` URLs there, in the API and in llms-full.txt.
 
