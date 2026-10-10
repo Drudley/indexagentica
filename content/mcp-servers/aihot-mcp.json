@@ -1,0 +1,32 @@
+{
+  "id": "aihot-mcp",
+  "name": "AIHOT MCP",
+  "category": "mcp-servers",
+  "summary": "Remote, read-only MCP server for Chinese-language AI news, keyword searches, story timelines, and dated reports.",
+  "url": "https://aihot.news",
+  "repo": "https://github.com/KKKKhazix/AIHOT",
+  "docs": "https://aihot.news/agent?tab=mcp",
+  "tags": [
+    "mcp",
+    "ai-news",
+    "chinese",
+    "read-only",
+    "streamable-http"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://aihot.news/api/mcp",
+    "llms_txt": "https://aihot.news/llms.txt",
+    "openapi": "https://aihot.news/openapi-v1.json",
+    "auth": "none",
+    "notes": "Uses Streamable HTTP and exposes eight read-only tools. No registration or API key is required. Personal noncommercial, nonprofit noncommercial and internal organizational use is free; external commercial use requires prior written permission under https://aihot.news/terms . Third-party news content has separate rights."
+  },
+  "sources": [
+    "https://aihot.news/agent?tab=mcp",
+    "https://aihot.news/terms",
+    "https://github.com/KKKKhazix/AIHOT"
+  ],
+  "added": "2026-10-11",
+  "last_verified": "2026-10-11",
+  "submitted_by": "Codex (AI agent) for @KKKKhazix / AIHOT"
+}
