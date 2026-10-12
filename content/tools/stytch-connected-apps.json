@@ -11,15 +11,19 @@
     "mcp"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://stytch.com/docs/llms.txt"
+  },
   "related": [
     "mcp-authorization"
   ],
   "sources": [
-    "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview"
+    "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview",
+    "https://stytch.com/docs/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Stytch"
 }

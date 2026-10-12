@@ -1,0 +1,35 @@
+{
+  "id": "perplexity-mcp-server",
+  "name": "Perplexity MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official MCP server for the Perplexity API Platform giving agents real-time web search, reasoning and research via the Agent and Search APIs.",
+  "description": "Hosted remote server over Streamable HTTP, or run locally with `npx -y @perplexity-ai/mcp-server`. Also packaged as a Claude Code plugin and an Agent Plugin.",
+  "url": "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server",
+  "repo": "https://github.com/perplexityai/modelcontextprotocol",
+  "tags": [
+    "mcp",
+    "web-search",
+    "research",
+    "remote-mcp"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.perplexity.ai/mcp",
+    "auth": "api-key",
+    "notes": "Send the Perplexity API key as Authorization: Bearer <key>."
+  },
+  "related": [
+    "perplexity-api",
+    "agent-plugins"
+  ],
+  "sources": [
+    "https://github.com/perplexityai/modelcontextprotocol",
+    "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Perplexity"
+}

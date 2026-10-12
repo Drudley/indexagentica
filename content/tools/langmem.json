@@ -1,0 +1,32 @@
+{
+  "id": "langmem",
+  "name": "LangMem",
+  "category": "tools",
+  "summary": "LangChain library that helps agents learn from interactions: memory tools, a background memory manager and prompt optimization, with native LangGraph store integration.",
+  "description": "Core memory API works with any storage system; agents can record and search memories \"in the hot path\" or let a background manager extract and consolidate knowledge. `pip install -U langmem`.",
+  "url": "https://langchain-ai.github.io/langmem/",
+  "repo": "https://github.com/langchain-ai/langmem",
+  "tags": [
+    "memory",
+    "long-term-memory",
+    "python",
+    "langgraph"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "langgraph",
+    "mem0",
+    "zep"
+  ],
+  "sources": [
+    "https://github.com/langchain-ai/langmem",
+    "https://langchain-ai.github.io/langmem/"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

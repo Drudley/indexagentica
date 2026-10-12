@@ -16,11 +16,12 @@
   "status": "active",
   "sources": [
     "https://github.com/Aider-AI/aider",
-    "https://aider.chat/"
+    "https://aider.chat/",
+    "https://pypi.org/project/aider-chat/"
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Aider-AI"
 }

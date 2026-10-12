@@ -11,12 +11,16 @@
     "byoc"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://northflank.com/docs/llms.txt"
+  },
   "sources": [
-    "https://northflank.com/product/sandboxes"
+    "https://northflank.com/product/sandboxes",
+    "https://northflank.com/docs/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Northflank"
 }

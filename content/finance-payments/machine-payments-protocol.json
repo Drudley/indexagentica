@@ -3,7 +3,7 @@
   "name": "Machine Payments Protocol (MPP)",
   "category": "finance-payments",
   "summary": "Open standard for machine-to-machine payments over HTTP 402, co-developed by Tempo and Stripe; charge per API request, tool call or content.",
-  "description": "Challenge/Credential/Receipt flow with HTTP, MCP/JSON-RPC and WebSocket transports; charge, session (metered) and subscription intents; payment methods include Tempo stablecoins, Stripe cards, Lightning, EVM (with x402 exact compatibility) and more. Official SDKs in TypeScript (`mppx`), Python, Rust, Go and Ruby.",
+  "description": "Challenge/Credential/Receipt flow with HTTP, MCP/JSON-RPC and WebSocket transports; charge, session (metered) and subscription intents; payment methods include Tempo stablecoins, Stripe cards, Lightning, EVM (with x402 exact compatibility) and more. Official SDKs in TypeScript (`mppx`), Python, Rust, Go and Ruby. Specifications live in tempoxyz/mpp-specs (\"Payment\" HTTP authentication scheme).",
   "url": "https://mpp.dev",
   "repo": "https://github.com/tempoxyz/mpp",
   "tags": [
@@ -25,11 +25,13 @@
   "sources": [
     "https://mpp.dev",
     "https://mpp.dev/llms.txt",
-    "https://github.com/tempoxyz/mpp"
+    "https://github.com/tempoxyz/mpp",
+    "https://github.com/tempoxyz/mpp-specs",
+    "https://github.com/wevm/mppx"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Tempo and Stripe"
 }

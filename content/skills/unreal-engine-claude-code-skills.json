@@ -1,0 +1,31 @@
+{
+  "id": "unreal-engine-claude-code-skills",
+  "name": "Unreal Engine Skills for Claude Code",
+  "category": "skills",
+  "summary": "Epic's Claude Code plugin with an unreal-mcp skill and a SessionStart hook for driving the Unreal Editor through its built-in MCP server.",
+  "description": "Requires the ModelContextProtocol and AllToolsets plugins enabled in a running Unreal Editor. Published in Anthropic's `claude-plugins-official` marketplace: `/plugin install unreal-engine-skills-for-claude-code@claude-plugins-official`.",
+  "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+  "repo": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "game-engine",
+    "unreal-engine"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "unreal-mcp",
+    "claude-code",
+    "claude-plugins-official"
+  ],
+  "sources": [
+    "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Epic Games"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "unreal-mcp",
+  "name": "Unreal MCP (Unreal Engine)",
+  "category": "mcp-servers",
+  "summary": "Epic's experimental Unreal Engine 5.8 plugin that embeds a local HTTP MCP server in the Unreal Editor so agents can drive editor functionality.",
+  "description": "Plugin identifier `ModelContextProtocol`; tools come from the AllToolsets/Toolset Registry plugins (actors, lighting, materials, Slate inspection, automation tests and more). Binds to `http://127.0.0.1:8000/mcp` by default; HTTP and SSE only (no stdio/WebSocket); loopback-only with no authentication layer. Also available in UEFN (beta).",
+  "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-mcp-in-unreal-editor",
+  "tags": [
+    "mcp",
+    "game-engine",
+    "unreal-engine",
+    "local",
+    "experimental"
+  ],
+  "status": "beta",
+  "related": [
+    "unreal-engine",
+    "unreal-engine-claude-code-skills",
+    "unreal-python-api"
+  ],
+  "sources": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-mcp-in-unreal-editor",
+    "https://forums.unrealengine.com/t/unreal-mcp-is-now-available-in-uefn/2745278"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Epic Games"
+}

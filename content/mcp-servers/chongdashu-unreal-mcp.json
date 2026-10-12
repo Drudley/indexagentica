@@ -1,0 +1,26 @@
+{
+  "id": "chongdashu-unreal-mcp",
+  "name": "unreal-mcp (chongdashu)",
+  "category": "mcp-servers",
+  "summary": "Experimental community project (UE plugin plus Python MCP server) letting Cursor, Windsurf or Claude Desktop control Unreal Engine actors and Blueprints.",
+  "description": "Native TCP server plugin (UnrealMCP) with a sample project; targets UE 5.5+ and Python 3.12+. Self-described experimental and not recommended for production; last commit April 2025. No LICENSE file in the repo (README badge says MIT), so license is omitted.",
+  "url": "https://github.com/chongdashu/unreal-mcp",
+  "repo": "https://github.com/chongdashu/unreal-mcp",
+  "tags": [
+    "mcp",
+    "game-engine",
+    "unreal-engine",
+    "community"
+  ],
+  "status": "unknown",
+  "related": [
+    "unreal-mcp"
+  ],
+  "sources": [
+    "https://github.com/chongdashu/unreal-mcp"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator"
+}

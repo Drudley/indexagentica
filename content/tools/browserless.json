@@ -14,13 +14,17 @@
     "mcp"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.browserless.io/llms.txt"
+  },
   "sources": [
     "https://www.browserless.io",
-    "https://github.com/browserless/browserless"
+    "https://github.com/browserless/browserless",
+    "https://www.browserless.io/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Browserless"
 }

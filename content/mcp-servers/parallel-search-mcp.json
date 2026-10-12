@@ -1,0 +1,38 @@
+{
+  "id": "parallel-search-mcp",
+  "name": "Parallel Search MCP",
+  "category": "mcp-servers",
+  "summary": "Free hosted MCP server from Parallel with web_search and web_fetch tools for agents; no account or API key needed to start.",
+  "description": "Streamable HTTP endpoint. Anonymous free-tier searches run in `fast` mode; pass a Parallel API key as a Bearer token for production use, higher rate limits and configurable search behavior.",
+  "url": "https://docs.parallel.ai/integrations/mcp/search-mcp",
+  "repo": "https://github.com/parallel-web/search-mcp",
+  "tags": [
+    "mcp",
+    "web-search",
+    "remote-mcp",
+    "free"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://search.parallel.ai/mcp",
+    "llms_txt": "https://docs.parallel.ai/llms.txt",
+    "auth": "none",
+    "notes": "No auth for the free tier; optional API key via Authorization: Bearer."
+  },
+  "related": [
+    "parallel-api",
+    "tavily-mcp",
+    "exa-mcp-server"
+  ],
+  "sources": [
+    "https://docs.parallel.ai/integrations/mcp/search-mcp",
+    "https://github.com/parallel-web/search-mcp"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Parallel"
+}

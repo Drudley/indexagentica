@@ -1,0 +1,34 @@
+{
+  "id": "codex-app-server",
+  "name": "Codex App Server",
+  "category": "harnesses",
+  "summary": "Experimental JSON-RPC interface that powers rich Codex clients (e.g. the VS Code extension); embed Codex in your product. Replaces the removed codex mcp-server.",
+  "description": "Started with `codex app-server` (WebSocket, Unix-socket and stdio transports); provides authentication, conversation history, approvals and streamed agent events. Open source under `codex-rs/app-server`. OpenAI notes it is experimental and not supported for production workloads; it is not an MCP server.",
+  "url": "https://learn.chatgpt.com/docs/app-server",
+  "repo": "https://github.com/openai/codex",
+  "tags": [
+    "coding-agent",
+    "json-rpc",
+    "openai",
+    "embedding"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "llms_txt": "https://learn.chatgpt.com/llms.txt"
+  },
+  "related": [
+    "codex-cli"
+  ],
+  "sources": [
+    "https://learn.chatgpt.com/docs/app-server.md",
+    "https://learn.chatgpt.com/docs/mcp-server.md",
+    "https://github.com/openai/codex"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

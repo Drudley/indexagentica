@@ -24,10 +24,11 @@
   ],
   "sources": [
     "https://github.com/aaif-goose/goose",
-    "https://goose-docs.ai/"
+    "https://goose-docs.ai/",
+    "https://raw.githubusercontent.com/aaif-goose/goose/main/LICENSE"
   ],
   "added": "2026-10-02",
   "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator"
 }

@@ -1,0 +1,35 @@
+{
+  "id": "payai-facilitator",
+  "name": "PayAI x402 Facilitator",
+  "category": "finance-payments",
+  "summary": "x402 payment facilitator for AI agents and apps: accept stablecoin payments across supported Solana and EVM networks with one integration.",
+  "description": "Operates a facilitator at https://facilitator.payai.network (Solana-first, multi-network). Docs cover merchants, clients, the facilitator API and Bazaar discovery, plus a docs MCP server, facilitator MCP server and an x402 skill for coding agents.",
+  "url": "https://payai.network/",
+  "docs": "https://docs.payai.network/introduction",
+  "tags": [
+    "x402",
+    "facilitator",
+    "stablecoin",
+    "solana",
+    "agent-commerce"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.payai.network/llms.txt"
+  },
+  "related": [
+    "x402",
+    "cdp-x402",
+    "x402-bazaar"
+  ],
+  "sources": [
+    "https://payai.network/",
+    "https://facilitator.payai.network/",
+    "https://docs.payai.network/llms.txt"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "PayAI"
+}

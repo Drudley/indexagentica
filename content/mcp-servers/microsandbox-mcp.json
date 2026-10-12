@@ -1,0 +1,29 @@
+{
+  "id": "microsandbox-mcp",
+  "name": "microsandbox MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP server that lets AI agents create lightweight microsandbox sandboxes, execute code, manage files and monitor resources.",
+  "description": "Runs over stdio via `npx -y microsandbox-mcp` (npm package `microsandbox-mcp`).",
+  "url": "https://github.com/superradcompany/microsandbox-mcp",
+  "repo": "https://github.com/superradcompany/microsandbox-mcp",
+  "docs": "https://docs.microsandbox.dev",
+  "tags": [
+    "mcp",
+    "sandbox",
+    "code-execution",
+    "microvm"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "microsandbox"
+  ],
+  "sources": [
+    "https://github.com/superradcompany/microsandbox-mcp"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator"
+}

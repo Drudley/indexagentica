@@ -1,0 +1,31 @@
+{
+  "id": "sandbox-runtime",
+  "name": "Anthropic Sandbox Runtime (srt)",
+  "category": "infrastructure",
+  "summary": "Lightweight OS-level sandbox enforcing filesystem and network restrictions on agents, MCP servers and arbitrary processes, without a container.",
+  "description": "Uses native OS primitives (`sandbox-exec` on macOS, `bubblewrap` on Linux) plus proxy-based network filtering. A beta research preview developed for Claude Code; install with `npm install -g @anthropic-ai/sandbox-runtime`.",
+  "url": "https://github.com/anthropics/sandbox-runtime",
+  "repo": "https://github.com/anthropics/sandbox-runtime",
+  "tags": [
+    "sandbox",
+    "security",
+    "network-filtering",
+    "cli",
+    "local"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "related": [
+    "claude-code",
+    "microsandbox"
+  ],
+  "sources": [
+    "https://github.com/anthropics/sandbox-runtime"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

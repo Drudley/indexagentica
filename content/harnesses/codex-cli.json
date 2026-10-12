@@ -3,9 +3,10 @@
   "name": "OpenAI Codex CLI",
   "category": "harnesses",
   "summary": "OpenAI's lightweight open-source coding agent that runs in your terminal.",
+  "description": "Docs moved from developers.openai.com/codex to learn.chatgpt.com. The `codex mcp-server` command and standalone `codex-mcp-server` binary were removed; integrations should migrate to the experimental Codex app server. `codex mcp` still manages external MCP servers.",
   "url": "https://github.com/openai/codex",
   "repo": "https://github.com/openai/codex",
-  "docs": "https://developers.openai.com/codex",
+  "docs": "https://learn.chatgpt.com/docs/codex/cli",
   "tags": [
     "coding-agent",
     "cli",
@@ -14,16 +15,22 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://learn.chatgpt.com/llms.txt"
+  },
   "related": [
     "agents-md",
-    "model-context-protocol"
+    "model-context-protocol",
+    "codex-app-server"
   ],
   "sources": [
-    "https://github.com/openai/codex"
+    "https://github.com/openai/codex",
+    "https://learn.chatgpt.com/docs/codex/cli",
+    "https://learn.chatgpt.com/docs/mcp-server.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "OpenAI"
 }

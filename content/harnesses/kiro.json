@@ -10,11 +10,15 @@
     "spec-driven"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://kiro.dev/llms.txt"
+  },
   "sources": [
-    "https://kiro.dev"
+    "https://kiro.dev",
+    "https://kiro.dev/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator"
 }

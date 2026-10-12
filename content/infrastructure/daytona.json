@@ -3,6 +3,7 @@
   "name": "Daytona",
   "category": "infrastructure",
   "summary": "Secure and elastic infrastructure (sandboxes) for running AI-generated code.",
+  "description": "The public repo daytonaio/daytona is archived and no longer maintained: as of June 2026 core development moved to a private codebase. The last public release is v0.190.0 (2026-06-23, AGPL-3.0); Daytona points to github.com/daytona for current resources.",
   "url": "https://www.daytona.io",
   "repo": "https://github.com/daytonaio/daytona",
   "docs": "https://www.daytona.io/docs/",
@@ -20,11 +21,12 @@
   ],
   "sources": [
     "https://github.com/daytonaio/daytona",
-    "https://www.daytona.io/docs/"
+    "https://www.daytona.io/docs/",
+    "https://github.com/daytona"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Daytona"
 }

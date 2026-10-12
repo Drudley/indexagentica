@@ -5,7 +5,7 @@
   "summary": "Open-source, secure cloud sandboxes for AI agents: an isolated machine per agent to run code, browse and use tools.",
   "url": "https://e2b.dev",
   "repo": "https://github.com/e2b-dev/E2B",
-  "docs": "https://e2b.dev/docs",
+  "docs": "https://docs.e2b.dev/",
   "tags": [
     "sandbox",
     "code-execution",
@@ -27,8 +27,8 @@
     "https://e2b.dev"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "E2B"
 }

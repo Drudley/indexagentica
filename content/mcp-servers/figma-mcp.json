@@ -12,13 +12,18 @@
     "design-to-code"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.figma.com/llms.txt",
+    "mcp_endpoint": "https://mcp.figma.com/mcp"
+  },
   "sources": [
     "https://developers.figma.com/docs/figma-mcp-server/",
-    "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+    "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server",
+    "https://developers.figma.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Figma"
 }

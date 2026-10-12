@@ -1,0 +1,27 @@
+{
+  "id": "unreal-engine",
+  "name": "Unreal Engine",
+  "category": "tools",
+  "summary": "Epic Games' game engine (current docs: Unreal Engine 5.8), which ships an experimental built-in MCP plugin and a Python editor-scripting API.",
+  "url": "https://www.unrealengine.com/",
+  "docs": "https://dev.epicgames.com/documentation/en-us/unreal-engine",
+  "tags": [
+    "game-engine",
+    "unreal-engine",
+    "3d"
+  ],
+  "status": "active",
+  "related": [
+    "unreal-mcp",
+    "unreal-python-api"
+  ],
+  "sources": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-mcp-in-unreal-editor"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Epic Games"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "claude-memory-tool",
+  "name": "Claude Memory Tool",
+  "category": "tools",
+  "summary": "Client-side Claude API tool that lets Claude create, read, update and delete files in a /memories directory to persist knowledge across conversations.",
+  "description": "Tool type `memory_20250818`. Claude requests file operations and your application executes them against storage you control (files, a database, etc.). Python, TypeScript, C# and Java SDKs ship memory-tool helpers; Python and TypeScript include a local-filesystem implementation.",
+  "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+  "tags": [
+    "memory",
+    "tool-use",
+    "anthropic",
+    "context-engineering"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://platform.claude.com/llms.txt"
+  },
+  "related": [
+    "claude-agent-sdk",
+    "mem0",
+    "letta"
+  ],
+  "sources": [
+    "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+    "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool.md"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anthropic"
+}

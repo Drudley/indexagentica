@@ -11,13 +11,17 @@
     "enterprise"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.factory.com/llms.txt"
+  },
   "sources": [
     "https://factory.ai",
-    "https://docs.factory.com/"
+    "https://docs.factory.com/",
+    "https://docs.factory.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Factory"
 }

@@ -10,14 +10,18 @@
     "marketplace"
   ],
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://mcp.so/llms.txt"
+  },
   "related": [
     "official-mcp-registry"
   ],
   "sources": [
-    "https://mcp.so"
+    "https://mcp.so",
+    "https://mcp.so/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator"
 }

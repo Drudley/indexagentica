@@ -1,0 +1,31 @@
+{
+  "id": "graphiti-mcp-server",
+  "name": "Graphiti MCP Server",
+  "category": "mcp-servers",
+  "summary": "Experimental MCP server exposing Graphiti's temporally-aware knowledge graphs (episodes, entities, semantic/hybrid search) to AI assistants.",
+  "description": "Lives in the `mcp_server/` folder of getzep/graphiti. Uses FalkorDB by default (Neo4j supported); Docker Compose starts FalkorDB and the server with an HTTP endpoint at `http://localhost:8000/mcp/`; stdio is also documented.",
+  "url": "https://help.getzep.com/graphiti/getting-started/mcp-server",
+  "repo": "https://github.com/getzep/graphiti",
+  "tags": [
+    "mcp",
+    "memory",
+    "knowledge-graph",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "related": [
+    "graphiti",
+    "zep"
+  ],
+  "sources": [
+    "https://github.com/getzep/graphiti/tree/main/mcp_server",
+    "https://help.getzep.com/graphiti/getting-started/mcp-server"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zep"
+}

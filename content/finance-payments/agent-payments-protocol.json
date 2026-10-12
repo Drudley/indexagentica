@@ -3,6 +3,7 @@
   "name": "Agent Payments Protocol (AP2)",
   "category": "finance-payments",
   "summary": "Open protocol for AI agents to make payments on behalf of users securely, complementing A2A and MCP.",
+  "description": "AP2 v0.2.0 was released on 2026-04-28, and Google donated AP2 to the FIDO Alliance; standardization continues in FIDO's Agentic Authentication and Payments Technical Working Groups. The GitHub repo hosts the latest spec, docs and SDK.",
   "url": "https://ap2-protocol.org/",
   "repo": "https://github.com/google-agentic-commerce/AP2",
   "tags": [
@@ -25,10 +26,13 @@
   "sources": [
     "https://ap2-protocol.org/",
     "https://ap2-protocol.org/llms.txt",
-    "https://github.com/google-agentic-commerce/AP2"
+    "https://github.com/google-agentic-commerce/AP2",
+    "https://github.com/google-agentic-commerce/AP2/releases/tag/v0.2.0",
+    "https://blog.google/products-and-platforms/platforms/google-pay/agent-payments-protocol-fido-alliance/",
+    "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator"
 }

@@ -1,0 +1,29 @@
+{
+  "id": "x402scan",
+  "name": "x402scan",
+  "category": "directories",
+  "summary": "Ecosystem explorer for x402: browse x402 servers, see their transaction volumes and access their resources through an embedded wallet.",
+  "url": "https://www.x402scan.com/",
+  "repo": "https://github.com/Merit-Systems/x402scan",
+  "tags": [
+    "x402",
+    "explorer",
+    "agent-commerce",
+    "stablecoin"
+  ],
+  "status": "active",
+  "related": [
+    "x402",
+    "x402-bazaar",
+    "cdp-x402"
+  ],
+  "sources": [
+    "https://www.x402scan.com/",
+    "https://github.com/Merit-Systems/x402scan"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Merit Systems"
+}

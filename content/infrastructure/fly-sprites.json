@@ -1,0 +1,36 @@
+{
+  "id": "fly-sprites",
+  "name": "Fly.io Sprites",
+  "category": "infrastructure",
+  "summary": "Persistent, hardware-isolated Linux microVMs for running arbitrary code such as AI agents, with checkpoint/restore and per-second billing.",
+  "description": "Sprites keep their ext4 filesystem between runs, go idle (`warm`/`cold`) with no compute charges, and wake on the next request. Fly.io lists AI code execution, untrusted code, development environments and CI tasks as use cases.",
+  "url": "https://fly.io/sprites/",
+  "docs": "https://docs.fly.io/sprites",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "code-execution",
+    "persistent",
+    "hosting"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.fly.io/llms.txt"
+  },
+  "related": [
+    "fly-io",
+    "e2b",
+    "vercel-sandbox"
+  ],
+  "sources": [
+    "https://fly.io/sprites/",
+    "https://docs.fly.io/sprites",
+    "https://docs.fly.io/sprites.md"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Fly.io"
+}

@@ -12,18 +12,24 @@
     "tracing",
     "open-source"
   ],
+  "license": "Elastic-2.0",
   "status": "active",
+  "agent_access": {
+    "llms_txt": "https://arize.com/docs/phoenix/llms.txt"
+  },
   "related": [
     "langfuse",
     "openllmetry"
   ],
   "sources": [
     "https://github.com/Arize-ai/phoenix",
-    "https://arize.com/docs/phoenix"
+    "https://arize.com/docs/phoenix",
+    "https://raw.githubusercontent.com/Arize-ai/phoenix/main/LICENSE",
+    "https://arize.com/docs/phoenix/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
   "submitted_by": "agentica-curator",
   "maintainer": "Arize AI"
 }

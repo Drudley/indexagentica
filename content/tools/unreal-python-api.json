@@ -1,0 +1,28 @@
+{
+  "id": "unreal-python-api",
+  "name": "Unreal Python API",
+  "category": "tools",
+  "summary": "Epic's Python API for scripting the Unreal Editor (content production and pipeline tasks); an experimental feature also used by community MCP servers.",
+  "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/",
+  "docs": "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python",
+  "tags": [
+    "game-engine",
+    "unreal-engine",
+    "python",
+    "scripting"
+  ],
+  "status": "beta",
+  "related": [
+    "unreal-engine",
+    "runreal-unreal-mcp"
+  ],
+  "sources": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"
+  ],
+  "added": "2026-10-12",
+  "updated": "2026-10-12",
+  "last_verified": "2026-10-12",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Epic Games"
+}
