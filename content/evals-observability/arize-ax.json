@@ -1,0 +1,29 @@
+{
+  "id": "arize-ax",
+  "name": "Arize AX",
+  "category": "evals-observability",
+  "summary": "Arize's commercial platform for agent observability, evaluation, tracing and experimentation, from a free tier to self-hosted.",
+  "url": "https://arize.com/",
+  "docs": "https://arize.com/docs/ax",
+  "tags": [
+    "observability",
+    "evals",
+    "tracing",
+    "enterprise"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "related": [
+    "arize-phoenix"
+  ],
+  "sources": [
+    "https://arize.com/",
+    "https://arize.com/pricing/",
+    "https://arize.com/docs/ax"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Arize AI"
+}

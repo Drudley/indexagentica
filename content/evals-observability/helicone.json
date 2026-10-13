@@ -3,6 +3,7 @@
   "name": "Helicone",
   "category": "evals-observability",
   "summary": "Open-source AI gateway and LLM observability platform for routing, monitoring, evaluating and experimenting.",
+  "description": "Helicone was acquired by Mintlify (announced 2026-03-03); its services remain live in maintenance mode, with security updates, new models and bug/performance fixes still shipping.",
   "url": "https://www.helicone.ai",
   "repo": "https://github.com/Helicone/helicone",
   "docs": "https://docs.helicone.ai",
@@ -19,11 +20,12 @@
   },
   "sources": [
     "https://github.com/Helicone/helicone",
-    "https://www.helicone.ai"
+    "https://www.helicone.ai",
+    "https://www.helicone.ai/blog/joining-mintlify"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Helicone"
 }

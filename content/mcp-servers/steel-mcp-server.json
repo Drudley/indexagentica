@@ -1,0 +1,32 @@
+{
+  "id": "steel-mcp-server",
+  "name": "Steel MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP server giving Claude, Cursor or any MCP client a real cloud Chrome on Steel: read pages that block fetch, fill forms, screenshot, hand off to a human.",
+  "description": "Local server (GitHub releases or `npx -y github:steel-dev/steel-mcp-server`; not published to npm) that needs a Steel API key; the free tier is enough to try it. A hosted mcp.steel.dev is not live yet.",
+  "url": "https://github.com/steel-dev/steel-mcp-server",
+  "repo": "https://github.com/steel-dev/steel-mcp-server",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "cloud",
+    "stdio"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Set STEEL_API_KEY in the server environment."
+  },
+  "related": [
+    "steel"
+  ],
+  "sources": [
+    "https://github.com/steel-dev/steel-mcp-server"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Steel"
+}

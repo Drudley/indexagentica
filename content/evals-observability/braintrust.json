@@ -3,6 +3,7 @@
   "name": "Braintrust",
   "category": "evals-observability",
   "summary": "AI observability platform for agents: trace production, run evals and catch regressions before users see them.",
+  "description": "Braintrust's SDKs are open source (e.g. braintrust-sdk-javascript Apache-2.0, braintrust-go Apache-2.0, braintrust-proxy MIT); the license of the hosted platform itself is not stated in these repos.",
   "url": "https://www.braintrust.dev",
   "repo": "https://github.com/braintrustdata/autoevals",
   "docs": "https://www.braintrust.dev/docs",
@@ -16,14 +17,19 @@
     "llms_txt": "https://www.braintrust.dev/docs/llms.txt",
     "auth": "api-key"
   },
+  "related": [
+    "braintrust-mcp"
+  ],
   "sources": [
     "https://www.braintrust.dev",
     "https://www.braintrust.dev/docs/llms.txt",
-    "https://github.com/braintrustdata/autoevals"
+    "https://github.com/braintrustdata/autoevals",
+    "https://github.com/braintrustdata/braintrust-sdk-javascript",
+    "https://github.com/braintrustdata/braintrust-proxy"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Braintrust"
 }

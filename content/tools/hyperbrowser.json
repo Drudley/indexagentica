@@ -3,6 +3,7 @@
   "name": "Hyperbrowser",
   "category": "tools",
   "summary": "Fast cloud browsers for AI agents and automation, with an official MCP server.",
+  "description": "Hyperbrowser's open-source MCP server repo (hyperbrowserai/mcp) has had no commits since 2025-11-20.",
   "url": "https://www.hyperbrowser.ai",
   "docs": "https://www.hyperbrowser.ai/docs/home",
   "tags": [
@@ -16,7 +17,8 @@
     "llms_txt": "https://www.hyperbrowser.ai/docs/llms.txt"
   },
   "related": [
-    "steel"
+    "steel",
+    "hyperagent"
   ],
   "sources": [
     "https://www.hyperbrowser.ai",
@@ -24,8 +26,8 @@
     "https://github.com/hyperbrowserai/mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Hyperbrowser"
 }

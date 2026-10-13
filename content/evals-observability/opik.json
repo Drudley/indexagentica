@@ -13,13 +13,16 @@
   ],
   "license": "Apache-2.0",
   "status": "active",
+  "related": [
+    "opik-mcp"
+  ],
   "sources": [
     "https://github.com/comet-ml/opik",
     "https://www.comet.com/docs/opik/"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Comet"
 }

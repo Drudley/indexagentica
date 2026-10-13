@@ -1,0 +1,36 @@
+{
+  "id": "opik-mcp",
+  "name": "Opik MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP server for Comet's Opik so coding assistants can read traces, log scores and manage prompts; hosted with OAuth or local over stdio.",
+  "description": "`uvx opik mcp configure` sets up detected clients. Hosted HTTP endpoint with browser sign-in (no API key stored), or `uvx opik-mcp` over stdio with `OPIK_API_KEY`.",
+  "url": "https://www.comet.com/docs/opik/mcp-server",
+  "repo": "https://github.com/comet-ml/opik-mcp",
+  "tags": [
+    "mcp",
+    "observability",
+    "evals",
+    "remote-mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://www.comet.com/opik/api/v1/mcp",
+    "llms_txt": "https://www.comet.com/docs/opik/llms.txt",
+    "auth": "oauth"
+  },
+  "related": [
+    "opik"
+  ],
+  "sources": [
+    "https://www.comet.com/docs/opik/mcp-server.md",
+    "https://www.comet.com/docs/opik/mcp-server/advanced-setup.md",
+    "https://github.com/comet-ml/opik-mcp"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Comet"
+}

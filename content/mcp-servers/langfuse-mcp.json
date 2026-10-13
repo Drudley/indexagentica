@@ -1,0 +1,33 @@
+{
+  "id": "langfuse-mcp",
+  "name": "Langfuse MCP Server",
+  "category": "mcp-servers",
+  "summary": "Native, authenticated MCP server built into Langfuse so agents can read and write traces, prompts and other project data.",
+  "description": "Stateless Streamable HTTP; each API key is scoped to one project (Basic Auth header). Regional cloud endpoints (EU https://cloud.langfuse.com/api/public/mcp, US, Japan) plus self-hosted. Read and write tools enabled by default. A separate public Docs MCP is at https://langfuse.com/api/mcp. Tools are listed at mcp.reference.langfuse.com.",
+  "url": "https://langfuse.com/docs/api-and-data-platform/features/mcp-server",
+  "tags": [
+    "mcp",
+    "observability",
+    "evals",
+    "remote-mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://cloud.langfuse.com/api/public/mcp",
+    "llms_txt": "https://langfuse.com/llms.txt",
+    "auth": "api-key",
+    "notes": "Basic Auth with the project's public/secret key pair."
+  },
+  "related": [
+    "langfuse"
+  ],
+  "sources": [
+    "https://langfuse.com/docs/api-and-data-platform/features/mcp-server.md",
+    "https://langfuse.com/llms.txt"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Langfuse"
+}

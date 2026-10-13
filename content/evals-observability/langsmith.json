@@ -18,7 +18,8 @@
   },
   "related": [
     "langgraph",
-    "langfuse"
+    "langfuse",
+    "langsmith-remote-mcp"
   ],
   "sources": [
     "https://www.langchain.com/langsmith",
@@ -26,8 +27,8 @@
     "https://github.com/langchain-ai/langsmith-sdk"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "LangChain"
 }

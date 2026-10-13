@@ -1,0 +1,32 @@
+{
+  "id": "browserless-mcp",
+  "name": "Browserless MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server giving AI assistants full browser automation on Browserless cloud browsers; a lighter Connector endpoint is also offered.",
+  "description": "Full server at https://mcp.browserless.io/mcp; the Connector (https://mcp.browserless.io/mcp/connector) covers navigation, reading, forms, screenshots, Lighthouse audits, search and export. Auth via OAuth (Browserless login) or an Authorization header.",
+  "url": "https://docs.browserless.io/mcp/browserless-mcp-server/connector",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "remote-mcp",
+    "cloud"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.browserless.io/mcp",
+    "llms_txt": "https://docs.browserless.io/llms.txt",
+    "auth": "oauth",
+    "notes": "Clients without OAuth can send an Authorization header."
+  },
+  "related": [
+    "browserless"
+  ],
+  "sources": [
+    "https://docs.browserless.io/mcp/browserless-mcp-server/connector.md"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browserless"
+}

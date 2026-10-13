@@ -1,0 +1,31 @@
+{
+  "id": "laminar-mcp",
+  "name": "Laminar MCP Server",
+  "category": "mcp-servers",
+  "summary": "Laminar's MCP server lets assistants query agent trace data: ask_agent, read-only ClickHouse SQL and LLM-optimized trace summaries.",
+  "url": "https://laminar.sh/docs/platform/mcp",
+  "tags": [
+    "mcp",
+    "observability",
+    "tracing",
+    "remote-mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.lmnr.ai/v1/mcp",
+    "llms_txt": "https://laminar.sh/docs/llms.txt",
+    "auth": "api-key",
+    "notes": "Authorization: Bearer <project API key>; self-hosted instances expose /v1/mcp."
+  },
+  "related": [
+    "laminar"
+  ],
+  "sources": [
+    "https://laminar.sh/docs/platform/mcp.md"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Laminar"
+}

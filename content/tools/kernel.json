@@ -3,6 +3,7 @@
   "name": "Kernel",
   "category": "tools",
   "summary": "Browsers-as-a-service for web agents and automations: anti-bot handling, reusable sessions, fast spin-up and autoscaling.",
+  "description": "Kernel sells stealth headful browser sessions via the Machine Payments Protocol without a Kernel account: an unpaid request gets an HTTP 402 challenge, and the paid retry returns the browser and a Payment-Receipt header.",
   "url": "https://www.kernel.sh",
   "repo": "https://github.com/kernel/kernel-images",
   "docs": "https://www.kernel.sh/docs/",
@@ -13,13 +14,19 @@
   ],
   "license": "Apache-2.0",
   "status": "active",
+  "related": [
+    "machine-payments-protocol",
+    "kernel-mcp-server"
+  ],
   "sources": [
     "https://www.kernel.sh",
-    "https://github.com/kernel/kernel-images"
+    "https://github.com/kernel/kernel-images",
+    "https://kernel.sh/docs/info/mpp.md",
+    "https://kernel.sh/docs/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Kernel"
 }

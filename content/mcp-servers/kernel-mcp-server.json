@@ -1,0 +1,35 @@
+{
+  "id": "kernel-mcp-server",
+  "name": "Kernel MCP Server",
+  "category": "mcp-servers",
+  "summary": "Open-source, Kernel-hosted remote MCP server to launch Chromium browsers, run Playwright code, record replays and manage Kernel apps.",
+  "description": "Streamable HTTP (recommended) or stdio. Authenticated with OAuth 2.1 and dynamic client registration, or an API key; `kernel mcp install --target <client>` writes client config.",
+  "url": "https://kernel.sh/docs/reference/mcp-server",
+  "repo": "https://github.com/kernel/kernel-mcp-server",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "remote-mcp",
+    "playwright"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.onkernel.com/mcp",
+    "llms_txt": "https://kernel.sh/docs/llms.txt",
+    "auth": "oauth"
+  },
+  "related": [
+    "kernel"
+  ],
+  "sources": [
+    "https://kernel.sh/docs/reference/mcp-server.md",
+    "https://kernel.sh/docs/reference/mcp-server/transports.md",
+    "https://github.com/kernel/kernel-mcp-server"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kernel"
+}

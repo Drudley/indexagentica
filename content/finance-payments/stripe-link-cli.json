@@ -1,0 +1,33 @@
+{
+  "id": "stripe-link-cli",
+  "name": "Stripe Link CLI",
+  "category": "finance-payments",
+  "summary": "Lets agents get one-time-use payment credentials from a Link wallet (virtual card, Link Pay Token or MPP Shared Payment Token) with user approval.",
+  "description": "`npm i -g @stripe/link-cli`; ships agent skills (`npx skills add stripe/link-cli`) and a local MCP mode (`--mcp`). Shared Payment Tokens work with sellers accepting Machine Payments Protocol (MPP); Link Pay Tokens use WebMCP on Stripe checkout. Currently US and Canadian Link accounts only.",
+  "url": "https://github.com/stripe/link-cli",
+  "repo": "https://github.com/stripe/link-cli",
+  "tags": [
+    "agent-commerce",
+    "wallet",
+    "mpp",
+    "stripe",
+    "cli"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "machine-payments-protocol",
+    "stripe-agentic-commerce",
+    "webmcp",
+    "stripe-agents"
+  ],
+  "sources": [
+    "https://github.com/stripe/link-cli"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stripe"
+}

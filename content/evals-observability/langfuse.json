@@ -3,6 +3,7 @@
   "name": "Langfuse",
   "category": "evals-observability",
   "summary": "Open-source agent evals and observability platform: trace, evaluate and improve LLM applications and agents.",
+  "description": "Core is MIT (\"MIT Expat\"); code under `ee/`, `web/src/ee/` and `worker/src/ee/` is licensed separately under ee/LICENSE. Copyright is now held by ClickHouse, Inc.",
   "url": "https://langfuse.com",
   "repo": "https://github.com/langfuse/langfuse",
   "docs": "https://langfuse.com/docs",
@@ -12,22 +13,25 @@
     "tracing",
     "open-source"
   ],
+  "license": "MIT",
   "status": "active",
   "agent_access": {
     "llms_txt": "https://langfuse.com/llms.txt"
   },
   "related": [
     "langsmith",
-    "arize-phoenix"
+    "arize-phoenix",
+    "langfuse-mcp"
   ],
   "sources": [
     "https://github.com/langfuse/langfuse",
     "https://langfuse.com",
-    "https://langfuse.com/llms.txt"
+    "https://langfuse.com/llms.txt",
+    "https://raw.githubusercontent.com/langfuse/langfuse/main/LICENSE"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Langfuse"
 }

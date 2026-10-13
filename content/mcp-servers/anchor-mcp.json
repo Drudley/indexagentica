@@ -1,0 +1,32 @@
+{
+  "id": "anchor-mcp",
+  "name": "Anchor Browser MCP",
+  "category": "mcp-servers",
+  "summary": "Anchor's hosted MCP servers give agents isolated cloud browsers with stealth, captcha solving, managed logins and saved automations.",
+  "description": "Three servers on one account: `Anchor` (https://api.anchorbrowser.io/v1/mcp, start here), `Anchor Browser` (live browser control) and `Anchor Actions` (per-site verified actions). Sign in via OAuth or send an API key header; the legacy https://api.anchorbrowser.io/mcp still works with `anchor-api-key`.",
+  "url": "https://docs.anchorbrowser.io/advanced/mcp",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "remote-mcp",
+    "cloud"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.anchorbrowser.io/v1/mcp",
+    "llms_txt": "https://docs.anchorbrowser.io/llms.txt",
+    "auth": "oauth",
+    "notes": "API key header also supported."
+  },
+  "related": [
+    "anchor-browser"
+  ],
+  "sources": [
+    "https://docs.anchorbrowser.io/advanced/mcp.md"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anchor Browser"
+}

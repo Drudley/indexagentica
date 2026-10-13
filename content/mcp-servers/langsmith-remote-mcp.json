@@ -1,0 +1,34 @@
+{
+  "id": "langsmith-remote-mcp",
+  "name": "LangSmith Remote MCP",
+  "category": "mcp-servers",
+  "summary": "LangSmith-hosted MCP server exposing conversation history, prompts, runs and traces, datasets, experiments and billing; OAuth or API key.",
+  "description": "Available on all LangSmith Cloud regions, BYOC and self-hosted v0.16+. Interactive clients use OAuth (RFC 8414 discovery); programmatic clients send an `X-Api-Key` header. Replaces the standalone langchain-ai/langsmith-mcp-server, which is archived and marked deprecated in the docs.",
+  "url": "https://docs.langchain.com/langsmith/langsmith-remote-mcp",
+  "tags": [
+    "mcp",
+    "observability",
+    "evals",
+    "remote-mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.smith.langchain.com/mcp",
+    "llms_txt": "https://docs.langchain.com/llms.txt",
+    "auth": "oauth",
+    "notes": "GCP US endpoint shown; other regions listed in the docs. API key via X-Api-Key for headless clients."
+  },
+  "related": [
+    "langsmith"
+  ],
+  "sources": [
+    "https://docs.langchain.com/langsmith/langsmith-remote-mcp.md",
+    "https://docs.langchain.com/langsmith/langsmith-mcp-server.md",
+    "https://github.com/langchain-ai/langsmith-mcp-server"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

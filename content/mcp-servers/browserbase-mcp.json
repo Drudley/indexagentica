@@ -1,0 +1,36 @@
+{
+  "id": "browserbase-mcp",
+  "name": "Browserbase MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted Streamable HTTP MCP server giving any MCP client a cloud browser on Browserbase, driven by natural language via Stagehand.",
+  "description": "The hosted endpoint is recommended; a local STDIO mode also exists. The original open-source repo browserbase/mcp-server-browserbase is archived as a historical reference implementation.",
+  "url": "https://docs.browserbase.com/integrations/mcp/introduction",
+  "docs": "https://docs.browserbase.com/integrations/mcp/setup",
+  "tags": [
+    "mcp",
+    "browser-automation",
+    "remote-mcp",
+    "cloud"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.browserbase.com/mcp",
+    "llms_txt": "https://docs.browserbase.com/llms.txt",
+    "auth": "api-key",
+    "notes": "Pass the key as ?browserbaseApiKey=... on the endpoint URL."
+  },
+  "related": [
+    "browserbase",
+    "stagehand"
+  ],
+  "sources": [
+    "https://docs.browserbase.com/integrations/mcp/introduction.md",
+    "https://docs.browserbase.com/integrations/mcp/setup.md",
+    "https://github.com/browserbase/mcp-server-browserbase"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Browserbase"
+}

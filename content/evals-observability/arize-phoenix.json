@@ -15,21 +15,24 @@
   "license": "Elastic-2.0",
   "status": "active",
   "agent_access": {
-    "llms_txt": "https://arize.com/docs/phoenix/llms.txt"
+    "llms_txt": "https://arize.com/docs/phoenix/llms.txt",
+    "notes": "Phoenix 19.0.0+ has a built-in remote MCP server (beta) at <your Phoenix endpoint>/mcp, e.g. http://localhost:6006/mcp; `px setup mcp --agent <client>` configures it."
   },
   "related": [
     "langfuse",
-    "openllmetry"
+    "openllmetry",
+    "arize-ax"
   ],
   "sources": [
     "https://github.com/Arize-ai/phoenix",
     "https://arize.com/docs/phoenix",
     "https://raw.githubusercontent.com/Arize-ai/phoenix/main/LICENSE",
-    "https://arize.com/docs/phoenix/llms.txt"
+    "https://arize.com/docs/phoenix/llms.txt",
+    "https://arize.com/docs/phoenix/integrations/remote-mcp.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
   "submitted_by": "agentica-curator",
   "maintainer": "Arize AI"
 }

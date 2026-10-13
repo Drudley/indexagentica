@@ -1,0 +1,32 @@
+{
+  "id": "hyperagent",
+  "name": "HyperAgent",
+  "category": "tools",
+  "summary": "Hyperbrowser's AI browser-automation library: Playwright plus natural-language commands (page.ai, extract, executeTask), stealth mode and action caching.",
+  "description": "npm `@hyperbrowser/agent`. Falls back to regular Playwright when AI is not needed, scales via Hyperbrowser cloud sessions, and acts as an MCP client (e.g. Composio tools).",
+  "url": "https://www.hyperbrowser.ai/docs/hyperagent/overview",
+  "repo": "https://github.com/hyperbrowserai/HyperAgent",
+  "tags": [
+    "browser-automation",
+    "playwright",
+    "typescript",
+    "mcp-client"
+  ],
+  "license": "AGPL-3.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "hyperbrowser",
+    "stagehand",
+    "browser-use"
+  ],
+  "sources": [
+    "https://github.com/hyperbrowserai/HyperAgent",
+    "https://www.hyperbrowser.ai/docs/hyperagent/mcp.md"
+  ],
+  "added": "2026-10-13",
+  "updated": "2026-10-13",
+  "last_verified": "2026-10-13",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Hyperbrowser"
+}
