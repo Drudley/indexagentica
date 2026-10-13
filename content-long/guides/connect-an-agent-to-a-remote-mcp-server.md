@@ -46,7 +46,7 @@ sources:
   - title: Notion MCP OAuth Protected Resource Metadata (live response)
     url: https://mcp.notion.com/.well-known/oauth-protected-resource/mcp
     accessed: 2026-10-02
-related: [add-mcp-servers-to-claude-code, connect-remote-mcp, indexagentica-lookup, coding-agent-harnesses, web-search-apis]
+related: [agent-identity-and-mcp-auth, add-mcp-servers-to-claude-code, connect-remote-mcp, indexagentica-lookup, coding-agent-harnesses, web-search-apis]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---
