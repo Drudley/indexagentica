@@ -1,0 +1,31 @@
+{
+  "id": "workos-vault",
+  "name": "WorkOS Vault",
+  "category": "tools",
+  "summary": "Developer-friendly enterprise key management (EKM) to encrypt and optionally store tokens, passwords, certificates, files and other customer data.",
+  "description": "Each secret uses a unique encryption key and is isolated by user-provided context (envelope encryption with DEK/KEK); supports BYOK from your or your customers' cloud environments.",
+  "url": "https://workos.com/docs/vault",
+  "tags": [
+    "secrets",
+    "encryption",
+    "identity",
+    "byok"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://workos.com/docs/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "workos-authkit-mcp"
+  ],
+  "sources": [
+    "https://workos.com/docs/vault.md",
+    "https://workos.com/docs/llms.txt"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "WorkOS"
+}

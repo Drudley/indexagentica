@@ -1,0 +1,34 @@
+{
+  "id": "serpapi",
+  "name": "SerpApi",
+  "category": "apis",
+  "summary": "Real-time JSON API for structured search engine results from Google, Bing, Baidu and more; handles proxies and captchas.",
+  "url": "https://serpapi.com/",
+  "docs": "https://serpapi.com/search-api",
+  "tags": [
+    "web-search",
+    "serp",
+    "google"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://serpapi.com/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "brave-search-api",
+    "tavily-api",
+    "exa-api"
+  ],
+  "sources": [
+    "https://serpapi.com/",
+    "https://serpapi.com/llms.txt",
+    "https://serpapi.com/pricing"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SerpApi"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "oauth-client-id-metadata-document",
+  "name": "OAuth Client ID Metadata Document (CIMD)",
+  "category": "protocols",
+  "summary": "IETF OAuth draft letting a client identify itself with a URL as its client_id, pointing to a metadata document, without prior dynamic registration.",
+  "description": "The MCP authorization spec (2026-07-28) says authorization servers and MCP clients SHOULD support Client ID Metadata Documents; WorkOS AuthKit and Auth0 document CIMD support.",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-client-id-metadata-document/",
+  "tags": [
+    "auth",
+    "oauth",
+    "identity",
+    "ietf-draft",
+    "mcp"
+  ],
+  "status": "beta",
+  "related": [
+    "mcp-authorization",
+    "workos-authkit-mcp",
+    "auth0-for-ai-agents"
+  ],
+  "sources": [
+    "https://datatracker.ietf.org/doc/draft-ietf-oauth-client-id-metadata-document/",
+    "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IETF OAuth WG"
+}

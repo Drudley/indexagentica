@@ -3,7 +3,7 @@
   "name": "Letta",
   "category": "tools",
   "summary": "Platform for stateful agents with memory, identity and the ability to learn over time (formerly MemGPT); terminal UI, App Server, desktop app and Agent SDK.",
-  "description": "Current source lives in `letta-ai/letta-code` (npm: `@letta-ai/letta-code`); the original `letta-ai/letta` repo now points there and keeps the retired V1 API server on an `archive` branch.",
+  "description": "Current source lives in `letta-ai/letta-code`, now called the Letta Harness (formerly Letta Code; npm `@letta-ai/letta-code`), with a git-versioned memory filesystem (MemFS), skills, schedules and sleep-time subagents. The original `letta-ai/letta` repo (not archived) points there and keeps the retired V1 API server on an `archive` branch.",
   "url": "https://www.letta.com",
   "repo": "https://github.com/letta-ai/letta-code",
   "docs": "https://docs.letta.com/",
@@ -18,16 +18,18 @@
     "llms_txt": "https://docs.letta.com/llms.txt"
   },
   "related": [
-    "mem0"
+    "mem0",
+    "letta-mcp"
   ],
   "sources": [
     "https://github.com/letta-ai/letta",
     "https://github.com/letta-ai/letta-code",
-    "https://docs.letta.com/"
+    "https://docs.letta.com/",
+    "https://docs.letta.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Letta"
 }

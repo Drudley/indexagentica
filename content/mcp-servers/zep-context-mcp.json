@@ -1,0 +1,34 @@
+{
+  "id": "zep-context-mcp",
+  "name": "Zep Context MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server that connects an end user's MCP client (Claude, ChatGPT, Cursor, Codex...) to their own agent memory in Zep, gated by your identity provider.",
+  "description": "One endpoint for all clients and projects on Zep managed cloud (BYOC uses /mcp on its own host). Users sign in via Google Workspace or, on Enterprise, a custom OIDC IdP. Uses per-account MCP seats that vary by plan. Distinct from Zep's public Documentation MCP server. Usually installed via the Zep Context plugin (MCP connection plus a skill).",
+  "url": "https://help.getzep.com/context-mcp-server",
+  "tags": [
+    "mcp",
+    "memory",
+    "remote-mcp",
+    "identity"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.getzep.com/mcp",
+    "llms_txt": "https://help.getzep.com/llms.txt",
+    "auth": "oauth"
+  },
+  "related": [
+    "zep",
+    "graphiti-mcp-server"
+  ],
+  "sources": [
+    "https://help.getzep.com/context-mcp-server.md",
+    "https://help.getzep.com/context-mcp-server/authentication",
+    "https://www.getzep.com/pricing"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zep"
+}

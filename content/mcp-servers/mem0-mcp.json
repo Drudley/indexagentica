@@ -1,0 +1,31 @@
+{
+  "id": "mem0-mcp",
+  "name": "Mem0 MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server that gives agents Mem0 memory tools to save, search and update memories stored in a Mem0 Platform account.",
+  "description": "Add with `npx mcp-add --type http --url https://mcp.mem0.ai/mcp`. Clients sign in through a browser OAuth flow; headless clients can send a Mem0 API key as a bearer token.",
+  "url": "https://docs.mem0.ai/platform/mem0-mcp",
+  "tags": [
+    "mcp",
+    "memory",
+    "remote-mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.mem0.ai/mcp",
+    "llms_txt": "https://docs.mem0.ai/llms.txt",
+    "auth": "oauth",
+    "notes": "API key as Bearer token for headless clients."
+  },
+  "related": [
+    "mem0"
+  ],
+  "sources": [
+    "https://docs.mem0.ai/platform/mem0-mcp.md"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Mem0"
+}

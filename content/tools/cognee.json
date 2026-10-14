@@ -19,7 +19,8 @@
   },
   "related": [
     "graphiti",
-    "mem0"
+    "mem0",
+    "cognee-mcp"
   ],
   "sources": [
     "https://github.com/topoteretes/cognee",
@@ -27,8 +28,8 @@
     "https://docs.cognee.ai"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Cognee"
 }

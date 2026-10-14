@@ -1,0 +1,30 @@
+{
+  "id": "cross-app-access",
+  "name": "Cross App Access (ID-JAG)",
+  "category": "protocols",
+  "summary": "IETF OAuth draft (Identity Assertion JWT Authorization Grant) letting an app use an SSO identity assertion, via the trusted IdP, to get access tokens for a third-party API.",
+  "description": "Coordinates through the identity provider the downstream resource authorization server already trusts for SSO, using Token Exchange. xaa.dev is a free, open sandbox for testing cross app access flows with ID-JAG.",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+  "docs": "https://xaa.dev",
+  "tags": [
+    "auth",
+    "oauth",
+    "identity",
+    "ietf-draft",
+    "enterprise-sso"
+  ],
+  "status": "beta",
+  "related": [
+    "mcp-authorization",
+    "oauth-client-id-metadata-document"
+  ],
+  "sources": [
+    "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/",
+    "https://xaa.dev"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IETF OAuth WG"
+}

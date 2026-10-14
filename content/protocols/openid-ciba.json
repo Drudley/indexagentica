@@ -1,0 +1,28 @@
+{
+  "id": "openid-ciba",
+  "name": "OpenID Connect CIBA (Client-Initiated Backchannel Authentication)",
+  "category": "protocols",
+  "summary": "OpenID flow where a relying party obtains tokens after the user authenticates and consents on a separate device, with no redirects through the user's browser.",
+  "description": "Separates the Consumption Device (where the user interacts with the relying party) from the Authentication Device (where the user authenticates with the OpenID Provider and grants consent). Auth0's AI Agents add-on includes all forms of CIBA.",
+  "url": "https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html",
+  "tags": [
+    "auth",
+    "identity",
+    "openid",
+    "human-in-the-loop"
+  ],
+  "status": "active",
+  "related": [
+    "auth0-for-ai-agents",
+    "descope-agentic-identity"
+  ],
+  "sources": [
+    "https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html",
+    "https://auth0.com/pricing.md"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenID Foundation"
+}

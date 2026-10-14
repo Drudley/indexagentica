@@ -3,6 +3,7 @@
   "name": "Stytch Connected Apps (MCP auth)",
   "category": "tools",
   "summary": "Stytch Connected Apps: authorization for remote MCP servers and connected agent integrations.",
+  "description": "Pay as you go starting at $0/month; always free for 10,000 monthly active users and AI agents.",
   "url": "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview",
   "tags": [
     "identity",
@@ -10,6 +11,7 @@
     "oauth",
     "mcp"
   ],
+  "pricing": "freemium",
   "status": "active",
   "agent_access": {
     "llms_txt": "https://stytch.com/docs/llms.txt"
@@ -19,11 +21,12 @@
   ],
   "sources": [
     "https://stytch.com/docs/connected-apps/guides/mcp-auth-overview",
-    "https://stytch.com/docs/llms.txt"
+    "https://stytch.com/docs/llms.txt",
+    "https://stytch.com/pricing"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Stytch"
 }

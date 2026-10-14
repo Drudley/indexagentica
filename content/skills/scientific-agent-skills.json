@@ -1,0 +1,30 @@
+{
+  "id": "scientific-agent-skills",
+  "name": "Scientific Agent Skills (K-Dense)",
+  "category": "skills",
+  "summary": "Library of 177 scientific and research Agent Skills (biology, chemistry, medicine, physics, engineering and more) for agents supporting the Agent Skills standard.",
+  "description": "Formerly Claude Scientific Skills; described in arXiv:2609.00065.",
+  "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "tags": [
+    "agent-skills",
+    "science",
+    "research"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "agent-skills-spec",
+    "anthropic-skills"
+  ],
+  "sources": [
+    "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "https://arxiv.org/abs/2609.00065"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "K-Dense"
+}

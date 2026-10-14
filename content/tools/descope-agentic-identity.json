@@ -10,6 +10,7 @@
     "oauth",
     "mcp"
   ],
+  "pricing": "freemium",
   "status": "active",
   "agent_access": {
     "llms_txt": "https://docs.descope.com/llms.txt"
@@ -19,11 +20,12 @@
   ],
   "sources": [
     "https://docs.descope.com/agentic-identity-hub",
-    "https://docs.descope.com/llms.txt"
+    "https://docs.descope.com/llms.txt",
+    "https://www.descope.com/pricing"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Descope"
 }

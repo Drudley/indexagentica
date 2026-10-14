@@ -3,6 +3,7 @@
   "name": "WorkOS AuthKit for MCP",
   "category": "tools",
   "summary": "WorkOS AuthKit guide and support for securing MCP servers that require authentication.",
+  "description": "Client ID Metadata Document (CIMD) support is off by default and enabled in the WorkOS Dashboard; Dynamic Client Registration (DCR) can be enabled for backwards compatibility with MCP clients that don't yet support CIMD.",
   "url": "https://workos.com/docs/authkit/mcp",
   "tags": [
     "identity",
@@ -15,14 +16,17 @@
     "llms_txt": "https://workos.com/docs/llms.txt"
   },
   "related": [
-    "mcp-authorization"
+    "mcp-authorization",
+    "oauth-client-id-metadata-document",
+    "workos-vault"
   ],
   "sources": [
-    "https://workos.com/docs/authkit/mcp"
+    "https://workos.com/docs/authkit/mcp",
+    "https://workos.com/docs/authkit/mcp.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "WorkOS"
 }

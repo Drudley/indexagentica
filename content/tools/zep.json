@@ -16,7 +16,8 @@
     "llms_txt": "https://help.getzep.com/llms.txt"
   },
   "related": [
-    "graphiti"
+    "graphiti",
+    "zep-context-mcp"
   ],
   "sources": [
     "https://www.getzep.com",
@@ -24,8 +25,8 @@
     "https://github.com/getzep/zep"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Zep"
 }

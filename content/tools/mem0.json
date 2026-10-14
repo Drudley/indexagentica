@@ -3,6 +3,7 @@
   "name": "Mem0",
   "category": "tools",
   "summary": "Memory layer for AI agents and apps: drop-in persistent memory that lets agents learn from past interactions.",
+  "description": "Graph memory is a Mem0 Platform feature (tagged [Platform] in the docs, built in with no external graph store); the pricing page lists it on Pro ($249/month) and Enterprise. The Hobby plan is free. Hosted MCP server at https://mcp.mem0.ai/mcp.",
   "url": "https://mem0.ai",
   "repo": "https://github.com/mem0ai/mem0",
   "docs": "https://docs.mem0.ai",
@@ -12,22 +13,26 @@
     "python"
   ],
   "license": "Apache-2.0",
+  "pricing": "freemium",
   "status": "active",
   "agent_access": {
     "llms_txt": "https://docs.mem0.ai/llms.txt"
   },
   "related": [
     "letta",
-    "graphiti"
+    "graphiti",
+    "mem0-mcp"
   ],
   "sources": [
     "https://github.com/mem0ai/mem0",
     "https://mem0.ai",
-    "https://docs.mem0.ai"
+    "https://docs.mem0.ai",
+    "https://mem0.ai/pricing",
+    "https://docs.mem0.ai/platform/features/graph-memory"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Mem0"
 }

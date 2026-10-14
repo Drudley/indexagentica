@@ -1,0 +1,33 @@
+{
+  "id": "cognee-mcp",
+  "name": "Cognee MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP server giving AI assistants persistent memory backed by a Cognee knowledge graph via remember, recall and forget tools.",
+  "description": "The `cognee-mcp` package (in the cognee repo's `cognee-mcp/` folder) bundles the full Cognee library. Standalone mode runs locally with SQLite, LanceDB and an embedded graph store; API mode connects to a shared Cognee backend. Docker or local setup.",
+  "url": "https://docs.cognee.ai/cognee-mcp/mcp-overview",
+  "repo": "https://github.com/topoteretes/cognee",
+  "tags": [
+    "mcp",
+    "memory",
+    "knowledge-graph",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.cognee.ai/llms.txt"
+  },
+  "related": [
+    "cognee"
+  ],
+  "sources": [
+    "https://docs.cognee.ai/cognee-mcp/mcp-overview.md",
+    "https://github.com/topoteretes/cognee/tree/main/cognee-mcp"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cognee (topoteretes)"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "agentbench",
+  "name": "AgentBench",
+  "category": "information",
+  "summary": "Comprehensive benchmark evaluating LLMs as agents (ICLR'24); the current repo is a function-calling version (AgentBench FC) with containerized tasks.",
+  "description": "AgentBench FC integrates with the AgentRL framework; older versions remain at the v0.1 and v0.2 tags.",
+  "url": "https://github.com/THUDM/AgentBench",
+  "repo": "https://github.com/THUDM/AgentBench",
+  "tags": [
+    "benchmark",
+    "evals",
+    "agents",
+    "dataset"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "gaia-benchmark",
+    "tau-bench"
+  ],
+  "sources": [
+    "https://github.com/THUDM/AgentBench"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "THUDM (Tsinghua)"
+}

@@ -3,6 +3,7 @@
   "name": "Auth0 for AI Agents",
   "category": "tools",
   "summary": "Auth0's identity toolkit for AI agents: user authentication, delegated authorization, human-in-the-loop (CIBA) and fine-grained authorization for RAG.",
+  "description": "Auth0 for AI Agents is a paid add-on that adds 50% to the Essentials or Professional base price (rounded up), with unlimited Token Vault and all forms of CIBA. Auth0 documents manual CIMD registration (importing an externally hosted Client ID Metadata Document; third-party applications only).",
   "url": "https://auth0.com/solutions/ship-ai-agents",
   "repo": "https://github.com/auth0/auth0-ai-js",
   "docs": "https://auth0.com/ai/docs/overview",
@@ -12,18 +13,23 @@
     "oauth",
     "agents"
   ],
+  "pricing": "paid",
   "status": "active",
   "related": [
-    "mcp-authorization"
+    "mcp-authorization",
+    "openid-ciba",
+    "oauth-client-id-metadata-document"
   ],
   "sources": [
     "https://auth0.com/ai/docs/overview",
     "https://auth0.com/solutions/ship-ai-agents",
-    "https://github.com/auth0/auth0-ai-js"
+    "https://github.com/auth0/auth0-ai-js",
+    "https://auth0.com/pricing.md",
+    "https://auth0.com/ai/docs/mcp/guides/registering-your-mcp-client-application/manual-cimd-registration.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Auth0 (Okta)"
 }

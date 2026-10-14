@@ -1,0 +1,30 @@
+{
+  "id": "livecodebench",
+  "name": "LiveCodeBench",
+  "category": "information",
+  "summary": "Holistic, contamination-free evaluation of LLMs for code, with a public leaderboard.",
+  "url": "https://livecodebench.github.io/",
+  "repo": "https://github.com/LiveCodeBench/LiveCodeBench",
+  "tags": [
+    "benchmark",
+    "evals",
+    "coding",
+    "leaderboard"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "swe-bench",
+    "aider-leaderboards"
+  ],
+  "sources": [
+    "https://livecodebench.github.io/",
+    "https://livecodebench.github.io/leaderboard.html",
+    "https://github.com/LiveCodeBench/LiveCodeBench"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator"
+}

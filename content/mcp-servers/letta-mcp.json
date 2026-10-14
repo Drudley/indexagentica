@@ -1,0 +1,32 @@
+{
+  "id": "letta-mcp",
+  "name": "Hosted Letta MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server that lets any MCP client create stateful Letta agents, delegate work to them and read their replies.",
+  "description": "Letta agents keep memory across conversations, so the calling agent need not resend context. Authenticate with a Letta Platform API key as a bearer token.",
+  "url": "https://docs.letta.com/platform/hosted-mcp",
+  "tags": [
+    "mcp",
+    "memory",
+    "stateful-agents",
+    "remote-mcp"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.letta.com/mcp",
+    "llms_txt": "https://docs.letta.com/llms.txt",
+    "auth": "api-key",
+    "notes": "Authorization: Bearer <LETTA_API_KEY>"
+  },
+  "related": [
+    "letta"
+  ],
+  "sources": [
+    "https://docs.letta.com/platform/hosted-mcp/index.md"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Letta"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "arcade-mcp",
+  "name": "arcade-mcp",
+  "category": "tools",
+  "summary": "Arcade's open-source Python framework for building MCP servers and tools, with authorized tool calling (OAuth, token refresh) and tool-call evals.",
+  "description": "Decorator API covering tools, resources, prompts, sampling, elicitation, progress and logging; `requires_auth=...` lets Arcade handle OAuth so the client and LLM never see tokens. Vendor-neutral across MCP clients and agent frameworks; includes `arcade evals`.",
+  "url": "https://github.com/ArcadeAI/arcade-mcp",
+  "repo": "https://github.com/ArcadeAI/arcade-mcp",
+  "docs": "https://docs.arcade.dev/en/references/mcp/python",
+  "tags": [
+    "mcp",
+    "framework",
+    "python",
+    "auth"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.arcade.dev/llms.txt"
+  },
+  "related": [
+    "arcade",
+    "fastmcp",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/ArcadeAI/arcade-mcp",
+    "https://docs.arcade.dev/llms.txt"
+  ],
+  "added": "2026-10-14",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Arcade"
+}

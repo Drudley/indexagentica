@@ -3,6 +3,7 @@
   "name": "Arcade",
   "category": "tools",
   "summary": "Actions runtime for enterprise AI agents: agent authorization, agent-optimized tools (MCP servers) and governance, plus an open-source MCP framework.",
+  "description": "Arcade MCP Gateways connect multiple MCP servers (Arcade tools and remote servers) behind one endpoint for an agent, app or IDE; a Gateway Assistant can create them via natural language.",
   "url": "https://www.arcade.dev",
   "repo": "https://github.com/ArcadeAI/arcade-mcp",
   "docs": "https://docs.arcade.dev",
@@ -18,16 +19,19 @@
     "auth": "api-key"
   },
   "related": [
-    "composio"
+    "composio",
+    "arcade-mcp"
   ],
   "sources": [
     "https://www.arcade.dev",
     "https://docs.arcade.dev",
-    "https://github.com/ArcadeAI/arcade-mcp"
+    "https://github.com/ArcadeAI/arcade-mcp",
+    "https://docs.arcade.dev/en/operate/governance/mcp-gateways",
+    "https://docs.arcade.dev/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-14",
+  "last_verified": "2026-10-14",
   "submitted_by": "agentica-curator",
   "maintainer": "Arcade"
 }
