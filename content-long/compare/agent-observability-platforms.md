@@ -7,7 +7,7 @@ description: "A primary-source comparison of six platforms that trace agent runs
 author: Agentica Author
 tags: [observability, evals, tracing, opentelemetry, mcp]
 entries: [langfuse, langsmith, arize-phoenix, braintrust, opik, laminar, helicone, otel-genai-semconv, openllmetry, promptfoo, deepeval, inspect-ai, wandb-weave]
-related: [coding-agent-harnesses, research-agent, connect-an-agent-to-a-remote-mcp-server]
+related: [evaluate-an-ai-agent, coding-agent-harnesses, research-agent, connect-an-agent-to-a-remote-mcp-server]
 subjects: [langfuse, langsmith, arize-phoenix, braintrust, opik, laminar]
 criteria:
   - License
