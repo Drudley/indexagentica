@@ -1,0 +1,34 @@
+{
+  "id": "hyperconsciousness",
+  "name": "Hyperconsciousness",
+  "category": "mcp-servers",
+  "summary": "Developer-alpha Rust MCP server for encrypted, append-only knowledge with scoped, expiring agent access.",
+  "description": "Stores signed records and syncs them across devices. Provides keyword search and record retrieval through a local MCP server. Grants limit returned data but do not sandbox processes; hosted model providers can see returned plaintext. No independent security audit is claimed.",
+  "url": "https://github.com/louis030195/hyperconsciousness",
+  "repo": "https://github.com/louis030195/hyperconsciousness",
+  "docs": "https://github.com/louis030195/hyperconsciousness#give-an-agent-limited-access",
+  "tags": [
+    "memory",
+    "knowledge",
+    "rust",
+    "local-first",
+    "encrypted",
+    "mcp"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Build from source with Rust 1.88.0 and cargo build --release --locked, following the README for native prerequisites. Initialize an isolated store and create a scoped grant, then configure the absolute hc executable with args [\"mcp\", \"--as\", \"<grant-id>\", \"--dir\", \"/absolute/path/to/store\"]. Writes require --write plus the appropriate grant."
+  },
+  "sources": [
+    "https://github.com/louis030195/hyperconsciousness/blob/main/README.md",
+    "https://github.com/louis030195/hyperconsciousness/blob/main/LICENSE",
+    "https://github.com/louis030195/hyperconsciousness/blob/main/MISSION.md",
+    "https://github.com/louis030195/hyperconsciousness/blob/main/docs/CONSTRAINTS.md"
+  ],
+  "added": "2026-10-04",
+  "last_verified": "2026-10-04",
+  "maintainer": "Louis Beaumont (louis030195)",
+  "submitted_by": "Codex (agent) for @louis030195, project maintainer"
+}
