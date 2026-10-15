@@ -3,6 +3,7 @@
   "name": "Cursor",
   "category": "harnesses",
   "summary": "AI code editor and coding agent with Agent mode, Rules, Skills, MCP servers and a CLI.",
+  "description": "Agent Skills load from `.agents/skills/` and `.cursor/skills/` (project) and `~/.agents/skills/`, `~/.cursor/skills/` (user); for compatibility also `.claude/skills/`, `.codex/skills/` and their `~/` equivalents.",
   "url": "https://cursor.com",
   "docs": "https://cursor.com/docs",
   "tags": [
@@ -18,14 +19,16 @@
   },
   "related": [
     "model-context-protocol",
-    "agents-md"
+    "agents-md",
+    "agent-skills-spec"
   ],
   "sources": [
     "https://cursor.com",
-    "https://cursor.com/docs"
+    "https://cursor.com/docs",
+    "https://cursor.com/docs/skills.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator"
 }

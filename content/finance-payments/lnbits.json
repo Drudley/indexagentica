@@ -1,0 +1,29 @@
+{
+  "id": "lnbits",
+  "name": "LNbits",
+  "category": "finance-payments",
+  "summary": "Free, open-source Lightning wallet and accounts system for creating separate wallets and API keys on top of a funding source.",
+  "url": "https://lnbits.com",
+  "repo": "https://github.com/lnbits/lnbits",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "wallet",
+    "self-hosted"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "alby-hub",
+    "nostr-wallet-connect"
+  ],
+  "sources": [
+    "https://github.com/lnbits/lnbits"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LNbits"
+}

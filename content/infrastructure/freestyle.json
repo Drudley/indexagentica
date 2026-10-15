@@ -1,0 +1,31 @@
+{
+  "id": "freestyle",
+  "name": "Freestyle",
+  "category": "infrastructure",
+  "summary": "Full Linux VMs for agents running untrusted code, built for long-running, complex tasks.",
+  "url": "https://www.freestyle.sh/",
+  "docs": "https://www.freestyle.sh/docs",
+  "tags": [
+    "sandbox",
+    "vm",
+    "code-execution"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.freestyle.sh/llms.txt"
+  },
+  "related": [
+    "e2b",
+    "daytona",
+    "vercel-sandbox"
+  ],
+  "sources": [
+    "https://www.freestyle.sh/",
+    "https://www.freestyle.sh/llms.txt"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Freestyle"
+}

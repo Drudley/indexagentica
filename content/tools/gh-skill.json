@@ -1,0 +1,32 @@
+{
+  "id": "gh-skill",
+  "name": "gh skill (GitHub CLI)",
+  "category": "tools",
+  "summary": "GitHub CLI command group to search, preview, install, list, update and publish agent skills from GitHub repositories (preview).",
+  "description": "Subcommands: install, list, preview, publish, search, update (alias `gh skills`). Example: `gh skill install github/awesome-copilot documentation-writer`; `gh skill publish --dry-run` validates skills for publishing. Marked preview and subject to change.",
+  "url": "https://cli.github.com/manual/gh_skill",
+  "repo": "https://github.com/cli/cli",
+  "docs": "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills",
+  "tags": [
+    "skills",
+    "cli",
+    "installer",
+    "github"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "beta",
+  "related": [
+    "agent-skills-spec",
+    "skills-cli",
+    "awesome-copilot"
+  ],
+  "sources": [
+    "https://cli.github.com/manual/gh_skill"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

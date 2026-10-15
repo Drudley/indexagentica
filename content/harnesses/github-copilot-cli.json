@@ -13,15 +13,17 @@
   ],
   "status": "active",
   "related": [
-    "github-mcp-server"
+    "github-mcp-server",
+    "awesome-copilot",
+    "gh-skill"
   ],
   "sources": [
     "https://github.com/features/copilot/cli",
     "https://github.com/github/copilot-cli"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator",
   "maintainer": "GitHub"
 }

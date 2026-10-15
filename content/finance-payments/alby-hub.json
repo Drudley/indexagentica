@@ -1,0 +1,31 @@
+{
+  "id": "alby-hub",
+  "name": "Alby Hub",
+  "category": "finance-payments",
+  "summary": "Self-custodial Bitcoin Lightning node and wallet that apps (including agents) can control over Nostr Wallet Connect (NWC).",
+  "url": "https://getalby.com/alby-hub",
+  "repo": "https://github.com/getAlby/hub",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "wallet",
+    "nwc",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "nostr-wallet-connect",
+    "lightning-agent-tools",
+    "l402"
+  ],
+  "sources": [
+    "https://github.com/getAlby/hub"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Alby"
+}

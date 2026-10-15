@@ -13,6 +13,7 @@
     "claude",
     "examples"
   ],
+  "license": "Apache-2.0 AND LicenseRef-Anthropic-Source-Available",
   "status": "active",
   "agent_access": {
     "auth": "none",
@@ -25,11 +26,13 @@
   ],
   "sources": [
     "https://github.com/anthropics/skills",
-    "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+    "https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/LICENSE.txt",
+    "https://raw.githubusercontent.com/anthropics/skills/main/skills/pdf/LICENSE.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator",
   "maintainer": "Anthropic"
 }

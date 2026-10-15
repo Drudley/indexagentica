@@ -3,6 +3,7 @@
   "name": "Vercel Agent Skills",
   "category": "skills",
   "summary": "Vercel's official collection of Agent Skills, including React best practices, composition patterns and web design guidelines.",
+  "description": "License: the README states MIT, but the repo has no LICENSE file and package.json declares none, so no license is recorded.",
   "url": "https://github.com/vercel-labs/agent-skills",
   "repo": "https://github.com/vercel-labs/agent-skills",
   "tags": [
@@ -21,8 +22,8 @@
     "https://skills.sh"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator",
   "maintainer": "Vercel"
 }

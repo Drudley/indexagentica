@@ -1,0 +1,29 @@
+{
+  "id": "langfuse-experiment-action",
+  "name": "Langfuse Experiment Action",
+  "category": "evals-observability",
+  "summary": "GitHub Action that runs a Langfuse experiment in your CI pipeline.",
+  "url": "https://github.com/langfuse/experiment-action",
+  "repo": "https://github.com/langfuse/experiment-action",
+  "tags": [
+    "evals",
+    "ci",
+    "github-actions",
+    "experiments"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "langfuse",
+    "langfuse-skills"
+  ],
+  "sources": [
+    "https://github.com/langfuse/experiment-action"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Langfuse"
+}

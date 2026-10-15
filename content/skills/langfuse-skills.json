@@ -1,0 +1,33 @@
+{
+  "id": "langfuse-skills",
+  "name": "Langfuse Skills",
+  "category": "skills",
+  "summary": "Agent Skills that teach coding assistants (Claude Code, Cursor, etc.) to work with Langfuse: traces, prompts, datasets, scores and migration.",
+  "description": "Includes a main `langfuse` skill (query and manage traces, prompts, datasets and scores via the Langfuse API; look up docs) and `migrate-to-langfuse` for moving from other observability/eval platforms.",
+  "url": "https://github.com/langfuse/skills",
+  "repo": "https://github.com/langfuse/skills",
+  "docs": "https://langfuse.com/docs/api-and-data-platform/features/agent-skill",
+  "tags": [
+    "skills",
+    "observability",
+    "evals",
+    "langfuse"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "langfuse",
+    "langfuse-mcp",
+    "langfuse-experiment-action",
+    "agent-skills-spec"
+  ],
+  "sources": [
+    "https://github.com/langfuse/skills"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Langfuse"
+}

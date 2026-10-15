@@ -1,0 +1,29 @@
+{
+  "id": "vscode-agents",
+  "name": "VS Code Agents (agent mode)",
+  "category": "harnesses",
+  "summary": "Agent mode in Visual Studio Code: an agent finds relevant code, edits across files and runs checks in your workspace while you review the changes.",
+  "url": "https://code.visualstudio.com/docs/agents/overview",
+  "docs": "https://code.visualstudio.com/docs/chat/chat-overview",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "copilot"
+  ],
+  "status": "active",
+  "agent_access": {
+    "notes": "Docs pages are available as Markdown by appending .md."
+  },
+  "related": [
+    "github-copilot-cli",
+    "awesome-copilot"
+  ],
+  "sources": [
+    "https://code.visualstudio.com/docs/agents/overview"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

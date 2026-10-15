@@ -1,0 +1,27 @@
+{
+  "id": "google-antigravity",
+  "name": "Google Antigravity",
+  "category": "harnesses",
+  "summary": "Google's agentic coding platform (app, IDE, CLI, IDE extensions and Python SDK) for orchestrating autonomous subagents, scheduled tasks and code verification.",
+  "description": "Per its llms.txt: Antigravity app (command center for background agents), Antigravity IDE, Antigravity CLI, extensions for VS Code, JetBrains, Visual Studio, Zed and Xcode, and a Python SDK for custom agents, tools and MCP integrations. Plans, credits and enterprise tiers are listed on the pricing page.",
+  "url": "https://antigravity.google/",
+  "docs": "https://antigravity.google/docs",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "cli",
+    "sdk"
+  ],
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://antigravity.google/llms.txt"
+  },
+  "sources": [
+    "https://antigravity.google/llms.txt"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

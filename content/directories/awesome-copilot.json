@@ -1,0 +1,30 @@
+{
+  "id": "awesome-copilot",
+  "name": "Awesome GitHub Copilot",
+  "category": "directories",
+  "summary": "GitHub's community collection of instructions, agents, skills and configurations for GitHub Copilot.",
+  "url": "https://awesome-copilot.github.com/",
+  "repo": "https://github.com/github/awesome-copilot",
+  "tags": [
+    "skills",
+    "agents",
+    "copilot",
+    "catalog"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "gh-skill",
+    "github-copilot-cli"
+  ],
+  "sources": [
+    "https://github.com/github/awesome-copilot",
+    "https://cli.github.com/manual/gh_skill"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

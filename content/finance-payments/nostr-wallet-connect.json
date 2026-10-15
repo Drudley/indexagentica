@@ -18,7 +18,8 @@
   },
   "related": [
     "l402",
-    "lightning-agent-tools"
+    "lightning-agent-tools",
+    "alby-hub"
   ],
   "sources": [
     "https://nwc.dev",
@@ -26,7 +27,7 @@
     "https://github.com/nostr-protocol/nips/blob/master/47.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator"
 }

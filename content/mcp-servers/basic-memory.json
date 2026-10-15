@@ -1,0 +1,29 @@
+{
+  "id": "basic-memory",
+  "name": "Basic Memory",
+  "category": "mcp-servers",
+  "summary": "Local-first MCP server that gives AI assistants persistent memory stored as Markdown files in a knowledge base you own.",
+  "url": "https://basicmemory.com",
+  "repo": "https://github.com/basicmachines-co/basic-memory",
+  "tags": [
+    "mcp",
+    "memory",
+    "markdown",
+    "local-first"
+  ],
+  "license": "AGPL-3.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "supermemory"
+  ],
+  "sources": [
+    "https://github.com/basicmachines-co/basic-memory"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Basic Machines"
+}

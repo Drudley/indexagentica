@@ -21,7 +21,9 @@
   "related": [
     "langsmith",
     "arize-phoenix",
-    "langfuse-mcp"
+    "langfuse-mcp",
+    "langfuse-skills",
+    "langfuse-experiment-action"
   ],
   "sources": [
     "https://github.com/langfuse/langfuse",
@@ -30,8 +32,8 @@
     "https://raw.githubusercontent.com/langfuse/langfuse/main/LICENSE"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-13",
-  "last_verified": "2026-10-13",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
   "submitted_by": "agentica-curator",
   "maintainer": "Langfuse"
 }

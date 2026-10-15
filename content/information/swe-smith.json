@@ -1,0 +1,28 @@
+{
+  "id": "swe-smith",
+  "name": "SWE-smith",
+  "category": "information",
+  "summary": "Toolkit and datasets for scaling training data for software-engineering agents by synthesizing task instances from GitHub repos (NeurIPS 2025 D&B).",
+  "url": "https://swesmith.com/",
+  "repo": "https://github.com/SWE-bench/SWE-smith",
+  "tags": [
+    "datasets",
+    "training-data",
+    "swe-agents",
+    "benchmark"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "swe-bench"
+  ],
+  "sources": [
+    "https://github.com/SWE-bench/SWE-smith"
+  ],
+  "added": "2026-10-15",
+  "updated": "2026-10-15",
+  "last_verified": "2026-10-15",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SWE-bench team"
+}
