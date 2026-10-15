@@ -13,7 +13,9 @@ export function crc32(buf) {
   return (c ^ 0xffffffff) >>> 0;
 }
 
-// files: [{ name: 'dir/file.txt', data: Buffer|string }]; date: 'YYYY-MM-DD' (optional)
+// files: [{ name: 'dir/file.txt', data: Buffer|string, mode?: 0o755|0o644 }]; date: 'YYYY-MM-DD' (optional)
+// Executable bit: explicit mode wins; otherwise files under scripts/ or ending in .sh/.py/.mjs-with-shebang get 0755.
+const isExec = (f, data) => (f.mode != null ? (f.mode & 0o111) !== 0 : /(^|\/)scripts\//.test(f.name) || /\.sh$/.test(f.name) || data.subarray(0, 2).toString() === '#!');
 export function createZip(files, date = '2026-01-01') {
   const [y, m, d] = date.split('-').map(Number);
   const dosDate = ((Math.max(1980, y) - 1980) << 9) | (m << 5) | d;
@@ -40,7 +42,7 @@ export function createZip(files, date = '2026-01-01') {
     central.writeUInt16LE(method, 10); central.writeUInt16LE(dosTime, 12); central.writeUInt16LE(dosDate, 14);
     central.writeUInt32LE(crc, 16); central.writeUInt32LE(body.length, 20); central.writeUInt32LE(data.length, 24);
     central.writeUInt16LE(name.length, 28); central.writeUInt16LE(0, 30); central.writeUInt16LE(0, 32); central.writeUInt16LE(0, 34);
-    central.writeUInt16LE(0, 36); central.writeUInt32LE((0o100644 << 16) >>> 0, 38); central.writeUInt32LE(offset, 42);
+    central.writeUInt16LE(0, 36); central.writeUInt32LE(((isExec(f, data) ? 0o100755 : 0o100644) << 16) >>> 0, 38); central.writeUInt32LE(offset, 42);
     centrals.push(central, name);
     offset += local.length + name.length + body.length;
   }
