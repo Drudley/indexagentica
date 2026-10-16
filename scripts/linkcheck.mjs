@@ -93,6 +93,18 @@ async function attempt(url, method) {
   return { error: 'too-many-redirects', hops, finalUrl: current };
 }
 
+// MCP initialize POST; returns a result only if the server answers with a status that shows it speaks MCP.
+async function mcpPost(url) {
+  try {
+    const res = await fetch(url, { method: 'POST', redirect: 'follow', signal: AbortSignal.timeout(TIMEOUT),
+      headers: { ...HEADERS, 'content-type': 'application/json', accept: 'application/json, text/event-stream' },
+      body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'indexagentica-linkcheck', version: '1' } } }) });
+    try { await res.body?.cancel(); } catch {}
+    if (res.status < 300 || [400, 401, 403, 405, 406, 415].includes(res.status)) return { status: res.status, hops: [], finalUrl: res.url || url, server: res.headers.get('server') || '', cfMitigated: '' };
+  } catch {}
+  return null;
+}
+
 const transient = (r) => r.error === 'timeout' || (r.error && !['ENOTFOUND', 'too-many-redirects', 'ERR_INVALID_URL'].includes(r.error)) || r.status === 429 || r.status >= 500;
 
 async function check(url, isMcp) {
@@ -102,6 +114,7 @@ async function check(url, isMcp) {
   let r = await attempt(url, 'HEAD');
   if (r.error || r.status >= 400) r = await attempt(url, 'GET'); // many servers mishandle HEAD
   if (transient(r)) { await sleep(3000); r = await attempt(url, 'GET'); }
+  if (isMcp && !r.error && r.status >= 400) { const p = await mcpPost(url); if (p) r = p; } // Streamable HTTP servers may 404 a plain GET
   return classify(url, r, isMcp);
 }
 
