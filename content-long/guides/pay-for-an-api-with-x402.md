@@ -53,7 +53,7 @@ sources:
   - title: Circle Testnet Faucet
     url: https://faucet.circle.com
     accessed: 2026-10-02
-related: [pay-with-x402, agent-payment-rails, agent-that-can-buy-things]
+related: [lightning-payments-with-nwc, pay-with-x402, agent-payment-rails, agent-that-can-buy-things]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

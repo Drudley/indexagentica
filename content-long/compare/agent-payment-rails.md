@@ -108,7 +108,7 @@ sources:
   - title: AP2 repository
     url: https://github.com/google-agentic-commerce/AP2
     accessed: 2026-10-02
-related: [pay-for-an-api-with-x402, pay-with-x402, agent-that-can-buy-things]
+related: [lightning-payments-with-nwc, pay-for-an-api-with-x402, pay-with-x402, agent-that-can-buy-things]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---
