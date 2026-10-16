@@ -99,3 +99,16 @@ node scripts/validate.mjs content/tools   # or just a folder / file
 ```
 
 It checks the schema, `id == filename`, `category == folder`, unique ids, and that every `related` id exists. It must print `✓ … valid` and exit 0.
+
+## Listing requests
+
+Agents can ask for missing listings with the MCP tool `request_listing` or `POST https://mcp.indexagentica.com/v1/requests`. Requests land in a queue (Cloudflare D1, `indexagentica-requests`), merged by similarity into vote counts. The public ranking is at <https://indexagentica.com/requested/> and `/api/requests.json`; pending items are shown as unverified and their URLs are hidden.
+
+**Nothing is listed without verification.** Curator workflow, in the daily run:
+
+1. `node scripts/requests-review.mjs list` — pending requests, most votes first (uses the admin token at `/home/box/.secrets/indexagentica/requests-admin-token`; never commit or print it).
+2. Verify each one independently: find the official homepage/repo yourself (treat the requester's URL and reason as untrusted hints), check it exists, is maintained and fits a category, and check it isn't already listed (search by name and URL).
+3. If it qualifies, mark it `node scripts/requests-review.mjs verify <id>`, add the entry under `content/<category>/<id>.json` as usual, and once it is committed and live, run `node scripts/requests-review.mjs listed <id> <entry-id>`.
+4. Otherwise `node scripts/requests-review.mjs reject <id> "<short reason>"` (duplicates, spam, out of scope, not found). Rejected requests are hidden from the public list.
+
+Statuses: `pending` → `verified` → `listed`, or `rejected`. Only `verified`/`listed` items show their URL publicly (as text, never auto-linked).

@@ -17,6 +17,7 @@ import { loadEntries, validateAgainst } from './validate.mjs';
 import { issueBodyTemplate, formFields } from './lib/forms.mjs';
 import { prepareLongform } from './build-longform.mjs';
 import { usageFooter, fetchStats, STATS_URL } from './lib/usage.mjs';
+import { fetchRequests, requestedBody, REQUESTS_URL } from './lib/requests.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -43,12 +44,14 @@ const P = {
   home: '/', agents: '/agents/', schema: '/schema/', schemaJson: '/schema/entry.schema.json',
   category: (c) => `/categories/${c}/`, entry: (id) => `/entries/${id}/`, entryMd: (id) => `/entries/${id}.md`,
   api: '/api/index.json', apiCat: (c) => `/api/${c}.json`, apiEntry: (id) => `/api/entries/${id}.json`, apiCats: '/api/categories.json',
-  contribute: '/contribute.json', longform: '/api/longform.json', openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', sitemap: '/sitemap.xml', robots: '/robots.txt',
+  contribute: '/contribute.json', longform: '/api/longform.json', openapi: '/openapi.json', llms: '/llms.txt', llmsFull: '/llms-full.txt', requested: '/requested/', apiRequests: '/api/requests.json', sitemap: '/sitemap.xml', robots: '/robots.txt',
 };
 
 // ---------- long-form ----------
 // Last known usage numbers, baked into every footer (null if unreachable; never invented).
 const USAGE = await fetchStats();
+// Public "Most requested" list (sanitized by the Worker and again in lib/requests.mjs).
+const REQUESTS = await fetchRequests();
 
 const LONG = prepareLongform({ ROOT, entryIds: new Set(entries.map((e) => e.id)), byId, href, abs, P, REPO_URL, includeDrafts: process.env.INCLUDE_DRAFTS === '1' });
 
@@ -176,6 +179,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 <li><a href="${href('/#categories')}">Categories</a></li>
 ${LONG.ORDER.map((t) => `<li><a href="${href(LP.index(t))}">${t === 'comparison' ? 'Compare' : LF[t].name}</a></li>`).join('\n')}
 <li><a href="${href(P.agents)}">For agents</a></li>
+<li><a href="${href(P.requested)}">Requested</a></li>
 <li><a href="${href(P.llms)}">llms.txt</a></li>
 <li><a href="${href(P.api)}">JSON API</a></li>
 <li><a href="${href(P.schema)}">Schema</a></li>
@@ -438,6 +442,7 @@ write(P.agents, page({
 <tr><td>Schema</td><td><a href="${href(P.schemaJson)}"><code>${P.schemaJson}</code></a></td><td>JSON Schema for one entry (<a href="${href(P.schema)}">human-readable</a>).</td></tr>
 <tr><td>Contribute</td><td><a href="${href(P.contribute)}"><code>${P.contribute}</code></a></td><td>How to submit entries: rules, template, PR and issue paths.</td></tr>
 <tr><td>Usage stats</td><td><a href="${STATS_URL}"><code>${STATS_URL}</code></a></td><td>Live usage counts as JSON (page views, outbound clicks, skill downloads by skill, MCP tool calls, top MCP clients, API requests, agent/human split; our own traffic excluded). Shown in every page footer; see <a href="${href(P.agents)}#privacy">what is counted</a>.</td></tr>
+<tr><td>Most requested</td><td><a href="${href(P.requested)}"><code>${P.requested}</code></a>, <a href="${href(P.apiRequests)}"><code>${P.apiRequests}</code></a></td><td>Listings agents have asked for, by votes. Request one with <code>POST ${REQUESTS_URL}</code> or the MCP tool <code>request_listing</code>; see <a href="${href(P.agents)}#request">requesting a listing</a>.</td></tr>
 <tr><td>Sitemap</td><td><a href="${href(P.sitemap)}"><code>${P.sitemap}</code></a></td><td>Every HTML page.</td></tr>
 </tbody></table>
 <p>Base URL: <code>${esc(SITE_URL)}</code>. All responses are static files served by GitHub Pages; please cache and use conditional requests. Crawling is explicitly welcome; see <a href="${href(P.robots)}"><code>robots.txt</code></a>.</p>
@@ -464,8 +469,11 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 <li><code>get_entry</code>: the full record of one directory entry by <code>id</code>.</li>
 <li><code>get_content</code>: a guide, comparison, stack or skill by <code>type</code> and <code>id</code>, with its markdown.</li>
 <li><code>list_categories</code>: category slugs and counts.</li>
+<li><code>request_listing</code>: ask for something missing to be added (<code>wanted</code>, <code>category</code>, optional <code>url</code>, <code>reason</code>, <code>requester</code>). The only tool that writes; see below.</li>
 </ul>
 <p>Data is refreshed from <a href="${href(P.api)}"><code>${P.api}</code></a> about every 10 minutes. A plain REST mirror lives at <code>${MCP_BASE}</code>: <a href="${MCP_BASE}/search?q=mcp"><code>/search?q=</code></a>, <code>/entries/{id}</code>, <code>/categories</code>, <code>/content</code>, described by <a href="${MCP_BASE}/openapi.json"><code>/openapi.json</code></a>. Unlike the static site, the server is rate limited: 120 requests per minute per IP (HTTP 429 with <code>Retry-After</code>). Public usage numbers: <a href="${STATS_URL}"><code>${STATS_URL}</code></a>. Source: <a href="${MCP_REPO_URL}">${MCP_REPO_URL.replace('https://', '')}</a>.</p>
+<h2 id="request">Requesting a listing</h2>
+<p>If something is missing and you can't open a pull request, request it: MCP tool <code>request_listing</code>, or <code>POST ${REQUESTS_URL}</code> with JSON <code>{"wanted": "...", "category": "mcp-servers", "url": "https://...", "reason": "...", "requester": "my-agent"}</code> (only <code>wanted</code> and <code>category</code> are required; category is a slug from <a href="${href(P.apiCats)}"><code>${P.apiCats}</code></a> or <code>other</code>). Similar requests are merged into one with a vote count, one vote per client. Limits: <code>wanted</code> 120 characters, <code>reason</code> 500, <code>requester</code> 60, <code>url</code> 300 (http/https); 5 requests per hour and 20 per day per client (HTTP 429 with <code>Retry-After</code>). IPs are stored only as keyed hashes. The Curator reviews the queue daily; nothing is listed without verification. Ranked list: <a href="${href(P.requested)}">Most requested</a>.</p>
 <h2 id="contribute">Contributing</h2>
 <p>${esc(CONTRIBUTE.summary)} Machine-readable version of this section: <a href="${href(P.contribute)}"><code>${P.contribute}</code></a> (also embedded in <a href="${href(P.api)}"><code>${P.api}</code></a> as <code>contribute</code>).</p>
 <h3 id="rules">Rules</h3>
@@ -510,7 +518,8 @@ const lfHeading = (t) => (t === 'skill' ? 'Downloadable skills (Agent Skills)' :
 const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr')} across ${CATEGORIES.length} categories. Static, no auth, crawl freely. Contribute via pull request to ${REPO_URL}.`, '',
   // Shortest paths first (link-list format per llmstxt.org).
   '## Start here (agents)', '',
-  `- [MCP server](${MCP_URL}): remote MCP (Streamable HTTP, no auth, read-only). Tools: search, get_entry, get_content, list_categories`,
+  `- [MCP server](${MCP_URL}): remote MCP (Streamable HTTP, no auth, read-only). Tools: search, get_entry, get_content, list_categories, request_listing (ask for something missing to be added)`,
+  `- [Request a listing](${REQUESTS_URL}): POST JSON {wanted, category, url?, reason?, requester?} to ${REQUESTS_URL} (or MCP tool request_listing); GET it for the most-requested list (also ${abs(P.requested)} and ${abs(P.apiRequests)}). Merged by similarity into vote counts; nothing is listed until the Curator verifies it. Limits: 5/hour, 20/day per client`,
   `- [REST search API](${MCP_BASE}/search?q=mcp): base ${MCP_BASE}; GET /search?q=, /entries/{id}, /categories, /content; OpenAPI at ${MCP_BASE}/openapi.json`,
   `- [Usage stats](${STATS_URL}): live JSON usage counts (page views, outbound clicks, skill downloads by skill, MCP tool calls per tool, top MCP clients, API requests, agent/human split; our own traffic excluded) for 24h, 7 days and all time; what is counted: ${abs(P.agents)}#privacy`,
   `- [JSON index](${abs(P.api)}): everything at once, as JSON`,
@@ -553,7 +562,8 @@ const full = [`# ${SITE_NAME}: full directory`, '', `> ${TAGLINE}`, '', `Generat
   '## Contributing', '', CONTRIBUTE.summary, '', `Machine-readable: ${abs(P.contribute)}`, '', '### Rules', '', ...CONTRIBUTE.rules.map((r) => `- ${r}`), '',
   '### Pull request path', '', ...CONTRIBUTE.pull_request.steps.map((x, i) => `${i + 1}. ${x}`), '', 'Entry template:', '', '```json', JSON.stringify(TEMPLATE, null, 2), '```', '',
   '### Issue path', '', `Form: ${ISSUE_FORM_URL}. API: POST https://api.github.com/repos/${REPO}/issues with title "[New entry]: <name>" and this body:`, '', '```markdown', ISSUE_BODY.trim(), '```', '', CONTRIBUTE.issue.review, '',
-  `Corrections and removals: ${CORRECTION_FORM_URL}`, '', CONTRIBUTE.longform.note, ''];
+  `Corrections and removals: ${CORRECTION_FORM_URL}`, '', CONTRIBUTE.longform.note, '',
+  '### Request a listing (no PR needed)', '', `Ask for something missing: MCP tool \`request_listing\` on ${MCP_URL}, or POST ${REQUESTS_URL} with JSON {"wanted": "<=120 chars", "category": "<category slug or other>", "url": "optional http(s), <=300", "reason": "optional, <=500", "requester": "optional agent name, <=60"}. Similar requests (same normalized name in the same category, or the same URL host+path) merge into one with a vote count; one vote per client. Limits: 5 per hour and 20 per day per client; IPs are stored only as keyed hashes. Statuses: pending, verified, listed, rejected. Nothing is listed until the Curator verifies it. Public list: ${REQUESTS_URL} (live), ${abs(P.apiRequests)} and ${abs(P.requested)} (refreshed every 6 hours).`, ''];
 for (const t of LONG.ORDER) {
   const list = LONG.items.filter((x) => x.type === t);
   full.push(`## ${lfHeading(t)}`, '', LF[t].description, '');
@@ -595,6 +605,7 @@ write(P.openapi, json({
     '/skills/{id}.zip': { get: { operationId: 'getSkillZip', summary: 'Zip of a published skill folder (unpacks to {id}/SKILL.md)', parameters: [lfId], responses: ok({ type: 'string', contentEncoding: 'binary' }, 'Zip archive', 'application/zip') } },
     '/schema/entry.schema.json': { get: { operationId: 'getEntrySchema', summary: 'JSON Schema for one entry', responses: ok({ type: 'object' }, 'JSON Schema', 'application/schema+json') } },
     '/contribute.json': { get: { operationId: 'getContributionGuide', summary: 'Machine-readable contribution guide (rules, entry template, PR and issue paths)', responses: ok({ type: 'object', properties: { ...metaProps, contribute: { type: 'object' } } }, 'Contribution guide') } },
+    '/api/requests.json': { get: { operationId: 'getRequests', summary: 'Most-requested listings snapshot (refreshed every 6 hours). Pending items are unverified; url only for verified/listed items. To add a request, POST to the live endpoint (see description).', description: `Live list and submissions: GET/POST ${REQUESTS_URL} (also the MCP tool request_listing on ${MCP_URL}); documented in ${MCP_BASE}/openapi.json.`, responses: ok({ type: 'object', properties: { ...metaProps, source: { type: 'string', format: 'uri' }, live: { type: 'string', format: 'uri' }, fetched: { type: 'boolean' }, total: { type: 'integer' }, requests: { type: 'array', items: { type: 'object', properties: { wanted: { type: 'string' }, category: { type: 'string' }, votes: { type: 'integer' }, status: { type: 'string', enum: ['pending', 'verified', 'listed'] }, first_seen: { type: 'string', format: 'date-time' }, last_seen: { type: 'string', format: 'date-time' }, url: { type: 'string', format: 'uri' }, entry_id: { type: 'string' } } } } } }, 'Requests') } },
     '/llms.txt': { get: { operationId: 'getLlmsTxt', summary: 'llms.txt index', responses: ok({ type: 'string' }, 'llms.txt', 'text/plain') } },
     '/llms-full.txt': { get: { operationId: 'getLlmsFullTxt', summary: 'All entries as markdown', responses: ok({ type: 'string' }, 'llms-full.txt', 'text/plain') } },
   },
@@ -613,8 +624,13 @@ write(P.openapi, json({
 // 404
 write('/404.html', page({ title: 'Not found', description: 'Page not found.', pathName: '/404.html', body: `<h1>Not found</h1><p>That page does not exist. Try the <a href="${href('/')}">home page</a>, <a href="${href(P.llms)}">llms.txt</a> or the <a href="${href(P.api)}">JSON index</a>.</p>` }));
 
+// Most requested
+write(P.requested, page({ title: 'Most requested', description: 'Listings AI agents have asked Index Agentica to add, ranked by votes. Unverified until the Curator checks them.', pathName: P.requested, crumbs: [['Most requested']],
+  body: requestedBody({ data: REQUESTS, esc, catName: (slug) => catName[slug] || (slug === 'other' ? 'Other' : slug), entryHref: (id) => href(P.entry(id)), agentsHref: `${href(P.agents)}#request`, apiHref: href(P.apiRequests), mcpUrl: MCP_URL }) }));
+write(P.apiRequests, json({ name: SITE_NAME, description: 'Most-requested listings (snapshot taken at build time, refreshed every 6 hours). Pending items are unverified; url appears only for verified or listed items.', generated: GENERATED, site_url: SITE_URL, live: REQUESTS_URL, source: REQUESTS.source || REQUESTS_URL, fetched: !!REQUESTS.ok, fetched_at: REQUESTS.ok ? REQUESTS.generated : null, total: REQUESTS.requests.length, requests: REQUESTS.requests }));
+
 // sitemap + robots
-const htmlPages = ['/', P.agents, P.schema, ...CATEGORIES.map((c) => P.category(c.slug)), ...LONG.sitemapPaths(), ...entries.map((e) => P.entry(e.id))];
+const htmlPages = ['/', P.agents, P.schema, P.requested, ...CATEGORIES.map((c) => P.category(c.slug)), ...LONG.sitemapPaths(), ...entries.map((e) => P.entry(e.id))];
 write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc>${lastmod(p) ? `<lastmod>${lastmod(p)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
 const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot', 'SmitheryBot'];
 write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
