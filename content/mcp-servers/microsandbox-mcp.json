@@ -16,6 +16,10 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Run with `npx -y microsandbox-mcp` (stdio); no hosted endpoint."
+  },
   "related": [
     "microsandbox"
   ],
@@ -23,7 +27,7 @@
     "https://github.com/superradcompany/microsandbox-mcp"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator"
 }

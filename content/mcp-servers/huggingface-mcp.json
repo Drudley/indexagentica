@@ -15,7 +15,9 @@
   "license": "MIT",
   "status": "active",
   "agent_access": {
-    "mcp_endpoint": "https://huggingface.co/mcp"
+    "mcp_endpoint": "https://huggingface.co/mcp",
+    "auth": "oauth",
+    "notes": "Anonymous use works; sign in via ?login or send an HF token as Bearer."
   },
   "related": [
     "huggingface-skills"
@@ -25,8 +27,8 @@
     "https://huggingface.co/docs/hub/agents-mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Hugging Face"
 }

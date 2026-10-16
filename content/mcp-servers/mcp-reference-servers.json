@@ -3,7 +3,7 @@
   "name": "MCP Reference Servers",
   "category": "mcp-servers",
   "summary": "Reference MCP server implementations maintained by the MCP steering group: Everything, Fetch, Filesystem, Git, Memory, Sequential Thinking and Time.",
-  "description": "Educational reference implementations demonstrating MCP features and SDK usage; the README warns they are not production-ready. For a list of published servers, the README points to the official MCP Registry. Many older servers (GitHub, Brave Search, GitLab, etc.) were moved to `modelcontextprotocol/servers-archived`.",
+  "description": "Educational reference implementations demonstrating MCP features and SDK usage; the README warns they are not production-ready. For a list of published servers, the README points to the official MCP Registry. Many older servers (GitHub, Brave Search, GitLab, etc.) were moved to `modelcontextprotocol/servers-archived`. License: the project is moving from MIT to Apache-2.0 (new contributions Apache-2.0, docs CC-BY-4.0).",
   "url": "https://github.com/modelcontextprotocol/servers",
   "repo": "https://github.com/modelcontextprotocol/servers",
   "tags": [
@@ -13,6 +13,7 @@
     "git",
     "fetch"
   ],
+  "license": "MIT AND Apache-2.0",
   "pricing": "open-source",
   "status": "active",
   "agent_access": {
@@ -27,8 +28,8 @@
     "https://github.com/modelcontextprotocol/servers"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "MCP steering group"
 }

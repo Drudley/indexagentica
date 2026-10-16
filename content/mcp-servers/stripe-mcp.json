@@ -10,6 +10,7 @@
     "payments",
     "stripe"
   ],
+  "license": "MIT",
   "status": "active",
   "agent_access": {
     "mcp_endpoint": "https://mcp.stripe.com",
@@ -24,8 +25,8 @@
     "https://docs.stripe.com/mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Stripe"
 }

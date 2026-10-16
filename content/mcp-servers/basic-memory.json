@@ -14,6 +14,9 @@
   "license": "AGPL-3.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "notes": "Runs locally (stdio) over Markdown files; optional paid cloud sync."
+  },
   "related": [
     "mem0",
     "supermemory"
@@ -22,8 +25,8 @@
     "https://github.com/basicmachines-co/basic-memory"
   ],
   "added": "2026-10-15",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Basic Machines"
 }

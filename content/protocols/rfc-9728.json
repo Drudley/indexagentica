@@ -1,0 +1,30 @@
+{
+  "id": "rfc-9728",
+  "name": "RFC 9728: OAuth 2.0 Protected Resource Metadata",
+  "category": "protocols",
+  "summary": "IETF Proposed Standard defining a metadata document a protected resource publishes (at /.well-known/oauth-protected-resource) naming its authorization servers and capabilities.",
+  "description": "The MCP authorization spec requires MCP servers to implement RFC 9728 so clients can discover the authorization server; e.g. https://mcp.squareup.com/.well-known/oauth-protected-resource.",
+  "url": "https://www.rfc-editor.org/rfc/rfc9728.html",
+  "docs": "https://datatracker.ietf.org/doc/rfc9728/",
+  "tags": [
+    "auth",
+    "oauth",
+    "ietf",
+    "rfc",
+    "mcp"
+  ],
+  "status": "active",
+  "related": [
+    "mcp-authorization",
+    "rfc-8707"
+  ],
+  "sources": [
+    "https://datatracker.ietf.org/doc/rfc9728/",
+    "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IETF OAuth WG"
+}

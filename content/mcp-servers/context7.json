@@ -15,7 +15,8 @@
   "status": "active",
   "agent_access": {
     "mcp_endpoint": "https://mcp.context7.com/mcp",
-    "notes": "Remote Streamable HTTP endpoint; also available as the npm package @upstash/context7-mcp."
+    "notes": "Remote Streamable HTTP endpoint; also available as the npm package @upstash/context7-mcp. API key optional (recommended for higher rate limits) via Authorization: Bearer.",
+    "auth": "api-key"
   },
   "related": [
     "model-context-protocol"
@@ -25,8 +26,8 @@
     "https://context7.com"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Upstash"
 }

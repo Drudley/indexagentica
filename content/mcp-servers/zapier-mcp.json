@@ -11,14 +11,20 @@
     "integrations",
     "automation"
   ],
+  "license": "MIT",
   "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.zapier.com/api/v1/connect",
+    "auth": "oauth",
+    "notes": "OAuth authorization server metadata with dynamic client registration at mcp.zapier.com."
+  },
   "sources": [
     "https://docs.zapier.com/mcp/home",
     "https://github.com/zapier/zapier-mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Zapier"
 }

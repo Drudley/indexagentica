@@ -1,0 +1,30 @@
+{
+  "id": "rfc-8707",
+  "name": "RFC 8707: Resource Indicators for OAuth 2.0",
+  "category": "protocols",
+  "summary": "IETF Proposed Standard adding a `resource` parameter so a client can tell the authorization server which protected resource a token is meant for (audience binding).",
+  "description": "The MCP authorization spec requires clients to send the resource parameter (RFC 8707) in authorization and token requests, identifying the target MCP server.",
+  "url": "https://www.rfc-editor.org/rfc/rfc8707.html",
+  "docs": "https://datatracker.ietf.org/doc/rfc8707/",
+  "tags": [
+    "auth",
+    "oauth",
+    "ietf",
+    "rfc",
+    "mcp"
+  ],
+  "status": "active",
+  "related": [
+    "mcp-authorization",
+    "rfc-9728"
+  ],
+  "sources": [
+    "https://datatracker.ietf.org/doc/rfc8707/",
+    "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IETF OAuth WG"
+}

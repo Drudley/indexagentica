@@ -1,0 +1,31 @@
+{
+  "id": "mcp-ext-auth",
+  "name": "MCP Authorization Extensions (ext-auth)",
+  "category": "protocols",
+  "summary": "Official repo of optional, additive extensions to MCP authorization, such as Enterprise-Managed Authorization (stable) and OAuth Client Credentials (draft).",
+  "description": "Follows MCP governance (SEPs) with dedicated authorization-extension maintainers. Extensions are optional, composable and versioned independently of the core spec.",
+  "url": "https://github.com/modelcontextprotocol/ext-auth",
+  "repo": "https://github.com/modelcontextprotocol/ext-auth",
+  "tags": [
+    "auth",
+    "mcp",
+    "oauth",
+    "enterprise",
+    "spec"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "related": [
+    "mcp-authorization",
+    "model-context-protocol",
+    "cross-app-access"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/ext-auth"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Model Context Protocol"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mcp-memory-service",
+  "name": "MCP Memory Service",
+  "category": "mcp-servers",
+  "summary": "Open-source persistent memory for AI agent pipelines and Claude, with a REST API, knowledge graph and autonomous consolidation.",
+  "url": "https://github.com/doobidoo/mcp-memory-service",
+  "repo": "https://github.com/doobidoo/mcp-memory-service",
+  "tags": [
+    "mcp",
+    "memory",
+    "self-hosted",
+    "knowledge-graph"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "notes": "Self-hosted; no public hosted endpoint."
+  },
+  "related": [
+    "basic-memory",
+    "mem0-mcp"
+  ],
+  "sources": [
+    "https://github.com/doobidoo/mcp-memory-service"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "doobidoo"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "promptfoo-action",
+  "name": "Promptfoo GitHub Action",
+  "category": "evals-observability",
+  "summary": "GitHub Action for running Promptfoo prompt, agent and RAG tests and red-team scans in CI.",
+  "url": "https://github.com/promptfoo/promptfoo-action",
+  "repo": "https://github.com/promptfoo/promptfoo-action",
+  "tags": [
+    "evals",
+    "ci",
+    "github-actions",
+    "red-teaming"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "promptfoo",
+    "langfuse-experiment-action"
+  ],
+  "sources": [
+    "https://github.com/promptfoo/promptfoo-action"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Promptfoo"
+}

@@ -16,7 +16,8 @@
   "pricing": "open-source",
   "status": "active",
   "agent_access": {
-    "llms_txt": "https://docs.cognee.ai/llms.txt"
+    "llms_txt": "https://docs.cognee.ai/llms.txt",
+    "notes": "Self-hosted (Docker or local); no public hosted endpoint."
   },
   "related": [
     "cognee"
@@ -26,8 +27,8 @@
     "https://github.com/topoteretes/cognee/tree/main/cognee-mcp"
   ],
   "added": "2026-10-14",
-  "updated": "2026-10-14",
-  "last_verified": "2026-10-14",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Cognee (topoteretes)"
 }

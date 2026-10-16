@@ -1,0 +1,27 @@
+{
+  "id": "intercom-mcp",
+  "name": "Intercom MCP Server",
+  "category": "mcp-servers",
+  "summary": "Intercom's hosted MCP server giving AI tools access to Intercom conversations and contacts, with US and EU endpoints.",
+  "url": "https://developers.intercom.com/docs/guides/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "customer-support"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.intercom.com/mcp",
+    "auth": "oauth",
+    "notes": "EU: https://mcp.eu.intercom.com/mcp. Bearer token with an Intercom API token also supported. Legacy SSE at /sse (deprecated)."
+  },
+  "sources": [
+    "https://developers.intercom.com/docs/guides/mcp",
+    "https://mcp.intercom.com/.well-known/oauth-protected-resource"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Intercom"
+}

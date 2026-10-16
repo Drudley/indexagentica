@@ -15,6 +15,10 @@
   "license": "MIT",
   "pricing": "open-source",
   "status": "unknown",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local stdio server driving Unreal Editor."
+  },
   "related": [
     "unreal-mcp",
     "unreal-python-api"
@@ -23,7 +27,7 @@
     "https://github.com/runreal/unreal-mcp"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator"
 }

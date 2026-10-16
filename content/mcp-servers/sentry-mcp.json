@@ -11,6 +11,7 @@
     "debugging",
     "errors"
   ],
+  "license": "FSL-1.1-Apache-2.0",
   "status": "active",
   "agent_access": {
     "mcp_endpoint": "https://mcp.sentry.dev/mcp",
@@ -21,8 +22,8 @@
     "https://mcp.sentry.dev"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Sentry"
 }

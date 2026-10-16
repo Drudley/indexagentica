@@ -14,6 +14,9 @@
   "license": "MIT",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "notes": "Repo of Microsoft servers (e.g. Azure MCP), mostly run locally; see each server's README."
+  },
   "related": [
     "microsoft-learn-mcp",
     "azure-skills"
@@ -23,8 +26,8 @@
     "https://github.com/Azure/azure-mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Microsoft"
 }

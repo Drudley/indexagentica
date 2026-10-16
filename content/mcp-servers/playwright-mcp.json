@@ -15,6 +15,10 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local stdio server; no hosted endpoint. Optional --port for HTTP."
+  },
   "related": [
     "model-context-protocol",
     "chrome-devtools-mcp"
@@ -23,8 +27,8 @@
     "https://github.com/microsoft/playwright-mcp"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Microsoft"
 }

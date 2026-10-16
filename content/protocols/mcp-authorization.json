@@ -21,14 +21,17 @@
     "model-context-protocol",
     "auth0-for-ai-agents",
     "workos-authkit-mcp",
-    "stytch-connected-apps"
+    "stytch-connected-apps",
+    "rfc-9728",
+    "rfc-8707",
+    "mcp-ext-auth"
   ],
   "sources": [
     "https://modelcontextprotocol.io/specification/latest/basic/authorization"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "MCP project"
 }

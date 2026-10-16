@@ -13,13 +13,16 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "notes": "Collection of servers mostly run locally (stdio); see each server's README."
+  },
   "sources": [
     "https://github.com/awslabs/mcp",
     "https://awslabs.github.io/mcp/"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "AWS Labs"
 }

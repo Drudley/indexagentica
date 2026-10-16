@@ -15,6 +15,10 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local stdio server; no hosted endpoint."
+  },
   "related": [
     "playwright-mcp"
   ],
@@ -23,8 +27,8 @@
     "https://developer.chrome.com/docs/devtools/agents"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Chrome DevTools team (Google)"
 }

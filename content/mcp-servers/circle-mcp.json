@@ -13,7 +13,9 @@
   "status": "active",
   "agent_access": {
     "mcp_endpoint": "https://api.circle.com/v1/codegen/mcp",
-    "llms_txt": "https://developers.circle.com/llms.txt"
+    "llms_txt": "https://developers.circle.com/llms.txt",
+    "auth": "none",
+    "notes": "Initialize succeeds without credentials (probed 2026-10-16)."
   },
   "related": [
     "circle-skills",
@@ -23,8 +25,8 @@
     "https://developers.circle.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Circle"
 }

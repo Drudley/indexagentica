@@ -15,6 +15,9 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "beta",
+  "agent_access": {
+    "notes": "Self-hosted; HTTP at /mcp/ or stdio. No public hosted endpoint."
+  },
   "related": [
     "graphiti",
     "zep"
@@ -24,8 +27,8 @@
     "https://help.getzep.com/graphiti/getting-started/mcp-server"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Zep"
 }

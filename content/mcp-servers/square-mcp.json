@@ -1,0 +1,32 @@
+{
+  "id": "square-mcp",
+  "name": "Square MCP Server",
+  "category": "mcp-servers",
+  "summary": "Square's hosted MCP server that lets AI assistants work with Square seller data and APIs, authorized via OAuth with Square permission scopes.",
+  "url": "https://developer.squareup.com/docs/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "payments",
+    "commerce"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.squareup.com/mcp",
+    "auth": "oauth",
+    "notes": "Publishes RFC 9728 protected-resource metadata listing Square scopes."
+  },
+  "related": [
+    "stripe-mcp",
+    "rfc-9728"
+  ],
+  "sources": [
+    "https://developer.squareup.com/docs/mcp",
+    "https://mcp.squareup.com/.well-known/oauth-protected-resource"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Block (Square)"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "swe-gym",
+  "name": "SWE-Gym",
+  "category": "information",
+  "summary": "Environment and dataset for training software-engineering agents and verifiers on real GitHub tasks (ICML 2025).",
+  "url": "https://github.com/SWE-Gym/SWE-Gym",
+  "repo": "https://github.com/SWE-Gym/SWE-Gym",
+  "docs": "https://arxiv.org/abs/2412.21139",
+  "tags": [
+    "datasets",
+    "training-data",
+    "swe-agents"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "swe-smith",
+    "swe-bench"
+  ],
+  "sources": [
+    "https://github.com/SWE-Gym/SWE-Gym",
+    "https://arxiv.org/abs/2412.21139"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SWE-Gym authors"
+}

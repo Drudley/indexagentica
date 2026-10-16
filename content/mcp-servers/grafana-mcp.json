@@ -14,12 +14,16 @@
   "license": "Apache-2.0",
   "pricing": "open-source",
   "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Self-hosted; stdio by default (sse/streamable-http optional). Uses GRAFANA_SERVICE_ACCOUNT_TOKEN."
+  },
   "sources": [
     "https://github.com/grafana/mcp-grafana"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator",
   "maintainer": "Grafana Labs"
 }

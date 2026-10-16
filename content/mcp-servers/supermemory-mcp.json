@@ -1,0 +1,32 @@
+{
+  "id": "supermemory-mcp",
+  "name": "Supermemory MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server giving MCP-compatible assistants shared memory and team spaces backed by Supermemory, signed in via OAuth.",
+  "url": "https://supermemory.ai/docs/supermemory-mcp/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "memory"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.supermemory.ai/mcp",
+    "llms_txt": "https://supermemory.ai/docs/llms.txt",
+    "auth": "oauth",
+    "notes": "No API key required; users choose which spaces the client can access."
+  },
+  "related": [
+    "supermemory",
+    "basic-memory",
+    "mem0-mcp"
+  ],
+  "sources": [
+    "https://supermemory.ai/docs/supermemory-mcp/mcp"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Supermemory"
+}

@@ -13,6 +13,10 @@
     "community"
   ],
   "status": "unknown",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python server talking to an Unreal Editor plugin over TCP (port 55557)."
+  },
   "related": [
     "unreal-mcp"
   ],
@@ -20,7 +24,7 @@
     "https://github.com/chongdashu/unreal-mcp"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
   "submitted_by": "agentica-curator"
 }

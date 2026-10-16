@@ -1,0 +1,37 @@
+{
+  "id": "alby-mcp",
+  "name": "Alby MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP server that connects a Bitcoin Lightning wallet to an LLM via Nostr Wallet Connect, with knowledge of NWC, LNURL and L402.",
+  "url": "https://github.com/getAlby/mcp",
+  "repo": "https://github.com/getAlby/mcp",
+  "tags": [
+    "mcp",
+    "lightning",
+    "bitcoin",
+    "nwc",
+    "payments"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.getalby.com/mcp",
+    "auth": "other",
+    "notes": "Pass the NWC connection secret as a Bearer token or `nwc` query parameter. SSE at https://mcp.getalby.com/sse; can also run locally."
+  },
+  "related": [
+    "alby-hub",
+    "nostr-wallet-connect",
+    "l402",
+    "lightning-agent-tools"
+  ],
+  "sources": [
+    "https://github.com/getAlby/mcp"
+  ],
+  "added": "2026-10-16",
+  "updated": "2026-10-16",
+  "last_verified": "2026-10-16",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Alby"
+}
