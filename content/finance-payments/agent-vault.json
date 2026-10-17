@@ -1,0 +1,40 @@
+{
+  "id": "agent-vault",
+  "name": "Agent Vault",
+  "category": "finance-payments",
+  "summary": "Virtual agent cards and stored logins for AI agents: the agent fills checkout and sign-in forms with mock tokens and real values are substituted out of its view.",
+  "description": "From Self (spun out of Celo). Agent cards carry per-transaction, daily, weekly or monthly spending caps, merchant allowlists, approval requests and a kill switch. Integrations: a hosted or local MCP server (`@agentvault/mcp`), the `@agentvault/playwright` SDK and an agent skill, plus an open checkout recipe registry. Plans: Free ($0), Plus ($19/month at launch) and Enterprise (contact sales).",
+  "url": "https://agentvault.io/",
+  "docs": "https://docs.agentvault.io/",
+  "tags": [
+    "agent-commerce",
+    "cards",
+    "checkout",
+    "mcp",
+    "payments"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.agentvault.io/llms.txt",
+    "auth": "other",
+    "notes": "Hosted MCP server uses browser sign-in; the local MCP server and Playwright SDK use an API key from the dashboard."
+  },
+  "related": [
+    "crossmint-agents",
+    "stripe-issuing-for-agents",
+    "visa-intelligent-commerce"
+  ],
+  "sources": [
+    "https://agentvault.io/",
+    "https://docs.agentvault.io/llms.txt",
+    "https://docs.agentvault.io/mcp/setup.md",
+    "https://docs.agentvault.io/dashboard/billing.md",
+    "https://newsletter.celo.org/p/introducing-agent-vault"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Self"
+}

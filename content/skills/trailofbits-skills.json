@@ -1,0 +1,35 @@
+{
+  "id": "trailofbits-skills",
+  "name": "Trail of Bits Skills",
+  "category": "skills",
+  "summary": "Trail of Bits' plugin marketplace of agent skills for security research, vulnerability detection, testing and audit workflows.",
+  "description": "Install with `/plugin marketplace add trailofbits/skills` in Claude Code or `codex plugin marketplace add trailofbits/skills` in Codex.",
+  "url": "https://github.com/trailofbits/skills",
+  "repo": "https://github.com/trailofbits/skills",
+  "tags": [
+    "agent-skills",
+    "security",
+    "claude-code",
+    "marketplace"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none"
+  },
+  "related": [
+    "anthropic-skills",
+    "agent-skills-spec",
+    "claude-plugins-official"
+  ],
+  "sources": [
+    "https://github.com/trailofbits/skills",
+    "https://github.com/trailofbits/skills/blob/main/LICENSE"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Trail of Bits"
+}

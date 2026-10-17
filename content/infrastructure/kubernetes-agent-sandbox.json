@@ -1,0 +1,32 @@
+{
+  "id": "kubernetes-agent-sandbox",
+  "name": "Agent Sandbox (Kubernetes SIG Apps)",
+  "category": "infrastructure",
+  "summary": "Kubernetes CRD and controller for isolated, stateful, singleton sandbox pods for agent runtimes and RL, with templates, claims and warm pools.",
+  "description": "The core `Sandbox` resource gives a pod a stable identity, persistent storage and lifecycle control (scheduled deletion, pause/resume); extensions add `SandboxTemplate`, `SandboxClaim` and `SandboxWarmPool`. Isolation is delegated to runtimes such as gVisor or Kata Containers via `RuntimeClass`.",
+  "url": "https://agent-sandbox.sigs.k8s.io",
+  "repo": "https://github.com/kubernetes-sigs/agent-sandbox",
+  "docs": "https://agent-sandbox.sigs.k8s.io/docs/",
+  "tags": [
+    "sandbox",
+    "self-hosted",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "e2b",
+    "sandbox-runtime",
+    "daytona"
+  ],
+  "sources": [
+    "https://github.com/kubernetes-sigs/agent-sandbox",
+    "https://agent-sandbox.sigs.k8s.io"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kubernetes SIG Apps"
+}

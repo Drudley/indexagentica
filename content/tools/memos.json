@@ -1,0 +1,33 @@
+{
+  "id": "memos",
+  "name": "MemOS",
+  "category": "tools",
+  "summary": "Open-source memory operating system for LLMs and agents with a unified API for adding, retrieving, editing and deleting graph-structured, multi-modal memory.",
+  "description": "Offered self-hosted and as MemOS Cloud, with local and cloud memory plugins for agents such as OpenClaw and Hermes Agent.",
+  "url": "https://memos.openmem.net",
+  "repo": "https://github.com/MemTensor/MemOS",
+  "docs": "https://memos-docs.openmem.net",
+  "tags": [
+    "memory",
+    "knowledge-graph",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "letta",
+    "zep"
+  ],
+  "sources": [
+    "https://github.com/MemTensor/MemOS",
+    "https://memos.openmem.net"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MemTensor"
+}

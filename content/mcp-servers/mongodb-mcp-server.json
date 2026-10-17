@@ -1,0 +1,32 @@
+{
+  "id": "mongodb-mcp-server",
+  "name": "MongoDB MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official MCP server for querying and managing MongoDB databases and MongoDB Atlas clusters, with a read-only mode.",
+  "description": "Runs locally via `npx mongodb-mcp-server` with a connection string (optionally `--readOnly`). For Atlas, MongoDB recommends its hosted Atlas MCP server over OAuth, installed as the `mongodb-atlas` plugin in Cursor, VS Code, Claude, Codex and GitHub Copilot CLI.",
+  "url": "https://www.mongodb.com/docs/mcp-server/",
+  "repo": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "docs": "https://www.mongodb.com/docs/mcp-server/",
+  "tags": [
+    "mcp",
+    "database",
+    "typescript"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mcp-toolbox-databases",
+    "supabase-mcp",
+    "neon-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/mongodb-js/mongodb-mcp-server",
+    "https://www.mongodb.com/docs/mcp-server/"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MongoDB"
+}

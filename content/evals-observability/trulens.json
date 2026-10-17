@@ -1,0 +1,33 @@
+{
+  "id": "trulens",
+  "name": "TruLens",
+  "category": "evals-observability",
+  "summary": "Open-source, OpenTelemetry-native tracing and evaluation for LLM apps and agents, scoring each step with LLM judges and comparing app versions.",
+  "url": "https://www.trulens.org/",
+  "repo": "https://github.com/truera/trulens",
+  "docs": "https://www.trulens.org/getting_started/",
+  "tags": [
+    "evals",
+    "tracing",
+    "opentelemetry",
+    "python",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "deepeval",
+    "arize-phoenix",
+    "otel-genai-semconv"
+  ],
+  "sources": [
+    "https://github.com/truera/trulens",
+    "https://www.trulens.org/"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Snowflake"
+}

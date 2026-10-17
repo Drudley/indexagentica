@@ -1,0 +1,33 @@
+{
+  "id": "redis-agent-memory",
+  "name": "Redis Agent Memory",
+  "category": "tools",
+  "summary": "Redis's managed memory layer for agents (part of Redis Iris): session memory with TTL plus long-term memory extracted in the background, via REST, MCP and SDKs.",
+  "description": "Runs as a Redis Cloud service with Python and TypeScript SDKs and a REST API. The GitHub repo now holds a LongMemEval benchmark harness and the original open-source Agent Memory Server under `V0/`, kept as a research artifact rather than the supported production distribution.",
+  "url": "https://redis.io/agent-memory/",
+  "repo": "https://github.com/redis/agent-memory-server",
+  "docs": "https://redis.io/docs/latest/develop/ai/context-engine/agent-memory/",
+  "tags": [
+    "memory",
+    "cloud",
+    "python",
+    "typescript"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "related": [
+    "mem0",
+    "zep",
+    "letta"
+  ],
+  "sources": [
+    "https://github.com/redis/agent-memory-server",
+    "https://redis.io/agent-memory/"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Redis"
+}

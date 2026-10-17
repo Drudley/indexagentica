@@ -1,0 +1,35 @@
+{
+  "id": "gitlab-mcp-server",
+  "name": "GitLab MCP Server",
+  "category": "mcp-servers",
+  "summary": "GitLab's built-in MCP server for working with projects, issues, merge requests, work items and pipelines from MCP clients; GA in GitLab 19.5.",
+  "description": "Available on Free, Premium and Ultimate tiers on GitLab.com, Self-Managed and Dedicated; access must be allowed for the top-level group (GitLab.com) or instance. Supports OAuth 2.0 Dynamic Client Registration; actions run under the user's existing GitLab permissions. On GitLab.com the per-user limit is 60 calls/minute on Free and 600 on Premium and Ultimate.",
+  "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+  "docs": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "git",
+    "ci",
+    "oauth"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://gitlab.com/api/v4/mcp",
+    "auth": "oauth",
+    "notes": "Self-managed instances use https://<your-gitlab>/api/v4/mcp. Accepts an OAuth token with the `mcp` scope (via dynamic client registration) or a fine-grained personal access token."
+  },
+  "related": [
+    "github-mcp-server",
+    "linear-mcp"
+  ],
+  "sources": [
+    "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+    "https://about.gitlab.com/blog/mcp-server-ga/"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitLab"
+}

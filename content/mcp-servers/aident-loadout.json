@@ -1,0 +1,40 @@
+{
+  "id": "aident-loadout",
+  "name": "Aident Loadout",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server and CLI that gives coding and chat agents access to 1,000+ connected apps, with credentials kept in Aident Vault and every action audited.",
+  "description": "Connect apps once through Aident Vault (OAuth grants and API credentials are never handed to the agent), then reuse the same loadout across Codex, Claude Code, Cursor, ChatGPT and Claude. The MCP server and the `aident` CLI expose the same action search, execution, Skill guidance, Vault and Audit workflow. Usage is metered in credits.",
+  "url": "https://aident.ai/",
+  "docs": "https://docs.aident.ai/loadout/overview",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "integrations",
+    "oauth",
+    "agent-skills"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://aident.ai/llms.txt",
+    "mcp_endpoint": "https://loadout.aident.ai/mcp",
+    "auth": "oauth",
+    "notes": "Unauthenticated requests get 401 with OAuth protected-resource metadata at https://loadout.aident.ai/.well-known/oauth-protected-resource/mcp. Docs index at https://docs.aident.ai/llms.txt."
+  },
+  "related": [
+    "composio",
+    "zapier-mcp",
+    "arcade"
+  ],
+  "sources": [
+    "https://aident.ai/llms.txt",
+    "https://docs.aident.ai/loadout/mcp.md",
+    "https://aident.ai/pricing",
+    "https://loadout.aident.ai/.well-known/oauth-protected-resource/mcp"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Aident"
+}

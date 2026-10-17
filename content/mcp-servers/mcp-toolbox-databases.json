@@ -1,0 +1,34 @@
+{
+  "id": "mcp-toolbox-databases",
+  "name": "MCP Toolbox for Databases",
+  "category": "mcp-servers",
+  "summary": "Google's open-source MCP server for databases: prebuilt tools for MCP clients plus a framework for defining secure custom database tools for agents.",
+  "description": "Formerly \"Gen AI Toolbox for Databases\" (googleapis/genai-toolbox). SDKs for Python (`toolbox-core`), JS/TS, Go and Java.",
+  "url": "https://mcp-toolbox.dev/",
+  "repo": "https://github.com/googleapis/mcp-toolbox",
+  "docs": "https://mcp-toolbox.dev/documentation/introduction/",
+  "tags": [
+    "mcp",
+    "database",
+    "postgres",
+    "google",
+    "sdk"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mongodb-mcp-server",
+    "neon-mcp-server",
+    "supabase-mcp"
+  ],
+  "sources": [
+    "https://github.com/googleapis/mcp-toolbox",
+    "https://mcp-toolbox.dev/documentation/introduction/"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

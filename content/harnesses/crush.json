@@ -1,0 +1,33 @@
+{
+  "id": "crush",
+  "name": "Crush",
+  "category": "harnesses",
+  "summary": "Charm's terminal coding agent: multi-model (OpenAI- or Anthropic-compatible APIs), session-based, LSP-enhanced and extensible with MCP servers.",
+  "description": "Switch models mid-session while keeping context; MCP over `http`, `stdio` and `sse`. Runs on macOS, Linux, Windows (PowerShell and WSL), Android, FreeBSD, OpenBSD and NetBSD. Licensed under the Functional Source License 1.1 with MIT future license (source-available, converts to MIT).",
+  "url": "https://github.com/charmbracelet/crush",
+  "repo": "https://github.com/charmbracelet/crush",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "mcp",
+    "open-source"
+  ],
+  "license": "FSL-1.1-MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "opencode",
+    "claude-code",
+    "codex-cli",
+    "aider"
+  ],
+  "sources": [
+    "https://github.com/charmbracelet/crush",
+    "https://github.com/charmbracelet/crush/blob/main/LICENSE.md"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Charm"
+}

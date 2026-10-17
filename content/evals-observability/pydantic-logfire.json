@@ -1,0 +1,40 @@
+{
+  "id": "pydantic-logfire",
+  "name": "Pydantic Logfire",
+  "category": "evals-observability",
+  "summary": "OpenTelemetry-based observability platform from the Pydantic team for tracing LLM apps and agents, with SQL querying and evals.",
+  "description": "The `logfire` SDK (MIT) is an opinionated OpenTelemetry wrapper supporting traces, metrics and logs; the hosted platform is queried with SQL. Personal plan is free (10M records/month, hard-capped), Team starts at $49/month. An MCP server is available at https://github.com/pydantic/logfire-mcp.",
+  "url": "https://pydantic.dev/logfire",
+  "repo": "https://github.com/pydantic/logfire",
+  "docs": "https://pydantic.dev/docs/logfire/",
+  "tags": [
+    "observability",
+    "tracing",
+    "opentelemetry",
+    "evals",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://pydantic.dev/docs/logfire/llms.txt",
+    "auth": "api-key",
+    "notes": "The llms.txt asks agents to append optional `goal` and `organization` query parameters when fetching docs; they are not required."
+  },
+  "related": [
+    "pydantic-ai",
+    "otel-genai-semconv",
+    "langfuse"
+  ],
+  "sources": [
+    "https://github.com/pydantic/logfire",
+    "https://pydantic.dev/pricing",
+    "https://pydantic.dev/docs/logfire/llms.txt"
+  ],
+  "added": "2026-10-17",
+  "updated": "2026-10-17",
+  "last_verified": "2026-10-17",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pydantic"
+}
