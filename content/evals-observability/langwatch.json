@@ -1,0 +1,42 @@
+{
+  "id": "langwatch",
+  "name": "LangWatch",
+  "category": "evals-observability",
+  "summary": "Open-core platform for agent observability and evals: tracing, agent simulation tests, evaluations, prompt management, an AI gateway and coding-agent usage tracking.",
+  "description": "Areas: LLM Ops (observability, agent testing via simulations, evaluations, prompt management), Coding Agents (sessions and cost per pull request for Claude Code, Codex, Copilot, opencode), AI Gateway (OpenAI/Anthropic-compatible endpoint, virtual keys, budgets, routing) and AI Governance. Integrates with LangChain, LangGraph, Vercel AI SDK, Mastra, CrewAI, Google ADK, DSPy and OpenTelemetry, and has an MCP server. Core is Apache-2.0; modules under `enterprise/` need a commercial license in production; SDKs are MIT. Cloud plans: Developer free (50k events/month), Growth €29 per core-seat/month, Enterprise; self-host with `npx @langwatch/server` or docker compose.",
+  "url": "https://langwatch.ai/",
+  "repo": "https://github.com/langwatch/langwatch",
+  "docs": "https://langwatch.ai/docs/introduction",
+  "tags": [
+    "tracing",
+    "evals",
+    "agent-simulation",
+    "prompt-management",
+    "ai-gateway",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://langwatch.ai/docs/llms.txt",
+    "notes": "MCP server docs: https://langwatch.ai/docs/integration/mcp. Open-core: enterprise/ modules are commercially licensed."
+  },
+  "related": [
+    "langfuse",
+    "langsmith",
+    "arize-phoenix",
+    "helicone"
+  ],
+  "sources": [
+    "https://github.com/langwatch/langwatch",
+    "https://langwatch.ai/pricing",
+    "https://langwatch.ai/docs/self-hosting/licensing",
+    "https://langwatch.ai/docs/llms.txt"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangWatch"
+}

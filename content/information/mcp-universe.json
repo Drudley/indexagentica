@@ -1,0 +1,36 @@
+{
+  "id": "mcp-universe",
+  "name": "MCP-Universe",
+  "category": "information",
+  "summary": "Salesforce AI Research benchmark and framework that evaluates LLMs and agents on real-world tasks against live MCP servers, with a public leaderboard.",
+  "description": "Domains include web search, location navigation, browser automation, financial analysis, repository management and 3D design, stressing long-horizon reasoning, large unfamiliar tool spaces and time-sensitive ground truth. The framework also runs the MCPMark tasks and ships agent tooling (MCP+ context wrapper, a deep-research agent). Paper: arXiv 2508.14704.",
+  "url": "https://mcp-universe.github.io/",
+  "repo": "https://github.com/SalesforceAIResearch/MCP-Universe",
+  "docs": "https://github.com/SalesforceAIResearch/MCP-Universe#readme",
+  "tags": [
+    "benchmark",
+    "mcp",
+    "agent-evaluation",
+    "leaderboard",
+    "tool-use"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mcpmark",
+    "bfcl",
+    "tau-bench",
+    "gaia-benchmark"
+  ],
+  "sources": [
+    "https://github.com/SalesforceAIResearch/MCP-Universe",
+    "https://mcp-universe.github.io/",
+    "https://arxiv.org/abs/2508.14704"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Salesforce AI Research"
+}

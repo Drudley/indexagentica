@@ -1,0 +1,37 @@
+{
+  "id": "serena",
+  "name": "Serena",
+  "category": "mcp-servers",
+  "summary": "MCP toolkit that gives coding agents IDE-like semantic code retrieval, editing, refactoring and debugging at the symbol level, backed by language servers (40+ languages) or JetBrains.",
+  "description": "Works with any MCP client or LLM. The default backend uses Language Server Protocol servers via its SolidLSP layer; an alternative paid Serena JetBrains Plugin (free trial) uses the IDE's code analysis. Serena v2 adds a REPL/code-execution based agent interface. Licensing is per component: the Serena application is GPL-3.0-or-later, SolidLSP is MIT.",
+  "url": "https://oraios.github.io/serena",
+  "repo": "https://github.com/oraios/serena",
+  "docs": "https://oraios.github.io/serena",
+  "tags": [
+    "mcp",
+    "coding-agent",
+    "lsp",
+    "code-search",
+    "refactoring",
+    "open-source"
+  ],
+  "license": "GPL-3.0-or-later",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "context7",
+    "deepwiki-mcp",
+    "claude-code",
+    "codex-cli"
+  ],
+  "sources": [
+    "https://github.com/oraios/serena",
+    "https://github.com/oraios/serena/blob/main/LICENSE",
+    "https://oraios.github.io/serena/01-about/020_programming-languages.html"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Oraios AI"
+}

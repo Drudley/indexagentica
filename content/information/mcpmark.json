@@ -1,0 +1,37 @@
+{
+  "id": "mcpmark",
+  "name": "MCPMark",
+  "category": "information",
+  "summary": "Stress-testing benchmark for agentic models using real MCP environments (Notion, GitHub, Filesystem, Postgres, Playwright), with strict automated verifiers and sandboxed tasks.",
+  "description": "One-command tasks, isolated sandboxes, auto-resume and aggregated reports. Since June 2026 the default task set is MCPMark Verified (version-pinned environments, stabilized verifiers); earlier results are not directly comparable. Trajectory logs are published on Hugging Face. Paper: arXiv 2509.24002.",
+  "url": "https://mcpmark.ai",
+  "repo": "https://github.com/eval-sys/mcpmark",
+  "docs": "https://mcpmark.ai/docs",
+  "tags": [
+    "benchmark",
+    "mcp",
+    "agent-evaluation",
+    "leaderboard",
+    "tool-use"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mcp-universe",
+    "bfcl",
+    "terminal-bench",
+    "webarena"
+  ],
+  "sources": [
+    "https://github.com/eval-sys/mcpmark",
+    "https://mcpmark.ai",
+    "https://arxiv.org/abs/2509.24002",
+    "https://huggingface.co/datasets/Jakumetsu/mcpmark-trajectory-log"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "eval-sys"
+}

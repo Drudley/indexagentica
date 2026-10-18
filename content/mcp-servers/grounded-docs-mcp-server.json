@@ -1,0 +1,37 @@
+{
+  "id": "grounded-docs-mcp-server",
+  "name": "Grounded Docs MCP Server",
+  "category": "mcp-servers",
+  "summary": "Self-hosted documentation index for coding agents: scrapes official docs from websites, GitHub, npm, PyPI and local files so agents query the exact library version in use.",
+  "description": "Positions itself as an open-source alternative to Context7, Nia and Ref.Tools. Runs entirely on your machine (Node.js 22+) as a CLI (`npx @arabold/docs-mcp-server@latest scrape|search|fetch-url`) or a long-running server with a web UI at http://localhost:6280 and a Streamable HTTP MCP endpoint at http://localhost:6280/mcp; Docker images are available. Processes HTML, Markdown, PDF, Office and OpenDocument files, EPUB, Jupyter notebooks, archives and 90+ source-code languages.",
+  "url": "https://grounded.tools",
+  "repo": "https://github.com/arabold/docs-mcp-server",
+  "docs": "https://github.com/arabold/docs-mcp-server#readme",
+  "tags": [
+    "mcp",
+    "documentation",
+    "coding-agent",
+    "rag",
+    "self-hosted",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "context7",
+    "deepwiki-mcp",
+    "microsoft-learn-mcp",
+    "docling"
+  ],
+  "sources": [
+    "https://github.com/arabold/docs-mcp-server",
+    "https://grounded.tools",
+    "https://registry.npmjs.org/@arabold/docs-mcp-server"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Andre Rabold"
+}

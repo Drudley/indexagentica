@@ -1,0 +1,42 @@
+{
+  "id": "hindsight",
+  "name": "Hindsight",
+  "category": "tools",
+  "summary": "Open-source agent memory system from Vectorize focused on agents that learn: retain, recall and reflect operations over memory banks, with an MCP server and a managed cloud.",
+  "description": "Builds observations, mental models and knowledge pages on top of raw memories; Vectorize reports state-of-the-art LongMemEval results and publishes live benchmarks at benchmarks.hindsight.vectorize.io (paper: arXiv 2512.12818). Run the server with Docker or embedded in Python, then use the Python/TypeScript clients, an LLM wrapper, framework and coding-agent integrations, or the per-bank MCP endpoint (`http://localhost:8888/mcp/{bank_id}/` when self-hosted). Self-hosted is MIT and free; Hindsight Cloud is pay-as-you-go on token usage with free credits to start; Enterprise on request.",
+  "url": "https://hindsight.vectorize.io/",
+  "repo": "https://github.com/vectorize-io/hindsight",
+  "docs": "https://hindsight.vectorize.io/",
+  "tags": [
+    "memory",
+    "long-term-memory",
+    "mcp",
+    "self-hosted",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://hindsight.vectorize.io/llms.txt",
+    "notes": "MCP server docs: https://hindsight.vectorize.io/developer/mcp-server. Cloud sign-up: https://ui.hindsight.vectorize.io."
+  },
+  "related": [
+    "mem0",
+    "zep",
+    "letta",
+    "graphiti",
+    "supermemory"
+  ],
+  "sources": [
+    "https://github.com/vectorize-io/hindsight",
+    "https://vectorize.io/pricing",
+    "https://hindsight.vectorize.io/developer/mcp-server",
+    "https://hindsight.vectorize.io/llms.txt"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vectorize"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cloudflare-skills",
+  "name": "Cloudflare Skills",
+  "category": "skills",
+  "summary": "Cloudflare's official Agent Skills and plugin for building on Workers, the Agents SDK, Durable Objects, Sandbox, Wrangler and the wider Developer Platform; bundles the Cloudflare MCP server.",
+  "description": "Installs as a native plugin in Codex (`codex plugin marketplace add cloudflare/skills`), Claude Code (`/plugin marketplace add cloudflare/skills`), VS Code/GitHub Copilot and Cursor, or as plain skills via `npx skills add https://github.com/cloudflare/skills`. Skills include cloudflare (product discovery), agents-sdk, durable-objects, sandbox, wrangler, cf-cli, workers-best-practices, workers-profiling, web-perf, turnstile, email service and Cloudflare One. The plugin bundles only the main remote `cloudflare` MCP server (Code Mode).",
+  "url": "https://github.com/cloudflare/skills",
+  "repo": "https://github.com/cloudflare/skills",
+  "docs": "https://github.com/cloudflare/skills#readme",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "plugin",
+    "cloudflare",
+    "workers"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "agent-skills-spec",
+    "cloudflare-mcp",
+    "cloudflare-agents",
+    "cloudflare-sandbox",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/cloudflare/skills",
+    "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cloudflare"
+}

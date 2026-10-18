@@ -1,0 +1,42 @@
+{
+  "id": "celo-buy",
+  "name": "buy (Celo)",
+  "category": "finance-payments",
+  "summary": "Celo's marketplace and CLI/MCP tool that lets agents pay per request in USDC, USD₮ or USA₮ on Celo for 780+ priced compute, data, blockchain and browser services, with no accounts or API keys.",
+  "description": "Install `npm install -g @celo/buy`, create a wallet stored in the OS keychain (`buy setup`), fund it with stablecoins on Celo mainnet (gas is sponsored), and register the stdio MCP server with `buy mcp install --client all`. `buy curl` reads the HTTP 402 challenge, signs the payment locally and retries, refusing anything above `--max-amount`; `buy quote` shows the price without paying. Seven tools are registered by default; the tool that moves money directly is opt-in behind a budget or allowlist. Some services (e.g. larger Google Cloud VMs) require a Self zero-knowledge proof (age 18+, not OFAC-sanctioned). Launched 2026-10-13 by Celo Core Co.; beta. Services are priced per call (some, like SQD data, are free); the npm package is Apache-2.0.",
+  "url": "https://usebuy.ai",
+  "docs": "https://usebuy.ai/docs",
+  "tags": [
+    "payments",
+    "http-402",
+    "stablecoins",
+    "mcp",
+    "agent-commerce",
+    "celo"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "paid",
+  "status": "beta",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Payment is the credential: pay-per-request HTTP 402 with a Celo wallet; no account or API key. Local stdio MCP server via `buy mcp install`."
+  },
+  "related": [
+    "x402",
+    "machine-payments-protocol",
+    "pay-sh",
+    "x402-bazaar",
+    "agent-vault"
+  ],
+  "sources": [
+    "https://usebuy.ai",
+    "https://usebuy.ai/docs",
+    "https://registry.npmjs.org/@celo/buy",
+    "https://blockchain.news/news/celo-core-co-launches-buy-marketplace-autonomous-agent-payments"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Celo Core Co."
+}

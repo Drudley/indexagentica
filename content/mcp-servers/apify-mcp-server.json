@@ -1,0 +1,43 @@
+{
+  "id": "apify-mcp-server",
+  "name": "Apify MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted and open-source MCP server that lets agents run thousands of Apify Store Actors (scrapers, crawlers, automations) for social media, search, maps, e-commerce and any website.",
+  "description": "Connect to the hosted Streamable HTTP endpoint `https://mcp.apify.com` via OAuth or an `Authorization: Bearer <APIFY_TOKEN>` header (the legacy `/sse` endpoint has been removed), or run locally over stdio from npm (`@apify/actors-mcp-server`). Agentic payments without an Apify token: buy a prepaid token from AGI (agi.apify.com) with x402 or MPP, pay per request via direct x402 (USDC on Base, Pay Per Event Actors only), or use Skyfire. Apify plans: Free ($0 with $5/month to spend), then Starter $19, Scale $199 and Business $999 per month plus pay-as-you-go; Actors carry their own pricing.",
+  "url": "https://apify.com/mcp",
+  "repo": "https://github.com/apify/apify-mcp-server",
+  "docs": "https://docs.apify.com/platform/integrations/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "web-scraping",
+    "x402",
+    "oauth"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.apify.com/llms.txt",
+    "mcp_endpoint": "https://mcp.apify.com",
+    "auth": "oauth",
+    "notes": "OAuth or Bearer APIFY_TOKEN; unauthenticated requests get 401. Token-less paid runs via AGI (x402/MPP), direct x402 or Skyfire."
+  },
+  "related": [
+    "firecrawl-mcp-server",
+    "crawl4ai",
+    "x402",
+    "skyfire"
+  ],
+  "sources": [
+    "https://github.com/apify/apify-mcp-server",
+    "https://docs.apify.com/platform/integrations/mcp",
+    "https://apify.com/pricing",
+    "https://agi.apify.com"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Apify"
+}

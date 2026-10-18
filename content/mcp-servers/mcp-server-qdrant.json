@@ -1,0 +1,35 @@
+{
+  "id": "mcp-server-qdrant",
+  "name": "Qdrant MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Qdrant MCP server that acts as a semantic memory layer: `qdrant-store` saves information with metadata and `qdrant-find` retrieves it by similarity.",
+  "description": "Configured with environment variables (Qdrant URL or local path, API key, default collection, FastEmbed embedding model). Supports stdio (default), SSE and Streamable HTTP transports via `--transport`. Run with `uvx mcp-server-qdrant` or Docker.",
+  "url": "https://github.com/qdrant/mcp-server-qdrant",
+  "repo": "https://github.com/qdrant/mcp-server-qdrant",
+  "docs": "https://github.com/qdrant/mcp-server-qdrant#readme",
+  "tags": [
+    "mcp",
+    "memory",
+    "vector-database",
+    "semantic-search",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "qdrant",
+    "mem0-mcp",
+    "basic-memory",
+    "mcp-memory-service"
+  ],
+  "sources": [
+    "https://github.com/qdrant/mcp-server-qdrant",
+    "https://pypi.org/project/mcp-server-qdrant/"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Qdrant"
+}

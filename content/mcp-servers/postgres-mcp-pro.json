@@ -1,0 +1,35 @@
+{
+  "id": "postgres-mcp-pro",
+  "name": "Postgres MCP Pro",
+  "category": "mcp-servers",
+  "summary": "Open-source Postgres MCP server with database health checks, index tuning, EXPLAIN plans with hypothetical indexes, schema intelligence and safe, configurable SQL execution.",
+  "description": "Access modes include unrestricted and read-only with safe SQL parsing, so it can be pointed at development or production databases. Supports stdio and SSE transports. Installs from PyPI as `postgres-mcp` or via Docker.",
+  "url": "https://github.com/crystaldba/postgres-mcp",
+  "repo": "https://github.com/crystaldba/postgres-mcp",
+  "docs": "https://github.com/crystaldba/postgres-mcp#readme",
+  "tags": [
+    "mcp",
+    "postgres",
+    "database",
+    "sql",
+    "performance"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "supabase-mcp",
+    "neon-mcp-server",
+    "mcp-toolbox-databases",
+    "pgvector"
+  ],
+  "sources": [
+    "https://github.com/crystaldba/postgres-mcp",
+    "https://pypi.org/project/postgres-mcp/"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Crystal DBA"
+}

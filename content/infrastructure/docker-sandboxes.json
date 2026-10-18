@@ -1,0 +1,41 @@
+{
+  "id": "docker-sandboxes",
+  "name": "Docker Sandboxes",
+  "category": "infrastructure",
+  "summary": "Docker's `sbx` CLI runs coding agents like Claude Code and Codex in isolated microVM sandboxes, locally for free or on metered Docker-managed cloud compute.",
+  "description": "Local and cloud sandboxes have separate credentials, network policies and lifecycle controls; `sbx move` recreates a sandbox's filesystem on the other side. Features include an MCP gateway for sandboxed agents, reusable kits, GPU passthrough, SSH access from VS Code or Cursor, and a Sandboxes API/SDK for cloud sandboxes. Pricing: the CLI and local sandboxes are free (including commercial use); cloud compute is metered per second from $0.07/hour (Micro, 1 vCPU/2 GB) to $1.12/hour (XL, 16 vCPU/32 GB); centrally managed org policies are a separate paid subscription; model-provider charges are separate.",
+  "url": "https://www.docker.com/products/docker-sandboxes/",
+  "docs": "https://docs.docker.com/ai/sandboxes/",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "coding-agent",
+    "cli",
+    "cloud"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.docker.com/llms.txt",
+    "notes": "Releases and issue tracker: https://github.com/docker/sbx-releases."
+  },
+  "related": [
+    "e2b",
+    "microsandbox",
+    "sandbox-runtime",
+    "daytona",
+    "vercel-sandbox"
+  ],
+  "sources": [
+    "https://docs.docker.com/ai/sandboxes/",
+    "https://www.docker.com/products/docker-sandboxes/",
+    "https://docs.docker.com/ai/sandboxes/architecture/",
+    "https://github.com/docker/sbx-releases"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Docker"
+}

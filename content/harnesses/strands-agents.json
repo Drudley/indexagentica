@@ -1,0 +1,40 @@
+{
+  "id": "strands-agents",
+  "name": "Strands Agents",
+  "category": "harnesses",
+  "summary": "Open-source, model-driven SDK and ready-made harness for building AI agents in Python and TypeScript, with MCP, multi-agent patterns, memory, guardrails, tracing and evals.",
+  "description": "Runs in your own process with no hosted control plane. `create_harness()` / `createHarness()` returns a fully assembled agent with defaults for model, tools, memory, sessions and context management; the lower-level SDKs (`strands-agents` on PyPI, `@strands-agents/sdk` on npm) expose the agent loop, hooks and steering. First-class providers include Amazon Bedrock, Anthropic, OpenAI and Gemini. The monorepo also ships a `strands` CLI and an MCP server that teaches coding agents to build with Strands. The repo was renamed from strands-agents/sdk-python to strands-agents/harness-sdk.",
+  "url": "https://strandsagents.com/",
+  "repo": "https://github.com/strands-agents/harness-sdk",
+  "docs": "https://strandsagents.com/docs/user-guide/harness/",
+  "tags": [
+    "agent-framework",
+    "python",
+    "typescript",
+    "mcp",
+    "multi-agent",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://strandsagents.com/llms.txt"
+  },
+  "related": [
+    "openai-agents-sdk",
+    "langgraph",
+    "google-adk",
+    "amazon-bedrock-agentcore"
+  ],
+  "sources": [
+    "https://github.com/strands-agents/harness-sdk",
+    "https://strandsagents.com/docs/user-guide/harness/",
+    "https://strandsagents.com/llms.txt"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Strands Agents project"
+}

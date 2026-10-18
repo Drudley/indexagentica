@@ -1,0 +1,41 @@
+{
+  "id": "mlflow",
+  "name": "MLflow",
+  "category": "evals-observability",
+  "summary": "Open-source AI engineering platform for agents, LLMs and ML models: OpenTelemetry-based tracing, evaluation with 50+ metrics and LLM judges, prompt registry and an AI Gateway.",
+  "description": "Tracing works with any LLM provider and agent framework and supports Python, TypeScript/JavaScript and Java. Evaluation and production monitoring track quality metrics over time; the prompt registry versions prompts with lineage and supports automatic prompt optimization; the AI Gateway is an OpenAI-compatible endpoint with credential management, rate limits, fallbacks and traffic splitting. A setup wizard can launch Claude Code, Codex or OpenCode to add tracing to an app. Run your own MLflow server or connect to a Databricks workspace.",
+  "url": "https://mlflow.org/",
+  "repo": "https://github.com/mlflow/mlflow",
+  "docs": "https://mlflow.org/docs/latest/genai/",
+  "tags": [
+    "tracing",
+    "evals",
+    "llm-as-judge",
+    "prompt-management",
+    "opentelemetry",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://mlflow.org/llms.txt"
+  },
+  "related": [
+    "langfuse",
+    "arize-phoenix",
+    "opik",
+    "otel-genai-semconv"
+  ],
+  "sources": [
+    "https://github.com/mlflow/mlflow",
+    "https://mlflow.org/docs/latest/genai/tracing/",
+    "https://mlflow.org/docs/latest/genai/eval-monitor/",
+    "https://mlflow.org/llms.txt"
+  ],
+  "added": "2026-10-18",
+  "updated": "2026-10-18",
+  "last_verified": "2026-10-18",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MLflow project"
+}
