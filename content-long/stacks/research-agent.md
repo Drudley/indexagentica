@@ -67,7 +67,7 @@ sources:
   - title: E2B docs, Internet access
     url: https://docs.e2b.dev/network/internet-access
     accessed: 2026-10-02
-related: [web-search-apis, run-untrusted-code-in-a-sandbox, code-sandboxes, give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server]
+related: [web-search-apis, run-untrusted-code-in-a-sandbox, code-sandboxes, give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, convert-documents-to-markdown-for-agents]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

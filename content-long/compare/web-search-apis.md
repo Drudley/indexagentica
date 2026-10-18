@@ -89,7 +89,7 @@ sources:
   - title: Perplexity docs index (llms.txt)
     url: https://docs.perplexity.ai/llms.txt
     accessed: 2026-10-02
-related: [research-agent, connect-an-agent-to-a-remote-mcp-server, coding-agent-starter]
+related: [research-agent, connect-an-agent-to-a-remote-mcp-server, coding-agent-starter, convert-documents-to-markdown-for-agents]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

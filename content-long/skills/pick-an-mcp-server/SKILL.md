@@ -12,7 +12,7 @@ metadata:
   published: 2026-10-15
   tags: mcp, discovery, mcp-servers, selection, oauth
   entries: indexagentica-mcp, model-context-protocol, mcp-authorization, official-mcp-registry, mcp-inspector
-  related: indexagentica-lookup, connect-remote-mcp, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, publish-an-mcp-server
+  related: indexagentica-lookup, connect-remote-mcp, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, publish-an-mcp-server, database-mcp-servers
   sources: https://mcp.indexagentica.com/openapi.json https://mcp.indexagentica.com/.well-known/mcp/server-card.json https://indexagentica.com/api/mcp-servers.json https://indexagentica.com/schema/entry.schema.json https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization https://datatracker.ietf.org/doc/html/rfc9728
 ---
 
