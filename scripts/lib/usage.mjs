@@ -27,13 +27,13 @@ const HIT_PATH = '/v1/e';
 const RENDER = `function f(x){return Number(x||0).toLocaleString("en")}
 function t(x){var z=new Date(x);return isNaN(z)?"?":z.toISOString().slice(0,16).replace("T"," ")+" UTC"}
 function R(s){var W=s.windows,C=["last_24h","last_7d","all_time"],L=[
-["Page views",function(x){return x.site.page_views}],["Outbound clicks",function(x){return x.site.outbound_clicks}],["Skill downloads",function(x){return x.site.downloads.total}],
+["Page views",function(x){return x.site.page_views}],["Outbound clicks",function(x){return x.site.outbound_clicks}],["Skill downloads",function(x){return (x.site.skill_downloads||x.site.downloads).total}],
 ["MCP tool calls",function(x){return x.mcp.tool_calls}],["REST/API requests",function(x){return x.api.requests}],
 ["MCP + API by agents",function(x){return x.agent_vs_human.agent}],["MCP + API by humans (browsers)",function(x){return x.agent_vs_human.human}]];
 var h='<table class="usage"><thead><tr><th scope="col">Counted</th><th scope="col">24 h</th><th scope="col">7 days</th><th scope="col">All time</th></tr></thead><tbody>';
 L.forEach(function(r){h+='<tr><th scope="row">'+r[0]+"</th>";C.forEach(function(c){h+="<td>"+f(r[1](W[c]))+"</td>"});h+="</tr>"});
 function S(B,re){return Object.keys(B||{}).sort(function(a,z){return B[z]-B[a]||(a<z?-1:1)}).map(function(k){return k.replace(re,"")+" "+f(B[k])}).join(", ")}
-var A=W.all_time,K=S(A.mcp.tool_calls_by_tool,/[^a-z_]/g),D=S((A.site.downloads||{}).by_skill,/[^a-z0-9-]/g);
+var A=W.all_time,K=S(A.mcp.tool_calls_by_tool,/[^a-z_]/g),SD=A.site.skill_downloads,BS={};if(SD&&SD.by_skill){for(var q in SD.by_skill)BS[q]=SD.by_skill[q].total}else BS=(A.site.downloads||{}).by_skill;var D=S(BS,/[^a-z0-9-]/g);
 return h+'</tbody></table><p id="ia-usage-note">Site counts since '+t(s.since.site_beacon)+"; MCP/API since "+t(s.since.mcp_api)+". "+(K?"MCP tool calls by tool (all time): "+K+". ":"")+(D?"Skill downloads by skill (all time): "+D+". ":"")+(s.traffic=="outside"?"Our own test and agent traffic is excluded. ":"")+"Browser page views with JavaScript only, so crawlers and agents reading pages directly are not counted.</p>"}`;
 
 const render = new Function(`${RENDER}\nreturn { R: R, t: t };`)();
