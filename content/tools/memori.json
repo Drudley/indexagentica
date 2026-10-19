@@ -1,0 +1,44 @@
+{
+  "id": "memori",
+  "name": "Memori",
+  "category": "tools",
+  "summary": "Open-source, LLM- and datastore-agnostic memory layer for agents from Memori Labs: Python/TypeScript SDKs that wrap your LLM client, bring-your-own DB or Memori Cloud, plus MCP.",
+  "description": "Register an LLM client (e.g. OpenAI) with the SDK and conversations are persisted and recalled automatically, attributed to an entity and process. Self-host free under Apache-2.0 with your own database (BYODB), or use Memori Cloud: a free tier (5,000 memories created and 15,000 recalled) and production plans from $60K/year. Coding agents can connect without the SDK through the remote MCP server at `https://api.memorilabs.ai/mcp/` using `X-Memori-API-Key`, entity and process headers.",
+  "url": "https://memorilabs.ai/",
+  "repo": "https://github.com/MemoriLabs/Memori",
+  "docs": "https://memorilabs.ai/docs/memori-cloud/",
+  "tags": [
+    "memory",
+    "long-term-memory",
+    "mcp",
+    "python",
+    "typescript",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.memorilabs.ai/mcp/",
+    "auth": "api-key",
+    "llms_txt": "https://memorilabs.ai/llms.txt",
+    "notes": "Send X-Memori-API-Key, X-Memori-Entity-Id and X-Memori-Process-Id headers."
+  },
+  "related": [
+    "mem0",
+    "zep",
+    "letta",
+    "hindsight",
+    "supermemory"
+  ],
+  "sources": [
+    "https://github.com/MemoriLabs/Memori",
+    "https://memorilabs.ai/pricing",
+    "https://memorilabs.ai/docs/memori-cloud/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Memori Labs"
+}

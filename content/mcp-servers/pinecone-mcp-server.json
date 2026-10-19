@@ -1,0 +1,38 @@
+{
+  "id": "pinecone-mcp-server",
+  "name": "Pinecone Developer MCP Server",
+  "category": "mcp-servers",
+  "summary": "Pinecone's MCP server for coding assistants: search Pinecone docs, configure and manage indexes, upsert data and query indexes from Cursor, Claude and others.",
+  "description": "Runs locally with `npx -y @pinecone-database/mcp` (Node.js 20+) and a `PINECONE_API_KEY`; without a key it can still search the documentation. Pinecone also offers a separate Assistant MCP server per Pinecone Assistant, available as a managed remote endpoint or a self-hosted Docker container.",
+  "url": "https://docs.pinecone.io/guides/operations/mcp-server",
+  "repo": "https://github.com/pinecone-io/pinecone-mcp",
+  "docs": "https://docs.pinecone.io/guides/operations/mcp-server",
+  "tags": [
+    "mcp",
+    "pinecone",
+    "vector-database",
+    "rag"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "llms_txt": "https://docs.pinecone.io/llms.txt"
+  },
+  "related": [
+    "pinecone",
+    "mcp-server-qdrant",
+    "supabase-mcp"
+  ],
+  "sources": [
+    "https://github.com/pinecone-io/pinecone-mcp",
+    "https://docs.pinecone.io/guides/operations/mcp-server",
+    "https://www.npmjs.com/package/@pinecone-database/mcp"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pinecone"
+}

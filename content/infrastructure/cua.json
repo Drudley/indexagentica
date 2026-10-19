@@ -1,0 +1,42 @@
+{
+  "id": "cua",
+  "name": "Cua",
+  "category": "infrastructure",
+  "summary": "Open-source computer-use platform: full desktops for agents (Cua Spaces), a desktop-automation driver with MCP, local macOS/Linux VMs (Lume) and Cua Bench.",
+  "description": "**Cua Spaces** gives agents macOS VMs built locally on a Mac or Linux images, on your own machines or cloud account, with shared human/agent cursors and \"teleport\" of signed-in apps. **Cua Driver** lets agents inspect and operate native apps and browsers on macOS, Windows and Linux via CLI, MCP or typed SDKs. Also includes **Lume** (local VMs), the `cua` SDK/CLI for sandboxes, CUA-S1 small models for computer-use decisions and **Cua Bench** for tasks and evaluation. Licensing: MIT for the SDK, CLI, Driver, Lume and most of the repo; Cua Spaces and Cua Driver Bench are source-available under FSL-1.1-MIT. Spaces is free (up to 2 live sessions and 20 remote hours a month), Pro is $18/month and Teams $30/seat/month.",
+  "url": "https://cua.ai/",
+  "repo": "https://github.com/trycua/cua",
+  "docs": "https://cua.ai/docs",
+  "tags": [
+    "computer-use",
+    "desktop",
+    "sandbox",
+    "vm",
+    "mcp",
+    "macos"
+  ],
+  "license": "MIT AND FSL-1.1-MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://cua.ai/docs/llms.txt",
+    "notes": "Cua Driver MCP setup: https://cua.ai/docs/cua-driver/guides/connect-your-agent"
+  },
+  "related": [
+    "e2b-desktop",
+    "osworld",
+    "microsandbox",
+    "anchor-browser"
+  ],
+  "sources": [
+    "https://github.com/trycua/cua",
+    "https://cua.ai/pricing",
+    "https://cua.ai/docs/llms.txt",
+    "https://pypi.org/project/cua-agent/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cua (trycua)"
+}

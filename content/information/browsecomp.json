@@ -1,0 +1,34 @@
+{
+  "id": "browsecomp",
+  "name": "BrowseComp",
+  "category": "information",
+  "summary": "OpenAI's benchmark of 1,266 hard-to-find, short-answer questions that test how persistently and creatively browsing agents search the web.",
+  "description": "Answers are short and easy to verify against reference answers, so grading is simple; the paper frames it as analogous to programming competitions for coding agents: incomplete, but a useful measure of persistence and creativity in finding entangled information (arXiv 2504.12516). The reference implementation lives in `openai/simple-evals`, which stopped being updated for new models in July 2025 but still hosts BrowseComp, HealthBench and SimpleQA.",
+  "url": "https://arxiv.org/abs/2504.12516",
+  "repo": "https://github.com/openai/simple-evals",
+  "tags": [
+    "benchmark",
+    "web-browsing",
+    "search",
+    "agents",
+    "evals"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "gaia-benchmark",
+    "webarena",
+    "mind2web",
+    "humanitys-last-exam"
+  ],
+  "sources": [
+    "https://arxiv.org/abs/2504.12516",
+    "https://github.com/openai/simple-evals"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "e2b-desktop",
+  "name": "E2B Desktop Sandbox",
+  "category": "infrastructure",
+  "summary": "Open-source, isolated virtual Linux desktops for computer-use agents, built on E2B sandboxes, with Python and JavaScript SDKs and desktop streaming.",
+  "description": "Create a desktop with `Sandbox.create()` from `e2b-desktop` (Python) or `@e2b/desktop` (JavaScript) using an `E2B_API_KEY`, launch apps such as Chrome or VS Code, and stream the screen. Each sandbox is isolated and customizable. The SDK sources now live in the E2B monorepo; the e2b-dev/desktop repo keeps the sandbox template and examples, including Surf (an OpenAI computer-use agent app) and Open Computer Use. Usage is billed through an E2B account.",
+  "url": "https://github.com/e2b-dev/desktop",
+  "repo": "https://github.com/e2b-dev/desktop",
+  "docs": "https://docs.e2b.dev/template/examples/desktop",
+  "tags": [
+    "computer-use",
+    "desktop",
+    "sandbox",
+    "python",
+    "typescript"
+  ],
+  "license": "Apache-2.0",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "llms_txt": "https://docs.e2b.dev/llms.txt"
+  },
+  "related": [
+    "e2b",
+    "cua",
+    "osworld"
+  ],
+  "sources": [
+    "https://github.com/e2b-dev/desktop",
+    "https://docs.e2b.dev/template/examples/desktop"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "E2B"
+}

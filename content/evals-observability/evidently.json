@@ -1,0 +1,42 @@
+{
+  "id": "evidently",
+  "name": "Evidently",
+  "category": "evals-observability",
+  "summary": "Open-source Python framework to evaluate, test and monitor ML and LLM systems, with 100+ built-in metrics, LLM judges, test suites for CI and a monitoring UI.",
+  "description": "Reports compute data, ML and LLM quality evals (classification to RAG, text descriptors such as sentiment, length or denial detection, and LLM-as-a-judge); any Report becomes a Test Suite by adding pass/fail conditions, which suits regression testing and CI/CD checks. The monitoring UI can be self-hosted or used through Evidently Cloud, which Evidently says has a free tier plus extra features such as dataset and user management, alerting and no-code evals. Install with `pip install evidently`.",
+  "url": "https://www.evidentlyai.com/",
+  "repo": "https://github.com/evidentlyai/evidently",
+  "docs": "https://docs.evidentlyai.com/",
+  "tags": [
+    "evals",
+    "llm-evaluation",
+    "monitoring",
+    "testing",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.evidentlyai.com/llms.txt"
+  },
+  "related": [
+    "deepeval",
+    "promptfoo",
+    "arize-phoenix",
+    "langfuse",
+    "trulens"
+  ],
+  "sources": [
+    "https://github.com/evidentlyai/evidently",
+    "https://www.evidentlyai.com/",
+    "https://pypi.org/project/evidently/",
+    "https://docs.evidentlyai.com/llms.txt"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Evidently AI"
+}

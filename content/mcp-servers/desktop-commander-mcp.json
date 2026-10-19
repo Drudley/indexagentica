@@ -1,0 +1,39 @@
+{
+  "id": "desktop-commander-mcp",
+  "name": "Desktop Commander MCP",
+  "category": "mcp-servers",
+  "summary": "MCP server that gives AI clients terminal control, process management, file search and diff-based editing on your machine, locally or via a remote MCP endpoint.",
+  "description": "Runs long-lived terminal commands with output streaming and pagination, manages processes and interactive sessions (SSH, databases, dev servers), executes Python, Node.js or R in memory, reads and edits text, Excel, PDF and DOCX files, and logs tool calls locally for audit. Install with `npx @wonderwhy-er/desktop-commander@latest setup`, a macOS script, Smithery or Docker for isolation. The local server is free and open source; Desktop Commander Remote MCP (for ChatGPT, Claude web and other remote clients) is free up to 10,000 tool calls a month, with Pro at $20/month for unlimited calls.",
+  "url": "https://desktopcommander.app/",
+  "repo": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "docs": "https://github.com/wonderwhy-er/DesktopCommanderMCP#readme",
+  "tags": [
+    "mcp",
+    "terminal",
+    "filesystem",
+    "local",
+    "remote-mcp"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.desktopcommander.app",
+    "notes": "Remote MCP needs a Desktop Commander account and a connected device; the local npx server needs no account."
+  },
+  "related": [
+    "mcp-reference-servers",
+    "serena",
+    "claude-code"
+  ],
+  "sources": [
+    "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "https://desktopcommander.app/pricing",
+    "https://www.npmjs.com/package/@wonderwhy-er/desktop-commander"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Desktop Commander (wonderwhy-er)"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "slack-mcp-server",
+  "name": "Slack MCP Server",
+  "category": "mcp-servers",
+  "summary": "Slack's official remote MCP server at mcp.slack.com: search messages, files, users and channels, read and send messages, and manage canvases and lists.",
+  "description": "JSON-RPC 2.0 over Streamable HTTP at `https://mcp.slack.com/mcp` (no SSE and no Dynamic Client Registration). MCP clients must be backed by a registered Slack app with a fixed app ID; only Slack Marketplace-published or internal apps may use MCP, and workspace admins approve and manage MCP client integrations. Users authorize through Slack OAuth (user tokens). Tools are rate-limited like the equivalent Web API methods.",
+  "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+  "docs": "https://docs.slack.dev/ai/slack-mcp-server/",
+  "tags": [
+    "mcp",
+    "slack",
+    "messaging",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.slack.com/mcp",
+    "auth": "oauth",
+    "llms_txt": "https://docs.slack.dev/llms.txt",
+    "notes": "OAuth metadata at https://mcp.slack.com/.well-known/oauth-protected-resource. Requires a Marketplace or internal Slack app."
+  },
+  "related": [
+    "atlassian-rovo-mcp",
+    "linear-mcp",
+    "notion-mcp",
+    "intercom-mcp"
+  ],
+  "sources": [
+    "https://docs.slack.dev/ai/slack-mcp-server/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Slack (Salesforce)"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "redis-mcp-server",
+  "name": "Redis MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Redis MCP server: lets agents read and write strings, hashes, lists, sets, sorted sets, streams, JSON and pub/sub, and manage vector indexes and search.",
+  "description": "Also includes a `docs` tool that searches Redis documentation and server-management tools for database info. Supports the stdio transport (the README says streamable HTTP will come later), Redis ACL users, and EntraID authentication for Azure Managed Redis. Install from PyPI as `redis-mcp-server` (run with `uvx`) or use the `mcp/redis` Docker image. For a managed memory layer instead of raw data access, see Redis Agent Memory.",
+  "url": "https://redis.io/docs/latest/integrate/redis-mcp/",
+  "repo": "https://github.com/redis/mcp-redis",
+  "docs": "https://redis.io/docs/latest/integrate/redis-mcp/",
+  "tags": [
+    "mcp",
+    "redis",
+    "database",
+    "vector-search",
+    "cache"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "redis-agent-memory",
+    "mcp-toolbox-databases",
+    "mongodb-mcp-server",
+    "postgres-mcp-pro"
+  ],
+  "sources": [
+    "https://github.com/redis/mcp-redis",
+    "https://pypi.org/project/redis-mcp-server/",
+    "https://redis.io/docs/latest/integrate/redis-mcp/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Redis"
+}

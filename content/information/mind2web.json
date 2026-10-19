@@ -1,0 +1,37 @@
+{
+  "id": "mind2web",
+  "name": "Mind2Web",
+  "category": "information",
+  "summary": "Dataset and benchmark for generalist web agents: 2,000+ open-ended tasks on 137 real websites across 31 domains, with crowdsourced action sequences (NeurIPS 2023).",
+  "description": "Training data is on Hugging Face (`osunlp/Mind2Web`); test splits (cross-task, cross-website, cross-domain) are distributed as a zip to limit contamination and should not be redistributed unzipped. Follow-ups from the same group include Multimodal-Mind2Web (HTML paired with screenshots) and Online-Mind2Web: 300 tasks on 136 live websites, judged by WebJudge, with a public leaderboard. Dataset CC-BY-4.0; code MIT.",
+  "url": "https://osu-nlp-group.github.io/Mind2Web/",
+  "repo": "https://github.com/OSU-NLP-Group/Mind2Web",
+  "docs": "https://huggingface.co/datasets/osunlp/Mind2Web",
+  "tags": [
+    "benchmark",
+    "dataset",
+    "web-agents",
+    "browser",
+    "evals"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "webarena",
+    "browsecomp",
+    "osworld",
+    "hf-datasets"
+  ],
+  "sources": [
+    "https://github.com/OSU-NLP-Group/Mind2Web",
+    "https://arxiv.org/abs/2306.06070",
+    "https://github.com/OSU-NLP-Group/Online-Mind2Web",
+    "https://huggingface.co/datasets/osunlp/Mind2Web"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OSU NLP Group"
+}

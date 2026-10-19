@@ -1,0 +1,37 @@
+{
+  "id": "docker-mcp-gateway",
+  "name": "Docker MCP Gateway",
+  "category": "tools",
+  "summary": "Docker's open-source MCP gateway (the docker mcp CLI plugin behind MCP Toolkit): one endpoint that runs MCP servers in isolated containers and injects credentials.",
+  "description": "Clients connect to the Gateway instead of each server; it starts the right server as a Docker container on demand with restricted privileges, network access and resources, injects secrets from Docker Desktop secrets management, handles OAuth flows, and provides logging and call tracing. Runs automatically with Docker Desktop's MCP Toolkit, or directly as `docker mcp` for advanced use. Pairs with the Docker MCP Catalog of containerized servers.",
+  "url": "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/",
+  "repo": "https://github.com/docker/mcp-gateway",
+  "docs": "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/",
+  "tags": [
+    "mcp",
+    "gateway",
+    "docker",
+    "containers",
+    "security"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.docker.com/llms.txt"
+  },
+  "related": [
+    "docker-mcp-catalog",
+    "docker-sandboxes",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/docker/mcp-gateway",
+    "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Docker"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "netlify-mcp-server",
+  "name": "Netlify MCP Server",
+  "category": "mcp-servers",
+  "summary": "Netlify's official MCP server: lets code agents create, deploy and manage Netlify projects, env vars, forms, extensions and access controls via the Netlify API and CLI.",
+  "description": "Netlify recommends the remote server at `https://netlify-mcp.netlify.app/mcp` (set up with `npx -y add-mcp https://netlify-mcp.netlify.app/mcp`); the local server runs with `npx -y @netlify/mcp` (Node.js 22+). Netlify also publishes agent skills for Functions, Edge Functions, Blobs, Database, deploys and more (`npx skills add netlify/context-and-tools`). Requires a Netlify account.",
+  "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+  "repo": "https://github.com/netlify/netlify-mcp",
+  "docs": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+  "tags": [
+    "mcp",
+    "deployment",
+    "hosting",
+    "netlify",
+    "web"
+  ],
+  "license": "ISC",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://netlify-mcp.netlify.app/mcp",
+    "llms_txt": "https://docs.netlify.com/llms.txt"
+  },
+  "related": [
+    "vercel-mcp",
+    "cloudflare-mcp",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/netlify/netlify-mcp",
+    "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+    "https://www.npmjs.com/package/@netlify/mcp"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Netlify"
+}

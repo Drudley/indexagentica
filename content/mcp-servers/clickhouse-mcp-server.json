@@ -1,0 +1,36 @@
+{
+  "id": "clickhouse-mcp-server",
+  "name": "ClickHouse MCP Server",
+  "category": "mcp-servers",
+  "summary": "ClickHouse's official MCP server: run SQL, list databases and tables on a ClickHouse cluster (read-only by default), with optional embedded chDB queries.",
+  "description": "Tools: `run_query` (with typed query parameters), `list_databases`, `list_tables` (paginated, with column metadata) and, with the optional `chdb` extra, `run_chdb_select_query` on the embedded chDB engine. Queries run read-only by default (`CLICKHOUSE_ALLOW_WRITE_ACCESS=false`); writes need an explicit opt-in and destructive statements such as `DROP` need a second flag, though the README notes the real security boundary is the ClickHouse user's grants. Defaults to stdio; HTTP/SSE transports require authentication by default and expose a `/health` endpoint. Install from PyPI as `mcp-clickhouse` (e.g. via `uvx`).",
+  "url": "https://github.com/ClickHouse/mcp-clickhouse",
+  "repo": "https://github.com/ClickHouse/mcp-clickhouse",
+  "docs": "https://clickhouse.com/docs/guides/use-cases/ai-ml/MCP",
+  "tags": [
+    "mcp",
+    "clickhouse",
+    "database",
+    "sql",
+    "analytics"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "postgres-mcp-pro",
+    "mcp-toolbox-databases",
+    "motherduck-mcp-server",
+    "mongodb-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/ClickHouse/mcp-clickhouse",
+    "https://pypi.org/project/mcp-clickhouse/",
+    "https://clickhouse.com/docs/guides/use-cases/ai-ml/MCP"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "ClickHouse"
+}

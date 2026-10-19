@@ -1,0 +1,38 @@
+{
+  "id": "elastic-agent-builder-mcp",
+  "name": "Elastic Agent Builder MCP Server",
+  "category": "mcp-servers",
+  "summary": "Elastic's built-in MCP endpoint in Kibana (Elastic 9.2+ and Serverless) exposing Agent Builder tools, such as ES|QL queries, to external MCP hosts.",
+  "description": "Endpoint: `{KIBANA_URL}/api/agent_builder/mcp` (or `/s/{SPACE_NAME}/api/agent_builder/mcp` for a custom space). Authenticate with an API key (Elastic Stack deployments and Serverless) or OAuth 2.1 through an application connection (Serverless only, per-user consent). Exposes built-in and custom Agent Builder tools, including Elastic Workflows; a few built-in tools are not available over MCP. Agent Builder requires the appropriate Elastic Stack subscription or Serverless feature tier. It supersedes the standalone `elastic/mcp-server-elasticsearch`, which is deprecated and only gets critical security updates.",
+  "url": "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server",
+  "docs": "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server",
+  "tags": [
+    "mcp",
+    "elasticsearch",
+    "search",
+    "database",
+    "esql"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "llms_txt": "https://www.elastic.co/docs/llms.txt",
+    "notes": "Per-deployment endpoint {KIBANA_URL}/api/agent_builder/mcp. API key on all deployments; OAuth 2.1 on Serverless projects."
+  },
+  "related": [
+    "mcp-toolbox-databases",
+    "mongodb-mcp-server",
+    "redis-mcp-server"
+  ],
+  "sources": [
+    "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server",
+    "https://www.elastic.co/docs/explore-analyze/ai-features/elastic-agent-builder",
+    "https://github.com/elastic/mcp-server-elasticsearch"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Elastic"
+}

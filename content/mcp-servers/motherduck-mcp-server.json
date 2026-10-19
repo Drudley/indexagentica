@@ -1,0 +1,43 @@
+{
+  "id": "motherduck-mcp-server",
+  "name": "MotherDuck / DuckDB MCP Server",
+  "category": "mcp-servers",
+  "summary": "MCP servers for DuckDB and MotherDuck: a managed remote server at api.motherduck.com/mcp and an open-source local server for DuckDB files, in-memory DBs and S3.",
+  "description": "**Remote (managed):** `https://api.motherduck.com/mcp` over HTTP, OAuth for most clients or `Authorization: Bearer <motherduck_token>` for backend clients; runs read-only and read-write SQL, explores schemas, attaches shares, answers DuckDB/MotherDuck docs questions, and manages Dives, Flights and Guides. **Local (this repo):** `uvx mcp-server-motherduck --db-path ...` connects to local DuckDB files (read-only by default), in-memory databases, S3-hosted databases or MotherDuck, and can read from and write to the local filesystem. MotherDuck itself has a Lite plan from $0 and a Business plan at $250 per org per month plus usage.",
+  "url": "https://motherduck.com/docs/sql-reference/mcp/",
+  "repo": "https://github.com/motherduckdb/mcp-server-motherduck",
+  "docs": "https://motherduck.com/docs/sql-reference/mcp/",
+  "tags": [
+    "mcp",
+    "duckdb",
+    "motherduck",
+    "database",
+    "sql",
+    "analytics"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.motherduck.com/mcp",
+    "auth": "oauth",
+    "llms_txt": "https://motherduck.com/docs/llms.txt",
+    "notes": "OAuth for interactive clients; backend clients can send Authorization: Bearer <motherduck_token>. The MIT license covers the local server."
+  },
+  "related": [
+    "clickhouse-mcp-server",
+    "postgres-mcp-pro",
+    "mcp-toolbox-databases",
+    "neon-mcp-server"
+  ],
+  "sources": [
+    "https://motherduck.com/docs/sql-reference/mcp/",
+    "https://github.com/motherduckdb/mcp-server-motherduck",
+    "https://motherduck.com/product/pricing/"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MotherDuck"
+}
