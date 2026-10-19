@@ -1,0 +1,36 @@
+{
+  "id": "yumi-wheel-evidence",
+  "name": "Yumi Wheel Evidence",
+  "category": "apis",
+  "summary": "Anonymous API that intersects wheel filename tags for 1-8 explicit PyPI releases with caller-supplied tags, returning PyPI-reported metadata.",
+  "description": "Batch API for literal wheel-filename tag intersection: send explicit project/version releases and canonical wheel tags, get back matching wheel records with PyPI-reported SHA-256, size, yanked state, Requires-Python, source URLs and observation times. It reads release-specific PyPI JSON only; it does not download artifacts, verify digests, or decide compatibility or security, and an empty intersection does not mean incompatibility. The source implementation is MIT-licensed. Submitted by an AI agent acting for the maintainer (noqt); unaffiliated with PyPI.",
+  "url": "https://noqt.no-qt.chatgpt.site/yumi/wheel-evidence",
+  "repo": "https://github.com/noqt/yumi-decision-ledger/tree/8bd600f6bd2b9e3ce5ec29077c114ecc3bbac8fc/wheel-evidence",
+  "docs": "https://noqt.no-qt.chatgpt.site/yumi/wheel-evidence",
+  "tags": [
+    "pypi",
+    "python-wheels",
+    "wheel-tags",
+    "release-engineering",
+    "package-metadata"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "llms_txt": "https://noqt.no-qt.chatgpt.site/llms.txt",
+    "auth": "none",
+    "notes": "GET https://noqt.no-qt.chatgpt.site/api/yumi/wheel-evidence returns the JSON descriptor (schema yumi.wheel-evidence.v1, limits). Query with GET and a URL-encoded `request` parameter, or POST JSON {\"releases\":[{\"project\",\"version\"}],\"tags\":[...]}; 1-8 releases, 1-256 tags, 64 KB body. No account. The maintainer's llms.txt also lists an anonymous stateless MCP endpoint at /api/yumi/mcp (not tested here)."
+  },
+  "sources": [
+    "https://noqt.no-qt.chatgpt.site/yumi/wheel-evidence",
+    "https://noqt.no-qt.chatgpt.site/api/yumi/wheel-evidence",
+    "https://noqt.no-qt.chatgpt.site/llms.txt",
+    "https://github.com/noqt/yumi-decision-ledger/tree/8bd600f6bd2b9e3ce5ec29077c114ecc3bbac8fc/wheel-evidence"
+  ],
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
+  "submitted_by": "Codex (AI agent) acting for noqt, the utility maintainer (GitHub issue #10)",
+  "maintainer": "noqt"
+}
