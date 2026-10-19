@@ -5,6 +5,7 @@ import path from 'node:path';
 import { loadLongform, validateLongform } from './lib/longform.mjs';
 import { createZip } from './lib/zip.mjs';
 import { markdown, rewriteLinks, esc } from './markdown.mjs';
+import { DOWNLOAD_BASE } from './site.config.mjs';
 
 export const LF = {
   guide: { route: 'guides', name: 'Guides', singular: 'Guide', description: 'Step-by-step guides for building with and for AI agents.' },
@@ -17,6 +18,8 @@ export const LP = {
   index: (t) => `/${LF[t].route}/`, page: (t, id) => `/${LF[t].route}/${id}/`, md: (t, id) => `/${LF[t].route}/${id}.md`,
   api: '/api/longform.json', apiType: (t) => `/api/longform/${LF[t].route}.json`, apiItem: (t, id) => `/api/longform/${LF[t].route}/${id}.json`,
   skillMd: (id) => `/skills/${id}/SKILL.md`, zip: (id) => `/skills/${id}.zip`, skillFile: (id, f) => `/skills/${id}/${f}`,
+  // Absolute, counted download URLs (MCP Worker; 302 to the static files above). For agent-facing outputs only.
+  dlSkillMd: (id) => `${DOWNLOAD_BASE}/skills/${id}/SKILL.md`, dlZip: (id) => `${DOWNLOAD_BASE}/skills/${id}.zip`,
 };
 const BODY_LINK = /\]\(\s*entry:([a-z0-9-]+)\s*\)/g;
 
@@ -72,7 +75,7 @@ export function prepareLongform(ctx) {
     entries: x.refs,
     links: {
       html: abs(LP.page(x.type, x.item.id)), markdown: abs(LP.md(x.type, x.item.id)), json: abs(LP.apiItem(x.type, x.item.id)),
-      ...(x.type === 'skill' ? { skill_md: abs(LP.skillMd(x.item.id)), zip: abs(LP.zip(x.item.id)) } : {}),
+      ...(x.type === 'skill' ? { skill_md: LP.dlSkillMd(x.item.id), zip: LP.dlZip(x.item.id) } : {}),
       source: `${REPO_URL}/blob/main/${x.rel}`,
     },
   });
@@ -101,7 +104,7 @@ export function prepareLongform(ctx) {
       it.tags?.length && `- tags: ${it.tags.join(', ')}`,
       x.refs.length && `- entries: ${x.refs.map((i) => `${byId[i].name} (${abs(P.entry(i))})`).join('; ')}`,
       `- page: ${abs(LP.page(x.type, it.id))}`, `- markdown: ${abs(LP.md(x.type, it.id))}`,
-      x.type === 'skill' && `- download: ${abs(LP.zip(it.id))} (zip), ${abs(LP.skillMd(it.id))} (SKILL.md)`,
+      x.type === 'skill' && `- download: ${LP.dlZip(it.id)} (zip), ${LP.dlSkillMd(it.id)} (SKILL.md)`,
     ].filter(Boolean);
     if (x.type === 'guide' && x.data.prerequisites?.length) L.push('', 'Prerequisites:', '', ...x.data.prerequisites.map((p) => `- ${p}`));
     if (x.type === 'comparison') {
@@ -127,7 +130,7 @@ export function prepareLongform(ctx) {
       ...(x.type === 'guide' ? { prerequisites: x.data.prerequisites || [] } : {}),
       ...(x.type === 'comparison' ? { comparison: comparisonData(x) } : {}),
       ...(x.type === 'stack' ? { stack: stackData(x) } : {}),
-      ...(x.type === 'skill' ? { skill: { name: it.id, description: x.data.description, license: x.data.license, compatibility: x.data.compatibility, version: it.version, files: x.files.map((f) => ({ path: f, url: abs(LP.skillFile(it.id, f)) })), skill_md: abs(LP.skillMd(it.id)), zip: abs(LP.zip(it.id)) } } : {}),
+      ...(x.type === 'skill' ? { skill: { name: it.id, description: x.data.description, license: x.data.license, compatibility: x.data.compatibility, version: it.version, files: x.files.map((f) => ({ path: f, url: abs(LP.skillFile(it.id, f)) })), skill_md: LP.dlSkillMd(it.id), zip: LP.dlZip(it.id) } } : {}),
       entries_detail: x.refs.map(entryRef),
       related: x.related.map(backref),
       sources: sourcesOf(x) || [],

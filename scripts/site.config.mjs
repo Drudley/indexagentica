@@ -14,6 +14,10 @@ export const REPO_URL = `https://github.com/${REPO}`;
 export const SITE_URL = (process.env.SITE_URL || 'https://indexagentica.com').replace(/\/+$/, '');
 export const BASE_PATH = (process.env.BASE_PATH ?? new URL(SITE_URL).pathname).replace(/\/+$/, '');
 export const CNAME = (process.env.CNAME || '').trim();
+// Counted skill download links for agents (llms.txt, llms-full.txt, JSON API, MCP get_content):
+// GET {DOWNLOAD_BASE}/skills/<id>.zip | /skills/<id>/SKILL.md records a download in the MCP Worker and
+// 302-redirects to the static file here. HTML download buttons keep linking to the static files (click beacon).
+export const DOWNLOAD_BASE = (process.env.DOWNLOAD_BASE || 'https://mcp.indexagentica.com').replace(/\/+$/, '');
 
 // Categories live in schema/categories.json (single source of truth; see scripts/sync.mjs).
 export const CATEGORIES = loadCategories();

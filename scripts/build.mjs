@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
-import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES } from './site.config.mjs';
+import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES, DOWNLOAD_BASE } from './site.config.mjs';
 // Remote MCP server + REST mirror (separate repo: https://github.com/Drudley/indexagentica-mcp).
 const MCP_BASE = 'https://mcp.indexagentica.com';
 const MCP_URL = `${MCP_BASE}/mcp`;
@@ -502,6 +502,7 @@ unzip -o /tmp/skill.zip -d ~/.claude/skills/</code></pre>
 <li><strong>Page views</strong>: the page's path, sent by one small inline script when a page loads in a browser with JavaScript.</li>
 <li><strong>Outbound clicks</strong> on a listing's links on its entry page: the entry id and the destination host (not the full URL).</li>
 <li><strong>Skill downloads</strong> clicked on the site: the skill id and whether it was the zip or <code>SKILL.md</code>.</li>
+<li><strong>Direct skill downloads</strong> through the download links we publish for agents (<code>${esc(DOWNLOAD_BASE)}/skills/&lt;id&gt;.zip</code> and <code>/skills/&lt;id&gt;/SKILL.md</code> in <code>llms.txt</code> and the JSON API), which redirect to the file on this site: the skill id, zip or <code>SKILL.md</code>, User-Agent class and country. <code>HEAD</code> requests and known crawlers or monitors are counted separately, not as downloads.</li>
 <li><strong>MCP and REST API requests</strong> to <code>mcp.indexagentica.com</code>: route, tool name, client name and version, a truncated User-Agent and whether it looks like a browser (counted as human) or not (counted as agent), country and network (ASN) as reported by Cloudflare, and result count and query length (not the query text).</li>
 </ul>
 <p>What is not collected: no cookies, no localStorage, no user or device identifiers, no fingerprinting, no referrers or query strings, no third-party scripts, ads or trackers. IP addresses are used transiently by Cloudflare for rate limiting and are not stored. The script sends nothing if your browser has Do Not Track or Global Privacy Control turned on, or if it is an automated browser (<code>navigator.webdriver</code>).</p>
@@ -545,7 +546,7 @@ const llms = [`# ${SITE_NAME}`, '', `> ${TAGLINE} ${plural(entries.length, 'entr
 for (const t of LONG.ORDER) {
   const list = LONG.items.filter((x) => x.type === t);
   llms.push(`## ${lfHeading(t)}`, '', `${LF[t].description} HTML: ${abs(LP.index(t))} JSON: ${abs(LP.apiType(t))}`, '');
-  list.forEach((x) => llms.push(`- [${x.item.title}](${abs(LP.md(t, x.item.id))}): ${x.item.summary || x.item.description}${t === 'skill' ? ` (zip: ${abs(LP.zip(x.item.id))})` : ''}`));
+  list.forEach((x) => llms.push(`- [${x.item.title}](${abs(LP.md(t, x.item.id))}): ${x.item.summary || x.item.description}${t === 'skill' ? ` (zip: ${LP.dlZip(x.item.id)})` : ''}`));
   if (!list.length) llms.push('- (nothing published yet)');
   llms.push('');
 }
@@ -601,8 +602,8 @@ write(P.openapi, json({
     '/api/longform/{route}.json': { get: { operationId: 'getLongformType', summary: 'Published long-form items of one type', parameters: [lfRoute], responses: ok({ type: 'object', properties: { ...metaProps, type: { type: 'string', enum: LONG.ORDER }, name: { type: 'string' }, count: { type: 'integer' }, items: { type: 'array', items: ref('LongformSummary') } } }, 'Long-form items of one type') } },
     '/api/longform/{route}/{id}.json': { get: { operationId: 'getLongformItem', summary: 'One long-form item: front matter, raw markdown, rendered HTML, comparison rows or stack components, links', parameters: [lfRoute, lfId], responses: ok(ref('LongformItem'), 'Long-form item') } },
     '/{route}/{id}.md': { get: { operationId: 'getLongformMarkdown', summary: 'One long-form item as markdown with front matter (scheme links resolved to absolute URLs)', parameters: [lfRoute, lfId], responses: ok({ type: 'string' }, 'Markdown', 'text/markdown') } },
-    '/skills/{id}/SKILL.md': { get: { operationId: 'getSkillFile', summary: 'Raw SKILL.md of a published skill', parameters: [lfId], responses: ok({ type: 'string' }, 'SKILL.md', 'text/markdown') } },
-    '/skills/{id}.zip': { get: { operationId: 'getSkillZip', summary: 'Zip of a published skill folder (unpacks to {id}/SKILL.md)', parameters: [lfId], responses: ok({ type: 'string', contentEncoding: 'binary' }, 'Zip archive', 'application/zip') } },
+    '/skills/{id}/SKILL.md': { get: { operationId: 'getSkillFile', summary: 'Raw SKILL.md of a published skill', description: `The skill_md links in the JSON API use the counted URL ${DOWNLOAD_BASE}/skills/{id}/SKILL.md, which redirects (302) here.`, parameters: [lfId], responses: ok({ type: 'string' }, 'SKILL.md', 'text/markdown') } },
+    '/skills/{id}.zip': { get: { operationId: 'getSkillZip', summary: 'Zip of a published skill folder (unpacks to {id}/SKILL.md)', description: `The zip links in the JSON API use the counted URL ${DOWNLOAD_BASE}/skills/{id}.zip, which redirects (302) here.`, parameters: [lfId], responses: ok({ type: 'string', contentEncoding: 'binary' }, 'Zip archive', 'application/zip') } },
     '/schema/entry.schema.json': { get: { operationId: 'getEntrySchema', summary: 'JSON Schema for one entry', responses: ok({ type: 'object' }, 'JSON Schema', 'application/schema+json') } },
     '/contribute.json': { get: { operationId: 'getContributionGuide', summary: 'Machine-readable contribution guide (rules, entry template, PR and issue paths)', responses: ok({ type: 'object', properties: { ...metaProps, contribute: { type: 'object' } } }, 'Contribution guide') } },
     '/api/requests.json': { get: { operationId: 'getRequests', summary: 'Most-requested listings snapshot (refreshed every 6 hours). Pending items are unverified; url only for verified/listed items. To add a request, POST to the live endpoint (see description).', description: `Live list and submissions: GET/POST ${REQUESTS_URL} (also the MCP tool request_listing on ${MCP_URL}); documented in ${MCP_BASE}/openapi.json.`, responses: ok({ type: 'object', properties: { ...metaProps, source: { type: 'string', format: 'uri' }, live: { type: 'string', format: 'uri' }, fetched: { type: 'boolean' }, total: { type: 'integer' }, requests: { type: 'array', items: { type: 'object', properties: { wanted: { type: 'string' }, category: { type: 'string' }, votes: { type: 'integer' }, status: { type: 'string', enum: ['pending', 'verified', 'listed'] }, first_seen: { type: 'string', format: 'date-time' }, last_seen: { type: 'string', format: 'date-time' }, url: { type: 'string', format: 'uri' }, entry_id: { type: 'string' } } } } } }, 'Requests') } },
