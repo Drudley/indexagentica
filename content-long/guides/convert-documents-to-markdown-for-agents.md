@@ -56,7 +56,7 @@ sources:
   - title: Docling Technical Report (arXiv 2408.09869), the test PDF
     url: https://arxiv.org/abs/2408.09869
     accessed: 2026-10-18
-related: [vector-databases-for-agents, give-an-agent-long-term-memory, research-agent, web-search-apis, connect-an-agent-to-a-remote-mcp-server, run-untrusted-code-in-a-sandbox]
+related: [vector-databases-for-agents, give-an-agent-long-term-memory, research-agent, web-search-apis, connect-an-agent-to-a-remote-mcp-server, run-untrusted-code-in-a-sandbox, data-analysis-agent]
 last_verified: 2026-10-18
 published: 2026-10-18
 ---

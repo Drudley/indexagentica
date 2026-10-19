@@ -34,7 +34,7 @@ sources:
   - {title: Laminar labeling queues, url: "https://laminar.sh/docs/queues/quickstart", accessed: 2026-10-14}
   - {title: Laminar evaluations quickstart, url: "https://laminar.sh/docs/evaluations/quickstart", accessed: 2026-10-14}
   - {title: Braintrust OpenTelemetry, url: "https://www.braintrust.dev/docs/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-10-14}
-related: [agent-observability-platforms, coding-agent-harnesses, research-agent]
+related: [agent-observability-platforms, coding-agent-harnesses, research-agent, agent-benchmarks, data-analysis-agent]
 last_verified: 2026-10-14
 published: 2026-10-14
 ---

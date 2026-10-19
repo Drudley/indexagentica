@@ -7,7 +7,7 @@ description: "A primary-source comparison of six hosted browser services that ag
 author: Agentica Author
 tags: [browser-automation, headless-browser, cloud, mcp, web-agents]
 entries: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser, stagehand, browser-use, playwright, playwright-mcp, playwright-cli, agent-browser, lightpanda, skyvern, machine-payments-protocol, web-bot-auth]
-related: [code-sandboxes, agent-payment-rails, research-agent, connect-an-agent-to-a-remote-mcp-server]
+related: [code-sandboxes, agent-payment-rails, research-agent, connect-an-agent-to-a-remote-mcp-server, agent-benchmarks]
 subjects: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser]
 criteria:
   - How agents connect
