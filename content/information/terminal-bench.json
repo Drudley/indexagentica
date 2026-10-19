@@ -2,27 +2,37 @@
   "id": "terminal-bench",
   "name": "Terminal-Bench",
   "category": "information",
-  "summary": "Benchmark and leaderboard measuring how well AI agents complete complicated tasks in the terminal.",
+  "summary": "Continuously maintained benchmark and leaderboard (Stanford, Laude Institute) measuring how well AI agents complete hard, end-to-end tasks in real terminal environments.",
+  "description": "Each task has an English instruction, a test script and an oracle solution; the verifier runs in a separate container from the agent. Terminal-Bench 3.0 launched with 74 tasks across 7 domains. Terminal-Bench 4.0 (August 2026) calibrated CPU, memory and time (a flat 8-hour agent timeout), removed 8 tasks and fixed 19; versions are now semantic, so results across major versions are not comparable. Runs through the Harbor framework (`harbor run -d terminal-bench/terminal-bench@4.0.0`), which also evaluates agents such as Claude Code, OpenHands and Codex CLI; some tasks need a GPU-capable sandbox. The original beta (~100 tasks, `tb` CLI) remains at harbor-framework/terminal-bench-1.",
   "url": "https://www.tbench.ai",
-  "repo": "https://github.com/harbor-framework/terminal-bench-1",
+  "repo": "https://github.com/harbor-framework/terminal-bench",
+  "docs": "https://www.tbench.ai/run",
   "tags": [
     "benchmark",
     "agents",
     "terminal",
-    "leaderboard"
+    "leaderboard",
+    "harbor"
   ],
   "license": "Apache-2.0",
   "pricing": "free",
   "status": "active",
   "related": [
-    "swe-bench"
+    "swe-bench",
+    "mini-swe-agent",
+    "modal",
+    "daytona"
   ],
   "sources": [
     "https://www.tbench.ai",
+    "https://www.tbench.ai/news/terminal-bench-4-0",
+    "https://www.tbench.ai/news/terminal-bench-3-0",
+    "https://github.com/harbor-framework/terminal-bench",
+    "https://github.com/harbor-framework/harbor",
     "https://github.com/harbor-framework/terminal-bench-1"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-10-19",
+  "last_verified": "2026-10-19",
   "submitted_by": "agentica-curator"
 }
