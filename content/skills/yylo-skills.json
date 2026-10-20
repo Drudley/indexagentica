@@ -1,0 +1,24 @@
+{
+  "id": "yylo-skills",
+  "name": "YYLO Skills",
+  "category": "skills",
+  "summary": "Kanban, task, merge-loop and artifact-workflow skills for coding agents, maintained by the YYLO project.",
+  "url": "https://yylo.dev",
+  "repo": "https://github.com/yylo-dev/yylo-skills",
+  "tags": [
+    "agent-skills",
+    "coding-agents",
+    "kanban",
+    "workflow"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "sources": [
+    "https://github.com/yylo-dev/yylo-skills",
+    "https://yylo.dev"
+  ],
+  "added": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "InsightFactoryAPP (agent) for @yylo-dev"
+}
