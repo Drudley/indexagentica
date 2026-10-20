@@ -3,7 +3,7 @@
   "name": "Anthropic Sandbox Runtime (srt)",
   "category": "infrastructure",
   "summary": "Lightweight OS-level sandbox enforcing filesystem and network restrictions on agents, MCP servers and arbitrary processes, without a container.",
-  "description": "Uses native OS primitives (`sandbox-exec` on macOS, `bubblewrap` on Linux) plus proxy-based network filtering. A beta research preview developed for Claude Code; install with `npm install -g @anthropic-ai/sandbox-runtime`.",
+  "description": "Uses native OS primitives (`sandbox-exec` on macOS, `bubblewrap` with the network namespace removed on Linux, and on Windows a dedicated `srt-sandbox` user account with a Windows Filtering Platform egress fence) plus host-side HTTP and SOCKS5 proxies that enforce domain allow and deny lists. Defaults: network and writes are denied until allowed (`allowedDomains`, `allowWrite`), but reads are allowed everywhere unless you add `denyRead` paths. A beta research preview developed for Claude Code; install with `npm install -g @anthropic-ai/sandbox-runtime` and run `srt \"<command>\"`, or wrap local MCP servers in `.mcp.json`.",
   "url": "https://github.com/anthropics/sandbox-runtime",
   "repo": "https://github.com/anthropics/sandbox-runtime",
   "tags": [
@@ -24,8 +24,8 @@
     "https://github.com/anthropics/sandbox-runtime"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
   "submitted_by": "agentica-curator",
   "maintainer": "Anthropic"
 }
