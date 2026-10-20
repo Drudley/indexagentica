@@ -163,7 +163,7 @@ sources:
   - title: microsandbox README
     url: https://github.com/superradcompany/microsandbox
     accessed: 2026-10-02
-related: [run-untrusted-code-in-a-sandbox, coding-agent-starter, research-agent]
+related: [run-untrusted-code-in-a-sandbox, coding-agent-starter, research-agent, self-hosted-agent-sandboxes]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---
