@@ -1,0 +1,42 @@
+{
+  "id": "heroku-mcp-server",
+  "name": "Heroku Platform MCP Server",
+  "category": "mcp-servers",
+  "summary": "Heroku's official MCP server: lets agents create, deploy, scale and inspect apps, run Postgres operations, manage add-ons and read logs on the Heroku Platform.",
+  "description": "Built on the Heroku CLI (v10.8.1 or later required). The recommended way to start it is `heroku mcp:start`, which reuses your existing CLI login so you do not need to expose `HEROKU_API_KEY`; it can also run via `npx -y @heroku/mcp-server` with an API key. Works on the Common Runtime, Cedar Private and Shield Spaces, and Fir Private Spaces. Heroku describes it as in early development, so tools may change.",
+  "url": "https://devcenter.heroku.com/articles/heroku-mcp-server",
+  "repo": "https://github.com/heroku/heroku-mcp-server",
+  "docs": "https://devcenter.heroku.com/articles/heroku-mcp-server",
+  "tags": [
+    "mcp",
+    "heroku",
+    "paas",
+    "deployment",
+    "postgres",
+    "devops"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "llms_txt": "https://devcenter.heroku.com/llms.txt",
+    "notes": "Local stdio server. `heroku mcp:start` uses the Heroku CLI's login; otherwise set HEROKU_API_KEY."
+  },
+  "related": [
+    "vercel-mcp",
+    "netlify-mcp-server",
+    "cloudflare-mcp",
+    "fly-io"
+  ],
+  "sources": [
+    "https://github.com/heroku/heroku-mcp-server",
+    "https://devcenter.heroku.com/articles/heroku-mcp-server",
+    "https://www.npmjs.com/package/@heroku/mcp-server"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Heroku (Salesforce)"
+}

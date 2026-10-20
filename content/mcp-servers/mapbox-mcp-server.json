@@ -1,0 +1,42 @@
+{
+  "id": "mapbox-mcp-server",
+  "name": "Mapbox MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Mapbox MCP server for geospatial agents: geocoding, POI search, routing, travel-time matrices, isochrones, route optimization, map matching and static or live maps.",
+  "description": "Also includes offline geospatial calculations (distance, area, bearing, buffers) that need no API call, and `render_map_tool`, which draws routes, results or your own GeoJSON on an interactive Mapbox GL JS map inside the chat. Use the hosted endpoint at `https://mcp.mapbox.com/mcp` (Streamable HTTP; log in with OAuth, or send a Mapbox access token as a bearer token for scripts) or run the open-source Node.js server (`@mapbox/mcp-server`) locally. A Mapbox access token is required; Mapbox APIs have free tiers and usage-based pricing.",
+  "url": "https://github.com/mapbox/mcp-server",
+  "repo": "https://github.com/mapbox/mcp-server",
+  "docs": "https://github.com/mapbox/mcp-server/blob/main/docs/hosted-mcp-guide.md",
+  "tags": [
+    "mcp",
+    "maps",
+    "geocoding",
+    "routing",
+    "geospatial",
+    "remote-mcp"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.mapbox.com/mcp",
+    "auth": "oauth",
+    "llms_txt": "https://docs.mapbox.com/llms.txt",
+    "notes": "OAuth login in interactive clients; for programmatic calls send a Mapbox access token as Authorization: Bearer."
+  },
+  "related": [
+    "playwright-mcp",
+    "zapier-mcp",
+    "brave-search-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/mapbox/mcp-server",
+    "https://github.com/mapbox/mcp-server/blob/main/docs/hosted-mcp-guide.md",
+    "https://www.mapbox.com/pricing"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Mapbox"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "azure-devops-mcp-server",
+  "name": "Azure DevOps MCP Server",
+  "category": "mcp-servers",
+  "summary": "Microsoft's MCP server for Azure DevOps: projects, repos, pull requests, work items, pipelines and builds, wikis, test plans and Advanced Security alerts.",
+  "description": "Microsoft recommends the hosted remote server at `https://mcp.dev.azure.com/{organization}` (Streamable HTTP, Microsoft Entra ID OAuth); send the `X-MCP-Readonly` header to restrict it to read-only tools. The remote server will eventually replace the local one. The local server (`npx @azure-devops/mcp`, Node.js 20+) runs over stdio with a PAT or Entra ID and is the fallback for clients that cannot authenticate to the remote server with Entra ID (the docs name Claude Desktop and Codex; Cursor and Claude Code need a custom Entra app registration).",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops",
+  "repo": "https://github.com/microsoft/azure-devops-mcp",
+  "docs": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops",
+  "tags": [
+    "mcp",
+    "azure-devops",
+    "microsoft",
+    "work-items",
+    "ci-cd",
+    "remote-mcp"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.dev.azure.com/{organization}",
+    "auth": "oauth",
+    "notes": "Replace {organization} with your Azure DevOps organization. Microsoft Entra ID sign-in; X-MCP-Readonly header for read-only."
+  },
+  "related": [
+    "microsoft-mcp-servers",
+    "github-mcp-server",
+    "atlassian-rovo-mcp",
+    "linear-mcp"
+  ],
+  "sources": [
+    "https://github.com/microsoft/azure-devops-mcp",
+    "https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

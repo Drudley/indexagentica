@@ -1,0 +1,36 @@
+{
+  "id": "kubernetes-mcp-server",
+  "name": "Kubernetes MCP Server",
+  "category": "mcp-servers",
+  "summary": "Go-native MCP server for Kubernetes and OpenShift: CRUD on any resource, pods (logs, exec, top), events, Helm, Tekton and KubeVirt, talking to the API server directly.",
+  "description": "Unlike wrappers around `kubectl`, it calls the Kubernetes API server directly and ships as a single binary for Linux, macOS and Windows, plus npm (`npx kubernetes-mcp-server@latest`), PyPI (`uvx`) and container images. Works across multiple clusters from your kubeconfig or in-cluster config. Runtime settings are TOML: `read_only = true` only exposes tools annotated read-only, `disable_destructive = true` removes delete/update tools, `toolsets` (default `core`, `config`) adds Helm, Kiali, KubeVirt, Tekton and more, and setting `port` serves Streamable HTTP at `/mcp` (with optional OAuth). For production the README points to a setup guide with a dedicated read-only ServiceAccount.",
+  "url": "https://github.com/containers/kubernetes-mcp-server",
+  "repo": "https://github.com/containers/kubernetes-mcp-server",
+  "docs": "https://github.com/containers/kubernetes-mcp-server/blob/main/docs/configuration.md",
+  "tags": [
+    "mcp",
+    "kubernetes",
+    "openshift",
+    "helm",
+    "devops",
+    "go"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "terraform-mcp-server",
+    "aws-mcp-servers",
+    "kubernetes-agent-sandbox",
+    "grafana-mcp"
+  ],
+  "sources": [
+    "https://github.com/containers/kubernetes-mcp-server",
+    "https://github.com/containers/kubernetes-mcp-server/blob/main/docs/configuration.md"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "containers (GitHub organization)"
+}

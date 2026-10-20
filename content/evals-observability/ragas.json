@@ -1,0 +1,41 @@
+{
+  "id": "ragas",
+  "name": "Ragas",
+  "category": "evals-observability",
+  "summary": "Open-source evaluation toolkit for LLM apps and agents: LLM-based and traditional metrics for RAG and agent workflows, plus automatic test-set generation.",
+  "description": "Score retrieval-augmented generation and agent runs with ready-made metrics (LLM-judged and non-LLM), generate production-aligned test datasets when you do not have one, and plug into LangChain and common observability tools. Install with `pip install ragas`. The project now lives at `vibrantlabsai/ragas` (Vibrant Labs).",
+  "url": "https://www.ragas.io/",
+  "repo": "https://github.com/vibrantlabsai/ragas",
+  "docs": "https://docs.ragas.io/en/stable/",
+  "tags": [
+    "evals",
+    "rag",
+    "metrics",
+    "test-generation",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.ragas.io/llms.txt"
+  },
+  "related": [
+    "deepeval",
+    "trulens",
+    "giskard",
+    "arize-phoenix",
+    "langfuse"
+  ],
+  "sources": [
+    "https://github.com/vibrantlabsai/ragas",
+    "https://docs.ragas.io/en/stable/",
+    "https://pypi.org/project/ragas/"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vibrant Labs"
+}

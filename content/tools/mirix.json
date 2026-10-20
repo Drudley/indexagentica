@@ -1,0 +1,38 @@
+{
+  "id": "mirix",
+  "name": "MIRIX",
+  "category": "tools",
+  "summary": "Open-source multi-agent memory system: six memory types (core, episodic, semantic, procedural, resource, knowledge vault) managed by dedicated agents, with optional screen capture.",
+  "description": "Run the backend and dashboard with Docker Compose, create an API key in the dashboard and use the Python client (`pip install mirix-client`) to give an assistant long-term memory built from conversations and, optionally, continuous screen observation. Long-term data is stored locally; search uses PostgreSQL-native BM25 full-text plus vector similarity. Inputs can be text, images, voice and screen captures. Described in arXiv 2507.07957.",
+  "url": "https://mirix.io/",
+  "repo": "https://github.com/Mirix-AI/MIRIX",
+  "docs": "https://docs.mirix.io/",
+  "tags": [
+    "memory",
+    "long-term-memory",
+    "multi-agent",
+    "python",
+    "self-hosted",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "letta",
+    "zep",
+    "memos",
+    "cognee"
+  ],
+  "sources": [
+    "https://github.com/Mirix-AI/MIRIX",
+    "https://docs.mirix.io/",
+    "https://arxiv.org/abs/2507.07957"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MIRIX AI"
+}

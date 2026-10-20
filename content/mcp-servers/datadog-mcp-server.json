@@ -1,0 +1,42 @@
+{
+  "id": "datadog-mcp-server",
+  "name": "Datadog MCP Server",
+  "category": "mcp-servers",
+  "summary": "Datadog's managed remote MCP server: agents query logs, metrics, traces/APM, monitors, dashboards, incidents and security signals with the user's own permissions.",
+  "description": "Connect any MCP client to the endpoint for your Datadog site (US1: `https://mcp.datadoghq.com/v1/mcp`; EU: `mcp.datadoghq.eu`) and sign in with OAuth, or send a personal/service access token or API and application keys as headers. Pick tool groups with the `toolsets` query parameter (or `X-Datadog-MCP-Toolsets` header). The server forwards the user's credentials, so RBAC and data access controls apply, and write tools need the matching permission. Every tool call is recorded in Audit Trail. Fair-use limits: 50 requests per 10 seconds and 100,000 tool calls a month. Not available on GovCloud sites. Requires a Datadog account; pricing for the MCP server itself is not stated in the docs.",
+  "url": "https://docs.datadoghq.com/mcp_server/",
+  "repo": "https://github.com/datadog-labs/mcp-server",
+  "docs": "https://docs.datadoghq.com/mcp_server/setup/",
+  "tags": [
+    "mcp",
+    "observability",
+    "logs",
+    "metrics",
+    "apm",
+    "remote-mcp"
+  ],
+  "pricing": "unknown",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.datadoghq.com/v1/mcp",
+    "auth": "oauth",
+    "llms_txt": "https://docs.datadoghq.com/llms.txt",
+    "notes": "US1 endpoint shown; use your Datadog site's endpoint. Header auth: Authorization: Bearer <PAT/SAT>, or DD_API_KEY + DD_APPLICATION_KEY."
+  },
+  "related": [
+    "grafana-mcp",
+    "sentry-mcp",
+    "langfuse-mcp",
+    "otel-genai-semconv"
+  ],
+  "sources": [
+    "https://docs.datadoghq.com/mcp_server/",
+    "https://docs.datadoghq.com/mcp_server/setup/",
+    "https://github.com/datadog-labs/mcp-server"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Datadog"
+}

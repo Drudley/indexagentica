@@ -1,0 +1,41 @@
+{
+  "id": "giskard",
+  "name": "Giskard",
+  "category": "evals-observability",
+  "summary": "Open-source Python library for testing agentic systems: scenario-based checks and LLM-as-judge evals (giskard-checks) plus a vulnerability scanner for red teaming (giskard-scan).",
+  "description": "Giskard v3 is a modular rewrite for dynamic, multi-turn testing of AI agents: `pip install giskard` for checks, `giskard[scan]` for the scanner (prompt injection, jailbreaks, harmful content, RAG and quality evaluation), plus provider extras for LLM judges. Requires Python 3.12+. Optional aggregated telemetry sends no prompts or outputs and is turned off with `DO_NOT_TRACK=1` or `GISKARD_TELEMETRY_DISABLED=1`. Giskard v2 remains available but is no longer actively maintained.",
+  "url": "https://www.giskard.ai/",
+  "repo": "https://github.com/Giskard-AI/giskard-oss",
+  "docs": "https://docs.giskard.ai/oss",
+  "tags": [
+    "evals",
+    "red-teaming",
+    "llm-as-judge",
+    "testing",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.giskard.ai/llms.txt"
+  },
+  "related": [
+    "deepeval",
+    "deepteam",
+    "promptfoo",
+    "ragas",
+    "inspect-ai"
+  ],
+  "sources": [
+    "https://github.com/Giskard-AI/giskard-oss",
+    "https://docs.giskard.ai/oss",
+    "https://pypi.org/project/giskard/"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Giskard"
+}

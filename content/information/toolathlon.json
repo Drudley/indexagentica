@@ -1,0 +1,35 @@
+{
+  "id": "toolathlon",
+  "name": "Toolathlon (Tool Decathlon)",
+  "category": "information",
+  "summary": "Benchmark of 108 long-horizon agent tasks across 32 real applications and 604 tools (mostly MCP servers), each checked by a deterministic evaluation script.",
+  "description": "Tasks start from realistic environment states (e.g. Canvas courses, real spreadsheets, Kubernetes clusters, WooCommerce shops) with deliberately fuzzy instructions, average about 20 tool-calling turns, and often span several apps. Each task runs in its own container. In the ICLR 2026 paper the best model, Claude 4.5 Sonnet, solved 38.6%. The repository is the Toolathlon-Verified final release (June 2026), with trajectories on Hugging Face, a free public evaluation service and a sandboxed branch. The repository has no license file.",
+  "url": "https://toolathlon.xyz/",
+  "repo": "https://github.com/hkust-nlp/Toolathlon",
+  "tags": [
+    "benchmark",
+    "tool-use",
+    "mcp",
+    "agents",
+    "long-horizon",
+    "evals"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "mcpmark",
+    "mcp-universe",
+    "mcp-bench",
+    "tau-bench",
+    "appworld"
+  ],
+  "sources": [
+    "https://arxiv.org/abs/2510.25726",
+    "https://github.com/hkust-nlp/Toolathlon"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "HKUST NLP"
+}

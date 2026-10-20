@@ -1,0 +1,36 @@
+{
+  "id": "opensandbox",
+  "name": "OpenSandbox",
+  "category": "infrastructure",
+  "summary": "Open-source sandbox platform for running agents on your own infrastructure: isolated environments for code, commands, files, browsers and desktops, from Docker to Kubernetes.",
+  "description": "Start locally with Docker (`uvx opensandbox-server`) and deploy on Kubernetes behind the same lifecycle API, with resource pools and batch creation for agent evaluation and RL training. The Fast Sandbox runtime uses Firecracker (the README reports 64 ms P50 creation serially) with pause/resume that keeps memory and disk state. Includes per-sandbox egress policies, a unified ingress gateway, a Credential Vault so agents can call external services without seeing real credentials, SDKs for Python, Java/Kotlin, TypeScript, C#/.NET and Go, the `osb` CLI and an MCP server. Listed in the CNCF Landscape; packages are published under Alibaba namespaces.",
+  "url": "https://open-sandbox.ai/",
+  "repo": "https://github.com/opensandbox-group/OpenSandbox",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "kubernetes",
+    "firecracker",
+    "self-hosted",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "e2b",
+    "daytona",
+    "microsandbox",
+    "kubernetes-agent-sandbox",
+    "aio-sandbox"
+  ],
+  "sources": [
+    "https://github.com/opensandbox-group/OpenSandbox",
+    "https://open-sandbox.ai/"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenSandbox (Alibaba)"
+}

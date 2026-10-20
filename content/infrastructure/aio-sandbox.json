@@ -1,0 +1,42 @@
+{
+  "id": "aio-sandbox",
+  "name": "AIO Sandbox (agent-infra)",
+  "category": "infrastructure",
+  "summary": "All-in-one agent sandbox in a single Docker container: browser (VNC/CDP), shell, file system, VS Code Server, Jupyter and MCP sharing one file system.",
+  "description": "Run `ghcr.io/agent-infra/sandbox` and the container serves API docs, a VNC browser, VS Code Server and MCP services at `/mcp` on port 8080, so a file downloaded in the browser is immediately available to the shell and code tools. Set `SANDBOX_API_KEY` to require a key on every service (sent as `X-AIO-API-Key`, a bearer token or `?api_key=`); without it the services stay open, so the README binds to 127.0.0.1 and says to keep port 8080 private behind a reverse proxy in the cloud. Pin release tags for reproducible deployments.",
+  "url": "https://sandbox.agent-infra.com/",
+  "repo": "https://github.com/agent-infra/sandbox",
+  "docs": "https://sandbox.agent-infra.com/api",
+  "tags": [
+    "sandbox",
+    "docker",
+    "browser",
+    "computer-use",
+    "mcp",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://sandbox.agent-infra.com/llms.txt",
+    "auth": "api-key",
+    "notes": "Self-hosted. MCP at http://localhost:8080/mcp; enable SANDBOX_API_KEY before exposing it."
+  },
+  "related": [
+    "e2b-desktop",
+    "cua",
+    "opensandbox",
+    "docker-sandboxes",
+    "browser-use"
+  ],
+  "sources": [
+    "https://github.com/agent-infra/sandbox",
+    "https://sandbox.agent-infra.com/"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "agent-infra"
+}

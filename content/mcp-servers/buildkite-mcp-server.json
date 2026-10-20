@@ -1,0 +1,41 @@
+{
+  "id": "buildkite-mcp-server",
+  "name": "Buildkite MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Buildkite MCP server exposing pipelines, builds, jobs, logs, annotations and Test Engine results, hosted (OAuth or token) or self-run, with read-only routes.",
+  "description": "Buildkite recommends the hosted remote server at `https://mcp.buildkite.com/mcp` (OAuth, for interactive AI tools); headless agents can use `https://mcp.buildkite.com/direct` with a Buildkite API token as a bearer token, and `https://mcp.buildkite.com/mcp/readonly` restricts access to read-only. Remote endpoints update automatically and have their own rate limit. The open-source Go server runs locally over stdio or HTTP with `--read-only` and `--enabled-toolsets`; a `retries` toolset can retry failed jobs without full build-write access, and `compare_builds` explains what changed since a build last passed.",
+  "url": "https://buildkite.com/docs/apis/mcp-server",
+  "repo": "https://github.com/buildkite/buildkite-mcp-server",
+  "docs": "https://buildkite.com/docs/apis/mcp-server",
+  "tags": [
+    "mcp",
+    "ci-cd",
+    "buildkite",
+    "devops",
+    "remote-mcp",
+    "go"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.buildkite.com/mcp",
+    "auth": "oauth",
+    "llms_txt": "https://buildkite.com/docs/llms.txt",
+    "notes": "Token pass-through endpoint: https://mcp.buildkite.com/direct (Authorization: Bearer <Buildkite API token>). Read-only: https://mcp.buildkite.com/mcp/readonly."
+  },
+  "related": [
+    "github-mcp-server",
+    "gitlab-mcp-server",
+    "sentry-mcp"
+  ],
+  "sources": [
+    "https://buildkite.com/docs/apis/mcp-server",
+    "https://github.com/buildkite/buildkite-mcp-server"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Buildkite"
+}

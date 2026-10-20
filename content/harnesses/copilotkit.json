@@ -1,0 +1,39 @@
+{
+  "id": "copilotkit",
+  "name": "CopilotKit",
+  "category": "harnesses",
+  "summary": "Open-source SDK for agent-native apps: generative UI, shared state and human-in-the-loop for React, Angular, Vue, React Native, Slack and Teams, built on AG-UI.",
+  "description": "CopilotKit is the layer between your agents and your users: the same agent (any framework that speaks AG-UI, the protocol CopilotKit created) can power a web app, a mobile app and a Slack or Microsoft Teams workspace. `useAgent` gives programmatic control over the AG-UI connection; `npx copilotkit@latest onboard start` lets a coding agent add it to a project, and `npx create-ag-ui-app` scaffolds a new one. CopilotKit Intelligence is an optional production add-on (persistent threads, user memories).",
+  "url": "https://www.copilotkit.ai/",
+  "repo": "https://github.com/CopilotKit/CopilotKit",
+  "docs": "https://docs.copilotkit.ai/",
+  "tags": [
+    "generative-ui",
+    "frontend",
+    "react",
+    "ag-ui",
+    "human-in-the-loop",
+    "typescript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.copilotkit.ai/llms.txt"
+  },
+  "related": [
+    "ag-ui",
+    "mastra",
+    "langgraph",
+    "vercel-ai-sdk"
+  ],
+  "sources": [
+    "https://github.com/CopilotKit/CopilotKit",
+    "https://docs.copilotkit.ai/"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "CopilotKit"
+}

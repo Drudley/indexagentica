@@ -1,0 +1,35 @@
+{
+  "id": "mcp-bench",
+  "name": "MCP-Bench",
+  "category": "information",
+  "summary": "Accenture's benchmark for tool-using agents on complex real-world tasks across 28 live MCP servers and 250 tools (finance, travel, science, academic search).",
+  "description": "Tests cross-tool coordination, precise parameter control and planning, end to end over MCP: the repo ships the 28 server implementations, task synthesis and the runner (`run_benchmark.py`), and a Hugging Face Space hosts the leaderboard. Accepted to the NeurIPS 2025 Workshop on Scaling Environments for Agents (arXiv 2508.20453). The README badge says Apache-2.0, but the repository has no license file.",
+  "url": "https://arxiv.org/abs/2508.20453",
+  "repo": "https://github.com/Accenture/mcp-bench",
+  "tags": [
+    "benchmark",
+    "mcp",
+    "tool-use",
+    "agents",
+    "evals"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "toolathlon",
+    "mcpmark",
+    "mcp-universe",
+    "bfcl"
+  ],
+  "sources": [
+    "https://arxiv.org/abs/2508.20453",
+    "https://github.com/Accenture/mcp-bench",
+    "https://huggingface.co/spaces/mcpbench/mcp-bench"
+  ],
+  "added": "2026-10-20",
+  "updated": "2026-10-20",
+  "last_verified": "2026-10-20",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Accenture"
+}
