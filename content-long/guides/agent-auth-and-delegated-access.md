@@ -15,7 +15,7 @@ entries: [mcp-authorization, model-context-protocol, oauth-client-id-metadata-do
 sources:
   - {title: "MCP specification 2026-07-28, Authorization", url: "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", accessed: 2026-10-15}
   - {title: "MCP specification 2026-07-28, Client registration", url: "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/client-registration", accessed: 2026-10-15}
-  - {title: "MCP specification 2026-07-28, Security best practices", url: "https://modelcontextprotocol.io/specification/2026-07-28/basic/security_best_practices", accessed: 2026-10-15}
+  - {title: "MCP specification 2026-07-28, Security best practices", url: "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices", accessed: 2026-10-21}
   - {title: OAuth Client ID Metadata Document (draft-ietf-oauth-client-id-metadata-document-02), url: "https://datatracker.ietf.org/doc/draft-ietf-oauth-client-id-metadata-document/", accessed: 2026-10-15}
   - {title: RFC 8707 Resource Indicators for OAuth 2.0, url: "https://www.rfc-editor.org/rfc/rfc8707.html", accessed: 2026-10-15}
   - {title: RFC 9728 OAuth 2.0 Protected Resource Metadata, url: "https://datatracker.ietf.org/doc/html/rfc9728", accessed: 2026-10-15}
@@ -23,8 +23,8 @@ sources:
   - {title: Identity Assertion JWT Authorization Grant (draft-ietf-oauth-identity-assertion-authz-grant-04), url: "https://datatracker.ietf.org/doc/draft-ietf-oauth-identity-assertion-authz-grant/", accessed: 2026-10-15}
   - {title: WorkOS Vault, url: "https://workos.com/docs/vault", accessed: 2026-10-15}
   - {title: WorkOS Vault quick start, url: "https://workos.com/docs/vault/quick-start", accessed: 2026-10-15}
-  - {title: Auth0 Token Vault, url: "https://auth0.com/docs/secure/tokens/token-vault", accessed: 2026-10-15}
-  - {title: Auth0 access token exchange with Token Vault, url: "https://auth0.com/docs/secure/tokens/token-vault/access-token-exchange-with-token-vault", accessed: 2026-10-15}
+  - {title: Auth0 Token Vault, url: "https://auth0.com/docs/secure/call-apis-on-users-behalf/token-vault", accessed: 2026-10-21}
+  - {title: Auth0 access token exchange with Token Vault, url: "https://auth0.com/docs/secure/call-apis-on-users-behalf/token-vault/access-token-exchange-with-token-vault", accessed: 2026-10-21}
   - {title: Descope Connections, url: "https://docs.descope.com/agentic-identity-hub/core-components/connections", accessed: 2026-10-15}
 related: [add-oauth-to-your-mcp-server, agent-identity-and-mcp-auth, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, pick-an-mcp-server, publish-an-mcp-server, database-mcp-servers]
 last_verified: 2026-10-15

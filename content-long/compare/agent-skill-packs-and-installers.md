@@ -69,10 +69,10 @@ sources:
   - {title: Agent Skills specification, url: "https://agentskills.io/specification", accessed: 2026-10-14}
   - {title: skills CLI README, url: "https://github.com/vercel-labs/skills", accessed: 2026-10-14}
   - {title: "Claude Code docs, Skills", url: "https://code.claude.com/docs/en/skills", accessed: 2026-10-14}
-  - {title: "Codex docs, Skills", url: "https://developers.openai.com/codex/skills", accessed: 2026-10-14}
+  - {title: "ChatGPT and Codex docs, Build skills", url: "https://learn.chatgpt.com/docs/build-skills", accessed: 2026-10-21}
   - {title: "Gemini CLI docs, Skills", url: "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/skills.md", accessed: 2026-10-14}
-  - {title: "Cursor docs, Agent Skills", url: "https://cursor.com/docs/context/skills", accessed: 2026-10-14}
-  - {title: "GitHub Docs, About agent skills", url: "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills", accessed: 2026-10-14}
+  - {title: "Cursor docs, Agent Skills", url: "https://cursor.com/docs/skills", accessed: 2026-10-21}
+  - {title: "GitHub Docs, Agent skills", url: "https://docs.github.com/en/copilot/concepts/customizations/agent-skills", accessed: 2026-10-21}
   - {title: anthropics/skills README, url: "https://github.com/anthropics/skills", accessed: 2026-10-14}
   - {title: anthropics/skills pdf LICENSE, url: "https://github.com/anthropics/skills/blob/main/skills/pdf/LICENSE.txt", accessed: 2026-10-14}
   - {title: anthropics/skills skill-creator LICENSE, url: "https://github.com/anthropics/skills/blob/main/skills/skill-creator/LICENSE.txt", accessed: 2026-10-14}

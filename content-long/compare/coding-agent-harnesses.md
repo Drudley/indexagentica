@@ -128,9 +128,9 @@ sources:
   - title: Gemini CLI docs, Sandboxing
     url: https://geminicli.com/docs/cli/sandbox
     accessed: 2026-10-02
-  - title: GitHub Docs, About GitHub Copilot CLI
-    url: https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli
-    accessed: 2026-10-02
+  - title: GitHub Docs, GitHub Copilot CLI
+    url: https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-cli
+    accessed: 2026-10-21
   - title: GitHub Docs, Adding custom instructions for Copilot CLI
     url: https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions
     accessed: 2026-10-02

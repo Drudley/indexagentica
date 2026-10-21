@@ -84,7 +84,7 @@ sources:
   - {title: Phoenix LICENSE (Elastic License 2.0), url: "https://github.com/Arize-ai/phoenix/blob/main/LICENSE", accessed: 2026-10-12}
   - {title: Phoenix docs index (llms.txt), url: "https://arize.com/docs/phoenix/llms.txt", accessed: 2026-10-12}
   - {title: Phoenix setup using phoenix.otel, url: "https://arize.com/docs/phoenix/tracing/how-to-tracing/setup-tracing/setup-using-phoenix-otel", accessed: 2026-10-12}
-  - {title: Phoenix Remote MCP Server, url: "https://arize.com/docs/phoenix/integrations/remote-mcp", accessed: 2026-10-12}
+  - {title: Phoenix Remote MCP Server, url: "https://arize.com/docs/phoenix/integrations/mcp", accessed: 2026-10-21}
   - {title: Arize pricing, url: "https://arize.com/pricing/", accessed: 2026-10-12}
   - {title: Braintrust pricing, url: "https://www.braintrust.dev/pricing", accessed: 2026-10-12}
   - {title: Send OpenTelemetry traces and logs to Braintrust, url: "https://braintrust.dev/docs/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-10-12}
@@ -99,7 +99,7 @@ sources:
   - {title: Laminar OpenTelemetry, url: "https://laminar.sh/docs/tracing/otel", accessed: 2026-10-12}
   - {title: Laminar MCP server, url: "https://laminar.sh/docs/platform/mcp", accessed: 2026-10-12}
   - {title: Self-hosting Laminar, url: "https://laminar.sh/docs/self-hosting/overview", accessed: 2026-10-12}
-  - {title: Helicone is joining Mintlify, url: "https://www.helicone.ai/blog/joining-mintlify", accessed: 2026-10-12}
+  - {title: Mintlify acquires Helicone to redefine AI knowledge infrastructure, url: "https://www.mintlify.com/blog/mintlify-acquires-helicone", accessed: 2026-10-21}
   - {title: Helicone pricing, url: "https://www.helicone.ai/pricing", accessed: 2026-10-12}
 last_verified: 2026-10-12
 published: 2026-10-12
@@ -128,7 +128,7 @@ If you only need tests in CI and no hosted trace store, a framework may be enoug
 
 ## Not in the table
 
-- **[Helicone](entry:helicone)** was acquired by Mintlify in March 2026. Its own announcement says the service stays live "in maintenance mode" with security updates, new models and bug fixes. It is still an option as an LLM gateway with logging (free Hobby plan with 10,000 requests), but weigh that status before you build on it.
+- **[Helicone](entry:helicone)** was acquired by Mintlify in March 2026. Mintlify's announcement says Helicone "will continue operating in maintenance mode", with security updates, bug fixes and new models still shipping, and that Mintlify will help customers migrate to another platform. It is still an option as an LLM gateway with logging (free Hobby plan with 10,000 requests), but weigh that status before you build on it.
 - **[W&B Weave](entry:wandb-weave)** (Apache-2.0) is the Weights & Biases tracing and evaluation toolkit. We left it out of the table because we couldn't confirm its current plan limits from a primary source on the day.
 
 ## What we left out

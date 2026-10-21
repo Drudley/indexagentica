@@ -70,7 +70,7 @@ sources:
   - {title: Neon MCP Server docs, url: "https://neon.com/docs/ai/neon-mcp-server", accessed: 2026-10-18}
   - {title: "Neon MCP tool list (read-only)", url: "https://mcp.neon.tech/api/list-tools?readonly=true", accessed: 2026-10-18}
   - {title: Supabase MCP Server README, url: "https://github.com/supabase/mcp", accessed: 2026-10-18}
-  - {title: Supabase MCP Server docs, url: "https://supabase.com/docs/guides/getting-started/mcp", accessed: 2026-10-18}
+  - {title: Supabase MCP Server docs, url: "https://supabase.com/docs/guides/ai-tools/mcp", accessed: 2026-10-21}
   - {title: Postgres MCP Pro README, url: "https://github.com/crystaldba/postgres-mcp", accessed: 2026-10-18}
   - {title: "MCP specification, Elicitation", url: "https://modelcontextprotocol.io/specification/draft/client/elicitation", accessed: 2026-10-18}
 last_verified: 2026-10-18

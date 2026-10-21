@@ -102,7 +102,7 @@ sources:
   - {title: Buy a Kernel browser with MPP, url: "https://kernel.sh/docs/info/mpp", accessed: 2026-10-12}
   - {title: Kernel replays, url: "https://kernel.sh/docs/browsers/replays", accessed: 2026-10-12}
   - {title: kernel/kernel-images, url: "https://github.com/kernel/kernel-images", accessed: 2026-10-12}
-  - {title: Anchor pricing, url: "https://anchorbrowser.io/pricing", accessed: 2026-10-12}
+  - {title: Anchor pricing, url: "https://anchorbrowser.io/#pricing", accessed: 2026-10-21}
   - {title: Anchor Agent Access, url: "https://docs.anchorbrowser.io/quickstart/agent-access", accessed: 2026-10-12}
   - {title: Anchor hosted MCP, url: "https://docs.anchorbrowser.io/advanced/mcp", accessed: 2026-10-12}
   - {title: Anchor session recording, url: "https://docs.anchorbrowser.io/essentials/recording", accessed: 2026-10-12}

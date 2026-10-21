@@ -89,7 +89,7 @@ sources:
   - {title: "Pinecone, Full-text search overview", url: "https://docs.pinecone.io/guides/search/full-text-search", accessed: 2026-10-17}
   - {title: "Pinecone, Implement multitenancy", url: "https://docs.pinecone.io/guides/index-data/implement-multitenancy", accessed: 2026-10-17}
   - {title: "Pinecone, Use the Pinecone MCP server", url: "https://docs.pinecone.io/guides/operations/mcp-server", accessed: 2026-10-17}
-  - {title: "Pinecone, Mock the Pinecone API for testing", url: "https://docs.pinecone.io/guides/operations/local-development", accessed: 2026-10-17}
+  - {title: "Pinecone, Mock the Pinecone API for testing", url: "https://docs.pinecone.io/guides/production/mock-the-api", accessed: 2026-10-21}
   - {title: "Pinecone, Bring Your Own Cloud overview", url: "https://docs.pinecone.io/guides/production/bring-your-own-cloud", accessed: 2026-10-17}
   - {title: Pinecone pricing, url: "https://www.pinecone.io/pricing/", accessed: 2026-10-17}
   - {title: "Qdrant, Deploy Qdrant", url: "https://qdrant.tech/documentation/deploy-intro/", accessed: 2026-10-17}
