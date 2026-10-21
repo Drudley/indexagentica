@@ -1,0 +1,29 @@
+{
+  "id": "openevals",
+  "name": "OpenEvals",
+  "category": "evals-observability",
+  "summary": "LangChain's package of ready-made evaluators for LLM apps (sibling project agentevals targets agents).",
+  "url": "https://github.com/langchain-ai/openevals",
+  "repo": "https://github.com/langchain-ai/openevals",
+  "tags": [
+    "evals",
+    "llm-as-judge",
+    "python",
+    "typescript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "langsmith",
+    "deepeval"
+  ],
+  "sources": [
+    "https://github.com/langchain-ai/openevals"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

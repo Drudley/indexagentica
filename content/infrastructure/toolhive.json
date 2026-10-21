@@ -1,0 +1,32 @@
+{
+  "id": "toolhive",
+  "name": "ToolHive",
+  "category": "infrastructure",
+  "summary": "Stacklok's open-source platform that runs each MCP server in an isolated container with per-request identity and access policy and observability.",
+  "url": "https://docs.stacklok.com/toolhive",
+  "repo": "https://github.com/stacklok/toolhive",
+  "tags": [
+    "mcp",
+    "containers",
+    "gateway",
+    "security"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.stacklok.com/llms.txt"
+  },
+  "related": [
+    "docker-mcp-catalog",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/stacklok/toolhive"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Stacklok"
+}

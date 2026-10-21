@@ -16,14 +16,15 @@
   "status": "active",
   "related": [
     "alby-hub",
-    "nostr-wallet-connect"
+    "nostr-wallet-connect",
+    "lnbits-nwcprovider"
   ],
   "sources": [
     "https://github.com/lnbits/lnbits"
   ],
   "added": "2026-10-15",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator",
   "maintainer": "LNbits"
 }

@@ -1,0 +1,35 @@
+{
+  "id": "jules",
+  "name": "Jules",
+  "category": "harnesses",
+  "summary": "Google's autonomous coding agent that plans and runs tasks against your GitHub repos asynchronously, with a REST API and the Jules Tools CLI.",
+  "description": "Supports scheduled and suggested tasks, plan review and code review. Free plan plus 'Jules in Pro' and 'Jules in Ultra' via Google AI plans (currently individual @gmail.com accounts). REST API authenticates with API keys.",
+  "url": "https://jules.google/",
+  "docs": "https://jules.google/docs",
+  "tags": [
+    "coding-agent",
+    "async",
+    "cloud-agent",
+    "google"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://jules.google/docs/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "google-antigravity",
+    "github-copilot-cloud-agent"
+  ],
+  "sources": [
+    "https://jules.google/docs/llms.txt",
+    "https://jules.google/docs/usage-limits.md",
+    "https://jules.google/docs/api/reference/authentication.md"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "getalby-lightning-tools",
+  "name": "Alby Lightning Tools (@getalby/lightning-tools)",
+  "category": "finance-payments",
+  "summary": "Collection of JavaScript building blocks for Bitcoin Lightning web apps, such as Lightning address and invoice handling.",
+  "url": "https://github.com/getAlby/js-lightning-tools",
+  "repo": "https://github.com/getAlby/js-lightning-tools",
+  "docs": "https://www.npmjs.com/package/@getalby/lightning-tools",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "sdk",
+    "javascript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "getalby-sdk",
+    "alby-mcp",
+    "l402"
+  ],
+  "sources": [
+    "https://github.com/getAlby/js-lightning-tools",
+    "https://www.npmjs.com/package/@getalby/lightning-tools"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Alby"
+}

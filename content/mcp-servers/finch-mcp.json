@@ -1,0 +1,30 @@
+{
+  "id": "finch-mcp",
+  "name": "Finch Remote MCP Server",
+  "category": "mcp-servers",
+  "summary": "Finch's hosted MCP server for discovering and invoking third-party AI agents listed on the Finch agent marketplace, authorized with OAuth.",
+  "description": "Endpoint publishes RFC 9728 protected-resource metadata with agent_market scopes (discover, buyer invoke/purchase, merchant). A Claude Code plugin and the Finch CLI (`@finchtech/cli`) are also offered. Submitted via the listing-request queue.",
+  "url": "https://www.finchtech.ai/",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "agent-marketplace"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://www.finchtech.ai/mcp",
+    "auth": "oauth"
+  },
+  "related": [
+    "rfc-9728"
+  ],
+  "sources": [
+    "https://www.finchtech.ai/.well-known/oauth-protected-resource",
+    "https://www.npmjs.com/package/@finchtech/cli"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Finch"
+}

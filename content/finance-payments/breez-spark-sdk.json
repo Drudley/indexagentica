@@ -1,0 +1,32 @@
+{
+  "id": "breez-spark-sdk",
+  "name": "Breez SDK - Spark",
+  "category": "finance-payments",
+  "summary": "SDK for adding instant, non-custodial bitcoin and stablecoin payments to apps and services; free for developers.",
+  "url": "https://breez.technology/sdk/",
+  "repo": "https://github.com/breez/spark-sdk",
+  "docs": "https://sdk-doc-spark.breez.technology/",
+  "tags": [
+    "bitcoin",
+    "lightning",
+    "stablecoins",
+    "sdk",
+    "non-custodial"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "lightning-agent-tools",
+    "getalby-sdk"
+  ],
+  "sources": [
+    "https://github.com/breez/spark-sdk",
+    "https://breez.technology/sdk/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Breez"
+}

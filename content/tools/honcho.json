@@ -1,0 +1,32 @@
+{
+  "id": "honcho",
+  "name": "Honcho",
+  "category": "tools",
+  "summary": "Open-source memory infrastructure for stateful agents that models people, agents, groups and projects over time; managed or self-hosted.",
+  "url": "https://honcho.dev",
+  "repo": "https://github.com/plastic-labs/honcho",
+  "docs": "https://honcho.dev/docs",
+  "tags": [
+    "memory",
+    "agents",
+    "self-hosted"
+  ],
+  "license": "AGPL-3.0",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://honcho.dev/docs/llms.txt"
+  },
+  "related": [
+    "mem0",
+    "zep",
+    "letta"
+  ],
+  "sources": [
+    "https://github.com/plastic-labs/honcho"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Plastic Labs"
+}

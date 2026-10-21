@@ -1,0 +1,30 @@
+{
+  "id": "lnbits-nwcprovider",
+  "name": "LNbits NWC Service Provider",
+  "category": "finance-payments",
+  "summary": "LNbits extension that exposes LNbits wallets over Nostr Wallet Connect (NWC), using a Nostr relay.",
+  "description": "Install via the LNbits .env or admin UI; needs a one-time relay setup (for example the LNbits Nostrclient extension).",
+  "url": "https://github.com/lnbits/nwcprovider",
+  "repo": "https://github.com/lnbits/nwcprovider",
+  "tags": [
+    "lightning",
+    "nwc",
+    "wallet",
+    "self-hosted"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "lnbits",
+    "nostr-wallet-connect"
+  ],
+  "sources": [
+    "https://github.com/lnbits/nwcprovider"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LNbits"
+}

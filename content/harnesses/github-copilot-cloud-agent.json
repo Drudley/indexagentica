@@ -1,0 +1,29 @@
+{
+  "id": "github-copilot-cloud-agent",
+  "name": "GitHub Copilot cloud agent",
+  "category": "harnesses",
+  "summary": "Copilot agent on GitHub.com that takes delegated tasks from issues, pull requests or chat, works in a cloud environment and opens a pull request for review.",
+  "description": "Researches the repository, plans, makes changes on a branch and opens a PR. Supported third-party coding agents can be delegated to through the same PR workflow. The older 'about coding agent' docs URL now redirects to the Copilot on GitHub.com page.",
+  "url": "https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-github-copilot-agents",
+  "tags": [
+    "coding-agent",
+    "cloud-agent",
+    "github",
+    "async"
+  ],
+  "status": "active",
+  "related": [
+    "github-copilot-cli",
+    "vscode-agents",
+    "awesome-copilot"
+  ],
+  "sources": [
+    "https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-github-copilot-agents",
+    "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

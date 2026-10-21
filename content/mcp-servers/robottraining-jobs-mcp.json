@@ -1,0 +1,31 @@
+{
+  "id": "robottraining-jobs-mcp",
+  "name": "RobotTraining.jobs MCP Server",
+  "category": "mcp-servers",
+  "summary": "Keyless remote MCP server and read-only JSON/CSV data API listing open robot-training jobs (teleoperation, data collection, AV and drone testing) and their advertised pay.",
+  "description": "MCP tool `search_robot_training_jobs` covers roles across about 70 employers and programs (per the tool description). Data endpoints: /roles.json, /pay.json, /pay.csv. Listed in the official MCP Registry as jobs.robottraining/robot-training-jobs. Submitted via the listing-request queue.",
+  "url": "https://robottraining.jobs/data",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "jobs",
+    "robotics",
+    "open-data"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://robottraining.jobs/api/mcp",
+    "openapi": "https://robottraining.jobs/openapi.json",
+    "auth": "none"
+  },
+  "sources": [
+    "https://robottraining.jobs/data",
+    "https://robottraining.jobs/openapi.json",
+    "https://registry.modelcontextprotocol.io/v0/servers?search=robottraining"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "RobotTraining.jobs"
+}

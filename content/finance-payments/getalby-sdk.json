@@ -1,0 +1,35 @@
+{
+  "id": "getalby-sdk",
+  "name": "Alby JS SDK (@getalby/sdk)",
+  "category": "finance-payments",
+  "summary": "JavaScript SDK for zero-custody bitcoin Lightning payments via Nostr Wallet Connect or the Alby Wallet API.",
+  "description": "License per package.json/npm is MIT; the repo has no LICENSE file.",
+  "url": "https://github.com/getAlby/js-sdk",
+  "repo": "https://github.com/getAlby/js-sdk",
+  "docs": "https://www.npmjs.com/package/@getalby/sdk",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "nwc",
+    "sdk",
+    "javascript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "nostr-wallet-connect",
+    "alby-hub",
+    "alby-mcp",
+    "getalby-lightning-tools"
+  ],
+  "sources": [
+    "https://github.com/getAlby/js-sdk",
+    "https://www.npmjs.com/package/@getalby/sdk"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Alby"
+}

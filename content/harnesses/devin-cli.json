@@ -15,14 +15,17 @@
   "agent_access": {
     "llms_txt": "https://docs.devin.ai/llms.txt"
   },
+  "related": [
+    "devin-desktop"
+  ],
   "sources": [
     "https://docs.devin.ai/cli.md",
     "https://docs.devin.ai/work-with-devin/devin-cli.md",
     "https://docs.devin.ai/llms.txt"
   ],
   "added": "2026-10-15",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator",
   "maintainer": "Cognition"
 }

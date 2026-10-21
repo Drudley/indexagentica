@@ -16,12 +16,15 @@
   "agent_access": {
     "llms_txt": "https://antigravity.google/llms.txt"
   },
+  "related": [
+    "jules"
+  ],
   "sources": [
     "https://antigravity.google/llms.txt"
   ],
   "added": "2026-10-15",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator",
   "maintainer": "Google"
 }

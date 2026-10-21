@@ -19,7 +19,9 @@
   "related": [
     "l402",
     "lightning-agent-tools",
-    "alby-hub"
+    "alby-hub",
+    "getalby-sdk",
+    "lnbits-nwcprovider"
   ],
   "sources": [
     "https://nwc.dev",
@@ -27,7 +29,7 @@
     "https://github.com/nostr-protocol/nips/blob/master/47.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator"
 }

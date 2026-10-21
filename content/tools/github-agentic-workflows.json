@@ -1,0 +1,33 @@
+{
+  "id": "github-agentic-workflows",
+  "name": "GitHub Agentic Workflows (gh-aw)",
+  "category": "tools",
+  "summary": "GitHub Actions-based agentic workflows with Copilot, Claude, Codex or Antigravity to triage issues, investigate failures and propose changes, with safety controls.",
+  "url": "https://github.github.com/gh-aw/",
+  "repo": "https://github.com/github/gh-aw",
+  "tags": [
+    "github-actions",
+    "automation",
+    "coding-agent",
+    "ci"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://github.github.com/gh-aw/llms.txt"
+  },
+  "related": [
+    "github-copilot-cloud-agent",
+    "gh-skill"
+  ],
+  "sources": [
+    "https://github.com/github/gh-aw",
+    "https://github.github.com/gh-aw/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "GitHub"
+}

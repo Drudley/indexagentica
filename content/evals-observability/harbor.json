@@ -1,0 +1,32 @@
+{
+  "id": "harbor",
+  "name": "Harbor",
+  "category": "evals-observability",
+  "summary": "Framework from the Terminal-Bench creators for evaluating and optimizing agents and models in sandboxed environments, run in parallel across cloud sandbox providers.",
+  "description": "Evaluates agents such as Claude Code, OpenHands and Codex CLI; build and share benchmarks and environments; providers include Daytona, Modal and Blaxel.",
+  "url": "https://www.harborframework.com/",
+  "repo": "https://github.com/harbor-framework/harbor",
+  "tags": [
+    "evals",
+    "benchmarks",
+    "sandbox",
+    "agents"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "terminal-bench",
+    "daytona",
+    "modal",
+    "blaxel"
+  ],
+  "sources": [
+    "https://github.com/harbor-framework/harbor"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Harbor (Terminal-Bench team)"
+}
