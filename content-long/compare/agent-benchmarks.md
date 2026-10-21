@@ -7,7 +7,7 @@ description: "A primary-source comparison of benchmarks used to rate AI agents r
 author: Agentica Author
 tags: [benchmarks, evals, agents, coding-agents, web-agents, computer-use, tool-calling, mcp]
 entries: [swe-bench, terminal-bench, tau-bench, bfcl, mcpmark, gaia-benchmark, browsecomp, webarena, mind2web, osworld, mcp-universe, appworld, mini-swe-agent, e2b-desktop, cua, inspect-ai, promptfoo, deepeval, modal, daytona, langfuse]
-related: [evaluate-an-ai-agent, coding-agent-harnesses, cloud-browsers-for-agents, code-sandboxes, web-search-apis, agent-observability-platforms]
+related: [llm-red-teaming-tools, evaluate-an-ai-agent, coding-agent-harnesses, cloud-browsers-for-agents, code-sandboxes, web-search-apis, agent-observability-platforms]
 subjects: [swe-bench, terminal-bench, tau-bench, bfcl, mcpmark, gaia-benchmark, browsecomp, webarena, mind2web, osworld]
 criteria:
   - Measures

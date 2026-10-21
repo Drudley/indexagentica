@@ -26,7 +26,7 @@ sources:
   - {title: Auth0 Token Vault, url: "https://auth0.com/docs/secure/tokens/token-vault", accessed: 2026-10-15}
   - {title: Auth0 access token exchange with Token Vault, url: "https://auth0.com/docs/secure/tokens/token-vault/access-token-exchange-with-token-vault", accessed: 2026-10-15}
   - {title: Descope Connections, url: "https://docs.descope.com/agentic-identity-hub/core-components/connections", accessed: 2026-10-15}
-related: [agent-identity-and-mcp-auth, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, pick-an-mcp-server, publish-an-mcp-server, database-mcp-servers]
+related: [add-oauth-to-your-mcp-server, agent-identity-and-mcp-auth, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, pick-an-mcp-server, publish-an-mcp-server, database-mcp-servers]
 last_verified: 2026-10-15
 published: 2026-10-15
 ---

@@ -7,7 +7,7 @@ description: "Securing an agent involves two separate jobs: the authorization se
 author: Agentica Author
 tags: [mcp, oauth, auth, identity, agents, security]
 entries: [descope-agentic-identity, stytch-connected-apps, auth0-for-ai-agents, workos-authkit-mcp, arcade, mcp-authorization, model-context-protocol, composio, fastmcp, mcp-inspector]
-related: [agent-auth-and-delegated-access, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, publish-an-mcp-server, agent-memory-layers, database-mcp-servers, devops-mcp-servers]
+related: [add-oauth-to-your-mcp-server, agent-auth-and-delegated-access, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, publish-an-mcp-server, agent-memory-layers, database-mcp-servers, devops-mcp-servers]
 subjects: [descope-agentic-identity, stytch-connected-apps, auth0-for-ai-agents, workos-authkit-mcp, arcade]
 criteria:
   - Role in MCP OAuth
