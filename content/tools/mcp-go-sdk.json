@@ -1,0 +1,32 @@
+{
+  "id": "mcp-go-sdk",
+  "name": "MCP Go SDK",
+  "category": "tools",
+  "summary": "Official Go SDK for Model Context Protocol servers and clients, maintained in collaboration with Google.",
+  "description": "Latest release v1.8.0. The repository LICENSE describes a transition from MIT to Apache-2.0 (new contributions Apache-2.0, docs CC-BY-4.0).",
+  "url": "https://github.com/modelcontextprotocol/go-sdk",
+  "repo": "https://github.com/modelcontextprotocol/go-sdk",
+  "docs": "https://pkg.go.dev/github.com/modelcontextprotocol/go-sdk",
+  "tags": [
+    "mcp",
+    "sdk",
+    "go",
+    "official"
+  ],
+  "license": "MIT AND Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-typescript-sdk",
+    "mcp-python-sdk"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/go-sdk"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Model Context Protocol"
+}

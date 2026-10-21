@@ -1,0 +1,28 @@
+{
+  "id": "agentevals",
+  "name": "AgentEvals",
+  "category": "evals-observability",
+  "summary": "LangChain's evaluators and utilities for agents, focused on agent trajectories (the intermediate steps an agent takes).",
+  "url": "https://github.com/langchain-ai/agentevals",
+  "repo": "https://github.com/langchain-ai/agentevals",
+  "tags": [
+    "evals",
+    "agents",
+    "trajectory"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "openevals",
+    "langsmith"
+  ],
+  "sources": [
+    "https://github.com/langchain-ai/agentevals"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

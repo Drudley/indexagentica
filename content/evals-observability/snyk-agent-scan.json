@@ -1,0 +1,30 @@
+{
+  "id": "snyk-agent-scan",
+  "name": "Snyk Agent Scan",
+  "category": "evals-observability",
+  "summary": "Security scanner that discovers agent components on your machine (agents, MCP servers, skills) and scans them for prompt injections and vulnerabilities.",
+  "description": "Run via uvx or a standalone binary (no npm package). Formerly invariantlabs-ai/mcp-scan, which now redirects here. CLI output is marked experimental.",
+  "url": "https://github.com/snyk/agent-scan",
+  "repo": "https://github.com/snyk/agent-scan",
+  "tags": [
+    "security",
+    "mcp",
+    "skills",
+    "scanner"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "garak",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/snyk/agent-scan"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Snyk"
+}

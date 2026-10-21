@@ -3,6 +3,7 @@
   "name": "Promptfoo GitHub Action",
   "category": "evals-observability",
   "summary": "GitHub Action for running Promptfoo prompt, agent and RAG tests and red-team scans in CI.",
+  "description": "Evaluates prompts when monitored files change; on pull requests it posts a summary comment with pass/fail counts and, if sharing is enabled, a Promptfoo web-viewer link. Inputs include config, prompts, provider API keys, promptfoo-version and no-share.",
   "url": "https://github.com/promptfoo/promptfoo-action",
   "repo": "https://github.com/promptfoo/promptfoo-action",
   "tags": [
@@ -19,11 +20,12 @@
     "langfuse-experiment-action"
   ],
   "sources": [
-    "https://github.com/promptfoo/promptfoo-action"
+    "https://github.com/promptfoo/promptfoo-action",
+    "https://raw.githubusercontent.com/promptfoo/promptfoo-action/main/action.yml"
   ],
   "added": "2026-10-16",
-  "updated": "2026-10-16",
-  "last_verified": "2026-10-16",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator",
   "maintainer": "Promptfoo"
 }

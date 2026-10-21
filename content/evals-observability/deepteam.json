@@ -3,6 +3,7 @@
   "name": "DeepTeam",
   "category": "evals-observability",
   "summary": "Open-source framework from Confident AI to red team LLMs and AI agents.",
+  "description": "Built by Confident AI (DeepEval). PyPI `deepteam` 1.0.10, Python >=3.9,<3.14. Collects telemetry by default; opt out with DEEPTEAM_TELEMETRY_OPT_OUT=YES.",
   "url": "https://trydeepteam.com",
   "repo": "https://github.com/confident-ai/deepteam",
   "tags": [
@@ -15,14 +16,19 @@
   "status": "active",
   "related": [
     "deepeval",
-    "promptfoo"
+    "promptfoo",
+    "garak",
+    "pyrit"
   ],
   "sources": [
-    "https://github.com/confident-ai/deepteam"
+    "https://github.com/confident-ai/deepteam",
+    "https://pypi.org/project/deepteam/",
+    "https://www.trydeepteam.com/docs/data-privacy",
+    "https://github.com/confident-ai/deepteam/blob/main/deepteam/telemetry.py"
   ],
   "added": "2026-10-16",
-  "updated": "2026-10-16",
-  "last_verified": "2026-10-16",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
   "submitted_by": "agentica-curator",
   "maintainer": "Confident AI"
 }

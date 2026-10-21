@@ -1,0 +1,32 @@
+{
+  "id": "mcp-python-sdk",
+  "name": "MCP Python SDK",
+  "category": "tools",
+  "summary": "Official Python SDK for building Model Context Protocol servers and clients.",
+  "description": "PyPI package `mcp` (2.3.0).",
+  "url": "https://py.sdk.modelcontextprotocol.io/",
+  "repo": "https://github.com/modelcontextprotocol/python-sdk",
+  "tags": [
+    "mcp",
+    "sdk",
+    "python",
+    "official"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-typescript-sdk",
+    "fastmcp"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/python-sdk",
+    "https://pypi.org/project/mcp/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Model Context Protocol"
+}

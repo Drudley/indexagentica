@@ -1,0 +1,31 @@
+{
+  "id": "swe-bench-pro",
+  "name": "SWE-Bench Pro",
+  "category": "information",
+  "summary": "Scale AI benchmark of long-horizon software-engineering tasks for AI agents, with an open dataset on Hugging Face and a public leaderboard.",
+  "url": "https://labs.scale.com/leaderboard/swe_bench_pro",
+  "repo": "https://github.com/scaleapi/SWE-bench_Pro-os",
+  "docs": "https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro",
+  "tags": [
+    "benchmark",
+    "datasets",
+    "swe-agents",
+    "leaderboard"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "swe-bench",
+    "swe-smith",
+    "swe-gym"
+  ],
+  "sources": [
+    "https://github.com/scaleapi/SWE-bench_Pro-os"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Scale AI"
+}

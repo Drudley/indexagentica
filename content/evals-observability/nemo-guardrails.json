@@ -1,0 +1,30 @@
+{
+  "id": "nemo-guardrails",
+  "name": "NeMo Guardrails",
+  "category": "evals-observability",
+  "summary": "NVIDIA's open-source toolkit for adding programmable guardrails to LLM-based conversational systems.",
+  "description": "PyPI `nemoguardrails` 0.24.1. GitHub shows NOASSERTION, but LICENSE.md is Apache-2.0.",
+  "url": "https://docs.nvidia.com/nemo/guardrails/about-nemo-guardrails-library/overview",
+  "repo": "https://github.com/NVIDIA-NeMo/Guardrails",
+  "tags": [
+    "guardrails",
+    "safety",
+    "conversational-ai"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "guardrails-ai",
+    "garak"
+  ],
+  "sources": [
+    "https://github.com/NVIDIA-NeMo/Guardrails",
+    "https://pypi.org/project/nemoguardrails/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "NVIDIA"
+}

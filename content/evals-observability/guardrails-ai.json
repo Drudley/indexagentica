@@ -1,0 +1,28 @@
+{
+  "id": "guardrails-ai",
+  "name": "Guardrails AI",
+  "category": "evals-observability",
+  "summary": "Open-source Python framework for adding input/output guardrails (validators) to LLM applications.",
+  "url": "https://guardrailsai.com/guardrails/docs",
+  "repo": "https://github.com/guardrails-ai/guardrails",
+  "tags": [
+    "guardrails",
+    "validation",
+    "safety",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "nemo-guardrails"
+  ],
+  "sources": [
+    "https://github.com/guardrails-ai/guardrails"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Guardrails AI"
+}

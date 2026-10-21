@@ -1,0 +1,31 @@
+{
+  "id": "pyrit",
+  "name": "PyRIT",
+  "category": "evals-observability",
+  "summary": "Microsoft's open-source Python Risk Identification Tool for proactively red teaming generative AI systems.",
+  "description": "PyPI `pyrit` 1.1.0, Python >=3.10,<3.15. The former Azure/PyRIT repo is archived; development continues at microsoft/PyRIT.",
+  "url": "https://microsoft.github.io/PyRIT/",
+  "repo": "https://github.com/microsoft/PyRIT",
+  "tags": [
+    "red-teaming",
+    "security",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "garak",
+    "deepteam",
+    "promptfoo"
+  ],
+  "sources": [
+    "https://github.com/microsoft/PyRIT",
+    "https://pypi.org/project/pyrit/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

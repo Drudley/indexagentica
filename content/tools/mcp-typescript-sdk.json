@@ -1,0 +1,34 @@
+{
+  "id": "mcp-typescript-sdk",
+  "name": "MCP TypeScript SDK",
+  "category": "tools",
+  "summary": "Official TypeScript SDK for building MCP servers and clients on Node.js, Bun and Deno; v2 ships as @modelcontextprotocol/server and @modelcontextprotocol/client.",
+  "description": "v2 (main branch, stable line) implements the 2026-07-28 MCP spec; @modelcontextprotocol/server 2.3.1 (Node >=20) is Apache-2.0 on npm. v1.x (@modelcontextprotocol/sdk, MIT, 1.32.1) lives on the v1.x branch and keeps receiving bug and security fixes. The repository LICENSE describes a transition from MIT to Apache-2.0 (new contributions Apache-2.0, docs CC-BY-4.0).",
+  "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+  "repo": "https://github.com/modelcontextprotocol/typescript-sdk",
+  "docs": "https://ts.sdk.modelcontextprotocol.io/v2",
+  "tags": [
+    "mcp",
+    "sdk",
+    "typescript",
+    "official"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-python-sdk",
+    "mcp-go-sdk",
+    "fastmcp"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/typescript-sdk",
+    "https://www.npmjs.com/package/@modelcontextprotocol/server"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Model Context Protocol"
+}

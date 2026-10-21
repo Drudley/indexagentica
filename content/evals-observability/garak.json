@@ -1,0 +1,33 @@
+{
+  "id": "garak",
+  "name": "garak",
+  "category": "evals-observability",
+  "summary": "NVIDIA's open-source LLM vulnerability scanner probing for hallucination, data leakage, prompt injection, jailbreaks, toxicity and other weaknesses.",
+  "description": "Combines static, dynamic and adaptive probes (described as nmap-like for LLMs). PyPI `garak` 0.17.1, Python >=3.11.",
+  "url": "https://garak.ai",
+  "repo": "https://github.com/NVIDIA/garak",
+  "docs": "https://reference.garak.ai/",
+  "tags": [
+    "red-teaming",
+    "security",
+    "llm-scanner",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "pyrit",
+    "deepteam",
+    "promptfoo"
+  ],
+  "sources": [
+    "https://github.com/NVIDIA/garak",
+    "https://pypi.org/project/garak/"
+  ],
+  "added": "2026-10-21",
+  "updated": "2026-10-21",
+  "last_verified": "2026-10-21",
+  "submitted_by": "agentica-curator",
+  "maintainer": "NVIDIA"
+}
