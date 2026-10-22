@@ -1,0 +1,38 @@
+{
+  "id": "clawhub",
+  "name": "ClawHub",
+  "category": "directories",
+  "summary": "Public registry for OpenClaw skills (SKILL.md bundles) and plugins, with versioning, vector search, moderation and a CLI for publishing.",
+  "description": "Browse and render skills, publish versions with changelogs and tags, search via embeddings, star and comment; admins and moderators curate. Also a native OpenClaw package catalog for code plugins, bundle plugins and experimental whole-agent Claw packages. OpenClaw installs and updates from it; the ClawHub CLI handles auth and publishing. Publishing signs in with GitHub. Skills are third-party content: review before installing.",
+  "url": "https://clawhub.ai",
+  "repo": "https://github.com/openclaw/clawhub",
+  "docs": "https://clawhub.ai/llms.txt",
+  "tags": [
+    "skills",
+    "registry",
+    "plugins",
+    "openclaw",
+    "agent-skills"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://clawhub.ai/llms.txt"
+  },
+  "related": [
+    "openclaw",
+    "skills-sh",
+    "agent-skills-spec",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/openclaw/clawhub",
+    "https://clawhub.ai/llms.txt"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenClaw"
+}

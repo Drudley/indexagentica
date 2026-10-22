@@ -1,0 +1,43 @@
+{
+  "id": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "harnesses",
+  "summary": "Nous Research's self-improving open-source agent: terminal UI plus messaging gateway, agent-curated memory and skills it writes and refines from experience.",
+  "description": "Works with any model provider (Nous Portal, OpenRouter, OpenAI, custom endpoints; switch with `hermes model`). Features from the README: full TUI, one gateway process for Telegram, Discord, Slack, WhatsApp and Signal, autonomous skill creation compatible with the agentskills.io standard, FTS5 session search, Honcho user modelling, a built-in cron scheduler, isolated subagents, and seven terminal backends (local, Docker, SSH, Singularity, Modal, Daytona, Vercel Sandbox). Also ships batch trajectory generation for training tool-calling models. Install: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash` (native Windows via PowerShell).",
+  "url": "https://hermes-agent.nousresearch.com",
+  "repo": "https://github.com/NousResearch/hermes-agent",
+  "docs": "https://hermes-agent.nousresearch.com/docs",
+  "tags": [
+    "cli",
+    "tui",
+    "self-improving",
+    "memory",
+    "skills",
+    "messaging",
+    "scheduler",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://hermes-agent.nousresearch.com/docs/llms.txt"
+  },
+  "related": [
+    "openclaw",
+    "honcho",
+    "agent-skills-spec",
+    "modal",
+    "daytona",
+    "vercel-sandbox"
+  ],
+  "sources": [
+    "https://github.com/NousResearch/hermes-agent",
+    "https://hermes-agent.nousresearch.com/docs/llms.txt"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Nous Research"
+}

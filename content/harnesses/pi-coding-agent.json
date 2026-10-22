@@ -1,0 +1,41 @@
+{
+  "id": "pi-coding-agent",
+  "name": "Pi",
+  "category": "harnesses",
+  "summary": "Minimal, extensible coding-agent harness and TypeScript toolkit (unified LLM API, agent core, TUI) from Earendil; customize with extensions, skills and prompt templates.",
+  "description": "Ships strong defaults but deliberately skips sub-agents and plan mode: add them via extensions or packages. Run it interactively, in print/JSON mode, over RPC, or embed it with the Pi TypeScript SDK. The monorepo also contains `pi-ai` (multi-provider LLM API), `pi-agent-core`, `pi-tui` and `pi-durable`. Install with `curl -fsSL https://pi.dev/install.sh | sh` or `npm install -g --ignore-scripts @earendil-works/pi-coding-agent` (Node.js 22.19+).\n\n**No built-in permission system:** Pi runs with the launching user's permissions; the docs describe containerizing it (Gondolin micro-VM extension, Docker or OpenShell).",
+  "url": "https://pi.dev",
+  "repo": "https://github.com/earendil-works/pi",
+  "docs": "https://pi.dev/docs/latest",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "tui",
+    "sdk",
+    "extensions",
+    "skills",
+    "typescript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "notes": "Automate via print/JSON mode or the RPC interface; embed via the TypeScript SDK (@earendil-works/pi-coding-agent)."
+  },
+  "related": [
+    "openclaw",
+    "claude-code",
+    "opencode",
+    "codex-cli",
+    "crush"
+  ],
+  "sources": [
+    "https://github.com/earendil-works/pi",
+    "https://pi.dev/docs/latest"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Earendil (earendil-works)"
+}

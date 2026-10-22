@@ -1,0 +1,42 @@
+{
+  "id": "postman-mcp-server",
+  "name": "Postman MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Postman MCP server connecting agents to Postman collections, workspaces, environments and API specs; remote (OAuth) or local via npx.",
+  "description": "Tool configurations: **Minimal** (default, essential operations), **Code** (generate client code from public and internal API definitions), **Full** (100+ Postman API tools) and **Learn** (search Postman docs). Remote: `https://mcp.postman.com/minimal` (change to `/code` or `/mcp` for Code or Full) with OAuth per the MCP authorization spec; an EU remote server and the local server (`npx @postman/postman-mcp-server`, `--code`/`--full`) use a Postman API key.",
+  "url": "https://www.postman.com/product/mcp-server/",
+  "repo": "https://github.com/postmanlabs/postman-mcp-server",
+  "docs": "https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/overview",
+  "tags": [
+    "api-development",
+    "openapi",
+    "api-testing",
+    "remote-mcp",
+    "oauth",
+    "postman"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.postman.com/minimal",
+    "auth": "oauth",
+    "notes": "OAuth on the US remote server; EU remote and local server take a Postman API key (Authorization: Bearer <key> or POSTMAN_API_KEY). Paths: /minimal, /code, /mcp (full)."
+  },
+  "related": [
+    "openapi",
+    "mcp-inspector",
+    "github-mcp-server",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/postmanlabs/postman-mcp-server",
+    "https://www.postman.com/product/mcp-server/",
+    "https://learning.postman.com/docs/reference/postman-api/postman-mcp-server/overview"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Postman"
+}

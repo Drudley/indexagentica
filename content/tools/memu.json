@@ -1,0 +1,42 @@
+{
+  "id": "memu",
+  "name": "memU",
+  "category": "tools",
+  "summary": "Agent-driven personal memory stored as a shared LLM wiki across sessions, agents and devices; distills reusable skills from Codex, Claude Code, Cursor and OpenClaw history.",
+  "description": "Memorizes useful session knowledge via a scheduled background task and retrieves it in future tasks, with tested host adapters for ChatGPT (work mode/Codex), Claude Code, Cursor, OpenClaw, Hermes Agent, WorkBuddy and others on macOS, Windows and Linux (see the README matrix for limitations). Backends: memU Cloud (sign in at memu.so; the README advertises it as free and unlimited) or local/self-hosted (`pip install memu-cli`). Setup is one message to your agent pointing it at https://memu.so/SKILL.md.",
+  "url": "https://memu.pro",
+  "repo": "https://github.com/NevaMind-AI/memU",
+  "tags": [
+    "memory",
+    "skills",
+    "coding-agents",
+    "cross-agent",
+    "self-hosted",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Cloud mode needs a memU API key from memu.so; local mode needs none. Agent setup instructions: https://memu.so/SKILL.md"
+  },
+  "related": [
+    "mem0",
+    "honcho",
+    "acontext",
+    "supermemory",
+    "openclaw",
+    "hermes-agent"
+  ],
+  "sources": [
+    "https://github.com/NevaMind-AI/memU",
+    "https://github.com/NevaMind-AI/memU/blob/main/LICENSE.txt",
+    "https://memu.so/SKILL.md"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "NevaMind AI"
+}

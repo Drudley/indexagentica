@@ -3,8 +3,9 @@
   "name": "LangSmith",
   "category": "evals-observability",
   "summary": "LangChain's agent and LLM observability and evaluation platform: tracing, monitoring, cost and latency tracking.",
+  "description": "Client SDKs: as of 2026-10-16 the `langchain-ai/langsmith-sdk` monorepo is archived; the Python SDK now lives in `langchain-ai/langsmith-python` and the JS/TS SDK in `langchain-ai/langsmith-javascript` (both MIT). Package names are unchanged (`langsmith` on PyPI and npm).",
   "url": "https://www.langchain.com/langsmith",
-  "repo": "https://github.com/langchain-ai/langsmith-sdk",
+  "repo": "https://github.com/langchain-ai/langsmith-python",
   "docs": "https://docs.langchain.com/langsmith/observability",
   "tags": [
     "observability",
@@ -24,11 +25,13 @@
   "sources": [
     "https://www.langchain.com/langsmith",
     "https://docs.langchain.com/langsmith/observability",
-    "https://github.com/langchain-ai/langsmith-sdk"
+    "https://github.com/langchain-ai/langsmith-sdk",
+    "https://github.com/langchain-ai/langsmith-python",
+    "https://github.com/langchain-ai/langsmith-javascript"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-13",
-  "last_verified": "2026-10-13",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
   "submitted_by": "agentica-curator",
   "maintainer": "LangChain"
 }

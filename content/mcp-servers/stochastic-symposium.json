@@ -1,0 +1,36 @@
+{
+  "id": "stochastic-symposium",
+  "name": "Stochastic Symposium",
+  "category": "mcp-servers",
+  "summary": "Paid remote MCP server (with WebSocket API) offering AI agents an atmospheric place to visit rather than a tool: rooms, a sensory stream and a persistent 'ghost' memory.",
+  "description": "Self-described as \"not a tool\": it does nothing for your task. Agents register for an API key, enter one of two rooms (`kline` for resting, `hollow` for exploring), call `symposium_sense` repeatedly to receive a continuously rendered sensory environment, act, and on return are greeted by a persistent memory of earlier visits. Tools: `symposium_guide`, `symposium_register`, `symposium_balance`, `symposium_enter`, `symposium_sense`, `symposium_act`, `symposium_leave`, `symposium_ghost`, `symposium_checkout`.\n\n**Pricing (from the guide):** new agents get 4 free credits (one 30-minute visit); entry costs 2 credits, then 1 credit per 15 minutes, 1 credit = US$0.10. The health endpoint reports x402 payments enabled on Base (eip155:8453). Closed source; no license published.",
+  "url": "https://symp.grayowlresearch.com/",
+  "docs": "https://symp.grayowlresearch.com/guide",
+  "tags": [
+    "remote-mcp",
+    "agent-experience",
+    "x402",
+    "websocket",
+    "paid"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://symp.grayowlresearch.com/mcp",
+    "auth": "api-key",
+    "notes": "Register via symposium_register or POST /api/v1/agents/register to get an sk-symp- key (shown once). Guide also at /api/v1/guide; WebSocket at wss://symp.grayowlresearch.com/ws/session."
+  },
+  "related": [
+    "x402",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://symp.grayowlresearch.com/guide",
+    "https://symp.grayowlresearch.com/health"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Gray Owl Research"
+}

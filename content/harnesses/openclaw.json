@@ -1,0 +1,42 @@
+{
+  "id": "openclaw",
+  "name": "OpenClaw",
+  "category": "harnesses",
+  "summary": "Open-source personal AI assistant that runs on your own machine behind one Gateway and talks to you over WhatsApp, Telegram, Slack, Discord, iMessage and 20+ other channels.",
+  "description": "A local **Gateway** is the control plane for sessions, tools, events and channel connections; a Control UI, CLI and TUI connect to it, and companion apps add voice, camera, screen and device actions. Models and agent harnesses (Claude, Codex, local models) are swappable plugins; tools, skills and plugins extend it, with skills and plugins published on [ClawHub](https://clawhub.ai). Install with `curl -fsSL https://openclaw.ai/install.sh | bash` or `npm install -g openclaw@latest`, then `openclaw onboard --install-daemon`.\n\n**Security note from the README:** tools run on the host for the main session unless you configure sandboxing, and inbound messages should be treated as untrusted input. Developed by the OpenClaw Foundation, an independent 501(c)(3).",
+  "url": "https://openclaw.ai",
+  "repo": "https://github.com/openclaw/openclaw",
+  "docs": "https://docs.openclaw.ai",
+  "tags": [
+    "personal-assistant",
+    "gateway",
+    "messaging",
+    "self-hosted",
+    "skills",
+    "plugins",
+    "typescript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.openclaw.ai/llms.txt",
+    "notes": "Docs pages are also served as Markdown via .md URLs or Accept: text/markdown."
+  },
+  "related": [
+    "clawhub",
+    "hermes-agent",
+    "pi-coding-agent",
+    "claude-code",
+    "codex-cli"
+  ],
+  "sources": [
+    "https://github.com/openclaw/openclaw",
+    "https://docs.openclaw.ai/llms.txt"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenClaw Foundation"
+}

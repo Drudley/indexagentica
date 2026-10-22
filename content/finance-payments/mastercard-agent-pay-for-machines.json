@@ -1,0 +1,38 @@
+{
+  "id": "mastercard-agent-pay-for-machines",
+  "name": "Mastercard Agent Pay for Machines (AP4M)",
+  "category": "finance-payments",
+  "summary": "Mastercard's x402-based machine-to-machine payments for AI agents: signed payment vouchers within pre-authorized budgets; early-access pilot, not commercially available.",
+  "description": "An agent answers an HTTP 402 Payment Required challenge with a cryptographically signed payment voucher (\"a secure promise to pay\") within spending limits and policies set by its principal; providers verify, deliver, and can batch vouchers to redeem later, off-chain. Announced at Cloudflare Connect on 2026-10-20 after pilots with Cloudflare, Ant International, AIsa, Base, BVNK, Coinbase and Hype; the early-access program gives developers APIs, tools and documentation. **Mastercard states it is still a pilot and not available commercially**; sign-up is for the pilot.",
+  "url": "https://ap4m.build/info",
+  "tags": [
+    "x402",
+    "agent-payments",
+    "machine-payments",
+    "mastercard",
+    "pilot"
+  ],
+  "license": "proprietary",
+  "pricing": "unknown",
+  "status": "beta",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Early access by sign-up only; no public API docs at the time of verification."
+  },
+  "related": [
+    "x402",
+    "mastercard-agent-suite",
+    "cdp-x402",
+    "visa-intelligent-commerce",
+    "machine-payments-protocol"
+  ],
+  "sources": [
+    "https://ap4m.build/info",
+    "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Mastercard"
+}

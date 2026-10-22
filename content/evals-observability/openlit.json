@@ -1,0 +1,41 @@
+{
+  "id": "openlit",
+  "name": "OpenLIT",
+  "category": "evals-observability",
+  "summary": "Open-source, OpenTelemetry-native platform for AI agents: tracing, evals, guardrails, prompt hub, vault, and cost and GPU monitoring; self-host free.",
+  "description": "Traces every LLM call, tool call, MCP request and retrieval via OpenTelemetry SDKs (`pip install openlit` / `npm install openlit`), evaluates on real traces (LLM-as-a-judge, programmatic, human feedback, CI gates), adds runtime guardrails (prompt injection, sensitive or restricted topics) and manages prompts and secrets without redeploying. Tracks cost (incl. custom pricing) and NVIDIA/AMD/Intel GPUs. Self-host with `docker compose up -d`.",
+  "url": "https://openlit.io",
+  "repo": "https://github.com/openlit/openlit",
+  "docs": "https://docs.openlit.io",
+  "tags": [
+    "observability",
+    "tracing",
+    "opentelemetry",
+    "evals",
+    "guardrails",
+    "self-hosted",
+    "gpu-monitoring"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.openlit.io/llms.txt"
+  },
+  "related": [
+    "openllmetry",
+    "otel-genai-semconv",
+    "langfuse",
+    "arize-phoenix",
+    "opik"
+  ],
+  "sources": [
+    "https://github.com/openlit/openlit",
+    "https://docs.openlit.io/llms.txt"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenLIT"
+}

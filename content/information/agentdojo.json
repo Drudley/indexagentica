@@ -1,0 +1,38 @@
+{
+  "id": "agentdojo",
+  "name": "AgentDojo",
+  "category": "information",
+  "summary": "ETH Zurich benchmark environment for prompt-injection attacks and defenses on tool-using LLM agents, with suites like workspace, banking, travel and slack.",
+  "description": "Runs agents on realistic user tasks while injected tool outputs try to hijack them, measuring both utility and attack success for combinations of models, attacks and defenses (e.g. a tool filter or prompt-injection detector). `pip install agentdojo`; run with `python -m agentdojo.scripts.benchmark`. Paper: [arXiv:2406.13352](https://arxiv.org/abs/2406.13352) (NeurIPS 2024 Datasets & Benchmarks); results are published on the docs site. The README notes the package API is still under development.",
+  "url": "https://agentdojo.spylab.ai/",
+  "repo": "https://github.com/ethz-spylab/agentdojo",
+  "docs": "https://agentdojo.spylab.ai/",
+  "tags": [
+    "benchmark",
+    "prompt-injection",
+    "security",
+    "tool-use",
+    "agents",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "garak",
+    "pyrit",
+    "deepteam",
+    "tau-bench",
+    "inspect-ai"
+  ],
+  "sources": [
+    "https://github.com/ethz-spylab/agentdojo",
+    "https://agentdojo.spylab.ai/",
+    "https://arxiv.org/abs/2406.13352"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "ETH Zurich SPY Lab"
+}

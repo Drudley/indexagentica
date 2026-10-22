@@ -1,0 +1,41 @@
+{
+  "id": "llm-sandbox",
+  "name": "LLM Sandbox",
+  "category": "infrastructure",
+  "summary": "Python library and MCP server for running LLM-generated code in isolated backends (Docker, Kubernetes, Podman, Bubblewrap, NsJail, Windows) behind one API.",
+  "description": "One code-execution API over several isolation backends, with security policies, CPU/memory/time limits, network isolation, artifact (plot) capture, on-the-fly dependency install, file copy and container pooling. Supports Python, JavaScript, Java, C++, Go and R. Includes an MCP server so MCP clients can run code in the sandbox, plus runnable examples for eleven agent frameworks (OpenAI Agents SDK, Claude Agent SDK, LangChain, LlamaIndex, Google ADK, CrewAI, Pydantic AI, smolagents, Strands and others). `pip install 'llm-sandbox[docker]'`.",
+  "url": "https://vndee.github.io/llm-sandbox/",
+  "repo": "https://github.com/vndee/llm-sandbox",
+  "docs": "https://vndee.github.io/llm-sandbox/",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "docker",
+    "kubernetes",
+    "self-hosted",
+    "mcp",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "notes": "MCP server documented at https://vndee.github.io/llm-sandbox/mcp-integration/ (local, runs on your Docker/Podman/Kubernetes or local backend)."
+  },
+  "related": [
+    "e2b",
+    "microsandbox",
+    "docker-sandboxes",
+    "sandbox-runtime",
+    "opensandbox"
+  ],
+  "sources": [
+    "https://github.com/vndee/llm-sandbox",
+    "https://vndee.github.io/llm-sandbox/"
+  ],
+  "added": "2026-10-22",
+  "updated": "2026-10-22",
+  "last_verified": "2026-10-22",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Duy Huynh (vndee)"
+}
