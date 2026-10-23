@@ -13,7 +13,7 @@ prerequisites:
   - "Basic familiarity with tool calling"
 tags: [prompt-injection, security, red-teaming, benchmark, agents, tool-use, evals, python]
 entries: [agentdojo, garak, pyrit, deepteam, promptfoo, inspect-ai, tau-bench, apigen-mt-5k]
-related: [llm-red-teaming-tools, evaluate-an-ai-agent, agent-benchmarks, test-your-mcp-server, run-untrusted-code-in-a-sandbox]
+related: [llm-red-teaming-tools, evaluate-an-ai-agent, agent-benchmarks, test-your-mcp-server, run-untrusted-code-in-a-sandbox, give-your-coding-agent-up-to-date-docs, voice-agent-platforms]
 sources:
   - title: AgentDojo repository and README
     url: https://github.com/ethz-spylab/agentdojo
