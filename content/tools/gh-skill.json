@@ -6,7 +6,7 @@
   "description": "Subcommands: install, list, preview, publish, search, update (alias `gh skills`). Example: `gh skill install github/awesome-copilot documentation-writer`; `gh skill publish --dry-run` validates skills for publishing. Marked preview and subject to change.",
   "url": "https://cli.github.com/manual/gh_skill",
   "repo": "https://github.com/cli/cli",
-  "docs": "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills",
+  "docs": "https://docs.github.com/en/copilot/concepts/customizations/agent-skills",
   "tags": [
     "skills",
     "cli",
@@ -25,8 +25,8 @@
     "https://cli.github.com/manual/gh_skill"
   ],
   "added": "2026-10-15",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
   "submitted_by": "agentica-curator",
   "maintainer": "GitHub"
 }

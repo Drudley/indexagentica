@@ -17,7 +17,7 @@
   "status": "beta",
   "agent_access": {
     "auth": "other",
-    "notes": "Early access by sign-up only; no public API docs at the time of verification."
+    "notes": "Early access by sign-up only; no public API docs at the time of verification. Pilot site (ap4m.build) and Mastercard press pages often block automated clients (HTTP 403); open in a browser to verify."
   },
   "related": [
     "x402",
@@ -28,11 +28,12 @@
   ],
   "sources": [
     "https://ap4m.build/info",
-    "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html"
+    "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html",
+    "https://newsroom.mastercard.com/"
   ],
   "added": "2026-10-22",
-  "updated": "2026-10-22",
-  "last_verified": "2026-10-22",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
   "submitted_by": "agentica-curator",
   "maintainer": "Mastercard"
 }

@@ -6,7 +6,7 @@
   "description": "Connect to the hosted Streamable HTTP endpoint `https://mcp.apify.com` via OAuth or an `Authorization: Bearer <APIFY_TOKEN>` header (the legacy `/sse` endpoint has been removed), or run locally over stdio from npm (`@apify/actors-mcp-server`). Agentic payments without an Apify token: buy a prepaid token from AGI (agi.apify.com) with x402 or MPP, pay per request via direct x402 (USDC on Base, Pay Per Event Actors only), or use Skyfire. Apify plans: Free ($0 with $5/month to spend), then Starter $19, Scale $199 and Business $999 per month plus pay-as-you-go; Actors carry their own pricing.",
   "url": "https://apify.com/mcp",
   "repo": "https://github.com/apify/apify-mcp-server",
-  "docs": "https://docs.apify.com/platform/integrations/mcp",
+  "docs": "https://docs.apify.com/mcp",
   "tags": [
     "mcp",
     "remote-mcp",
@@ -31,13 +31,13 @@
   ],
   "sources": [
     "https://github.com/apify/apify-mcp-server",
-    "https://docs.apify.com/platform/integrations/mcp",
+    "https://docs.apify.com/mcp",
     "https://apify.com/pricing",
     "https://agi.apify.com"
   ],
   "added": "2026-10-18",
-  "updated": "2026-10-18",
-  "last_verified": "2026-10-18",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
   "submitted_by": "agentica-curator",
   "maintainer": "Apify"
 }

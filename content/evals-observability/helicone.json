@@ -21,11 +21,11 @@
   "sources": [
     "https://github.com/Helicone/helicone",
     "https://www.helicone.ai",
-    "https://www.helicone.ai/blog/joining-mintlify"
+    "https://docs.helicone.ai"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-13",
-  "last_verified": "2026-10-13",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
   "submitted_by": "agentica-curator",
   "maintainer": "Helicone"
 }

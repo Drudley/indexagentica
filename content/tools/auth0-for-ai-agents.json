@@ -25,11 +25,11 @@
     "https://auth0.com/solutions/ship-ai-agents",
     "https://github.com/auth0/auth0-ai-js",
     "https://auth0.com/pricing.md",
-    "https://auth0.com/ai/docs/mcp/guides/registering-your-mcp-client-application/manual-cimd-registration.md"
+    "https://auth0.com/ai/docs/mcp/guides/registering-your-mcp-client-application"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-14",
-  "last_verified": "2026-10-14",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
   "submitted_by": "agentica-curator",
   "maintainer": "Auth0 (Okta)"
 }
