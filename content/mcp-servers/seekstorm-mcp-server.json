@@ -1,0 +1,42 @@
+{
+  "id": "seekstorm-mcp-server",
+  "name": "SeekStorm MCP Server",
+  "category": "mcp-servers",
+  "summary": "Local single-binary MCP server (stdio) that embeds the SeekStorm Rust search library: lexical, vector and hybrid search over your own documents and PDFs.",
+  "description": "Shipped with SeekStorm v3.4 (October 2026). Runs as a child process over MCP stdio, owns its local index at `SEEKSTORM_INDEX_PATH` (created with a default title/body/path schema if missing, or from a `CreateIndexRequest` JSON in `SEEKSTORM_INDEX_CONFIG`), and needs no separate `seekstorm_server` or network. Tools cover index management, document indexing/updating/deletion, JSON/NDJSON ingestion, PDF indexing, and lexical, vector and hybrid search with filters, facets, sorting and highlighting. Embedded mode only: it does not connect to a remote SeekStorm server. Install with `cargo` (crate `seekstorm_mcp_server`) or build from the workspace.",
+  "url": "https://github.com/SeekStorm/SeekStorm/tree/main/seekstorm_mcp_server",
+  "repo": "https://github.com/SeekStorm/SeekStorm",
+  "docs": "https://seekstorm.com/blog/seekstorm-mcp-server/",
+  "tags": [
+    "search",
+    "rag",
+    "vector-search",
+    "hybrid-search",
+    "local",
+    "stdio",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "stdio server; configure the binary path and SEEKSTORM_INDEX_PATH in your MCP client."
+  },
+  "related": [
+    "grounded-docs-mcp-server",
+    "mcp-server-qdrant",
+    "basic-memory",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/SeekStorm/SeekStorm/blob/main/seekstorm_mcp_server/README.md",
+    "https://seekstorm.com/blog/seekstorm-mcp-server/",
+    "https://github.com/SeekStorm/SeekStorm"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SeekStorm"
+}

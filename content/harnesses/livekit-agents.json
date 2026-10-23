@@ -1,0 +1,44 @@
+{
+  "id": "livekit-agents",
+  "name": "LiveKit Agents",
+  "category": "harnesses",
+  "summary": "Open-source Python (and JS) framework for realtime voice and video agents over WebRTC, with STT/LLM/TTS plugins, telephony, turn detection, MCP tools and tests.",
+  "description": "Agents are server-side realtime participants in LiveKit rooms. Mix and match STT, LLM, TTS or speech-to-speech realtime models via plugins (`pip install \"livekit-agents[openai,deepgram,cartesia]\"`), dispatch jobs to workers, take or place phone calls through LiveKit SIP, use a transformer-based semantic turn detector, call MCP server tools natively, and write tests with judges. The whole stack, including the LiveKit media server, can be self-hosted. LiveKit Cloud adds managed agent hosting, observability and LiveKit Inference: a free Build plan ($0, 1,000 agent session minutes, 5 concurrent sessions), Ship from $50/month and Scale from $500/month (as of 2026-10-23). For coding agents LiveKit offers a Docs MCP server and an agent skill (`npx skills add livekit/agent-skills --skill livekit-agents`). JS/TS version: livekit/agents-js.",
+  "url": "https://docs.livekit.io/agents/",
+  "repo": "https://github.com/livekit/agents",
+  "docs": "https://docs.livekit.io/agents/",
+  "tags": [
+    "voice",
+    "realtime",
+    "webrtc",
+    "telephony",
+    "python",
+    "multimodal",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.livekit.io/llms.txt",
+    "auth": "api-key",
+    "notes": "LiveKit Cloud uses an API key/secret; self-hosted needs none from LiveKit. Docs MCP server for coding agents: https://docs.livekit.io/mcp"
+  },
+  "related": [
+    "pipecat",
+    "openai-realtime-api",
+    "elevenagents",
+    "vapi",
+    "openai-agents-sdk"
+  ],
+  "sources": [
+    "https://github.com/livekit/agents",
+    "https://livekit.com/pricing",
+    "https://docs.livekit.io/agents/"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LiveKit"
+}

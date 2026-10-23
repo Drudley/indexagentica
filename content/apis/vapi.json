@@ -1,0 +1,41 @@
+{
+  "id": "vapi",
+  "name": "Vapi",
+  "category": "apis",
+  "summary": "Hosted voice-agent API: build phone and web voice assistants that combine your chosen STT, LLM and TTS providers, with tools, MCP servers, telephony and testing.",
+  "description": "Configure assistants (transcriber, model, voice, tools) via dashboard or API and deploy them on phone numbers, SIP or the web. Assistants can import tools from any MCP server at call time (Streamable HTTP by default; Vapi sends `X-Call-Id`/`X-Chat-Id` headers), and Vapi also publishes its own MCP server exposing the Vapi API. Pricing (as of 2026-10-23): pay-as-you-go $0.05/min Vapi hosting plus provider costs passed through without markup, $5 free credits, 4 concurrent calls; paid success packages (Core, Pro from $999/month minimum, Premier) add concurrency, retention, ZDR and SLAs. Docs ship llms.txt and markdown pages (append .md) plus a docs MCP server.",
+  "url": "https://vapi.ai",
+  "docs": "https://docs.vapi.ai",
+  "tags": [
+    "voice",
+    "telephony",
+    "hosted",
+    "api",
+    "mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.vapi.ai/llms.txt",
+    "mcp_endpoint": "https://docs.vapi.ai/_mcp/server",
+    "auth": "api-key",
+    "notes": "The listed MCP endpoint is Vapi's docs MCP server; the Vapi API itself uses a private API key (Bearer)."
+  },
+  "related": [
+    "livekit-agents",
+    "pipecat",
+    "elevenagents",
+    "openai-realtime-api"
+  ],
+  "sources": [
+    "https://vapi.ai/pricing",
+    "https://docs.vapi.ai/mcp",
+    "https://docs.vapi.ai/llms.txt"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Vapi"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "mcp-for-blender",
+  "name": "MCP for Blender (formerly blender-mcp)",
+  "category": "mcp-servers",
+  "summary": "Popular community MCP server and Blender add-on that lets Claude, Codex, Cursor and other MCP clients build and edit 3D scenes in Blender.",
+  "description": "Formerly `blender-mcp`; the PyPI package is now `mcp-for-blender` (`uvx blender-mcp` still works). A one-line installer (or `uvx mcp-for-blender setup`) installs uv, detects MCP clients (Claude Desktop, Claude Code, Codex, Cursor, VS Code, Devin Desktop/Windsurf, OpenCode, Antigravity), adds a `blender` entry (backing up configs) and installs/enables the Blender add-on, which starts a socket server inside Blender when it opens. Lets agents do prompt-driven modeling, scene creation and manipulation. Third-party: not made by the Blender Foundation. By default the `execute_blender_code` tool can run any Python in your live Blender; set `BLENDER_MCP_SAFE_MODE=1` to screen scripts and block risky code.",
+  "url": "https://www.mcp-for-blender.com/",
+  "repo": "https://github.com/ahujasid/mcp-for-blender",
+  "tags": [
+    "3d",
+    "blender",
+    "creative",
+    "local",
+    "stdio",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local stdio server (uvx mcp-for-blender) plus a Blender add-on; Blender must be open."
+  },
+  "related": [
+    "unreal-mcp",
+    "figma-mcp",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/ahujasid/mcp-for-blender",
+    "https://www.mcp-for-blender.com/"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Siddharth Ahuja (ahujasid)"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "openai-realtime-api",
+  "name": "OpenAI Realtime API",
+  "category": "apis",
+  "summary": "OpenAI's speech-to-speech API for low-latency voice agents over WebRTC, WebSocket or SIP, with tool calling, MCP servers, interruptions and handoffs.",
+  "description": "The model works directly on audio, keeps conversation state and calls tools. Typical browser flow: your server mints an ephemeral client secret (`POST /v1/realtime/client_secrets`), the frontend opens a `RealtimeSession` from the OpenAI Agents SDK (`@openai/agents/realtime`) and connects over WebRTC (`/v1/realtime/calls`); servers can connect over WebSocket. Supports voice activity detection, functions, remote MCP servers and connectors, guardrails and handoffs, plus realtime transcription. The GA interface replaced the beta (drop the `OpenAI-Beta: realtime=v1` header). Usage-based pricing per audio/text token; see OpenAI's pricing page.",
+  "url": "https://developers.openai.com/api/docs/guides/realtime",
+  "docs": "https://developers.openai.com/api/docs/guides/realtime",
+  "tags": [
+    "voice",
+    "realtime",
+    "speech-to-speech",
+    "webrtc",
+    "api",
+    "mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.openai.com/api/docs/llms.txt",
+    "auth": "api-key",
+    "notes": "Server-side OpenAI API key; browsers and mobile apps should use short-lived ephemeral client secrets."
+  },
+  "related": [
+    "openai-agents-sdk",
+    "livekit-agents",
+    "pipecat",
+    "elevenagents",
+    "vapi"
+  ],
+  "sources": [
+    "https://developers.openai.com/api/docs/guides/realtime"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

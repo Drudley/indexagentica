@@ -1,0 +1,39 @@
+{
+  "id": "gitmcp",
+  "name": "GitMCP",
+  "category": "mcp-servers",
+  "summary": "Free, open-source remote MCP server that turns any public GitHub repo or GitHub Pages site into a docs/code source for agents, no install or signup.",
+  "description": "Point an MCP client at `https://gitmcp.io/{owner}/{repo}` (or `https://{owner}.gitmcp.io/{repo}` for GitHub Pages) to give an agent that project's documentation (it prioritizes llms.txt, then falls back to README.md and other pages) and code search, or use the generic `https://gitmcp.io/docs` endpoint to let the agent pick the repository per request. Runs in the cloud, states it doesn't store queries or collect personal information, and can be self-hosted. Verified 2026-10-23: the `/docs` endpoint answers MCP `initialize` over Streamable HTTP (server GitMCP 1.1.0). Repo activity has slowed (last push May 2026) but the hosted service is up.",
+  "url": "https://gitmcp.io",
+  "repo": "https://github.com/idosal/git-mcp",
+  "tags": [
+    "documentation",
+    "github",
+    "remote-mcp",
+    "code-search",
+    "free"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://gitmcp.io/docs",
+    "auth": "none",
+    "notes": "Per-repo endpoints: https://gitmcp.io/{owner}/{repo}; public repos only."
+  },
+  "related": [
+    "context7",
+    "deepwiki-mcp",
+    "grounded-docs-mcp-server",
+    "github-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/idosal/git-mcp",
+    "https://gitmcp.io"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Ido Salomon and Liad Yosef"
+}

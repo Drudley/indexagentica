@@ -1,0 +1,43 @@
+{
+  "id": "strands-box",
+  "name": "Strands Box",
+  "category": "infrastructure",
+  "summary": "Open-source local agent sandbox from AWS's Strands team: OS isolation plus default-deny Dogwood policies over shell, Python, network and MCP calls, with credential injection.",
+  "description": "Strands Box runs any agent program (harness-agnostic) in a kernel-enforced sandbox where the only way out is a policy layer. You set direct file/program/network grants in `box.toml` and semantic rules in `policy.dw` ([Dogwood](https://dogwood-policy.github.io/dogwood/) policy language). Strands Shell, Monty (Python), an egress gateway and an MCP broker send every operation to the embedded Dogwood Local Engine; rules can depend on arguments, earlier actions and elapsed time (e.g. allow `git push` only after `npm test` passed, or cap MCP calls per hour). The gateway injects API credentials or AWS SigV4 signing so the agent never sees secrets, and decisions are recorded as OTLP JSON. Written in Rust, usable as a CLI or a Rust library. Developer preview: macOS on Apple silicon only, Linux planned; for multi-tenant cloud use AWS recommends pairing it with a per-session microVM.",
+  "url": "https://github.com/strands-agents/box",
+  "repo": "https://github.com/strands-agents/box",
+  "docs": "https://strandsagents.com/blog/strands-box-the-big-picture/",
+  "tags": [
+    "sandbox",
+    "policy",
+    "security",
+    "local",
+    "credential-injection",
+    "mcp",
+    "rust",
+    "macos"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local CLI/Rust library; configure the agent command in box.toml and policies in policy.dw."
+  },
+  "related": [
+    "strands-agents",
+    "sandbox-runtime",
+    "amazon-bedrock-agentcore",
+    "docker-sandboxes",
+    "perplexity-space"
+  ],
+  "sources": [
+    "https://github.com/strands-agents/box",
+    "https://strandsagents.com/blog/strands-box-the-big-picture/"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Strands Agents (AWS)"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "gbrain",
+  "name": "GBrain",
+  "category": "tools",
+  "summary": "Garry Tan's open-source agent brain: shared memory with sources, corrections and a knowledge graph, served to Claude, Codex, OpenClaw, Hermes and others over MCP.",
+  "description": "GBrain stores explicit facts with provenance, supports corrections and withdrawal, and makes the same memory available across agents. Start keyless with keyword retrieval, then add semantic search, a cited synthesis layer (answers with an explicit note on what the brain doesn't know), a typed knowledge graph and background enrichment/consolidation jobs. Connects to coding agents and personal agents over MCP; `gbrain mcp expose` publishes a local brain on a Tailscale tailnet (with `--funnel` for cloud agents). Install requires Bun ≥1.4 via `bun install -g github:garrytan/gbrain`; the README warns that the npm package named `gbrain` is unrelated. A hosted team version is offered at gbrain.io. Ships llms.txt, llms-full.txt and AGENTS.md for agents.",
+  "url": "https://github.com/garrytan/gbrain",
+  "repo": "https://github.com/garrytan/gbrain",
+  "tags": [
+    "memory",
+    "knowledge-graph",
+    "mcp",
+    "personal-agent",
+    "self-hosted",
+    "typescript"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://raw.githubusercontent.com/garrytan/gbrain/master/llms.txt",
+    "auth": "other",
+    "notes": "Local brains need no key; remote/hosted brains use OAuth or a private machine connection (see docs/guides/hosted-harness-access.md). Hosted option: https://gbrain.io"
+  },
+  "related": [
+    "memu",
+    "mem0",
+    "basic-memory",
+    "honcho",
+    "openclaw",
+    "hermes-agent"
+  ],
+  "sources": [
+    "https://github.com/garrytan/gbrain",
+    "https://gbrain.io"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Garry Tan"
+}

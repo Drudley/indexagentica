@@ -1,0 +1,42 @@
+{
+  "id": "pipecat",
+  "name": "Pipecat",
+  "category": "harnesses",
+  "summary": "Open-source Python framework from Daily for realtime voice and multimodal agents: composable pipelines, 80+ AI service integrations, multi-agent handoffs and client SDKs.",
+  "description": "Build voice agents as pipelines of processors (transport, STT, LLM, TTS) over WebRTC or WebSockets, or compose many pipelines into multi-agent systems with handoff, parallel fan-out and sidecars over a shared bus. Pipecat Flows (built in) adds structured conversation paths. Client SDKs for JavaScript, React, React Native, Swift, Kotlin, C++ and ESP32; tooling includes the `pipecat` CLI (`pipecat init` scaffolds a project for Claude Code or Codex), the Whisker debugger, Pipecat UI components and Claude Code skills (`claude plugin marketplace add pipecat-ai/skills`). Hosting is optional: Pipecat Cloud by Daily charges from $0.01 per active agent minute (agent-1x) with unlimited concurrency; you bring your own LLM/STT/TTS providers.",
+  "url": "https://pipecat.ai",
+  "repo": "https://github.com/pipecat-ai/pipecat",
+  "docs": "https://docs.pipecat.ai",
+  "tags": [
+    "voice",
+    "realtime",
+    "multimodal",
+    "webrtc",
+    "python",
+    "multi-agent"
+  ],
+  "license": "BSD-2-Clause",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.pipecat.ai/llms.txt",
+    "auth": "none",
+    "notes": "Framework itself needs no key; you supply keys for the AI services you plug in. Pipecat Cloud uses a Daily account."
+  },
+  "related": [
+    "livekit-agents",
+    "openai-realtime-api",
+    "elevenagents",
+    "vapi"
+  ],
+  "sources": [
+    "https://github.com/pipecat-ai/pipecat",
+    "https://www.daily.co/pricing/pipecat-cloud/",
+    "https://docs.pipecat.ai"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Daily and the Pipecat community"
+}

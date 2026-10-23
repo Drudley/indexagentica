@@ -1,0 +1,42 @@
+{
+  "id": "browsesafe-plus-plus",
+  "name": "BrowseSafe++",
+  "category": "information",
+  "summary": "Perplexity benchmark and SDK for detecting indirect prompt injection in web pages: 38,675 attack/control page pairs in 80 languages, with a leaderboard and adaptive attacks.",
+  "description": "Each pair is an injected page and a control page differing only by the injection, available as HTML, Markdown, accessibility tree or full-page screenshot. Taxonomy: 12 page types, 24 attack types, 18 placements, 6 attacker goals. Train split (29,500 pairs) is on Hugging Face; the 9,175-pair test split is reserved for the leaderboard. The Python SDK (`pip install \"browsesafe-pp[eval] @ git+https://github.com/perplexityai/browsesafe-plus-plus.git\"`, not on PyPI yet) loads data, evaluates any detector function and runs adaptive attack campaigns against an agent, including via a Playwright adapter. Screenshot view downloads about 45 GB on first load. Paper: arXiv 2610.17457.",
+  "url": "https://browsesafe.perplexity.ai/",
+  "repo": "https://github.com/perplexityai/browsesafe-plus-plus",
+  "docs": "https://huggingface.co/datasets/perplexity-ai/browsesafe-plus-plus",
+  "tags": [
+    "prompt-injection",
+    "benchmark",
+    "dataset",
+    "browser-agents",
+    "security",
+    "multilingual"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "SDK code is MIT; the Hugging Face dataset is CC-BY-4.0 (not gated)."
+  },
+  "related": [
+    "agentdojo",
+    "pyrit",
+    "garak",
+    "promptfoo",
+    "browser-use"
+  ],
+  "sources": [
+    "https://github.com/perplexityai/browsesafe-plus-plus",
+    "https://huggingface.co/datasets/perplexity-ai/browsesafe-plus-plus",
+    "https://browsesafe.perplexity.ai/"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Perplexity"
+}

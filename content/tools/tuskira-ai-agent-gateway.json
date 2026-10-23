@@ -1,0 +1,41 @@
+{
+  "id": "tuskira-ai-agent-gateway",
+  "name": "Tuskira AI Agent Gateway",
+  "category": "tools",
+  "summary": "Open-source, self-hosted gateway in front of MCP tool servers and LLM APIs: authenticates every call, injects credentials, scopes tools per agent profile and logs it all.",
+  "description": "One Go binary with three planes: MCP (:8080), REST API and admin console (:8081) and an LLM proxy (:8082) for Claude (direct or via AWS Bedrock), OpenAI and Gemini with your own keys. It authenticates each request, injects per-request credentials, scopes tools per agent profile and records every MCP tool call and LLM request; the console includes a catalog of ready-made MCP servers, LLM logs and (with the optional ClickHouse analytics profile) access logs and session timelines. Needs PostgreSQL; ships Docker Compose and Kubernetes manifests. Works with Claude Code, Cursor, VS Code, Codex CLI and any MCP or provider-SDK client. Pre-1.0 alpha (v0.6.1 on 2026-10-22); macOS and Linux, Windows via WSL2 untested. No Tuskira account needed. Note: the demo stack stores request/response bodies unless you turn capture off.",
+  "url": "https://github.com/Tuskira/ai-agent-gateway",
+  "repo": "https://github.com/Tuskira/ai-agent-gateway",
+  "tags": [
+    "mcp-gateway",
+    "llm-gateway",
+    "governance",
+    "audit-log",
+    "self-hosted",
+    "go",
+    "security"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Agents connect to the gateway's MCP plane (:8080) and LLM plane (:8082) with gateway-issued API keys; bootstrap-key creates the first admin key."
+  },
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "arcade",
+    "claude-code",
+    "codex-cli"
+  ],
+  "sources": [
+    "https://github.com/Tuskira/ai-agent-gateway",
+    "https://www.tuskira.ai/blog/open-source-ai-agent-gateway"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Tuskira"
+}

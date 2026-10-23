@@ -1,0 +1,45 @@
+{
+  "id": "perplexity-space",
+  "name": "SPACE (Perplexity)",
+  "category": "infrastructure",
+  "summary": "Perplexity's open-sourced sandbox platform: Firecracker microVM sandboxes behind an HTTP API, with templates, pause/suspend, warm pools and an E2B compatibility wrapper.",
+  "description": "SPACE (Sandboxed Platform for Agentic Code Execution) is the sandbox platform behind Perplexity Computer, open-sourced in October 2026. Applications use its HTTP API (plus server-sent events for command output) to create Linux sandboxes from templates, run command sessions, collect output, and keep, pause, suspend or delete sandboxes; lifecycle changes are asynchronous operations you poll. Self-hosted: the setup guide deploys it to a local Kind cluster (Kubernetes), with a reference EKS deployment; warm pools and base snapshots cut cold boots. An E2B Compatibility Wrapper (ECW) lets the tested E2B Python SDK talk to it. Written in Rust; 0.8.0 is the public baseline and the API may still change before 1.0. Snapshots, checkpoint and rollback are incubating and hidden unless enabled.",
+  "url": "https://github.com/perplexityai/SPACE",
+  "repo": "https://github.com/perplexityai/SPACE",
+  "docs": "https://space.docs.perplexity.ai/guide/index.html",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "firecracker",
+    "self-hosted",
+    "kubernetes",
+    "code-execution",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Self-hosted HTTP API; the deployment serves its OpenAPI reference at /openapi-m1.json (supported) and /openapi.json. Clients authenticate with credentials created via space-admin-cli; command output uses a session-scoped attachment token."
+  },
+  "related": [
+    "e2b",
+    "opensandbox",
+    "microsandbox",
+    "daytona",
+    "kubernetes-agent-sandbox",
+    "strands-box"
+  ],
+  "sources": [
+    "https://github.com/perplexityai/SPACE",
+    "https://github.com/perplexityai/SPACE/blob/main/docs/versioning.md",
+    "https://space.docs.perplexity.ai/guide/index.html",
+    "https://www.perplexity.ai/hub/blog/open-sourcing-space"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Perplexity"
+}

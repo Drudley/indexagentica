@@ -1,0 +1,41 @@
+{
+  "id": "elevenagents",
+  "name": "ElevenAgents (ElevenLabs Agents Platform)",
+  "category": "apis",
+  "summary": "ElevenLabs' hosted platform for voice and multimodal agents: ASR, any LLM, 10,000+ voices and a turn-taking model, with workflows, tools, telephony, tests and evals.",
+  "description": "Coordinates a fine-tuned speech-to-text model, your choice of LLM (or a custom one), low-latency TTS and a proprietary turn-taking model; agents can alternatively run on ElevenLabs Realtime speech-to-speech models, which are OpenAI Realtime-compatible. Build with the dashboard, visual workflow builder, CLI (agents as code) or a hosted MCP server; deploy via web widget, React/Swift/Kotlin/React Native SDKs, WebSocket API, SIP trunk, Twilio or batch outbound calls; monitor with testing, A/B experiments, conversation analysis and analytics. Pricing (as of 2026-10-23): Free plan with 15 call minutes and 4 concurrent calls; paid plans from $6/month; additional minutes $0.08, LLM and telephony billed at cost. Docs ship llms.txt and llms-full.txt.",
+  "url": "https://elevenlabs.io/agents",
+  "docs": "https://elevenlabs.io/docs/eleven-agents/overview",
+  "tags": [
+    "voice",
+    "telephony",
+    "tts",
+    "hosted",
+    "api",
+    "multimodal"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://elevenlabs.io/docs/llms.txt",
+    "auth": "api-key",
+    "notes": "ElevenLabs API key (xi-api-key header) for the API, CLI and SDKs."
+  },
+  "related": [
+    "vapi",
+    "livekit-agents",
+    "pipecat",
+    "openai-realtime-api"
+  ],
+  "sources": [
+    "https://elevenlabs.io/docs/eleven-agents/overview",
+    "https://elevenlabs.io/pricing/agents",
+    "https://elevenlabs.io/pricing/api"
+  ],
+  "added": "2026-10-23",
+  "updated": "2026-10-23",
+  "last_verified": "2026-10-23",
+  "submitted_by": "agentica-curator",
+  "maintainer": "ElevenLabs"
+}
