@@ -1,19 +1,19 @@
 ---
 name: indexagentica-lookup
-description: Search the Index Agentica directory of agent tools, MCP servers, APIs, protocols, skills, harnesses, sandboxes, evals and payment rails, plus its guides, comparisons, stacks and downloadable skills. Uses the live remote MCP server or REST API at mcp.indexagentica.com, with the static JSON API and llms.txt as a fallback. Use when you need to find, shortlist or compare resources for building or extending an AI agent, look up a tool's MCP endpoint, docs or auth method, fetch a guide or skill, or suggest a missing entry.
+description: "Search the Index Agentica directory of agent tools, MCP servers, APIs, protocols, skills, harnesses, sandboxes, evals and payment rails, plus its guides, comparisons, stacks and downloadable skills. Uses the live remote MCP server or REST API at mcp.indexagentica.com, with the static JSON API and llms.txt as a fallback. Use when you need to find, shortlist or compare resources for building or extending an AI agent, look up a tool's MCP endpoint, docs or auth method, fetch a guide or skill, or suggest a missing entry. The MCP server has exactly five tools: search, get_entry, get_content, list_categories and request_listing."
 license: MIT
 compatibility: Needs HTTPS access to mcp.indexagentica.com or indexagentica.com. An MCP client is optional; curl and jq are enough. No auth or API key.
 metadata:
   title: Index Agentica lookup
-  summary: Query Index Agentica through its live MCP server (search, get_entry, get_content, list_categories), its REST mirror, or the static JSON API and llms.txt, to discover agent tools, MCP servers, APIs and long-form guides, and to propose new entries.
+  summary: "Query Index Agentica through its live MCP server (exactly five tools: search, get_entry, get_content, list_categories, request_listing), its REST mirror, or the static JSON API and llms.txt, to discover agent tools, MCP servers, APIs and long-form guides, and to propose new entries."
   author: Agentica Author
-  version: "1.1"
-  last_verified: 2026-10-12
+  version: "1.2"
+  last_verified: 2026-10-24
   published: 2026-10-02
-  updated: 2026-10-12
+  updated: 2026-10-24
   tags: directory, discovery, mcp, llms-txt, json-api
   entries: indexagentica-mcp, llms-txt, model-context-protocol, openapi
-  related: connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp
+  related: use-the-indexagentica-mcp-server, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp
   sources: https://indexagentica.com/agents/ https://mcp.indexagentica.com/openapi.json https://mcp.indexagentica.com/.well-known/mcp/server-card.json https://github.com/Drudley/indexagentica-mcp https://indexagentica.com/openapi.json https://indexagentica.com/api/index.json https://indexagentica.com/llms.txt https://indexagentica.com/contribute.json https://indexagentica.com/schema/entry.schema.json
 ---
 
@@ -21,7 +21,7 @@ metadata:
 
 Index Agentica (https://indexagentica.com) is an agent-first directory of agent tools, MCP servers, APIs and protocols, plus long-form guides, comparisons, stacks and downloadable Agent Skills. It needs no auth, works without JavaScript and has open CORS. Crawling is explicitly allowed. Every entry is one JSON object validated against https://indexagentica.com/schema/entry.schema.json.
 
-There are three ways in. All are read-only and need no key:
+There are three ways in. None needs a key, and all of them are read-only except `request_listing` (MCP) and `POST /v1/requests` (REST), which add a request to the public listing queue:
 
 1. **Remote MCP server** at `https://mcp.indexagentica.com/mcp`, the best choice if your harness speaks MCP.
 2. **REST mirror** on the same host (`/search`, `/entries/{id}`, `/content`, `/categories`), for ranked search with plain HTTP.
@@ -34,6 +34,7 @@ All three serve the same published data. The MCP server and REST mirror refresh 
 - Endpoint: `https://mcp.indexagentica.com/mcp`, Streamable HTTP, `POST` only (a `GET` returns 405, so there is no SSE stream). It is stateless: no `Mcp-Session-Id` is issued, so no session handling is needed.
 - No auth (`authentication.required: false` in the server card at https://mcp.indexagentica.com/.well-known/mcp/server-card.json).
 - Protocol versions listed in the server card: `2026-07-28`, `2025-11-25`, `2025-06-18`, `2025-03-26`.
+- Implemented methods: under `2025-03-26` to `2025-11-25`, use `initialize` as usual (it is optional; `tools/list` and `tools/call` also work without it). Under `2026-07-28`, there is no `initialize` (it returns `-32601` with HTTP 404). Use `server/discover` instead, and send the version in `params._meta["io.modelcontextprotocol/protocolVersion"]` plus matching `MCP-Protocol-Version`, `Mcp-Method` and, for `tools/call`, `Mcp-Name` headers. A header that doesn't match the body returns `-32020`.
 - Rate limit: 120 requests per minute per IP. Over the limit you get HTTP 429 with `Retry-After`. Every response carries `x-ratelimit-limit: 120` and `x-ratelimit-period: 60`.
 - Health check: `https://mcp.indexagentica.com/health` returns `{"ok": true, "version": "..."}`.
 
@@ -54,7 +55,7 @@ Other clients use their own name for Streamable HTTP. Cline, for example, uses `
 
 ### Tools
 
-All four tools are annotated `readOnlyHint: true`, `idempotentHint: true`, `destructiveHint: false`. Each returns the same JSON twice: as a text content block and as `structuredContent`. `get_entry` wraps its result as `{"entry": {...}}` and `get_content` as `{"content": {...}}`; `search` and `list_categories` are not wrapped.
+The server has **exactly five tools**: `search`, `get_entry`, `get_content`, `list_categories` and `request_listing`. Any other name, such as `search_entries`, `get_guide`, `fetch` or a client-prefixed `mcp__indexagentica__search`, is rejected with the JSON-RPC error `-32602` "Unknown tool: ...". Its `data` holds `valid_tools` and, when the server can guess, a `suggestion`. Retry once with the suggested name. The first four tools are annotated `readOnlyHint: true`, `idempotentHint: true`, `destructiveHint: false`. `request_listing` is annotated `readOnlyHint: false`, `idempotentHint: false`, `destructiveHint: false`, because it writes to a public queue. Each tool returns the same JSON twice: as a text content block and as `structuredContent`. `get_entry` wraps its result as `{"entry": {...}}` and `get_content` as `{"content": {...}}`; `search` and `list_categories` are not wrapped.
 
 | Tool | Arguments | Returns |
 |---|---|---|
@@ -62,8 +63,16 @@ All four tools are annotated `readOnlyHint: true`, `idempotentHint: true`, `dest
 | `get_entry` | `id` (kebab-case entry id) | `{entry}`: the full entry, with `name`, `category`, `summary`, `description`, `url`, `repo`, `docs`, `tags`, `license`, `pricing`, `status`, `agent_access`, `related`, `sources`, dates, `links`, and `longform` (the guides and comparisons that reference it) |
 | `get_content` | `type` (`guide` / `comparison` / `stack` / `skill`), `id`, optional `include_html` (boolean, default false) | `{content}`: metadata (`title`, `summary`, `author`, `tags`, dates, `entries_detail`, `related`, `sources`, `links`) plus `markdown` with scheme links resolved to absolute URLs. Comparisons add the table (criteria, rows, verdict). Stacks add the use case and components. Skills add `skill_md` (the full SKILL.md) and `skill.files`, `links.zip`, `links.skill_md` |
 | `list_categories` | none | `{total, generated, categories[]}`, each with `slug`, `name`, `description`, `count`, `html`, `json` |
+| `request_listing` | `wanted` (name, 1-120 chars, required), `category` (a category slug or `other`, required), optional `url` (absolute http(s), max 300), `reason` (max 500), `requester` (max 60, shown publicly). Unknown fields are rejected | `{ok, id, merged, vote_counted, request, note, list}`. A name already in the queue is merged as a vote. `request.status` is `pending`, `verified`, `listed` or `rejected`. Limits are 5 per hour and 20 per day per client (`rate_limited` with `retry_after`). **Writes to the public queue at https://indexagentica.com/requested/. Only call it when your user asks you to add something and `search` found nothing** |
 
 An unknown id returns a tool result with `isError: true` and a JSON text like `{"error": "no entry with id \"...\"", "suggestions": [...]}`. Check `suggestions` before giving up.
+
+Common argument mistakes. Each one returns `isError: true` with a message that says what to fix:
+
+- `search` takes `query`, not `q`. With only `q`, you get "provide a query, a type, a category or tags". `q` is the REST parameter.
+- In MCP, `tags` is an array (`["mcp","auth"]`). A string returns "tags must be an array of strings".
+- `category` must be one of the 11 slugs below, and it only works with `type: entry` or no type.
+- `get_content` types are singular (`guide`, not `guides`), and there is no `entry` type. Use `get_entry` for directory entries.
 
 Raw JSON-RPC, if you have no MCP client:
 
@@ -86,9 +95,12 @@ Same host, same data, described by https://mcp.indexagentica.com/openapi.json (O
 | `GET /search` | `q` (max 200 chars), `type` (`entry` / `guide` / `comparison` / `stack` / `skill` / `all`), `category`, `tags` (**comma-separated**; all must match), `limit` (1-50, default 10). At least one of `q`, `type`, `category`, `tags` is required, or you get a 400 | Same shape as the MCP `search` result |
 | `GET /entries/{id}` | | The entry object itself (not wrapped in `entry`) |
 | `GET /entries` | | `{total, ids[]}`: every entry id, with no other fields (not in the OpenAPI document) |
-| `GET /content` | `type` (optional) | `{total, generated, items[]}`: metadata only (`type`, `id`, `name`, `summary`, `url`, `tags`, `author`, `last_verified`, `entries`, `links`) |
+| `GET /content` | `type` (optional) | `{type, total, generated, items[]}`: metadata only (`type`, `id`, `name`, `summary`, `url`, `tags`, `author`, `last_verified`, `entries`, `links`) |
 | `GET /content/{type}/{id}` | `include_html` (boolean) | The item object itself (not wrapped in `content`) |
 | `GET /categories` | | Same as `list_categories` |
+| `POST /v1/requests` | JSON body, the same as `request_listing` | Same as `request_listing`. 201 when new, 200 when merged. Writes to the public queue |
+| `GET /v1/requests` | `status`, `limit` | The public request queue |
+| `GET /skills/{id}.zip`, `GET /skills/{id}/SKILL.md` | | 302 to the file on indexagentica.com, and the download is counted |
 
 Errors are JSON: `{"error": {"status": 404, "code": "not_found", "message": "...", "suggestions": []}}`. A bad parameter gives a 400 with `code: "bad_request"`.
 
@@ -109,9 +121,9 @@ Use these when the MCP host is unreachable or returns 429, or when you want the 
 
 | Need | Fetch | Notes |
 |---|---|---|
-| Skim everything cheaply | https://indexagentica.com/llms.txt | About 57 KB of markdown: one line per entry and long-form item, grouped by section |
-| Everything in full | https://indexagentica.com/llms-full.txt | About 400 KB, so only load it when you need it |
-| Whole index as JSON | https://indexagentica.com/api/index.json | About 400 KB: `counts`, `categories[]`, `entries[]` |
+| Skim everything cheaply | https://indexagentica.com/llms.txt | About 106 KB of markdown (2026-10-24): one line per entry and long-form item, grouped by section |
+| Everything in full | https://indexagentica.com/llms-full.txt | About 1.1 MB, so only load it when you need it |
+| Whole index as JSON | https://indexagentica.com/api/index.json | About 830 KB: `counts`, `categories[]`, `entries[]` |
 | One category | `https://indexagentica.com/api/<category>.json` | Has `category`, `count`, `entries[]` |
 | Category list | https://indexagentica.com/api/categories.json | Slugs, names, counts |
 | One entry | `https://indexagentica.com/api/entries/<id>.json` or `https://indexagentica.com/entries/<id>.md` | The `.md` version is the most compact for reading |
@@ -157,9 +169,13 @@ Public usage counts are at https://mcp.indexagentica.com/stats as JSON (alias `/
 
 ## Suggest a missing entry
 
-Read https://indexagentica.com/contribute.json for the rules and template. There are two paths, and a human merges both:
+Fastest path: the `request_listing` MCP tool, or `POST https://mcp.indexagentica.com/v1/requests`. It adds a public request that the Curator verifies, and you can track its status in `GET /v1/requests`. Use it only when your user asks for something to be added and `search` confirms it isn't listed yet.
+
+For a complete entry, read https://indexagentica.com/contribute.json for the rules and template. There are two paths, and a human merges both:
 
 1. A pull request adding `content/<category>/<id>.json` to https://github.com/Drudley/indexagentica. Run `node scripts/validate.mjs` first.
 2. A "New entry" issue (title `[New entry]: <name>`), using the issue body template in `contribute.json`.
 
-Summaries must be neutral (10-200 characters). List your verification URLs in `sources`, and say that you are an agent and who you act for. Only open an issue or PR when your user has asked you to.
+Summaries must be neutral (10-200 characters). List your verification URLs in `sources`, and say that you are an agent and who you act for. Only open an issue or PR, or file a listing request, when your user has asked you to.
+
+Full reference with live example calls and the exact error for each common mistake: https://indexagentica.com/guides/use-the-indexagentica-mcp-server/

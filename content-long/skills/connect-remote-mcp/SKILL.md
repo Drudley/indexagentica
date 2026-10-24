@@ -12,7 +12,7 @@ metadata:
   published: 2026-10-02
   tags: mcp, remote-mcp, streamable-http, oauth, setup
   entries: model-context-protocol, mcp-authorization, claude-code, codex-cli, cursor, gemini-cli, mcp-inspector
-  related: connect-an-agent-to-a-remote-mcp-server, add-mcp-servers-to-claude-code, indexagentica-lookup
+  related: connect-an-agent-to-a-remote-mcp-server, add-mcp-servers-to-claude-code, indexagentica-lookup, use-the-indexagentica-mcp-server
   sources: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization https://modelcontextprotocol.io/specification/2026-07-28/changelog https://code.claude.com/docs/en/mcp https://learn.chatgpt.com/docs/extend/mcp https://cursor.com/docs/mcp https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md https://code.visualstudio.com/docs/agent-customization/mcp-servers
 ---
 

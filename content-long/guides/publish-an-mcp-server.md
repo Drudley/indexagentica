@@ -84,7 +84,7 @@ sources:
   - title: Index Agentica contribute.json
     url: https://indexagentica.com/contribute.json
     accessed: 2026-10-17
-related: [add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, pick-an-mcp-server, add-mcp-servers-to-claude-code, test-your-mcp-server, mcp-gateways]
+related: [add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, pick-an-mcp-server, add-mcp-servers-to-claude-code, test-your-mcp-server, mcp-gateways, use-the-indexagentica-mcp-server]
 last_verified: 2026-10-17
 published: 2026-10-17
 ---
