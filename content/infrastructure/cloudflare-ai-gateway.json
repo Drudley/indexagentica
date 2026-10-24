@@ -1,0 +1,33 @@
+{
+  "id": "cloudflare-ai-gateway",
+  "name": "Cloudflare AI Gateway",
+  "category": "infrastructure",
+  "summary": "Cloudflare proxy for AI app traffic that adds analytics, logging, caching, rate limiting, request retries and model fallback with one line of code.",
+  "description": "Available on all plans. Core features (dashboard analytics, caching, rate limiting) are free with a Cloudflare account; log storage and premium features are billed per the pricing page.",
+  "url": "https://developers.cloudflare.com/ai-gateway/",
+  "docs": "https://developers.cloudflare.com/ai-gateway/",
+  "tags": [
+    "llm-gateway",
+    "caching",
+    "observability",
+    "cloudflare"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://developers.cloudflare.com/ai-gateway/llms.txt"
+  },
+  "related": [
+    "cloudflare-agents",
+    "cloudflare-mcp",
+    "portkey-ai-gateway"
+  ],
+  "sources": [
+    "https://developers.cloudflare.com/ai-gateway/",
+    "https://developers.cloudflare.com/ai-gateway/reference/pricing/"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

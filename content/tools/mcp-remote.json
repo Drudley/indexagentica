@@ -1,0 +1,32 @@
+{
+  "id": "mcp-remote",
+  "name": "mcp-remote",
+  "category": "tools",
+  "summary": "npx tool that lets an MCP client that only supports local stdio servers connect to a remote MCP server, including OAuth flows.",
+  "description": "Usage: `npx -y mcp-remote https://example.remote/server` (add `--transport sse-only` for SSE-only servers). npm `mcp-remote` 0.15.2. The repository is now under punkpeye (Glama).",
+  "url": "https://github.com/punkpeye/mcp-remote",
+  "docs": "https://github.com/punkpeye/mcp-remote#readme",
+  "tags": [
+    "mcp",
+    "proxy",
+    "stdio",
+    "remote",
+    "oauth"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-proxy",
+    "supergateway"
+  ],
+  "sources": [
+    "https://github.com/punkpeye/mcp-remote",
+    "https://www.npmjs.com/package/mcp-remote"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

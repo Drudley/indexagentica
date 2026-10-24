@@ -1,0 +1,30 @@
+{
+  "id": "mcpo",
+  "name": "mcpo",
+  "category": "tools",
+  "summary": "Open WebUI's MCP-to-OpenAPI proxy that exposes any MCP server as a REST/OpenAPI HTTP server, so OpenAPI-speaking agents and tools can call it.",
+  "description": "Usage: `uvx mcpo --port 8000 --api-key \"top-secret\" -- your_mcp_server_command`. PyPI `mcpo` 0.0.20 (2026-02-27), Python >=3.11.",
+  "url": "https://github.com/open-webui/mcpo",
+  "docs": "https://github.com/open-webui/mcpo#readme",
+  "tags": [
+    "mcp",
+    "openapi",
+    "proxy",
+    "rest"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-proxy"
+  ],
+  "sources": [
+    "https://github.com/open-webui/mcpo",
+    "https://pypi.org/project/mcpo/"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

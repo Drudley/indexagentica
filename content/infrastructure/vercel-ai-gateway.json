@@ -1,0 +1,29 @@
+{
+  "id": "vercel-ai-gateway",
+  "name": "Vercel AI Gateway",
+  "category": "infrastructure",
+  "summary": "Managed Vercel gateway for calling AI models from any infrastructure, with centralized credentials, request logs, spend budgets, routing and provider failover.",
+  "description": "No markup or platform fee on tokens, including BYOK: you pay provider list price from prepaid AI Gateway Credits. Every team gets a monthly free credit limited to a subset of models with lower rate limits; buying credits moves the team to the paid tier.",
+  "url": "https://vercel.com/docs/ai-gateway",
+  "docs": "https://vercel.com/docs/ai-gateway",
+  "tags": [
+    "llm-gateway",
+    "routing",
+    "vercel"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "related": [
+    "vercel-ai-sdk",
+    "vercel-mcp",
+    "cloudflare-ai-gateway"
+  ],
+  "sources": [
+    "https://vercel.com/docs/ai-gateway",
+    "https://vercel.com/docs/ai-gateway/pricing"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

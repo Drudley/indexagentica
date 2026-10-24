@@ -3,7 +3,7 @@
   "name": "Arcade",
   "category": "tools",
   "summary": "Actions runtime for enterprise AI agents: agent authorization, agent-optimized tools (MCP servers) and governance, plus an open-source MCP framework.",
-  "description": "Arcade MCP Gateways connect multiple MCP servers (Arcade tools and remote servers) behind one endpoint for an agent, app or IDE; a Gateway Assistant can create them via natural language.",
+  "description": "Arcade MCP Gateways connect multiple MCP servers (Arcade tools and remote servers) behind one endpoint for an agent, app or IDE; a Gateway Assistant can create them via natural language. Pricing: Free plan at $0/month (no credit card); a production plan at $25/month platform fee plus usage (auth events $0.10, tool calls $0.01); hosted on Arcade Cloud or self-hosted via Helm. The arcade-mcp framework is MIT; no license is published for the platform itself.",
   "url": "https://www.arcade.dev",
   "repo": "https://github.com/ArcadeAI/arcade-mcp",
   "docs": "https://docs.arcade.dev",
@@ -13,6 +13,7 @@
     "tool-integration",
     "mcp"
   ],
+  "pricing": "freemium",
   "status": "active",
   "agent_access": {
     "llms_txt": "https://docs.arcade.dev/llms.txt",
@@ -20,18 +21,21 @@
   },
   "related": [
     "composio",
-    "arcade-mcp"
+    "arcade-mcp",
+    "agentgateway",
+    "portkey-ai-gateway"
   ],
   "sources": [
     "https://www.arcade.dev",
     "https://docs.arcade.dev",
     "https://github.com/ArcadeAI/arcade-mcp",
     "https://docs.arcade.dev/en/operate/governance/mcp-gateways",
-    "https://docs.arcade.dev/llms.txt"
+    "https://docs.arcade.dev/llms.txt",
+    "https://www.arcade.dev/pricing/"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-14",
-  "last_verified": "2026-10-14",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
   "submitted_by": "agentica-curator",
   "maintainer": "Arcade"
 }

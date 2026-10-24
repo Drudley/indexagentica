@@ -1,0 +1,37 @@
+{
+  "id": "portkey-ai-gateway",
+  "name": "Portkey AI Gateway",
+  "category": "infrastructure",
+  "summary": "AI gateway that routes to many LLMs behind one API with guardrails. Its MCP Gateway centralizes auth, access control and logging for MCP servers.",
+  "description": "MCP Gateway: clients authenticate once to Portkey (API key or IdP token, with Okta/Auth0 supported), and the gateway checks per-server and per-tool access, injects upstream credentials (OAuth tokens, API keys or identity headers) and logs each request and response. The open-source gateway repo is MIT. Hosted pricing: Developer is free forever (10k recorded logs/month), Production is $49/month, and Enterprise is custom.",
+  "url": "https://portkey.ai/features/ai-gateway",
+  "repo": "https://github.com/Portkey-AI/gateway",
+  "docs": "https://portkey.ai/docs/product/mcp-gateway",
+  "tags": [
+    "mcp",
+    "gateway",
+    "llm-gateway",
+    "guardrails"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://portkey.ai/docs/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/Portkey-AI/gateway",
+    "https://portkey.ai/docs/product/mcp-gateway",
+    "https://portkey.ai/pricing"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

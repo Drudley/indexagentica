@@ -1,0 +1,31 @@
+{
+  "id": "kong-ai-gateway",
+  "name": "Kong AI Gateway",
+  "category": "infrastructure",
+  "summary": "Kong's AI gateway, managed through Konnect, applies AI policies to LLM traffic. Its AI MCP Proxy plugin turns APIs into MCP servers and proxies MCP traffic.",
+  "description": "Data-plane nodes run in your environment (self-hosted, cloud or Kubernetes) and connect to Konnect for configuration and observability. The AI MCP Proxy plugin converts API schemas into MCP tool definitions, aggregates tools from several plugins and applies default and per-tool ACLs. It requires an AI license (AI Gateway Enterprise).",
+  "url": "https://developer.konghq.com/ai-gateway/",
+  "docs": "https://developer.konghq.com/mcp/",
+  "tags": [
+    "mcp",
+    "gateway",
+    "llm-gateway",
+    "api-gateway"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://developer.konghq.com/ai-gateway/",
+    "https://developer.konghq.com/mcp/",
+    "https://developer.konghq.com/plugins/ai-mcp-proxy/"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

@@ -3,6 +3,7 @@
   "name": "MCP Inspector",
   "category": "evals-observability",
   "summary": "Official interactive developer tool for testing and debugging MCP servers in the browser, on the command line or in the terminal.",
+  "description": "The repository LICENSE describes a transition from MIT to Apache-2.0 (new contributions Apache-2.0, docs CC-BY-4.0). npm declares 'SEE LICENSE IN LICENSE'.",
   "url": "https://modelcontextprotocol.io/docs/tools/inspector",
   "repo": "https://github.com/modelcontextprotocol/inspector",
   "tags": [
@@ -11,6 +12,7 @@
     "testing",
     "developer-tools"
   ],
+  "license": "MIT AND Apache-2.0",
   "pricing": "open-source",
   "status": "active",
   "related": [
@@ -18,11 +20,12 @@
   ],
   "sources": [
     "https://github.com/modelcontextprotocol/inspector",
-    "https://modelcontextprotocol.io/docs/tools/inspector"
+    "https://modelcontextprotocol.io/docs/tools/inspector",
+    "https://github.com/modelcontextprotocol/inspector/blob/main/LICENSE"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
   "submitted_by": "agentica-curator",
   "maintainer": "MCP project"
 }

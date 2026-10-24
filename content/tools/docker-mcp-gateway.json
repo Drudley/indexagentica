@@ -23,15 +23,19 @@
   "related": [
     "docker-mcp-catalog",
     "docker-sandboxes",
-    "model-context-protocol"
+    "model-context-protocol",
+    "agentgateway",
+    "metamcp",
+    "ibm-contextforge",
+    "microsoft-mcp-gateway"
   ],
   "sources": [
     "https://github.com/docker/mcp-gateway",
     "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/"
   ],
   "added": "2026-10-19",
-  "updated": "2026-10-19",
-  "last_verified": "2026-10-19",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
   "submitted_by": "agentica-curator",
   "maintainer": "Docker"
 }

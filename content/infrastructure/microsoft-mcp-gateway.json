@@ -1,0 +1,31 @@
+{
+  "id": "microsoft-mcp-gateway",
+  "name": "Microsoft MCP Gateway",
+  "category": "infrastructure",
+  "summary": "Reverse proxy and management layer for MCP servers on Kubernetes, with stateless request routing, authorization, lifecycle management and a tool gateway router.",
+  "description": "Breaking change in the current version: it requires MCP `2026-07-28` clients and adapters, with no legacy initialization, transport sessions or protocol downgrade (see docs/mcp-2026-07-28.md). Tools are registered resources routed by a Tool Gateway Router MCP server.",
+  "url": "https://github.com/microsoft/mcp-gateway",
+  "docs": "https://microsoft.github.io/mcp-gateway/",
+  "tags": [
+    "mcp",
+    "gateway",
+    "kubernetes",
+    "proxy"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/microsoft/mcp-gateway",
+    "https://microsoft.github.io/mcp-gateway/"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "litellm-mcp-gateway",
+  "name": "LiteLLM MCP Gateway",
+  "category": "infrastructure",
+  "summary": "The LiteLLM Proxy's MCP Gateway gives one fixed endpoint for MCP tools, controls access by key and team, and lets any LiteLLM-supported model call them.",
+  "description": "Supports HTTP, SSE and stdio MCP servers, OAuth and per-server auth headers, converting OpenAPI specs into MCP servers, and a REST API (`/mcp-rest/tools/list`, `/mcp-rest/tools/call`). The repo LICENSE is MIT except for the `enterprise/` directory, which has its own license. Latest release v1.106.2 (2026-10-21).",
+  "url": "https://docs.litellm.ai/docs/mcp",
+  "repo": "https://github.com/BerriAI/litellm",
+  "docs": "https://docs.litellm.ai/docs/mcp",
+  "tags": [
+    "mcp",
+    "gateway",
+    "llm-gateway",
+    "proxy"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://docs.litellm.ai/docs/mcp",
+    "https://github.com/BerriAI/litellm",
+    "https://raw.githubusercontent.com/BerriAI/litellm/main/LICENSE"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

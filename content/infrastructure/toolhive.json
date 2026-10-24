@@ -3,6 +3,7 @@
   "name": "ToolHive",
   "category": "infrastructure",
   "summary": "Stacklok's open-source platform that runs each MCP server in an isolated container with per-request identity and access policy and observability.",
+  "description": "Network isolation is on by default for local MCP servers since v0.30.1: `thv run` and REST-API-created workloads isolate the container network from the host unless you opt out (PR #5583). Latest release v0.56.0 (2026-10-22).",
   "url": "https://docs.stacklok.com/toolhive",
   "repo": "https://github.com/stacklok/toolhive",
   "tags": [
@@ -19,14 +20,20 @@
   },
   "related": [
     "docker-mcp-catalog",
-    "model-context-protocol"
+    "model-context-protocol",
+    "agentgateway",
+    "ibm-contextforge",
+    "microsoft-mcp-gateway"
   ],
   "sources": [
-    "https://github.com/stacklok/toolhive"
+    "https://github.com/stacklok/toolhive",
+    "https://github.com/stacklok/toolhive/releases/tag/v0.30.1",
+    "https://github.com/stacklok/toolhive/releases/tag/v0.56.0",
+    "https://docs.stacklok.com/toolhive/guides-cli/network-isolation"
   ],
   "added": "2026-10-21",
-  "updated": "2026-10-21",
-  "last_verified": "2026-10-21",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
   "submitted_by": "agentica-curator",
   "maintainer": "Stacklok"
 }

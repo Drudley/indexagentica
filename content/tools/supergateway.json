@@ -1,0 +1,32 @@
+{
+  "id": "supergateway",
+  "name": "Supergateway",
+  "category": "tools",
+  "summary": "Runs MCP stdio servers over Streamable HTTP or SSE, or bridges a remote SSE/Streamable HTTP server back to stdio, using a single npx command.",
+  "description": "Examples: `npx -y supergateway --stdio \"uvx mcp-server-git\"`, `npx -y supergateway --sse <url>`, `npx -y supergateway --streamableHttp <url>`. npm `supergateway` 4.2.0.",
+  "url": "https://github.com/supercorp-ai/supergateway",
+  "docs": "https://github.com/supercorp-ai/supergateway#readme",
+  "tags": [
+    "mcp",
+    "proxy",
+    "transport",
+    "stdio",
+    "sse"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-proxy",
+    "mcp-remote"
+  ],
+  "sources": [
+    "https://github.com/supercorp-ai/supergateway",
+    "https://www.npmjs.com/package/supergateway"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

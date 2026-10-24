@@ -1,0 +1,32 @@
+{
+  "id": "mcp-proxy",
+  "name": "mcp-proxy",
+  "category": "tools",
+  "summary": "Python bridge between MCP transports: it exposes a stdio server over SSE/Streamable HTTP, or connects a stdio client to a remote SSE/Streamable HTTP server.",
+  "description": "Supports named servers, headers and OAuth2 client credentials, and ships a container image. PyPI `mcp-proxy` 0.13.0.",
+  "url": "https://github.com/sparfenyuk/mcp-proxy",
+  "docs": "https://github.com/sparfenyuk/mcp-proxy#readme",
+  "tags": [
+    "mcp",
+    "proxy",
+    "transport",
+    "stdio",
+    "sse"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "mcp-remote",
+    "supergateway"
+  ],
+  "sources": [
+    "https://github.com/sparfenyuk/mcp-proxy",
+    "https://pypi.org/project/mcp-proxy/"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}

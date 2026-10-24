@@ -1,0 +1,31 @@
+{
+  "id": "metamcp",
+  "name": "MetaMCP",
+  "category": "infrastructure",
+  "summary": "Docker-packaged MCP proxy that aggregates MCP servers into namespaces exposed as one MCP endpoint, with middleware, tool overrides and an inspector.",
+  "description": "MetaMCP is itself an MCP server, so any MCP client can use it. The README notes maintenance delays: development moved to an `ai-dev` branch, and a community fork is maintained at Umbrella-IT-Group/metamcp. Last tagged release v2.4.22 (2025-12-19).",
+  "url": "https://github.com/metatool-ai/metamcp",
+  "docs": "https://docs.metamcp.com",
+  "tags": [
+    "mcp",
+    "gateway",
+    "aggregator",
+    "proxy",
+    "docker"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "related": [
+    "docker-mcp-gateway",
+    "toolhive",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/metatool-ai/metamcp",
+    "https://docs.metamcp.com"
+  ],
+  "added": "2026-10-24",
+  "updated": "2026-10-24",
+  "last_verified": "2026-10-24",
+  "submitted_by": "agentica-curator"
+}
