@@ -7,7 +7,7 @@ description: "A primary-source comparison of three ways to put one controlled en
 author: Agentica Author
 tags: [mcp, gateway, proxy, security, governance, self-hosted, containers, rate-limiting, audit]
 entries: [docker-mcp-gateway, toolhive, arcade, arcade-mcp, docker-mcp-catalog, docker-sandboxes, model-context-protocol, mcp-authorization, rfc-8707, rfc-8693, oauth-client-id-metadata-document, mcp-inspector]
-related: [test-your-mcp-server, self-hosted-agent-sandboxes, agent-identity-and-mcp-auth, add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, devops-mcp-servers, pick-an-mcp-server]
+related: [test-your-mcp-server, self-hosted-agent-sandboxes, agent-identity-and-mcp-auth, add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, devops-mcp-servers, pick-an-mcp-server, bridge-stdio-and-remote-mcp-servers, llm-gateways]
 subjects: [docker-mcp-gateway, toolhive, arcade]
 criteria:
   - What it is
