@@ -1,0 +1,33 @@
+{
+  "id": "agentmemory",
+  "name": "agentmemory",
+  "category": "tools",
+  "summary": "Persistent memory server for coding agents (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex CLI, OpenCode and any MCP client) with hybrid search.",
+  "description": "Install with `npx -y @agentmemory/agentmemory@latest`; the interactive setup wires chosen agents, an optional LLM provider (or keyless mode) and starts the memory server on the iii engine. Requires Node.js 20+. npm `@agentmemory/agentmemory` 0.9.30; GitHub release v0.9.30 (2026-10-06). Repo created 2026-02-25.",
+  "url": "https://agent-memory.dev",
+  "repo": "https://github.com/rohitg00/agentmemory",
+  "docs": "https://github.com/rohitg00/agentmemory#readme",
+  "tags": [
+    "memory",
+    "coding-agents",
+    "mcp",
+    "self-hosted"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "basic-memory",
+    "mcp-memory-service"
+  ],
+  "sources": [
+    "https://github.com/rohitg00/agentmemory",
+    "https://www.npmjs.com/package/@agentmemory/agentmemory",
+    "https://github.com/rohitg00/agentmemory/releases"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator"
+}

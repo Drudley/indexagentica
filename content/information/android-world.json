@@ -1,0 +1,33 @@
+{
+  "id": "android-world",
+  "name": "AndroidWorld",
+  "category": "information",
+  "summary": "Google Research environment and benchmark for autonomous Android control agents: 116 hand-crafted tasks across 20 apps on a live emulator.",
+  "description": "Tasks are instantiated with random parameters, giving millions of unique variations with durable reward signals; also supports MiniWoB++ web tasks. Runs against an Android emulator (Pixel 6, API 33) with ~2 GB memory and 8 GB disk; experimental Docker support. Links to a public leaderboard spreadsheet from the project site.",
+  "url": "https://google-research.github.io/android_world/",
+  "repo": "https://github.com/google-research/android_world",
+  "docs": "https://github.com/google-research/android_world#readme",
+  "tags": [
+    "benchmark",
+    "mobile",
+    "android",
+    "computer-use"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "osworld",
+    "windows-agent-arena"
+  ],
+  "sources": [
+    "https://github.com/google-research/android_world",
+    "https://google-research.github.io/android_world/",
+    "https://arxiv.org/pdf/2405.14573"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google Research"
+}

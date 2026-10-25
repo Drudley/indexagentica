@@ -1,0 +1,33 @@
+{
+  "id": "firecracker",
+  "name": "Firecracker",
+  "category": "infrastructure",
+  "summary": "AWS's open-source virtual machine monitor for secure, fast-booting microVMs; the isolation layer under many agent code sandboxes.",
+  "description": "KVM-based VMM written in Rust, built for serverless (Lambda, Fargate). Latest release v1.17.0 (2026-09-10).",
+  "url": "https://firecracker-microvm.github.io/",
+  "repo": "https://github.com/firecracker-microvm/firecracker",
+  "docs": "https://github.com/firecracker-microvm/firecracker/tree/main/docs",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "isolation",
+    "virtualization"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "e2b",
+    "microsandbox",
+    "gvisor"
+  ],
+  "sources": [
+    "https://github.com/firecracker-microvm/firecracker",
+    "https://github.com/firecracker-microvm/firecracker/releases"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Amazon Web Services"
+}

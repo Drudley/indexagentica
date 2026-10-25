@@ -1,0 +1,30 @@
+{
+  "id": "google-skills",
+  "name": "Google Agent Skills",
+  "category": "skills",
+  "summary": "Google's official Agent Skills for Google products and Google Cloud, also bundled as plugins (skills + MCP servers) for Claude Code, Codex and Antigravity.",
+  "description": "Install with `npx skills add google/skills`; update with `npx skills update`. Plugin installs: `claude plugin marketplace add google/skills`, `codex plugin marketplace add google/skills`. Repo created 2026-03-31.",
+  "url": "https://github.com/google/skills",
+  "repo": "https://github.com/google/skills",
+  "tags": [
+    "agent-skills",
+    "google-cloud",
+    "plugins"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "agent-skills-spec",
+    "google-agents-cli"
+  ],
+  "sources": [
+    "https://github.com/google/skills"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

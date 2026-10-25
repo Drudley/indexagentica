@@ -1,0 +1,35 @@
+{
+  "id": "atxp",
+  "name": "ATXP",
+  "category": "finance-payments",
+  "summary": "Agent Transaction Protocol: agents self-register for a USDC wallet, email and connection token, then pay per use for MCP tools and LLM inference.",
+  "description": "`npx atxp agent register` creates an agent account with an `@atxp.email` address, an Ethereum wallet and $5 starting credit; `npx atxp fund` returns USDC deposit addresses and a Stripe payment link. Tools are pay-per-use (README examples: search/image $0.001–$0.05, email $0.01, SMS $0.05). An OpenAI-compatible LLM gateway is at `llm.atxp.ai`. The MIT-licensed SDK (`@atxp/client`, `@atxp/server`, `@atxp/express`, `@atxp/x402`, ...) lets developers charge for MCP servers; supported chains include Base, World Chain, Polygon and Solana. npm `atxp` 1.29.0.",
+  "url": "https://atxp.ai",
+  "repo": "https://github.com/atxp-dev/atxp",
+  "docs": "https://docs.atxp.ai/agents",
+  "tags": [
+    "agent-payments",
+    "usdc",
+    "mcp",
+    "wallet"
+  ],
+  "license": "MIT",
+  "pricing": "paid",
+  "status": "active",
+  "related": [
+    "x402",
+    "cdp-x402",
+    "pay-sh"
+  ],
+  "sources": [
+    "https://github.com/atxp-dev/atxp",
+    "https://github.com/atxp-dev/sdk",
+    "https://docs.atxp.ai/agents",
+    "https://docs.atxp.ai/developers/cli",
+    "https://www.npmjs.com/package/atxp"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator"
+}

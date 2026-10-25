@@ -1,0 +1,31 @@
+{
+  "id": "windows-agent-arena",
+  "name": "Windows Agent Arena",
+  "category": "information",
+  "summary": "Microsoft's scalable OS benchmark for multimodal agents that perform tasks inside a real Windows environment, parallelizable on Azure.",
+  "description": "Latest GitHub release v0.0.4 (2024-09-28); repository last updated 2026-04.",
+  "url": "https://microsoft.github.io/WindowsAgentArena/",
+  "repo": "https://github.com/microsoft/WindowsAgentArena",
+  "tags": [
+    "benchmark",
+    "computer-use",
+    "windows",
+    "multimodal"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "osworld",
+    "android-world"
+  ],
+  "sources": [
+    "https://github.com/microsoft/WindowsAgentArena",
+    "https://microsoft.github.io/WindowsAgentArena/"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

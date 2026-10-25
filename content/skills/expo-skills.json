@@ -1,0 +1,31 @@
+{
+  "id": "expo-skills",
+  "name": "Expo Skills",
+  "category": "skills",
+  "summary": "Official Agent Skills from the Expo team for building, deploying, upgrading and debugging Expo / React Native apps and EAS workflows.",
+  "description": "Install with `npx skills@latest add expo/skills --skill '*'`, or as a plugin: `claude plugin install expo@claude-plugins-official` / `codex plugin add expo@openai-curated`.",
+  "url": "https://docs.expo.dev/skills/",
+  "repo": "https://github.com/expo/skills",
+  "tags": [
+    "agent-skills",
+    "expo",
+    "react-native",
+    "mobile"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "skills-sh",
+    "claude-plugins-official"
+  ],
+  "sources": [
+    "https://github.com/expo/skills",
+    "https://docs.expo.dev/skills/"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Expo"
+}

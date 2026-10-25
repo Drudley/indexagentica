@@ -1,0 +1,33 @@
+{
+  "id": "gvisor",
+  "name": "gVisor",
+  "category": "infrastructure",
+  "summary": "Google's application kernel for containers that intercepts syscalls in user space, giving untrusted (e.g. agent-generated) code a stronger sandbox.",
+  "description": "Runs as the OCI runtime `runsc` with Docker, containerd and Kubernetes (RuntimeClass). Latest release release-20261019.0 (2026-10-22).",
+  "url": "https://gvisor.dev",
+  "repo": "https://github.com/google/gvisor",
+  "docs": "https://gvisor.dev/docs/",
+  "tags": [
+    "sandbox",
+    "containers",
+    "isolation",
+    "kubernetes"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "kubernetes-agent-sandbox",
+    "firecracker"
+  ],
+  "sources": [
+    "https://github.com/google/gvisor",
+    "https://github.com/google/gvisor/releases",
+    "https://gvisor.dev/docs/"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google"
+}

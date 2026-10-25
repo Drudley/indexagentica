@@ -1,0 +1,35 @@
+{
+  "id": "dbt-mcp",
+  "name": "dbt MCP Server",
+  "category": "mcp-servers",
+  "summary": "dbt Labs' official MCP server exposing dbt Core, Fusion and dbt Platform context to agents: SQL, Semantic Layer metrics, Discovery lineage and CLI.",
+  "description": "Tool groups include SQL (`execute_sql`, `text_to_sql`), Semantic Layer (`list_metrics`, `query_metrics`, ...), Discovery (`get_lineage`, `get_model_health`, `get_node_details`, ...) and dbt CLI commands. Each release also ships an experimental `dbt-mcp.mcpb` bundle. PyPI `dbt-mcp` (Python >=3.12,<3.14); latest GitHub release v2.8.0 (2026-10-13).",
+  "url": "https://docs.getdbt.com/docs/dbt-ai/about-mcp",
+  "repo": "https://github.com/dbt-labs/dbt-mcp",
+  "docs": "https://docs.getdbt.com/docs/dbt-ai/about-mcp",
+  "tags": [
+    "mcp",
+    "dbt",
+    "data",
+    "sql"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "snowflake-managed-mcp",
+    "motherduck-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/dbt-labs/dbt-mcp",
+    "https://github.com/dbt-labs/dbt-mcp/releases",
+    "https://pypi.org/project/dbt-mcp/",
+    "https://docs.getdbt.com/docs/dbt-ai/about-mcp"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "dbt Labs"
+}

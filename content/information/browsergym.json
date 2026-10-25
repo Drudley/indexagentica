@@ -1,0 +1,33 @@
+{
+  "id": "browsergym",
+  "name": "BrowserGym",
+  "category": "information",
+  "summary": "ServiceNow's Gym environment for web agents that bundles MiniWoB, WebArena, VisualWebArena, WorkArena, AssistantBench and more behind one API.",
+  "description": "Install with `pip install browsergym` (or per-benchmark packages such as `browsergym-webarena`, `browsergym-workarena`). New web benchmarks subclass `AbstractBrowserTask`. Companion framework AgentLab runs and evaluates agents across all BrowserGym benchmarks. The README notes it is a research framework, not a consumer product. PyPI `browsergym` 0.14.3 (2026-01-20).",
+  "url": "https://github.com/ServiceNow/BrowserGym",
+  "repo": "https://github.com/ServiceNow/BrowserGym",
+  "docs": "https://github.com/ServiceNow/BrowserGym#readme",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "browser",
+    "environment"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "webarena",
+    "mind2web"
+  ],
+  "sources": [
+    "https://github.com/ServiceNow/BrowserGym",
+    "https://pypi.org/project/browsergym/",
+    "https://arxiv.org/abs/2412.05467"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "ServiceNow"
+}

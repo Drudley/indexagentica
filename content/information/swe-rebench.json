@@ -1,0 +1,35 @@
+{
+  "id": "swe-rebench",
+  "name": "SWE-rebench",
+  "category": "information",
+  "summary": "Nebius's continuously refreshed, decontaminated SWE agent benchmark and dataset: 21,000+ validated GitHub issue-PR tasks plus a time-windowed leaderboard.",
+  "description": "The Hugging Face dataset `nebius/SWE-rebench` (CC-BY-4.0; each task also carries its source repo's license) is built by an automated pipeline that extracts and validates interactive tasks from 3,400+ Python repositories, with prebuilt Docker images for thousands of tasks. The leaderboard at swe-rebench.com evaluates models and agents on fresh tasks within a selectable time window to limit contamination and reports resolved rate, pass@5, cost and tokens per problem. A SWE-rebench v2 (paper arXiv 2602.23866) is also published. Run evaluations with the MIT-licensed SWE-bench fork.",
+  "url": "https://swe-rebench.com",
+  "repo": "https://github.com/SWE-rebench/SWE-bench-fork",
+  "docs": "https://huggingface.co/datasets/nebius/SWE-rebench",
+  "tags": [
+    "benchmark",
+    "dataset",
+    "coding-agents",
+    "leaderboard"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "swe-bench",
+    "swe-gym",
+    "swe-smith"
+  ],
+  "sources": [
+    "https://swe-rebench.com",
+    "https://huggingface.co/datasets/nebius/SWE-rebench",
+    "https://github.com/SWE-rebench/SWE-bench-fork",
+    "https://github.com/SWE-rebench/SWE-rebench-V2"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Nebius"
+}

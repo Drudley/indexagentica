@@ -1,0 +1,33 @@
+{
+  "id": "snowflake-managed-mcp",
+  "name": "Snowflake-managed MCP Server",
+  "category": "mcp-servers",
+  "summary": "Snowflake's hosted MCP server object (CREATE MCP SERVER) that exposes Cortex Agents, Cortex Analyst, Cortex Search, SQL and UDFs as governed MCP tools.",
+  "description": "GA since 2025-11-04. Defined in SQL with a YAML tool spec (types `CORTEX_AGENT_RUN`, `CORTEX_SEARCH_SERVICE_QUERY`, `CORTEX_ANALYST_MESSAGE`, `SYSTEM_EXECUTE_SQL`, `GENERIC`) and served at `https://<account_url>/api/v2/databases/{db}/schemas/{schema}/mcp-servers/{name}`. Auth via Snowflake OAuth (optional External OAuth); RBAC controls tool discovery and calls. Supports MCP revision 2025-11-25. Replaces the deprecated community server Snowflake-Labs/mcp. Billed as part of Snowflake usage.",
+  "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+  "docs": "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+  "tags": [
+    "mcp",
+    "snowflake",
+    "data",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "related": [
+    "model-context-protocol",
+    "dbt-mcp"
+  ],
+  "sources": [
+    "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "https://docs.snowflake.com/en/release-notes/2025/other/2025-11-04-cortex-agents-mcp",
+    "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+    "https://github.com/Snowflake-Labs/mcp"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Snowflake"
+}

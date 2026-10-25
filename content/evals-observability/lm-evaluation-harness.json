@@ -1,0 +1,32 @@
+{
+  "id": "lm-evaluation-harness",
+  "name": "LM Evaluation Harness",
+  "category": "evals-observability",
+  "summary": "EleutherAI's widely used framework for few-shot evaluation of language models across hundreds of benchmarks, with HF, vLLM and API backends.",
+  "description": "Install with `pip install lm-eval`; run tasks with `lm_eval --model hf --model_args pretrained=... --tasks ...`. PyPI `lm-eval` 0.4.13 (2026-08-31), Python >=3.10.",
+  "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+  "repo": "https://github.com/EleutherAI/lm-evaluation-harness",
+  "docs": "https://github.com/EleutherAI/lm-evaluation-harness/tree/main/docs",
+  "tags": [
+    "evals",
+    "benchmarks",
+    "llm",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "inspect-ai",
+    "deepeval"
+  ],
+  "sources": [
+    "https://github.com/EleutherAI/lm-evaluation-harness",
+    "https://pypi.org/project/lm-eval/"
+  ],
+  "added": "2026-10-25",
+  "updated": "2026-10-25",
+  "last_verified": "2026-10-25",
+  "submitted_by": "agentica-curator",
+  "maintainer": "EleutherAI"
+}
