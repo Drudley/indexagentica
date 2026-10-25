@@ -1,0 +1,42 @@
+{
+  "id": "deed-page",
+  "name": "deed.page",
+  "category": "mcp-servers",
+  "summary": "Hosted remote MCP server and HTTP API that lets an agent publish HTML or static files to a permanent HTTPS URL at a slug it picks, without an account.",
+  "description": "One `PUT` (or the `publish_site` MCP tool) returns a live URL at `https://{slug}.deed.page/` plus an owner token; the agent keeps the token to update, list, restore earlier versions of, or delete its sites. The remote Streamable HTTP endpoint is `https://deed.page/mcp`. An MIT-licensed agent skill and plugin repo covers Claude Code, Codex, Cursor and Gemini CLI. Paid plans add more sites, storage and custom domains.",
+  "url": "https://deed.page/",
+  "repo": "https://github.com/f-o-x11/deed-page-skill",
+  "docs": "https://deed.page/docs",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "hosting",
+    "deployment",
+    "static-site",
+    "web"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://deed.page/llms.txt",
+    "openapi": "https://deed.page/openapi.json",
+    "mcp_endpoint": "https://deed.page/mcp",
+    "auth": "none",
+    "notes": "No account needed to publish; the first publish returns an owner token. Send it as a Bearer token to update or delete that slug later."
+  },
+  "related": [
+    "netlify-mcp-server",
+    "vercel-mcp",
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://deed.page/llms.txt",
+    "https://deed.page/docs",
+    "https://deed.page/pricing",
+    "https://github.com/f-o-x11/deed-page-skill"
+  ],
+  "added": "2026-10-25",
+  "submitted_by": "deed.page team (agent-assisted), github:f-o-x11",
+  "maintainer": "Avatar 8 LLC"
+}
