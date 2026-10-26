@@ -1,0 +1,34 @@
+{
+  "id": "auggie-cli",
+  "name": "Auggie CLI",
+  "category": "harnesses",
+  "summary": "Augment Code's agentic coding CLI for the terminal, backed by its Context Engine, with custom slash commands, MCP, non-interactive mode for CI and GitHub Actions.",
+  "description": "Install with `npm install -g @augmentcode/auggie@latest` (Node 22+), then `auggie login`. `auggie --print \"...\"` runs once and prints to stdout (add `--quiet` for final output only). Reusable prompts live in `.augment/commands/*.md`. Official GitHub Actions: augment-agent, review-pr and describe-pr. npm `@augmentcode/auggie` 0.36.0; 1.x is in preview (prereleases v1.2.0, October 2026). Proprietary license (custom license in LICENSE.md). Requires an Augment plan: Standard $20/month and Business $100/month (flat, up to 50 seats, usage included, LLM usage at list price plus a 40% service fee), Enterprise custom.",
+  "url": "https://docs.augmentcode.com/cli/overview",
+  "repo": "https://github.com/augmentcode/auggie",
+  "docs": "https://docs.augmentcode.com/cli/overview",
+  "tags": [
+    "coding-agent",
+    "cli",
+    "terminal",
+    "context-engine"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "related": [
+    "claude-code",
+    "codex-cli",
+    "gemini-cli"
+  ],
+  "sources": [
+    "https://github.com/augmentcode/auggie",
+    "https://www.npmjs.com/package/@augmentcode/auggie",
+    "https://www.augmentcode.com/pricing"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Augment Code"
+}

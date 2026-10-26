@@ -1,0 +1,40 @@
+{
+  "id": "webflow-mcp",
+  "name": "Webflow MCP Server",
+  "category": "mcp-servers",
+  "summary": "Webflow's remote MCP server (OAuth) for building and managing Webflow sites: elements, styles, components, CMS, pages, assets, SEO and analytics.",
+  "description": "Add `https://mcp.webflow.com/mcp` (HTTP transport) to Claude Code, Cursor, Claude Desktop, ChatGPT or Codex; OAuth grants access to one workspace per authorization and installs the companion MCP Bridge App, which is needed only for Designer-canvas actions (snapshots, image uploads, current selection/page). Agents work within the user's existing Webflow roles and changes appear in the site activity log; per-site Agent Instructions can guide agents. Analytics, Optimize and AEO tools need the matching paid add-ons. Cannot create new site projects. The open-source local server (`webflow-mcp-server` on npm, 1.0.0, MIT) wraps the Webflow Data API; the docs also expose a separate docs MCP at `https://developers.webflow.com/_mcp/server`.",
+  "url": "https://developers.webflow.com/mcp/reference/overview",
+  "repo": "https://github.com/webflow/mcp-server",
+  "docs": "https://developers.webflow.com/mcp/reference/overview",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "website-builder",
+    "cms",
+    "seo"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.webflow.com/mcp",
+    "llms_txt": "https://developers.webflow.com/llms.txt",
+    "auth": "oauth"
+  },
+  "related": [
+    "figma-mcp",
+    "netlify-mcp-server",
+    "vercel-mcp"
+  ],
+  "sources": [
+    "https://developers.webflow.com/mcp/reference/overview",
+    "https://developers.webflow.com/mcp/installing/claude-code.md",
+    "https://github.com/webflow/mcp-server",
+    "https://www.npmjs.com/package/webflow-mcp-server"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Webflow"
+}

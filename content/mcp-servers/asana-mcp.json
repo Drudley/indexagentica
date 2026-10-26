@@ -1,0 +1,34 @@
+{
+  "id": "asana-mcp",
+  "name": "Asana MCP Server",
+  "category": "mcp-servers",
+  "summary": "Asana's hosted remote MCP server (V2, Streamable HTTP, OAuth) giving AI clients access to tasks, projects and the Asana Work Graph.",
+  "description": "Connect any MCP client that supports Streamable HTTP and OAuth to `https://mcp.asana.com/v2/mcp`; some clients need a client ID and secret created via Asana's integration guide. Lets agents find, create and manage tasks and projects and summarize project data. Asana also ships apps for Claude and ChatGPT. The old beta endpoint `https://mcp.asana.com/sse` is deprecated (Asana's doc gives a shutdown date of 05/11/2026). Enterprise+ admins can allow or block individual MCP clients via app management. Tools are listed via `tools/list`.",
+  "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "docs": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "project-management",
+    "task-management"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.asana.com/v2/mcp",
+    "auth": "oauth",
+    "notes": "Requires an Asana account; the client app must not be blocked by workspace app management."
+  },
+  "related": [
+    "linear-mcp",
+    "notion-mcp",
+    "atlassian-rovo-mcp"
+  ],
+  "sources": [
+    "https://developers.asana.com/docs/using-asanas-mcp-server"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Asana"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "gdpval",
+  "name": "GDPval",
+  "category": "information",
+  "summary": "OpenAI benchmark of real-world, economically valuable knowledge-work tasks across 44 occupations; a 220-task gold subset with files and rubrics is open on Hugging Face.",
+  "description": "The full set has 1,320 tasks built from real work products by professionals averaging 14 years of experience, spanning 44 occupations in the top 9 sectors of U.S. GDP. Each task has a prompt plus reference files (spreadsheets, documents, etc.); the open gold subset (`openai/gdpval`, v2 with rubrics and gold deliverables) has 220 tasks. OpenAI offers an experimental automated grader at evals.openai.com; human expert comparison remains the recommended grading method. Some tasks contain NSFW or political content. The Hugging Face dataset card does not state a license.",
+  "url": "https://openai.com/index/gdpval/",
+  "docs": "https://huggingface.co/datasets/openai/gdpval",
+  "tags": [
+    "benchmark",
+    "knowledge-work",
+    "dataset",
+    "evals",
+    "economics"
+  ],
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "the-agent-company",
+    "humanitys-last-exam",
+    "metr-time-horizons"
+  ],
+  "sources": [
+    "https://huggingface.co/datasets/openai/gdpval",
+    "https://arxiv.org/abs/2510.04374",
+    "https://openai.com/index/gdpval/"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "OpenAI"
+}

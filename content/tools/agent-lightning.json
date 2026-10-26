@@ -1,0 +1,35 @@
+{
+  "id": "agent-lightning",
+  "name": "Agent Lightning",
+  "category": "tools",
+  "summary": "Microsoft's lightweight agentic RL framework that trains models through real agent harnesses unchanged, using a proxy gateway, verl/vLLM trainer and Kubernetes rollouts.",
+  "description": "v1.0 (open-sourced August 2026, ~3,500 lines) has three parts: a Trainer (verl + vLLM), an API Gateway that proxies model requests and captures training data, and a Rollout Controller that runs agents locally or as Kubernetes Jobs, so agents keep their own tools, context and environments. The repo reports a Qwen3.5-9B coding-agent run going from 41.8% to 56.4% on SWE-bench Verified with 6K samples, and Qwen3.5-35B-A3B from 47.8% to 61.6% with 1.8K samples (project-reported). Also ships an Agent Lightning skill for coding agents. Needs a CUDA GPU stack. Latest release v1.0.2 (2026-09-29).",
+  "url": "https://microsoft.github.io/agent-lightning/",
+  "repo": "https://github.com/microsoft/agent-lightning",
+  "docs": "https://microsoft.github.io/agent-lightning/stable/00-installation/",
+  "tags": [
+    "reinforcement-learning",
+    "agent-training",
+    "fine-tuning",
+    "kubernetes",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "swe-bench",
+    "swe-gym",
+    "swe-smith"
+  ],
+  "sources": [
+    "https://github.com/microsoft/agent-lightning",
+    "https://arxiv.org/abs/2608.17528",
+    "https://github.com/microsoft/agent-lightning/releases"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

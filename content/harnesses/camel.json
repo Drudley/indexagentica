@@ -1,0 +1,35 @@
+{
+  "id": "camel",
+  "name": "CAMEL",
+  "category": "harnesses",
+  "summary": "Open-source Python multi-agent framework from CAMEL-AI for role-playing agents, data generation, task automation and large-scale world simulation.",
+  "description": "Research-oriented framework (`pip install camel-ai`) with ChatAgent, multi-agent societies and workforces, toolkits (including MCP), memory, RAG and synthetic data generation; it originated with the 2023 CAMEL role-playing paper. PyPI `camel-ai` 0.2.90; pre-releases 0.2.91a* (September 2026).",
+  "url": "https://www.camel-ai.org/",
+  "repo": "https://github.com/camel-ai/camel",
+  "docs": "https://docs.camel-ai.org/",
+  "tags": [
+    "multi-agent",
+    "agent-framework",
+    "python",
+    "synthetic-data",
+    "research"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "autogen",
+    "crewai",
+    "langgraph"
+  ],
+  "sources": [
+    "https://github.com/camel-ai/camel",
+    "https://pypi.org/project/camel-ai/",
+    "https://arxiv.org/abs/2303.17760"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "CAMEL-AI"
+}

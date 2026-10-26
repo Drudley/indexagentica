@@ -1,0 +1,35 @@
+{
+  "id": "the-agent-company",
+  "name": "TheAgentCompany",
+  "category": "information",
+  "summary": "Benchmark of 175 professional tasks in a simulated software company (self-hosted GitLab, Plane, ownCloud, RocketChat) for agents that browse, code, run programs and talk to coworkers.",
+  "description": "Self-hosted with Docker (30+ GB disk); each task is a Docker image with an encrypted evaluator. Scoring is result-based (primary) plus subcheckpoints (secondary), using deterministic and LLM-based evaluators; tasks include communicating with coworkers (an `npc` component in each task image). Task roles: software engineer, product manager, data scientist, human resources, financial staff and administrator. Paper: arXiv 2412.14161; maintainers' contacts are at CMU. Public leaderboard on the website. Release 1.0.0 (December 2024).",
+  "url": "https://the-agent-company.com",
+  "repo": "https://github.com/TheAgentCompany/TheAgentCompany",
+  "tags": [
+    "benchmark",
+    "agents",
+    "workplace-tasks",
+    "web-agents",
+    "evals"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "webarena",
+    "appworld",
+    "osworld",
+    "openhands"
+  ],
+  "sources": [
+    "https://github.com/TheAgentCompany/TheAgentCompany",
+    "https://arxiv.org/abs/2412.14161",
+    "https://the-agent-company.com"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "TheAgentCompany"
+}

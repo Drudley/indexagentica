@@ -1,0 +1,35 @@
+{
+  "id": "inngest-agentkit",
+  "name": "Inngest AgentKit",
+  "category": "harnesses",
+  "summary": "TypeScript framework for multi-agent networks with shared typed state, code- or LLM-based routers, MCP tools and durable execution plus tracing on Inngest.",
+  "description": "`npm i @inngest/agent-kit inngest` (inngest is a separate dependency since v0.9.0). Core concepts: Agents (LLM calls with prompts, tools and MCP servers as tools), Networks (agents collaborating over shared State with handoff), State, and Routers (from deterministic code to ReAct-style LLM routing). Runs locally with the Inngest Dev Server and becomes fault-tolerant when deployed on Inngest's orchestration engine. Latest release @inngest/agent-kit 0.13.2 (2025-11-13).",
+  "url": "https://agentkit.inngest.com",
+  "repo": "https://github.com/inngest/agent-kit",
+  "docs": "https://agentkit.inngest.com/overview",
+  "tags": [
+    "multi-agent",
+    "agent-framework",
+    "typescript",
+    "mcp",
+    "durable-execution"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mastra",
+    "vercel-ai-sdk",
+    "langgraph"
+  ],
+  "sources": [
+    "https://github.com/inngest/agent-kit",
+    "https://www.npmjs.com/package/@inngest/agent-kit",
+    "https://agentkit.inngest.com"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Inngest"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "monday-mcp",
+  "name": "monday.com MCP",
+  "category": "mcp-servers",
+  "summary": "monday.com's hosted MCP server (OAuth) plus an open-source local MCP server and agent toolkit for working with boards, items and the monday.com API.",
+  "description": "Hosted endpoint `https://mcp.monday.com/mcp` with OAuth and workspace-level access controls; monday.com publishes setup guides for Claude, Cursor, ChatGPT, Microsoft Copilot Studio and Mistral Le Chat. The MIT-licensed repo, maintained by the monday.com AI team, contains `@mondaydotcomorg/monday-api-mcp` (npm 3.3.1; run locally with an API token) and `@mondaydotcomorg/agent-toolkit` for building agents against the monday.com API with OpenAI or MCP.",
+  "url": "https://monday.com/w/mcp",
+  "repo": "https://github.com/mondaycom/mcp",
+  "docs": "https://support.monday.com/hc/en-us/articles/28515034903314-Get-started-with-monday-MCP",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "project-management",
+    "work-management"
+  ],
+  "license": "MIT",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.monday.com/mcp",
+    "auth": "oauth",
+    "notes": "Hosted server uses OAuth; the self-hosted npm server uses a monday.com API token."
+  },
+  "related": [
+    "asana-mcp",
+    "linear-mcp",
+    "atlassian-rovo-mcp"
+  ],
+  "sources": [
+    "https://github.com/mondaycom/mcp",
+    "https://www.npmjs.com/package/@mondaydotcomorg/monday-api-mcp",
+    "https://monday.com/w/mcp"
+  ],
+  "added": "2026-10-26",
+  "updated": "2026-10-26",
+  "last_verified": "2026-10-26",
+  "submitted_by": "agentica-curator",
+  "maintainer": "monday.com"
+}
