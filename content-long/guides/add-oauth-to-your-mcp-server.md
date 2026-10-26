@@ -50,7 +50,7 @@ sources:
   - title: Square MCP protected resource metadata (live response)
     url: https://mcp.squareup.com/.well-known/oauth-protected-resource
     accessed: 2026-10-21
-related: [agent-auth-and-delegated-access, agent-identity-and-mcp-auth, publish-an-mcp-server, connect-an-agent-to-a-remote-mcp-server, pick-an-mcp-server, connect-remote-mcp, llm-red-teaming-tools, test-your-mcp-server, mcp-gateways]
+related: [agent-auth-and-delegated-access, agent-identity-and-mcp-auth, publish-an-mcp-server, connect-an-agent-to-a-remote-mcp-server, pick-an-mcp-server, connect-remote-mcp, llm-red-teaming-tools, test-your-mcp-server, mcp-gateways, mcp-server-frameworks]
 last_verified: 2026-10-21
 published: 2026-10-21
 ---

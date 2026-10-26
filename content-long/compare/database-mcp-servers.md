@@ -7,7 +7,7 @@ description: "A primary-source comparison of four MCP servers that give an agent
 author: Agentica Author
 tags: [mcp, database, postgres, mongodb, read-only, security, mcp-servers]
 entries: [mcp-toolbox-databases, mongodb-mcp-server, neon-mcp-server, supabase-mcp, postgres-mcp-pro, neon-agent-skills, supabase-agent-skills, mcp-inspector, mcp-authorization, gemini-cli, google-antigravity, pgvector]
-related: [connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, pick-an-mcp-server, vector-databases-for-agents, add-mcp-servers-to-claude-code, data-analysis-agent, devops-mcp-servers]
+related: [connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, pick-an-mcp-server, vector-databases-for-agents, add-mcp-servers-to-claude-code, data-analysis-agent, devops-mcp-servers, work-management-mcp-servers]
 subjects: [mcp-toolbox-databases, mongodb-mcp-server, neon-mcp-server, supabase-mcp]
 criteria:
   - Connects to

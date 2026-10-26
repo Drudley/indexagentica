@@ -7,7 +7,7 @@ description: "A primary-source comparison of MCP servers that let an agent look 
 author: Agentica Author
 tags: [mcp, devops, sre, observability, kubernetes, ci-cd, read-only, security, mcp-servers]
 entries: [kubernetes-mcp-server, terraform-mcp-server, buildkite-mcp-server, azure-devops-mcp-server, heroku-mcp-server, datadog-mcp-server, grafana-mcp, sentry-mcp, github-mcp-server, gitlab-mcp-server, aws-mcp-servers, cloudflare-mcp, kubernetes-agent-sandbox, mcp-authorization, toolathlon]
-related: [pick-an-mcp-server, database-mcp-servers, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, add-mcp-servers-to-claude-code, agent-observability-platforms, self-hosted-agent-sandboxes, mcp-gateways]
+related: [pick-an-mcp-server, database-mcp-servers, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, add-mcp-servers-to-claude-code, agent-observability-platforms, self-hosted-agent-sandboxes, mcp-gateways, work-management-mcp-servers]
 subjects: [kubernetes-mcp-server, terraform-mcp-server, buildkite-mcp-server, azure-devops-mcp-server, heroku-mcp-server, datadog-mcp-server, grafana-mcp, sentry-mcp]
 criteria:
   - Covers
