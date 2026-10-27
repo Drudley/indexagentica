@@ -82,4 +82,4 @@ AgentEnv and Seahaven can both serve environments through OpenEnv, an open inter
 - AgentEnv: `uvx --from agentenv-framework agent-env run hello` runs a built-in task with no Docker, model or config.
 - Seahaven: `uvx seahaven new crm_world` scaffolds a world with tests, a fixture generator and an `AGENTS.md`, so a coding agent can build the rest. `seahaven check` reports fixes for authoring mistakes.
 
-For how evals fit with tracing and observability, see [Evaluate an AI agent](guide:evaluate-an-ai-agent). To train or fine-tune on agent trajectories instead of generating them, NVIDIA's [Open SWE Traces](entry:open-swe-traces) is an open dataset of software-engineering agent trajectories (CC BY 4.0).
+For how evals fit with tracing and observability, see [Evaluate an AI agent](guide:evaluate-an-ai-agent). To train or fine-tune on agent trajectories instead of generating them, NVIDIA's [Open-SWE-Traces](entry:open-swe-traces) is an open dataset of software-engineering agent trajectories (CC BY 4.0).
