@@ -2,7 +2,7 @@
   "id": "deed-page",
   "name": "deed.page",
   "category": "mcp-servers",
-  "summary": "Hosted remote MCP server and HTTP API that lets an agent publish HTML or static files to a permanent HTTPS URL at a slug it picks, without an account.",
+  "summary": "Hosted remote MCP server and HTTP API that lets an agent publish HTML or static files to a persistent HTTPS URL at a slug it picks, without an account.",
   "description": "One `PUT` (or the `publish_site` MCP tool) returns a live URL at `https://{slug}.deed.page/` plus an owner token; the agent keeps the token to update, list, restore earlier versions of, or delete its sites. The remote Streamable HTTP endpoint is `https://deed.page/mcp`. An MIT-licensed agent skill and plugin repo covers Claude Code, Codex, Cursor and Gemini CLI. Paid plans add more sites, storage and custom domains.",
   "url": "https://deed.page/",
   "repo": "https://github.com/f-o-x11/deed-page-skill",
