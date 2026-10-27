@@ -1,0 +1,34 @@
+{
+  "id": "neverapply-mcp",
+  "name": "NeverApply MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted Streamable HTTP MCP server for job search: match jobs, tailor resumes, answer screening questions and apply with user approval.",
+  "description": "Remote MCP server at https://neverapply.co/mcp with 15 tools. Sign-in uses OAuth 2.1 with PKCE and dynamic client registration (scopes mcp:read, mcp:write, mcp:apply). Listed in the official MCP Registry as co.neverapply/neverapply.",
+  "url": "https://neverapply.co/features/mcp",
+  "repo": "https://github.com/kasovy/neverapply-mcp",
+  "docs": "https://neverapply.co/features/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "jobs",
+    "job-search",
+    "resume"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://neverapply.co/mcp",
+    "llms_txt": "https://neverapply.co/llms.txt",
+    "auth": "oauth",
+    "notes": "OAuth 2.1 with PKCE and dynamic client registration; register at https://neverapply.co/oauth/register."
+  },
+  "sources": [
+    "https://neverapply.co/features/mcp",
+    "https://github.com/kasovy/neverapply-mcp",
+    "https://registry.modelcontextprotocol.io/v0.1/servers?search=neverapply"
+  ],
+  "added": "2026-10-20",
+  "submitted_by": "github:msohaildev",
+  "maintainer": "NeverApply (Kasovy LLC)"
+}
