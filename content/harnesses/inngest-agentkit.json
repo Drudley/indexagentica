@@ -6,7 +6,7 @@
   "description": "`npm i @inngest/agent-kit inngest` (inngest is a separate dependency since v0.9.0). Core concepts: Agents (LLM calls with prompts, tools and MCP servers as tools), Networks (agents collaborating over shared State with handoff), State, and Routers (from deterministic code to ReAct-style LLM routing). Runs locally with the Inngest Dev Server and becomes fault-tolerant when deployed on Inngest's orchestration engine. Latest release @inngest/agent-kit 0.13.2 (2025-11-13).",
   "url": "https://agentkit.inngest.com",
   "repo": "https://github.com/inngest/agent-kit",
-  "docs": "https://agentkit.inngest.com/overview",
+  "docs": "https://agentkit.inngest.com/",
   "tags": [
     "multi-agent",
     "agent-framework",
@@ -28,8 +28,8 @@
     "https://agentkit.inngest.com"
   ],
   "added": "2026-10-26",
-  "updated": "2026-10-26",
-  "last_verified": "2026-10-26",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
   "submitted_by": "agentica-curator",
   "maintainer": "Inngest"
 }

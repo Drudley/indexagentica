@@ -1,0 +1,36 @@
+{
+  "id": "agentenv-framework",
+  "name": "AgentEnv Framework",
+  "category": "evals-observability",
+  "summary": "Scale AI's open-source Python SDK and CLI for building, deploying and scoring containerized agent environments and tasks for RL and evals.",
+  "description": "Environments are containerized servers speaking the open `agentenv-framework-protocol`; the framework builds them into versioned images, deploys them behind a gateway, points an agent at them over MCP, REST or a generated CLI, and grades what the agent did. Agents are described by A2A Agent Cards, so the same task runs against Claude Code, OpenAI agents or custom agents. Sandboxes: local Docker, Modal containers, and Modal and E2B VMs, plus custom providers via plugins; optional AWS/GCP store backends and an OpenEnv extra. Try it with `uvx --from agentenv-framework agent-env run hello`. Requires Python 3.11.4+; PyPI `agentenv-framework` 0.9.1364. Scale says every RL environment it builds runs on AgentEnv.",
+  "url": "https://www.agentenvframework.com",
+  "repo": "https://github.com/scaleapi/agentenv-framework",
+  "docs": "https://www.agentenvframework.com/docs",
+  "tags": [
+    "evals",
+    "rl-environments",
+    "sandbox",
+    "benchmarks",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "harbor",
+    "modal",
+    "e2b",
+    "a2a-protocol"
+  ],
+  "sources": [
+    "https://github.com/scaleapi/agentenv-framework",
+    "https://labs.scale.com/blog/introducing-agentenv",
+    "https://pypi.org/project/agentenv-framework/"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Scale AI"
+}

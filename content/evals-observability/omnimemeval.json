@@ -1,0 +1,33 @@
+{
+  "id": "omnimemeval",
+  "name": "OmniMemEval",
+  "category": "evals-observability",
+  "summary": "MemTensor's evaluation framework for memory backends (LoCoMo, LongMemEval, BEAM, PersonaMem v2, HaluMem) and memory-equipped agents on AgentBench domains.",
+  "description": "Two tracks: **User Memory Evaluation** drives any memory backend through `add()` and `search()` and scores answers with configurable answer/eval LLMs; **Agent Memory Evaluation** runs agent runtimes with memory plugins (OpenClaw) on AgentBench-style domains (reasoning, information retrieval, knowledge work, code, software engineering). Ships data-preparation scripts, env templates per backend (e.g. MemOS) and published result snapshots. Third-party benchmark data keeps its upstream licenses. From the makers of MemOS.",
+  "url": "https://github.com/MemTensor/OmniMemEval",
+  "repo": "https://github.com/MemTensor/OmniMemEval",
+  "tags": [
+    "evals",
+    "memory",
+    "benchmarks",
+    "agents",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "memos",
+    "mem0",
+    "agentbench",
+    "openclaw"
+  ],
+  "sources": [
+    "https://github.com/MemTensor/OmniMemEval"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MemTensor"
+}

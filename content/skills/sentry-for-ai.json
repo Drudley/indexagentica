@@ -1,0 +1,39 @@
+{
+  "id": "sentry-for-ai",
+  "name": "Sentry for AI (Sentry skills and plugins)",
+  "category": "skills",
+  "summary": "Sentry's official skill library teaching coding agents to set up Sentry SDKs, triage production issues, fix Seer review comments and configure alerts, AI monitoring and OTel.",
+  "description": "Source repo for Sentry's agent skills, built into an Agent Plugins 1.0 package and per-client plugins (`getsentry/plugin-claude`, `plugin-cursor`, `plugin-codex`, `plugin-copilot`, `plugin-antigravity`, `plugin-grok`); install one of those rather than this repo. The skills are also served over HTTP at skills.sentry.dev (entry points `/instrument`, `/workflows`, `/features`, `/cloudflare`) for agents to fetch with `curl -sL`. Pairs with Sentry's MCP server for querying issues. Separate from `getsentry/skills` (Apache-2.0), the internal engineering skills Sentry staff use for code review, commits and PRs.",
+  "url": "https://skills.sentry.dev/",
+  "repo": "https://github.com/getsentry/sentry-for-ai",
+  "tags": [
+    "agent-skills",
+    "skill-md",
+    "error-monitoring",
+    "observability",
+    "plugins"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Skill files are public: fetch https://skills.sentry.dev/ and follow relative links. Using Sentry itself needs a Sentry account."
+  },
+  "related": [
+    "sentry-mcp",
+    "agent-plugins",
+    "agent-skills-spec",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/getsentry/sentry-for-ai",
+    "https://skills.sentry.dev/",
+    "https://github.com/getsentry/skills"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Sentry"
+}

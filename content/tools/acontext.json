@@ -2,11 +2,10 @@
   "id": "acontext",
   "name": "Acontext",
   "category": "tools",
-  "summary": "Open-source skill memory layer: distills agent runs into editable Markdown SKILL.md files that agents fetch with tools on the next run; cloud or self-hosted.",
-  "description": "When a task completes or fails, an LLM distillation pass extracts what worked, what failed and user preferences, and a skill agent writes them into skill files following a schema you define in `SKILL.md`. Recall is by tool use (`get_skill`, `get_skill_file`), not semantic top-k; skills export as ZIP for use with any agent or framework. SDKs: `pip install acontext`, `npm i @acontext/acontext`. Hosted at acontext.io (free credits to start) or self-host with Docker and an OpenAI API key. From the makers of Memobase.",
-  "url": "https://acontext.io",
+  "summary": "Archived and no longer maintained (Oct 2026): open-source skill memory layer that distilled agent runs into editable SKILL.md files agents fetched on later runs.",
+  "description": "**No longer maintained.** The GitHub repo is archived, and a README notice added on 2026-10-24 says the team now focuses on alook.ai; the acontext.io website and docs domains no longer resolve. Listed for reference.\n\nWhen a task completes or fails, an LLM distillation pass extracts what worked, what failed and user preferences, and a skill agent writes them into skill files following a schema you define in `SKILL.md`. Recall is by tool use (`get_skill`, `get_skill_file`), not semantic top-k; skills export as ZIP for use with any agent or framework. SDKs: `pip install acontext`, `npm i @acontext/acontext`. It was hosted at acontext.io; self-hosting used Docker and an OpenAI API key. From the makers of Memobase.",
+  "url": "https://github.com/memodb-io/Acontext",
   "repo": "https://github.com/memodb-io/Acontext",
-  "docs": "https://docs.acontext.io",
   "tags": [
     "memory",
     "skills",
@@ -16,11 +15,11 @@
     "typescript"
   ],
   "license": "Apache-2.0",
-  "pricing": "freemium",
-  "status": "active",
+  "pricing": "open-source",
+  "status": "deprecated",
   "agent_access": {
-    "llms_txt": "https://docs.acontext.io/llms.txt",
-    "auth": "api-key"
+    "auth": "api-key",
+    "notes": "Unmaintained: the acontext.io and docs.acontext.io domains no longer resolve (checked 2026-10-27), so the hosted service should be assumed unavailable; self-host from the archived repo at your own risk."
   },
   "related": [
     "memu",
@@ -31,11 +30,11 @@
   ],
   "sources": [
     "https://github.com/memodb-io/Acontext",
-    "https://docs.acontext.io/llms.txt"
+    "https://github.com/memodb-io/Acontext/blob/main/README.md"
   ],
   "added": "2026-10-22",
-  "updated": "2026-10-22",
-  "last_verified": "2026-10-22",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
   "submitted_by": "agentica-curator",
   "maintainer": "MemoDB (memodb-io)"
 }

@@ -1,0 +1,42 @@
+{
+  "id": "wavelength",
+  "name": "Wavelength (Lightning Labs)",
+  "category": "finance-payments",
+  "summary": "Lightning Labs' self-custodial Bitcoin wallet toolkit (Ark, Lightning swaps, on-chain) with an MCP server and L402 so agents can pay and get paid per request.",
+  "description": "One daemon (`waved`) plus CLI (`wavecli`) combines an Ark client, a Lightning swap engine and an on-chain wallet, with gRPC/REST APIs, Go SDKs and web/React/React Native SDKs (WebAssembly runtime). `wavecli mcp serve` exposes the wallet to agents as typed MCP tools; `wavecli bakemacaroon` issues least-privilege macaroons (e.g. receive-only, cannot sign or recover). Seeds and passwords stay on the command line, not the agent channel; users can unilaterally exit to the Bitcoin chain. Live on mainnet since 2026-10-23 (still labelled alpha): up to 300,000 sats per account and 50,000 sats per VTXO; Lightning sends and receives carry a 0.25% service fee plus routing fees; funds need a free automatic refresh about every two weeks. Agent docs at llms.txt/llms-full.txt; skills via `npx skills add lightninglabs/wavelength-sdk`. Stablecoins announced as coming soon.",
+  "url": "https://wavelength.lightning.engineering/",
+  "repo": "https://github.com/lightninglabs/wavelength",
+  "docs": "https://wavelength.lightning.engineering/",
+  "tags": [
+    "lightning",
+    "bitcoin",
+    "wallet",
+    "l402",
+    "mcp",
+    "self-custodial"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://wavelength.lightning.engineering/llms.txt",
+    "auth": "other",
+    "notes": "Local MCP via `wavecli mcp serve`; access is controlled with macaroons from the user's own daemon. Usage fees as described (0.25% Lightning service fee, on-chain fees)."
+  },
+  "related": [
+    "l402",
+    "lightning-agent-tools",
+    "alby-hub",
+    "nostr-wallet-connect"
+  ],
+  "sources": [
+    "https://github.com/lightninglabs/wavelength",
+    "https://lightning.engineering/posts/2026-10-23-wavelength-mainnet-launch/",
+    "https://wavelength.lightning.engineering/llms.txt"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Lightning Labs"
+}

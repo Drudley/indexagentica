@@ -1,0 +1,33 @@
+{
+  "id": "gke-sandbox",
+  "name": "GKE Sandbox (gVisor and microVM)",
+  "category": "infrastructure",
+  "summary": "Google Kubernetes Engine's sandboxed Pods for untrusted and agent-generated code: gVisor, or (GA since 2026-10-07) Kata Containers microVMs on Cloud Hypervisor.",
+  "description": "Two isolation types on GKE: **gVisor** (user-space kernel intercepting syscalls; start under ~200 ms) and **microVM** (each Pod in its own lightweight VM with a full Linux guest kernel, via Kata Containers and the Cloud Hypervisor VMM; fixed overhead of 250 mCPU and 130 MiB per Pod, start in about 1–2 s). The microVM type became generally available on 2026-10-07 for clusters on 1.37.0-gke.4713000 and later; Google names AI agent runtimes as a target use case. MicroVM node pools need nested virtualization enabled; see the how-to guide for node pool and Pod settings. Billed as normal GKE compute; the underlying Kata Containers and gVisor are open source.",
+  "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/sandbox-pods",
+  "docs": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/sandbox-pods",
+  "tags": [
+    "sandbox",
+    "kubernetes",
+    "microvm",
+    "gvisor",
+    "isolation"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "related": [
+    "gvisor",
+    "kubernetes-agent-sandbox",
+    "firecracker"
+  ],
+  "sources": [
+    "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/sandbox-pods",
+    "https://docs.cloud.google.com/kubernetes-engine/docs/release-notes"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google Cloud"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "zed",
+  "name": "Zed (Zed Agent)",
+  "category": "harnesses",
+  "summary": "Open-source, high-performance code editor with a native agent (Zed Agent), external ACP agents, terminal agent threads, MCP servers and skills.",
+  "description": "Zed Agent uses Zed-hosted models, provider API keys, existing subscriptions, gateways or local models, with built-in tools, tool permissions, profiles, skills, instructions and MCP servers. External Agents (e.g. Claude Agent, Codex CLI) run through the Agent Client Protocol (ACP); Terminal Threads run any agent CLI/TUI in the editor, and several threads can run in parallel across projects and worktrees. Also inline assistant, edit prediction and AI commit messages. Docs have an llms.txt and markdown versions of pages. Runs on macOS, Linux and Windows.\n\n**Pricing:** Personal $0 (unlimited use with your own API keys or external agents); Pro $10/month (Zed-hosted models, $5 of tokens included, then usage-based, unlimited edit predictions); Business $30/seat/month. Source is GPL-3.0-or-later with Apache-2.0 components where marked.",
+  "url": "https://zed.dev",
+  "repo": "https://github.com/zed-industries/zed",
+  "docs": "https://zed.dev/docs/ai/overview",
+  "tags": [
+    "editor",
+    "coding-agent",
+    "acp",
+    "mcp",
+    "ide"
+  ],
+  "license": "GPL-3.0-or-later",
+  "pricing": "freemium",
+  "status": "active",
+  "related": [
+    "agent-client-protocol",
+    "cursor",
+    "vscode-agents",
+    "claude-code"
+  ],
+  "sources": [
+    "https://github.com/zed-industries/zed",
+    "https://zed.dev/docs/ai/overview",
+    "https://zed.dev/pricing"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Zed Industries"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "astrocade-mcp",
+  "name": "Astrocade MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted remote MCP server (OAuth) that lets coding agents build, edit and publish browser games to an Astrocade account and its public game feed.",
+  "description": "Add `https://mcp.astrocade.com/mcp` as a remote MCP server and sign in to Astrocade when the client asks. The agent writes and tests game code following Astrocade's game guidelines (built for phones), can open and update games already in the account, and publishes with one command; published games go through review before they appear in the feed. Launched 2026-10-12 with setup instructions for Claude Code, Codex, Cursor, Claude, ChatGPT (custom MCP server with OAuth) and Gemini CLI. Closed source; no license published, and the launch post does not state MCP pricing.",
+  "url": "https://www.astrocade.com/create/mcp",
+  "docs": "https://www.astrocade.com/blog/introducing-astrocade-mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "game-development",
+    "publishing"
+  ],
+  "pricing": "unknown",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.astrocade.com/mcp",
+    "auth": "oauth",
+    "notes": "Requires an Astrocade account; e.g. `claude mcp add --transport http --scope user astrocade https://mcp.astrocade.com/mcp` then authenticate via /mcp."
+  },
+  "related": [
+    "model-context-protocol",
+    "mcp-for-blender"
+  ],
+  "sources": [
+    "https://www.astrocade.com/blog/introducing-astrocade-mcp"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Astrocade"
+}

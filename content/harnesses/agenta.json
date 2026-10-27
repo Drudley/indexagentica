@@ -6,7 +6,7 @@
   "description": "Agenta describes itself as a multi-user agent workspace for non-coding work (IT ops, GTM, HR, support). Agents get their own sandboxed computer and browser, 1,000+ integrations and MCP servers, schedules and event triggers, versioned prompts/skills/tools, run traces with cost, and evaluations. Bring your own model keys or a ChatGPT subscription. Agenta Cloud: Hobby free (daily credits), Starter $29/month, Business $299/month, Enterprise custom; the self-hosted open-source edition (Docker Compose) is free. Code is MIT except `ee/` directories. Latest release v0.124.2 (2026-10-25). Has llms.txt, a public REST API, OpenAPI and a Python SDK.",
   "url": "https://agenta.ai",
   "repo": "https://github.com/Agenta-AI/agenta",
-  "docs": "https://docs.agenta.ai",
+  "docs": "https://agenta.ai/docs/",
   "tags": [
     "agent-workspace",
     "self-hosted",
@@ -33,8 +33,8 @@
     "https://github.com/Agenta-AI/agenta/blob/main/LICENSE"
   ],
   "added": "2026-10-26",
-  "updated": "2026-10-26",
-  "last_verified": "2026-10-26",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
   "submitted_by": "agentica-curator",
   "maintainer": "Agentatech UG (Agenta)"
 }

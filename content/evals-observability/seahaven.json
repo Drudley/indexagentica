@@ -1,0 +1,36 @@
+{
+  "id": "seahaven",
+  "name": "Seahaven",
+  "category": "evals-observability",
+  "summary": "Kiln AI's open-source Python framework for synthetic, resettable 'worlds' (SQLite state plus mock tools) for agent evals and RL, served via OpenEnv or MCP.",
+  "description": "A world is a schema (SQLite tables) plus tools (Python functions); each run gets its own database copied from a fixture, every changed row is logged so you grade on state rather than transcripts, and clock and random seed are fixed for reproducible runs. Serves hundreds of instances per process; `seahaven serve` is an OpenEnv environment with a web console, and `seahaven mcp` exposes one world to an MCP client. Worlds compose (e.g. Kiln's Stripe World mocks Stripe Billing and Payments behind the same tools as Stripe's MCP server and serves its REST API). PyPI `seahaven` 0.6.0.",
+  "url": "https://kiln.tech/features/synthetic-worlds",
+  "repo": "https://github.com/Kiln-AI/Seahaven",
+  "docs": "https://github.com/Kiln-AI/Seahaven/blob/main/src/seahaven/docs/index.md",
+  "tags": [
+    "evals",
+    "rl-environments",
+    "simulation",
+    "mock-apis",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "harbor",
+    "agentenv-framework",
+    "appworld",
+    "stripe-mcp"
+  ],
+  "sources": [
+    "https://github.com/Kiln-AI/Seahaven",
+    "https://kiln.tech/blog/introducing_seahaven",
+    "https://pypi.org/project/seahaven/"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Kiln AI"
+}

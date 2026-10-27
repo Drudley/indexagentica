@@ -1,0 +1,37 @@
+{
+  "id": "traefik-mcp-server",
+  "name": "Traefik MCP Server",
+  "category": "mcp-servers",
+  "summary": "Read-only MCP server from Traefik Labs that joins a Traefik gateway's live config, its release schema and telemetry from Datadog, Grafana or Dash0.",
+  "description": "Reads routers, services, middlewares, health checks and certificates from a running Traefik Proxy or Traefik Hub gateway (plus APIs, plans and applications on Traefik Hub API Management, and AI routes, guards, token budgets and quotas on Traefik Hub AI Gateway), matches traces, metrics and access logs from Datadog, the Grafana stack (Prometheus, Tempo, Loki) or Dash0 to the config that produced them, and validates generated configuration against a built-in catalog of the deployed release (works air-gapped). It never applies changes. Announced 2026-10-22; shipped as a container on Docker Hub (`traefik/mcp-server`) and GitHub Container Registry. Commercial: it is unlocked by a Traefik Hub token licensed for the MCP server; no license or source published.",
+  "url": "https://traefik.io/solutions/traefik-mcp-server",
+  "tags": [
+    "mcp",
+    "api-gateway",
+    "observability",
+    "devops",
+    "read-only"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Self-hosted container; requires a Traefik Hub token licensed for the Traefik MCP Server. Pricing via Traefik Labs sales (request demo)."
+  },
+  "related": [
+    "datadog-mcp-server",
+    "grafana-mcp",
+    "kong-ai-gateway"
+  ],
+  "sources": [
+    "https://traefik.io/press/traefik-labs-introduces-the-traefik-mcp-server-grounding-ai-agents-in-the-gateway-from-day-0-to-day-2",
+    "https://traefik.io/solutions/traefik-mcp-server",
+    "https://hub.docker.com/r/traefik/mcp-server"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Traefik Labs"
+}

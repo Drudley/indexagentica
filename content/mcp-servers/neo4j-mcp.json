@@ -1,0 +1,40 @@
+{
+  "id": "neo4j-mcp",
+  "name": "Neo4j MCP",
+  "category": "mcp-servers",
+  "summary": "Neo4j's official MCP server (Go, stdio or HTTP) giving agents schema introspection and read or write Cypher against a Neo4j or Aura database.",
+  "description": "Tools: `get-schema` (labels, relationship types, property keys), `read-cypher` (read-only queries, enforced via `EXPLAIN` and Neo4j's query-type classification), `write-cypher` (disabled when `NEO4J_MCP_READ_ONLY=true`) and `list-gds-procedures`. Install with `pip install neo4j-mcp-server` or a release binary/Docker image; configure via `NEO4J_MCP_*` env vars (the older `NEO4J_*` names are deprecated since v1.6.0). Supports HTTP transport with authentication as well as stdio; docs cover Aura setup. Latest v1.6.1. This is Neo4j's official server; the earlier Neo4j Labs servers live in `neo4j-contrib/mcp-neo4j` (MIT).",
+  "url": "https://neo4j.com/docs/mcp/current/",
+  "repo": "https://github.com/neo4j/mcp",
+  "docs": "https://neo4j.com/docs/mcp/current/",
+  "tags": [
+    "mcp",
+    "graph-database",
+    "cypher",
+    "database",
+    "knowledge-graph"
+  ],
+  "license": "GPL-3.0-only",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Local server; connects with Neo4j database credentials (URI, username, password). Set NEO4J_MCP_READ_ONLY=true to remove write-cypher. Commercial Neo4j/Aura terms apply when used with those products (see NOTICE.txt)."
+  },
+  "related": [
+    "graphiti-mcp-server",
+    "mcp-toolbox-databases",
+    "mongodb-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/neo4j/mcp",
+    "https://neo4j.com/docs/mcp/current/",
+    "https://pypi.org/project/neo4j-mcp-server/",
+    "https://github.com/neo4j/mcp/blob/main/CHANGELOG.md"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Neo4j"
+}

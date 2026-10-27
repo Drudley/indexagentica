@@ -1,0 +1,37 @@
+{
+  "id": "open-swe-traces",
+  "name": "Open-SWE-Traces",
+  "category": "information",
+  "summary": "NVIDIA dataset of software-engineering agent trajectories (OpenHands, SWE-agent, mini-swe-agent, Claude Code, OpenCode) for distilling SWE agents; CC BY 4.0.",
+  "description": "Full message histories, tool definitions, model and gold patches and success metadata for issue-resolution tasks drawn from permissively licensed task sets (Scale-SWE, SWE-rebench-V2). Versioned configs: v1.0 (151k cleaned trajectories from MiniMax and Qwen models; git-hacking runs removed), v1.1 (DeepSeek-V4-Flash, Qwen3.6-27B), v1.2 (Qwen3.8-27B) and v2.0, released 2026-10-26 (Qwen3.8-Flash-Next, xhigh reasoning) with splits per harness. Size category 100K–1M rows; parquet. The card states it is ready for commercial and non-commercial use.",
+  "url": "https://huggingface.co/datasets/nvidia/Open-SWE-Traces",
+  "tags": [
+    "dataset",
+    "agent-trajectories",
+    "software-engineering",
+    "training-data",
+    "huggingface"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Not gated; load with `datasets.load_dataset(\"nvidia/Open-SWE-Traces\", \"v2.0\")` or download the parquet files."
+  },
+  "related": [
+    "swe-rebench",
+    "swe-smith",
+    "swe-gym",
+    "openhands",
+    "mini-swe-agent"
+  ],
+  "sources": [
+    "https://huggingface.co/datasets/nvidia/Open-SWE-Traces"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "NVIDIA"
+}

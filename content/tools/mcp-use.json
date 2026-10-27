@@ -3,8 +3,8 @@
   "name": "mcp-use",
   "category": "tools",
   "summary": "Full-stack MCP framework (TypeScript and Python) for building MCP servers and MCP Apps with typed tools, React views, a built-in Inspector and agent clients.",
-  "description": "Scaffold with `npx -y create-mcp-use-app@latest`, run `npm run dev` and open the Inspector at `http://localhost:3000/mcp/inspector`. Zod schemas flow from tool definitions to structured results; tools can bind React \"Views\" for MCP Apps (ChatGPT apps, Claude connectors). Also has an agent-friendly start prompt at `https://mcp-use.com/prompt.md`, a hosted Inspector, and a Python package for servers, clients and agents. npm `mcp-use` 2.11.2 (2.12 canaries in progress); PyPI `mcp-use` 1.7.1. Made by Manufact, which offers optional hosted deployment.",
-  "url": "https://mcp-use.com",
+  "description": "Scaffold with `npx -y create-mcp-use-app@latest`, run `npm run dev` and open the Inspector at `http://localhost:3000/mcp/inspector`. Zod schemas flow from tool definitions to structured results; tools can bind React \"Views\" for MCP Apps (ChatGPT apps, Claude connectors). Also has an agent-friendly start prompt at `https://manufact.com/prompt.md` (mcp-use.com now redirects to manufact.com), a hosted Inspector, and a Python package for servers, clients and agents. npm `mcp-use` 2.11.2 (2.12 canaries in progress); PyPI `mcp-use` 1.7.1. Made by Manufact, which offers optional hosted deployment.",
+  "url": "https://manufact.com/",
   "repo": "https://github.com/mcp-use/mcp-use",
   "docs": "https://docs.mcp-use.com/v2/typescript/getting-started/welcome",
   "tags": [
@@ -29,8 +29,8 @@
     "https://pypi.org/project/mcp-use/"
   ],
   "added": "2026-10-26",
-  "updated": "2026-10-26",
-  "last_verified": "2026-10-26",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
   "submitted_by": "agentica-curator",
   "maintainer": "Manufact"
 }

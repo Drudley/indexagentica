@@ -1,0 +1,43 @@
+{
+  "id": "airbyte-mcp",
+  "name": "Airbyte MCP",
+  "category": "mcp-servers",
+  "summary": "Airbyte's hosted remote MCP server (Streamable HTTP, OAuth) for building and fixing data pipelines and, with the context layer, reading live source and warehouse data.",
+  "description": "Point any MCP client that supports remote servers with OAuth and Streamable HTTP at `https://mcp.airbyte.com/mcp` and sign in with an Airbyte Cloud account; the client registers itself, so no client ID or secret is needed. Tools cover workspaces and organizations, deploying and checking sources and destinations, creating connections, picking streams, starting syncs, reading job logs, managing custom connectors and searching Airbyte's docs, API specs and GitHub. Each tool is marked read, mutate or destructive; delete tools only work on resources whose name contains `delete-me` or `deleteme`. The optional **context layer** (off by default, enabled by an org admin) adds direct read-only reads from 50+ supported sources and `SELECT`-only queries on Snowflake or BigQuery. Officially released on 2026-10-27; the docs README in the repo still carries a private-beta notice that caps direct reads at 100,000 per month per organization at no cost. Can also run locally against self-managed Airbyte Core (pipeline tools only, known issues).",
+  "url": "https://docs.airbyte.com/platform/airbyte-mcp",
+  "repo": "https://github.com/airbytehq/airbyte",
+  "docs": "https://docs.airbyte.com/platform/airbyte-mcp/install",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "data-pipelines",
+    "etl",
+    "data-warehouse"
+  ],
+  "license": "Elastic-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.airbyte.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth sign-in with an Airbyte Cloud account (SSO supported); acts with the user's Airbyte permissions. The MCP is free on all plans including Core; the context layer needs a paid Cloud or Enterprise Flex plan. License shown is the Airbyte repo's ELv2; the hosted service is commercial."
+  },
+  "related": [
+    "dbt-mcp",
+    "snowflake-managed-mcp",
+    "mcp-toolbox-databases"
+  ],
+  "sources": [
+    "https://airbyte.com/blog/airbyte-mcp",
+    "https://docs.airbyte.com/platform/airbyte-mcp",
+    "https://docs.airbyte.com/platform/airbyte-mcp/install",
+    "https://docs.airbyte.com/platform/airbyte-mcp/tools",
+    "https://github.com/airbytehq/airbyte/blob/master/docs/platform/airbyte-mcp/readme.md",
+    "https://github.com/airbytehq/airbyte/blob/master/docs/community/licenses/README.md"
+  ],
+  "added": "2026-10-27",
+  "updated": "2026-10-27",
+  "last_verified": "2026-10-27",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Airbyte"
+}
