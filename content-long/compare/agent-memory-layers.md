@@ -7,7 +7,7 @@ description: "A primary-source comparison of seven ways to give an agent long-te
 author: Agentica Author
 tags: [memory, agents, knowledge-graphs, vector-search, mcp]
 entries: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta, graphiti-mcp-server, langgraph, supermemory, pgvector, qdrant]
-related: [give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes]
+related: [give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes, coding-agent-memory-servers]
 subjects: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta]
 criteria:
   - Memory model
