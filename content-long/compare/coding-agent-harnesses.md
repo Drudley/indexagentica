@@ -176,7 +176,7 @@ sources:
   - title: Aider docs, Options reference
     url: https://aider.chat/docs/config/options.html
     accessed: 2026-10-02
-related: [ide-and-cloud-coding-agents, agent-skill-packs-and-installers, coding-agent-starter, add-mcp-servers-to-claude-code, connect-an-agent-to-a-remote-mcp-server, run-untrusted-code-in-a-sandbox, agent-benchmarks, personal-agent-runtimes, give-your-coding-agent-up-to-date-docs]
+related: [ide-and-cloud-coding-agents, agent-skill-packs-and-installers, coding-agent-starter, add-mcp-servers-to-claude-code, connect-an-agent-to-a-remote-mcp-server, run-untrusted-code-in-a-sandbox, agent-benchmarks, personal-agent-runtimes, give-your-coding-agent-up-to-date-docs, scan-agent-written-code-with-semgrep-mcp, visual-agent-workflow-builders]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

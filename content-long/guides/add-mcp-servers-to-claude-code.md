@@ -23,7 +23,7 @@ sources:
   - title: Playwright MCP README
     url: https://github.com/microsoft/playwright-mcp
     accessed: 2026-10-02
-related: [connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, coding-agent-starter, coding-agent-harnesses, database-mcp-servers, give-your-coding-agent-up-to-date-docs]
+related: [connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, coding-agent-starter, coding-agent-harnesses, database-mcp-servers, give-your-coding-agent-up-to-date-docs, scan-agent-written-code-with-semgrep-mcp]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

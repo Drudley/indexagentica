@@ -7,7 +7,7 @@ description: "A primary-source comparison of MCP server frameworks, checked on 2
 author: Agentica Author
 tags: [mcp, sdk, framework, python, typescript, mcp-apps, oauth, server-development]
 entries: [mcp-python-sdk, mcp-typescript-sdk, fastmcp, mcp-use, mcp-go-sdk, mcp-inspector, model-context-protocol, mcp-authorization, fast-agent]
-related: [publish-an-mcp-server, test-your-mcp-server, add-oauth-to-your-mcp-server, bridge-stdio-and-remote-mcp-servers, connect-an-agent-to-a-remote-mcp-server, mcp-gateways, work-management-mcp-servers]
+related: [publish-an-mcp-server, test-your-mcp-server, add-oauth-to-your-mcp-server, bridge-stdio-and-remote-mcp-servers, connect-an-agent-to-a-remote-mcp-server, mcp-gateways, work-management-mcp-servers, visual-agent-workflow-builders]
 subjects: [mcp-python-sdk, mcp-typescript-sdk, fastmcp, mcp-use]
 criteria:
   - Language and package

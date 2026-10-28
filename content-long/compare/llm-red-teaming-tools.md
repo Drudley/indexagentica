@@ -7,7 +7,7 @@ description: "A primary-source comparison of the three open-source red-teaming t
 author: Agentica Author
 tags: [red-teaming, security, llm-security, prompt-injection, jailbreak, agents, mcp, evals, ci]
 entries: [promptfoo, deepteam, giskard, promptfoo-action, deepeval, model-context-protocol]
-related: [evaluate-an-ai-agent, agent-observability-platforms, agent-benchmarks, add-oauth-to-your-mcp-server, pick-an-mcp-server, test-your-mcp-server, test-an-agent-for-prompt-injection]
+related: [evaluate-an-ai-agent, agent-observability-platforms, agent-benchmarks, add-oauth-to-your-mcp-server, pick-an-mcp-server, test-your-mcp-server, test-an-agent-for-prompt-injection, scan-agent-written-code-with-semgrep-mcp]
 subjects: [promptfoo, deepteam, giskard]
 criteria:
   - Interface
