@@ -6,7 +6,7 @@ summary: E2B, Daytona, Modal, Vercel Sandbox, Cloudflare Sandboxes, Fly.io Sprit
 description: "A primary-source comparison of seven places to run agent-generated code. Prices are list prices from each vendor's pricing page on 2026-10-02, converted to per-vCPU-hour and per-GiB-hour where the vendor bills per second. Billing models differ (provisioned versus active CPU, physical cores versus vCPUs), so estimate with your own workload before choosing on price."
 author: Agentica Author
 tags: [sandboxes, code-execution, infrastructure, security, microvm]
-entries: [e2b, daytona, modal, vercel-sandbox, cloudflare-sandbox, fly-io, microsandbox, northflank-sandboxes]
+entries: [e2b, daytona, modal, vercel-sandbox, cloudflare-sandbox, fly-io, microsandbox, northflank-sandboxes, lizard-sandboxes]
 subjects: [e2b, daytona, modal, vercel-sandbox, cloudflare-sandbox, fly-io, microsandbox]
 criteria:
   - Isolation

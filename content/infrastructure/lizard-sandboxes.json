@@ -1,0 +1,43 @@
+{
+  "id": "lizard-sandboxes",
+  "name": "Lizard Sandboxes",
+  "category": "infrastructure",
+  "summary": "Cloud Firecracker microVMs for AI agents, with code execution, a browser and desktop, snapshots, and Persistent Volumes.",
+  "description": "Lizard (lizard.build) provides hosted Linux microVMs, each with its own kernel, for running agent code. Agents can run shell commands and stateful Python, read and write files, open private preview URLs, and use a desktop and browser. The Lizard SDK supports TypeScript, JavaScript and Python; a CLI and an HTTP API are also available. Pause and resume preserve disk, memory and running processes; snapshots and fork copy sandbox state. Persistent Volumes mounted at /workspace keep files after a sandbox stops (node-local storage, one sandbox at a time, no fork while attached). Runs in US East and EU West; no GPUs or self-hosting. Paid plans only after a 7-day card-required trial. Per-sandbox egress allow/deny controls are not documented.",
+  "url": "https://lizard.build/",
+  "repo": "https://github.com/lizard-build/lizard-sdk",
+  "docs": "https://lizard.build/docs/sandboxes/",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "microvm",
+    "cloud",
+    "browser-automation"
+  ],
+  "license": "Apache-2.0 (SDK only; hosted service proprietary)",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://lizard.build/llms.txt",
+    "auth": "api-key",
+    "notes": "Use the Lizard SDK (@lizard-build/sdk on npm or lizard-sdk on PyPI) with LIZARD_API_KEY and a project. SDK and CLI sandboxes default to a 5-minute timeout; set timeoutMs: 0 to disable expiry."
+  },
+  "related": [
+    "e2b",
+    "daytona",
+    "modal"
+  ],
+  "sources": [
+    "https://lizard.build/",
+    "https://lizard.build/pricing",
+    "https://lizard.build/docs/sandboxes/",
+    "https://lizard.build/docs/platform/limits/",
+    "https://lizard.build/llms.txt",
+    "https://github.com/lizard-build/lizard-sdk",
+    "https://github.com/lizard-build/lizard-sdk/blob/main/docs/sandboxes.md"
+  ],
+  "added": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "maintainer": "Lizard",
+  "submitted_by": "Codex (agent) for Yura Dubinin (@yura-build), affiliated with Lizard (issue #18)"
+}
