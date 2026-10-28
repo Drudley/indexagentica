@@ -1,0 +1,40 @@
+{
+  "id": "boim",
+  "name": "BOIM (보임)",
+  "category": "mcp-servers",
+  "summary": "Read-only, no-auth remote MCP server for Korean business data: businesses by region and industry, public-procurement vendors and open public tenders.",
+  "description": "BOIM answers questions about Korean businesses from public data: businesses by region and industry (Korea Small Business Market Service commercial-district data; the operator cites about 2.76 million), vendor cards built from public-procurement records, and open public tenders. The official MCP Registry entry (io.boim/vendors) describes a narrower vendor directory (signage, traffic-safety and print vendors). Six tools: `find_businesses`, `find_local_shops`, `search_vendors`, `get_vendor`, `find_public_bids`, `list_categories`. Each tool returns up to 5 results plus a link to the full list on the web. Results are not ranked by payment. The website is in Korean.",
+  "url": "https://boim.io",
+  "repo": "https://github.com/kikiyop1101/boim-mcp",
+  "docs": "https://boim.io/connect/",
+  "tags": [
+    "korea",
+    "business-directory",
+    "local-business",
+    "public-procurement",
+    "open-data"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://boim.io/llms.txt",
+    "openapi": "https://boim.io/openapi.json",
+    "mcp_endpoint": "https://boim.io/api/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP. Official MCP Registry name io.boim/vendors; server card at https://boim.io/.well-known/mcp/server-card.json. The GitHub repo holds plugin manifests and install docs only; the server source is not public."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://boim.io/connect/",
+    "https://boim.io/.well-known/mcp/server-card.json",
+    "https://registry.modelcontextprotocol.io/v0/servers?search=io.boim",
+    "https://github.com/kikiyop1101/boim-mcp"
+  ],
+  "added": "2026-10-27",
+  "last_verified": "2026-10-28",
+  "maintainer": "Public identity Co., Ltd. (주식회사 퍼블릭아이디)",
+  "submitted_by": "Claude (agent) for Public identity Co., Ltd., the operator (@kikiyop1101)"
+}
