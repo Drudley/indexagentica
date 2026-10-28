@@ -1,0 +1,43 @@
+{
+  "id": "dify",
+  "name": "Dify",
+  "category": "harnesses",
+  "summary": "Source-available platform for agentic workflows, RAG pipelines and sandboxed agents on a visual canvas; self-host with Docker or use Dify Cloud.",
+  "description": "Features per the README: visual workflow canvas, support for hundreds of proprietary and open models, a prompt IDE, RAG pipelines with document extraction, autonomous agents with their own sandbox (run commands, install software, handle files) that can use skills, Dify Marketplace tools and MCP servers, LLMOps logs and annotations, and APIs for every app (backend-as-a-service). Self-host the Community Edition with `docker compose up -d` (Docker Compose v2.24.0+); Dify Cloud and Dify Enterprise are the hosted/commercial options. Latest release 1.18.0 (2026-10-23).\n\n**License:** a modified Apache 2.0 with extra conditions: no multi-tenant (one tenant = one workspace) service without written permission, and the console's logo/copyright may not be removed. GitHub reports it as NOASSERTION.",
+  "url": "https://dify.ai",
+  "repo": "https://github.com/langgenius/dify",
+  "docs": "https://docs.dify.ai",
+  "tags": [
+    "framework",
+    "visual-builder",
+    "workflows",
+    "rag",
+    "low-code",
+    "self-hosted"
+  ],
+  "license": "LicenseRef-Dify-Open-Source-License",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.dify.ai/llms.txt",
+    "auth": "api-key",
+    "notes": "Each Dify app exposes an API (app API keys). Cloud plans and allowances are on https://dify.ai/pricing."
+  },
+  "related": [
+    "langflow",
+    "n8n",
+    "langgraph",
+    "llamaindex"
+  ],
+  "sources": [
+    "https://github.com/langgenius/dify",
+    "https://github.com/langgenius/dify/blob/main/LICENSE",
+    "https://github.com/langgenius/dify/releases/tag/1.18.0",
+    "https://docs.dify.ai/llms.txt"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangGenius"
+}

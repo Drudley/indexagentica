@@ -1,0 +1,33 @@
+{
+  "id": "roo-code",
+  "name": "Roo Code",
+  "category": "harnesses",
+  "summary": "Shut down May 15, 2026: open-source VS Code coding agent (a Cline fork) with Code, Architect, Ask, Debug and custom modes; repo archived.",
+  "description": "**Shut down.** The README says the Roo Code extension was shut down on May 15th (2026) and the GitHub repo is archived (last release v3.54.0, 2026-05-15). It points users to ZooCode, a community fork, and to Cline, from which Roo Code originated. Listed for reference because many configs and guides still mention it. Features were mode-based (Code, Architect, Ask, Debug, custom modes) with MCP server support.",
+  "url": "https://github.com/RooCodeInc/Roo-Code",
+  "repo": "https://github.com/RooCodeInc/Roo-Code",
+  "docs": "https://roocodeinc.github.io/Roo-Code/",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "vscode",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "deprecated",
+  "related": [
+    "cline",
+    "kilo-code",
+    "continue"
+  ],
+  "sources": [
+    "https://github.com/RooCodeInc/Roo-Code",
+    "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.54.0"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Roo Code, Inc. (archived)"
+}

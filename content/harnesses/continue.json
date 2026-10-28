@@ -1,0 +1,36 @@
+{
+  "id": "continue",
+  "name": "Continue",
+  "category": "harnesses",
+  "summary": "Open-source coding agent (CLI, VS Code, JetBrains) whose repo went read-only after a final 2.0.0 release; no longer actively maintained.",
+  "description": "**No longer actively maintained.** Per the README, `continuedev/continue` is read-only; the team shipped a final 2.0.0 release of the VS Code extension, CLI (`@continuedev/cli`) and JetBrains plugin (VS Code v2.0.0 on 2026-06-19) that removed anonymous telemetry and pulled out authentication. Docs remain at docs.continue.dev. Listed for reference because it is still widely installed; for maintained open-source alternatives see Cline, Kilo Code or OpenCode.",
+  "url": "https://continue.dev",
+  "repo": "https://github.com/continuedev/continue",
+  "docs": "https://docs.continue.dev",
+  "tags": [
+    "coding-agent",
+    "ide",
+    "cli",
+    "vscode",
+    "jetbrains",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "deprecated",
+  "related": [
+    "cline",
+    "kilo-code",
+    "opencode",
+    "roo-code"
+  ],
+  "sources": [
+    "https://github.com/continuedev/continue",
+    "https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Continue Dev, Inc. (archived)"
+}

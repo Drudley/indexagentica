@@ -1,0 +1,43 @@
+{
+  "id": "linkup-api",
+  "name": "Linkup API",
+  "category": "apis",
+  "summary": "Web search API for AI agents with search (standard or deep), page fetch and async deep research endpoints, plus a hosted MCP server.",
+  "description": "Endpoints: search ($0.005-0.006 per request, 1-3 s), fetch for URL content extraction ($0.001-0.006, under 2 s, optional JS rendering and raw HTML) and asynchronous research ($0.25-2.50, 1-10 min). Filters include include/exclude domains, date range and max results. The hosted MCP server at `https://mcp.linkup.so/mcp` (Streamable HTTP) exposes search, fetch and deep-research tools; the open-source server repo is MIT. Pay as you go; the pricing page says the first 4,000 queries are free. SOC 2 Type II on all plans; zero data retention on Enterprise.",
+  "url": "https://www.linkup.so",
+  "repo": "https://github.com/LinkupPlatform/linkup-mcp-server",
+  "docs": "https://docs.linkup.so",
+  "tags": [
+    "web-search",
+    "api",
+    "mcp",
+    "remote-mcp",
+    "research",
+    "scraping"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.linkup.so/llms.txt",
+    "mcp_endpoint": "https://mcp.linkup.so/mcp",
+    "auth": "api-key",
+    "notes": "Send `Authorization: Bearer LINKUP_API_KEY`; the MCP server also accepts `?apiKey=` for clients that cannot set headers. Free account at app.linkup.so."
+  },
+  "related": [
+    "tavily-api",
+    "exa-api",
+    "parallel-api",
+    "brave-search-api"
+  ],
+  "sources": [
+    "https://www.linkup.so/pricing",
+    "https://github.com/LinkupPlatform/linkup-mcp-server",
+    "https://docs.linkup.so/llms.txt"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Linkup"
+}

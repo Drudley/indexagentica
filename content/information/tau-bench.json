@@ -2,28 +2,34 @@
   "id": "tau-bench",
   "name": "τ-bench (tau2-bench)",
   "category": "information",
-  "summary": "Sierra's benchmark for tool-agent-user interaction in real-world domains.",
-  "description": "Successor repository to the original sierra-research/tau-bench.",
-  "url": "https://github.com/sierra-research/tau2-bench",
+  "summary": "Sierra's benchmark for tool-agent-user interaction (airline, retail, telecom), now in six languages and full-duplex voice with v2.0.",
+  "description": "Successor repository to the original sierra-research/tau-bench. **τ-bench 2.0** (v2.0.0, 2026-10-20) adds τ-i18n: the same customer-service tasks in English, Spanish, Portuguese, Hindi, Chinese and Korean, in text and full-duplex voice with realtime agents; a new `intake` domain (τ-Entity, 200+ tasks capturing names and addresses on outbound calls); `banking_knowledge` in voice; post-hoc `tau2 judges` for naturalness, speech fidelity and tool use (judges don't change the task reward); and frozen released benchmarks (`text-v1`, `voice-v2`, `voice-v1`). Run with `tau2 run --benchmark text`. Live leaderboard at taubench.com. Paper: arXiv 2506.07982.",
+  "url": "https://taubench.com",
   "repo": "https://github.com/sierra-research/tau2-bench",
   "tags": [
     "benchmark",
     "tool-use",
-    "conversational-agents"
+    "conversational-agents",
+    "voice-agents",
+    "multilingual"
   ],
   "license": "MIT",
   "pricing": "free",
   "status": "active",
   "related": [
-    "bfcl"
+    "bfcl",
+    "openai-realtime-api",
+    "livekit-agents"
   ],
   "sources": [
     "https://github.com/sierra-research/tau2-bench",
+    "https://github.com/sierra-research/tau2-bench/releases/tag/v2.0.0",
+    "https://taubench.com",
     "https://github.com/sierra-research/tau-bench"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
   "submitted_by": "agentica-curator",
   "maintainer": "Sierra"
 }

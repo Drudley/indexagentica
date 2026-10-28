@@ -1,0 +1,42 @@
+{
+  "id": "upstash-mcp",
+  "name": "Upstash MCP",
+  "category": "mcp-servers",
+  "summary": "Upstash's hosted MCP server (OAuth or API key): 74 tools to manage Redis, QStash, Workflow, Vector, Search, Box sandboxes and Blob storage.",
+  "description": "Remote server at `https://mcp.upstash.com/mcp` (Streamable HTTP). Scope tools with `?features=redis,qstash_workflow,vector_search,box,blob,console`. Data-plane tools resolve REST credentials server-side so tokens never reach the agent; credentials are returned only with `include_credentials: true`. Read-only OAuth grants and read-only API keys disable every write/destructive tool. Billing tools (plan, Prod Pack, budgets) tell the agent to quote the price and get confirmation first. Shows an Upstash console MCP App in ChatGPT. The older local stdio server `@upstash/mcp-server` (MIT, repo below) is no longer maintained. Agents can also get a free temporary Redis without signup via `POST https://upstash.com/start-redis`.",
+  "url": "https://upstash.com/docs/agent-resources/mcp",
+  "repo": "https://github.com/upstash/mcp-server",
+  "docs": "https://upstash.com/docs/agent-resources/mcp",
+  "tags": [
+    "mcp",
+    "remote-mcp",
+    "redis",
+    "database",
+    "queues",
+    "vector-database",
+    "sandbox"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://upstash.com/docs/llms.txt",
+    "mcp_endpoint": "https://mcp.upstash.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth by default; headless clients send `Authorization: Bearer email:API_KEY` with an Upstash Developer API key. License applies to the local server repo; the hosted server is a service."
+  },
+  "related": [
+    "redis-mcp-server",
+    "context7",
+    "redis-agent-memory"
+  ],
+  "sources": [
+    "https://upstash.com/docs/agent-resources/mcp",
+    "https://github.com/upstash/mcp-server"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Upstash"
+}

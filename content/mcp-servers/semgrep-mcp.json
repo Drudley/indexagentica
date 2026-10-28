@@ -1,0 +1,39 @@
+{
+  "id": "semgrep-mcp",
+  "name": "Semgrep MCP (Semgrep Guardian)",
+  "category": "mcp-servers",
+  "summary": "Semgrep's MCP server, now shipped in the semgrep CLI (`semgrep mcp`) and bundled as Semgrep Guardian plugins to scan agent-written code for vulnerabilities.",
+  "description": "The standalone `semgrep/mcp` repo is archived; the server moved into the main `semgrep` repository and is invoked with the `mcp` subcommand of the Semgrep CLI (`brew install semgrep`), over stdio or Streamable HTTP. Semgrep Guardian packages it for Claude Code (plugin marketplace, then `/setup-semgrep-plugin`), Cursor (Cursor Plugin Marketplace), VS Code/Copilot, Windsurf and Kiro. Some tools connect to the Semgrep AppSec Platform and need a login and Semgrep token.",
+  "url": "https://semgrep.dev",
+  "repo": "https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp",
+  "docs": "https://github.com/semgrep/semgrep/blob/develop/cli/src/semgrep/mcp/README.md",
+  "tags": [
+    "mcp",
+    "security",
+    "static-analysis",
+    "sast",
+    "code-scanning"
+  ],
+  "license": "LGPL-2.1",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local scanning needs no key; Semgrep AppSec Platform tools need `semgrep login` / a Semgrep token. The archived semgrep-mcp PyPI package and ghcr.io/semgrep/mcp image are the old standalone distribution."
+  },
+  "related": [
+    "sonarqube-mcp-server",
+    "snyk-agent-scan",
+    "trailofbits-skills"
+  ],
+  "sources": [
+    "https://github.com/semgrep/semgrep/blob/develop/cli/src/semgrep/mcp/README.md",
+    "https://github.com/semgrep/mcp",
+    "https://github.com/semgrep/semgrep"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Semgrep"
+}

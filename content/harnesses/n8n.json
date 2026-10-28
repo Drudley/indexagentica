@@ -1,0 +1,43 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "category": "harnesses",
+  "summary": "Fair-code workflow automation platform for AI agents with 1,500+ integrations, an MCP Client node, MCP Server Trigger and a built-in instance-level MCP server.",
+  "description": "Combine a visual canvas with JavaScript/Python code, self-host (Docker: `docker run -it --rm -p 5678:5678 docker.n8n.io/n8nio/n8n`) or use n8n Cloud. AI features include agents with tools, memory and LLM providers; the **MCP Client** node lets workflows call MCP servers, the **MCP Server Trigger** node exposes a workflow as an MCP server, and the built-in instance-level MCP server lets Claude, Codex and other clients search, run, create and edit workflows (create/edit from n8n 2.13) and manage data tables. Latest release n8n@2.45.4 (2026-10-26).\n\n**License:** Sustainable Use License (fair-code, not OSI open source); files with `.ee.` in the name need an n8n Enterprise License. GitHub reports it as NOASSERTION.",
+  "url": "https://n8n.io",
+  "repo": "https://github.com/n8n-io/n8n",
+  "docs": "https://docs.n8n.io",
+  "tags": [
+    "workflows",
+    "automation",
+    "visual-builder",
+    "mcp",
+    "low-code",
+    "self-hosted"
+  ],
+  "license": "LicenseRef-n8n-Sustainable-Use-License",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.n8n.io/llms.txt",
+    "auth": "other",
+    "notes": "Instance-level MCP access is enabled per instance and clients authenticate to it (see 'Connect to n8n MCP server' in the docs); docs pages are available as markdown by appending .md."
+  },
+  "related": [
+    "langflow",
+    "dify",
+    "zapier-mcp",
+    "pipedream-mcp"
+  ],
+  "sources": [
+    "https://github.com/n8n-io/n8n",
+    "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+    "https://docs.n8n.io/build/ways-of-building-workflows/connect-to-n8n-mcp-server.md",
+    "https://docs.n8n.io/llms.txt"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "n8n GmbH"
+}

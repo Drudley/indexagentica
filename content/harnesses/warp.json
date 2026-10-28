@@ -1,0 +1,41 @@
+{
+  "id": "warp",
+  "name": "Warp",
+  "category": "harnesses",
+  "summary": "Agentic development environment built from the terminal, with a built-in coding agent or your own CLI agent; client source now on GitHub (AGPL-3.0).",
+  "description": "Use Warp's built-in agent or run Claude Code, Codex, Gemini CLI and other CLI agents inside it. The client codebase is open source in `warpdotdev/warp`: the UI framework crates (`warpui_core`, `warpui`) are MIT and the rest is AGPL v3; OpenAI is named as the founding sponsor of the open-source repository. The repo itself is developed with Warp Factories (cloud agents that triage issues, write specs, implement and review PRs; early access). Pricing (Oct 2026): Free; Build $20/month with $20 of agent usage at API rates; Max $200/month; Business $50/user/month.",
+  "url": "https://www.warp.dev",
+  "repo": "https://github.com/warpdotdev/warp",
+  "docs": "https://docs.warp.dev",
+  "tags": [
+    "coding-agent",
+    "terminal",
+    "cli",
+    "ide",
+    "open-source"
+  ],
+  "license": "AGPL-3.0 AND MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.warp.dev/llms.txt",
+    "auth": "other",
+    "notes": "Desktop app; AI features need a Warp account. Agent usage beyond plan credits is billed at API rates."
+  },
+  "related": [
+    "claude-code",
+    "codex-cli",
+    "gemini-cli",
+    "opencode"
+  ],
+  "sources": [
+    "https://github.com/warpdotdev/warp",
+    "https://www.warp.dev/pricing",
+    "https://docs.warp.dev/llms.txt"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Warp"
+}

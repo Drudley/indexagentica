@@ -1,0 +1,42 @@
+{
+  "id": "agentmail",
+  "name": "AgentMail",
+  "category": "apis",
+  "summary": "Email inboxes for AI agents via API: create inboxes, send, receive, search threads and manage calendars; hosted MCP server with 47 tools.",
+  "description": "REST API and SDKs for programmatic inboxes with threads, labels, attachments (with extracted PDF/DOCX text), drafts and scheduled send, allow/block lists, calendars, webhooks and websockets. The hosted MCP server at `https://mcp.agentmail.to/mcp` exposes 47 tools (plus 2 organization tools under OAuth) and publishes a `message.received` MCP Event. AgentID tools let an agent create accounts at third-party apps using an inbox as its identity. Pricing (Oct 2026): Free $0 (3 inboxes, 3,000 emails/month, 100/day, 'Sent via AgentMail' footer), Developer $20/month, Startup $200/month, Enterprise custom.",
+  "url": "https://www.agentmail.to",
+  "repo": "https://github.com/agentmail-to/agentmail-mcp",
+  "docs": "https://docs.agentmail.to",
+  "tags": [
+    "email",
+    "inbox",
+    "api",
+    "mcp",
+    "remote-mcp",
+    "agent-identity"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.agentmail.to/docs/llms.txt",
+    "mcp_endpoint": "https://mcp.agentmail.to/mcp",
+    "auth": "api-key",
+    "notes": "API keys (prefix am_) from console.agentmail.to; for MCP send them as the x-api-key header, or use OAuth in Claude/ChatGPT. Stdio bridges: `npx -y agentmail-mcp` or `uvx agentmail-mcp`. The MCP repo is MIT; the service is proprietary."
+  },
+  "related": [
+    "slack-mcp-server",
+    "zapier-mcp",
+    "composio"
+  ],
+  "sources": [
+    "https://docs.agentmail.to/integrations/mcp",
+    "https://www.agentmail.to/pricing",
+    "https://github.com/agentmail-to/agentmail-mcp"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "AgentMail"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "unity-mcp",
+  "name": "MCP for Unity",
+  "category": "mcp-servers",
+  "summary": "MIT bridge between MCP clients and the Unity Editor: 50 tools to create scenes and GameObjects, edit C# scripts, manage assets, run tests and build.",
+  "description": "Install as a Unity package from `https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main` (or `openupm add com.coplaydev.unity-mcp`), then `Window → MCP for Unity → Configure All Detected Clients`. Requires Unity 2021.3 LTS to 6.x and Python 3.10+ via uv. Supports multiple Unity instances, tool groups (vfx, animation, ui, testing), Roslyn script validation and a remote-hosted server with auth. Sponsored and maintained by Aura (Coplay). Latest release v10.3.0 (2026-10-04).",
+  "url": "https://coplaydev.github.io/unity-mcp/",
+  "repo": "https://github.com/CoplayDev/unity-mcp",
+  "docs": "https://coplaydev.github.io/unity-mcp/",
+  "tags": [
+    "mcp",
+    "game-dev",
+    "unity",
+    "3d",
+    "csharp"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local stdio server talking to the Unity Editor; remote hosting with auth is documented separately."
+  },
+  "related": [
+    "unreal-mcp",
+    "mcp-for-blender",
+    "runreal-unreal-mcp"
+  ],
+  "sources": [
+    "https://github.com/CoplayDev/unity-mcp",
+    "https://github.com/CoplayDev/unity-mcp/releases/tag/v10.3.0",
+    "https://coplaydev.github.io/unity-mcp/"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coplay (Aura)"
+}

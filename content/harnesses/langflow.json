@@ -1,0 +1,42 @@
+{
+  "id": "langflow",
+  "name": "Langflow",
+  "category": "harnesses",
+  "summary": "Open-source visual builder for AI agents and workflows in Python; every flow can be served as an API or exposed as an MCP server.",
+  "description": "Visual canvas plus Python source access for every component, an interactive playground, multi-agent orchestration, and deployment as a REST API, exported JSON, or an **MCP server** that turns flows into tools for MCP clients. Observability integrations include LangSmith and Langfuse. Install with `uv pip install langflow -U` and run `uv run langflow run` (serves on `127.0.0.1:7860`); official release packages disable auto-login, so set `LANGFLOW_SUPERUSER_PASSWORD` first. Langflow Desktop bundles all dependencies for Windows and macOS. Latest release v1.13.0 (2026-10-22).",
+  "url": "https://www.langflow.org",
+  "repo": "https://github.com/langflow-ai/langflow",
+  "docs": "https://docs.langflow.org",
+  "tags": [
+    "framework",
+    "visual-builder",
+    "workflows",
+    "python",
+    "mcp",
+    "low-code"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.langflow.org/llms.txt",
+    "auth": "api-key",
+    "notes": "Self-hosted; flows are called over Langflow's REST API (API keys) or exposed as MCP tools from the built-in MCP server."
+  },
+  "related": [
+    "dify",
+    "n8n",
+    "langgraph",
+    "fastmcp"
+  ],
+  "sources": [
+    "https://github.com/langflow-ai/langflow",
+    "https://github.com/langflow-ai/langflow/releases/tag/v1.13.0",
+    "https://docs.langflow.org/llms.txt"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Langflow (langflow-ai)"
+}

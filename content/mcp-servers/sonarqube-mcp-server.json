@@ -1,0 +1,40 @@
+{
+  "id": "sonarqube-mcp-server",
+  "name": "SonarQube MCP Server",
+  "category": "mcp-servers",
+  "summary": "SonarSource's official MCP server: agents query SonarQube Cloud or Server issues, quality gates, hotspots and metrics, and analyze code snippets.",
+  "description": "Tool groups include analysis (snippet analysis in the agent context), coverage, dependency risks, issues, security hotspots, measures and metrics, projects, quality gates, rules, duplications, sources, portfolios, webhooks and context augmentation, with selective tool enablement to cut context. Runs from the `sonarsource/sonarqube-mcp` container (or a standalone JAR) over stdio, Streamable HTTP or HTTPS; Sonar also runs a hosted SonarQube Cloud MCP service that supports OAuth (`mcp:tools:read` / `mcp:tools:write` scopes). A config generator is at mcp.sonarqube.com. Latest release 1.30.0.4763 (2026-10-23).",
+  "url": "https://www.sonarsource.com/products/sonarqube/mcp-server/",
+  "repo": "https://github.com/SonarSource/sonarqube-mcp-server",
+  "docs": "https://docs.sonarsource.com/sonarqube-mcp-server",
+  "tags": [
+    "mcp",
+    "code-quality",
+    "security",
+    "static-analysis",
+    "sast"
+  ],
+  "license": "LicenseRef-Sonar-Source-Available-1.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "SONARQUBE_TOKEN (user token) plus SONARQUBE_ORG for Cloud or SONARQUBE_URL for Server (https://sonarqube.us for Cloud US). OAuth only on Sonar's hosted Cloud MCP service; self-hosted SonarQube Server still uses tokens."
+  },
+  "related": [
+    "semgrep-mcp",
+    "snyk-agent-scan",
+    "github-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/SonarSource/sonarqube-mcp-server",
+    "https://github.com/SonarSource/sonarqube-mcp-server/blob/master/LICENSE",
+    "https://github.com/SonarSource/sonarqube-mcp-server/releases/tag/1.30.0.4763",
+    "https://mcp.sonarqube.com/config-generator.html"
+  ],
+  "added": "2026-10-28",
+  "updated": "2026-10-28",
+  "last_verified": "2026-10-28",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SonarSource"
+}
