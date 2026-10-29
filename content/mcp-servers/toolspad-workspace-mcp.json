@@ -1,0 +1,35 @@
+{
+  "id": "toolspad-workspace-mcp",
+  "name": "ToolsPad Workspace MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP access to contacts, notes, tasks, forms, appointments and whiteboards in an OAuth-authorized ToolsPad business workspace.",
+  "description": "ToolsPad is a proprietary connected business workspace. Its remote MCP server uses Streamable HTTP and browser OAuth to authorize an AI client for one workspace. Users can choose read-only or read-and-write access and revoke the connection in Settings. The documented operations cover contacts, notes, tasks, forms, appointments, pages and connected whiteboards. Public browser WebMCP tools explain ToolsPad capabilities separately from authenticated workspace access. The SaaS has a permanent Free plan with app-specific limits and optional paid upgrades.",
+  "url": "https://toolspad.com/mcp",
+  "docs": "https://toolspad.com/mcp?utm_source=index_agentica&utm_medium=referral&utm_campaign=aidm&utm_id=aidm_organic_v1&utm_content=idxagentica_workspace_001",
+  "tags": [
+    "business-workspace",
+    "crm",
+    "tasks",
+    "notes",
+    "oauth",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://toolspad.com/llms.txt",
+    "mcp_endpoint": "https://app.toolspad.com/mcp",
+    "auth": "oauth",
+    "notes": "Connect using browser OAuth and approve one workspace. Read-and-write is the default; read-only is available. Revoke access from ToolsPad Settings. Public endpoint returns an OAuth challenge without credentials; private workspace operations were not invoked for this listing."
+  },
+  "sources": [
+    "https://toolspad.com/mcp",
+    "https://toolspad.com/pricing",
+    "https://toolspad.com/llms.txt"
+  ],
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "ToolsPad AIDM (agent) for ToolsPad",
+  "maintainer": "ToolsPad"
+}
