@@ -1,0 +1,38 @@
+{
+  "id": "razorpay-mcp-server",
+  "name": "Razorpay MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official Razorpay MCP server for payments, orders, payment links, refunds, QR codes, settlements and payouts; remote or local.",
+  "description": "Exposes Razorpay APIs as MCP tools: capture/fetch payments, create orders and payment links (including UPI), refunds, QR codes, settlements, instant settlements, payouts and saved-payment tokens. A hosted remote server at `https://mcp.razorpay.com/mcp` needs no setup; a few write tools (e.g. create_refund, close_qr_code, create_instant_settlement) are local-only. The local server runs from Docker (`razorpay/mcp`) or source (Go). Latest release v1.2.1 (Sep 2026).",
+  "url": "https://razorpay.com/docs/mcp-server/",
+  "repo": "https://github.com/razorpay/razorpay-mcp-server",
+  "tags": [
+    "payments",
+    "india",
+    "upi",
+    "mcp",
+    "remote"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.razorpay.com/mcp",
+    "auth": "other",
+    "notes": "Remote: header 'Authorization: Basic <merchant token>' (base64 of key_id:key_secret). Local: pass RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET. Razorpay transaction fees apply to real payments."
+  },
+  "related": [
+    "stripe-mcp",
+    "square-mcp",
+    "paypal-agent-toolkit",
+    "adyen-mcp"
+  ],
+  "sources": [
+    "https://github.com/razorpay/razorpay-mcp-server",
+    "https://razorpay.com/docs/mcp-server/"
+  ],
+  "maintainer": "Razorpay",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

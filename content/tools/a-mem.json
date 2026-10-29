@@ -1,0 +1,32 @@
+{
+  "id": "a-mem",
+  "name": "A-MEM (Agentic Memory)",
+  "category": "tools",
+  "summary": "Research memory library for LLM agents that writes Zettelkasten-style linked notes and evolves them, backed by ChromaDB.",
+  "description": "A-MEM organizes agent memories dynamically: each new memory becomes a structured note with context, keywords and tags, is linked to related past memories, and can update existing memories as knowledge evolves. Indexing and retrieval use ChromaDB. This repo is the reusable library; the paper's experiment code lives at WujiangXu/AgenticMemory. Install from source (pip install .). Last updated December 2025.",
+  "url": "https://github.com/agiresearch/A-mem",
+  "repo": "https://github.com/agiresearch/A-mem",
+  "tags": [
+    "memory",
+    "research",
+    "knowledge-graph",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "letta",
+    "chroma",
+    "memos"
+  ],
+  "sources": [
+    "https://github.com/agiresearch/A-mem",
+    "https://arxiv.org/abs/2502.12110"
+  ],
+  "maintainer": "AGI Research (agiresearch)",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "piston",
+  "name": "Piston",
+  "category": "infrastructure",
+  "summary": "Self-hostable, high-performance engine for running untrusted code in many languages via a simple REST API.",
+  "description": "Piston executes untrusted, possibly malicious code in isolation and exposes runtimes, package management and execute endpoints over HTTP (plus an interactive WebSocket endpoint when self-hosted). Language runtimes are installed as packages. Wrappers exist for Node, Python and Java. **Since 15 Feb 2026 the public emkc.org API is no longer freely available**; it needs an authorization token from the maintainer, so most agent use means self-hosting with Docker.",
+  "url": "https://github.com/engineer-man/piston",
+  "repo": "https://github.com/engineer-man/piston",
+  "tags": [
+    "code-execution",
+    "sandbox",
+    "self-hosted",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Self-hosted API has no auth by default (put it behind your own gateway). Public API requires a token from EngineerMan."
+  },
+  "related": [
+    "judge0",
+    "llm-sandbox",
+    "e2b"
+  ],
+  "sources": [
+    "https://github.com/engineer-man/piston",
+    "https://github.com/engineer-man/piston#public-api"
+  ],
+  "maintainer": "Engineer Man",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

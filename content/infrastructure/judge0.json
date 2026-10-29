@@ -1,0 +1,38 @@
+{
+  "id": "judge0",
+  "name": "Judge0",
+  "category": "infrastructure",
+  "summary": "Open-source sandboxed code execution system for 90+ languages; self-host or use Judge0 Cloud (via Rapid or direct).",
+  "description": "Judge0 is a robust, scalable online code execution system used to run untrusted and AI-generated code in sandboxes. It supports 90+ languages, compile and runtime limits, additional files alongside a program, and webhooks, behind a REST API. Two flavors: Judge0 CE and Judge0 Extra CE (different language sets). Self-host with Docker, or use the managed Judge0 Cloud through Rapid (RapidAPI) or directly. Licensed GPL-3.0; last tagged release v1.13.1 (Apr 2024), repo still active.",
+  "url": "https://judge0.com/",
+  "repo": "https://github.com/judge0/judge0",
+  "docs": "https://ce.judge0.com/",
+  "tags": [
+    "code-execution",
+    "sandbox",
+    "self-hosted",
+    "rest-api"
+  ],
+  "license": "GPL-3.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Self-hosted instances can run without auth; Judge0 Cloud via RapidAPI uses an X-RapidAPI-Key header."
+  },
+  "related": [
+    "piston",
+    "e2b",
+    "llm-sandbox",
+    "microsandbox"
+  ],
+  "sources": [
+    "https://github.com/judge0/judge0",
+    "https://judge0.com/",
+    "https://rapidapi.com/judge0-official/api/judge0-ce"
+  ],
+  "maintainer": "Judge0 (Herman Zvonimir Došilović)",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

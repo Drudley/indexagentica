@@ -1,0 +1,36 @@
+{
+  "id": "twilio-mcp",
+  "name": "Twilio MCP Server (Twilio Alpha)",
+  "category": "mcp-servers",
+  "summary": "Twilio Labs monorepo exposing Twilio's public APIs as MCP tools, plus a generic OpenAPI-to-MCP server.",
+  "description": "Two packages: `@twilio-alpha/mcp`, an MCP server for all of Twilio's public API, and `openapi-mcp-server`, which serves any OpenAPI spec as MCP tools. Because the full API is large, filter with `--services` and `--tags` to fit model context. Twilio advises not running community MCP servers alongside the official one to limit injection risk. Experimental (Twilio Alpha).",
+  "url": "https://twilioalpha.com/mcp",
+  "repo": "https://github.com/twilio-labs/mcp",
+  "tags": [
+    "sms",
+    "voice",
+    "communications",
+    "mcp",
+    "openapi"
+  ],
+  "license": "ISC",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "npx -y @twilio-alpha/mcp ACCOUNT_SID/API_KEY:API_SECRET; Twilio usage charges apply."
+  },
+  "related": [
+    "openapi",
+    "vapi",
+    "elevenagents"
+  ],
+  "sources": [
+    "https://github.com/twilio-labs/mcp",
+    "https://twilioalpha.com/mcp"
+  ],
+  "maintainer": "Twilio Labs",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

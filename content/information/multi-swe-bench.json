@@ -1,0 +1,37 @@
+{
+  "id": "multi-swe-bench",
+  "name": "Multi-SWE-bench",
+  "category": "information",
+  "summary": "ByteDance Seed's multilingual issue-resolving benchmark: 1,632 verified tasks across Java, TS, JS, Go, Rust, C and C++.",
+  "description": "Multi-SWE-bench extends SWE-bench-style evaluation beyond Python with 1,632 instances in 7 languages (Java, TypeScript, JavaScript, Go, Rust, C, C++), curated from 2,456 candidates by 68 expert annotators. Lighter variants: **mini** (400 instances, 8 languages) and **flash** (300 instances). The companion **Multi-SWE-RL** dataset started with 4,723 instances for RL training. Evaluation is Docker-based and all data, code and container images are public. Accepted to the NeurIPS 2025 Datasets and Benchmarks track.",
+  "url": "https://multi-swe-bench.github.io/",
+  "repo": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "tags": [
+    "benchmark",
+    "coding-agent",
+    "dataset",
+    "multilingual",
+    "reinforcement-learning"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Datasets on Hugging Face: ByteDance-Seed/Multi-SWE-bench, Multi-SWE-bench_mini, Multi-SWE-bench-flash, Multi-SWE-RL."
+  },
+  "related": [
+    "swe-bench",
+    "swe-bench-pro",
+    "swe-rebench",
+    "swe-gym"
+  ],
+  "sources": [
+    "https://github.com/multi-swe-bench/multi-swe-bench",
+    "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench"
+  ],
+  "maintainer": "ByteDance Seed",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

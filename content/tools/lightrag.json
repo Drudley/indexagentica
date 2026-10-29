@@ -1,0 +1,37 @@
+{
+  "id": "lightrag",
+  "name": "LightRAG",
+  "category": "tools",
+  "summary": "Graph-plus-vector RAG framework from HKU with a server, web UI and Ollama-compatible API; pluggable storage backends.",
+  "description": "LightRAG (EMNLP 2025) builds a knowledge graph and vector index from documents and retrieves over both. It includes `lightrag-server` with a web UI and an Ollama-compatible API, document deletion with graph regeneration, rerankers, citations, selectable chunking strategies, per-role LLM settings, and multimodal parsing (RAG-Anything merged in, via MinerU/Docling). Storage backends include PostgreSQL, MongoDB, OpenSearch and others. Integrates RAGAS for evaluation and Langfuse for tracing. Latest release v1.5.7 (Sep 2026).",
+  "url": "https://github.com/HKUDS/LightRAG",
+  "repo": "https://github.com/HKUDS/LightRAG",
+  "tags": [
+    "rag",
+    "knowledge-graph",
+    "memory",
+    "retrieval",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "pip install \"lightrag-hku[api]\" then run lightrag-server; bring your own LLM and embedding provider."
+  },
+  "related": [
+    "graphiti",
+    "cognee",
+    "ragas",
+    "langfuse"
+  ],
+  "sources": [
+    "https://github.com/HKUDS/LightRAG",
+    "https://arxiv.org/abs/2410.05779"
+  ],
+  "maintainer": "HKU Data Intelligence Lab (HKUDS)",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

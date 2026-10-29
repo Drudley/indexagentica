@@ -1,0 +1,38 @@
+{
+  "id": "swe-agent",
+  "name": "SWE-agent",
+  "category": "harnesses",
+  "summary": "Princeton/Stanford research agent that lets an LM fix real GitHub issues, solve CTFs or run custom tasks, configured by one YAML file.",
+  "description": "SWE-agent gives a language model an agent-computer interface (ACI) for working in a repository: it takes a GitHub issue and tries to fix it autonomously, can be benchmarked on SWE-bench in batch mode, and has an offensive-security mode (EnIGMA, on v0.7) for capture-the-flag challenges. Behaviour is governed by a single YAML config. Note: the maintainers now recommend **mini-swe-agent** for new work; it matches SWE-agent's performance with far less code. Latest release v1.1.0 (May 2025); the repo still receives commits.",
+  "url": "https://swe-agent.com/",
+  "repo": "https://github.com/SWE-agent/SWE-agent",
+  "docs": "https://swe-agent.com/latest/",
+  "tags": [
+    "coding-agent",
+    "swe-bench",
+    "research",
+    "cli",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Run from source (pip install -e .) with your own model provider API key; or try it in GitHub Codespaces."
+  },
+  "related": [
+    "mini-swe-agent",
+    "swe-bench",
+    "swe-smith"
+  ],
+  "sources": [
+    "https://github.com/SWE-agent/SWE-agent",
+    "https://swe-agent.com/latest/",
+    "https://arxiv.org/abs/2405.15793"
+  ],
+  "maintainer": "SWE-agent team (Princeton University, Stanford University)",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "toolbench",
+  "name": "ToolBench (ToolLLM)",
+  "category": "information",
+  "summary": "Large tool-use instruction dataset over 16,464 real RapidAPI REST APIs, with the ToolEval evaluator and ToolLLaMA models.",
+  "description": "ToolBench (from the ToolLLM paper, ICLR 2024 spotlight) is an instruction-tuning dataset for tool use: 3,451 tools / 16,464 REST APIs collected from RapidAPI and 126,486 instances covering single-tool and multi-tool scenarios, annotated with a depth-first-search decision tree (DFSDT). It ships an API retriever, the ToolEval automatic evaluator and ToolLLaMA checkpoints. Data was generated with the OpenAI API and is for research and educational use. StableToolBench offers a more stable simulated-API server. Repo last updated May 2025.",
+  "url": "https://openbmb.github.io/ToolBench/",
+  "repo": "https://github.com/OpenBMB/ToolBench",
+  "tags": [
+    "dataset",
+    "tool-use",
+    "function-calling",
+    "benchmark",
+    "fine-tuning"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "bfcl",
+    "xlam-function-calling-60k",
+    "apigen-mt-5k"
+  ],
+  "sources": [
+    "https://github.com/OpenBMB/ToolBench",
+    "https://arxiv.org/abs/2307.16789"
+  ],
+  "maintainer": "OpenBMB",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

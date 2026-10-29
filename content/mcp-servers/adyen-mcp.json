@@ -1,0 +1,35 @@
+{
+  "id": "adyen-mcp",
+  "name": "Adyen MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official alpha MCP server for Adyen Checkout and Management APIs: sessions, payment links, refunds, terminals and webhooks.",
+  "description": "Runs locally via `npx -y @adyen/mcp` against Adyen's TEST or LIVE environment. Tools cover Checkout sessions and payment methods, payment links (create, status, expire), cancels and refunds, and Management API reads/writes for merchant accounts, terminals and terminal settings, webhooks, payment-method settings, users, API credentials and allowed origins. Use `--tools=` to expose only what you need; Adyen recommends a dedicated webservice user whose roles match the selected tools. Status: alpha.",
+  "url": "https://docs.adyen.com/development-resources/mcp-server/",
+  "repo": "https://github.com/Adyen/adyen-mcp",
+  "tags": [
+    "payments",
+    "mcp",
+    "checkout",
+    "pos-terminals"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Set ADYEN_API_KEY; npx -y @adyen/mcp --env=TEST (LIVE also needs --livePrefix). Adyen merchant account required; processing fees apply."
+  },
+  "related": [
+    "stripe-mcp",
+    "square-mcp",
+    "razorpay-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/Adyen/adyen-mcp",
+    "https://docs.adyen.com/development-resources/mcp-server/"
+  ],
+  "maintainer": "Adyen",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}

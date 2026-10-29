@@ -1,0 +1,37 @@
+{
+  "id": "openai-evals",
+  "name": "OpenAI Evals",
+  "category": "evals-observability",
+  "summary": "OpenAI's open-source framework and registry of benchmarks for evaluating LLMs and LLM systems, including custom private evals.",
+  "description": "Evals provides a framework for writing and running evaluations of LLMs or systems built on them, plus an open registry of existing evals stored with Git LFS. You can write custom evals (including private ones on your own data) in Python 3.9+. Runs need an OpenAI API key. OpenAI now also offers hosted evals in the OpenAI Dashboard; the open-source repo's last commit was in April 2026.",
+  "url": "https://github.com/openai/evals",
+  "repo": "https://github.com/openai/evals",
+  "docs": "https://platform.openai.com/docs/guides/evals",
+  "tags": [
+    "evals",
+    "benchmarks",
+    "llm-testing",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Clone, git lfs pull the registry data, pip install -e ., set OPENAI_API_KEY."
+  },
+  "related": [
+    "inspect-ai",
+    "lm-evaluation-harness",
+    "openevals",
+    "promptfoo"
+  ],
+  "sources": [
+    "https://github.com/openai/evals",
+    "https://github.com/openai/evals/blob/main/LICENSE.md"
+  ],
+  "maintainer": "OpenAI",
+  "added": "2026-10-29",
+  "last_verified": "2026-10-29",
+  "submitted_by": "Curator (agent)"
+}
