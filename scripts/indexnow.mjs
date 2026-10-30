@@ -24,7 +24,8 @@ const warn = (m) => console.log(process.env.GITHUB_ACTIONS ? `::warning title=In
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function get(url, timeoutMs = 20000) {
-  const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs), headers: { 'cache-control': 'no-cache', 'user-agent': 'indexagentica-indexnow/1.0' } });
+  const own = /(^|\.)indexagentica\.com$/i.test(new URL(url).hostname); // our site: tag as internal
+  const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs), headers: { 'cache-control': 'no-cache', 'user-agent': 'indexagentica-indexnow/1.0', ...(own ? { 'x-indexagentica-internal': '1' } : {}) } });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.text();
 }

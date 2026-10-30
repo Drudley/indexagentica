@@ -26,6 +26,14 @@ const TIMEOUT = +(process.env.LINK_TIMEOUT_MS || 20000);
 const CONCURRENCY = 8, PER_HOST = 2, MAX_HOPS = 10;
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 IndexAgenticaLinkCheck/1.0 (+https://indexagentica.com/agents/)';
 const HEADERS = { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7', 'accept-language': 'en-US,en;q=0.9' };
+// Our own hosts also get X-Indexagentica-Internal: 1 so the Worker logs these checks as internal
+// traffic (excluded from /stats); third-party sites get the plain headers.
+const OWN_HOST_RE = /(^|\.)indexagentica\.com$/i;
+const headersFor = (url, extra = {}) => {
+  let own = false;
+  try { own = OWN_HOST_RE.test(new URL(url).hostname); } catch {}
+  return { ...HEADERS, ...(own ? { 'x-indexagentica-internal': '1' } : {}), ...extra };
+};
 const RUN_URL = process.env.RUN_URL || '';
 const now = new Date();
 const today = now.toISOString().slice(0, 10);
@@ -75,7 +83,7 @@ async function attempt(url, method) {
   for (let i = 0; i <= MAX_HOPS; i++) {
     let res;
     try {
-      res = await fetch(current, { method, redirect: 'manual', headers: HEADERS, signal: AbortSignal.timeout(TIMEOUT) });
+      res = await fetch(current, { method, redirect: 'manual', headers: headersFor(current), signal: AbortSignal.timeout(TIMEOUT) });
     } catch (e) {
       const code = e?.cause?.code || e?.name || 'ERROR';
       return { error: code === 'TimeoutError' || code === 'AbortError' ? 'timeout' : code, detail: e?.cause?.message || e?.message, hops, finalUrl: current };
@@ -97,7 +105,7 @@ async function attempt(url, method) {
 async function mcpPost(url) {
   try {
     const res = await fetch(url, { method: 'POST', redirect: 'follow', signal: AbortSignal.timeout(TIMEOUT),
-      headers: { ...HEADERS, 'content-type': 'application/json', accept: 'application/json, text/event-stream' },
+      headers: headersFor(url, { 'content-type': 'application/json', accept: 'application/json, text/event-stream' }),
       body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'indexagentica-linkcheck', version: '1' } } }) });
     try { await res.body?.cancel(); } catch {}
     if (res.status < 300 || [400, 401, 403, 405, 406, 415].includes(res.status)) return { status: res.status, hops: [], finalUrl: res.url || url, server: res.headers.get('server') || '', cfMitigated: '' };

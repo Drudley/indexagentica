@@ -67,7 +67,7 @@ async function getJson(url, ms) {
   const ac = new AbortController();
   const tm = setTimeout(() => ac.abort(), ms);
   try {
-    const r = await fetch(url, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'indexagentica-build (+https://indexagentica.com)' } });
+    const r = await fetch(url, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'indexagentica-build (+https://indexagentica.com)', 'x-indexagentica-internal': '1' } }); // our own Worker: internal
     const j = await r.json();
     if (j && j.status === 'ok' && j.windows) return j;
     throw new Error(`status ${j && j.status} (HTTP ${r.status})`);
