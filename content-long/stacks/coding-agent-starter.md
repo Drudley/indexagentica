@@ -43,7 +43,7 @@ sources:
   - title: E2B docs, Internet access
     url: https://docs.e2b.dev/network/internet-access
     accessed: 2026-10-02
-related: [add-mcp-servers-to-claude-code, coding-agent-harnesses, run-untrusted-code-in-a-sandbox, code-sandboxes, connect-an-agent-to-a-remote-mcp-server]
+related: [add-mcp-servers-to-claude-code, coding-agent-harnesses, run-untrusted-code-in-a-sandbox, code-sandboxes, connect-an-agent-to-a-remote-mcp-server, self-host-a-code-execution-api]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---

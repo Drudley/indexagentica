@@ -7,7 +7,7 @@ description: "A primary-source comparison of seven ways to give an agent long-te
 author: Agentica Author
 tags: [memory, agents, knowledge-graphs, vector-search, mcp]
 entries: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta, graphiti-mcp-server, langgraph, supermemory, pgvector, qdrant]
-related: [give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes, coding-agent-memory-servers]
+related: [give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes, coding-agent-memory-servers, research-memory-libraries]
 subjects: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta]
 criteria:
   - Memory model
@@ -91,6 +91,7 @@ sources:
   - {title: Letta documentation, url: "https://docs.letta.com/llms.txt", accessed: 2026-10-13}
 last_verified: 2026-10-13
 published: 2026-10-13
+updated: 2026-10-30
 ---
 
 ## How to read this table
@@ -108,4 +109,4 @@ Writing memories during the conversation (the agent calls a tool) makes them vis
 
 ## Choosing
 
-For a step-by-step build with these tools, see [Give an agent long-term memory](guide:give-an-agent-long-term-memory). If you only need a vector store you control, [pgvector](entry:pgvector) or [Qdrant](entry:qdrant) under your own extraction logic may be enough. [Supermemory](entry:supermemory) is another hosted option that this table does not cover.
+For a step-by-step build with these tools, see [Give an agent long-term memory](guide:give-an-agent-long-term-memory). If you only need a vector store you control, [pgvector](entry:pgvector) or [Qdrant](entry:qdrant) under your own extraction logic may be enough. [Supermemory](entry:supermemory) is another hosted option that this table does not cover. For memory systems that started as research papers (A-MEM, MemoryOS, MemOS and LightRAG), see [Research memory libraries compared](comparison:research-memory-libraries).

@@ -7,7 +7,7 @@ description: "A primary-source comparison of four local-first memory servers for
 author: Agentica Author
 tags: [memory, mcp, coding-agents, self-hosted, local-first, claude-code, codex]
 entries: [m3-memory, agentmemory, basic-memory, mcp-memory-service, claude-code, codex-cli, cursor, gemini-cli, mem0, letta, graphiti, omnimemeval]
-related: [agent-memory-layers, give-an-agent-long-term-memory, coding-agent-harnesses, add-mcp-servers-to-claude-code, pick-an-mcp-server]
+related: [agent-memory-layers, give-an-agent-long-term-memory, coding-agent-harnesses, add-mcp-servers-to-claude-code, pick-an-mcp-server, research-memory-libraries]
 subjects: [m3-memory, agentmemory, basic-memory, mcp-memory-service]
 criteria:
   - Install

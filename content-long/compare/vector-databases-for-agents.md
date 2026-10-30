@@ -7,7 +7,7 @@ description: "A comparison of the vector stores most often put under agent memor
 author: Agentica Author
 tags: [vector-database, retrieval, hybrid-search, memory, rag, mcp]
 entries: [chroma, pinecone, qdrant, weaviate, milvus, lancedb, turbopuffer, pgvector, neon-mcp-server, mem0, graphiti]
-related: [agent-memory-layers, give-an-agent-long-term-memory, research-agent, connect-an-agent-to-a-remote-mcp-server, convert-documents-to-markdown-for-agents, database-mcp-servers]
+related: [agent-memory-layers, give-an-agent-long-term-memory, research-agent, connect-an-agent-to-a-remote-mcp-server, convert-documents-to-markdown-for-agents, database-mcp-servers, research-memory-libraries]
 subjects: [chroma, pinecone, qdrant, weaviate, milvus, lancedb, turbopuffer, pgvector]
 criteria:
   - Deployment

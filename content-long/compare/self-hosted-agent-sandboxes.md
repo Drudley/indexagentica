@@ -7,7 +7,7 @@ description: "A primary-source comparison of sandboxes you can run yourself, fro
 author: Agentica Author
 tags: [sandbox, self-hosted, code-execution, microvm, kubernetes, security, isolation, infrastructure]
 entries: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes, microsandbox-mcp, e2b, daytona, e2b-desktop, cua, claude-code, kubernetes-mcp-server]
-related: [code-sandboxes, run-untrusted-code-in-a-sandbox, coding-agent-harnesses, devops-mcp-servers, cloud-browsers-for-agents, coding-agent-starter, mcp-gateways]
+related: [code-sandboxes, run-untrusted-code-in-a-sandbox, coding-agent-harnesses, devops-mcp-servers, cloud-browsers-for-agents, coding-agent-starter, mcp-gateways, self-host-a-code-execution-api]
 subjects: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes]
 criteria:
   - Isolation boundary

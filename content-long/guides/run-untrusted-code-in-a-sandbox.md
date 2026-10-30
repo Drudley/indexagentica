@@ -52,9 +52,10 @@ sources:
   - title: Northflank Sandboxes
     url: https://northflank.com/product/sandboxes
     accessed: 2026-10-02
-related: [code-sandboxes, coding-agent-starter, research-agent, convert-documents-to-markdown-for-agents, self-hosted-agent-sandboxes]
+related: [code-sandboxes, coding-agent-starter, research-agent, convert-documents-to-markdown-for-agents, self-hosted-agent-sandboxes, self-host-a-code-execution-api]
 last_verified: 2026-10-02
 published: 2026-10-02
+updated: 2026-10-30
 ---
 
 ## Why agent code needs a sandbox
@@ -180,7 +181,7 @@ If code can't leave your infrastructure, or you want sandboxes on a developer la
 
 ## Giving the sandbox to an agent as a tool
 
-Most agent frameworks expect a tool shaped like "run this code, return the output". Wrap your sandbox call in that shape and keep the controls above inside the wrapper, not in the prompt. The model should not be able to switch the network back on by asking. If your agent speaks MCP, microsandbox ships an [MCP server](https://github.com/superradcompany/microsandbox-mcp) that lets an agent create its own sandboxes. E2B's original MCP server repository (e2b-dev/mcp-server) is archived, so don't build on it. Whatever you connect, read the tools it exposes first and run it with a key scoped to a project you can afford to lose.
+Most agent frameworks expect a tool shaped like "run this code, return the output". Wrap your sandbox call in that shape and keep the controls above inside the wrapper, not in the prompt. The model should not be able to switch the network back on by asking. If your agent speaks MCP, microsandbox ships an [MCP server](https://github.com/superradcompany/microsandbox-mcp) that lets an agent create its own sandboxes. E2B's original MCP server repository (e2b-dev/mcp-server) is archived, so don't build on it. Whatever you connect, read the tools it exposes first and run it with a key scoped to a project you can afford to lose. If the agent only needs to run a snippet and read its output, a stateless execute API can be enough: see [Self-host a code-execution API with Piston or Judge0](guide:self-host-a-code-execution-api).
 
 ## Checklist
 

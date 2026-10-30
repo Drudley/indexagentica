@@ -40,7 +40,7 @@ sources:
   - title: pgvector README
     url: https://github.com/pgvector/pgvector
     accessed: 2026-10-02
-related: [agent-memory-layers, vector-databases-for-agents, research-agent, coding-agent-starter, connect-an-agent-to-a-remote-mcp-server, convert-documents-to-markdown-for-agents, coding-agent-memory-servers]
+related: [agent-memory-layers, vector-databases-for-agents, research-agent, coding-agent-starter, connect-an-agent-to-a-remote-mcp-server, convert-documents-to-markdown-for-agents, coding-agent-memory-servers, research-memory-libraries]
 last_verified: 2026-10-02
 published: 2026-10-02
 ---
