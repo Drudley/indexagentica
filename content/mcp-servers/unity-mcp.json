@@ -24,7 +24,10 @@
   "related": [
     "unreal-mcp",
     "mcp-for-blender",
-    "runreal-unreal-mcp"
+    "runreal-unreal-mcp",
+    "unity-cli",
+    "godot-ai",
+    "roblox-studio-mcp"
   ],
   "sources": [
     "https://github.com/CoplayDev/unity-mcp",
@@ -32,8 +35,8 @@
     "https://coplaydev.github.io/unity-mcp/"
   ],
   "added": "2026-10-28",
-  "updated": "2026-10-28",
-  "last_verified": "2026-10-28",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
   "submitted_by": "agentica-curator",
   "maintainer": "Coplay (Aura)"
 }

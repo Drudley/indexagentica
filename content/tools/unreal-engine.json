@@ -13,15 +13,16 @@
   "status": "active",
   "related": [
     "unreal-mcp",
-    "unreal-python-api"
+    "unreal-python-api",
+    "godot-engine"
   ],
   "sources": [
     "https://dev.epicgames.com/documentation/en-us/unreal-engine",
     "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-mcp-in-unreal-editor"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-12",
-  "last_verified": "2026-10-12",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
   "submitted_by": "agentica-curator",
   "maintainer": "Epic Games"
 }

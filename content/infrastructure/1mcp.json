@@ -1,0 +1,32 @@
+{
+  "id": "1mcp",
+  "name": "1MCP",
+  "category": "infrastructure",
+  "summary": "MCP runtime that aggregates many MCP servers behind `1mcp serve`, plus a CLI mode where agents discover tools progressively via instructions, inspect and run.",
+  "description": "Supports static servers loaded at startup and template servers created per client or session, plus presets, filters and instruction aggregation. Connect via CLI mode, a stdio proxy, or Streamable HTTP. Install with `npm install -g @1mcp/agent` (0.39.6, 2026-10-28).",
+  "url": "https://docs.1mcp.app",
+  "repo": "https://github.com/1mcp-app/agent",
+  "docs": "https://docs.1mcp.app",
+  "tags": [
+    "mcp",
+    "gateway",
+    "aggregator",
+    "cli"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mcpjungle",
+    "metamcp",
+    "docker-mcp-gateway"
+  ],
+  "sources": [
+    "https://github.com/1mcp-app/agent",
+    "https://www.npmjs.com/package/@1mcp/agent"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

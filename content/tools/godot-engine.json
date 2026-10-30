@@ -1,0 +1,34 @@
+{
+  "id": "godot-engine",
+  "name": "Godot Engine",
+  "category": "tools",
+  "summary": "Free, open-source, multi-platform 2D and 3D game engine, scripted in GDScript or C#. Several community MCP servers let agents drive its editor.",
+  "description": "Latest stable release 4.7.2-stable (2026-08-18).",
+  "url": "https://godotengine.org",
+  "repo": "https://github.com/godotengine/godot",
+  "docs": "https://docs.godotengine.org/en/stable/",
+  "tags": [
+    "game-engine",
+    "godot",
+    "2d",
+    "3d"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "godot-ai",
+    "beckett-godot-mcp",
+    "godot-editor-mcp",
+    "unreal-engine"
+  ],
+  "sources": [
+    "https://github.com/godotengine/godot",
+    "https://godotengine.org/license/",
+    "https://github.com/godotengine/godot/releases"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

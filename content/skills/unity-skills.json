@@ -1,0 +1,31 @@
+{
+  "id": "unity-skills",
+  "name": "Unity Skills",
+  "category": "skills",
+  "summary": "Unity's official agent skills for Unity workflows such as monetization, 2D art and Editor installs. Install with `npx skills add Unity-Technologies/skills`.",
+  "description": "35 skill folders, maintained by Unity and published automatically (no PRs accepted). Many skills drive the open Editor through the Unity CLI. Claude Code and Codex users are pointed to the official Unity plugin (Unity-Technologies/unity-agent-plugin), which ships the same skills. Both repos are under the Unity Companion License for Unity-dependent projects.",
+  "url": "https://github.com/Unity-Technologies/skills",
+  "repo": "https://github.com/Unity-Technologies/skills",
+  "tags": [
+    "agent-skills",
+    "game-engine",
+    "unity"
+  ],
+  "license": "LicenseRef-Unity-Companion-License",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "unity-cli",
+    "skills-sh",
+    "unreal-engine-claude-code-skills"
+  ],
+  "sources": [
+    "https://github.com/Unity-Technologies/skills",
+    "https://github.com/Unity-Technologies/skills/blob/main/LICENSE.md",
+    "https://github.com/Unity-Technologies/unity-agent-plugin"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

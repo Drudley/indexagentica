@@ -1,0 +1,33 @@
+{
+  "id": "godot-ai",
+  "name": "Godot AI",
+  "category": "mcp-servers",
+  "summary": "Godot editor add-on plus a Python MCP server that connects Claude Code, Codex, Cursor and other clients to a live Godot editor through 46 tools.",
+  "description": "Tools build scenes, edit nodes and scripts, wire signals, and configure UI, materials, animation, particles, cameras and environments (README: 46 tools, 120+ operations). Needs Godot 4.7+ and uv. Install the add-on from AssetLib or a GitHub release, enable it, and press Configure in the dock. Latest release v4.3.1 (2026-10-24). Python >=3.11,<3.15.",
+  "url": "https://github.com/hi-godot/godot-ai",
+  "repo": "https://github.com/hi-godot/godot-ai",
+  "docs": "https://github.com/hi-godot/godot-ai/blob/main/docs/TOOLS.md",
+  "tags": [
+    "game-engine",
+    "godot",
+    "mcp",
+    "local",
+    "community"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "godot-engine",
+    "unity-mcp",
+    "unreal-mcp"
+  ],
+  "sources": [
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/hi-godot/godot-ai/releases"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

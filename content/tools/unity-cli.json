@@ -1,0 +1,33 @@
+{
+  "id": "unity-cli",
+  "name": "Unity CLI",
+  "category": "tools",
+  "summary": "Unity's experimental command-line interface for installing Editors and modules, managing projects and driving a running Editor, with an MCP mode for agents.",
+  "description": "With the Unity Pipeline package (Unity 6.0+), `unity command` and `unity eval` drive the Editor directly, and `unity mcp` provides an MCP server (`unity mcp configure <client>` writes the client config). `unity skill install <agent>` installs Unity's agent skills. Unity says it replaces the deprecated in-Editor MCP server in com.unity.ai.assistant. The CLI is free and needs no Unity AI subscription. It runs a local, offline, localhost-only pipeline server and works headless for CI. Distributed as a standalone binary, Homebrew cask, .deb/.rpm, AppImage, MSIX and npm. The docs label it experimental. Latest release noted: 1.0.0-beta.14 (2026-10-21).",
+  "url": "https://docs.unity.com/en-us/unity-cli",
+  "docs": "https://docs.unity.com/en-us/unity-cli",
+  "tags": [
+    "game-engine",
+    "unity",
+    "cli",
+    "mcp"
+  ],
+  "pricing": "free",
+  "status": "beta",
+  "related": [
+    "unity-ai-assistant-mcp",
+    "unity-skills",
+    "unity-mcp"
+  ],
+  "sources": [
+    "https://docs.unity.com/en-us/unity-cli",
+    "https://docs.unity.com/en-us/unity-cli/replace-mcp-server-unity-cli",
+    "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "https://docs.unity.com/en-us/unity-cli/release-notes",
+    "https://docs.unity.com/en-us/unity-cli/unity-pipeline/unity-pipeline-package"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

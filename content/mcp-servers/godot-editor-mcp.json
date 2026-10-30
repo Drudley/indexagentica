@@ -1,0 +1,37 @@
+{
+  "id": "godot-editor-mcp",
+  "name": "Godot Editor MCP (hybridindie/godot-mcp)",
+  "category": "mcp-servers",
+  "summary": "Game-agnostic MCP server plus a Godot add-on that drives a live editor: inspect, edit scenes and scripts, run, simulate input, screenshot, profile and export.",
+  "description": "201 tools in 29 categories: an always-on core plus 28 toggleable toolsets, of which only `inspection` is on by default. FastMCP server (stdio/HTTP) talks to the add-on over WebSocket. PyPI `godot-editor-mcp` 2026.10.20.1, Python >=3.11. Project-defined tools via `## @mcp_tool` annotations.",
+  "url": "https://github.com/hybridindie/godot-mcp",
+  "repo": "https://github.com/hybridindie/godot-mcp",
+  "docs": "https://hybridindie.github.io/godot-mcp/",
+  "tags": [
+    "game-engine",
+    "godot",
+    "mcp",
+    "local",
+    "community"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://hybridindie.github.io/godot-mcp/llms.txt"
+  },
+  "related": [
+    "godot-engine",
+    "unity-mcp",
+    "unreal-mcp"
+  ],
+  "sources": [
+    "https://github.com/hybridindie/godot-mcp",
+    "https://hybridindie.github.io/godot-mcp/",
+    "https://pypi.org/project/godot-editor-mcp/"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "nango",
+  "name": "Nango",
+  "category": "infrastructure",
+  "summary": "Integration layer that gives agents and products auth, tool-calling actions, syncs and webhooks across 1,000+ APIs, including MCP auth and a management MCP.",
+  "description": "Integrations are code-owned functions. Docs cover agent tool calling, MCP Auth (users connect to MCP servers through Nango), a Management MCP, and scoped agent sessions that replace the earlier Connection MCP. Pricing: Free $0/month with hard-capped limits, Pay-as-you-go $50/month in credits ($0.29/connection, $0.72/compute hour, $0.5/GB), Enterprise custom with self-hosting. The repo is under the Elastic License 2.0.",
+  "url": "https://nango.dev",
+  "repo": "https://github.com/NangoHQ/nango",
+  "docs": "https://nango.dev/docs/getting-started/intro-to-nango",
+  "tags": [
+    "integrations",
+    "oauth",
+    "mcp",
+    "tool-calling"
+  ],
+  "license": "Elastic-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://nango.dev/docs/llms.txt",
+    "auth": "api-key"
+  },
+  "related": [
+    "composio"
+  ],
+  "sources": [
+    "https://github.com/NangoHQ/nango",
+    "https://nango.dev/docs/llms.txt",
+    "https://nango.dev/pricing"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

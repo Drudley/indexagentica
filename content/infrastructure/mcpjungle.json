@@ -1,0 +1,32 @@
+{
+  "id": "mcpjungle",
+  "name": "MCPJungle",
+  "category": "infrastructure",
+  "summary": "Self-hosted MCP gateway: register MCP servers once and expose them to Claude, Cursor, Codex or custom agents through a single endpoint, with tool groups and access control.",
+  "description": "Use it locally for a personal setup or as shared team infrastructure with centralized discovery, access control and observability. Optional tool groups expose only selected tools to a client. Latest release 0.4.6 (2026-08-02).",
+  "url": "https://docs.mcpjungle.com",
+  "repo": "https://github.com/mcpjungle/MCPJungle",
+  "docs": "https://docs.mcpjungle.com",
+  "tags": [
+    "mcp",
+    "gateway",
+    "self-hosted",
+    "aggregator"
+  ],
+  "license": "MPL-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "metamcp",
+    "ibm-contextforge",
+    "docker-mcp-gateway"
+  ],
+  "sources": [
+    "https://github.com/mcpjungle/MCPJungle",
+    "https://docs.mcpjungle.com"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

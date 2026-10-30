@@ -1,0 +1,30 @@
+{
+  "id": "roblox-studio-mcp",
+  "name": "Roblox Studio MCP server",
+  "category": "mcp-servers",
+  "summary": "Built-in MCP server in Roblox Studio that lets AI clients explore the data model, read and edit scripts, run Luau, generate assets and playtest.",
+  "description": "Runs as a local process using stdio transport against your open Studio session. Tools include script_read, multi_edit, script_search, script_grep, generate_mesh, generate_material, generate_procedural_model, search_asset and insert_asset. It replaces Roblox's standalone studio-rust-mcp-server (MIT), which is archived and no longer actively developed.",
+  "url": "https://create.roblox.com/docs/studio/mcp",
+  "docs": "https://create.roblox.com/docs/studio/mcp",
+  "tags": [
+    "game-engine",
+    "roblox",
+    "mcp",
+    "local",
+    "stdio"
+  ],
+  "status": "active",
+  "related": [
+    "unity-ai-assistant-mcp",
+    "godot-ai",
+    "astrocade-mcp"
+  ],
+  "sources": [
+    "https://create.roblox.com/docs/studio/mcp",
+    "https://github.com/Roblox/studio-rust-mcp-server"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

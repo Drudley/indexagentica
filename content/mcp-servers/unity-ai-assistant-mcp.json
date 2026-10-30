@@ -1,0 +1,31 @@
+{
+  "id": "unity-ai-assistant-mcp",
+  "name": "Unity MCP server (AI Assistant package)",
+  "category": "mcp-servers",
+  "summary": "Deprecated in-Editor MCP server in Unity's com.unity.ai.assistant package. External MCP clients reach Unity tools through a relay. Unity says to use the Unity CLI instead.",
+  "description": "Lets agents such as Claude Code and Cursor manage scenes, assets, scripts and console output in the open Editor. The package docs carry the note 'Unity MCP server is deprecated. Use the Unity command-line interface (CLI) instead.' from the 2.18 docs onward (absent in the 2.17 docs). The Unity CLI docs list `unity mcp configure <client>` as the migration path. Third-party Unity MCP packages are unaffected.",
+  "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.21/manual/integration/unity-mcp-overview.html",
+  "docs": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.21/manual/integration/unity-mcp-overview.html",
+  "tags": [
+    "game-engine",
+    "unity",
+    "mcp",
+    "local"
+  ],
+  "status": "deprecated",
+  "related": [
+    "unity-cli",
+    "unity-mcp"
+  ],
+  "sources": [
+    "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.21/manual/integration/unity-mcp-overview.html",
+    "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.18/manual/integration/unity-mcp-overview.html",
+    "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.17/manual/integration/unity-mcp-overview.html",
+    "https://docs.unity.com/en-us/unity-cli/replace-mcp-server-unity-cli",
+    "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.21/changelog/CHANGELOG.html"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "beckett-godot-mcp",
+  "name": "Beckett (Godot MCP)",
+  "category": "mcp-servers",
+  "summary": "Zero-sidecar MCP server that runs inside the Godot 4 editor as a GDScript plugin, letting agents inspect, author, run and screenshot a game in GDScript or C#.",
+  "description": "The MIT Lite edition has 56 reflection-based tools, served over localhost HTTP/JSON-RPC with Host/Origin checks and a per-project token. It validates scripts before writing them, and every edit can be undone. Enabling the plugin writes `.mcp.json`. Godot 4.2+. A paid Full edition ($15 on itch.io) adds autonomous playtesting. Latest release v1.16.0 (2026-10-06).",
+  "url": "https://github.com/beckettlab/beckett-godot-mcp",
+  "repo": "https://github.com/beckettlab/beckett-godot-mcp",
+  "docs": "https://github.com/beckettlab/beckett-godot-mcp#readme",
+  "tags": [
+    "game-engine",
+    "godot",
+    "mcp",
+    "local",
+    "community"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "related": [
+    "godot-engine",
+    "unity-mcp",
+    "unreal-mcp"
+  ],
+  "sources": [
+    "https://github.com/beckettlab/beckett-godot-mcp",
+    "https://beckettlabs.itch.io/beckett-godot-mcp"
+  ],
+  "added": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_verified": "2026-10-30",
+  "submitted_by": "agentica-curator"
+}
