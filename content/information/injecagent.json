@@ -1,0 +1,30 @@
+{
+  "id": "injecagent",
+  "name": "InjecAgent",
+  "category": "information",
+  "summary": "Benchmark of 1,054 test cases measuring how tool-using LLM agents fall for indirect prompt injections in tool outputs.",
+  "description": "The cases span 17 user tools and 62 attacker tools, covering both direct harm and data-stealing attacks. Scripts evaluate prompted (ReAct) agents and fine-tuned function-calling agents. From UIUC's Kang Lab (paper arXiv:2403.02691). MIT. Last updated July 2024.",
+  "url": "https://github.com/uiuc-kang-lab/InjecAgent",
+  "repo": "https://github.com/uiuc-kang-lab/InjecAgent",
+  "tags": [
+    "benchmark",
+    "prompt-injection",
+    "security",
+    "tool-use",
+    "dataset"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "related": [
+    "agentdojo"
+  ],
+  "sources": [
+    "https://github.com/uiuc-kang-lab/InjecAgent",
+    "https://arxiv.org/abs/2403.02691"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "UIUC Kang Lab"
+}

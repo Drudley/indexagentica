@@ -1,0 +1,37 @@
+{
+  "id": "twilio-docs-mcp",
+  "name": "Twilio Docs MCP",
+  "category": "mcp-servers",
+  "summary": "Twilio's hosted, read-only MCP server that lets agents search Twilio, SendGrid and Segment docs and Twilio's public OpenAPI specs.",
+  "description": "Remote server at https://mcp.twilio.com/docs, in Public Beta. No authentication. Two tools: `twilio__search` to find docs pages and API operations, and `twilio__retrieve` to fetch their full content. It only reads documentation and public specs and cannot make Twilio API calls; for that, use the separate Twilio Labs MCP server. Live probe returned server name twilio-docs-mcp 0.1.0.",
+  "url": "https://www.twilio.com/docs/ai/mcp",
+  "docs": "https://www.twilio.com/docs/ai/mcp",
+  "tags": [
+    "docs",
+    "search",
+    "twilio",
+    "remote-mcp",
+    "openapi"
+  ],
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.twilio.com/docs",
+    "llms_txt": "https://www.twilio.com/docs/ai/mcp.md",
+    "auth": "none",
+    "notes": "Streamable HTTP; read-only docs and OpenAPI search."
+  },
+  "related": [
+    "twilio-mcp"
+  ],
+  "sources": [
+    "https://www.twilio.com/docs/ai/mcp",
+    "https://www.twilio.com/docs/ai/mcp.md",
+    "https://mcp.twilio.com/docs"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Twilio"
+}

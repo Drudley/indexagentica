@@ -3,7 +3,7 @@
   "name": "MemoryOS",
   "category": "tools",
   "summary": "Hierarchical short/mid/long-term memory system for personalized agents, as a PyPI package and an MCP server.",
-  "description": "MemoryOS (EMNLP 2025 Oral) applies operating-system memory-management ideas to agents: hierarchical short-term, mid-term and long-term personal memory with dynamic updating, retrieval and generation. Available as a Python package (`memoryos-pro` on PyPI) and as **MemoryOS-MCP**, which exposes memory tools to MCP clients. Supports multiple LLM providers and embeddings such as BGE-M3 and Qwen3.",
+  "description": "MemoryOS (EMNLP 2025 Oral) applies operating-system memory-management ideas to agents: hierarchical short-term, mid-term and long-term personal memory with dynamic updating, retrieval and generation. Available as a Python package (`memoryos-pro` on PyPI) and as **MemoryOS-MCP**, which exposes memory tools to MCP clients. Supports multiple LLM providers and embeddings such as BGE-M3 and Qwen3. Note: the `memoryos-pro` PyPI release (0.1.0, Jul 2025) has template metadata (MIT and sample-project links) that does not match the repo's Apache-2.0 license. The PyPI name `MemoryOS` belongs to MemTensor's unrelated MemOS.",
   "url": "https://baijia.online/memoryos/",
   "repo": "https://github.com/BAI-LAB/MemoryOS",
   "docs": "https://bai-lab.github.io/MemoryOS/docs",
@@ -28,10 +28,12 @@
   ],
   "sources": [
     "https://github.com/BAI-LAB/MemoryOS",
-    "https://arxiv.org/abs/2506.06326"
+    "https://arxiv.org/abs/2506.06326",
+    "https://pypi.org/project/memoryos-pro/"
   ],
-  "maintainer": "BAI-LAB (Beijing University of Posts and Telecommunications)",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "BAI-LAB (Beijing University of Posts and Telecommunications)"
 }

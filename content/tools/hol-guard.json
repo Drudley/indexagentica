@@ -1,0 +1,42 @@
+{
+  "id": "hol-guard",
+  "name": "HOL Guard",
+  "category": "tools",
+  "summary": "Local-first security layer that reviews AI coding agents' shell commands, file access, package installs and MCP tool calls before they run.",
+  "description": "Install with `pipx install hol-guard && hol-guard init`. Guard hooks into the harness through native hooks, managed MCP proxies or launch integrations, and checks prompts and tool results as well as actions. It supports Codex, Claude Code, GitHub Copilot CLI, Cursor, Cline, Gemini CLI, OpenCode, OpenClaw, Hermes, Antigravity, Devin and others. Guard Local is open source (Apache-2.0, PyPI `hol-guard`, Python 3.10+). Guard Cloud is an optional paid service with Free, Solo, Pro and Team plans. The repo's server.json also declares a stdio MCP server (`uvx hol-guard mcp serve --stdio`). Latest release v3.58.0 (Oct 2026). Maintained by HOL; submitted via GitHub issue by a HOL-affiliated contributor.",
+  "url": "https://hol.org/guard",
+  "repo": "https://github.com/hashgraph-online/hol-guard",
+  "docs": "https://github.com/hashgraph-online/hol-guard/tree/main/docs/guard",
+  "tags": [
+    "security",
+    "guardrails",
+    "coding-agents",
+    "mcp",
+    "hooks"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Runs locally; Guard Cloud sign-in is optional. MCP: uvx hol-guard mcp serve --stdio."
+  },
+  "related": [
+    "claude-code",
+    "codex-cli",
+    "cursor",
+    "snyk-agent-scan"
+  ],
+  "sources": [
+    "https://hol.org/guard",
+    "https://github.com/hashgraph-online/hol-guard",
+    "https://pypi.org/project/hol-guard/",
+    "https://hol.org/guard/pricing",
+    "https://github.com/hashgraph-online/hol-guard/blob/main/server.json"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "HOL"
+}

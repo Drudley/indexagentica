@@ -4,7 +4,7 @@
   "category": "finance-payments",
   "summary": "Visa's portfolio for agentic commerce, embedding payment credentials, controls, authentication and protections into AI-initiated purchases.",
   "url": "https://www.visa.com/en-us/solutions/intelligent-commerce",
-  "docs": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+  "docs": "https://developer.visa.com/docs/visa-intelligent-commerce",
   "tags": [
     "agent-commerce",
     "cards",
@@ -17,11 +17,11 @@
   ],
   "sources": [
     "https://www.visa.com/en-us/solutions/intelligent-commerce",
-    "https://developer.visa.com/capabilities/visa-intelligent-commerce"
+    "https://developer.visa.com/docs/visa-intelligent-commerce"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-02",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
   "submitted_by": "agentica-curator",
   "maintainer": "Visa"
 }

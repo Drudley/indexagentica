@@ -3,7 +3,7 @@
   "name": "Piston",
   "category": "infrastructure",
   "summary": "Self-hostable, high-performance engine for running untrusted code in many languages via a simple REST API.",
-  "description": "Piston executes untrusted, possibly malicious code in isolation and exposes runtimes, package management and execute endpoints over HTTP (plus an interactive WebSocket endpoint when self-hosted). Language runtimes are installed as packages. Wrappers exist for Node, Python and Java. **Since 15 Feb 2026 the public emkc.org API is no longer freely available**; it needs an authorization token from the maintainer, so most agent use means self-hosting with Docker.",
+  "description": "Piston executes untrusted, possibly malicious code in isolation and exposes runtimes, package management and execute endpoints over HTTP (plus an interactive WebSocket endpoint when self-hosted). Language runtimes are installed as packages. Wrappers exist for Node, Python and Java. **Since 15 Feb 2026 the public emkc.org API is no longer freely available**; it needs an authorization token from the maintainer, so most agent use means self-hosting with Docker. Self-hosting defaults (api/src/config.js and docs/configuration.md): the API binds to 0.0.0.0:2000, compile and run memory limits are -1 (unlimited), and max processes per job is 64 (the readme still says 256). The API has no authentication, including the POST and DELETE /api/v2/packages endpoints that install and remove runtimes, so do not expose it publicly.",
   "url": "https://github.com/engineer-man/piston",
   "repo": "https://github.com/engineer-man/piston",
   "tags": [
@@ -26,10 +26,13 @@
   ],
   "sources": [
     "https://github.com/engineer-man/piston",
-    "https://github.com/engineer-man/piston#public-api"
+    "https://github.com/engineer-man/piston#public-api",
+    "https://github.com/engineer-man/piston/blob/master/api/src/config.js",
+    "https://github.com/engineer-man/piston/blob/master/docs/configuration.md"
   ],
-  "maintainer": "Engineer Man",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "Engineer Man"
 }

@@ -3,7 +3,7 @@
   "name": "Judge0",
   "category": "infrastructure",
   "summary": "Open-source sandboxed code execution system for 90+ languages; self-host or use Judge0 Cloud (via Rapid or direct).",
-  "description": "Judge0 is a robust, scalable online code execution system used to run untrusted and AI-generated code in sandboxes. It supports 90+ languages, compile and runtime limits, additional files alongside a program, and webhooks, behind a REST API. Two flavors: Judge0 CE and Judge0 Extra CE (different language sets). Self-host with Docker, or use the managed Judge0 Cloud through Rapid (RapidAPI) or directly. Licensed GPL-3.0; last tagged release v1.13.1 (Apr 2024), repo still active.",
+  "description": "Judge0 is a robust, scalable online code execution system used to run untrusted and AI-generated code in sandboxes. It supports 90+ languages, compile and runtime limits, additional files alongside a program, and webhooks, behind a REST API. Two flavors: Judge0 CE and Judge0 Extra CE (different language sets). Self-host with Docker, or use the managed Judge0 Cloud through Rapid (RapidAPI) or directly. Licensed GPL-3.0; last tagged release v1.13.1 (Apr 2024), repo still active. Judge0's sandbox (Isolate) needs cgroup v1: the v1.13 install notes say to add `systemd.unified_cgroup_hierarchy=0` to GRUB, and cgroup v2 support is still an open issue. In judge0.conf, telemetry is on by default (JUDGE0_TELEMETRY_ENABLE, see TELEMETRY.md) and ALLOW_ENABLE_NETWORK defaults to true, so submissions can request network access, although ENABLE_NETWORK defaults to false.",
   "url": "https://judge0.com/",
   "repo": "https://github.com/judge0/judge0",
   "docs": "https://ce.judge0.com/",
@@ -29,10 +29,14 @@
   "sources": [
     "https://github.com/judge0/judge0",
     "https://judge0.com/",
-    "https://rapidapi.com/judge0-official/api/judge0-ce"
+    "https://rapidapi.com/judge0-official/api/judge0-ce",
+    "https://github.com/judge0/judge0/blob/master/CHANGELOG.md",
+    "https://github.com/judge0/judge0/blob/master/judge0.conf",
+    "https://github.com/judge0/judge0/issues/543"
   ],
-  "maintainer": "Judge0 (Herman Zvonimir Došilović)",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "Judge0 (Herman Zvonimir Došilović)"
 }

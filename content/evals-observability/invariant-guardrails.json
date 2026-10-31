@@ -1,0 +1,33 @@
+{
+  "id": "invariant-guardrails",
+  "name": "Invariant Guardrails",
+  "category": "evals-observability",
+  "summary": "Rule-based guardrails that sit between an agent and its MCP servers or LLM provider, checking and blocking tool calls and messages.",
+  "description": "Rules use a Python-like matching language that can follow flows between tool calls, e.g. block sending email to an unknown address after reading the inbox. It runs as an MCP or LLM proxy. From Invariant Labs (now part of Snyk), whose docs now sit under mcp-scan. Apache-2.0. Last PyPI release `invariant-ai` 0.3.5 (Jul 2025); last commit Jan 2026.",
+  "url": "https://github.com/invariantlabs-ai/invariant",
+  "repo": "https://github.com/invariantlabs-ai/invariant",
+  "docs": "https://invariantlabs-ai.github.io/docs/mcp-scan/guardrails-reference/",
+  "tags": [
+    "guardrails",
+    "security",
+    "mcp",
+    "policy",
+    "proxy"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "related": [
+    "snyk-agent-scan"
+  ],
+  "sources": [
+    "https://github.com/invariantlabs-ai/invariant",
+    "https://invariantlabs.ai",
+    "https://invariantlabs-ai.github.io/docs/mcp-scan/guardrails-reference/",
+    "https://pypi.org/project/invariant-ai/"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Invariant Labs"
+}

@@ -6,7 +6,7 @@
   "description": "Evals provides a framework for writing and running evaluations of LLMs or systems built on them, plus an open registry of existing evals stored with Git LFS. You can write custom evals (including private ones on your own data) in Python 3.9+. Runs need an OpenAI API key. OpenAI now also offers hosted evals in the OpenAI Dashboard; the open-source repo's last commit was in April 2026.",
   "url": "https://github.com/openai/evals",
   "repo": "https://github.com/openai/evals",
-  "docs": "https://platform.openai.com/docs/guides/evals",
+  "docs": "https://developers.openai.com/api/docs/guides/evals",
   "tags": [
     "evals",
     "benchmarks",
@@ -30,8 +30,9 @@
     "https://github.com/openai/evals",
     "https://github.com/openai/evals/blob/main/LICENSE.md"
   ],
-  "maintainer": "OpenAI",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "OpenAI"
 }

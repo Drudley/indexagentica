@@ -3,7 +3,7 @@
   "name": "MemOS",
   "category": "tools",
   "summary": "Open-source memory operating system for LLMs and agents with a unified API for adding, retrieving, editing and deleting graph-structured, multi-modal memory.",
-  "description": "Offered self-hosted and as MemOS Cloud, with local and cloud memory plugins for agents such as OpenClaw and Hermes Agent.",
+  "description": "Offered self-hosted and as MemOS Cloud, with local and cloud memory plugins for agents such as OpenClaw and Hermes Agent. The Python package is published on PyPI as `MemoryOS` (2.0.33 as of Sep 2026; GitHub is at v2.0.34), which is unrelated to BAI-LAB's MemoryOS.",
   "url": "https://memos.openmem.net",
   "repo": "https://github.com/MemTensor/MemOS",
   "docs": "https://memos-docs.openmem.net",
@@ -19,15 +19,17 @@
   "related": [
     "mem0",
     "letta",
-    "zep"
+    "zep",
+    "memoryos"
   ],
   "sources": [
     "https://github.com/MemTensor/MemOS",
-    "https://memos.openmem.net"
+    "https://memos.openmem.net",
+    "https://pypi.org/project/MemoryOS/"
   ],
   "added": "2026-10-17",
-  "updated": "2026-10-17",
-  "last_verified": "2026-10-17",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
   "submitted_by": "agentica-curator",
   "maintainer": "MemTensor"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "deepseek-harness",
+  "name": "DeepSeek Harness",
+  "category": "harnesses",
+  "summary": "DeepSeek's open-source, plugin-based agent harness (dsh) with a local Web UI, a Python SDK and support for DeepSeek and third-party models.",
+  "description": "Built on an \"everything is a plugin\" architecture using the Cordis framework. Run `npx @deepseek-ai/dsh web` to start the Web UI at http://127.0.0.1:3080, or build from source with pnpm. Models are configured in the UI: DeepSeek via an API key, plus shipped third-party providers (e.g. anthropic, openai, moonshotai, zai) or any custom model API. Includes a Python SDK (`pip install deepseek-harness-sdk`), an MCP client package with reference memory-MCP configs, and plugin markets; plugins are tagged `dsh-plugin` on GitHub. MIT licensed. It is a developer preview with breaking changes expected; the project's SAFETY.md says it has not been security-audited and should run with least privilege, ideally in a disposable VM or container. The npm package is at 0.2.1-rc.5 (Oct 2026).",
+  "url": "https://github.com/deepseek-ai/deepseek-harness",
+  "repo": "https://github.com/deepseek-ai/deepseek-harness",
+  "docs": "https://deepseek-harness.github.io/deepseek-harness/",
+  "tags": [
+    "coding-agents",
+    "plugins",
+    "web-ui",
+    "python-sdk",
+    "deepseek"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "llms_txt": "https://deepseek-harness.github.io/deepseek-harness/llms.txt",
+    "auth": "api-key",
+    "notes": "Needs a model provider API key (DeepSeek or another provider) entered in Settings → Models."
+  },
+  "related": [
+    "claude-code",
+    "codex-cli",
+    "opencode"
+  ],
+  "sources": [
+    "https://github.com/deepseek-ai/deepseek-harness",
+    "https://deepseek-harness.github.io/deepseek-harness/",
+    "https://www.npmjs.com/package/@deepseek-ai/dsh",
+    "https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md",
+    "https://deepseek-harness.github.io/deepseek-harness/en/guide/providers.md",
+    "https://deepseek-harness.github.io/deepseek-harness/en/guide/python-sdk.md"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "DeepSeek"
+}

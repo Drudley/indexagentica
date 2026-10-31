@@ -1,0 +1,36 @@
+{
+  "id": "bevy-brp-mcp",
+  "name": "bevy_brp_mcp",
+  "category": "mcp-servers",
+  "summary": "Community MCP server that lets coding agents launch, inspect and change running Bevy apps over the Bevy Remote Protocol.",
+  "description": "Tools cover entities, components, resources, queries, hierarchy and a type guide for BRP's JSON formats, plus finding, building and launching apps and examples, watching components and reading logs. The optional `bevy_brp_extras` plugin adds screenshots, keyboard, mouse, gamepad and trackpad input, and diagnostics. Install with `cargo install bevy_brp_mcp` and add it as a stdio server. Version 0.23.0 targets Bevy 0.20. MIT OR Apache-2.0 per the crate. Not an official Bevy project.",
+  "url": "https://github.com/natepiano/bevy_brp/tree/main/mcp",
+  "repo": "https://github.com/natepiano/bevy_brp",
+  "tags": [
+    "bevy",
+    "game-engine",
+    "rust",
+    "gamedev"
+  ],
+  "license": "MIT OR Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "stdio: command bevy_brp_mcp. The Bevy app must enable BRP (bevy_remote)."
+  },
+  "related": [
+    "bevy",
+    "godot-ai"
+  ],
+  "sources": [
+    "https://github.com/natepiano/bevy_brp",
+    "https://github.com/natepiano/bevy_brp/blob/main/mcp/README.md",
+    "https://crates.io/crates/bevy_brp_mcp"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "natepiano"
+}

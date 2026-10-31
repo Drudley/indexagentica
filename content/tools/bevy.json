@@ -1,0 +1,34 @@
+{
+  "id": "bevy",
+  "name": "Bevy",
+  "category": "tools",
+  "summary": "Free, open-source, data-driven game engine in Rust built on an entity component system (ECS).",
+  "description": "Games are plain Rust code using Bevy's ECS, with 2D and 3D rendering. Agents can inspect and change a running app through the Bevy Remote Protocol (BRP, the `bevy_remote` crate), which is what community MCP servers such as bevy_brp_mcp use. Dual-licensed MIT OR Apache-2.0. Latest release v0.20.1 (Oct 2026).",
+  "url": "https://bevy.org",
+  "repo": "https://github.com/bevyengine/bevy",
+  "docs": "https://bevy.org/learn/",
+  "tags": [
+    "game-engine",
+    "rust",
+    "ecs",
+    "gamedev"
+  ],
+  "license": "MIT OR Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "godot-engine",
+    "bevy-brp-mcp"
+  ],
+  "sources": [
+    "https://bevy.org",
+    "https://github.com/bevyengine/bevy",
+    "https://docs.rs/bevy_remote",
+    "https://bevy.org/foundation/"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Bevy Foundation"
+}

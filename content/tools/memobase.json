@@ -1,0 +1,38 @@
+{
+  "id": "memobase",
+  "name": "Memobase",
+  "category": "tools",
+  "summary": "Open-source long-term memory for LLM apps that builds a structured profile and event timeline per user.",
+  "description": "Chats are buffered per user and batch-processed into profile fields and events, so apps can pull a user's key memories quickly instead of running a search. The server uses FastAPI, Postgres and Redis and runs in Docker; Memobase Cloud has a free tier. Python SDK `pip install memobase`, and the repo includes an MCP server (src/mcp). Apache-2.0. Last commit January 2026.",
+  "url": "https://github.com/memodb-io/memobase",
+  "repo": "https://github.com/memodb-io/memobase",
+  "docs": "https://docs.memobase.io/introduction",
+  "tags": [
+    "memory",
+    "user-profiles",
+    "personalization",
+    "python",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Needs a project URL and token (local default http://localhost:8019, or Memobase Cloud)."
+  },
+  "related": [
+    "mem0",
+    "zep",
+    "letta"
+  ],
+  "sources": [
+    "https://github.com/memodb-io/memobase",
+    "https://docs.memobase.io/introduction",
+    "https://pypi.org/project/memobase/"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MemoDB"
+}

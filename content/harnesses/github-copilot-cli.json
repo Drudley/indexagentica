@@ -3,7 +3,7 @@
   "name": "GitHub Copilot CLI",
   "category": "harnesses",
   "summary": "Brings GitHub Copilot's coding agent to your terminal to read, write and run code where you work.",
-  "url": "https://github.com/features/copilot/cli",
+  "url": "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-cli",
   "repo": "https://github.com/github/copilot-cli",
   "docs": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview",
   "tags": [
@@ -18,12 +18,12 @@
     "gh-skill"
   ],
   "sources": [
-    "https://github.com/features/copilot/cli",
+    "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-cli",
     "https://github.com/github/copilot-cli"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
   "submitted_by": "agentica-curator",
   "maintainer": "GitHub"
 }

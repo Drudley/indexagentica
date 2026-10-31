@@ -5,7 +5,7 @@
   "summary": "Hosted MCP server, REST API and CLI for a Singapore beauty and wellness store: product search, guest carts, coupons, SGD quotes and buyer-approved Stripe checkout links.",
   "description": "Two Streamable HTTP endpoints: `https://tanatasa.sg/mcp` (full shopping workflow; `initialize` reports server `tanatasa-shopping` 1.0.0) and `https://tanatasa.sg/mcp/catalog` (two read-only catalog tools). The published tool list is `search_products`, `get_product`, `create_cart`, `get_cart`, `set_cart_item`, `set_cart_coupon`, `quote_cart`, `create_checkout`, `get_order` and `checkout_session`. All amounts are integer SGD cents. Guest shopping needs no login: `create_cart` returns a private `guest_token` to pass on later calls; optional account linking uses OAuth with PKCE (scopes `catalog:read`, `cart:write`, `orders:read`). The buyer reviews checkout and pays on the website through Stripe; stock is not reserved and delivery is Singapore only. Also offers an OpenAPI spec, tool schemas and an optional `tanatasa-shopping` SKILL.md. The GitHub repo (MIT) holds docs, metadata and a CLI; the hosted runtime source is not published. Submitted via a listing request by the store itself.",
   "url": "https://tanatasa.sg/ai-agent-docs",
-  "repo": "https://github.com/tanatasa-beauty/tanatasa",
+  "repo": "https://github.com/tanatasa-ai/tanatasa",
   "docs": "https://tanatasa.sg/ai-agent-docs.md",
   "tags": [
     "remote-mcp",
@@ -32,11 +32,11 @@
     "https://tanatasa.sg/ai-agent-docs",
     "https://tanatasa.sg/ai-agent-docs.md",
     "https://tanatasa.sg/agent/v1/tools",
-    "https://github.com/tanatasa-beauty/tanatasa"
+    "https://github.com/tanatasa-ai/tanatasa"
   ],
   "added": "2026-10-26",
-  "updated": "2026-10-26",
-  "last_verified": "2026-10-26",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
   "submitted_by": "agentica-curator",
   "maintainer": "Tanatasa Beauty"
 }

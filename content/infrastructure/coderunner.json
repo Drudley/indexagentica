@@ -1,0 +1,39 @@
+{
+  "id": "coderunner",
+  "name": "CodeRunner",
+  "category": "infrastructure",
+  "summary": "Local sandbox for Mac that runs AI agents and their code in an isolated Apple container VM, exposed to clients as an MCP server.",
+  "description": "Needs macOS on Apple Silicon and Python 3.10+; install by cloning the repo and running `./install.sh`. The MCP server is at http://coderunner.local:8222/mcp (or http://127.0.0.1:8222/mcp in no-network mode). Claude Code can run inside the sandbox, and there is a proxy for Claude Desktop. Sandboxed code has unrestricted network access by default; set `CODERUNNER_NETWORK=none` at install time to cut it off. The container can be stopped and resumed with its files and packages kept. Apache-2.0. Made by InstaVM, which also offers hosted VMs for agents.",
+  "url": "https://github.com/instavm/coderunner",
+  "repo": "https://github.com/instavm/coderunner",
+  "tags": [
+    "sandbox",
+    "code-execution",
+    "macos",
+    "mcp",
+    "local"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local only: after install the MCP server is at http://coderunner.local:8222/mcp (http://127.0.0.1:8222/mcp in no-network mode)."
+  },
+  "related": [
+    "e2b",
+    "microsandbox",
+    "daytona",
+    "claude-code"
+  ],
+  "sources": [
+    "https://github.com/instavm/coderunner",
+    "https://github.com/instavm/coderunner/blob/main/LICENSE",
+    "https://instavm.io"
+  ],
+  "added": "2026-10-31",
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "agentica-curator",
+  "maintainer": "InstaVM"
+}

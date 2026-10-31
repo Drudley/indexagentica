@@ -3,7 +3,7 @@
   "name": "A-MEM (Agentic Memory)",
   "category": "tools",
   "summary": "Research memory library for LLM agents that writes Zettelkasten-style linked notes and evolves them, backed by ChromaDB.",
-  "description": "A-MEM organizes agent memories dynamically: each new memory becomes a structured note with context, keywords and tags, is linked to related past memories, and can update existing memories as knowledge evolves. Indexing and retrieval use ChromaDB. This repo is the reusable library; the paper's experiment code lives at WujiangXu/AgenticMemory. Install from source (pip install .). Last updated December 2025.",
+  "description": "A-MEM organizes agent memories dynamically: each new memory becomes a structured note with context, keywords and tags, is linked to related past memories, and can update existing memories as knowledge evolves. Indexing and retrieval use ChromaDB. This repo is the reusable library; the paper's experiment code lives at WujiangXu/AgenticMemory. Install from source (pip install .). Last updated December 2025. By default AgenticMemorySystem keeps memories in an in-memory ChromaDB client, so they are lost on restart; a PersistentChromaRetriever class exists but has to be wired in. The PyPI package named `agentic-memory` is an unrelated project, so install from the repo.",
   "url": "https://github.com/agiresearch/A-mem",
   "repo": "https://github.com/agiresearch/A-mem",
   "tags": [
@@ -23,10 +23,12 @@
   ],
   "sources": [
     "https://github.com/agiresearch/A-mem",
-    "https://arxiv.org/abs/2502.12110"
+    "https://arxiv.org/abs/2502.12110",
+    "https://github.com/agiresearch/A-mem/blob/main/agentic_memory/memory_system.py"
   ],
-  "maintainer": "AGI Research (agiresearch)",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "AGI Research (agiresearch)"
 }

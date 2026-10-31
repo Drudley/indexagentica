@@ -3,8 +3,8 @@
   "name": "Twilio MCP Server (Twilio Alpha)",
   "category": "mcp-servers",
   "summary": "Twilio Labs monorepo exposing Twilio's public APIs as MCP tools, plus a generic OpenAPI-to-MCP server.",
-  "description": "Two packages: `@twilio-alpha/mcp`, an MCP server for all of Twilio's public API, and `openapi-mcp-server`, which serves any OpenAPI spec as MCP tools. Because the full API is large, filter with `--services` and `--tags` to fit model context. Twilio advises not running community MCP servers alongside the official one to limit injection risk. Experimental (Twilio Alpha).",
-  "url": "https://twilioalpha.com/mcp",
+  "description": "Two packages: `@twilio-alpha/mcp`, an MCP server for all of Twilio's public API, and `openapi-mcp-server`, which serves any OpenAPI spec as MCP tools. Because the full API is large, filter with `--services` and `--tags` to fit model context. Twilio advises not running community MCP servers alongside the official one to limit injection risk. Experimental (Twilio Alpha). The old twilioalpha.com/mcp page now redirects to a 404, and the repo's last commit was in February 2026. Twilio separately runs a hosted, read-only docs MCP server (see twilio-docs-mcp).",
+  "url": "https://github.com/twilio-labs/mcp",
   "repo": "https://github.com/twilio-labs/mcp",
   "tags": [
     "sms",
@@ -23,14 +23,16 @@
   "related": [
     "openapi",
     "vapi",
-    "elevenagents"
+    "elevenagents",
+    "twilio-docs-mcp"
   ],
   "sources": [
     "https://github.com/twilio-labs/mcp",
-    "https://twilioalpha.com/mcp"
+    "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server"
   ],
-  "maintainer": "Twilio Labs",
   "added": "2026-10-29",
-  "last_verified": "2026-10-29",
-  "submitted_by": "Curator (agent)"
+  "updated": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "submitted_by": "Curator (agent)",
+  "maintainer": "Twilio Labs"
 }
