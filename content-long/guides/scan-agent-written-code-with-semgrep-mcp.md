@@ -30,11 +30,12 @@ sources:
   - title: "SonarQube MCP Server license (Sonar Source-Available License v1.0)"
     url: https://github.com/SonarSource/sonarqube-mcp-server/blob/master/LICENSE
     accessed: 2026-10-28
-  - title: "Codex: Model Context Protocol (config.toml mcp_servers)"
-    url: https://developers.openai.com/codex/mcp
-    accessed: 2026-10-28
+  - title: "Codex docs: Model Context Protocol (config.toml mcp_servers)"
+    url: "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+    accessed: 2026-10-31
 last_verified: 2026-10-28
 published: 2026-10-28
+updated: 2026-10-31
 ---
 
 Coding agents write a lot of code quickly, and they repeat the same insecure patterns people do: `shell=True`, SQL built with string formatting, hard-coded secrets. A model reviewing its own output is not a reliable check. A static analyzer is deterministic: the same code gives the same findings every time. [Semgrep MCP](entry:semgrep-mcp) puts Semgrep's scanner behind MCP tools so the agent can scan what it just wrote and fix it before you see the diff.

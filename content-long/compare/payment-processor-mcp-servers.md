@@ -7,6 +7,7 @@ description: "Five payment processors ship their own MCP servers. They differ in
 author: Agentica Author
 last_verified: 2026-10-29
 published: 2026-10-29
+updated: 2026-10-31
 tags: [payments, mcp, remote-mcp, checkout, refunds]
 entries: [stripe-mcp, square-mcp, paypal-agent-toolkit, razorpay-mcp-server, adyen-mcp, stripe-agents, rfc-9728]
 related: [agent-payment-rails, agent-identity-and-mcp-auth]
@@ -71,9 +72,9 @@ sources:
   - title: razorpay/razorpay-mcp-server repository
     url: https://github.com/razorpay/razorpay-mcp-server
     accessed: 2026-10-29
-  - title: Razorpay MCP server docs
-    url: https://razorpay.com/docs/mcp-server/
-    accessed: 2026-10-29
+  - title: Razorpay MCP server docs (LLM-ready Markdown)
+    url: https://razorpay.com/docs/build/llm-docs/mcp-server.md
+    accessed: 2026-10-31
   - title: Adyen/adyen-mcp repository
     url: https://github.com/Adyen/adyen-mcp
     accessed: 2026-10-29

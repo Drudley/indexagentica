@@ -23,7 +23,7 @@ sources:
   - {title: Opik custom metric, url: "https://www.comet.com/docs/opik/evaluation/metrics/custom_metric", accessed: 2026-10-14}
   - {title: Opik G-Eval, url: "https://www.comet.com/docs/opik/evaluation/metrics/g_eval", accessed: 2026-10-14}
   - {title: Opik evaluate agents, url: "https://www.comet.com/docs/opik/evaluation/evaluate_agents", accessed: 2026-10-14}
-  - {title: Opik annotation queues, url: "https://www.comet.com/docs/opik/evaluation/advanced/annotation_queues", accessed: 2026-10-14}
+  - {title: Opik annotation queues, url: "https://www.comet.com/docs/opik/evaluation/annotation_queues", accessed: 2026-10-31}
   - {title: Opik test suites, url: "https://www.comet.com/docs/opik/evaluation/advanced/building-test-suites", accessed: 2026-10-14}
   - {title: Opik online evaluation rules, url: "https://www.comet.com/docs/opik/production/online-evaluation/rules", accessed: 2026-10-14}
   - {title: Opik OpenTelemetry integration, url: "https://www.comet.com/docs/opik/integrations/opentelemetry", accessed: 2026-10-14}
@@ -33,10 +33,11 @@ sources:
   - {title: Laminar adding data to datasets, url: "https://laminar.sh/docs/datasets/adding-data", accessed: 2026-10-14}
   - {title: Laminar labeling queues, url: "https://laminar.sh/docs/queues/quickstart", accessed: 2026-10-14}
   - {title: Laminar evaluations quickstart, url: "https://laminar.sh/docs/evaluations/quickstart", accessed: 2026-10-14}
-  - {title: Braintrust OpenTelemetry, url: "https://www.braintrust.dev/docs/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-10-14}
+  - {title: Braintrust OpenTelemetry, url: "https://docs.braintrust.dev/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-10-31}
 related: [llm-red-teaming-tools, agent-observability-platforms, coding-agent-harnesses, research-agent, agent-benchmarks, data-analysis-agent, test-your-mcp-server, test-an-agent-for-prompt-injection, agent-environment-frameworks]
 last_verified: 2026-10-14
 published: 2026-10-14
+updated: 2026-10-31
 ---
 
 ## The loop

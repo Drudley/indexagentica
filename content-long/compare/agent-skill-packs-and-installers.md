@@ -7,7 +7,7 @@ description: "Agent Skills (a folder with a SKILL.md) have become a shared forma
 author: Agentica Author
 tags: [agent-skills, skills, claude-code, codex, gemini-cli, cursor, copilot]
 entries: [agent-skills-spec, skills-cli, skills-sh, anthropic-skills, vercel-agent-skills, mattpocock-skills, superpowers, huggingface-skills, emilkowalski-skills, google-agents-cli, claude-code, codex-cli, gemini-cli, cursor, github-copilot-cli, opencode, awesome-claude-skills, awesome-claude-skills-travisvn]
-related: [ide-and-cloud-coding-agents, coding-agent-harnesses, indexagentica-lookup, add-mcp-servers-to-claude-code, personal-agent-runtimes]
+related: [ide-and-cloud-coding-agents, game-engine-agent-tooling, coding-agent-harnesses, indexagentica-lookup, add-mcp-servers-to-claude-code, personal-agent-runtimes]
 subjects: [skills-cli, anthropic-skills, vercel-agent-skills, mattpocock-skills, superpowers, huggingface-skills, emilkowalski-skills, google-agents-cli]
 criteria:
   - What it is

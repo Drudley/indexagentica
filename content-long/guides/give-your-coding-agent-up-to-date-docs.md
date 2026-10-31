@@ -11,10 +11,11 @@ prerequisites:
   - "A coding agent that supports remote (Streamable HTTP) MCP servers, such as Claude Code, Codex CLI or Cursor"
   - "Internet access; none of the four hosted servers needs an account (Context7 accepts an optional API key)"
 tags: [mcp, documentation, coding-agents, remote-mcp, context, hallucinations]
-entries: [context7, gitmcp, deepwiki-mcp, microsoft-learn-mcp, grounded-docs-mcp-server, seekstorm-mcp-server, llms-txt, claude-code, codex-cli, cursor, agents-md, model-context-protocol]
+entries: [context7, gitmcp, deepwiki-mcp, microsoft-learn-mcp, twilio-docs-mcp, grounded-docs-mcp-server, seekstorm-mcp-server, llms-txt, claude-code, codex-cli, cursor, agents-md, model-context-protocol]
 related: [connect-an-agent-to-a-remote-mcp-server, add-mcp-servers-to-claude-code, pick-an-mcp-server, test-an-agent-for-prompt-injection, coding-agent-harnesses, voice-agent-platforms]
 sources:
   - {title: Context7, url: "https://context7.com", accessed: 2026-10-23}
+  - {title: "Twilio docs: Twilio MCP server (docs search)", url: "https://www.twilio.com/docs/ai/mcp", accessed: 2026-10-31}
   - {title: GitMCP README, url: "https://github.com/idosal/git-mcp", accessed: 2026-10-23}
   - {title: "DeepWiki MCP (Devin docs)", url: "https://docs.devin.ai/work-with-devin/deepwiki-mcp", accessed: 2026-10-23}
   - {title: Microsoft Learn MCP Server, url: "https://learn.microsoft.com/en-us/training/support/mcp", accessed: 2026-10-23}
@@ -25,6 +26,7 @@ sources:
   - {title: The /llms.txt file proposal, url: "https://llmstxt.org/", accessed: 2026-10-23}
 last_verified: 2026-10-23
 published: 2026-10-23
+updated: 2026-10-31
 ---
 
 Models learn libraries at training time. When a library ships a breaking change afterwards, a coding agent writes code for the old API, and it does so confidently. The fix is to let the agent read current documentation while it works. Several free remote MCP servers do exactly that, and connecting one takes a single command.
@@ -43,6 +45,8 @@ They differ in where the text comes from:
 - **Context7** serves an indexed library catalog, and one library can have several IDs. For Pipecat, `resolve-library-id` returned `/pipecat-ai/docs` (20,214 snippets), `/pipecat-ai/pipecat` (1,721) and an llms.txt-based ID. Let the agent pick the ID that matches the question.
 - **GitMCP** reads the repository itself. It prefers the project's [llms.txt](entry:llms-txt), then falls back to `README.md` and other pages, and its code search uses the GitHub search API (exact match). A per-repo URL keeps the agent on one project. The generic `/docs` URL lets the agent choose the repo for each request, which is more flexible but easier to point at the wrong repo.
 - **DeepWiki** answers from an AI-generated wiki of the repo. `ask_wiki_question` returns a written answer, and in our test it explained Pipecat's `MCPClient.tools()` flow with a code sample. Treat that answer as a summary and check it against the source.
+
+Some vendors now run the same kind of server for their own docs. [Twilio's docs MCP server](entry:twilio-docs-mcp) at `https://mcp.twilio.com/docs` is in Public Beta and needs no authentication. On 2026-10-31 it returned two tools, `twilio__search` and `twilio__retrieve`, covering Twilio, SendGrid and Segment docs and Twilio's public API operations. It only reads documentation; it cannot call Twilio's APIs.
 
 ## Connect them
 

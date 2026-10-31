@@ -50,9 +50,13 @@ sources:
   - title: Isolate (ioi/isolate)
     url: https://github.com/ioi/isolate
     accessed: 2026-10-30
+  - title: judge0/compilers Dockerfile (Isolate built from judge0/isolate at a pinned commit)
+    url: https://github.com/judge0/compilers/blob/master/Dockerfile
+    accessed: 2026-10-31
 related: [run-untrusted-code-in-a-sandbox, code-sandboxes, self-hosted-agent-sandboxes, coding-agent-starter]
 last_verified: 2026-10-30
 published: 2026-10-30
+updated: 2026-10-31
 ---
 
 ## When an execute API is the right tool
@@ -103,7 +107,7 @@ On a cgroup v2 host, Piston runs as documented and Judge0 v1.13.1 needs a kernel
 
 ## Run Piston
 
-Start the API, bound to localhost only. The README's command publishes port 2000 on every interface; do not do that on a machine with a public address, because the API has no authentication.
+Start the API, bound to localhost only. Piston's API listens on `0.0.0.0:2000` by default (`PISTON_BIND_ADDRESS` in `api/src/config.js` and the configuration docs), and the README's command publishes port 2000 on every interface. Do not do that on a machine with a public address, because the API has no authentication. In Docker, restrict the published port as below; the configuration docs say changing the bind address inside the container serves no purpose. If you run the API outside a container, set `PISTON_BIND_ADDRESS=127.0.0.1:2000`.
 
 ```bash
 mkdir -p piston-data
@@ -313,7 +317,7 @@ $ isolate --cg -b 99 --init
 Failed to create control group /sys/fs/cgroup/memory/box-99/: No such file or directory
 ```
 
-Isolate 1.8.1, bundled in the v1.13.1 image, expects the cgroup v1 memory controller at `/sys/fs/cgroup/memory`. On a cgroup v2 host that path does not exist, so the sandbox is never created. This is what the release notes' GRUB step is for. If you cannot change the host's boot parameters (most managed Kubernetes nodes and many cloud images), use Piston or a different sandbox, or give Judge0 a VM you control.
+The v1.13.1 image is built on `judge0/compilers:1.4.0`, which compiles Isolate from Judge0's own fork (`judge0/isolate`) pinned to commit `ad39cc4` from December 2020, not from an upstream Isolate release. That commit's Makefile sets `VERSION=1.8.1`, which is why the binary reports 1.8.1. This build expects the cgroup v1 memory controller at `/sys/fs/cgroup/memory`. On a cgroup v2 host that path does not exist, so the sandbox is never created. This is what the release notes' GRUB step is for. If you cannot change the host's boot parameters (most managed Kubernetes nodes and many cloud images), use Piston or a different sandbox, or give Judge0 a VM you control.
 
 (Unrelated to Judge0: on our host the Compose network's DNS and container-to-container traffic did not work, so to get this far we put all four services in one network namespace. Do not copy that workaround. It puts PostgreSQL and Redis on the same localhost as the workers, which is exactly what a sandboxed program with networking enabled must not reach.)
 

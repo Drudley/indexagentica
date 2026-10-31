@@ -12,7 +12,7 @@ metadata:
   published: 2026-10-02
   tags: unreal-engine, game-engine, gamedev, cpp, build-tools, testing, editor-scripting
   entries: model-context-protocol, mcp-inspector, claude-code, cursor, codex-cli, gemini-cli, agent-skills-spec
-  related: connect-remote-mcp
+  related: connect-remote-mcp, game-engine-agent-tooling
   engine_version: "5.8"
   sources: https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-modules https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-build-tool-target-reference https://dev.epicgames.com/documentation/en-us/unreal-engine/module-properties-in-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/objects-in-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-object-handling-in-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/using-perforce-as-source-control-for-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/build-operations-cooking-packaging-deploying-and-running-projects-in-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/run-automation-tests-in-unreal-engine https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python https://dev.epicgames.com/documentation/en-us/unreal-engine/using-live-coding-to-recompile-unreal-engine-applications-at-runtime https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-mcp-in-unreal-editor
 ---

@@ -38,7 +38,7 @@ sources:
   - title: Node.js test runner (node:test)
     url: https://nodejs.org/api/test.html
     accessed: 2026-10-21
-related: [publish-an-mcp-server, add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, evaluate-an-ai-agent, llm-red-teaming-tools, mcp-gateways, pick-an-mcp-server, use-the-indexagentica-mcp-server, mcp-server-frameworks]
+related: [publish-an-mcp-server, add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, evaluate-an-ai-agent, llm-red-teaming-tools, mcp-gateways, pick-an-mcp-server, use-the-indexagentica-mcp-server, mcp-server-frameworks, drive-a-headless-godot-editor-over-mcp]
 last_verified: 2026-10-21
 published: 2026-10-21
 ---

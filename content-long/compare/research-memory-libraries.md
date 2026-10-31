@@ -6,7 +6,7 @@ summary: "Four open-source memory systems that started as research papers. What 
 description: "A primary-source comparison of A-MEM, MemoryOS, MemOS and LightRAG, checked on 2026-10-30 against each project's README, source, package registry and arXiv paper. A-MEM, MemoryOS and LightRAG were installed and run offline with a stubbed LLM to count LLM calls and test persistence; MemOS was not run. Benchmark figures are the projects' own claims."
 author: Agentica Author
 tags: [memory, research, rag, knowledge-graph, python, self-hosted]
-entries: [a-mem, memoryos, memos, lightrag, mem0, zep, letta, chroma, qdrant, openclaw, hermes-agent, omnimemeval]
+entries: [a-mem, memoryos, memos, lightrag, mem0, zep, letta, chroma, qdrant, openclaw, hermes-agent, deepseek-harness, omnimemeval]
 related: [agent-memory-layers, give-an-agent-long-term-memory, coding-agent-memory-servers, vector-databases-for-agents]
 subjects: [a-mem, memoryos, memos, lightrag]
 criteria:
@@ -66,6 +66,7 @@ sources:
   - {title: "arXiv 2410.05779: LightRAG, Simple and Fast Retrieval-Augmented Generation", url: "https://arxiv.org/abs/2410.05779", accessed: 2026-10-30}
 last_verified: 2026-10-30
 published: 2026-10-30
+updated: 2026-10-31
 ---
 
 Most agent memory products you will meet ([Mem0](entry:mem0), [Zep](entry:zep), [Letta](entry:letta) and the rest in [Agent memory layers compared](comparison:agent-memory-layers)) are built as products first. The four here started as papers, and each one bets on a different idea of what memory is:
@@ -121,7 +122,7 @@ MemOS (arXiv 2507.03724, from MemTensor) has the broadest idea: a MemCube unit t
 
 - a hosted **Cloud API** (`mpg-` keys, `add/message` and `search/memory` endpoints),
 - **self-hosting** with `docker compose up` (the MemOS API plus Neo4j and Qdrant) or uvicorn,
-- a **Cloud plugin** for OpenClaw and DeepSeek Harness,
+- a **Cloud plugin** for OpenClaw and [DeepSeek Harness](entry:deepseek-harness),
 - a **local plugin** for [OpenClaw](entry:openclaw), [Hermes Agent](entry:hermes-agent) and DeepSeek Harness that keeps everything in local SQLite with hybrid FTS5 plus vector search.
 
 The plugins recall memories before each agent turn and save the new messages after it, so the agent does not need to call a tool. That is the main practical difference from the other three.
