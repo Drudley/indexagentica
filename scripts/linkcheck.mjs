@@ -7,6 +7,7 @@
 //   - timeout per request, one retry for timeouts / network errors / 5xx / 429
 //   - global + per-host concurrency limits, browser-like User-Agent (honestly suffixed)
 //   - 401/403/429/999 and bot challenges => "unverified" (not counted as broken)
+//   - npmjs.com package pages (403 to bots) are confirmed via registry.npmjs.org: 200 => ok, 404 => broken
 //   - entries whose last_verified (else updated, else added) is older than STALE_DAYS => "stale";
 //     long-form items: last_verified, else updated, else published
 // Usage: node scripts/linkcheck.mjs [--out dir] [--only id,id] [--limit N] [--no-longform]
@@ -123,7 +124,26 @@ async function check(url, isMcp) {
   if (r.error || r.status >= 400) r = await attempt(url, 'GET'); // many servers mishandle HEAD
   if (transient(r)) { await sleep(3000); r = await attempt(url, 'GET'); }
   if (isMcp && !r.error && r.status >= 400) { const p = await mcpPost(url); if (p) r = p; } // Streamable HTTP servers may 404 a plain GET
+  if (!r.error && r.status === 403) { const n = await npmRegistryCheck(url); if (n) return n; }
   return classify(url, r, isMcp);
+}
+
+// www.npmjs.com answers automated clients with a 403 bot challenge, so package pages can't be checked
+// directly. For /package/<name> URLs, ask the public registry instead: 200 => ok, 404 => broken;
+// anything else falls back to the normal classification (unverified).
+const NPM_PKG_RE = /^\/package\/((?:@[^/]+\/)?[^/@]+)(?:\/v\/[^/]+)?\/?$/;
+async function npmRegistryCheck(url) {
+  let m;
+  try { const u = new URL(url); if (!/^(www\.)?npmjs\.com$/i.test(u.hostname)) return null; m = u.pathname.match(NPM_PKG_RE); } catch { return null; }
+  if (!m) return null;
+  const name = decodeURIComponent(m[1]);
+  const reg = `https://registry.npmjs.org/${name.replace('/', '%2f')}`;
+  let r = await attempt(reg, 'GET');
+  if (transient(r)) { await sleep(3000); r = await attempt(reg, 'GET'); }
+  if (r.error) return null;
+  if (r.status === 200) return { url, finalUrl: url, hops: [], kind: 'ok', reason: `HTTP 403 on npmjs.com (bot challenge); package confirmed via registry.npmjs.org` };
+  if (r.status === 404) return { url, finalUrl: url, hops: [], kind: 'broken', reason: `npm package "${name}" not found (registry.npmjs.org HTTP 404)` };
+  return null;
 }
 
 const norm = (s) => { try { const u = new URL(s); return `${u.hostname.replace(/^www\./, '').toLowerCase()}${u.port && !['80', '443'].includes(u.port) ? ':' + u.port : ''}${u.pathname.replace(/\/+$/, '') || ''}${u.search}`; } catch { return s; } };
