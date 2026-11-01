@@ -3,7 +3,7 @@
   "name": "runreal unreal-mcp",
   "category": "mcp-servers",
   "summary": "Community MCP server for Unreal Engine that uses the built-in Python remote execution protocol, so no extra UE plugin is needed.",
-  "description": "Not an official Unreal Engine project. Requires the Python Editor Script Plugin; verified by the authors on UE 5.4+. Agents get full access to the Editor. MIT per the repo LICENSE file and npm `@runreal/unreal-mcp` 0.1.4. Last commit 2025-06-06 (inactive, not marked deprecated).",
+  "description": "Not an official Unreal Engine project. Requires the Python Editor Script Plugin; verified by the authors on UE 5.4+. Agents get full access to the Editor. MIT per the repo LICENSE file. npm `@runreal/unreal-mcp` is at 0.1.4, while the latest GitHub release is 0.1.1 (2025-06-03). Last commit 2025-06-06 (inactive, not marked deprecated).",
   "url": "https://github.com/runreal/unreal-mcp",
   "repo": "https://github.com/runreal/unreal-mcp",
   "tags": [
@@ -25,10 +25,11 @@
   ],
   "sources": [
     "https://github.com/runreal/unreal-mcp",
-    "https://www.npmjs.com/package/@runreal/unreal-mcp"
+    "https://www.npmjs.com/package/@runreal/unreal-mcp",
+    "https://github.com/runreal/unreal-mcp/releases"
   ],
   "added": "2026-10-12",
-  "updated": "2026-10-30",
-  "last_verified": "2026-10-30",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
   "submitted_by": "agentica-curator"
 }

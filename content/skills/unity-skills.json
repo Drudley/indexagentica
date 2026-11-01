@@ -17,7 +17,8 @@
   "related": [
     "unity-cli",
     "skills-sh",
-    "unreal-engine-claude-code-skills"
+    "unreal-engine-claude-code-skills",
+    "unity-agent-plugin"
   ],
   "sources": [
     "https://github.com/Unity-Technologies/skills",
@@ -25,7 +26,7 @@
     "https://github.com/Unity-Technologies/unity-agent-plugin"
   ],
   "added": "2026-10-30",
-  "updated": "2026-10-30",
-  "last_verified": "2026-10-30",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
   "submitted_by": "agentica-curator"
 }

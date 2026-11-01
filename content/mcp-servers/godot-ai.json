@@ -3,7 +3,7 @@
   "name": "Godot AI",
   "category": "mcp-servers",
   "summary": "Godot editor add-on plus a Python MCP server that connects Claude Code, Codex, Cursor and other clients to a live Godot editor through 46 tools.",
-  "description": "Tools build scenes, edit nodes and scripts, wire signals, and configure UI, materials, animation, particles, cameras and environments (README: 46 tools, 120+ operations). Needs Godot 4.7+ and uv. Install the add-on from AssetLib or a GitHub release, enable it, and press Configure in the dock. Latest release v4.3.1 (2026-10-24). Python >=3.11,<3.15.",
+  "description": "Tools build scenes, edit nodes and scripts, wire signals, and configure UI, materials, animation, particles, cameras and environments (README: 46 tools, 120+ operations). Needs Godot 4.7+ and uv. Install the add-on from AssetLib or a GitHub release, enable it, and press Configure in the dock. Latest release v4.3.1 (2026-10-24). Python >=3.11,<3.15. The MCP server stays off in headless editor launches unless GODOT_AI_ALLOW_HEADLESS=1 is set (meant for CI). The add-on registers a `_mcp_game_helper` autoload in the project.",
   "url": "https://github.com/hi-godot/godot-ai",
   "repo": "https://github.com/hi-godot/godot-ai",
   "docs": "https://github.com/hi-godot/godot-ai/blob/main/docs/TOOLS.md",
@@ -20,14 +20,16 @@
   "related": [
     "godot-engine",
     "unity-mcp",
-    "unreal-mcp"
+    "unreal-mcp",
+    "coding-solo-godot-mcp"
   ],
   "sources": [
     "https://github.com/hi-godot/godot-ai",
-    "https://github.com/hi-godot/godot-ai/releases"
+    "https://github.com/hi-godot/godot-ai/releases",
+    "https://github.com/hi-godot/godot-ai/blob/main/docs/server-lifecycle.md"
   ],
   "added": "2026-10-30",
-  "updated": "2026-10-30",
-  "last_verified": "2026-10-30",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
   "submitted_by": "agentica-curator"
 }

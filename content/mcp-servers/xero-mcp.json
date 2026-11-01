@@ -1,0 +1,36 @@
+{
+  "id": "xero-mcp",
+  "name": "Xero MCP Server",
+  "category": "mcp-servers",
+  "summary": "Xero's official local MCP server for its accounting API: contacts, invoices, chart of accounts, payroll and reports.",
+  "description": "Runs with `npx -y @xeroapi/xero-mcp-server@latest` (Node 18+). Authenticate with a Xero Custom Connection (client ID and secret for one organisation) or a bearer token (XERO_CLIENT_BEARER_TOKEN takes precedence). Custom connections created from Apr 29, 2026 need the newer granular scopes; the server falls back automatically. Payroll queries need an NZ or UK organisation. Xero recommends starting with the Demo Company. MIT.",
+  "url": "https://github.com/XeroAPI/xero-mcp-server",
+  "repo": "https://github.com/XeroAPI/xero-mcp-server",
+  "docs": "https://developer.xero.com/documentation/api/",
+  "tags": [
+    "accounting",
+    "invoicing",
+    "finance",
+    "oauth"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "oauth",
+    "notes": "Xero Custom Connection (XERO_CLIENT_ID/XERO_CLIENT_SECRET) or XERO_CLIENT_BEARER_TOKEN. A Xero account is needed (a free trial works)."
+  },
+  "related": [
+    "stripe-mcp",
+    "paddle-mcp"
+  ],
+  "sources": [
+    "https://github.com/XeroAPI/xero-mcp-server",
+    "https://www.npmjs.com/package/@xeroapi/xero-mcp-server"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Xero"
+}

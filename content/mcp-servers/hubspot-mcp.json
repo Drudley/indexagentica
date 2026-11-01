@@ -1,0 +1,32 @@
+{
+  "id": "hubspot-mcp",
+  "name": "HubSpot MCP Server",
+  "category": "mcp-servers",
+  "summary": "HubSpot's official remote MCP server giving agents read and write access to HubSpot CRM data such as contacts, companies and deals.",
+  "description": "Hosted at https://mcp.hubspot.com. Create an MCP connector in your HubSpot account, then connect any MCP client that supports OAuth with PKCE using the connector's credentials. Data covered includes CRM records and engagements, content analytics and conversations (subject to inbox settings). HubSpot also offers a separate local Developer MCP server, run through the HubSpot CLI, for building on its Developer Platform. Both need the latest Developer Platform version.",
+  "url": "https://developers.hubspot.com/ai-tools/mcp",
+  "docs": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "tags": [
+    "crm",
+    "sales",
+    "marketing",
+    "remote-mcp",
+    "oauth"
+  ],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.hubspot.com",
+    "auth": "oauth",
+    "notes": "OAuth 2.0 with PKCE via an MCP connector created in your HubSpot account."
+  },
+  "sources": [
+    "https://developers.hubspot.com/ai-tools/mcp",
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+    "https://developers.hubspot.com/docs/developer-tooling/local-development/developer-mcp/setup"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "HubSpot"
+}

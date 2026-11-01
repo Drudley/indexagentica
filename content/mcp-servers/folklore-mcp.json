@@ -1,0 +1,37 @@
+{
+  "id": "folklore-mcp",
+  "name": "Folklore Clinical Variant Interpretation MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted, read-only MCP server from Helena Bioinformatics for ACMG/AMP germline variant classification, gene-disease evidence and literature.",
+  "description": "Connect to https://api.helena.bio/folklore/v1/mcp over Streamable HTTP; access is anonymous. 11 tools, including classify_germline_variant, resolve_gene, get_gene_profile, get_gene_disease_associations (ClinGen), search_disease_genes, search_variant_literature and search_literature_corpus. Input is one public GRCh38 nuclear germline SNV or simple indel under 50 bp (HGVS, SPDI, rsID or coordinates). Results are typed outcomes (resolved, ambiguous, not_found, unsupported...) with criteria, evidence and provenance. Meant for professional review, not diagnosis, and not for patient data. The public adapter repo is Apache-2.0. Folklore is Helena's commercial clinical genomics product; a live initialize returned server folklore 1.7.0. Submitted via listing request #11 by the operator.",
+  "url": "https://folklore.helena.bio/integrations/mcp",
+  "repo": "https://github.com/helena-bioinformatics/folklore-mcp",
+  "docs": "https://folklore.helena.bio/integrations/mcp",
+  "tags": [
+    "genomics",
+    "bioinformatics",
+    "clinical",
+    "variant-interpretation",
+    "remote-mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.helena.bio/folklore/v1/mcp",
+    "llms_txt": "https://folklore.helena.bio/llms.txt",
+    "auth": "none",
+    "notes": "Anonymous Streamable HTTP; no account or key. Read-only; don't send patient or case data."
+  },
+  "sources": [
+    "https://folklore.helena.bio/integrations/mcp",
+    "https://github.com/helena-bioinformatics/folklore-mcp",
+    "https://folklore.helena.bio/llms.txt",
+    "https://www.helena.bio/"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Helena Bioinformatics"
+}

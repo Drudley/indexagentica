@@ -1,0 +1,36 @@
+{
+  "id": "paddle-mcp",
+  "name": "Paddle MCP Server",
+  "category": "finance-payments",
+  "summary": "Paddle's official MCP server for Paddle Billing: manage products, prices, customers, subscriptions, transactions, refunds and reports.",
+  "description": "Near parity with the Paddle API, and each tool is marked read-only or non-destructive. Run with `npx -y @paddle/paddle-mcp` and set PADDLE_API_KEY and PADDLE_ENVIRONMENT (sandbox or production). Limit the loaded tools with `--tools` or PADDLE_MCP_TOOLS, e.g. non-destructive. Works with Paddle Billing only, not Paddle Classic. Paddle is a merchant of record. Apache-2.0 (npm `@paddle/paddle-mcp` 0.1.6).",
+  "url": "https://github.com/PaddleHQ/paddle-mcp-server",
+  "repo": "https://github.com/PaddleHQ/paddle-mcp-server",
+  "docs": "https://developer.paddle.com/",
+  "tags": [
+    "billing",
+    "subscriptions",
+    "merchant-of-record",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "PADDLE_API_KEY plus PADDLE_ENVIRONMENT=sandbox|production."
+  },
+  "related": [
+    "stripe-mcp",
+    "xero-mcp"
+  ],
+  "sources": [
+    "https://github.com/PaddleHQ/paddle-mcp-server",
+    "https://www.npmjs.com/package/@paddle/paddle-mcp"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Paddle"
+}

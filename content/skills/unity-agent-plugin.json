@@ -1,0 +1,37 @@
+{
+  "id": "unity-agent-plugin",
+  "name": "Unity Agent Plugin",
+  "category": "skills",
+  "summary": "Unity's official plugin for Claude Code, Codex, Grok Build and Antigravity, bundling Unity's curated game-development skills.",
+  "description": "Ships 33 skill folders, including unity-cli, new-unity-project, UI Toolkit/uGUI, URP, 2D and tilemaps, physics, audio, localization, multiplayer services, Vivox, in-app purchases and LevelPlay. The Unity CLI installs it: `unity setup claude` installs it from Anthropic's official Claude Code marketplace (as unity@claude-plugins-official), and `unity setup codex`, `unity setup grok` and `unity setup antigravity` do the same for those agents. Plugin version 0.1.8-beta. Licensed under the Unity Companion License for Unity-dependent projects. The Unity-Technologies/skills repo points Claude Code and Codex users to this plugin.",
+  "url": "https://github.com/Unity-Technologies/unity-agent-plugin",
+  "repo": "https://github.com/Unity-Technologies/unity-agent-plugin",
+  "docs": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+  "tags": [
+    "unity",
+    "gamedev",
+    "claude-code",
+    "codex",
+    "plugin"
+  ],
+  "license": "LicenseRef-Unity-Companion-License",
+  "pricing": "free",
+  "status": "beta",
+  "related": [
+    "unity-skills",
+    "unity-cli",
+    "claude-code",
+    "codex-cli"
+  ],
+  "sources": [
+    "https://github.com/Unity-Technologies/unity-agent-plugin",
+    "https://github.com/Unity-Technologies/unity-agent-plugin/blob/main/LICENSE.md",
+    "https://github.com/Unity-Technologies/unity-agent-plugin/blob/main/.claude-plugin/plugin.json",
+    "https://docs.unity.com/en-us/unity-cli/release-notes"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Unity Technologies"
+}

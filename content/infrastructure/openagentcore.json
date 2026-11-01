@@ -1,0 +1,43 @@
+{
+  "id": "openagentcore",
+  "name": "OpenAgentCore",
+  "category": "infrastructure",
+  "summary": "MiniMax's open-source, self-hosted implementation of OpenAI's Agents API that runs Codex, Claude Code or MiniMax Code sessions in sandboxes.",
+  "description": "Point the official OpenAI SDK at your install with OPENAI_BASE_URL and a Project API key, then create Sessions that run the chosen harness with your own model provider. Sandboxes run on microsandbox nodes (idle sandboxes release compute and resume with files intact) or E2B. Sandbox providers, workspace filesystems, harnesses and model providers are pluggable. Install Core, Web and PostgreSQL with Docker via `curl -fsSL https://openagentcore.dev/install.sh | bash`. MIT. Latest release v0.0.13 (Oct 2026).",
+  "url": "https://openagentcore.dev/",
+  "repo": "https://github.com/MiniMax-AI/OpenAgentCore",
+  "docs": "https://openagentcore.dev/docs/getting-started/",
+  "tags": [
+    "agents-api",
+    "self-hosted",
+    "sandbox",
+    "codex",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "beta",
+  "agent_access": {
+    "llms_txt": "https://openagentcore.dev/llms.txt",
+    "auth": "api-key",
+    "notes": "OpenAI-compatible /v1 Agents API on your own host; Project API key issued in the Web console."
+  },
+  "related": [
+    "openai-agents-sdk",
+    "codex-cli",
+    "claude-code",
+    "microsandbox",
+    "e2b"
+  ],
+  "sources": [
+    "https://github.com/MiniMax-AI/OpenAgentCore",
+    "https://openagentcore.dev/",
+    "https://openagentcore.dev/docs/getting-started/",
+    "https://github.com/MiniMax-AI/OpenAgentCore/blob/main/LICENSE"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "MiniMax"
+}

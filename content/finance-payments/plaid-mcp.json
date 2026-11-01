@@ -1,0 +1,30 @@
+{
+  "id": "plaid-mcp",
+  "name": "Plaid Dashboard MCP",
+  "category": "finance-payments",
+  "summary": "Plaid's hosted MCP server with Production diagnostics: debug Items, review Link conversion and check usage metrics.",
+  "description": "Remote Streamable HTTP server at https://api.dashboard.plaid.com/mcp/. It works only with Production data, and your team must have Production access for at least one Plaid product. For direct API use, create an OAuth token with the `mcp:dashboard` scope via /oauth/token (client_credentials) and send it as a Bearer token; it also works as a remote MCP tool in OpenAI and Anthropic APIs. Plaid says it is under active development with possible breaking changes and limited support. A separate local MCP server for development (mock data, docs search, Sandbox tokens, webhook simulation) ships in the MIT-licensed plaid/ai-coding-toolkit.",
+  "url": "https://plaid.com/docs/resources/mcp/",
+  "docs": "https://plaid.com/docs/resources/mcp/",
+  "tags": [
+    "fintech",
+    "banking",
+    "diagnostics",
+    "remote-mcp"
+  ],
+  "status": "beta",
+  "agent_access": {
+    "mcp_endpoint": "https://api.dashboard.plaid.com/mcp/",
+    "auth": "oauth",
+    "notes": "OAuth token with scope mcp:dashboard from POST https://production.plaid.com/oauth/token."
+  },
+  "sources": [
+    "https://plaid.com/docs/resources/mcp/",
+    "https://github.com/plaid/ai-coding-toolkit"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Plaid"
+}

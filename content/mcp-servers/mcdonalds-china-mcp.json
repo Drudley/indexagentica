@@ -1,0 +1,33 @@
+{
+  "id": "mcdonalds-china-mcp",
+  "name": "McDonald's China MCP",
+  "category": "mcp-servers",
+  "summary": "McDonald's China's official hosted MCP server for McDelivery and pickup ordering, coupons, points and campaigns in mainland China.",
+  "description": "Remote Streamable HTTP server at https://mcp.mcd.cn; get an MCP token after phone-number login on open.mcd.cn and send it as `Authorization: Bearer`. Over 30 tools: menus and nutrition, delivery addresses and stores, price calculation, create-order (returns a payment link), cancel-order, order status and history, coupons, points mall, lottery and party bookings. Mainland China only (not Hong Kong, Macau or Taiwan). Limit 600 requests per minute per token. Version 1.0.9 (Sep 2026). The repo is a setup guide; its samples are for personal, non-commercial use and it has no open-source license.",
+  "url": "https://open.mcd.cn/mcp",
+  "repo": "https://github.com/M-China/mcd-mcp-server",
+  "docs": "https://github.com/M-China/mcd-mcp-server/blob/main/README_EN.md",
+  "tags": [
+    "food-ordering",
+    "commerce",
+    "china",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.mcd.cn",
+    "auth": "api-key",
+    "notes": "Bearer MCP token from open.mcd.cn (Chinese phone login). Orders are paid via the returned payment link."
+  },
+  "sources": [
+    "https://open.mcd.cn/mcp",
+    "https://github.com/M-China/mcd-mcp-server",
+    "https://github.com/M-China/mcd-mcp-server/blob/main/README_EN.md"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "McDonald's China"
+}

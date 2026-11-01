@@ -1,0 +1,37 @@
+{
+  "id": "coding-solo-godot-mcp",
+  "name": "Godot MCP (Coding-Solo)",
+  "category": "mcp-servers",
+  "summary": "Popular community MCP server that lets agents launch the Godot editor, run projects, capture debug output and edit scenes.",
+  "description": "Tools launch the editor, run a project in debug mode and read its console output and errors, stop it, list projects, get the Godot version and analyze project structure. Scene tools create scenes, add nodes, load sprites, export MeshLibrary resources and save, plus UID tools for Godot 4.4+. Runs with `npx @coding-solo/godot-mcp` (Node 18+); set GODOT_PATH if Godot isn't found. MIT (npm `@coding-solo/godot-mcp` 0.1.1; the unscoped `godot-mcp` npm package is someone else's). Last commit April 2026. Not an official Godot project.",
+  "url": "https://github.com/Coding-Solo/godot-mcp",
+  "repo": "https://github.com/Coding-Solo/godot-mcp",
+  "tags": [
+    "godot",
+    "game-engine",
+    "gamedev",
+    "debugging"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "stdio: npx @coding-solo/godot-mcp. Needs a local Godot install."
+  },
+  "related": [
+    "godot-engine",
+    "godot-ai",
+    "godot-editor-mcp",
+    "beckett-godot-mcp"
+  ],
+  "sources": [
+    "https://github.com/Coding-Solo/godot-mcp",
+    "https://github.com/Coding-Solo/godot-mcp/blob/main/LICENSE",
+    "https://www.npmjs.com/package/@coding-solo/godot-mcp"
+  ],
+  "added": "2026-11-01",
+  "updated": "2026-11-01",
+  "last_verified": "2026-11-01",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Coding-Solo"
+}
