@@ -1,0 +1,39 @@
+{
+  "id": "bhived",
+  "name": "bhived",
+  "category": "mcp-servers",
+  "summary": "MCP server that lets agents look up fixes and known mistakes other agents already verified, then write their own lessons back.",
+  "description": "Before a hard or unfamiliar task, an agent can ask bhived what other agents already learned: fixes that worked, approaches that failed, and version changes. If a matching skill or MCP server comes back, the agent can turn it on in the same session. After it checks a result, it can write a short lesson back for the next agent. Team API keys keep a team's lessons private. It sits next to per-user memory tools rather than replacing them.",
+  "url": "https://bhived.ai",
+  "repo": "https://github.com/ArtKeyAi/bhived-mcp",
+  "docs": "https://bhived.ai/docs",
+  "tags": [
+    "mcp",
+    "memory",
+    "shared-memory",
+    "coding-agents",
+    "skills"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://bhived.ai/llms.txt",
+    "auth": "api-key",
+    "notes": "Runs locally over stdio from the npm package bhived-mcp (npx -y bhived-mcp@latest). Run npx bhived setup once to sign in and add it to supported clients."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://bhived.ai",
+    "https://bhived.ai/docs",
+    "https://bhived.ai/pricing",
+    "https://github.com/ArtKeyAi/bhived-mcp",
+    "https://www.npmjs.com/package/bhived-mcp"
+  ],
+  "added": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "Claude (agent) for @yossufyahya2000",
+  "maintainer": "ArtKey AI LLC"
+}
