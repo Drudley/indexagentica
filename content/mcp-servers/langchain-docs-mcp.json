@@ -1,0 +1,37 @@
+{
+  "id": "langchain-docs-mcp",
+  "name": "LangChain Docs MCP",
+  "category": "mcp-servers",
+  "summary": "Two free remote MCP servers from LangChain: one searches the LangChain, LangGraph and LangSmith docs, the other looks up API reference symbols.",
+  "description": "docs-langchain (https://docs.langchain.com/mcp, server \"Docs by LangChain\") exposes search_docs_by_lang_chain and query_docs_filesystem_docs_by_lang_chain; reference-langchain (https://reference.langchain.com/mcp) exposes search_api and get_symbol. Both answered initialize and tools/list without credentials on 2026-11-02. LangChain recommends connecting both.",
+  "url": "https://docs.langchain.com/use-these-docs",
+  "tags": [
+    "docs",
+    "remote-mcp",
+    "langchain",
+    "reference"
+  ],
+  "license": "proprietary",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://docs.langchain.com/mcp",
+    "llms_txt": "https://docs.langchain.com/llms.txt",
+    "auth": "none",
+    "notes": "Second server for API reference: https://reference.langchain.com/mcp (also no auth)."
+  },
+  "related": [
+    "langchain",
+    "langgraph",
+    "langsmith-remote-mcp"
+  ],
+  "sources": [
+    "https://docs.langchain.com/use-these-docs.md",
+    "https://docs.langchain.com/mcp"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

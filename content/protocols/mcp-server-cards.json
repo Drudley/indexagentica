@@ -1,0 +1,32 @@
+{
+  "id": "mcp-server-cards",
+  "name": "MCP Server Cards",
+  "category": "protocols",
+  "summary": "Experimental MCP extension defining a static JSON card that describes a remote MCP server's identity and transport endpoints so clients can find and connect to it.",
+  "description": "Tracks SEP-2127; not yet an accepted MCP extension. Recommended location is GET <streamable-http-url>/server-card, and cards can be discovered through AI Catalog entries. Cards carry name, version, remote endpoints, headers and supported protocol versions, but deliberately omit tool/resource listings and local-install metadata (that stays in the MCP Registry). TypeScript source of truth plus generated JSON Schema; Apache-2.0.",
+  "url": "https://github.com/modelcontextprotocol/ext-server-card",
+  "tags": [
+    "mcp",
+    "discovery",
+    "schema",
+    "experimental"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "beta",
+  "related": [
+    "model-context-protocol",
+    "ai-catalog",
+    "official-mcp-registry"
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol/ext-server-card",
+    "https://github.com/modelcontextprotocol/ext-server-card/blob/main/docs/discovery.md",
+    "https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2127"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Model Context Protocol"
+}

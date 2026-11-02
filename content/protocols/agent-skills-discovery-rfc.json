@@ -1,0 +1,32 @@
+{
+  "id": "agent-skills-discovery-rfc",
+  "name": "Agent Skills Discovery RFC",
+  "category": "protocols",
+  "summary": "Cloudflare's draft for publishing Agent Skills at /.well-known/agent-skills/, with an index.json listing each skill and a SHA-256 digest.",
+  "description": "Draft v0.2.0 (published 2026-01-17, updated 2026-03-12). v0.2.0 renamed the path from /.well-known/skills/ to /.well-known/agent-skills/, identifies the index schema by $schema (https://schemas.agentskills.io/discovery/0.2.0/schema.json), and gives each entry a type (skill-md or archive), url and digest. Clients load names and descriptions first and fetch skills on demand; they SHALL NOT execute bundled scripts by default. Not backward-compatible with v0.1.0. Apache-2.0.",
+  "url": "https://github.com/cloudflare/agent-skills-discovery-rfc",
+  "tags": [
+    "skills",
+    "discovery",
+    "well-known",
+    "draft",
+    "cloudflare"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "beta",
+  "related": [
+    "agent-skills-spec",
+    "ai-catalog",
+    "cloudflare-skills",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://github.com/cloudflare/agent-skills-discovery-rfc"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Cloudflare"
+}

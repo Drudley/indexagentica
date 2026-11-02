@@ -1,0 +1,31 @@
+{
+  "id": "rfc-9727",
+  "name": "RFC 9727: api-catalog",
+  "category": "protocols",
+  "summary": "IETF Proposed Standard (June 2025) defining the /.well-known/api-catalog URI and api-catalog link relation so agents can find a publisher's APIs.",
+  "description": "The catalog MUST be served as a Linkset (application/linkset+json, RFC 9264), ideally with the profile https://www.rfc-editor.org/info/rfc9727. Entries typically link each API to its service-desc (e.g. an OpenAPI file), service-doc and service-meta. Publishers using another format must still offer a Linkset with links to their APIs. Author: K. Smith (Vodafone).",
+  "url": "https://www.rfc-editor.org/rfc/rfc9727.html",
+  "docs": "https://datatracker.ietf.org/doc/rfc9727/",
+  "tags": [
+    "discovery",
+    "well-known",
+    "ietf",
+    "rfc",
+    "api"
+  ],
+  "status": "active",
+  "related": [
+    "openapi",
+    "rfc-9728",
+    "ai-catalog"
+  ],
+  "sources": [
+    "https://www.rfc-editor.org/rfc/rfc9727.txt",
+    "https://datatracker.ietf.org/doc/rfc9727/"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IETF"
+}

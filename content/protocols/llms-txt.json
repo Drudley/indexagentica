@@ -3,6 +3,7 @@
   "name": "llms.txt",
   "category": "protocols",
   "summary": "Proposal to standardize a /llms.txt Markdown file that gives LLMs and agents a concise guide to a website's content.",
+  "description": "v2 of the proposal (page modified 10 Aug 2026) allows llms.txt at any subpath (e.g. /docs/llms.txt covers /docs/, most specific file wins), accepts both markdown URL forms (page.html.md or page.md), and recommends rel=\"alternate\" type=\"text/markdown\" and rel=\"describedby\" links (in HTML or a Link header) so clients can find the markdown and the covering llms.txt.",
   "url": "https://llmstxt.org/",
   "repo": "https://github.com/AnswerDotAI/llms-txt",
   "tags": [
@@ -23,8 +24,8 @@
     "https://github.com/AnswerDotAI/llms-txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Answer.AI"
 }

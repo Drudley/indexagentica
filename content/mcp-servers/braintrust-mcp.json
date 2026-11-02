@@ -4,7 +4,7 @@
   "category": "mcp-servers",
   "summary": "Remote Braintrust MCP server for Claude Code, Cursor, Codex and other clients to query logs and work with Braintrust data.",
   "description": "Nothing to install; authenticate with OAuth (dynamic client registration) or an API key. Self-hosted data planes are covered in the knowledge base.",
-  "url": "https://braintrust.dev/docs/integrations/developer-tools/mcp",
+  "url": "https://docs.braintrust.dev/integrations/developer-tools/mcp",
   "tags": [
     "mcp",
     "observability",
@@ -14,7 +14,7 @@
   "status": "active",
   "agent_access": {
     "mcp_endpoint": "https://api.braintrust.dev/mcp",
-    "llms_txt": "https://braintrust.dev/docs/llms.txt",
+    "llms_txt": "https://docs.braintrust.dev/llms.txt",
     "auth": "oauth",
     "notes": "API key auth also supported."
   },
@@ -22,11 +22,11 @@
     "braintrust"
   ],
   "sources": [
-    "https://braintrust.dev/docs/integrations/developer-tools/mcp.md"
+    "https://docs.braintrust.dev/integrations/developer-tools/mcp.md"
   ],
   "added": "2026-10-13",
-  "updated": "2026-10-13",
-  "last_verified": "2026-10-13",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Braintrust"
 }

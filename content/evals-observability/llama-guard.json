@@ -1,0 +1,37 @@
+{
+  "id": "llama-guard",
+  "name": "Llama Guard",
+  "category": "evals-observability",
+  "summary": "Meta's open-weight safety classifiers that label LLM prompts and responses as safe or unsafe against the MLCommons hazard taxonomy.",
+  "description": "Llama Guard 4 is a 12B natively multimodal classifier (text plus multiple images) pruned from Llama 4 Scout, combining Llama Guard 3-8B and 3-11B-vision; it adds a Code Interpreter Abuse category for tool-call use. Weights are gated on Hugging Face under the Llama 4 Community License; earlier versions use the Llama 2/3/3.2 community licenses. Part of Meta's Purple Llama project.",
+  "url": "https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama-guard-4",
+  "repo": "https://github.com/meta-llama/PurpleLlama",
+  "docs": "https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Guard4/12B/MODEL_CARD.md",
+  "tags": [
+    "guardrails",
+    "safety",
+    "content-moderation",
+    "open-weights",
+    "meta"
+  ],
+  "license": "LicenseRef-Llama-4-Community-License",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "llama-prompt-guard-2",
+    "llamafirewall",
+    "nemo-guardrails",
+    "guardrails-ai"
+  ],
+  "sources": [
+    "https://github.com/meta-llama/PurpleLlama",
+    "https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Guard4/12B/MODEL_CARD.md",
+    "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+    "https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama-guard-4"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Meta"
+}

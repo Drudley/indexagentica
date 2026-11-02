@@ -1,0 +1,34 @@
+{
+  "id": "llama-prompt-guard-2",
+  "name": "Llama Prompt Guard 2",
+  "category": "evals-observability",
+  "summary": "Meta's small open-weight classifiers (86M and 22M) that flag prompt injection and jailbreak attempts in user input and untrusted content.",
+  "description": "Binary benign/malicious labels; the 22M version (DeBERTa-xsmall) cuts latency and compute by about 75% versus 86M with minimal performance loss, per the model card. Used as LlamaFirewall's PromptGuard scanner. Gated weights under the Llama 4 Community License.",
+  "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M",
+  "repo": "https://github.com/meta-llama/PurpleLlama",
+  "docs": "https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Prompt-Guard-2/86M/MODEL_CARD.md",
+  "tags": [
+    "prompt-injection",
+    "jailbreak",
+    "classifier",
+    "open-weights",
+    "meta"
+  ],
+  "license": "LicenseRef-Llama-4-Community-License",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "llamafirewall",
+    "llama-guard"
+  ],
+  "sources": [
+    "https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Prompt-Guard-2/86M/MODEL_CARD.md",
+    "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M",
+    "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-22M"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Meta"
+}

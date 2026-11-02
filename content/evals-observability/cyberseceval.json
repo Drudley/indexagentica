@@ -1,0 +1,36 @@
+{
+  "id": "cyberseceval",
+  "name": "CyberSecEval",
+  "category": "evals-observability",
+  "summary": "Meta's benchmark suite for LLM cybersecurity risk and defensive skill: attack compliance, insecure code, prompt injection and SOC tasks.",
+  "description": "CyberSecEval 4 builds on versions 1-3 and adds defensive benchmarks such as CyberSOCEval. Tests include MITRE ATT&CK compliance and false-refusal rates, instruct and autocomplete secure-code tests, and prompt-injection tests. Code and benchmarks are MIT, in PurpleLlama/CybersecurityBenchmarks.",
+  "url": "https://meta-llama.github.io/PurpleLlama/CyberSecEval/",
+  "repo": "https://github.com/meta-llama/PurpleLlama",
+  "docs": "https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks",
+  "tags": [
+    "benchmark",
+    "security",
+    "prompt-injection",
+    "secure-code",
+    "meta"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "llamafirewall",
+    "garak",
+    "pyrit",
+    "agentdojo"
+  ],
+  "sources": [
+    "https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks",
+    "https://github.com/meta-llama/PurpleLlama/blob/main/CybersecurityBenchmarks/LICENSE",
+    "https://meta-llama.github.io/PurpleLlama/CyberSecEval/"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Meta"
+}

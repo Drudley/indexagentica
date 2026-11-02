@@ -1,0 +1,37 @@
+{
+  "id": "llamafirewall",
+  "name": "LlamaFirewall",
+  "category": "evals-observability",
+  "summary": "Meta's open-source guardrail framework for agents that chains scanners for prompt injection, goal hijacking and insecure generated code.",
+  "description": "Scanners: PromptGuard 2 (jailbreak/injection classifier), AlignmentCheck (chain-of-thought audit for goal hijacking and indirect injection), regex/custom LLM scanners, and CodeShield (Semgrep and regex rules across 8 languages). `pip install llamafirewall` (PyPI 1.0.3, May 2025; Python 3.10+); some scanners need access to gated Llama models on Hugging Face. MIT per LlamaFirewall/LICENSE.",
+  "url": "https://meta-llama.github.io/PurpleLlama/LlamaFirewall/",
+  "repo": "https://github.com/meta-llama/PurpleLlama",
+  "docs": "https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall",
+  "tags": [
+    "guardrails",
+    "prompt-injection",
+    "agent-security",
+    "python",
+    "meta"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "llama-prompt-guard-2",
+    "llama-guard",
+    "invariant-guardrails",
+    "nemo-guardrails"
+  ],
+  "sources": [
+    "https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall",
+    "https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/LICENSE",
+    "https://pypi.org/project/llamafirewall/",
+    "https://meta-llama.github.io/PurpleLlama/LlamaFirewall/"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Meta"
+}

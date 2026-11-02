@@ -3,7 +3,7 @@
   "name": "WebMCP",
   "category": "protocols",
   "summary": "Proposed web API letting sites expose JavaScript functions or HTML forms as tools with natural-language descriptions and schemas for in-browser AI agents.",
-  "description": "Tools can be invoked by agents built into the browser, hosted in iframes, or running in extensions. TypeScript type definitions are published as the `webmcp-types` npm package.",
+  "description": "Pages register tools with document.modelContext.registerTool() (navigator.modelContext was deprecated in Chrome 150 and removed in Chromium). The spec is a W3C Web Machine Learning Community Group draft report dated 27 October 2026, not on the standards track. Origin trials: Chrome from 149 and Microsoft Edge from 150 (Edge trial expires 2027-03-30). Tools can be invoked by agents built into the browser, hosted in iframes, or running in extensions. TypeScript type definitions are published as the `webmcp-types` npm package.",
   "url": "https://webmachinelearning.github.io/webmcp/",
   "repo": "https://github.com/webmachinelearning/webmcp",
   "tags": [
@@ -18,10 +18,13 @@
   ],
   "sources": [
     "https://github.com/webmachinelearning/webmcp",
-    "https://webmachinelearning.github.io/webmcp/"
+    "https://webmachinelearning.github.io/webmcp/",
+    "https://developer.chrome.com/blog/ai-webmcp-origin-trial",
+    "https://learn.microsoft.com/en-us/microsoft-edge/web-platform/release-notes/150",
+    "https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/trials/0b76fe60-b266-458e-a285-04e375c0c31a"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator"
 }

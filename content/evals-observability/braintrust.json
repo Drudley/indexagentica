@@ -6,7 +6,7 @@
   "description": "Braintrust's SDKs are open source (e.g. braintrust-sdk-javascript Apache-2.0, braintrust-go Apache-2.0, braintrust-proxy MIT); the license of the hosted platform itself is not stated in these repos.",
   "url": "https://www.braintrust.dev",
   "repo": "https://github.com/braintrustdata/autoevals",
-  "docs": "https://www.braintrust.dev/docs",
+  "docs": "https://docs.braintrust.dev/",
   "tags": [
     "observability",
     "evals",
@@ -14,7 +14,7 @@
   ],
   "status": "active",
   "agent_access": {
-    "llms_txt": "https://www.braintrust.dev/docs/llms.txt",
+    "llms_txt": "https://docs.braintrust.dev/llms.txt",
     "auth": "api-key"
   },
   "related": [
@@ -22,14 +22,14 @@
   ],
   "sources": [
     "https://www.braintrust.dev",
-    "https://www.braintrust.dev/docs/llms.txt",
+    "https://docs.braintrust.dev/llms.txt",
     "https://github.com/braintrustdata/autoevals",
     "https://github.com/braintrustdata/braintrust-sdk-javascript",
     "https://github.com/braintrustdata/braintrust-proxy"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-13",
-  "last_verified": "2026-10-13",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator",
   "maintainer": "Braintrust"
 }

@@ -1,0 +1,30 @@
+{
+  "id": "langgraph-swarm",
+  "name": "LangGraph Swarm",
+  "category": "harnesses",
+  "summary": "LangChain's Python library for swarm-style multi-agent systems on LangGraph, where agents hand control to each other with handoff tools.",
+  "description": "The swarm remembers which agent was last active and resumes with it; built-in handoff tools can be customized. `pip install langgraph-swarm` (PyPI 0.1.0, Dec 2025). MIT. Its sibling langgraph-supervisor-py is archived.",
+  "url": "https://github.com/langchain-ai/langgraph-swarm-py",
+  "tags": [
+    "multi-agent",
+    "langgraph",
+    "python",
+    "handoffs"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "langgraph",
+    "langchain"
+  ],
+  "sources": [
+    "https://github.com/langchain-ai/langgraph-swarm-py",
+    "https://pypi.org/project/langgraph-swarm/"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ai-catalog",
+  "name": "AI Catalog",
+  "category": "protocols",
+  "summary": "Draft JSON format, served at /.well-known/ai-catalog.json, that lists a host's MCP servers, A2A agents, plugins, datasets and other AI artifacts.",
+  "description": "Media type application/ai-catalog+json; a catalog needs specVersion (\"1.0\") and entries, each typed by media type (e.g. application/mcp-server-card+json) and either linking to or inlining the native metadata. Three conformance levels (Minimal, Discoverable, Trusted), with optional signed Trust Manifests, nested catalogs, and mappings to MCP Registry server.json and Claude Code plugin marketplaces. Developed by members of the MCP, A2A and other protocol communities in Agent-Card/ai-catalog (Agent Card Working Group); spec text CC-BY-4.0, code Apache-2.0. Still a draft.",
+  "url": "https://ai-catalog.io/spec/",
+  "repo": "https://github.com/Agent-Card/ai-catalog",
+  "tags": [
+    "discovery",
+    "well-known",
+    "catalog",
+    "mcp",
+    "a2a",
+    "draft"
+  ],
+  "license": "CC-BY-4.0 AND Apache-2.0",
+  "pricing": "free",
+  "status": "beta",
+  "related": [
+    "mcp-server-cards",
+    "a2a-protocol",
+    "official-mcp-registry",
+    "agent-skills-discovery-rfc",
+    "rfc-9727"
+  ],
+  "sources": [
+    "https://ai-catalog.io/spec/",
+    "https://ai-catalog.io/",
+    "https://github.com/Agent-Card/ai-catalog",
+    "https://github.com/Agent-Card/ai-catalog/blob/main/LICENSE.md"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Agent Card Working Group"
+}

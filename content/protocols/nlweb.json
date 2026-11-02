@@ -3,9 +3,10 @@
   "name": "NLWeb",
   "category": "protocols",
   "summary": "Open protocols and reference implementation for natural-language interfaces to websites, using Schema.org/RSS and natively supporting MCP.",
-  "description": "Originally published by Microsoft (microsoft/NLWeb, now redirecting to nlweb-ai/NLWeb).",
+  "description": "Originally published by Microsoft (microsoft/NLWeb, now redirecting to nlweb-ai/NLWeb). The NLWeb protocol spec (v0.55) is published as NLWEBSPEC.md in nlweb-ai/website; nlweb.ai itself currently fails TLS (it serves a *.github.io certificate), so link the GitHub copy. REST API docs: docs/nlweb-rest-api.md in the main repo.",
   "url": "https://github.com/nlweb-ai/NLWeb",
   "repo": "https://github.com/nlweb-ai/NLWeb",
+  "docs": "https://github.com/nlweb-ai/website/blob/main/NLWEBSPEC.md",
   "tags": [
     "web-standard",
     "schema-org",
@@ -20,10 +21,12 @@
     "llms-txt"
   ],
   "sources": [
-    "https://github.com/nlweb-ai/NLWeb"
+    "https://github.com/nlweb-ai/NLWeb",
+    "https://github.com/nlweb-ai/website/blob/main/NLWEBSPEC.md",
+    "https://github.com/nlweb-ai/NLWeb/blob/main/docs/nlweb-rest-api.md"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator"
 }

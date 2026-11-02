@@ -1,0 +1,40 @@
+{
+  "id": "langchain",
+  "name": "LangChain",
+  "category": "harnesses",
+  "summary": "Open-source Python and TypeScript framework whose create_agent builds a configurable agent harness from a model, tools, a prompt and middleware.",
+  "description": "LangChain's docs position it between LangGraph (low-level orchestration) and Deep Agents (batteries-included harness); LangSmith handles tracing and evals. Python package `langchain` 1.4.7 on PyPI (MIT, Python >=3.10); JS/TS lives in langchain-ai/langchainjs (npm `langchain` 1.6.0, MIT). The docs publish an llms.txt and two remote docs MCP servers (see langchain-docs-mcp).",
+  "url": "https://docs.langchain.com/oss/python/langchain/overview",
+  "repo": "https://github.com/langchain-ai/langchain",
+  "docs": "https://docs.langchain.com/oss/javascript/langchain/overview",
+  "tags": [
+    "framework",
+    "python",
+    "typescript",
+    "agents",
+    "middleware"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.langchain.com/llms.txt"
+  },
+  "related": [
+    "langgraph",
+    "deepagents",
+    "langsmith",
+    "langchain-docs-mcp"
+  ],
+  "sources": [
+    "https://github.com/langchain-ai/langchain",
+    "https://docs.langchain.com/oss/python/langchain/overview",
+    "https://pypi.org/project/langchain/",
+    "https://github.com/langchain-ai/langchainjs"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LangChain"
+}

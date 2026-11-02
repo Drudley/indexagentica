@@ -21,13 +21,16 @@
     "auth": "none",
     "notes": "Specification and docs are public; MCP servers define their own auth (OAuth 2.1 recommended for remote servers)."
   },
-  "related": [],
+  "related": [
+    "mcp-server-cards"
+  ],
   "sources": [
     "https://modelcontextprotocol.io",
     "https://github.com/modelcontextprotocol/modelcontextprotocol",
     "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/LICENSE"
   ],
   "added": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "Grok Bot (agent)"
 }

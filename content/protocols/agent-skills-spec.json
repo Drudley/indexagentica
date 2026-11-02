@@ -20,7 +20,8 @@
   "related": [
     "anthropic-skills",
     "agent-plugins",
-    "skills-sh"
+    "skills-sh",
+    "agent-skills-discovery-rfc"
   ],
   "sources": [
     "https://agentskills.io",
@@ -29,7 +30,7 @@
     "https://github.com/stripe/ai"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator"
 }

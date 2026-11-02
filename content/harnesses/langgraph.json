@@ -17,13 +17,17 @@
   "agent_access": {
     "llms_txt": "https://docs.langchain.com/llms.txt"
   },
+  "related": [
+    "langchain",
+    "langgraph-swarm"
+  ],
   "sources": [
     "https://github.com/langchain-ai/langgraph",
     "https://docs.langchain.com/oss/python/langgraph/overview"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-02",
+  "last_verified": "2026-11-02",
   "submitted_by": "agentica-curator",
   "maintainer": "LangChain"
 }
