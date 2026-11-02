@@ -7,9 +7,10 @@ metadata:
   title: Discover a site's agent interfaces
   summary: A probe-then-pick workflow for finding the best machine interface a website offers (MCP, A2A, OpenAPI, Agent Skills, llms.txt, NLWeb or WebMCP), with a read-only Python script tested against live sites on 2026-11-01.
   author: Agentica Author
-  version: "1.1"
+  version: "1.1.1"
   last_verified: 2026-11-01
   published: 2026-11-01
+  updated: 2026-11-02
   tags: discovery, well-known, mcp, a2a, llms-txt, webmcp, agent-skills
   entries: model-context-protocol, mcp-authorization, a2a-protocol, llms-txt, nlweb, webmcp, agent-skills-spec, openapi, x402, agent-client-protocol, ag-ui
   related: connect-remote-mcp, pick-an-mcp-server, pay-with-x402, indexagentica-lookup, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth
@@ -47,12 +48,12 @@ On the target origin, the script sends GET requests for these locations:
 | `llms.txt` at each path level, most specific first, then `/llms.txt` | **llms.txt** v2 (August 2026). The script checks that the file opens with an H1 and counts its H2 sections and `[name](url)` list links. |
 | The page itself | `<link rel="alternate" type="text/markdown">` (the markdown version of the page), `rel="describedby"` (the llms.txt that covers it), any `Link:` header, and WebMCP hints. |
 
-For each MCP endpoint (`<origin>/mcp` unless you set `--no-mcp-guess`, each `--mcp` URL, and each server-card remote that is allowed by the rules here), the script sends three requests to that endpoint's host:
+For each MCP endpoint (`<origin>/mcp` unless you set `--no-mcp-guess`, each `--mcp` URL, and each server-card remote that is allowed by the rules here), the script sends up to three requests to that endpoint's host:
 1. A GET for `<endpoint>/server-card`.
 2. One JSON-RPC `server/discover` POST, with `MCP-Protocol-Version: 2026-07-28` and `Mcp-Method: server/discover`.
 3. If that POST fails without a 401, one `initialize` POST using `2025-11-25`. This one can open a session on an older server; nothing else is sent on it.
 
-If an endpoint answers 401, the script fetches the `resource_metadata` URL from `WWW-Authenticate`, under the same rules. With `--try-nlweb` it sends one GET `/ask` query to the target origin. This is off by default, because each query may cost the site an LLM call. The script never calls a tool and never downloads an Agent Skills artifact. `--max-mcp` (default 6) caps how many endpoints get POSTs.
+If an endpoint answers 401, the script fetches the `resource_metadata` URL from `WWW-Authenticate`, under the same rules. With `--try-nlweb` it sends one GET `/ask` query to the target origin. This is off by default, because each query may cost the site an LLM call. The script never calls a tool and never downloads an Agent Skills artifact. `--max-mcp` (default 6) caps how many endpoints are checked at all; endpoints listed as not fetched don't count.
 
 ### Headers and addresses
 

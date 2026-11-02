@@ -87,9 +87,9 @@ sources:
   - {title: Phoenix Remote MCP Server, url: "https://arize.com/docs/phoenix/integrations/mcp", accessed: 2026-10-21}
   - {title: Arize pricing, url: "https://arize.com/pricing/", accessed: 2026-10-12}
   - {title: Braintrust pricing, url: "https://www.braintrust.dev/pricing", accessed: 2026-10-12}
-  - {title: Send OpenTelemetry traces and logs to Braintrust, url: "https://braintrust.dev/docs/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-10-12}
-  - {title: Braintrust MCP, url: "https://braintrust.dev/docs/integrations/developer-tools/mcp", accessed: 2026-10-12}
-  - {title: Braintrust docs index (llms.txt), url: "https://www.braintrust.dev/docs/llms.txt", accessed: 2026-10-12}
+  - {title: Send OpenTelemetry traces and logs to Braintrust, url: "https://docs.braintrust.dev/integrations/sdk-integrations/opentelemetry/send-traces-and-logs", accessed: 2026-11-02}
+  - {title: Braintrust MCP, url: "https://docs.braintrust.dev/integrations/developer-tools/mcp", accessed: 2026-11-02}
+  - {title: Braintrust docs index (llms.txt), url: "https://docs.braintrust.dev/llms.txt", accessed: 2026-11-02}
   - {title: Comet and Opik pricing, url: "https://www.comet.com/site/pricing/", accessed: 2026-10-12}
   - {title: Opik OpenTelemetry integration, url: "https://www.comet.com/docs/opik/integrations/opentelemetry", accessed: 2026-10-12}
   - {title: Opik MCP server advanced setup, url: "https://www.comet.com/docs/opik/mcp-server/advanced-setup", accessed: 2026-10-12}
@@ -103,6 +103,7 @@ sources:
   - {title: Helicone pricing, url: "https://www.helicone.ai/pricing", accessed: 2026-10-12}
 last_verified: 2026-10-12
 published: 2026-10-12
+updated: 2026-11-02
 ---
 
 ## What this compares
