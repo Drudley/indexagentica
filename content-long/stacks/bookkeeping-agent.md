@@ -29,20 +29,25 @@ components:
     entry: langfuse
     why: "Keeps every tool call and result, so an accountant can see which Stripe and Xero records each proposed entry came from."
 tags: [bookkeeping, accounting, reconciliation, finance, mcp, xero, stripe, paddle, read-only, human-in-the-loop]
-entries: [claude-agent-sdk, xero-mcp, stripe-mcp, paddle-mcp, e2b, markitdown, langfuse, plaid-mcp]
+entries: [claude-agent-sdk, xero-mcp, xero-remote-mcp, stripe-mcp, paddle-mcp, e2b, markitdown, langfuse, plaid-mcp]
 related: [payment-processor-mcp-servers, agent-payment-rails, agent-that-can-buy-things, data-analysis-agent, agent-identity-and-mcp-auth, run-untrusted-code-in-a-sandbox, convert-documents-to-markdown-for-agents, agent-observability-platforms, add-mcp-servers-to-claude-code]
 sources:
-  - {title: Xero MCP Server README, url: "https://github.com/XeroAPI/xero-mcp-server", accessed: 2026-11-02}
-  - {title: "Xero MCP Server, client credentials and scopes (xero-client.ts)", url: "https://github.com/XeroAPI/xero-mcp-server/blob/main/src/clients/xero-client.ts", accessed: 2026-11-02}
+  - {title: Xero MCP Server README, url: "https://github.com/XeroAPI/xero-mcp-server", accessed: 2026-11-03}
+  - {title: "Xero MCP Server, client credentials and scopes (xero-client.ts)", url: "https://github.com/XeroAPI/xero-mcp-server/blob/main/src/clients/xero-client.ts", accessed: 2026-11-03}
+  - {title: "Xero MCP Server, create-manual-journal tool", url: "https://github.com/XeroAPI/xero-mcp-server/blob/main/src/tools/create/create-manual-journal.tool.ts", accessed: 2026-11-03}
   - {title: Xero Developer changelog, url: "https://developer.xero.com/changelog", accessed: 2026-11-02}
-  - {title: Xero granular scopes FAQ, url: "https://developer.xero.com/faq/granular-scopes", accessed: 2026-11-02}
-  - {title: Stripe MCP docs, url: "https://docs.stripe.com/mcp", accessed: 2026-11-02}
+  - {title: Xero granular scopes FAQ, url: "https://developer.xero.com/faq/granular-scopes", accessed: 2026-11-03}
+  - {title: Stripe MCP docs, url: "https://docs.stripe.com/mcp", accessed: 2026-11-03}
   - {title: "Stripe API keys, agent-tagged keys", url: "https://docs.stripe.com/keys#agent-keys", accessed: 2026-11-02}
   - {title: Stripe two-party approvals, url: "https://docs.stripe.com/account/approvals", accessed: 2026-11-02}
   - {title: "Stripe API, list balance transactions", url: "https://docs.stripe.com/api/balance_transactions/list", accessed: 2026-11-02}
   - {title: "Stripe API, the payout object", url: "https://docs.stripe.com/api/payouts/object", accessed: 2026-11-02}
   - {title: Stripe supported currencies, url: "https://docs.stripe.com/currencies", accessed: 2026-11-02}
-  - {title: Paddle MCP Server README, url: "https://github.com/PaddleHQ/paddle-mcp-server", accessed: 2026-11-02}
+  - {title: Paddle MCP Server README, url: "https://github.com/PaddleHQ/paddle-mcp-server", accessed: 2026-11-03}
+  - {title: "Paddle MCP server, Toolkit source (metrics tools skipped in sandbox)", url: "https://github.com/PaddleHQ/paddle-mcp-server/blob/main/src/toolkit.ts", accessed: 2026-11-03}
+  - {title: "Paddle developer docs, Paddle MCP (hosted servers)", url: "https://developer.paddle.com/sdks/ai/paddle-mcp", accessed: 2026-11-03}
+  - {title: "Paddle changelog, OAuth for the live Paddle MCP server", url: "https://developer.paddle.com/changelog/2026/paddle-mcp-oauth", accessed: 2026-11-03}
+  - {title: Xero Remote MCP FAQs, url: "https://developer.xero.com/faq/remote-mcp", accessed: 2026-11-03}
   - {title: Paddle API key permissions, url: "https://developer.paddle.com/api-reference/about/permissions", accessed: 2026-11-02}
   - {title: "Claude Agent SDK, configure permissions", url: "https://code.claude.com/docs/en/agent-sdk/permissions", accessed: 2026-11-02}
   - {title: "Claude Agent SDK, MCP", url: "https://code.claude.com/docs/en/agent-sdk/mcp", accessed: 2026-11-02}
@@ -50,8 +55,9 @@ sources:
   - {title: MarkItDown README, url: "https://github.com/microsoft/markitdown", accessed: 2026-11-02}
   - {title: Langfuse README, url: "https://github.com/langfuse/langfuse", accessed: 2026-11-02}
   - {title: Plaid Dashboard MCP docs, url: "https://plaid.com/docs/resources/mcp/", accessed: 2026-11-02}
-last_verified: 2026-11-02
+last_verified: 2026-11-03
 published: 2026-11-02
+updated: 2026-11-03
 ---
 
 ## How the pieces fit
@@ -69,8 +75,9 @@ Month-end bookkeeping is mostly matching. Money arrives through Stripe or Paddle
 Each of the three servers handles "read-only" differently, so set it up at both ends: in the credential, and in the harness.
 
 - **Xero: scopes.** The server has no read-only flag; on a test run it listed 51 tools, 25 of which create, update, add, approve, revert or delete. Without `XERO_SCOPES`, it asks Xero for its default scope list, which includes read-write scopes such as `accounting.invoices` and `accounting.payments`. When `XERO_SCOPES` is set, it requests exactly those scopes and nothing else. The server's README lists the `.read` versions of the invoice, payment, bank transaction and report scopes. Create the Custom Connection with read scopes only and set `XERO_SCOPES` to the same list. Xero's FAQ says a call that needs a scope you haven't been granted gets a 401 with an insufficient-scope `WWW-Authenticate` header. Test with a Demo Company first.
+- **Xero: older connections.** The server's README says Custom Connections created before 29 April 2026 use the older bundled scopes (such as `accounting.transactions`), and ones created from that date use granular scopes, the kind listed below. When `XERO_SCOPES` is unset the server tries the bundled list first and falls back to the granular one on `invalid_scope`; when it is set, it requests only your list. So on an older connection, check which scopes it was granted before using the granular read list. Xero's own FAQ gives a different date for apps: those created before 2 March 2026 have until September 2027 to move to granular scopes. We did not find the 29 April date in Xero's documentation.
 - **Stripe: agent key and approval rules.** Stripe recommends OAuth for interactive clients. For an unattended agent, use an agent-tagged restricted key with read permissions on the resources you need. From December 2026, the MCP server stops accepting full-access secret keys and restricted keys without the Agent tag. Agent-tagged keys are subject to approval rules, and Stripe adds default rules for refunds, subscription cancellations and outbound payments. You can add rules (approve or block) for payouts, credit notes, customer balance transactions and more.
-- **Paddle: tool filter and key permissions.** The default `--tools` setting is `non-destructive`, and that is not read-only. On a test run, `non-destructive` loaded 63 tools, including `create_transaction`, `create_adjustment` (refunds and credits) and `create_subscription_charge`. `read-only` loaded 41 tools. Use `--tools=read-only` and give the API key only `.read` permissions. Note that `create_report` is not a read-only tool. If you want the agent to start new CSV exports, add `create_report` to an explicit comma-separated tool list (42 tools), or let a person create the report and have the agent read it.
+- **Paddle: tool filter and key permissions.** The default `--tools` setting is `non-destructive`, and that is not read-only. It loads create tools such as `create_transaction`, `create_adjustment` (refunds and credits) and `create_subscription_charge`. Tool counts depend on `PADDLE_ENVIRONMENT`, because the server skips its 7 metrics tools in sandbox. Listing the tools of version 0.1.6 offline gave 90 tools in production (70 with `non-destructive`, 48 with `read-only`) and 83 in sandbox (63 and 41). Use `--tools=read-only` and give the API key only `.read` permissions. Note that `create_report` is not a read-only tool. If you want the agent to start new CSV exports, add `create_report` to an explicit comma-separated list of the read-only tools (49 tools in production, 42 in sandbox), or let a person create the report and have the agent read it.
 
 In the harness, auto-approve only read tools and hide the write tools. MCP tools are named `mcp__<server>__<tool>`. Allow rules accept a glob after the server name, and deny rules both block calls and remove the tool definitions. In `dontAsk` mode, any call that isn't approved is denied instead of prompting.
 
@@ -114,10 +121,13 @@ options = ClaudeAgentOptions(
         "mcp__xero__approve-*", "mcp__xero__revert-*", "mcp__xero__add-*",
         "mcp__stripe__stripe_api_write", "mcp__stripe__send_money",
         "mcp__stripe__transfer_money", "mcp__stripe__convert_currency",
+        "mcp__stripe__setup_recipient", "mcp__stripe__atlas_company_formation",
     ],
     permission_mode="dontAsk",
 )
 ```
+
+The Stripe deny list names the tools in Stripe's MCP tool table that write data, move money or start an account process: `stripe_api_write`, the Treasury tools `send_money`, `transfer_money`, `convert_currency` and `setup_recipient` (which sets up a payee), and `atlas_company_formation` (which starts or resumes a company formation). Stripe marks `send_money`, `transfer_money` and `convert_currency` as needing human confirmation, but not `setup_recipient` or `atlas_company_formation`. Other tools that aren't in `allowed_tools` are denied by `dontAsk` anyway.
 
 For Paddle, add a server running `npx -y @paddle/paddle-mcp@0.1.6 --tools=read-only` with `PADDLE_API_KEY` and `PADDLE_ENVIRONMENT` in its `env`. Every tool it loads is then read-only, so `mcp__paddle__*` can go in the allowlist.
 
@@ -126,6 +136,7 @@ For Paddle, add a server running `npx -y @paddle/paddle-mcp@0.1.6 --tools=read-o
 When the report is accepted, the fixes can be written, but not by the same unattended run. Use a second configuration with write scopes, and leave write tools out of `allowed_tools`, so each call reaches your `canUseTool` callback for a person to approve. That only works in `default` mode; `dontAsk` denies the call instead. Know what each Xero write does. In version 0.0.17 of the server:
 
 - `create-invoice`, `create-credit-note` and `create-quote` always create **drafts**, and `create-manual-journal` defaults to draft. An accountant can review and approve these in Xero.
+- `create-manual-journal` also takes an optional `status` (`DRAFT`, `POSTED`, `DELETED`, `VOIDED` or `ARCHIVED`). An approved call with `status: POSTED` posts the journal at once, so read the arguments before you approve, not only the tool name. `update-manual-journal` takes a `status` too.
 - `create-bank-transaction` creates the transaction as **authorised**, and `create-payment` records a payment against an authorised invoice straight away. Treat these as posting entries.
 - The server has no tool for bank statement lines or for reconciling them. Matching a statement line in Xero stays a job for a person in Xero itself.
 
@@ -169,7 +180,8 @@ Xero's `list-bank-transactions` tool returns 10 transactions per page as text, n
 
 ## Variations
 
-- **Xero's hosted server.** On 2026-10-15 Xero launched a Developer Remote MCP with 39 tools across invoicing, accounting, reporting and payments, for commercial apps on the Core tier or above. The local server above needs no app tier, only a Custom Connection or a bearer token.
+- **Xero's hosted server.** On 2026-10-15 Xero launched a Developer Remote MCP, listed here as [xero-remote-mcp](entry:xero-remote-mcp), with 39 tools across invoicing, accounting, reporting and payments, for commercial apps on the Core tier or above. Starter apps can use it with the demo organisation only. It is at `https://api.xero.com/mcp/v1` and signs in with OAuth 2.0 and PKCE. Custom Connections aren't eligible, so the unattended setup above doesn't carry over as is. Request only the scopes for the tools you want. Xero says its V1 tools don't ask for confirmation before writing, so the harness rules still matter. The local server above needs no app tier, only a Custom Connection or a bearer token.
+- **Paddle's hosted server.** Paddle documents `https://mcp.paddle.com/mcp` (live, OAuth or an API key) and `https://sandbox-mcp.paddle.com/mcp` (sandbox, API key only). Instead of one tool per API call, it has three tools: `search`, `execute` (which runs chained API calls) and `report_missing_tool`. Paddle says it doesn't gate destructive operations, so you can't allow its reads and deny its writes by tool name. Read-only then rests on the API key's permissions or the OAuth connection's read access, which is the default for live OAuth connections. Paddle also recommends approving each `execute` call.
 - **Bank data.** The [Plaid Dashboard MCP](entry:plaid-mcp) is for diagnosing a Plaid integration (Items, Link conversion, usage), not for reading account transactions, so it is not a bank feed for this stack.
 - **Other processors.** Square, PayPal, Razorpay and Adyen have their own MCP servers; the [payment processor MCP servers comparison](comparison:payment-processor-mcp-servers) covers what each can read and write.
 - **Agents that spend money** are a different stack: see [Agent that can buy things](stack:agent-that-can-buy-things).

@@ -2,8 +2,8 @@
 id: publish-an-mcp-server
 type: guide
 title: Publish an MCP server so agents can find it
-summary: "Build a small MCP server with FastMCP, test it with the MCP Inspector CLI, publish its metadata to the official MCP Registry with mcp-publisher, then get it into GitHub's registry, Glama, Smithery, the Docker MCP Catalog and Index Agentica."
-description: "A practical path from a working MCP server to a discoverable one. It builds and runs a FastMCP server over Streamable HTTP, checks it with the MCP Inspector CLI, explains hosting and packaging choices, walks through server.json, namespace authentication and publishing on the official MCP Registry, and lists what each downstream directory needs. Steps come from each project's docs, checked on 2026-10-17. The build and test commands were run; nothing was published."
+summary: "Build a small MCP server with FastMCP, test it with the MCP Inspector CLI, publish its metadata to the official MCP Registry with mcp-publisher, then get it into GitHub's registry, Glama, the Docker MCP Catalog and Index Agentica."
+description: "A practical path from a working MCP server to a discoverable one. It builds and runs a FastMCP server over Streamable HTTP, checks it with the MCP Inspector CLI, explains hosting and packaging choices, walks through server.json, namespace authentication and publishing on the official MCP Registry, and lists what each downstream directory needs. Steps come from each project's docs, checked on 2026-10-17; the Smithery path was removed on 2026-11-03 after Smithery shut down its accounts and CLI on 2026-10-31. The build and test commands were run; nothing was published."
 author: Agentica Author
 difficulty: intermediate
 time_estimate: 45 min
@@ -72,9 +72,9 @@ sources:
   - title: Glama connector ownership schema
     url: https://glama.ai/mcp/schemas/connector.json
     accessed: 2026-10-17
-  - title: Smithery, Publish
-    url: https://smithery.ai/docs/build/publish
-    accessed: 2026-10-17
+  - title: The future of Smithery (shutdown notice)
+    url: https://smithery.ai/future
+    accessed: 2026-11-03
   - title: Docker MCP Registry README
     url: https://github.com/docker/mcp-registry
     accessed: 2026-10-17
@@ -85,8 +85,9 @@ sources:
     url: https://indexagentica.com/contribute.json
     accessed: 2026-10-17
 related: [add-oauth-to-your-mcp-server, connect-an-agent-to-a-remote-mcp-server, agent-auth-and-delegated-access, agent-identity-and-mcp-auth, pick-an-mcp-server, add-mcp-servers-to-claude-code, test-your-mcp-server, mcp-gateways, use-the-indexagentica-mcp-server, bridge-stdio-and-remote-mcp-servers, mcp-server-frameworks]
-last_verified: 2026-10-17
+last_verified: 2026-11-03
 published: 2026-10-17
+updated: 2026-11-03
 ---
 
 A working MCP server is only half the job. Agents and their humans find servers through registries and directories, and most of those now read from one place: the [official MCP Registry](entry:official-mcp-registry). This guide takes a small server from code to a published listing, then covers the directories that sit downstream.
@@ -103,7 +104,7 @@ flowchart LR
   E --> F
   F --> G[Official MCP Registry]
   G --> H[GitHub MCP Registry, Glama, other aggregators]
-  D --> I[Smithery, Docker MCP Catalog, Index Agentica]
+  D --> I[Docker MCP Catalog, Index Agentica]
 ```
 
 ## 1. Build a small server with FastMCP
@@ -232,7 +233,7 @@ The registry exposes an unauthenticated read API that aggregators are expected t
 |---|---|
 | [GitHub MCP Registry](entry:github-mcp-registry) | Publish to the official registry first (status `active`, latest). Adding a new server to github.com/mcp is a manual curation step: GitHub's blog says to email partnerships@github.com, and requests are also posted in discussion #1257. After onboarding, new versions sync automatically. Check with `curl "https://api.mcp.github.com/v0.1/servers?search=<name>"`. |
 | [Glama](entry:glama-mcp) | Indexes servers from GitHub, the official registry and community submissions, then scans and scores them. To claim a repository listing, commit a `glama.json` with `maintainers` (GitHub usernames). To claim a remote connector, serve `/.well-known/glama.json` with the claim token from Glama's claim panel on your domain. |
-| [Smithery](entry:smithery) | Go to smithery.ai/new and enter your public HTTPS URL, or use `smithery mcp publish "<url>" -n @org/server`. It requires Streamable HTTP and OAuth if your server needs auth. If Smithery's scan can't read your tools, serve a static card at `/.well-known/mcp/server-card.json`. |
+| [Smithery](entry:smithery) | Not a publishing route any more. On October 31, 2026 Smithery shut down its connection-management services, including Smithery accounts and API keys and the Smithery CLI and SDKs, so the smithery.ai/new form and `smithery mcp publish` no longer work. smithery.ai stays up as a public directory, now part of Arcade, listing a curated set of verified servers with their direct MCP URLs. Its [shutdown notice](https://smithery.ai/future) gives no way to submit a server. |
 | [Docker MCP Catalog](entry:docker-mcp-catalog) | Open a pull request on `docker/mcp-registry` with `servers/<name>/server.yaml`, made with `task wizard` or `task create`, or `task remote-wizard` for remote servers. The Docker team reviews every PR. After approval, a Docker-built image is signed and published under `mcp/` on Docker Hub, and the entry appears within 24 hours. |
 | Index Agentica | Open a pull request adding `content/mcp-servers/<id>.json`, or use the structured New entry issue. A maintainer reviews it, and `contribute.json` has the schema and rules. Agents are welcome to submit, as long as they say they are an agent and who they act for. Our own server is listed as [indexagentica-mcp](entry:indexagentica-mcp). |
 
@@ -244,7 +245,7 @@ The registry exposes an unauthenticated read API that aggregators are expected t
 - [ ] Package: the ownership marker matches the `server.json` name exactly.
 - [ ] `server.json` passes `mcp-publisher validate`; the description fits in 100 characters; the version is new.
 - [ ] You published under a namespace you control (GitHub user or org you own, or your domain).
-- [ ] You requested GitHub onboarding, claimed the Glama listing, and submitted to Smithery, Docker and Index Agentica if they fit.
+- [ ] You requested GitHub onboarding, claimed the Glama listing, and submitted to Docker and Index Agentica if they fit.
 
 ## Troubleshooting (from the registry docs)
 
