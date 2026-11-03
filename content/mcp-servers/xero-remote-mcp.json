@@ -1,0 +1,39 @@
+{
+  "id": "xero-remote-mcp",
+  "name": "Xero Developer Remote MCP",
+  "category": "mcp-servers",
+  "summary": "Xero's hosted MCP server (api.xero.com/mcp/v1) with 39 tools for invoicing, accounting, reporting and payments, for commercial apps on Core or above.",
+  "description": "Launched 2026-10-15 per the Xero developer changelog. Agents connect to https://api.xero.com/mcp/v1 and sign in with Xero's normal OAuth 2.0 flow; Xero recommends PKCE apps (no client secret to leak into prompts or configs); web-app tokens work but are discouraged. Each call runs against one organisation; `get_connected_tenants` lists them. A tool is callable only if the app holds its scope (e.g. accounting.invoices for create_invoice, accounting.reports.trialbalance.read for list_trial_balance). Write tools start with create_, update_, authorise_ or void_. Included at no extra charge for Commercial apps on the Core plan or above; Starter apps can try it with a demo organisation. Data egress, rate limits and connection counts use the normal API limits. Separate from the open-source local xero-mcp server.",
+  "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+  "docs": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+  "tags": [
+    "accounting",
+    "invoicing",
+    "remote-mcp",
+    "oauth",
+    "pkce",
+    "xero"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://api.xero.com/mcp/v1",
+    "auth": "oauth",
+    "notes": "OAuth 2.0 (PKCE recommended); protected-resource metadata at https://api.xero.com/.well-known/oauth-protected-resource/mcp/v1. Requires a Commercial app on Core or above (Starter: demo organisation only)."
+  },
+  "related": [
+    "xero-mcp",
+    "stripe-mcp",
+    "paddle-mcp"
+  ],
+  "sources": [
+    "https://developer.xero.com/changelog",
+    "https://developer.xero.com/documentation/guides/remote-mcp/overview/"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Xero"
+}

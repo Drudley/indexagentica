@@ -3,10 +3,10 @@
   "name": "Paddle MCP Server",
   "category": "finance-payments",
   "summary": "Paddle's official MCP server for Paddle Billing: manage products, prices, customers, subscriptions, transactions, refunds and reports.",
-  "description": "Near parity with the Paddle API, and each tool is marked read-only or non-destructive. Run with `npx -y @paddle/paddle-mcp` and set PADDLE_API_KEY and PADDLE_ENVIRONMENT (sandbox or production). Limit the loaded tools with `--tools` or PADDLE_MCP_TOOLS, e.g. non-destructive. Works with Paddle Billing only, not Paddle Classic. Paddle is a merchant of record. Apache-2.0 (npm `@paddle/paddle-mcp` 0.1.6).",
+  "description": "Paddle now documents a hosted server: https://mcp.paddle.com/mcp (live; OAuth since 2026-08-04, or a live API key) and https://sandbox-mcp.paddle.com/mcp (sandbox; API key only). The hosted server uses codemode with three tools (search, execute, report_missing_tool); OAuth connections start with read access within your Paddle role, and destructive calls carry destructiveHint plus a warning. The open-source local server (`npx -y @paddle/paddle-mcp`, PADDLE_API_KEY and PADDLE_ENVIRONMENT) exposes 90 tools and filters them with `--tools` or PADDLE_MCP_TOOLS: all, read-only, non-destructive or a comma-separated list. The default is non-destructive, which drops only update/delete tools, so it still loads create tools such as create_transaction, create_adjustment and create_subscription_charge: 70 tools in production, 63 in sandbox (the 7 metrics tools are skipped there). read-only loads 48 (41 in sandbox). The local server reports serverInfo version 0.1.3 (hardcoded) although npm `@paddle/paddle-mcp` is 0.1.6. Paddle Billing only, not Paddle Classic. Paddle is a merchant of record. Apache-2.0.",
   "url": "https://github.com/PaddleHQ/paddle-mcp-server",
   "repo": "https://github.com/PaddleHQ/paddle-mcp-server",
-  "docs": "https://developer.paddle.com/",
+  "docs": "https://developer.paddle.com/sdks/ai/paddle-mcp",
   "tags": [
     "billing",
     "subscriptions",
@@ -17,8 +17,10 @@
   "pricing": "open-source",
   "status": "active",
   "agent_access": {
-    "auth": "api-key",
-    "notes": "PADDLE_API_KEY plus PADDLE_ENVIRONMENT=sandbox|production."
+    "mcp_endpoint": "https://mcp.paddle.com/mcp",
+    "llms_txt": "https://developer.paddle.com/llms.txt",
+    "auth": "oauth",
+    "notes": "Live: OAuth or Bearer live API key. Sandbox: https://sandbox-mcp.paddle.com/mcp with Bearer sandbox API key. Local package: PADDLE_API_KEY plus PADDLE_ENVIRONMENT=sandbox|production."
   },
   "related": [
     "stripe-mcp",
@@ -26,11 +28,15 @@
   ],
   "sources": [
     "https://github.com/PaddleHQ/paddle-mcp-server",
-    "https://www.npmjs.com/package/@paddle/paddle-mcp"
+    "https://www.npmjs.com/package/@paddle/paddle-mcp",
+    "https://developer.paddle.com/sdks/ai/paddle-mcp",
+    "https://developer.paddle.com/changelog/2026/paddle-mcp-oauth",
+    "https://github.com/PaddleHQ/paddle-mcp-server/blob/main/src/toolkit.ts",
+    "https://github.com/PaddleHQ/paddle-mcp-server/blob/main/src/index.ts"
   ],
   "added": "2026-11-01",
-  "updated": "2026-11-01",
-  "last_verified": "2026-11-01",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
   "submitted_by": "agentica-curator",
   "maintainer": "Paddle"
 }

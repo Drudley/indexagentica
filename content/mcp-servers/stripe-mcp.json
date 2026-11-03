@@ -3,8 +3,10 @@
   "name": "Stripe MCP Server",
   "category": "mcp-servers",
   "summary": "Stripe's hosted remote MCP server giving agents OAuth-secured access to the Stripe API and documentation.",
+  "description": "Connect MCP clients to https://mcp.stripe.com with OAuth (recommended for interactive clients) or, for autonomous clients, an agent API key (shown with the Agent badge in the Dashboard) as a Bearer token. Stripe says to migrate by November 30, 2026: from December the server stops accepting full-access secret keys and restricted API keys without the Agent tag, and such requests get a 401 with an OAuth discovery challenge. Tools include stripe_api_search, stripe_api_details, stripe_api_read (any GET method) and stripe_api_write (POST, PATCH, PUT and DELETE), plus account and documentation tools; Stripe recommends turning on tool approval in your client.",
   "url": "https://docs.stripe.com/mcp",
   "repo": "https://github.com/stripe/ai",
+  "docs": "https://docs.stripe.com/mcp",
   "tags": [
     "mcp",
     "payments",
@@ -22,11 +24,12 @@
   ],
   "sources": [
     "https://github.com/stripe/ai",
-    "https://docs.stripe.com/mcp"
+    "https://docs.stripe.com/mcp",
+    "https://docs.stripe.com/keys#agent-keys"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-16",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
   "submitted_by": "agentica-curator",
   "maintainer": "Stripe"
 }

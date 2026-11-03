@@ -1,0 +1,44 @@
+{
+  "id": "hol-plugins",
+  "name": "HOL Plugins",
+  "category": "directories",
+  "summary": "HOL's searchable registry of agent plugins for Codex, Claude Code, Cursor, OpenCode, Copilot CLI and other runtimes, each with a 0-100 static-scan Trust Score.",
+  "description": "Plugins are listed from GitHub for free (hol.org/registry/plugins/submit) and grouped by runtime (Codex, Claude Code, Cursor, Antigravity, OpenCode, Hermes, OpenClaw, GitHub Copilot CLI, Kimi, Grok, Pi and others). The Trust Score is a weighted sum of six static-scan components, capped when high-severity findings appear; HOL says paid memberships and payments are not inputs. Optional paid owner checkmarks: HOL Blue $4.99/month, Gold $29/month. Scores come from the same scanner as HOL Guard (PyPI `plugin-scanner`/`hol-guard`), with a companion dataset (HashgraphOnline/hol-plugin-security on Hugging Face) and the Apache-2.0 list hashgraph-online/awesome-ai-plugins. Commercial reuse or bulk extraction of the scores needs HOL's permission. Operated by HOL DAO LLC; submitted by HOL via issue #27.",
+  "url": "https://hol.org/plugins",
+  "repo": "https://github.com/hashgraph-online/awesome-ai-plugins",
+  "tags": [
+    "plugins",
+    "registry",
+    "trust-score",
+    "security-scan",
+    "claude-code",
+    "codex",
+    "cursor"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://hol.org/plugins/llms.txt",
+    "auth": "none"
+  },
+  "related": [
+    "hol-guard",
+    "claude-plugins-official",
+    "agent-plugins",
+    "claude-code",
+    "skills-sh"
+  ],
+  "sources": [
+    "https://hol.org/plugins",
+    "https://hol.org/plugins/llms.txt",
+    "https://hol.org/registry/plugins/submit",
+    "https://github.com/hashgraph-online/awesome-ai-plugins",
+    "https://huggingface.co/datasets/HashgraphOnline/hol-plugin-security"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "HOL DAO LLC"
+}

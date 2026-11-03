@@ -1,0 +1,36 @@
+{
+  "id": "octopus-remote-mcp",
+  "name": "Octopus Deploy Remote MCP",
+  "category": "mcp-servers",
+  "summary": "MCP server built into Octopus Deploy instances at /mcp: agents query projects, tenants, tasks and audit events, and create, deploy and promote releases or run runbooks.",
+  "description": "Announced 2026-10-13; available now on Octopus Cloud and coming to self-hosted Octopus Server in 2026.3. Dedicated tools (e.g. find_spaces, find_projects) plus contract tools: search_contracts and describe_contract find selected REST operations, then execute_query reads and execute_command changes. Enable it in Configuration > Settings > MCP Controls and authenticate with an X-Octopus-ApiKey header; Octopus recommends a dedicated Agent Service Account and Agent API key so agent activity shows in the audit log. OAuth and scoped API keys are on the roadmap. The local Octopus MCP server stays available but gets no new features. Octopus has a Free plan (10 projects).",
+  "url": "https://octopus.com/docs/octopus-ai/mcp/remote",
+  "docs": "https://octopus.com/blog/introducing-remote-mcp",
+  "tags": [
+    "deployment",
+    "ci-cd",
+    "devops",
+    "runbooks",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Per-instance endpoint https://<your-instance>/mcp (Streamable HTTP) with header X-Octopus-ApiKey: <Agent API key>."
+  },
+  "related": [
+    "mcp-remote"
+  ],
+  "sources": [
+    "https://octopus.com/docs/octopus-ai/mcp/remote",
+    "https://octopus.com/blog/introducing-remote-mcp",
+    "https://octopus.com/pricing"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Octopus Deploy"
+}

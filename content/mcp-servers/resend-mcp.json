@@ -1,0 +1,43 @@
+{
+  "id": "resend-mcp",
+  "name": "Resend MCP",
+  "category": "mcp-servers",
+  "summary": "Resend's official MCP server for email: send and schedule emails, manage templates, broadcasts, contacts, domains, logs and webhooks. Hosted with OAuth or run locally.",
+  "description": "The hosted server at https://mcp.resend.com/mcp (Streamable HTTP, launched 2026-07-07) uses OAuth sign-in with permissions you can revoke in Team settings, or a Resend API key as a Bearer token for CI and headless agents. The same open-source code runs locally with `npx -y resend-mcp` and RESEND_API_KEY (stdio by default, HTTP optional); npm `resend-mcp` 2.27.2, MIT. Logged actions carry a user-agent trace. The Resend plugin (Agent Plugins format) bundles the remote server with Resend's agent skills. Resend's Free plan allows 100 emails a day.",
+  "url": "https://resend.com/docs/mcp-server",
+  "repo": "https://github.com/resend/resend-mcp",
+  "docs": "https://resend.com/changelog/remote-mcp-server",
+  "tags": [
+    "email",
+    "transactional-email",
+    "remote-mcp",
+    "oauth",
+    "resend"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.resend.com/mcp",
+    "llms_txt": "https://resend.com/docs/llms.txt",
+    "auth": "oauth",
+    "notes": "OAuth, or Authorization: Bearer re_… API key for headless use."
+  },
+  "related": [
+    "agentmail",
+    "agent-plugins",
+    "claude-plugins-official"
+  ],
+  "sources": [
+    "https://resend.com/docs/mcp-server",
+    "https://resend.com/changelog/remote-mcp-server",
+    "https://github.com/resend/resend-mcp",
+    "https://www.npmjs.com/package/resend-mcp",
+    "https://resend.com/pricing"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Resend"
+}

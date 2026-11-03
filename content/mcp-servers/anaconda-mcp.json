@@ -1,0 +1,40 @@
+{
+  "id": "anaconda-mcp",
+  "name": "Anaconda MCP",
+  "category": "mcp-servers",
+  "summary": "Anaconda's hosted, read-only MCP server that gives coding agents conda package facts, curated CVE data with fixed versions, org channel policy and forum search.",
+  "description": "GA on 2026-10-02 at https://anaconda.com/api/mcp (Streamable HTTP); the beta ran locally, so Anaconda recommends uninstalling the old anaconda-mcp package. Four tools: package_info and search_forum work with any Anaconda account; package_security (severity, CVSS, CWE, analyst notes and a fixed-version MatchSpec) and org_config (Package Security Manager channel policies) need a Business or Enterprise subscription. The server only returns data; it can't install or change anything. Ships with a free Anaconda Intelligence skill that tells the agent which tool to call when. Connect via the Anaconda CLI, the Kilo Marketplace or any remote-MCP client.",
+  "url": "https://www.anaconda.com/docs/cli-reference/anaconda-mcp/main",
+  "docs": "https://www.anaconda.com/blog/anaconda-mcp-general-availability",
+  "tags": [
+    "python",
+    "conda",
+    "packages",
+    "vulnerabilities",
+    "supply-chain",
+    "remote-mcp",
+    "read-only"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://anaconda.com/api/mcp",
+    "auth": "oauth",
+    "notes": "Sign in with an anaconda.com account (OAuth protected-resource metadata advertised on 401). Policy fields are null without Business/Enterprise."
+  },
+  "related": [
+    "kilo-code",
+    "snyk-agent-scan"
+  ],
+  "sources": [
+    "https://www.anaconda.com/blog/anaconda-mcp-general-availability",
+    "https://www.anaconda.com/docs/cli-reference/anaconda-mcp/main",
+    "https://www.anaconda.com/pricing"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Anaconda"
+}

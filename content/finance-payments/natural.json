@@ -1,0 +1,43 @@
+{
+  "id": "natural",
+  "name": "Natural",
+  "category": "finance-payments",
+  "summary": "Agentic payments platform: FDIC-insured wallets agents can hold and send from, plus ACH, wire and real-time payments, over API, MCP, CLI and SDKs.",
+  "description": "Natural Direct went GA on 2026-10-29, letting an agent choose ACH, wire or real-time (RTP/FedNow) payouts from the same wallet it uses for instant payments, payment requests and cards, within the controls you set. Surfaces: hosted payments MCP at https://mcp.natural.com (OAuth-first, agent API keys as fallback), a no-auth docs MCP at https://docs.natural.com/mcp, REST at api.natural.com, the `natural` CLI, and SDKs (`naturalpay` for Python, `@naturalpay/sdk` for TypeScript, both 1.6.54). Signup and KYB need a human. Accounts are free; payments carry fees (e.g. Pay 0.1% for businesses, ACH 0.5%, wire 0.25%, real-time 1.5%). Operated by Natural AI, Inc.",
+  "url": "https://www.natural.com",
+  "docs": "https://docs.natural.com",
+  "tags": [
+    "payments",
+    "wallets",
+    "ach",
+    "wire",
+    "rtp",
+    "remote-mcp",
+    "banking"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://docs.natural.com/llms.txt",
+    "mcp_endpoint": "https://mcp.natural.com",
+    "auth": "oauth",
+    "notes": "Payments MCP: OAuth (or agent API key as Bearer). Docs MCP https://docs.natural.com/mcp needs no auth. REST/SDK amounts use integer minor units; MCP amounts use decimal strings plus currency."
+  },
+  "related": [
+    "crossmint-agents",
+    "mastercard-agent-pay-for-machines",
+    "stripe-mcp"
+  ],
+  "sources": [
+    "https://www.natural.com/blog/direct",
+    "https://www.natural.com/pricing",
+    "https://docs.natural.com/llms.txt",
+    "https://docs.natural.com/guides/platform/mcp"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Natural AI, Inc."
+}

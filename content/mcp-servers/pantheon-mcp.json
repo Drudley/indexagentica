@@ -1,0 +1,39 @@
+{
+  "id": "pantheon-mcp",
+  "name": "Pantheon MCP Server",
+  "category": "mcp-servers",
+  "summary": "Pantheon's hosted MCP server (public beta) for its WordPress, Drupal and Next.js platform: sites, environments, multidevs, builds, deploys, runtime logs and secrets.",
+  "description": "Public beta since 2026-10-14 at https://mcp.pantheon.io/mcp, open to any Pantheon customer. You sign in with your Pantheon account and the server forwards your own token, so the agent can do only what your account can. Tools are prefixed pantheon_ (list/get workspaces, sites and environments, create_multidev, get_build_logs, diagnose_failed_build, rebuild_site and rollback_deploy for Next.js, sync_code, get_runtime_logs, list/set secrets). Mostly read-only; changes need approval in your client, and the beta has no delete tools. Pantheon accounts start free with sandbox sites; live sites need a paid plan.",
+  "url": "https://docs.pantheon.io/guides/mcp",
+  "docs": "https://pantheon.io/blog/introducing-pantheon-mcp-server",
+  "tags": [
+    "hosting",
+    "wordpress",
+    "drupal",
+    "nextjs",
+    "deployment",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "beta",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.pantheon.io/mcp",
+    "auth": "oauth",
+    "notes": "Sign in with your Pantheon account; protected-resource metadata at mcp.pantheon.io/.well-known/oauth-protected-resource."
+  },
+  "related": [
+    "vercel-mcp",
+    "netlify-mcp-server"
+  ],
+  "sources": [
+    "https://docs.pantheon.io/guides/mcp",
+    "https://pantheon.io/blog/introducing-pantheon-mcp-server",
+    "https://pantheon.io/plans/pricing"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pantheon Systems, Inc."
+}

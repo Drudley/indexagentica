@@ -1,0 +1,37 @@
+{
+  "id": "thinkingbox",
+  "name": "ThinkingBox",
+  "category": "evals-observability",
+  "summary": "Microsoft's open-source sandbox and benchmark that runs agents against isolated MCP tool servers and grades the backend state and side effects they leave.",
+  "description": "ThinkingBox defines tools as MCP servers, runs an LLM agent (with a simulated user) through stateful scenarios and test cases, and checks terminal database state, side effects and response requirements instead of the agent's own claims. ThinkingBox-Bench has 507 stateful business workflows, each run 20 times to measure consistency (paper: \"One Success Isn't Reliability\", arXiv 2608.19741). An OpenEnv adapter (openenv/OpenEnv envs/thinkingbox_env) exposes the pinned public benchmark through the standard reset/step interface for evaluation. Also usable for training-data generation and RL loops. MIT.",
+  "url": "https://github.com/microsoft/thinkingbox",
+  "repo": "https://github.com/microsoft/thinkingbox",
+  "docs": "https://huggingface.co/blog/microsoft/thinkingbox",
+  "tags": [
+    "benchmark",
+    "agent-evaluation",
+    "mcp",
+    "stateful",
+    "reliability",
+    "openenv"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "tau-bench",
+    "appworld",
+    "inspect-ai"
+  ],
+  "sources": [
+    "https://github.com/microsoft/thinkingbox",
+    "https://huggingface.co/blog/microsoft/thinkingbox",
+    "https://arxiv.org/abs/2608.19741",
+    "https://github.com/openenv/OpenEnv/tree/main/envs/thinkingbox_env"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Microsoft"
+}

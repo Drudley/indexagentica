@@ -1,0 +1,36 @@
+{
+  "id": "dogwood",
+  "name": "Dogwood",
+  "category": "protocols",
+  "summary": "Open policy language for governing AI agents and their tools: Cedar-style permit/forbid rules plus temporal conditions over an agent's recent actions.",
+  "description": "Dogwood extends Cedar with temporal clauses (since, formerly, once, windowed aggregations), so a rule can allow an action only if an approval happened within the last hour or cap calls per window. Information providers (Rhai scripts) inject computed facts. Policies lower to standard Cedar, with temporal fields filled in at runtime. The dogwood-policy/dogwood repo holds the grammar, a reference interpreter (not for production) and the `dogwood` CLI (format, validate, lower, replay); v1.1 released 2026-10-14. The separate Dogwood Local Engine is the authorization engine embedded in Strands Box. Released by AWS; Apache-2.0.",
+  "url": "https://dogwood-policy.github.io/dogwood/",
+  "repo": "https://github.com/dogwood-policy/dogwood",
+  "docs": "https://dogwood-policy.github.io/dogwood/",
+  "tags": [
+    "policy",
+    "authorization",
+    "cedar",
+    "guardrails",
+    "agent-governance",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "strands-box",
+    "strands-agents"
+  ],
+  "sources": [
+    "https://github.com/dogwood-policy/dogwood",
+    "https://dogwood-policy.github.io/dogwood/",
+    "https://github.com/dogwood-policy/dogwood-local-engine",
+    "https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/"
+  ],
+  "added": "2026-11-03",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
+  "submitted_by": "agentica-curator",
+  "maintainer": "AWS (dogwood-policy)"
+}

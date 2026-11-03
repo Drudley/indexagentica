@@ -25,7 +25,8 @@
     "claude-code",
     "codex-cli",
     "cursor",
-    "snyk-agent-scan"
+    "snyk-agent-scan",
+    "hol-plugins"
   ],
   "sources": [
     "https://hol.org/guard",
@@ -35,8 +36,8 @@
     "https://github.com/hashgraph-online/hol-guard/blob/main/server.json"
   ],
   "added": "2026-10-31",
-  "updated": "2026-10-31",
-  "last_verified": "2026-10-31",
+  "updated": "2026-11-03",
+  "last_verified": "2026-11-03",
   "submitted_by": "agentica-curator",
   "maintainer": "HOL"
 }
