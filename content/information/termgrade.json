@@ -1,0 +1,35 @@
+{
+  "id": "termgrade",
+  "name": "TermGrade",
+  "category": "information",
+  "summary": "1,004 executable Linux terminal tasks with pytest verifiers and per-model pass rates, plus 36,144 graded agent trajectories, for training and evaluating agents.",
+  "description": "Released by ai& on 2026-10-08. termgrade-environments: each task is a container, an instruction and a pytest verifier, kept only if its reference solution passes, with measured pass rates for six models (Terminus-2 scaffold via Harbor). termgrade-trajectories: all 36,144 graded attempts with commands, raw terminal frames and per-test verdicts; the 21,910 passes form an SFT set, and the 14,234 failures are included. ai& also released the training selection and a gemma-4-31B-it checkpoint (LoRA and merged) that scores 46.1 on Terminal-Bench 2.1, +3.1 over the base model. Both datasets are Apache-2.0 on Hugging Face.",
+  "url": "https://www.aiand.com/newsroom/termgrade",
+  "docs": "https://huggingface.co/datasets/ai-and/termgrade-environments",
+  "tags": [
+    "dataset",
+    "benchmark",
+    "terminal",
+    "trajectories",
+    "rl",
+    "sft"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "terminal-bench",
+    "harbor"
+  ],
+  "sources": [
+    "https://www.aiand.com/newsroom/termgrade",
+    "https://huggingface.co/datasets/ai-and/termgrade-environments",
+    "https://huggingface.co/datasets/ai-and/termgrade-trajectories",
+    "https://huggingface.co/ai-and/termgrade-gemma4-31b-lora"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "ai&"
+}

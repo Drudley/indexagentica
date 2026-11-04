@@ -1,0 +1,38 @@
+{
+  "id": "everos",
+  "name": "EverOS",
+  "category": "tools",
+  "summary": "EverMind's local-first memory runtime for agents: conversations, files and trajectories stored as Markdown, indexed in SQLite and LanceDB, shared across coding tools.",
+  "description": "A Python library (`pip install everos`, PyPI 1.5.1, Python 3.12+; v1.5.1 released 2026-10-22). Markdown files are the source of truth: you can read, edit, diff and version them in Git, and a watcher re-syncs the local SQLite and LanceDB indexes. User episodes and profiles are kept apart from agent cases and skills, retrieval is scoped by user, agent, app, project and session IDs, and an editable Knowledge Wiki sits alongside memory. Integrations include an MCP server (`uvx everos-mcp`, EverMind-AI/EverOS-MCP) for Claude Code, Codex, Claude Desktop and Cursor, a Claude Code plugin and Dify tools; the MCP server works with the self-hosted runtime or EverOS Cloud. Apache-2.0.",
+  "url": "https://github.com/EverMind-AI/EverOS",
+  "repo": "https://github.com/EverMind-AI/EverOS",
+  "docs": "https://docs.evermind.ai",
+  "tags": [
+    "memory",
+    "local-first",
+    "markdown",
+    "sqlite",
+    "lancedb",
+    "python",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "related": [
+    "mem0",
+    "basic-memory",
+    "hindsight",
+    "lancedb"
+  ],
+  "sources": [
+    "https://github.com/EverMind-AI/EverOS",
+    "https://pypi.org/project/everos/",
+    "https://github.com/EverMind-AI/EverOS-MCP"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "EverMind"
+}

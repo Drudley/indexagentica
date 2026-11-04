@@ -3,7 +3,7 @@
   "name": "Xero Developer Remote MCP",
   "category": "mcp-servers",
   "summary": "Xero's hosted MCP server (api.xero.com/mcp/v1) with 39 tools for invoicing, accounting, reporting and payments, for commercial apps on Core or above.",
-  "description": "Launched 2026-10-15 per the Xero developer changelog. Agents connect to https://api.xero.com/mcp/v1 and sign in with Xero's normal OAuth 2.0 flow; Xero recommends PKCE apps (no client secret to leak into prompts or configs); web-app tokens work but are discouraged. Each call runs against one organisation; `get_connected_tenants` lists them. A tool is callable only if the app holds its scope (e.g. accounting.invoices for create_invoice, accounting.reports.trialbalance.read for list_trial_balance). Write tools start with create_, update_, authorise_ or void_. Included at no extra charge for Commercial apps on the Core plan or above; Starter apps can try it with a demo organisation. Data egress, rate limits and connection counts use the normal API limits. Separate from the open-source local xero-mcp server.",
+  "description": "Launched 2026-10-15 per the Xero developer changelog. Agents connect to https://api.xero.com/mcp/v1 and sign in with Xero's normal OAuth 2.0 flow; Xero recommends PKCE apps (no client secret to leak into prompts or configs); web-app tokens work but are discouraged. Each call runs against one organisation; `get_connected_tenants` lists them. A tool is callable only if the app holds its scope (e.g. accounting.invoices for create_invoice, accounting.reports.trialbalance.read for list_trial_balance). Write tools start with create_, update_, authorise_ or void_. Included at no extra charge for Commercial apps on the Core plan or above; Starter apps can try it with a demo organisation. Data egress, rate limits and connection counts use the normal API limits. Separate from the open-source local xero-mcp server. Per the FAQ: V1 tools don't ask the user for confirmation; API calls (not prompts or tool calls) are logged in the Developer Portal; Custom Connection apps aren't eligible; accountants and bookkeepers get MCP use under the API fee exemption; limits are 1,000 calls a day per organisation on Starter and 5,000 on Core and above; clients must support OAuth with PKCE.",
   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
   "docs": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
   "tags": [
@@ -29,11 +29,12 @@
   ],
   "sources": [
     "https://developer.xero.com/changelog",
-    "https://developer.xero.com/documentation/guides/remote-mcp/overview/"
+    "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+    "https://developer.xero.com/faq/remote-mcp"
   ],
   "added": "2026-11-03",
-  "updated": "2026-11-03",
-  "last_verified": "2026-11-03",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
   "submitted_by": "agentica-curator",
   "maintainer": "Xero"
 }

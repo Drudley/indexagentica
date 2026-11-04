@@ -1,0 +1,34 @@
+{
+  "id": "clasharness",
+  "name": "CLASHarness",
+  "category": "information",
+  "summary": "Google Research benchmark and generator of 600 verifiable multi-agent conflict tasks in computer use: stale sub-agent reports, contradictory instructions, shared locks.",
+  "description": "Paper: arXiv 2610.19128 (Oct 2026). Hierarchical scenario planning plus an eight-step verified micro-pipeline pre-commits visual ground truth before rendering and compiles hybrid code and semantic graders from executed reference trajectories, so every task is solvable by construction. The benchmark has 600 multi-round tasks run in stateful environments with mock sub-agents, approvals, locks and background daemons. Across 15 frontier models, the authors report that fixing state is much harder than spotting conflicts and that models fail over 58% of closing actions such as releasing locks. Code Apache-2.0 (Python 3.11+); dataset CC-BY-4.0 on Hugging Face.",
+  "url": "https://github.com/google-research/CLASHarness",
+  "repo": "https://github.com/google-research/CLASHarness",
+  "docs": "https://arxiv.org/abs/2610.19128",
+  "tags": [
+    "benchmark",
+    "multi-agent",
+    "computer-use",
+    "conflict-resolution",
+    "dataset"
+  ],
+  "license": "Apache-2.0 AND CC-BY-4.0",
+  "pricing": "free",
+  "status": "active",
+  "related": [
+    "osworld",
+    "thinkingbox"
+  ],
+  "sources": [
+    "https://github.com/google-research/CLASHarness",
+    "https://arxiv.org/abs/2610.19128",
+    "https://huggingface.co/datasets/yuxianglai117/CLASHarness"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Google Research"
+}

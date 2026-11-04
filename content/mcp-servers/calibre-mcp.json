@@ -1,0 +1,39 @@
+{
+  "id": "calibre-mcp",
+  "name": "Calibre MCP",
+  "category": "mcp-servers",
+  "summary": "Calibre's hosted, read-only MCP server that gives coding agents a site's RUM, CrUX and synthetic performance data to find and fix slow pages.",
+  "description": "Launched 2026-11-03. Add https://calibreapp.com/mcp as a remote server and sign in with OAuth, choosing one organisation per connection. Tools include list_sites, get_site_overview, list_pages, get_rum_metrics, get_ux_rating, get_element_attribution (elements, handlers and scripts behind poor LCP, CLS and INP), get_crux_metrics, get_synthetic_metrics, get_snapshot, get_test_audits and compare_performance. Read-only: it can't run tests, mark deploys or change Sites; the one exception is send_feedback, which sends a note to Calibre. Sees only the Sites in your Teams; 60 requests a minute per connection; admins can switch it off for the organisation. Calibre warns that answers include text from monitored websites and should be treated as untrusted input. Included on every plan (paid plans from $75/month, 15-day free trial).",
+  "url": "https://calibreapp.com/docs/automation/mcp",
+  "docs": "https://calibreapp.com/docs/automation/mcp",
+  "tags": [
+    "web-performance",
+    "core-web-vitals",
+    "rum",
+    "remote-mcp",
+    "read-only",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://calibreapp.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth (scope read); protected-resource metadata at https://calibreapp.com/.well-known/oauth-protected-resource/mcp."
+  },
+  "related": [
+    "chrome-devtools-mcp",
+    "sentry-mcp"
+  ],
+  "sources": [
+    "https://calibreapp.com/changelog/archive/2026/11-mcp-server",
+    "https://calibreapp.com/docs/automation/mcp",
+    "https://calibreapp.com/pricing"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Calibre"
+}

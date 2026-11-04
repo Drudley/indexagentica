@@ -1,0 +1,34 @@
+{
+  "id": "brightcove-mcp",
+  "name": "Brightcove MCP",
+  "category": "mcp-servers",
+  "summary": "Brightcove's hosted MCP server: assistants search and update videos and playlists, manage ingest, players, live streams and SSAI, and query analytics.",
+  "description": "Remote server at https://mcp.brightcove.com/mcp (Streamable HTTP, OAuth 2.0 sign-in with a Brightcove account; no API key). The account must have the MCP server enabled, and on accounts using Roles and Permissions the user also needs the MCP access role; tools available follow the user's permissions. Tool areas: Content and CMS, Ingest (captions, audio tracks, metadata), Players, Live, Analytics, Playback and delivery rules, Engagement (Gallery, Interactivity, Audience, Social) and Cloud Playout/SSAI. Tools that change or delete data are marked destructive. The catalog is large, so Brightcove recommends clients with dynamic tool loading. Requires a Brightcove subscription.",
+  "url": "https://apis.support.brightcove.com/general/brightcove-mcp-server.html",
+  "docs": "https://apis.support.brightcove.com/general/brightcove-mcp-server.html",
+  "tags": [
+    "video",
+    "streaming",
+    "media",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.brightcove.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth 2.0; protected-resource metadata at https://mcp.brightcove.com/.well-known/oauth-protected-resource/mcp. Account must be MCP-enabled."
+  },
+  "sources": [
+    "https://apis.support.brightcove.com/general/brightcove-mcp-server.html",
+    "https://www.brightcove.com/blog/brightcove-mcp",
+    "https://www.brightcove.com/products/brightcove-mcp"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Brightcove"
+}

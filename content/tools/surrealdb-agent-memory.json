@@ -1,0 +1,41 @@
+{
+  "id": "surrealdb-agent-memory",
+  "name": "SurrealDB Agent Memory",
+  "category": "tools",
+  "summary": "Managed memory and knowledge layer for agents on SurrealDB: facts with provenance and supersession, hybrid retrieval, and a built-in MCP server.",
+  "description": "Conversations, documents and structured data become entities, attributes, relationships, instructions and sources stored together, with a tri-temporal model (system, known, valid time) in which corrections supersede old facts while the old fact is kept. Each Context serves REST and MCP (Streamable HTTP) at https://<context-host>/mcp with a static Bearer API key bound to that Context (no OAuth); tools: remember, recall, context, reflect, forget, upload, inspect. Python and TypeScript SDKs plus adapters for LangChain, OpenAI Agents, Vercel AI SDK and CrewAI. Plans: Sandbox free (3M tokens, one-off), Lite $30/month (1M tokens), Standard $300 (10M), Plus $1,100 (40M), Enterprise custom. SurrealDB reports a 77.2% BEAM 1M score.",
+  "url": "https://surrealdb.com/agent-memory",
+  "docs": "https://surrealdb.com/docs/agent-memory",
+  "tags": [
+    "memory",
+    "knowledge-graph",
+    "provenance",
+    "mcp",
+    "managed"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://surrealdb.com/llms.txt",
+    "auth": "api-key",
+    "notes": "Per-Context MCP endpoint https://<context-host>/mcp with Authorization: Bearer <context API key>."
+  },
+  "related": [
+    "mem0",
+    "zep",
+    "letta",
+    "hindsight"
+  ],
+  "sources": [
+    "https://surrealdb.com/agent-memory",
+    "https://surrealdb.com/docs/agent-memory/integrations/mcp-server/install",
+    "https://surrealdb.com/blog/introducing-surrealdb-agent-memory",
+    "https://surrealdb.com/llms.txt"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "SurrealDB"
+}

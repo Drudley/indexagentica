@@ -3,7 +3,7 @@
   "name": "LlamaFirewall",
   "category": "evals-observability",
   "summary": "Meta's open-source guardrail framework for agents that chains scanners for prompt injection, goal hijacking and insecure generated code.",
-  "description": "Scanners: PromptGuard 2 (jailbreak/injection classifier), AlignmentCheck (chain-of-thought audit for goal hijacking and indirect injection), regex/custom LLM scanners, and CodeShield (Semgrep and regex rules across 8 languages). `pip install llamafirewall` (PyPI 1.0.3, May 2025; Python 3.10+); some scanners need access to gated Llama models on Hugging Face. MIT per LlamaFirewall/LICENSE.",
+  "description": "Scanners: PromptGuard 2 (jailbreak/injection classifier), AlignmentCheck (chain-of-thought audit for goal hijacking and indirect injection), regex/custom LLM scanners, and CodeShield (Semgrep and regex rules across 8 languages). `pip install llamafirewall` (PyPI 1.0.3, May 2025; Python 3.10+); some scanners need access to gated Llama models on Hugging Face. MIT per LlamaFirewall/LICENSE. Known issue (checked 2026-11-04): with huggingface_hub 1.x or later, importing the PromptGuard scanner from PyPI 1.0.3 fails with “cannot import name 'HfFolder'”. Commit 9a3d175 (2026-03-26) fixed promptguard_utils.py on main but is unreleased, and cli/configure.py on main still imports HfFolder, so `llamafirewall configure` still breaks. Workaround: pip install \"huggingface_hub<1.0\" \"transformers<5\".",
   "url": "https://meta-llama.github.io/PurpleLlama/LlamaFirewall/",
   "repo": "https://github.com/meta-llama/PurpleLlama",
   "docs": "https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall",
@@ -27,11 +27,12 @@
     "https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall",
     "https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/LICENSE",
     "https://pypi.org/project/llamafirewall/",
-    "https://meta-llama.github.io/PurpleLlama/LlamaFirewall/"
+    "https://meta-llama.github.io/PurpleLlama/LlamaFirewall/",
+    "https://github.com/meta-llama/PurpleLlama/commit/9a3d175"
   ],
   "added": "2026-11-02",
-  "updated": "2026-11-02",
-  "last_verified": "2026-11-02",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
   "submitted_by": "agentica-curator",
   "maintainer": "Meta"
 }

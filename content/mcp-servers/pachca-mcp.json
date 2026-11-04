@@ -1,0 +1,38 @@
+{
+  "id": "pachca-mcp",
+  "name": "Pachca MCP",
+  "category": "mcp-servers",
+  "summary": "Official MCP server for the Pachca team messenger: one pachca_* tool per public API method, so agents can read threads, send messages, set reminders and manage tasks.",
+  "description": "Launched 2026-11-03 at https://mcp.pachca.com/mcp (Streamable HTTP). Sign in through the browser (OAuth consent screen), or send a personal or bot token as a Bearer header in clients that support headers. The agent gets the same rights as the token owner, and the tool set depends on the role, the plan and the token type. Each tool is marked read, change or delete; Pachca doesn't open links from agent messages, and server instructions tell the agent to ask for confirmation in chat in certain cases. Works with Claude, Claude Code, ChatGPT, Codex, Cursor, VS Code, Yandex AI Studio and GigaChat agents; a Pachca plugin bundles the server with skills. Available on all plans, including the free one (2,000 messages a month). Docs are in Russian.",
+  "url": "https://dev.pachca.com/guides/mcp/overview",
+  "docs": "https://dev.pachca.com/guides/mcp/connect",
+  "tags": [
+    "chat",
+    "messaging",
+    "team-communication",
+    "remote-mcp",
+    "oauth",
+    "russian"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.pachca.com/mcp",
+    "llms_txt": "https://dev.pachca.com/llms.txt",
+    "auth": "oauth",
+    "notes": "OAuth (protected-resource metadata at mcp.pachca.com/.well-known/oauth-protected-resource/mcp) or Authorization: Bearer personal/bot token."
+  },
+  "sources": [
+    "https://pachca.com/en/blog/pachka-mcp-server-dlya-ai-agentov",
+    "https://pachca.com/mcp",
+    "https://dev.pachca.com/guides/mcp/overview",
+    "https://dev.pachca.com/guides/mcp/connect",
+    "https://pachca.com/prices"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Pachca"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ankr-agent-rpc-mcp",
+  "name": "Ankr Agent RPC MCP",
+  "category": "mcp-servers",
+  "summary": "Ankr's MCP server of blockchain read tools (decoded transactions, logs, balances, contract metadata, prices), paid per call over x402 in USDC or with an Ankr API key.",
+  "description": "Launched 2026-10-15, starting on Monad mainnet. With x402 the agent needs no account or key: a call returns HTTP 402 with the price, the agent signs a USDC payment and retries. The discovery manifest lists 150 priced resources, $0.001 per call by default with describeMethods free, on Monad (eip155:143), Base (eip155:8453) and Solana. Sessions opened with an Ankr API key are bound to that key for their lifetime. Responses follow TORPC, Ankr's draft RPC format for agents (evm-v1; CC0 per Ankr): tier 2 ABI-decodes calls and logs into named args with decimal strings, and every response reports _meta.tier and an o200k _meta.token_count. Decoded amounts are raw base units. Plain JSON-RPC is at x402.rpc.ankr.com/monad_mainnet.",
+  "url": "https://mcp.ankr.com/rpc",
+  "docs": "https://www.ankr.com/blog/ankr-launches-x402-payments-starting-with-monad/",
+  "tags": [
+    "blockchain",
+    "rpc",
+    "x402",
+    "usdc",
+    "monad",
+    "pay-per-call",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.ankr.com/rpc",
+    "auth": "other",
+    "notes": "x402 per-call USDC payment (manifest https://x402.rpc.ankr.com/.well-known/x402, prices at https://x402.rpc.ankr.com/pricing) or an Ankr API key bound to the session."
+  },
+  "related": [
+    "x402",
+    "x402-bazaar",
+    "cdp-x402"
+  ],
+  "sources": [
+    "https://www.ankr.com/blog/ankr-launches-x402-payments-starting-with-monad/",
+    "https://x402.rpc.ankr.com/.well-known/x402",
+    "https://x402.rpc.ankr.com/pricing",
+    "https://rpc.ankr.com/.well-known/torpc.json"
+  ],
+  "added": "2026-11-04",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Ankr"
+}

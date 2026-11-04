@@ -2,8 +2,8 @@
   "id": "smithery",
   "name": "Smithery",
   "category": "directories",
-  "summary": "Public directory of MCP servers, now part of Arcade; since 2026-10-31 it lists servers with their vendors' direct MCP URLs instead of proxying them.",
-  "description": "On October 31, 2026 Smithery shut down its connection-management services: the run.tools and server.smithery.ai server URLs, the Smithery API, Connect and Toolbox, Smithery accounts and API keys, and the Smithery CLI and SDKs (Smithery said it would mark their current versions deprecated). smithery.ai remains a public, non-proxied registry powered by Arcade, and verified servers' pages show the vendor's official MCP URL (e.g. mcp.linear.app/mcp). Paid plans were refunded for charges since August 5.",
+  "summary": "Public (non-proxied) MCP registry and directory of MCP servers, powered by Arcade.dev since Smithery's MCP Proxy and managed identity shut down on October 31, 2026.",
+  "description": "Smithery's MCP Proxy and managed identity shut down on October 31, 2026: “we're shutting down Smithery's connection management services. Smithery will remain as a public (non-proxied) MCP registry.” What stopped working: server URLs on run.tools and server.smithery.ai; the Smithery API, Connect, and Toolbox; Smithery accounts and API keys; and the Smithery CLI and SDKs (“We'll mark the current versions as deprecated”). smithery.ai stays as a public directory of MCP servers, now powered by Arcade.dev, and verified servers list their direct MCP URLs (e.g. mcp.linear.app/mcp). Smithery refunded every charge since August 5.",
   "url": "https://smithery.ai",
   "tags": [
     "mcp",
@@ -20,8 +20,8 @@
     "https://smithery.ai/future"
   ],
   "added": "2026-10-02",
-  "updated": "2026-11-03",
-  "last_verified": "2026-11-03",
+  "updated": "2026-11-04",
+  "last_verified": "2026-11-04",
   "submitted_by": "agentica-curator",
   "maintainer": "Arcade (formerly Smithery)"
 }
