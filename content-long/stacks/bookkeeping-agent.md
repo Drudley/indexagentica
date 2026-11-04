@@ -45,7 +45,7 @@ sources:
   - {title: Stripe supported currencies, url: "https://docs.stripe.com/currencies", accessed: 2026-11-02}
   - {title: Paddle MCP Server README, url: "https://github.com/PaddleHQ/paddle-mcp-server", accessed: 2026-11-03}
   - {title: "Paddle MCP server, Toolkit source (metrics tools skipped in sandbox)", url: "https://github.com/PaddleHQ/paddle-mcp-server/blob/main/src/toolkit.ts", accessed: 2026-11-03}
-  - {title: "Paddle developer docs, Paddle MCP (hosted servers)", url: "https://developer.paddle.com/sdks/ai/paddle-mcp", accessed: 2026-11-03}
+  - {title: "Paddle developer docs, Paddle MCP (hosted servers)", url: "https://developer.paddle.com/sdks/ai/paddle-mcp", accessed: 2026-11-04}
   - {title: "Paddle changelog, OAuth for the live Paddle MCP server", url: "https://developer.paddle.com/changelog/2026/paddle-mcp-oauth", accessed: 2026-11-03}
   - {title: Xero Remote MCP FAQs, url: "https://developer.xero.com/faq/remote-mcp", accessed: 2026-11-03}
   - {title: Paddle API key permissions, url: "https://developer.paddle.com/api-reference/about/permissions", accessed: 2026-11-02}
@@ -57,7 +57,7 @@ sources:
   - {title: Plaid Dashboard MCP docs, url: "https://plaid.com/docs/resources/mcp/", accessed: 2026-11-02}
 last_verified: 2026-11-03
 published: 2026-11-02
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 ## How the pieces fit
@@ -181,7 +181,7 @@ Xero's `list-bank-transactions` tool returns 10 transactions per page as text, n
 ## Variations
 
 - **Xero's hosted server.** On 2026-10-15 Xero launched a Developer Remote MCP, listed here as [xero-remote-mcp](entry:xero-remote-mcp), with 39 tools across invoicing, accounting, reporting and payments, for commercial apps on the Core tier or above. Starter apps can use it with the demo organisation only. It is at `https://api.xero.com/mcp/v1` and signs in with OAuth 2.0 and PKCE. Custom Connections aren't eligible, so the unattended setup above doesn't carry over as is. Request only the scopes for the tools you want. Xero says its V1 tools don't ask for confirmation before writing, so the harness rules still matter. The local server above needs no app tier, only a Custom Connection or a bearer token.
-- **Paddle's hosted server.** Paddle documents `https://mcp.paddle.com/mcp` (live, OAuth or an API key) and `https://sandbox-mcp.paddle.com/mcp` (sandbox, API key only). Instead of one tool per API call, it has three tools: `search`, `execute` (which runs chained API calls) and `report_missing_tool`. Paddle says it doesn't gate destructive operations, so you can't allow its reads and deny its writes by tool name. Read-only then rests on the API key's permissions or the OAuth connection's read access, which is the default for live OAuth connections. Paddle also recommends approving each `execute` call.
+- **Paddle's hosted server.** Paddle documents `https://mcp.paddle.com/mcp` (live, OAuth or an API key) and `https://sandbox-mcp.paddle.com/mcp` (sandbox, API key only). Instead of one tool per API call, it has four tools. Three cover the API: `search`, `execute` (which runs chained API calls) and `report_missing_tool`. The fourth, `show_metrics_chart`, draws a metric as an interactive chart in clients that support MCP Apps and needs the `metrics.read` permission. Paddle says it doesn't gate destructive operations, so you can't allow its reads and deny its writes by tool name. Read-only then rests on the API key's permissions or the OAuth connection's read access, which is the default for live OAuth connections. Paddle also recommends approving each `execute` call.
 - **Bank data.** The [Plaid Dashboard MCP](entry:plaid-mcp) is for diagnosing a Plaid integration (Items, Link conversion, usage), not for reading account transactions, so it is not a bank feed for this stack.
 - **Other processors.** Square, PayPal, Razorpay and Adyen have their own MCP servers; the [payment processor MCP servers comparison](comparison:payment-processor-mcp-servers) covers what each can read and write.
 - **Agents that spend money** are a different stack: see [Agent that can buy things](stack:agent-that-can-buy-things).

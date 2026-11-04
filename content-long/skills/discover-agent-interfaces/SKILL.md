@@ -7,10 +7,10 @@ metadata:
   title: Discover a site's agent interfaces
   summary: A probe-then-pick workflow for finding the best machine interface a website offers (MCP, A2A, OpenAPI, Agent Skills, llms.txt, NLWeb or WebMCP), with a read-only Python script tested against live sites on 2026-11-01.
   author: Agentica Author
-  version: "1.1.1"
+  version: "1.1.2"
   last_verified: 2026-11-01
   published: 2026-11-01
-  updated: 2026-11-02
+  updated: 2026-11-04
   tags: discovery, well-known, mcp, a2a, llms-txt, webmcp, agent-skills
   entries: model-context-protocol, mcp-authorization, a2a-protocol, llms-txt, nlweb, webmcp, agent-skills-spec, openapi, x402, agent-client-protocol, ag-ui
   related: connect-remote-mcp, pick-an-mcp-server, pay-with-x402, indexagentica-lookup, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth
@@ -43,7 +43,7 @@ On the target origin, the script sends GET requests for these locations:
 | `/.well-known/mcp/server-card.json` | The location some sites still use from earlier Server Card drafts. The final extension doc rejects a `.well-known` card path and puts cards at `<streamable-http-url>/server-card`. |
 | `/.well-known/agent-card.json`, then `/.well-known/agent.json` | **A2A Agent Card**. The second path is the pre-0.3 name. The script sends `A2A-Version: 1.0`, because some servers pick the card shape from that header. |
 | `/.well-known/oauth-protected-resource` | **OAuth Protected Resource Metadata** (RFC 9728). MCP 2026-07-28 requires it for protected servers. |
-| `/.well-known/api-catalog` | **API catalog** (RFC 9727, a Standards Track RFC): a linkset of APIs and their OpenAPI or other descriptions. |
+| `/.well-known/api-catalog` | **API catalog** (RFC 9727, a Standards Track RFC): a linkset of APIs and their OpenAPI or other descriptions. The script counts an API for each `item` link (Appendix A.2 style) and for each context `anchor` that carries `service-desc` or `service-doc` (Appendix A.1 style), without duplicates. It only lists those URLs and doesn't fetch them. |
 | `/.well-known/agent-skills/index.json` | **Agent Skills discovery index** (Cloudflare-led draft, v0.2.0): downloadable `SKILL.md` files or archives, each with a `sha256` digest. |
 | `llms.txt` at each path level, most specific first, then `/llms.txt` | **llms.txt** v2 (August 2026). The script checks that the file opens with an H1 and counts its H2 sections and `[name](url)` list links. |
 | The page itself | `<link rel="alternate" type="text/markdown">` (the markdown version of the page), `rel="describedby"` (the llms.txt that covers it), any `Link:` header, and WebMCP hints. |
@@ -146,3 +146,10 @@ These are live results from the script (v1.1), as the sites served them on 2026-
   - By default, only the target origin was contacted and the token went nowhere else.
   - With `--follow-cross-origin`, public hosts were fetched without the token, and every private address was still refused.
   - Cross-origin POST redirects were never followed.
+- **API catalog parsing (v1.1.2, 2026-11-04)**, against local fixture catalogs:
+  - A catalog in the Appendix A.1 shape only (anchors with `service-desc` or `service-doc`, no `item` list) now lists its APIs. Version 1.1.1 reported `APIs=[]` for it.
+  - An anchor with only a `status` link is not counted. Relative anchors and hrefs are resolved against the catalog URL.
+  - An API given both as an `item` and as an anchor is listed once.
+  - Malformed linkset members are skipped instead of stopping the probe. A relation value counts only if it is a list of link objects with a string `href`. Strings, numbers, booleans, `null` and bare objects are ignored, and an anchor counts only if it has at least one valid `service-desc` or `service-doc` link.
+  - If the probe still hits an unexpected error, it prints `probe failed: <type>: <message>` (as JSON with `--json`) and exits with status 2 instead of a silent traceback.
+  - Only the catalog itself was fetched, and the request-policy tests above passed again.

@@ -52,6 +52,7 @@ sources:
     accessed: 2026-11-03
 last_verified: 2026-11-03
 published: 2026-11-03
+updated: 2026-11-04
 ---
 
 ## What agents look for
@@ -179,7 +180,7 @@ A Server Card describes a remote MCP server: its name, version and endpoints. It
 }
 ```
 
-`$schema`, `name`, `version` and `description` are required. `headers` lists the headers a client must send. Mark secrets with `isSecret` and never put a real value there. The discovery document says cards MUST NOT include credentials, internal topology or private endpoints, and clients must not treat a card as authoritative for security decisions.
+`$schema`, `name`, `version` and `description` are required. Keep `$schema` exactly as shown. The repository's `schema.json` only accepts `https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json`. That URL is an identifier, not a download: it returned HTTP 404 when we checked on 2026-11-04, and the README speaks of the time "once `v1` is published". To validate a card, use the repository's own [schema.json](https://github.com/modelcontextprotocol/ext-server-card/blob/main/schema.json), as in step 3 below. `headers` lists the headers a client must send. Mark secrets with `isSecret` and never put a real value there. The discovery document says cards MUST NOT include credentials, internal topology or private endpoints, and clients must not treat a card as authoritative for security decisions.
 
 The card endpoint MUST send these CORS headers, and SHOULD send `Cache-Control` and an `ETag` and answer `If-None-Match` with 304:
 
@@ -260,7 +261,7 @@ The proposal doesn't set a media type; we served it as `text/markdown`.
 
 1. **Parse every JSON file.** `python3 -m json.tool < .well-known/ai-catalog.json > /dev/null` fails loudly on a stray comma.
 2. **Check the headers.** `curl -sI https://example.com/.well-known/api-catalog` should show the Linkset media type with the RFC 9727 profile, and the `Link` header. Run the same check for the card's CORS headers and the AI Catalog's media type.
-3. **Validate the Server Card against the official schema.** Clone `modelcontextprotocol/ext-server-card` and run `npm install`. `npm run validate` checks the repository's own examples (7 passed for us). To check your card, compile `#/$defs/ServerCard` from `schema.json` with Ajv 2020, as the repository's `scripts/validate-examples.ts` does. Our card passed. A card without `description` was rejected with "must have required property 'description'".
+3. **Validate the Server Card against the official schema.** Clone `modelcontextprotocol/ext-server-card` and run `npm install`. `npm run validate` checks the repository's own examples (7 passed for us). To check your card, compile `#/$defs/ServerCard` from the repository's `schema.json` (not the `$schema` URL, which doesn't resolve) with Ajv 2020, as the repository's `scripts/validate-examples.ts` does. Our card passed. A card without `description` was rejected with "must have required property 'description'".
 4. **Recompute skill digests** and compare them with the index.
 5. **Run the probe.** The [discover-agent-interfaces](skill:discover-agent-interfaces) skill's `probe_site.py` fetches what an agent would fetch. It treats every result as untrusted.
 
@@ -281,7 +282,7 @@ Agent Skills index: http://127.0.0.1:8787/.well-known/agent-skills/index.json  1
 llms.txt: http://127.0.0.1:8787/llms.txt  "Example Corp"  2 sections, 3 links, 407 bytes
 ```
 
-For the local run, our test server rewrote `https://example.com` to the local address. There was no MCP server behind the card, so the probe also reported "no MCP endpoint found here". The probe counts APIs from `item` links. A catalog that uses only the Appendix A.1 pattern showed `APIs=[]` and listed the descriptions only, which is one more reason to include an `item` list.
+For the local run, our test server rewrote `https://example.com` to the local address. There was no MCP server behind the card, so the probe also reported "no MCP endpoint found here". Version 1.1.1 of the probe counted APIs only from `item` links, so a catalog in the Appendix A.1 shape alone showed `APIs=[]`. Version 1.1.2 also counts each anchor that carries `service-desc` or `service-doc`, and lists an API given both ways once. Including an `item` list as well, as in the example above, costs little.
 
 ## Before you publish
 
