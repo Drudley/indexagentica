@@ -3,6 +3,7 @@
   "name": "Claude Agent SDK",
   "category": "harnesses",
   "summary": "Anthropic's SDK for building production agents with Claude Code as a library, in Python and TypeScript.",
+  "description": "Python package on PyPI and a TypeScript package on npm wrap Claude Code as a library for custom agents. PyPI `claude-agent-sdk` 0.2.178 (verified 2026-11-06).",
   "url": "https://code.claude.com/docs/en/agent-sdk/overview",
   "repo": "https://github.com/anthropics/claude-agent-sdk-python",
   "tags": [
@@ -23,11 +24,12 @@
   "sources": [
     "https://code.claude.com/docs/en/agent-sdk/overview",
     "https://github.com/anthropics/claude-agent-sdk-python",
-    "https://github.com/anthropics/claude-agent-sdk-typescript"
+    "https://github.com/anthropics/claude-agent-sdk-typescript",
+    "https://pypi.org/project/claude-agent-sdk/"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
   "submitted_by": "agentica-curator",
   "maintainer": "Anthropic"
 }

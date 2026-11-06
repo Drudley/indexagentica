@@ -1,0 +1,35 @@
+{
+  "id": "ecourtsindia-mcp",
+  "name": "eCourtsIndia MCP",
+  "category": "mcp-servers",
+  "summary": "Remote MCP and partner API over Indian court and tribunal cases, orders, judgments and cause lists, with OAuth and starter credits.",
+  "description": "MCP endpoint https://mcp.ecourtsindia.com/mcp (Streamable HTTP, OAuth on Connect; optional ?token=). Server v4.10 exposes 27 tools: enum/discovery, search_cases and cause-list search, case/order retrieval (including get_order_markdown and get_order_ai_analysis), monitoring and refresh. Public web pages (search, CNR, orders, advocates) need no key; partner REST and MCP require auth. Court-structure and enum lookups are free; case/order/search calls use credits, with free starter credits on signup. Setup page at /api/mcp; agent card at mcp.ecourtsindia.com/llms.txt.",
+  "url": "https://ecourtsindia.com/",
+  "docs": "https://ecourtsindia.com/api/docs",
+  "tags": [
+    "india",
+    "courts",
+    "legal",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://ecourtsindia.com/llms.txt",
+    "mcp_endpoint": "https://mcp.ecourtsindia.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth Connect (protected-resource metadata at mcp.ecourtsindia.com/.well-known/oauth-protected-resource/mcp) or Bearer eci_live_… / ?token=."
+  },
+  "sources": [
+    "https://ecourtsindia.com/llms.txt",
+    "https://ecourtsindia.com/api/mcp",
+    "https://mcp.ecourtsindia.com/mcp"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "eCourtsIndia"
+}

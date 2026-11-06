@@ -1,0 +1,35 @@
+{
+  "id": "indiarestros-mcp",
+  "name": "IndiaRestros MCP",
+  "category": "mcp-servers",
+  "summary": "Free, keyless MCP and REST API over India's restaurant graph: places, phones, timings, cuisines and menus with rupee prices.",
+  "description": "Remote Streamable HTTP MCP at https://indiarestros.com/mcp needs no key for reads. Eight tools: search_restaurants, get_restaurant, search_dishes, get_menu, list_places, get_place, report_correction and about_dataset. llms.txt describes about 1.7 million places across thousands of cities with permanent IRR- ids; API fields carry src and observed dates. No paid rankings or commissions. Corrections are accepted via report_correction.",
+  "url": "https://indiarestros.com/",
+  "docs": "https://indiarestros.com/llms.txt",
+  "tags": [
+    "india",
+    "restaurants",
+    "menus",
+    "remote-mcp",
+    "read-only",
+    "keyless"
+  ],
+  "license": "proprietary",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://indiarestros.com/llms.txt",
+    "mcp_endpoint": "https://indiarestros.com/mcp",
+    "auth": "none",
+    "notes": "No auth for read tools."
+  },
+  "sources": [
+    "https://indiarestros.com/llms.txt",
+    "https://indiarestros.com/mcp"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IndiaRestros"
+}

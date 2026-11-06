@@ -1,0 +1,35 @@
+{
+  "id": "indiainsurances-mcp",
+  "name": "IndiaInsurances MCP",
+  "category": "mcp-servers",
+  "summary": "Free, keyless MCP and REST API that quotes Indian insurance policy clauses from the insurers' own wordings, with comparisons and claim paths.",
+  "description": "Remote Streamable HTTP MCP at https://indiainsurances.com/mcp needs no account, key or OAuth. 21 tools include search_policies, find_policies, get_policy, search_policy_text, get_policy_clause, compare_policies, get_insurer, search_insurance_law, complaint_path, draft_complaint, forms, registered-agent lookup, request_help and report_correction. Site reports tens of thousands of IRDAI-listed products and documents; facts carry clause and page citations. Rate limit 120 requests a minute per IP. Independent, no commission; not an insurer or intermediary. Companion REST under /api/v1/.",
+  "url": "https://indiainsurances.com/",
+  "docs": "https://indiainsurances.com/llms.txt",
+  "tags": [
+    "india",
+    "insurance",
+    "policy-wordings",
+    "remote-mcp",
+    "read-only",
+    "keyless"
+  ],
+  "license": "proprietary",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://indiainsurances.com/llms.txt",
+    "mcp_endpoint": "https://indiainsurances.com/mcp",
+    "auth": "none",
+    "notes": "No auth for lookups. See /auth.md and /pricing.md."
+  },
+  "sources": [
+    "https://indiainsurances.com/llms.txt",
+    "https://indiainsurances.com/mcp"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IndiaInsurances"
+}

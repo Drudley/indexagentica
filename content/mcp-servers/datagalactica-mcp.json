@@ -1,0 +1,36 @@
+{
+  "id": "datagalactica-mcp",
+  "name": "Data Galactica MCP",
+  "category": "mcp-servers",
+  "summary": "MCP and API that resolve organisations and people to permanent Galactica IDs from public registers, with free daily calls and prepaid credit.",
+  "description": "Paid MCP at https://datagalactica.com/mcp (OAuth or Bearer/X-API-Key) and https://api.datagalactica.com/mcp; a keyless free tier is at https://datagalactica.com/auth.md (25 data calls a day per address, no contacts, list pages up to 25 rows). Records start from company registers, GLEIF LEI, SEC filings and Wikidata. Signup gives ₹50 free credit (about 125 calls), then ₹0.40 per answered call. Search tools cover companies and people (contacts need purpose); meta and account routes are free. llms.txt and auth.md document agent signup.",
+  "url": "https://datagalactica.com/",
+  "docs": "https://datagalactica.com/llms.txt",
+  "tags": [
+    "kyb",
+    "entity-resolution",
+    "people-search",
+    "remote-mcp",
+    "oauth",
+    "india"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://datagalactica.com/llms.txt",
+    "mcp_endpoint": "https://datagalactica.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth or API key on /mcp; keyless free MCP at /mcp/free. Protected-resource metadata on datagalactica.com."
+  },
+  "sources": [
+    "https://datagalactica.com/llms.txt",
+    "https://datagalactica.com/",
+    "https://datagalactica.com/auth.md"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Data Galactica"
+}

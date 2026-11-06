@@ -3,7 +3,7 @@
   "name": "Resend MCP",
   "category": "mcp-servers",
   "summary": "Resend's official MCP server for email: send and schedule emails, manage templates, broadcasts, contacts, domains, logs and webhooks. Hosted with OAuth or run locally.",
-  "description": "The hosted server at https://mcp.resend.com/mcp (Streamable HTTP, launched 2026-07-07) uses OAuth sign-in with permissions you can revoke in Team settings, or a Resend API key as a Bearer token for CI and headless agents. The same open-source code runs locally with `npx -y resend-mcp` and RESEND_API_KEY (stdio by default, HTTP optional); npm `resend-mcp` 2.27.2, MIT. Logged actions carry a user-agent trace. The Resend plugin (Agent Plugins format) bundles the remote server with Resend's agent skills. Resend's Free plan allows 100 emails a day.",
+  "description": "The hosted server at https://mcp.resend.com/mcp (Streamable HTTP, launched 2026-07-07) uses OAuth sign-in with permissions you can revoke in Team settings, or a Resend API key as a Bearer token for CI and headless agents. The same open-source code runs locally with `npx -y resend-mcp` and RESEND_API_KEY (stdio by default, HTTP optional); npm `resend-mcp` 2.28.0, MIT (136 tools, 56 with readOnlyHint:true; there is no read-only mode). Tool groups now include Inboxes (create/list/update inboxes, threads, labels, drafts, reply/forward). On stdio, unset `--allowed-file-dirs` leaves local file attachments and CSV imports unrestricted—set it so a prompt-injected agent cannot read outside chosen folders (HTTP disables file reads unless the flag is set). Resend API keys are only `full_access` or `sending_access`; there is no read-only key. Logged actions carry a user-agent trace. The Resend plugin (Agent Plugins format) bundles the remote server with Resend's agent skills. Resend's Free plan allows 100 emails a day.",
   "url": "https://resend.com/docs/mcp-server",
   "repo": "https://github.com/resend/resend-mcp",
   "docs": "https://resend.com/changelog/remote-mcp-server",
@@ -33,11 +33,12 @@
     "https://resend.com/changelog/remote-mcp-server",
     "https://github.com/resend/resend-mcp",
     "https://www.npmjs.com/package/resend-mcp",
-    "https://resend.com/pricing"
+    "https://resend.com/pricing",
+    "https://resend.com/docs/api-reference/api-keys/create-api-key.md"
   ],
   "added": "2026-11-03",
-  "updated": "2026-11-03",
-  "last_verified": "2026-11-03",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
   "submitted_by": "agentica-curator",
   "maintainer": "Resend"
 }

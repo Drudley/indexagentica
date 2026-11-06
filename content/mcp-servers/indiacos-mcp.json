@@ -1,0 +1,36 @@
+{
+  "id": "indiacos-mcp",
+  "name": "IndiaCos MCP",
+  "category": "mcp-servers",
+  "summary": "MCP and API over Indian company, LLP, GST, IP and MSME records from public government sources, with free starter credit then prepaid calls.",
+  "description": "Remote Streamable HTTP MCP at https://indiacos.com/mcp. Sign in with OAuth (email code) or send Authorization: Bearer <key>. Tools include search, find, get_company, get_company_directors, get_gst, get_pan, get_director, get_cases, trademark/patent/design/copyright search and get, search_msme, search_defaulters, get_wallet and top_up_wallet. Web pages are free to read and cite; API/MCP need an account (₹50 free credit on signup, then ₹0.40 per successful call from a prepaid wallet). Reuse is under the IndiaCos Data Licence. llms.txt and auth.md cover agent signup.",
+  "url": "https://indiacos.com/",
+  "docs": "https://indiacos.com/llms.txt",
+  "tags": [
+    "india",
+    "kyb",
+    "companies",
+    "gst",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://indiacos.com/llms.txt",
+    "mcp_endpoint": "https://indiacos.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth or Bearer API key. Protected-resource metadata at indiacos.com/.well-known/oauth-protected-resource/mcp. Agent signup: /auth.md."
+  },
+  "sources": [
+    "https://indiacos.com/llms.txt",
+    "https://indiacos.com/auth.md",
+    "https://indiacos.com/mcp"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "IndiaCos"
+}

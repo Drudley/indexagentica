@@ -1,0 +1,38 @@
+{
+  "id": "youth4work-mcp",
+  "name": "Youth4work MCP",
+  "category": "mcp-servers",
+  "summary": "MCP for India's Youth4work careers platform: public read-only talent/jobs/tests search, plus OAuth tools for a signed-in seeker or employer account.",
+  "description": "Two Streamable HTTP endpoints. Public (no auth, 60 req/min/IP) at https://mcp.youth4work.com/public/mcp: search_talent, get_profile, search_jobs, get_job, search_mock_tests, get_mock_test, search_colleges, get_college (public data only; no contacts). Signed-in server at https://mcp.youth4work.com/mcp (OAuth 2.1 with DCR and PKCE): job-seeker profile/skills/applications and employer job posts, applicants, assessments and candidate search. Same tools over OpenAPI at mcp.youth4work.com/openapi.json. Free skill tests and public profiles on the site; messaging and filtered talent search need sign-in.",
+  "url": "https://www.youth4work.com/",
+  "docs": "https://mcp.youth4work.com/docs",
+  "tags": [
+    "india",
+    "jobs",
+    "skills",
+    "assessments",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://mcp.youth4work.com/llms.txt",
+    "openapi": "https://mcp.youth4work.com/openapi.json",
+    "mcp_endpoint": "https://mcp.youth4work.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth on /mcp; keyless public read-only MCP at /public/mcp."
+  },
+  "sources": [
+    "https://mcp.youth4work.com/llms.txt",
+    "https://www.youth4work.com/llms.txt",
+    "https://mcp.youth4work.com/docs",
+    "https://mcp.youth4work.com/openapi.json"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "Youth4work"
+}

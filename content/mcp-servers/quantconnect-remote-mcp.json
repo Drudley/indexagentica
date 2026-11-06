@@ -3,7 +3,7 @@
   "name": "QuantConnect Remote MCP",
   "category": "mcp-servers",
   "summary": "QuantConnect's hosted MCP server: agents create and edit LEAN projects, run backtests, optimizations and research notebooks, and deploy to paper trading.",
-  "description": "Connect any remote-MCP client to https://www.quantconnect.com/api/v2/mcp and authorize your QuantConnect organization (OAuth). More than 45 tools: projects and files (create_file and edit_file compile and return errors), compile, backtests (create_backtest runs asynchronously; results arrive as a message, so agents shouldn't poll), optimizations, Jupyter cells in the Research Environment, Object Store, notifications, and live trading (create_live_algorithm deploys to paper trading with the QuantConnect brokerage; stop_live_algorithm, liquidate_live_algorithm). Requires a paid A1-1, A4-8 or A16-32 agent node; the free A-MICRO node can't connect. Setup guides cover Claude Code, Codex, Copilot, Cursor and Devin. The QuantConnect/mcp-server repo now holds only the remote-server README (Apache-2.0).",
+  "description": "Connect any remote-MCP client to https://www.quantconnect.com/api/v2/mcp and authorize your QuantConnect organization (OAuth). More than 45 tools: projects and files (create_file and edit_file compile and return errors), compile, backtests (create_backtest runs asynchronously; results arrive as a message, so agents shouldn't poll), optimizations, Jupyter cells in the Research Environment, Object Store, notifications, and live trading (create_live_algorithm deploys to paper trading with the QuantConnect brokerage. Docs describe stop_live_algorithm and liquidate_live_algorithm as stopping live trading / closing positions without limiting them to paper; they can act on real-money live deployments if one is active). Requires a paid A1-1, A4-8 or A16-32 agent node; the free A-MICRO node can't connect. Setup guides cover Claude Code, Codex, Copilot, Cursor and Devin. The QuantConnect/mcp-server repo now holds only the remote-server README (Apache-2.0).",
   "url": "https://www.quantconnect.com/docs/v2/ai-assistance/mcp-server/key-concepts",
   "repo": "https://github.com/QuantConnect/mcp-server",
   "docs": "https://www.quantconnect.com/docs/v2/ai-assistance/mcp-server/key-concepts",
@@ -29,8 +29,8 @@
     "https://github.com/QuantConnect/mcp-server"
   ],
   "added": "2026-11-04",
-  "updated": "2026-11-04",
-  "last_verified": "2026-11-04",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
   "submitted_by": "agentica-curator",
   "maintainer": "QuantConnect"
 }

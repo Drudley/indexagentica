@@ -1,0 +1,37 @@
+{
+  "id": "lurkapi",
+  "name": "LurkAPI",
+  "category": "apis",
+  "summary": "Social-media data API and remote MCP server: public posts, profiles, comments, transcripts and ad-library results from 16 platforms as JSON.",
+  "description": "REST base https://api.lurkapi.com with OpenAPI 3.1 (about 89 paths) and llms.txt. Auth is an x-api-key (or Bearer) lk_live_… key; MCP clients can also complete OAuth in the browser. Hosted Streamable HTTP MCP at https://api.lurkapi.com/mcp exposes one tool per endpoint, or https://api.lurkapi.com/mcp?compact with find_endpoints and call_endpoint for clients that load every tool up front. Platforms include Facebook, Reddit, YouTube, TikTok, Google, Bluesky, Snapchat, Truth Social, Telegram, X, Threads, Instagram, LinkedIn, link-in-bio, eBay and Web. Endpoints cost 1–31 credits per call (from $0.45 per 1,000 credits); new accounts get 100 free credits with no card. Rate limit 50 requests per 10 seconds per account. Read-only public data.",
+  "url": "https://lurkapi.com/docs",
+  "docs": "https://lurkapi.com/docs",
+  "tags": [
+    "social-media",
+    "ads-library",
+    "transcripts",
+    "remote-mcp",
+    "openapi"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://lurkapi.com/llms.txt",
+    "openapi": "https://lurkapi.com/openapi.json",
+    "mcp_endpoint": "https://api.lurkapi.com/mcp",
+    "auth": "api-key",
+    "notes": "x-api-key / Bearer lk_live_…, or MCP OAuth. Compact mode: /mcp?compact."
+  },
+  "sources": [
+    "https://lurkapi.com/docs",
+    "https://lurkapi.com/llms.txt",
+    "https://lurkapi.com/openapi.json",
+    "https://lurkapi.com/docs.md"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "LurkAPI"
+}

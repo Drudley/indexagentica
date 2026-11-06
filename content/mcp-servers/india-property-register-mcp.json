@@ -1,0 +1,35 @@
+{
+  "id": "india-property-register-mcp",
+  "name": "India Property Register MCP",
+  "category": "mcp-servers",
+  "summary": "MCP and API over Indian land and property records (plots, mutations, circle rates, RERA, auctions), with free starter credit then prepaid calls.",
+  "description": "Remote Streamable HTTP MCP at https://indiapropertyregister.com/mcp with OAuth 2.1 email-code sign-in (or API key). Tools include ask, search_places, get_village, find_plot, get_plot, search_owner, get_village_rates, city property and deed lookups, list_auctions, RERA tools, get_wallet and top_up_wallet. Pages are free to read and cite; API/MCP are prepaid (₹50 free credit on signup, then ₹0.40 per successful call). Connect guide at /connect; auth.md for agent signup.",
+  "url": "https://indiapropertyregister.com/",
+  "docs": "https://indiapropertyregister.com/connect",
+  "tags": [
+    "india",
+    "land-records",
+    "property",
+    "remote-mcp",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://indiapropertyregister.com/llms.txt",
+    "mcp_endpoint": "https://indiapropertyregister.com/mcp",
+    "auth": "oauth",
+    "notes": "OAuth 2.1 or Bearer API key. Protected-resource metadata at indiapropertyregister.com/.well-known/oauth-protected-resource/mcp."
+  },
+  "sources": [
+    "https://indiapropertyregister.com/llms.txt",
+    "https://indiapropertyregister.com/connect",
+    "https://indiapropertyregister.com/auth.md"
+  ],
+  "added": "2026-11-06",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
+  "submitted_by": "agentica-curator",
+  "maintainer": "India Property Register"
+}

@@ -3,7 +3,7 @@
   "name": "AgenticDataBench",
   "category": "information",
   "summary": "Benchmark for data-science agents: 344 tasks over 97 real datasets in 15 domains, with 433 fine-grained skill labels for skill-level scoring.",
-  "description": "From Tsinghua University and Ant Digital Technologies (arXiv 2607.01647). Domains include real B2B fintech use cases; tasks are built on 97 datasets. 98 tasks are withheld as a private test set for leaderboard integrity, to be released once the benchmark loses its evaluation significance. v1.1 released 2026-10-12. Baselines run on agent frameworks including smolagents; results are submitted by email. Code Apache-2.0; datasets Apache-2.0 on Hugging Face (shawnzzzh/AgenticDataBench).",
+  "description": "From Tsinghua University and Ant Digital Technologies (arXiv 2607.01647). Domains include real B2B fintech use cases; tasks are built on 97 datasets. 98 tasks are withheld as a private test set for leaderboard integrity, to be released once the benchmark loses its evaluation significance. Baselines run on agent frameworks including smolagents; results are submitted by email. Code Apache-2.0; datasets Apache-2.0 on Hugging Face (shawnzzzh/AgenticDataBench).",
   "url": "https://agenticdatabench.github.io/",
   "repo": "https://github.com/AgenticDataBench/AgenticDataBench",
   "tags": [
@@ -23,8 +23,8 @@
     "https://arxiv.org/abs/2607.01647"
   ],
   "added": "2026-11-04",
-  "updated": "2026-11-04",
-  "last_verified": "2026-11-04",
+  "updated": "2026-11-06",
+  "last_verified": "2026-11-06",
   "submitted_by": "agentica-curator",
   "maintainer": "AgenticDataBench (Tsinghua University, Ant Digital Technologies)"
 }
