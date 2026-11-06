@@ -41,9 +41,9 @@ sources:
   - title: claude-agent-sdk on PyPI
     url: https://pypi.org/project/claude-agent-sdk/
     accessed: 2026-11-04
-last_verified: 2026-11-04
+last_verified: 2026-11-06
 published: 2026-11-04
-updated: 2026-11-04
+updated: 2026-11-06
 ---
 
 ## The problem
@@ -156,6 +156,10 @@ def _address(a):
     """Return the bare address in a@b or `Name <a@b>`; refuse anything else."""
     if not isinstance(a, str):
         raise Refuse("recipient is not a string")
+    # Refuse ASCII controls before any parsing so a CR/LF in a display name
+    # cannot smuggle a header (e.g. "X\r\nBcc: y <a@resend.dev>").
+    if any(ord(c) < 32 or ord(c) == 127 for c in a):
+        raise Refuse(f"recipient contains a control character: {a!r}")
     m = _NAMED.fullmatch(a)
     addr = m.group(1) if m else a
     if not _ADDR.fullmatch(addr):
@@ -288,7 +292,7 @@ The gate does its own allowing so that every Resend call passes through it. In o
 
 ### Why these checks
 
-- **One address per string.** A recipient must be either a plain `local@domain` or exactly `Name <local@domain>`. The name can't contain `@`, quotes, `,`, `;`, `<` or `>`. Anything with a separator or stray whitespace is refused before the domain is checked, including `a@evil.example, delivered@resend.dev`, `<a@evil.example>delivered@resend.dev`, `a@evil.example;b@resend.dev` and `a@evil.example <delivered@resend.dev>`. Numbers, booleans, objects and lists holding non-strings are refused too. The domain must match the allowlist exactly, so `a@resend.dev.evil.example` is refused.
+- **One address per string.** A recipient must be either a plain `local@domain` or exactly `Name <local@domain>`. The name can't contain `@`, quotes, `,`, `;`, `<` or `>`. Anything with a separator or stray whitespace is refused before the domain is checked, including `a@evil.example, delivered@resend.dev`, `<a@evil.example>delivered@resend.dev`, `a@evil.example;b@resend.dev` and `a@evil.example <delivered@resend.dev>`. ASCII control characters (CR, LF, TAB, NUL, ESC, DEL and the rest of the C0 set) are refused too, so a display name such as `X\r\nBcc: y <a@resend.dev>` cannot smuggle a header past the approval prompt. Numbers, booleans, objects and lists holding non-strings are refused too. The domain must match the allowlist exactly, so `a@resend.dev.evil.example` is refused.
 - **No custom headers.** A header such as `Bcc` would bypass the recipient check.
 - **Idempotency keys.** Resend drops a repeat of the same key within 24 hours, returns 409 if the payload differs, and accepts keys up to 256 characters ([docs](https://resend.com/docs/dashboard/emails/idempotency-keys)). The gate derives the key from the tool name and arguments, so a retried, identical call can't send twice. We confirmed offline that resend-mcp forwards `idempotencyKey` as the `Idempotency-Key` header.
 - **What the gate can't see.** `reply-to-inbox-thread-email` goes to the author of the message being answered, and that address isn't in the call. The gate checks only the extra `cc`/`bcc` and refuses `replyAll`. `send-inbox-draft` takes only an `inboxId`, a `draftId`, optional `headers` (refused) and an `idempotencyKey`. The draft's recipients and attachments were checked when the agent created or updated it through this gate. But a draft can also come from a person, another tool or a reply draft addressed by default, so `send-inbox-draft` still needs human approval. The prompt asks you to open the draft first.
@@ -331,7 +335,7 @@ Unit-test the gate against the real tool list. Dump `tools/list` from the server
 - each of the tricks above is refused, for sends and drafts alike
 - an exception inside the policy refuses the call
 
-Our 97-case test passed on 2026-11-04 with claude-agent-sdk 0.2.178.
+Our 106-case test passed on 2026-11-04 with claude-agent-sdk 0.2.178.
 
 ## What was and wasn't tested
 
@@ -341,7 +345,7 @@ Our 97-case test passed on 2026-11-04 with claude-agent-sdk 0.2.178.
 - sender pinning
 - the `--allowed-file-dirs` behaviour
 - idempotency-key forwarding
-- the gate's 97 cases
+- the gate's 106 cases
 - building the SDK options
 
 **Not tested:**

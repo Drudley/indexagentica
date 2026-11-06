@@ -2,13 +2,13 @@
 id: agent-memory-layers
 type: comparison
 title: Memory layers for AI agents
-summary: Mem0, LangMem, the Claude memory tool, Graphiti, Zep, Cognee and Letta compared on memory model, who writes memories, self-hosting and license, hosted pricing, MCP servers, SDK languages and framework ties.
-description: "A primary-source comparison of seven ways to give an agent long-term memory, from a file directory the model edits itself to managed temporal knowledge graphs. Licenses, prices and MCP endpoints were checked against each project's repository, docs and pricing page on 2026-10-13. Vendors meter different things (requests, credits per episode, tokens, agents), so model your own traffic before comparing on price."
+summary: Mem0, LangMem, the Claude memory tool, Graphiti, Zep, Cognee, Letta and SurrealDB Agent Memory compared on memory model, who writes memories, self-hosting and license, hosted pricing, MCP servers, SDK languages and framework ties.
+description: "A primary-source comparison of eight ways to give an agent long-term memory, from a file directory the model edits itself to managed temporal knowledge graphs. Licenses, prices and MCP endpoints were checked against each project's repository, docs and pricing page on 2026-10-13. Vendors meter different things (requests, credits per episode, tokens, agents), so model your own traffic before comparing on price."
 author: Agentica Author
 tags: [memory, agents, knowledge-graphs, vector-search, mcp]
-entries: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta, graphiti-mcp-server, langgraph, supermemory, pgvector, qdrant]
-related: [give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes, coding-agent-memory-servers, research-memory-libraries]
-subjects: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta]
+entries: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta, surrealdb-agent-memory, graphiti-mcp-server, langgraph, supermemory, pgvector, qdrant]
+related: [use-surrealdb-agent-memory, give-an-agent-long-term-memory, vector-databases-for-agents, connect-an-agent-to-a-remote-mcp-server, agent-identity-and-mcp-auth, personal-agent-runtimes, coding-agent-memory-servers, research-memory-libraries]
+subjects: [mem0, langmem, claude-memory-tool, graphiti, zep, cognee, letta, surrealdb-agent-memory]
 criteria:
   - Memory model
   - How memories are written
@@ -74,7 +74,15 @@ rows:
     MCP server: "Hosted Letta MCP server; agents can also connect to stdio, HTTP and SSE MCP servers"
     SDK languages: "TypeScript (Agent SDK); CLI on npm (Node 22.19+)"
     Framework ties: "A full stateful agent runtime, not a plug-in layer"
-verdict: "Inside LangGraph, use LangMem. On Claude, the memory tool is the simplest option and the data stays in your storage. Mem0 is the most portable layer, with a free tier and a hosted MCP endpoint, but graph memory is now paid-only. For facts that change over time, use Graphiti (self-hosted) or Zep (managed, metered per episode). Cognee mixes graph and vector memory and runs on local models. Letta is a whole agent runtime that edits its own memory."
+  surrealdb-agent-memory:
+    Memory model: "Entities, attributes, relations, instructions and sources with provenance and a tri-temporal timeline; corrections supersede old facts instead of deleting them"
+    How memories are written: "remember (LLM extract or triples), upload documents, optional reflect with persist; reconciler handles supersession and uncertainty"
+    Self-host and license: "Agent Memory layer is closed source today; SurrealDB underneath is BSL 1.1; client SDKs Apache-2.0 or MIT. Self-hosted/air-gapped listed on Enterprise"
+    Hosted pricing: "Sandbox free (3M tokens one-off, no card); Lite $30/mo (1M); Standard $300/mo (10M); Plus $1,100/mo (40M); Enterprise custom"
+    MCP server: "Per Context at https://<context-host>/mcp (Streamable HTTP), Authorization Bearer API key bound to that Context; no OAuth on this path"
+    SDK languages: "Python surrealdb-memory 1.0.0b1 (also surrealdb[memory]); TypeScript @surrealdb/memory 1.0.0-alpha.11; CLI"
+    Framework ties: "Adapters for LangChain, OpenAI Agents, Vercel AI SDK and CrewAI (product docs)"
+verdict: "Inside LangGraph, use LangMem. On Claude, the memory tool is the simplest option and the data stays in your storage. Mem0 is the most portable layer, with a free tier and a hosted MCP endpoint, but graph memory is now paid-only. For facts that change over time, use Graphiti (self-hosted) or Zep (managed, metered per episode). Cognee mixes graph and vector memory and runs on local models. Letta is a whole agent runtime that edits its own memory. SurrealDB Agent Memory adds a Context-scoped MCP server with remember/recall/forget and provenance, on a free Sandbox that still needs a Studio signup."
 sources:
   - {title: Mem0 README, url: "https://github.com/mem0ai/mem0", accessed: 2026-10-13}
   - {title: Mem0 pricing, url: "https://mem0.ai/pricing", accessed: 2026-10-13}
@@ -89,9 +97,12 @@ sources:
   - {title: Cognee pricing, url: "https://www.cognee.ai/pricing", accessed: 2026-10-13}
   - {title: Letta Code repository, url: "https://github.com/letta-ai/letta-code", accessed: 2026-10-13}
   - {title: Letta documentation, url: "https://docs.letta.com/llms.txt", accessed: 2026-10-13}
-last_verified: 2026-10-13
+  - {title: SurrealDB Agent Memory product page, url: "https://surrealdb.com/agent-memory", accessed: 2026-11-06}
+  - {title: SurrealDB Agent Memory MCP tools, url: "https://surrealdb.com/docs/agent-memory/reference/mcp-tools", accessed: 2026-11-06}
+  - {title: SurrealDB Agent Memory REST API, url: "https://surrealdb.com/docs/agent-memory/reference/rest-api", accessed: 2026-11-06}
+last_verified: 2026-11-06
 published: 2026-10-13
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 ## How to read this table
