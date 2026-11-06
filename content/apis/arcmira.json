@@ -2,8 +2,8 @@
   "id": "arcmira",
   "name": "Arcmira",
   "category": "apis",
-  "summary": "Search API and MCP server over podcasts, interviews and long-form video: transcripts, passages, mentions, sponsors and recommendations, plus monitors.",
-  "description": "Arcmira indexes spoken long-form media into an entity graph. The REST API (OpenAPI 3.1, \"Arcmira API\" 1.0.0, about 31 paths) uses Bearer `arc_sk_…` keys; POST /v1/signups issues a free key with the read scope. The hosted MCP server at https://mcp.arcmira.com/mcp supports OAuth (authorization server api.arcmira.com; scopes include read, recommendations:read, monitors:write, trackers:write) or the API key. Credits: Free 1,000/month; Pro $20/month (20,000, 7-day trial); Pro+ $60/month (60,000; needed for commercial intelligence); Ultra $200/month (400,000); extra credits $0.002 each; Enterprise custom. The npm SDK/CLI `arcmira` (0.6.2) is Apache-2.0, but the MCP package in arcmira/mcp is proprietary (UNLICENSED). Operated by Arcmira, Inc. (San Francisco). Submitted by Arcmira via issue #23.",
+  "summary": "Search indexed YouTube and podcast transcripts through the Arcmira API or MCP server for timestamped quotes, mentions, sponsors and recommendations.",
+  "description": "Arcmira indexes spoken long-form media into an entity graph. The REST API (OpenAPI 3.1, \"Arcmira API\" 1.0.0, about 31 paths) uses Bearer `arc_sk_…` keys; POST /v1/signups emails a verification code (HTTP 202). POST /v1/signups/verify exchanges that code for an account key with the read scope (HTTP 201). The hosted MCP server at https://mcp.arcmira.com/mcp supports OAuth (authorization server api.arcmira.com; scopes include read, recommendations:read, monitors:write, trackers:write) or the API key. Credits: Free 1,000/month; Pro $20/month (20,000, 7-day trial); Pro+ $60/month (60,000; needed for commercial intelligence); Ultra $200/month (400,000); extra credits $0.002 each; Enterprise custom. The npm SDK/CLI `arcmira` (0.6.2) is Apache-2.0, but the MCP package in arcmira/mcp is proprietary (UNLICENSED). Operated by Arcmira, Inc. (San Francisco). Submitted by Arcmira via issue #23.",
   "url": "https://arcmira.com",
   "repo": "https://github.com/arcmira/mcp",
   "docs": "https://arcmira.com/docs",
@@ -35,7 +35,7 @@
     "https://github.com/arcmira/mcp"
   ],
   "added": "2026-11-03",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "last_verified": "2026-11-03",
   "submitted_by": "agentica-curator",
   "maintainer": "Arcmira, Inc."
