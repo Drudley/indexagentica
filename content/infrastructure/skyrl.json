@@ -1,0 +1,31 @@
+{
+  "id": "skyrl",
+  "name": "SkyRL",
+  "category": "infrastructure",
+  "summary": "Modular reinforcement-learning stack with a training engine, long-horizon agent layer and Gymnasium-style tool-use environments for LLMs.",
+  "description": "Public Apache-2.0 source. The unified skyrl library combines skyrl-train and skyrl-tx and supports a Tinker API backend on hardware you control. skyrl-agent handles multi-turn long-horizon training and evaluation; skyrl-gym supplies math, coding, search and SQL environments. Repository development and quickstart guides cover source setup and model/compute dependencies. The README documents Harbor integration and an October 16, 2026 Beam support recipe. This is software access, not free hosted GPU capacity.",
+  "url": "https://github.com/NovaSky-AI/SkyRL",
+  "repo": "https://github.com/NovaSky-AI/SkyRL",
+  "tags": [
+    "infrastructure",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "harbor"
+  ],
+  "sources": [
+    "https://github.com/NovaSky-AI/SkyRL",
+    "https://github.com/NovaSky-AI/SkyRL/blob/main/LICENSE"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

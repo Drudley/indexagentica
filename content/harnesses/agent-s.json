@@ -1,0 +1,32 @@
+{
+  "id": "agent-s",
+  "name": "Agent S",
+  "category": "harnesses",
+  "summary": "Simular computer-use agent framework that uses screenshots and GUI actions to complete tasks in desktop and browser apps on macOS, Windows and Linux.",
+  "description": "Apache-2.0 source and gui-agents Python package (0.3.2 on PyPI). The repository distinguishes Agent S3, the agent packaged in gui-agents, from Agent S4, which evolves tool interfaces from task experience and has separate setup instructions. Run locally using the version-specific README; model access and desktop permissions are required separately. Simular API and Sai are distinct hosted offerings, not a free hosted endpoint supplied by this package.",
+  "url": "https://github.com/simular-ai/Agent-S",
+  "repo": "https://github.com/simular-ai/Agent-S",
+  "tags": [
+    "harnesses",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "osworld"
+  ],
+  "sources": [
+    "https://github.com/simular-ai/Agent-S",
+    "https://github.com/simular-ai/Agent-S/blob/main/LICENSE",
+    "https://pypi.org/project/gui-agents/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

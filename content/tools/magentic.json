@@ -1,0 +1,32 @@
+{
+  "id": "magentic",
+  "name": "magentic",
+  "category": "tools",
+  "summary": "Python decorators that turn typed functions into LLM prompts, combining structured outputs, streaming and tool calls with ordinary Python control flow.",
+  "description": "Install pip install magentic (PyPI 0.41.1; Python 3.10+). @prompt and @chatprompt return values conforming to Python/Pydantic return types. Features include streaming structured results and function calls, LLM-assisted retries, asyncio and OpenTelemetry/Logfire integration. Supports OpenAI, Anthropic and LiteLLM backends and OpenAI-compatible servers; configure provider credentials or a local backend separately. MIT-licensed library.",
+  "url": "https://github.com/jackmpcollins/magentic",
+  "repo": "https://github.com/jackmpcollins/magentic",
+  "tags": [
+    "tools",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "pydantic-logfire"
+  ],
+  "sources": [
+    "https://github.com/jackmpcollins/magentic",
+    "https://github.com/jackmpcollins/magentic/blob/main/LICENSE",
+    "https://pypi.org/project/magentic/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

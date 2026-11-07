@@ -1,0 +1,30 @@
+{
+  "id": "griptape",
+  "name": "Griptape",
+  "category": "harnesses",
+  "summary": "Python framework for agents, sequential pipelines and parallel workflows, with tools, retrieval engines and task memory that keeps large outputs off prompts.",
+  "description": "Public Apache-2.0 library on PyPI (griptape 1.13.0; Python 3.10+). Structures compose Tasks into Agents, Pipelines and Workflows. Conversation Memory preserves interactions; Task Memory keeps large or sensitive tool outputs off the model prompt; Meta Memory supplies extra context. Pluggable drivers cover models, storage, retrieval and execution. Provider credentials and inference costs are separate. Griptape Nodes is a distinct visual desktop product.",
+  "url": "https://github.com/griptape-ai/griptape",
+  "repo": "https://github.com/griptape-ai/griptape",
+  "tags": [
+    "harnesses",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/griptape-ai/griptape",
+    "https://github.com/griptape-ai/griptape/blob/main/LICENSE",
+    "https://pypi.org/project/griptape/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

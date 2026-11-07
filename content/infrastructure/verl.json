@@ -1,0 +1,30 @@
+{
+  "id": "verl",
+  "name": "verl",
+  "category": "infrastructure",
+  "summary": "Distributed reinforcement-learning training library for LLMs, with GRPO/PPO dataflows and pluggable training and rollout engines for agentic post-training.",
+  "description": "Open-source implementation of HybridFlow, initiated by ByteDance Seed and maintained by the verl community. PyPI verl 0.9.1 supports Python 3.10–3.12; follow the repository installation guide for compatible GPU and engine dependencies. Integrates FSDP, Megatron-LM, vLLM and SGLang, including multi-turn agentic rollouts. Recipes moved to verl-project/verl-recipe and specify compatible revisions. Apache-2.0 software; GPU resources are not included.",
+  "url": "https://github.com/verl-project/verl",
+  "repo": "https://github.com/verl-project/verl",
+  "tags": [
+    "infrastructure",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/verl-project/verl",
+    "https://github.com/verl-project/verl/blob/main/LICENSE",
+    "https://pypi.org/project/verl/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

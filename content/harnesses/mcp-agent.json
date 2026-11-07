@@ -1,0 +1,32 @@
+{
+  "id": "mcp-agent",
+  "name": "mcp-agent",
+  "category": "harnesses",
+  "summary": "Python framework for composing MCP-connected agents and workflows, with connection lifecycle management and optional Temporal-backed durable execution.",
+  "description": "Install with pip install mcp-agent (PyPI 0.2.6, Python 3.10+). MCPApp configures agents and server connections; workflow patterns include routers, parallel/map-reduce, orchestrator and evaluator-optimizer. Expose applications as MCP servers, or switch execution_engine to temporal for pause/resume, retries and durable history. Model credentials and connected-server permissions are configured separately; this entry covers the Apache-2.0 SDK, not managed cloud service pricing.",
+  "url": "https://github.com/lastmile-ai/mcp-agent",
+  "repo": "https://github.com/lastmile-ai/mcp-agent",
+  "tags": [
+    "harnesses",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/lastmile-ai/mcp-agent",
+    "https://github.com/lastmile-ai/mcp-agent/blob/main/LICENSE",
+    "https://pypi.org/project/mcp-agent/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

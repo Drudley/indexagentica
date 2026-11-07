@@ -1,0 +1,32 @@
+{
+  "id": "ag2",
+  "name": "AG2",
+  "category": "harnesses",
+  "summary": "Protocol-driven Python framework for cooperating agents, tool-calling loops, human-in-the-loop workflows and multi-agent orchestration.",
+  "description": "Install ag2[openai] (PyPI ag2 1.3.0; Python 3.11+), then configure the chosen model provider. AG2 v1 uses the ag2 import namespace and is not a drop-in replacement for AG2 Classic. The older autogen namespace, ConversableAgent and GroupChat now live in ag2ai/ag2-classic. Tools can be plain Python functions decorated with @tool. Apache-2.0 framework; inference is separate.",
+  "url": "https://github.com/ag2ai/ag2",
+  "repo": "https://github.com/ag2ai/ag2",
+  "tags": [
+    "harnesses",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "autogen"
+  ],
+  "sources": [
+    "https://github.com/ag2ai/ag2",
+    "https://github.com/ag2ai/ag2/blob/main/LICENSE",
+    "https://pypi.org/project/ag2/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "agentscope",
+  "name": "AgentScope",
+  "category": "harnesses",
+  "summary": "Python agent framework with ReAct loops, tools and MCP/skills integration, context compaction, memory, permission checks and isolated execution backends.",
+  "description": "Install with uv pip install agentscope (PyPI 2.0.11; Python 3.11+). AgentScope 2.0 provides reasoning/acting, interruption and resume, tool management, multimodal events, middleware, permission and human-confirmation controls. Memory backends include ReMe and Mem0; workspaces support local, container and sandbox backends. Apache-2.0 source is freely available; model-provider and sandbox services are separate.",
+  "url": "https://github.com/agentscope-ai/agentscope",
+  "repo": "https://github.com/agentscope-ai/agentscope",
+  "tags": [
+    "harnesses",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [
+    "mem0"
+  ],
+  "sources": [
+    "https://github.com/agentscope-ai/agentscope",
+    "https://github.com/agentscope-ai/agentscope/blob/main/LICENSE",
+    "https://pypi.org/project/agentscope/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}

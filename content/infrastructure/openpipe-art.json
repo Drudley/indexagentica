@@ -1,0 +1,30 @@
+{
+  "id": "openpipe-art",
+  "name": "ART (Agent Reinforcement Trainer)",
+  "category": "infrastructure",
+  "summary": "Open-source Python framework for training multi-step agents with GRPO, with an OpenAI-compatible client and a separate GPU training server.",
+  "description": "Install pip install openpipe-art (PyPI 0.5.24; Python 3.12+). ART collects agent trajectories and rewards, trains with GRPO, and reloads updated LoRA checkpoints for subsequent rollouts. RULER can generate rewards automatically. The client can run on a laptop while the server runs on your own GPU machine. Apache-2.0 code; serverless W&B Training is a separate service and compute is not included.",
+  "url": "https://github.com/OpenPipe/ART",
+  "repo": "https://github.com/OpenPipe/ART",
+  "tags": [
+    "infrastructure",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source repository; local library. Model services and compute have separate requirements and costs."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/OpenPipe/ART",
+    "https://github.com/OpenPipe/ART/blob/main/LICENSE",
+    "https://pypi.org/project/openpipe-art/"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}
