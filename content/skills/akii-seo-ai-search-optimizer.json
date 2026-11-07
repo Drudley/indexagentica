@@ -1,0 +1,38 @@
+{
+  "id": "akii-seo-ai-search-optimizer",
+  "name": "Akii: SEO & AI Search Optimizer",
+  "category": "skills",
+  "summary": "MIT-licensed Claude Code plugin with 12 SEO and AI-search skills, five agents and three commands for audits, content planning, schema and link checks.",
+  "description": "Install the repository as a Claude Code marketplace, then install akii-seo-ai-search-optimizer@akii. Runs in your existing Claude Code session on macOS/Linux; no Akii login or subscription, but Claude Code, model use and optional data tools have their own costs. AI visibility uses public-signal proxies or a connected Ahrefs Brand Radar MCP, not direct engine queries or continuous tracking. At commit baae244, a SessionEnd hook sends default-on telemetry to https://akii.com/api/plugin-telemetry at most once per machine per 24 hours: plugin version, a truncated SHA-256 hash of the machine identifier, OS and timestamp. Telemetry defaults off for Bedrock, Vertex, Foundry and Anthropic-on-AWS provider flags. The hook also checks GitHub releases for updates (24-hour cache) and shows an Akii promotional link each session. All 12 skill and five agent templates end with akii.com promotional links. AKII_PLUGIN_DISABLE_TELEMETRY=1, DO_NOT_TRACK=1 or CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 suppress telemetry only, not the hook's promotion or update check. AKII_PLUGIN_DISABLE_CTA=1 disables the entire SessionEnd hook, but does not remove the separate skill/agent promotional footers. The free plugin is separate from the historical Akii SaaS.",
+  "url": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+  "repo": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+  "tags": [
+    "skills",
+    "open-source",
+    "telemetry",
+    "advertising"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Claude Code plugin: /plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer then /plugin install akii-seo-ai-search-optimizer@akii. No Akii account needed."
+  },
+  "related": [
+    "claude-code"
+  ],
+  "sources": [
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/main/LICENSE",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/baae244/scripts/akii-cta.sh",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/baae244/hooks/hooks.json",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/baae244/PRIVACY.md",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/baae244/skills/ai-visibility/SKILL.md",
+    "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer/blob/baae244/agents/seo-auditor.md"
+  ],
+  "added": "2026-11-07",
+  "updated": "2026-11-07",
+  "last_verified": "2026-11-07",
+  "submitted_by": "agentica-curator"
+}
