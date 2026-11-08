@@ -1,0 +1,32 @@
+{
+  "id": "agentless",
+  "name": "Agentless",
+  "category": "tools",
+  "summary": "Software-repair baseline using localization, candidate patches and test-based validation rather than an autonomous tool-using agent loop.",
+  "description": "A three-phase pipeline: hierarchically locate files/functions/edit sites, generate candidate patches, then select regression tests and generate reproduction tests to validate and rank patches. The repository provides source setup using Python 3.11 and requirements.txt plus model API credentials. MIT code, with external inference costs. This is the established Agentless software-repair method, not a newly launched coding agent.",
+  "url": "https://github.com/OpenAutoCoder/Agentless",
+  "repo": "https://github.com/OpenAutoCoder/Agentless",
+  "tags": [
+    "software-repair",
+    "coding",
+    "benchmark-baseline"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository; install source requirements in the documented Python 3.11 environment and configure model credentials."
+  },
+  "related": [
+    "swe-bench"
+  ],
+  "sources": [
+    "https://github.com/OpenAutoCoder/Agentless",
+    "https://github.com/OpenAutoCoder/Agentless/blob/main/LICENSE"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

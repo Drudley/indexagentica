@@ -1,0 +1,34 @@
+{
+  "id": "tapeagents",
+  "name": "TapeAgents",
+  "category": "harnesses",
+  "summary": "Agent framework built around structured replayable session tapes for debugging, resuming, serving and improving single agents or multi-agent teams.",
+  "description": "Install tapeagents (PyPI 0.1.16; Python 3.10–3.12). Agents append thoughts, actions and control-flow steps; environments append observations to a structured Tape. TapeAgent Studio and TapeBrowser support debugging; revised tapes can inform configuration optimization and model fine-tuning. Provides streaming and examples for GAIA, data science and WorkArena. Apache-2.0 library; model credentials and compute are separate.",
+  "url": "https://github.com/ServiceNow/TapeAgents",
+  "repo": "https://github.com/ServiceNow/TapeAgents",
+  "tags": [
+    "multi-agent",
+    "replay",
+    "debugging",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python library: pip install tapeagents. Configure the selected LLM backend separately."
+  },
+  "related": [
+    "browsergym"
+  ],
+  "sources": [
+    "https://github.com/ServiceNow/TapeAgents",
+    "https://github.com/ServiceNow/TapeAgents/blob/main/LICENSE",
+    "https://pypi.org/project/tapeagents/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

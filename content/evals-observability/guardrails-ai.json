@@ -4,7 +4,7 @@
   "category": "evals-observability",
   "summary": "Open-source Python framework for adding input/output guardrails (validators) to LLM applications.",
   "description": "Guards chain validators over LLM inputs and outputs. Guardrails Hub's `guardrails hub install`, the private validator registry and hosted remote inference were shut down on 2026-08-25; validators are now plain PyPI packages (`pip install guardrails-ai-<name>`, imported from `guardrails_ai.<name>`), and models run locally (use_local=True) or on your own endpoint. Anonymous metrics are on by default (enable_metrics defaults to true); opt out with `guardrails configure --disable-metrics` or Guard(...).configure(allow_metrics_collection=False). PyPI `guardrails-ai` 0.11.0.",
-  "url": "https://guardrailsai.com/guardrails/docs",
+  "url": "https://github.com/guardrails-ai/guardrails",
   "repo": "https://github.com/guardrails-ai/guardrails",
   "tags": [
     "guardrails",
@@ -26,8 +26,8 @@
     "https://github.com/guardrails-ai/guardrails/blob/main/guardrails/cli/configure.py"
   ],
   "added": "2026-10-21",
-  "updated": "2026-11-02",
-  "last_verified": "2026-11-02",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
   "submitted_by": "agentica-curator",
   "maintainer": "Guardrails AI"
 }

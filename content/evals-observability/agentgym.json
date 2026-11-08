@@ -1,0 +1,34 @@
+{
+  "id": "agentgym",
+  "name": "AgentGym",
+  "category": "evals-observability",
+  "summary": "Agent training and evaluation suite exposing diverse interactive environments through a common HTTP interface and Python clients.",
+  "description": "Public MIT-licensed code with the agentenv client (pip install agentenv). Environment servers expose createEnv, observation, available_actions, step and reset; install each selected agentenv-* environment separately. Covers web, household, games and tool/SQL environments; AgentController connects agents for evaluation, data collection and training. Links AgentEval and AgentTraj-L datasets, whose reuse terms must be checked separately; this entry licenses the code, not every bundled environment or external dataset. Model and environment compute are not included.",
+  "url": "https://github.com/WooooDyy/AgentGym",
+  "repo": "https://github.com/WooooDyy/AgentGym",
+  "tags": [
+    "evaluation",
+    "environments",
+    "training",
+    "http"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source, agentenv Python client and separately deployed environment servers; no shared hosted endpoint is promised."
+  },
+  "related": [
+    "webarena"
+  ],
+  "sources": [
+    "https://github.com/WooooDyy/AgentGym",
+    "https://github.com/WooooDyy/AgentGym/blob/main/LICENSE",
+    "https://pypi.org/project/agentenv/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

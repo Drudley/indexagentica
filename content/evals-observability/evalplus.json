@@ -1,0 +1,33 @@
+{
+  "id": "evalplus",
+  "name": "EvalPlus",
+  "category": "evals-observability",
+  "summary": "Code-generation evaluation framework with expanded HumanEval+/MBPP+ tests and EvalPerf for checking correctness and runtime efficiency.",
+  "description": "Public Apache-2.0 framework, available as evalplus (PyPI 0.3.1; Python 3.9+). Supports generation, post-processing and evaluation over HumanEval+/MBPP+ and efficiency evaluation with EvalPerf. README includes local and Docker execution paths; generated code is untrusted and should be evaluated in isolated environments. Inference and execution resources are separate. The linked HumanEval+ dataset card also declares Apache-2.0.",
+  "url": "https://github.com/evalplus/evalplus",
+  "repo": "https://github.com/evalplus/evalplus",
+  "tags": [
+    "code-evaluation",
+    "correctness",
+    "efficiency",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python CLI/package: pip install evalplus; model backend and isolated code-execution environment configured separately."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/evalplus/evalplus",
+    "https://github.com/evalplus/evalplus/blob/master/LICENSE",
+    "https://huggingface.co/datasets/evalplus/humanevalplus",
+    "https://pypi.org/project/evalplus/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

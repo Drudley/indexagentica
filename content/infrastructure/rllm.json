@@ -1,0 +1,35 @@
+{
+  "id": "rllm",
+  "name": "rLLM",
+  "category": "infrastructure",
+  "summary": "Reinforcement-learning framework that reuses agent harnesses for evaluation and training, collecting rollouts and rewards across sandbox backends.",
+  "description": "Python 3.11+ source install via uv pip install \"rllm @ git+https://github.com/rllm-org/rllm.git\". CLI entry points include rllm eval and rllm train; @rllm.rollout wraps custom agents. The framework integrates CLI harnesses, Harbor task directories, Docker/Daytona/Modal/local execution and verl, Tinker and Fireworks training backends. Model gateway traces feed reward computation and policy updates. Apache-2.0 software; GPU, model and third-party platform services are separate.",
+  "url": "https://github.com/rllm-org/rllm",
+  "repo": "https://github.com/rllm-org/rllm",
+  "tags": [
+    "reinforcement-learning",
+    "training",
+    "rollouts",
+    "evaluation"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source installation, Python API and CLI. Backend/service credentials depend on the chosen execution and training configuration."
+  },
+  "related": [
+    "verl",
+    "harbor",
+    "terminal-bench"
+  ],
+  "sources": [
+    "https://github.com/rllm-org/rllm",
+    "https://github.com/rllm-org/rllm/blob/main/LICENSE"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

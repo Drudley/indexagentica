@@ -3,7 +3,7 @@
   "name": "verl",
   "category": "infrastructure",
   "summary": "Distributed reinforcement-learning training library for LLMs, with GRPO/PPO dataflows and pluggable training and rollout engines for agentic post-training.",
-  "description": "Open-source implementation of HybridFlow, initiated by ByteDance Seed and maintained by the verl community. PyPI verl 0.9.1 supports Python 3.10–3.12; follow the repository installation guide for compatible GPU and engine dependencies. Integrates FSDP, Megatron-LM, vLLM and SGLang, including multi-turn agentic rollouts. Recipes moved to verl-project/verl-recipe and specify compatible revisions. Apache-2.0 software; GPU resources are not included.",
+  "description": "Open-source implementation of HybridFlow, initiated by ByteDance Seed and maintained by the verl community. PyPI verl 0.9.1 supports Python 3.10–3.12; follow the repository installation guide for compatible GPU and engine dependencies. Integrates FSDP, Megatron-LM, vLLM and SGLang, including multi-turn agentic rollouts. The official README at b17218b documents optional workflows under in-tree recipe/, with per-recipe REQUIRED_VERL.txt specifying a tag/fixed SHA or an explicit VERL_COMMIT and related revision pins. Match the recipe and engine stack to that revision rather than assuming the latest PyPI release works. Agent Lightning's installation guide separately supports pinned verl 0.7.1/0.8.0 stacks (CUDA 12.9/13.0); standalone PyPI verl 0.9.1 is not a claimed drop-in upgrade for that integration. Apache-2.0 software; GPU resources are not included.",
   "url": "https://github.com/verl-project/verl",
   "repo": "https://github.com/verl-project/verl",
   "tags": [
@@ -21,10 +21,12 @@
   "sources": [
     "https://github.com/verl-project/verl",
     "https://github.com/verl-project/verl/blob/main/LICENSE",
-    "https://pypi.org/project/verl/"
+    "https://pypi.org/project/verl/",
+    "https://github.com/verl-project/verl/blob/b17218ba58a6fbcdfb0de32772e3c2a79f88529d/README.md",
+    "https://microsoft.github.io/agent-lightning/stable/00-installation/"
   ],
   "added": "2026-11-07",
-  "updated": "2026-11-07",
-  "last_verified": "2026-11-07",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
   "submitted_by": "agentica-curator"
 }

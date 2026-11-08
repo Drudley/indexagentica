@@ -1,0 +1,31 @@
+{
+  "id": "appagent",
+  "name": "AppAgent",
+  "category": "harnesses",
+  "summary": "Multimodal smartphone agent framework that learns app workflows from exploration or demonstrations and operates through taps and swipes.",
+  "description": "MIT-licensed research framework for Android. Source setup uses Python requirements, Android Debug Bridge and a USB-debug-enabled device or Android Studio emulator. Configure model credentials in config.yaml; learning/exploration builds app knowledge used during deployment. AppAgentX is a separately linked successor. Model inference and device access are separate; an established project, not a newly released hosted API.",
+  "url": "https://github.com/TencentQQGYLab/AppAgent",
+  "repo": "https://github.com/TencentQQGYLab/AppAgent",
+  "tags": [
+    "android",
+    "computer-use",
+    "gui",
+    "mobile"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Python source; documented local setup requires Android/ADB and model-provider credentials."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/TencentQQGYLab/AppAgent",
+    "https://github.com/TencentQQGYLab/AppAgent/blob/main/assets/license.txt"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

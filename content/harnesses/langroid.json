@@ -1,0 +1,34 @@
+{
+  "id": "langroid",
+  "name": "Langroid",
+  "category": "harnesses",
+  "summary": "Python multi-agent framework with task orchestration, typed tool messages, retrieval agents and an MCP-to-tool adapter.",
+  "description": "Install langroid from PyPI (0.69.21; Python 3.10–3.13). ChatAgent components are wrapped in Tasks and can delegate to sub-tasks. Includes structured extraction, document RAG and SQL agents; MCP adapters convert server tools into ToolMessage instances. Supports remote and local models; provider authentication and service costs are separate. MIT-licensed framework, not a hosted service with a bundled free inference allowance.",
+  "url": "https://github.com/langroid/langroid",
+  "repo": "https://github.com/langroid/langroid",
+  "tags": [
+    "multi-agent",
+    "rag",
+    "mcp",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install langroid. Configure model providers and any attached MCP servers independently."
+  },
+  "related": [
+    "model-context-protocol"
+  ],
+  "sources": [
+    "https://github.com/langroid/langroid",
+    "https://github.com/langroid/langroid/blob/main/LICENSE",
+    "https://pypi.org/project/langroid/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

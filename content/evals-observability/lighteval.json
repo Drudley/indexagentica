@@ -1,0 +1,35 @@
+{
+  "id": "lighteval",
+  "name": "Lighteval",
+  "category": "evals-observability",
+  "summary": "Hugging Face toolkit for evaluating LLMs across local and served-model backends, with customizable tasks, metrics and per-sample results.",
+  "description": "Install lighteval (PyPI 0.13.0; Python 3.10+). Offers Inspect AI, Accelerate, vLLM, SGLang and endpoint-based entry points, plus custom task/model interfaces. Stores detailed sample-level results for debugging rather than only aggregate scores. MIT framework; individual benchmark datasets retain their own terms and model-provider/compute costs are separate. README says Windows is untested and unsupported.",
+  "url": "https://github.com/huggingface/lighteval",
+  "repo": "https://github.com/huggingface/lighteval",
+  "tags": [
+    "evaluation",
+    "metrics",
+    "llm",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package and CLI: pip install lighteval. Credentials depend on chosen hosted provider; local model backends are also supported."
+  },
+  "related": [
+    "inspect-ai",
+    "lm-evaluation-harness"
+  ],
+  "sources": [
+    "https://github.com/huggingface/lighteval",
+    "https://github.com/huggingface/lighteval/blob/main/LICENSE",
+    "https://pypi.org/project/lighteval/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}

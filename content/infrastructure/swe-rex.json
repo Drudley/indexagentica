@@ -1,0 +1,35 @@
+{
+  "id": "swe-rex",
+  "name": "SWE-ReX",
+  "category": "infrastructure",
+  "summary": "Runtime interface for coding agents to interact with persistent shell sessions across local and remote sandbox environments.",
+  "description": "Install swe-rex from PyPI (1.4.0; Python 3.10+). Detects command completion and returns output/exit status, supports interactive command-line tools and multiple shell sessions. Separates agent logic from execution backends such as local hosts, Docker, Modal and AWS; extras include modal and fargate. MIT software; hosted infrastructure and model use are separate. It permits arbitrary commands in the configured environment, so isolation and permissions remain deployment responsibilities.",
+  "url": "https://github.com/SWE-agent/SWE-ReX",
+  "repo": "https://github.com/SWE-agent/SWE-ReX",
+  "tags": [
+    "sandbox",
+    "shell",
+    "coding-agents",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install swe-rex. Optional backend credentials and infrastructure are configured separately."
+  },
+  "related": [
+    "swe-agent",
+    "mini-swe-agent"
+  ],
+  "sources": [
+    "https://github.com/SWE-agent/SWE-ReX",
+    "https://github.com/SWE-agent/SWE-ReX/blob/main/LICENSE.txt",
+    "https://pypi.org/project/swe-rex/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}
