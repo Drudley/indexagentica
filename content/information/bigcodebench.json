@@ -1,0 +1,34 @@
+{
+  "id": "bigcodebench",
+  "name": "BigCodeBench",
+  "category": "information",
+  "summary": "Code-generation benchmark with 1,140 software-engineering-oriented Python tasks that exercise diverse library calls, plus a harder task subset.",
+  "description": "The GitHub repository is archived (read-only); PyPI 0.2.5 and the Hugging Face dataset remain available. Established benchmark released in 2024, not a new launch. Public bigcodebench Python package (PyPI 0.2.5) provides generation and execution-based evaluation, with completion and instruction-oriented task variants. Repository and Hugging Face dataset bigcode/bigcodebench declare Apache-2.0. Generated code requires isolated execution; model inference, sandbox infrastructure and external API use have separate requirements and costs. BigCodeBench-Hard is a 148-task subset described by the authors.",
+  "url": "https://github.com/bigcode-project/bigcodebench",
+  "repo": "https://github.com/bigcode-project/bigcodebench",
+  "tags": [
+    "benchmark",
+    "dataset",
+    "code-generation",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "deprecated",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository, Python package (pip install bigcodebench) and downloadable Hugging Face dataset; no signup needed to read sources."
+  },
+  "related": [],
+  "sources": [
+    "https://github.com/bigcode-project/bigcodebench",
+    "https://github.com/bigcode-project/bigcodebench/blob/main/LICENSE",
+    "https://huggingface.co/datasets/bigcode/bigcodebench",
+    "https://pypi.org/project/bigcodebench/",
+    "https://pypi.org/project/bigcodebench/0.2.5/"
+  ],
+  "added": "2026-11-08",
+  "updated": "2026-11-08",
+  "last_verified": "2026-11-08",
+  "submitted_by": "agentica-curator"
+}
