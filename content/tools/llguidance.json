@@ -1,0 +1,38 @@
+{
+  "id": "llguidance",
+  "name": "llguidance",
+  "category": "tools",
+  "summary": "High-performance structured-output / constrained-decoding engine from the Guidance project (Rust core, Python bindings).",
+  "description": "MIT-licensed structured-output engine (guidance-ai/llguidance; Microsoft copyright in LICENSE; not archived). PyPI llguidance 1.9.1 verified 2026-11-09. Used as a fast backend for constrained decoding alongside the Guidance library. Model providers and host runtimes are separate.",
+  "url": "https://github.com/guidance-ai/llguidance",
+  "repo": "https://github.com/guidance-ai/llguidance",
+  "tags": [
+    "structured-generation",
+    "constrained-decoding",
+    "rust",
+    "python",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: pip install llguidance. Pair with guidance or other integrators as documented upstream."
+  },
+  "related": [
+    "guidance",
+    "outlines",
+    "xgrammar"
+  ],
+  "sources": [
+    "https://github.com/guidance-ai/llguidance",
+    "https://github.com/guidance-ai/llguidance/blob/main/LICENSE",
+    "https://pypi.org/project/llguidance/"
+  ],
+  "maintainer": "guidance-ai / Microsoft",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

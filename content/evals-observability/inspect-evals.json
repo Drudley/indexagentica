@@ -1,0 +1,38 @@
+{
+  "id": "inspect-evals",
+  "name": "Inspect Evals",
+  "category": "evals-observability",
+  "summary": "Community collection of ready-to-run evaluation tasks for the UK AISI Inspect AI framework.",
+  "description": "MIT-licensed eval suite (UKGovernmentBEIS/inspect_evals; not archived). PyPI inspect-evals 0.28.0 and docs https://ukgovernmentbeis.github.io/inspect_evals/ verified 2026-11-09. Install alongside Inspect AI; individual benchmark datasets and any model APIs retain their own terms and costs. Established companion to Inspect, not marketed here as a brand-new product launch.",
+  "url": "https://ukgovernmentbeis.github.io/inspect_evals/",
+  "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+  "docs": "https://ukgovernmentbeis.github.io/inspect_evals/",
+  "tags": [
+    "evals",
+    "benchmarks",
+    "inspect-ai",
+    "python",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "pip install inspect-evals; requires Inspect AI. Model credentials depend on chosen tasks."
+  },
+  "related": [
+    "inspect-ai"
+  ],
+  "sources": [
+    "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "https://github.com/UKGovernmentBEIS/inspect_evals/blob/main/LICENSE",
+    "https://pypi.org/project/inspect-evals/",
+    "https://ukgovernmentbeis.github.io/inspect_evals/"
+  ],
+  "maintainer": "UK AI Security Institute",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

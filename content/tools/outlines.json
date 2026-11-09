@@ -1,0 +1,40 @@
+{
+  "id": "outlines",
+  "name": "Outlines",
+  "category": "tools",
+  "summary": "Structured LLM output library from .txt (dottxt): JSON/schema/grammar constraints with broad model integrations.",
+  "description": "Established Apache-2.0 structured-generation library (dottxt-ai/outlines; not archived). PyPI outlines 1.3.3 verified 2026-11-09. Docs at https://dottxt-ai.github.io/outlines/. Optional commercial/enterprise offerings from .txt are separate from the open-source package. Model inference costs are not included.",
+  "url": "https://github.com/dottxt-ai/outlines",
+  "repo": "https://github.com/dottxt-ai/outlines",
+  "docs": "https://dottxt-ai.github.io/outlines/",
+  "tags": [
+    "structured-generation",
+    "json-schema",
+    "grammars",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install outlines. Enterprise products at docs.dottxt.co are separate."
+  },
+  "related": [
+    "guidance",
+    "xgrammar",
+    "llguidance"
+  ],
+  "sources": [
+    "https://github.com/dottxt-ai/outlines",
+    "https://github.com/dottxt-ai/outlines/blob/main/LICENSE",
+    "https://pypi.org/project/outlines/",
+    "https://dottxt-ai.github.io/outlines/"
+  ],
+  "maintainer": ".txt (dottxt)",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

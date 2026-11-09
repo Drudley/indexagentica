@@ -1,0 +1,38 @@
+{
+  "id": "webshop",
+  "name": "WebShop",
+  "category": "information",
+  "summary": "Princeton simulated e-commerce environment and benchmark for grounded language agents shopping from text instructions.",
+  "description": "Established research environment from the 2022 WebShop paper (princeton-nlp/WebShop), not a new 2026 launch. MIT LICENSE.md verified; GitHub not archived (last push observed 2024-09). Provides a Gym-style web shopping sim with search agents for reproducing paper results. Setup uses Python 3.8+, Java and the repo setup.sh. Model inference and any external site access are separate.",
+  "url": "https://webshop-pnlp.github.io/",
+  "repo": "https://github.com/princeton-nlp/WebShop",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "ecommerce",
+    "gym",
+    "dataset"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository and project site; local environment setup per README."
+  },
+  "related": [
+    "webarena",
+    "webvoyager"
+  ],
+  "sources": [
+    "https://webshop-pnlp.github.io/",
+    "https://github.com/princeton-nlp/WebShop",
+    "https://github.com/princeton-nlp/WebShop/blob/master/LICENSE.md",
+    "https://arxiv.org/abs/2207.01206"
+  ],
+  "maintainer": "Princeton NLP",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

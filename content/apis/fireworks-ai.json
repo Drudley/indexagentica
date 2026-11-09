@@ -1,0 +1,39 @@
+{
+  "id": "fireworks-ai",
+  "name": "Fireworks AI",
+  "category": "apis",
+  "summary": "Hosted inference and training platform for open models: serverless pay-per-token, dedicated deployments and fine-tuning APIs.",
+  "description": "Commercial inference/training API (fireworks.ai). Pricing page verified 2026-11-09: serverless from about $0.05 / 1M input tokens on listed models, with Standard/Priority/Spot tables, embeddings, managed training from $0.50 / 1M training tokens and dedicated GPUs from $8/GPU-hour — live pricing page is authoritative. Docs and llms.txt at docs.fireworks.ai. Account/API key required for inference (not created during verification). Established platform, not presented as a brand-new launch.",
+  "url": "https://fireworks.ai",
+  "docs": "https://docs.fireworks.ai/",
+  "tags": [
+    "inference",
+    "training",
+    "serverless",
+    "open-models",
+    "llm-api"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://docs.fireworks.ai/llms.txt",
+    "auth": "api-key",
+    "notes": "OpenAI-compatible and Fireworks APIs; requires API key. Pricing at https://fireworks.ai/pricing."
+  },
+  "related": [
+    "openrouter",
+    "together-ai"
+  ],
+  "sources": [
+    "https://fireworks.ai",
+    "https://fireworks.ai/pricing",
+    "https://docs.fireworks.ai/",
+    "https://docs.fireworks.ai/llms.txt"
+  ],
+  "maintainer": "Fireworks AI",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "402cron",
+  "name": "402cron",
+  "category": "apis",
+  "summary": "Scheduled HTTPS delivery for agents: prepaid delivery packs over x402 (USDC on Base) call a registered URL on a cron schedule with a signed request.",
+  "description": "Registers a public https URL and cron schedule, then attempts deliveries; each attempt consumes one prepaid delivery credit. Free pricing JSON 2026-11-09: trial 20 deliveries for $0.02 USDC; starter 2,000 for $1; month 50,000 for $25; packs never expire; balance counted in deliveries. MCP https://402cron.com/mcp: free tools get_pricing, get_docs, get_service_status; task management tools need a management token after purchase. Also documents A2A receptionist and OpenAPI. Vendor-affiliated (#34, paranormalen2). Shared operator with AISkills402, 402registry and 402post. Caveat: the product performs outbound HTTPS calls to URLs you register (network side effects). Real USDC; verified via free docs/MCP/pricing only.",
+  "url": "https://402cron.com",
+  "repo": "https://github.com/paranormalen2/402cron-mcp",
+  "docs": "https://402cron.com/llms.txt",
+  "tags": [
+    "x402",
+    "usdc",
+    "base",
+    "cron",
+    "scheduling",
+    "webhooks",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://402cron.com/llms.txt",
+    "openapi": "https://402cron.com/openapi.json",
+    "mcp_endpoint": "https://402cron.com/mcp",
+    "auth": "other",
+    "notes": "x402 USDC on Base for packs; free pricing/docs/status MCP tools. Task tools need management token after purchase (not obtained during verification)."
+  },
+  "related": [
+    "x402",
+    "x402-bazaar",
+    "aiskills402"
+  ],
+  "sources": [
+    "https://402cron.com",
+    "https://402cron.com/llms.txt",
+    "https://402cron.com/terms",
+    "https://402cron.com/openapi.json",
+    "https://402cron.com/api/pricing",
+    "https://github.com/paranormalen2/402cron-mcp"
+  ],
+  "maintainer": "402cron (Georgi Kalchev)",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

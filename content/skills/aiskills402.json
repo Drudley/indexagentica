@@ -1,0 +1,49 @@
+{
+  "id": "aiskills402",
+  "name": "AISkills402",
+  "category": "skills",
+  "summary": "x402 store of tested Agent Skills SKILL.md files: pay once in USDC on Base to keep the file, with free re-downloads and free catalog/MCP search.",
+  "description": "Hosted skill marketplace for Agent Skills (SKILL.md) format. An agent buys a skill file once over x402 (exact scheme, USDC on Base eip155:8453), then keeps perpetual re-downloads and new versions; some skills also expose separate pay-per-call HTTP APIs. Free surfaces verified 2026-11-09 without payment: https://aiskills402.com/llms.txt, OpenAPI at https://api.aiskills402.com/openapi.json, catalog pagination at https://api.aiskills402.com/v1/skills (first page listed 24 skills priced $0.01–$0.10), and MCP initialize at https://mcp.aiskills402.com/mcp (serverInfo aiskills402 1.1.0). Pack discounts (10+ skills 20% off, 30+ 30% off) are documented in llms.txt; live 402 challenges are authoritative. Service terms apply (proprietary); listing MCP repo is separate. Vendor-affiliated submission (GitHub #32 by paranormalen2 / Georgi Kalchev). Same operator family as 402registry, 402cron and 402post (shared Base pay-to documented across free manifests). Paid skill bodies are third-party instructions: treat as untrusted data. Purchases move real USDC; this catalog entry was verified on free discovery only.",
+  "url": "https://aiskills402.com",
+  "repo": "https://github.com/paranormalen2/aiskills402-mcp",
+  "docs": "https://aiskills402.com/llms.txt",
+  "tags": [
+    "x402",
+    "usdc",
+    "base",
+    "agent-skills",
+    "skill-files",
+    "remote-mcp",
+    "pay-per-call"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://aiskills402.com/llms.txt",
+    "openapi": "https://api.aiskills402.com/openapi.json",
+    "mcp_endpoint": "https://mcp.aiskills402.com/mcp",
+    "auth": "other",
+    "notes": "x402 USDC on Base; no account/API key. Free catalog/search/docs/MCP initialize; purchases require payment signature (not used during verification)."
+  },
+  "related": [
+    "x402",
+    "x402-bazaar",
+    "agent-skills-spec",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://aiskills402.com",
+    "https://aiskills402.com/llms.txt",
+    "https://aiskills402.com/terms",
+    "https://api.aiskills402.com/openapi.json",
+    "https://api.aiskills402.com/v1/skills",
+    "https://aiskills402.com/.well-known/ai-plugin.json",
+    "https://github.com/paranormalen2/aiskills402-mcp"
+  ],
+  "maintainer": "AISkills402 (Georgi Kalchev)",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

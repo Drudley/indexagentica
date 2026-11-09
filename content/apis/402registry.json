@@ -1,0 +1,48 @@
+{
+  "id": "402registry",
+  "name": "402registry",
+  "category": "apis",
+  "summary": "Pay-per-check AI crawler visibility audit over x402 (USDC on Base): plain no-JavaScript fetch with findings, free public catalog for passes.",
+  "description": "HTTP API and remote MCP that audit whether AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot style) can see a site without JavaScript. Documented packs (llms.txt / free manifest 2026-11-09): one check $0.01; catalog snapshot $0.005; free registry JSON at /registry.json and free submit queue. A GET without payment returns HTTP 402 (x402 v2) — verified on /buy/one without signing. MCP at https://402registry.com/mcp exposes free tools get_pricing, get_docs, get_service_status plus paid lookup_site. OpenAPI and terms verified 200. Vendor-affiliated (#33, paranormalen2). Shared operator with AISkills402, 402cron and 402post. Real USDC payments; verification used free discovery and 402 challenges only. Passing checks may publish a public listing — treat that as intentional disclosure.",
+  "url": "https://402registry.com",
+  "repo": "https://github.com/paranormalen2/402registry-mcp",
+  "docs": "https://402registry.com/llms.txt",
+  "tags": [
+    "x402",
+    "usdc",
+    "base",
+    "ai-crawlers",
+    "website-audit",
+    "pay-per-call",
+    "remote-mcp"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://402registry.com/llms.txt",
+    "openapi": "https://402registry.com/openapi.json",
+    "mcp_endpoint": "https://402registry.com/mcp",
+    "auth": "other",
+    "notes": "x402 USDC on Base; free registry.json, docs, pricing tools. Paid checks require payment signature (not used during verification)."
+  },
+  "related": [
+    "x402",
+    "x402-bazaar",
+    "aiskills402"
+  ],
+  "sources": [
+    "https://402registry.com",
+    "https://402registry.com/llms.txt",
+    "https://402registry.com/terms",
+    "https://402registry.com/openapi.json",
+    "https://402registry.com/registry.json",
+    "https://402registry.com/.well-known/402registry.json",
+    "https://github.com/paranormalen2/402registry-mcp"
+  ],
+  "maintainer": "402registry (Georgi Kalchev)",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "webvoyager",
+  "name": "WebVoyager",
+  "category": "information",
+  "summary": "Multimodal end-to-end web agent research code and 643-task dataset across 15 real websites, with GPT-4V auto-eval protocol.",
+  "description": "Established 2024 research release (MinorJerry/WebVoyager; Apache-2.0; not archived; last push observed 2024-03), not a newly launched product. Selenium-based online browsing; dataset data/WebVoyager_data.jsonl (~643 tasks). Some Booking/Google Flights tasks are time-sensitive and need manual date updates per README. Running against live sites can trigger real-world side effects (bookings, forms); use carefully. Model APIs and browser/OS dependencies are separate.",
+  "url": "https://github.com/MinorJerry/WebVoyager",
+  "repo": "https://github.com/MinorJerry/WebVoyager",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "multimodal",
+    "dataset",
+    "selenium"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository; local conda/pip setup with Chrome/Chromium. Live-site runs can have real-world side effects."
+  },
+  "related": [
+    "webarena",
+    "webshop"
+  ],
+  "sources": [
+    "https://github.com/MinorJerry/WebVoyager",
+    "https://github.com/MinorJerry/WebVoyager/blob/main/LICENSE",
+    "https://arxiv.org/abs/2401.13919"
+  ],
+  "maintainer": "WebVoyager authors",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "guidance",
+  "name": "Guidance",
+  "category": "tools",
+  "summary": "Microsoft Research library for constrained LLM generation with a Python guidance language, token healing and multi-backend support.",
+  "description": "Established open-source structured-generation toolkit (not a 2026 launch). Install guidance from PyPI (0.3.1 verified 2026-11-09). Interleaves generation, prompting and control flow; supports constrained decoding patterns across supported model backends. MIT license (guidance-ai/guidance; GitHub not archived). Model-provider credentials and compute are separate from the free library. Companion llguidance offers a faster structured-output engine used by some stacks.",
+  "url": "https://github.com/guidance-ai/guidance",
+  "repo": "https://github.com/guidance-ai/guidance",
+  "docs": "https://guidance.readthedocs.io/",
+  "tags": [
+    "structured-generation",
+    "constrained-decoding",
+    "python",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install guidance. Configure model backends separately."
+  },
+  "related": [
+    "outlines",
+    "llguidance",
+    "xgrammar"
+  ],
+  "sources": [
+    "https://github.com/guidance-ai/guidance",
+    "https://github.com/guidance-ai/guidance/blob/main/LICENSE.md",
+    "https://pypi.org/project/guidance/",
+    "https://guidance.readthedocs.io/"
+  ],
+  "maintainer": "guidance-ai / Microsoft Research",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

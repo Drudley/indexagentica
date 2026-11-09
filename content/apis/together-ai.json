@@ -1,0 +1,40 @@
+{
+  "id": "together-ai",
+  "name": "Together AI",
+  "category": "apis",
+  "summary": "Hosted platform to run, train and serve open-source models via serverless inference, batch, dedicated and fine-tuning APIs.",
+  "description": "Commercial Together AI platform (together.ai). Pricing page verified 2026-11-09 lists per-1M-token serverless rates across many open models (examples on page include free/zero-priced experimental rows and paid models such as DeepSeek/Qwen/Kimi families) — treat the live pricing table as authoritative. Docs and llms.txt at docs.together.ai; includes coding-agent setup docs. API key required (not created during verification). Established provider gap fill, not a claim of a brand-new product launch.",
+  "url": "https://www.together.ai",
+  "docs": "https://docs.together.ai/",
+  "tags": [
+    "inference",
+    "training",
+    "serverless",
+    "open-models",
+    "llm-api"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://docs.together.ai/llms.txt",
+    "auth": "api-key",
+    "notes": "API key required. Pricing at https://www.together.ai/pricing. Open-source Python client exists separately (together package)."
+  },
+  "related": [
+    "openrouter",
+    "fireworks-ai"
+  ],
+  "sources": [
+    "https://www.together.ai",
+    "https://www.together.ai/pricing",
+    "https://docs.together.ai/",
+    "https://docs.together.ai/llms.txt",
+    "https://github.com/togethercomputer/together-python"
+  ],
+  "maintainer": "Together AI",
+  "added": "2026-11-09",
+  "updated": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
