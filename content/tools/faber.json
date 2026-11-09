@@ -3,7 +3,7 @@
   "name": "Faber",
   "category": "tools",
   "summary": "Experimental statically typed language and CLI (faber check/run/emit) for coding agents and human authors; compiles to Rust, TypeScript, Go, Swift and more.",
-  "description": "Faber Romanus is designed so models can write programs and people can read them. Mechanical grammar, explicit static/generic types, math-oriented operators, and sealed reader locales so the same program reads in eight human languages. Agents install via https://faberlang.dev/install.md or `npx skills add https://faberlang.dev`. Front end, runner, stdlib and grammar are MIT OR Apache-2.0; code generators in the release binary are closed-source. Experimental through 1.x (current release 1.18.1).",
+  "description": "Faber Romanus is designed so models can write programs and people can read them. Mechanical grammar, explicit static/generic types, math-oriented operators, and sealed reader locales so the same program reads in eight human languages. Agents install via https://faberlang.dev/install.md or `npx skills add https://faberlang.dev`. Front end, runner, stdlib and grammar are MIT OR Apache-2.0; code generators in the release binary are closed-source. Experimental through 1.x (current release 1.19.1).",
   "url": "https://faberlang.dev",
   "repo": "https://github.com/faberlang/faber",
   "docs": "https://faberlang.dev/agents/index.md",
