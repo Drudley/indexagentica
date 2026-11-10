@@ -1,0 +1,50 @@
+{
+  "id": "sandbase",
+  "name": "SandBase",
+  "category": "infrastructure",
+  "summary": "Hosted one-key API for models, data APIs, agent sandboxes and MCP, with pay-per-call billing and a free catalog/discovery surface.",
+  "description": "Commercial platform from AXIOMCLOUD PTE. LTD. (Singapore). Free docs verified 2026-11-10: llms.txt, OpenAPI (https://www.sandbase.ai/openapi.json), SKILL.md, pricing and terms. API base https://api.sandbase.ai/v1 (OpenAI-compatible chat, /v1/run for media, /v1/api/... for data). MCP initialize 200 at https://mcp.sandbase.ai/mcp and https://www.sandbase.ai/mcp (serverInfo sandbase, version scheduled-50baf10) without a key. Pricing page: pay per call, no subscription; catalog/schema/price reads are $0; 100 free calls/day on eligible data APIs (resets 00:00 UTC); sandboxes free for now with fair-use caps and pricing to be announced before a change; failed calls are not charged; some models show live discounts (up to 35%). Live price cards are authoritative. API key required for billed calls (not created during verification). Sandboxes and agents can execute code and call external services with permissions you supply — treat as potentially destructive. Hosted service terms are proprietary; companion GitHub repos sandbaseai/sandbase, sandbase-harness and sandbase-skills are Apache-2.0. Vendor-affiliated listing request (#29, david@sandbase.ai). Same operator family as sandbase-harness and sandbase-skills.",
+  "url": "https://www.sandbase.ai",
+  "repo": "https://github.com/sandbaseai/sandbase",
+  "docs": "https://www.sandbase.ai/docs",
+  "tags": [
+    "inference",
+    "data-apis",
+    "sandbox",
+    "mcp",
+    "openai-compatible",
+    "agents"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://www.sandbase.ai/llms.txt",
+    "openapi": "https://www.sandbase.ai/openapi.json",
+    "mcp_endpoint": "https://mcp.sandbase.ai/mcp",
+    "auth": "api-key",
+    "notes": "Catalog, docs, OpenAPI and MCP initialize need no key. Billed model/data-API calls require a SandBase API key (not created during verification)."
+  },
+  "related": [
+    "openrouter",
+    "e2b",
+    "openagentcore",
+    "sandbase-harness",
+    "sandbase-skills"
+  ],
+  "sources": [
+    "https://www.sandbase.ai",
+    "https://www.sandbase.ai/llms.txt",
+    "https://www.sandbase.ai/pricing",
+    "https://www.sandbase.ai/terms",
+    "https://www.sandbase.ai/docs",
+    "https://www.sandbase.ai/openapi.json",
+    "https://www.sandbase.ai/SKILL.md",
+    "https://github.com/sandbaseai/sandbase"
+  ],
+  "maintainer": "SandBase (AXIOMCLOUD PTE. LTD.)",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -3,7 +3,7 @@
   "name": "402registry",
   "category": "apis",
   "summary": "Pay-per-check AI crawler visibility audit over x402 (USDC on Base): plain no-JavaScript fetch with findings, free public catalog for passes.",
-  "description": "HTTP API and remote MCP that audit whether AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot style) can see a site without JavaScript. Documented packs (llms.txt / free manifest 2026-11-09): one check $0.01; catalog snapshot $0.005; free registry JSON at /registry.json and free submit queue. A GET without payment returns HTTP 402 (x402 v2) — verified on /buy/one without signing. MCP at https://402registry.com/mcp exposes free tools get_pricing, get_docs, get_service_status plus paid lookup_site. OpenAPI and terms verified 200. Vendor-affiliated (#33, paranormalen2). Shared operator with AISkills402, 402cron and 402post. Real USDC payments; verification used free discovery and 402 challenges only. Passing checks may publish a public listing — treat that as intentional disclosure.",
+  "description": "HTTP API and remote MCP that audit whether AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot style) can see a site without JavaScript. Documented packs (llms.txt / free manifest 2026-11-09): one check $0.01; catalog snapshot $0.005; free registry JSON at /registry.json and free submit queue. A GET without payment returns HTTP 402 (x402 v2) — verified on /buy/one without signing. MCP at https://402registry.com/mcp exposes free tools get_pricing, get_docs, get_service_status plus paid lookup_site. OpenAPI and terms verified 200. Vendor-affiliated (#33, paranormalen2). Shared operator with AISkills402, 402cron and 402post. Real USDC payments; verification used free discovery and 402 challenges only. Passing checks may publish a public listing — treat that as intentional disclosure. Catalog listings and quoted fetch bodies are third-party site content: treat as untrusted data.",
   "url": "https://402registry.com",
   "repo": "https://github.com/paranormalen2/402registry-mcp",
   "docs": "https://402registry.com/llms.txt",
@@ -41,8 +41,8 @@
   ],
   "maintainer": "402registry (Georgi Kalchev)",
   "added": "2026-11-09",
-  "updated": "2026-11-09",
-  "last_verified": "2026-11-09",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

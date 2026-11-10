@@ -1,0 +1,44 @@
+{
+  "id": "sandbase-harness",
+  "name": "SandBase Harness",
+  "category": "harnesses",
+  "summary": "Local-first Apache-2.0 agent runtime with sandboxed sessions, memory, credentials, MCP toolsets, audit/replay and a local Console.",
+  "description": "Open-source self-hosted runtime (sandbaseai/sandbase-harness; not archived; Apache-2.0). README and llms.txt describe persistent sessions, credential vaults, permission policies, MCP toolsets and sandbox backends (local process, Docker, Kubernetes, self-hosted workers). Latest tagged release cited in the project's llms.txt: v0.3.8 (verified 2026-11-10). Local-first SQLite/file storage; no hosted control plane is required. Also referred to in-repo as managed-agents; README warns to install only from official paths once a scoped package is announced. Sandboxes can run generated code and reach external services — isolation and permissions are the operator's responsibility. Model-provider credentials and compute are separate. Same operator family as the hosted SandBase service and sandbase-skills (AXIOMCLOUD / sandbaseai).",
+  "url": "https://github.com/sandbaseai/sandbase-harness",
+  "repo": "https://github.com/sandbaseai/sandbase-harness",
+  "docs": "https://github.com/sandbaseai/sandbase-harness/blob/main/docs/README.md",
+  "tags": [
+    "runtime",
+    "sandbox",
+    "memory",
+    "mcp",
+    "self-hosted",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "llms_txt": "https://raw.githubusercontent.com/sandbaseai/sandbase-harness/main/llms.txt",
+    "auth": "none",
+    "notes": "Public source and llms-install.md. Optional model-provider and SandBase keys are configured separately."
+  },
+  "related": [
+    "sandbase",
+    "sandbase-skills",
+    "e2b",
+    "openagentcore"
+  ],
+  "sources": [
+    "https://github.com/sandbaseai/sandbase-harness",
+    "https://github.com/sandbaseai/sandbase-harness/blob/main/LICENSE",
+    "https://github.com/sandbaseai/sandbase-harness/blob/main/llms.txt",
+    "https://github.com/sandbaseai/sandbase-harness/blob/main/llms-install.md",
+    "https://github.com/sandbaseai/sandbase-harness/blob/main/docs/README.md"
+  ],
+  "maintainer": "SandBase (sandbaseai)",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "massvai",
+  "name": "Massvai",
+  "category": "tools",
+  "summary": "Hosted AI app builder that turns a prompt into an exportable full-stack Next.js app with live preview, Supabase, GitHub sync and Vercel deploy.",
+  "description": "Commercial web/desktop product (macOS downloads listed; Windows described as coming soon). Homepage and JSON-LD pricing verified 2026-11-10: Free $0 with 100 welcome credits and no card; Builder $25/month with 1,500 credits; Pro $49/month with 4,000 credits; yearly billed at 20% off. Credits are charged by model token usage at per-model rates; the billing page is authoritative. llms.txt and legal terms at https://massvai.com/legal/terms (200). No public OpenAPI or MCP endpoint was found; access is the web app (app.massvai.com) and desktop clients. Vendor-affiliated listing request (#26). Same requester mailbox family as the separate Sora2 Hub listing (#27), which was not added. Proprietary hosted service.",
+  "url": "https://massvai.com",
+  "docs": "https://massvai.com/llms.txt",
+  "tags": [
+    "app-builder",
+    "nextjs",
+    "codegen",
+    "vercel",
+    "supabase"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://massvai.com/llms.txt",
+    "auth": "other",
+    "notes": "Public marketing site, llms.txt and legal pages need no account. Building apps requires the hosted workspace (signup not performed during verification)."
+  },
+  "sources": [
+    "https://massvai.com",
+    "https://massvai.com/llms.txt",
+    "https://massvai.com/legal/terms",
+    "https://massvai.com/legal/privacy"
+  ],
+  "maintainer": "Massvai",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

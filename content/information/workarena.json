@@ -1,0 +1,39 @@
+{
+  "id": "workarena",
+  "name": "WorkArena",
+  "category": "information",
+  "summary": "ServiceNow browser-task benchmark for knowledge-work agents, evaluated through BrowserGym, with an Apache-2.0 Python package.",
+  "description": "Established 2024 benchmark (ServiceNow/WorkArena; ICML 2024 paper, WorkArena++ NeurIPS 2024). GitHub license API reports NOASSERTION, but the repository LICENSE file is Apache-2.0 (Copyright 2024 ServiceNow) — that file is the basis for this entry's license field. Not archived. Install browsergym-workarena (PyPI 0.5.3 verified 2026-11-10) plus Playwright. Setup also requires access to ServiceNow instances (credentials/instances are not included). Preferred evaluation path documented via AgentLab and the BrowserGym leaderboard. Not a newly launched 2026 product. Instance access and model costs are separate.",
+  "url": "https://servicenow.github.io/WorkArena/",
+  "repo": "https://github.com/ServiceNow/WorkArena",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "servicenow",
+    "browsergym",
+    "evals"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Public code and docs. Running the benchmark requires a ServiceNow instance plus the browsergym-workarena package."
+  },
+  "related": [
+    "browsergym",
+    "webarena"
+  ],
+  "sources": [
+    "https://servicenow.github.io/WorkArena/",
+    "https://github.com/ServiceNow/WorkArena",
+    "https://github.com/ServiceNow/WorkArena/blob/main/LICENSE",
+    "https://pypi.org/project/browsergym-workarena/",
+    "https://arxiv.org/abs/2403.07718"
+  ],
+  "maintainer": "ServiceNow",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

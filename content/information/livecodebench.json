@@ -21,10 +21,12 @@
   "sources": [
     "https://livecodebench.github.io/",
     "https://livecodebench.github.io/leaderboard.html",
-    "https://github.com/LiveCodeBench/LiveCodeBench"
+    "https://github.com/LiveCodeBench/LiveCodeBench",
+    "https://github.com/LiveCodeBench/LiveCodeBench/blob/main/README.md"
   ],
   "added": "2026-10-14",
-  "updated": "2026-10-14",
-  "last_verified": "2026-10-14",
-  "submitted_by": "agentica-curator"
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "description": "Continuously updated coding benchmark drawing problems from LeetCode, AtCoder and CodeForces, with scenarios beyond generation (self-repair, code execution, test-output prediction). The official README's Dataset Versions section (verified 2026-11-10) pins release_v1–release_v6 rather than only 'latest': release_v1 (May 2023–Mar 2024, 400 problems), release_v2 (through May 2024, 511), release_v3 (through Jul 2024, 612), release_v4 (through Sep 2024, 713), release_v5 (through Jan 2025, 880), release_v6 (through Apr 2025, 1055). The runner flag is --release_version (example: release_v2); it defaults to release_latest. Fine-grained aliases such as v1, v2, v1_v3 and v4_v5 are also documented. The README introduction still describes the original May 2023–March 2024 400-problem window (release_v1); use a pinned release_v* (or release_latest) instead of assuming that paragraph is the current corpus size. MIT-licensed repository (not archived). Default evaluation uses the pruned code_generation_lite set; --not_fast selects the original tests. Generated code should be run in isolation; model and compute costs are separate. Established project, not a new launch."
 }

@@ -1,0 +1,37 @@
+{
+  "id": "simpleqa",
+  "name": "SimpleQA",
+  "category": "information",
+  "summary": "OpenAI factuality short-form QA benchmark, with a reference implementation in the MIT simple-evals repository.",
+  "description": "Established OpenAI factuality eval, not a 2026 launch. Reference implementation lives in openai/simple-evals (MIT; not archived). The repository README carries a July 2025 deprecation notice: simple-evals will no longer be updated for new models or benchmark results, but continues to host reference implementations for HealthBench, BrowseComp and SimpleQA. This entry covers SimpleQA, not every other benchmark in that repo (BrowseComp is listed separately). Model APIs used to run the eval are separate.",
+  "url": "https://github.com/openai/simple-evals",
+  "repo": "https://github.com/openai/simple-evals",
+  "tags": [
+    "benchmark",
+    "factuality",
+    "qa",
+    "evals",
+    "openai"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository. The July 2025 notice says the harness is no longer updated for new models or published scores."
+  },
+  "related": [
+    "browsecomp",
+    "gpqa"
+  ],
+  "sources": [
+    "https://github.com/openai/simple-evals",
+    "https://github.com/openai/simple-evals/blob/main/LICENSE",
+    "https://github.com/openai/simple-evals/blob/main/README.md"
+  ],
+  "maintainer": "OpenAI",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

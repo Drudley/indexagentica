@@ -1,0 +1,39 @@
+{
+  "id": "visualwebarena",
+  "name": "VisualWebArena",
+  "category": "information",
+  "summary": "MIT benchmark of 910 multimodal visual web tasks for agents, extending WebArena with visually grounded sites and evaluation scripts.",
+  "description": "Established 2024 research release (web-arena-x/visualwebarena; MIT; not archived; last push observed 2024-11), not a new 2026 product. Website https://jykoh.com/vwa and paper arXiv:2401.13649. README documents 910 VWA tasks, local Python 3.10/3.11 setup (not 3.12), Playwright, optional AMI, and a demo for running on arbitrary webpages. Live-site or environment interactions can have real-world side effects; model APIs are separate.",
+  "url": "https://jykoh.com/vwa",
+  "repo": "https://github.com/web-arena-x/visualwebarena",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "multimodal",
+    "evals",
+    "dataset"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository and project site; local environment setup per README. Arbitrary-site demo runs can have real-world side effects."
+  },
+  "related": [
+    "webarena",
+    "webvoyager",
+    "webshop"
+  ],
+  "sources": [
+    "https://jykoh.com/vwa",
+    "https://github.com/web-arena-x/visualwebarena",
+    "https://github.com/web-arena-x/visualwebarena/blob/main/LICENSE",
+    "https://arxiv.org/abs/2401.13649"
+  ],
+  "maintainer": "VisualWebArena authors",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

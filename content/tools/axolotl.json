@@ -1,0 +1,39 @@
+{
+  "id": "axolotl",
+  "name": "Axolotl",
+  "category": "tools",
+  "summary": "Apache-2.0 post-training / fine-tuning framework for a wide range of LLMs, with CLI, YAML configs, Docker and distributed-training options.",
+  "description": "Established open-source trainer (axolotl-ai-cloud/axolotl; not archived). PyPI axolotl 0.21.1 and docs https://docs.axolotl.ai verified 2026-11-10. README documents uv-based install (example: uv pip install axolotl[deepspeed] after a pinned torch) and Docker as a less error-prone path. Apache-2.0 software; GPUs, model licenses and any Axolotl Cloud/hosted extras are separate. Not presented here as a brand-new product launch.",
+  "url": "https://docs.axolotl.ai",
+  "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+  "docs": "https://docs.axolotl.ai",
+  "tags": [
+    "fine-tuning",
+    "training",
+    "llm",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local/Docker install from PyPI or the repository. Cloud GPUs and model access are configured separately."
+  },
+  "related": [
+    "unsloth",
+    "llama-factory"
+  ],
+  "sources": [
+    "https://github.com/axolotl-ai-cloud/axolotl",
+    "https://github.com/axolotl-ai-cloud/axolotl/blob/main/LICENSE",
+    "https://pypi.org/project/axolotl/",
+    "https://docs.axolotl.ai"
+  ],
+  "maintainer": "Axolotl AI",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

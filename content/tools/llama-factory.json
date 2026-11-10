@@ -1,0 +1,40 @@
+{
+  "id": "llama-factory",
+  "name": "LLaMA-Factory",
+  "category": "tools",
+  "summary": "Apache-2.0 toolkit to fine-tune 100+ LLMs and VLMs via zero-code CLI and the LLaMA Board Gradio web UI.",
+  "description": "Established project (hiyouga/LlamaFactory; ACL 2024; not archived; not a 2026 launch). PyPI package llamafactory 0.9.5 verified 2026-11-10. Docs at https://llamafactory.readthedocs.io/en/latest/. Apache-2.0 (LICENSE). Model weights, GPUs and any third-party hosting are separate from the open-source toolkit.",
+  "url": "https://github.com/hiyouga/LlamaFactory",
+  "repo": "https://github.com/hiyouga/LlamaFactory",
+  "docs": "https://llamafactory.readthedocs.io/en/latest/",
+  "tags": [
+    "fine-tuning",
+    "training",
+    "llm",
+    "vlm",
+    "gradio",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "pip install llamafactory or source/Docker install per docs. Model and GPU resources are separate."
+  },
+  "related": [
+    "unsloth",
+    "axolotl"
+  ],
+  "sources": [
+    "https://github.com/hiyouga/LlamaFactory",
+    "https://github.com/hiyouga/LlamaFactory/blob/main/LICENSE",
+    "https://pypi.org/project/llamafactory/",
+    "https://llamafactory.readthedocs.io/en/latest/"
+  ],
+  "maintainer": "hiyouga / LLaMA-Factory authors",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

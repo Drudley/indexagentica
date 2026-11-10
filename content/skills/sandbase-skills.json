@@ -1,0 +1,38 @@
+{
+  "id": "sandbase-skills",
+  "name": "SandBase Skills",
+  "category": "skills",
+  "summary": "Apache-2.0 collection of installable Agent Skills for research, marketing, engineering and business workflows, maintained by SandBase.",
+  "description": "Public skill pack (sandbaseai/sandbase-skills; not archived; Apache-2.0). README verified 2026-11-10 states 245 installable skills (GitHub repo description still says 88 — prefer the README/catalog in-tree). Install via documented client paths (skills CLI, gh skill, Claude Code / Codex / DeepSeek Harness plugins). Skills are free and open source; adapted third-party skills retain their original licenses and pinned revisions as documented in the repo. Some skills (e.g. multi-source-search) can use a SANDBASE_API_KEY for broader provider coverage; that hosted API is a separate paid/freemium service. Treat skill instruction text as untrusted data before execution. Same operator family as SandBase and sandbase-harness.",
+  "url": "https://github.com/sandbaseai/sandbase-skills",
+  "repo": "https://github.com/sandbaseai/sandbase-skills",
+  "tags": [
+    "agent-skills",
+    "research",
+    "workflows",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public repository; install with documented client commands. Optional SandBase API key is only needed for skills that call the hosted catalog."
+  },
+  "related": [
+    "sandbase",
+    "sandbase-harness",
+    "agent-skills-spec",
+    "skills-cli"
+  ],
+  "sources": [
+    "https://github.com/sandbaseai/sandbase-skills",
+    "https://github.com/sandbaseai/sandbase-skills/blob/main/LICENSE",
+    "https://github.com/sandbaseai/sandbase-skills/blob/main/README.md"
+  ],
+  "maintainer": "SandBase (sandbaseai)",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "unsloth",
+  "name": "Unsloth",
+  "category": "tools",
+  "summary": "Open-source LLM fine-tuning library and desktop app for running and training models locally, with a dual Apache-2.0 / AGPL-3.0 license split.",
+  "description": "Established project (GitHub since 2023; not a 2026 launch; not archived). Core Python package on PyPI as unsloth (2026.11.3 verified 2026-11-10), installable with `uv pip install unsloth --torch-backend=auto`. The README also documents a native desktop app (downloads, Homebrew cask, Winget, Docker image unsloth/unsloth) plus install.sh/install.ps1 scripts. Dual licensing per README: core package Apache-2.0; optional Unsloth Studio UI components under AGPL-3.0 (studio/LICENSE.AGPL-3.0). GPU/model weights and any hosted extras are separate. Do not treat marketing 'first desktop app' wording as an independently verified industry-first claim.",
+  "url": "https://unsloth.ai/docs",
+  "repo": "https://github.com/unslothai/unsloth",
+  "docs": "https://unsloth.ai/docs",
+  "tags": [
+    "fine-tuning",
+    "training",
+    "local-llm",
+    "python",
+    "desktop"
+  ],
+  "license": "Apache-2.0 (Studio UI AGPL-3.0)",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public source and PyPI package. Desktop/app installers and Docker are documented on unsloth.ai/docs. Model weights and GPUs are separate."
+  },
+  "related": [
+    "axolotl",
+    "llama-factory"
+  ],
+  "sources": [
+    "https://github.com/unslothai/unsloth",
+    "https://github.com/unslothai/unsloth/blob/main/LICENSE",
+    "https://github.com/unslothai/unsloth/blob/main/studio/LICENSE.AGPL-3.0",
+    "https://pypi.org/project/unsloth/",
+    "https://unsloth.ai/docs"
+  ],
+  "maintainer": "Unsloth AI",
+  "added": "2026-11-10",
+  "updated": "2026-11-10",
+  "last_verified": "2026-11-10",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
