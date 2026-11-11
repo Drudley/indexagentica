@@ -1,0 +1,46 @@
+{
+  "id": "minia2a",
+  "name": "minia2a.uk",
+  "category": "directories",
+  "summary": "Agent-only marketplace of 1,850+ x402 pay-per-call APIs settling USDC on Base, with a remote MCP endpoint, a signed-wallet trial and no signup or API key.",
+  "description": "A machine-first marketplace: every catalog entry is a live HTTP endpoint that answers an unpaid request with an HTTP 402 challenge (x402 v2, USDC on Base) carrying price, asset, payee and a next-steps hint. Catalog JSON at `/api/services` (count, prices, descriptions, trial counts, a 0-100 reliability score); per-endpoint input schema comes from the endpoint's own 402 or from `openapi.json`.\n\n**Access paths** — `POST /x402/<id>` for a call, `GET` with `?probe=1` for the 402 challenge without spending anything, `POST /mcp` for the remote MCP server (HTTP transport; also packaged as `minia2a-mcp` on npm for stdio clients), and `GET /api/agent-ready` for a single discovery handshake.\n\n**Trial** — a wallet that signs an EIP-191 message gets 5 free calls shared across the whole catalog, no registration. On HTTP the wallet goes in `?wallet=`; on `/mcp` the query string is not read, so the wallet belongs in `tools/call` `arguments.wallet` or the `X-Trial-Identity` header, with `X-Wallet-Signature` and `X-Trial-Timestamp` alongside. The signed message names the catalog id (e.g. `x402-time`), not the path segment.\n\n**Notes for agents** — of the 1,857 catalog rows, 1,686 are first-party handlers and 171 are third-party listings that act as pointers to the seller (no trial, and a call with a payment header returns 409 rather than proxying). `tools/list` on `/mcp` serves the whole catalog when no `params` are sent, so pass `params.limit` / `params.cursor` (or use `/api/services?limit=&offset=`) when context budget matters. Settlement is USDC on Base; the platform fee is 5% with a 0% waiver through 2026.",
+  "url": "https://minia2a.uk",
+  "repo": "https://github.com/minia2auk/minia2a",
+  "docs": "https://minia2a.uk/llms.txt",
+  "tags": [
+    "x402",
+    "usdc",
+    "base",
+    "pay-per-call",
+    "remote-mcp",
+    "agent-commerce",
+    "api-marketplace",
+    "discovery"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://minia2a.uk/llms.txt",
+    "openapi": "https://minia2a.uk/openapi.json",
+    "mcp_endpoint": "https://minia2a.uk/mcp",
+    "auth": "other",
+    "notes": "No signup and no API key. Unpaid requests get a 402 challenge; paying is an on-chain USDC authorization (EIP-3009) on Base. A signed wallet message (EIP-191) buys 5 trial calls shared across the catalog. On POST /mcp the wallet goes in arguments.wallet or the X-Trial-Identity header; ?wallet= is ignored there."
+  },
+  "related": [
+    "x402",
+    "x402scan",
+    "official-mcp-registry"
+  ],
+  "sources": [
+    "https://minia2a.uk",
+    "https://minia2a.uk/llms.txt",
+    "https://minia2a.uk/openapi.json",
+    "https://minia2a.uk/.well-known/x402",
+    "https://minia2a.uk/api/services",
+    "https://github.com/minia2auk/minia2a"
+  ],
+  "maintainer": "minia2a.uk",
+  "added": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "github:minia2auk"
+}
