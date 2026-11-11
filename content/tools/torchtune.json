@@ -1,0 +1,43 @@
+{
+  "id": "torchtune",
+  "name": "torchtune",
+  "category": "tools",
+  "summary": "PyTorch-native BSD-3-Clause library for authoring, fine-tuning and evaluating LLMs with native PyTorch training primitives.",
+  "description": "The official README states that torchtune is no longer actively maintained and that development wound down in 2025, linking to \"The future of torchtune\" (https://github.com/meta-pytorch/torchtune/issues/2883). Chosen schema-valid status deprecated (the schema has active/beta/deprecated/unknown, not archived or unmaintained). The GitHub repository meta-pytorch/torchtune is not archived (GitHub API archived=false, disabled=false as of 2026-11-11). PyPI torchtune 0.6.1 remains the current listed release, is not yanked, is BSD-3-Clause, and is still installable. Established PyTorch project (not a 2026 launch). Docs at https://pytorch.org/torchtune/main/ currently redirect to https://meta-pytorch.org/torchtune/main/. GPU and model-weight requirements are separate.",
+  "url": "https://meta-pytorch.org/torchtune/main/",
+  "repo": "https://github.com/meta-pytorch/torchtune",
+  "docs": "https://meta-pytorch.org/torchtune/main/",
+  "tags": [
+    "fine-tuning",
+    "pytorch",
+    "llm",
+    "training",
+    "open-source"
+  ],
+  "license": "BSD-3-Clause",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install torchtune. Follow the official docs for model and hardware setup."
+  },
+  "related": [
+    "trl",
+    "axolotl",
+    "llama-factory",
+    "unsloth"
+  ],
+  "sources": [
+    "https://github.com/meta-pytorch/torchtune",
+    "https://github.com/meta-pytorch/torchtune/blob/main/README.md",
+    "https://github.com/meta-pytorch/torchtune/issues/2883",
+    "https://github.com/meta-pytorch/torchtune/blob/main/LICENSE",
+    "https://pypi.org/project/torchtune/",
+    "https://meta-pytorch.org/torchtune/main/"
+  ],
+  "maintainer": "Meta PyTorch",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "deprecated"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "keepbal",
+  "name": "KeepBal",
+  "category": "mcp-servers",
+  "summary": "Prepaid wallet and MCP gateway for a live catalog of agent tools and models; search and inspect are free, runs debit a key-backed balance.",
+  "description": "Commercial prepaid gateway. Free discovery verified 2026-11-11: llms.txt, SKILL.md, pricing.md, terms (updated 2026-10-06), refund policy (updated 2026-10-06), /docs/billing, OpenAPI YAML, and catalog.json. Catalog page 1 reports 2543 live tools (2205 fixed-price, 338 variable) plus 7 live models; signup_promo_usd=1; currency micro-USD. MCP initialize 200 at https://keepbal.com/mcp (serverInfo keepbal 1.0.0) without a key; server instructions say tool calls require a bearer key while search and inspection are free. Billing (pricing.md / catalog / docs/billing): fixed tools charge the published per-call price; variable tools charge provider-reported actual cost plus a disclosed 35% markup; failed/blocked/timed-out runs cost $0; quotes are estimates (estimated_price) and settlement is the completed debit. Catalog tool calls reserve credit in a hold until settlement, which can temporarily reduce available credit. Live catalog prices are authoritative. Top-up, refund and wallet terms (same sources): Paddle processes paid top-ups as Merchant of Record, including checkout, taxes and receipts, and processes purchases and approved card refunds; KeepBal does not store full card details. Tools and models use one USD prepaid wallet, with no subscription or automatic renewal. Paddle presets are $10, $20, $50 and $100; billing docs state supported top-up amounts range from $10 to $1,000. Top-up fee: 8% of the credit, rounded up to the cent, plus $0.35 before tax; only the credit amount is added to the KeepBal wallet (for $10 credit the fee is $0.80 + $0.35 = $1.15, so the pre-tax charge is $11.15). Unused credits remain in the wallet until spent or refunded under the Refund Policy; unused prepaid credits may be considered for refund at KeepBal's discretion within a reasonable time after purchase. Credits already spent on calls are generally not refundable. Processing fees and taxes are not refunded unless Paddle or the law requires otherwise. Free $1 signup credit is not a paid purchase and cannot be refunded (creating an account was not done during verification). Refunds and chargebacks remove the related credits from the wallet and can leave a negative balance. Runs spend real money. Companion listing repo Digidai/keepbal-mcp is MIT; the hosted service is under KeepBal terms (proprietary). Vendor-affiliated listing (#35, Gene). Same Digidai operator family as mails0 and moderncv.",
+  "url": "https://keepbal.com",
+  "repo": "https://github.com/Digidai/keepbal-mcp",
+  "docs": "https://keepbal.com/llms.txt",
+  "tags": [
+    "mcp",
+    "prepaid",
+    "tool-gateway",
+    "models",
+    "pay-per-call"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://keepbal.com/llms.txt",
+    "openapi": "https://keepbal.com/openapi.yaml",
+    "mcp_endpoint": "https://keepbal.com/mcp",
+    "auth": "api-key",
+    "notes": "MCP initialize, catalog, pricing and inspect/search docs are free. Paid run_tool / model calls need a KeepBal API key (not created during verification)."
+  },
+  "related": [
+    "sandbase",
+    "openrouter"
+  ],
+  "sources": [
+    "https://keepbal.com",
+    "https://keepbal.com/llms.txt",
+    "https://keepbal.com/pricing.md",
+    "https://keepbal.com/terms",
+    "https://keepbal.com/refund",
+    "https://keepbal.com/docs/billing",
+    "https://keepbal.com/SKILL.md",
+    "https://keepbal.com/openapi.yaml",
+    "https://keepbal.com/catalog.json?page=1",
+    "https://github.com/Digidai/keepbal-mcp"
+  ],
+  "maintainer": "KeepBal / Digidai",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
