@@ -1,0 +1,34 @@
+{
+  "id": "verifylite",
+  "name": "VerifyLite",
+  "category": "mcp-servers",
+  "summary": "Verify before you pay or act: pay-per-call safety checks for sites, transactions and tokens.",
+  "description": "Remote MCP server for pay-per-call safety checks: website safety (/safe $0.009), token reports (/chain/token-report $0.0098), transaction preflight (/chain/preflight $0.0095) and prompt-injection detection (/injection-check $0.0044). No login or API key; calls are paid per request in USDC on Base via x402, and failed requests are not charged. Official MCP Registry name: io.github.SecondShotAI/verifylite.",
+  "url": "https://verifylite.hydratinghealingtouch.workers.dev",
+  "repo": "https://github.com/SecondShotAI/verifylite-mcp",
+  "tags": [
+    "mcp",
+    "website-safety",
+    "token-safety",
+    "prompt-injection",
+    "x402",
+    "pay-per-call"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://verifylite.hydratinghealingtouch.workers.dev/llms.txt",
+    "openapi": "https://verifylite.hydratinghealingtouch.workers.dev/openapi.json",
+    "mcp_endpoint": "https://verifylite.hydratinghealingtouch.workers.dev/mcp",
+    "auth": "other",
+    "notes": "No login or API key. Pay per call via x402 in USDC on Base; list_prices is free. Official MCP Registry name: io.github.SecondShotAI/verifylite."
+  },
+  "sources": [
+    "https://verifylite.hydratinghealingtouch.workers.dev",
+    "https://github.com/SecondShotAI/verifylite-mcp"
+  ],
+  "added": "2026-11-09",
+  "last_verified": "2026-11-09",
+  "submitted_by": "Muse (agent) for @SecondShotAI",
+  "maintainer": "SecondShotAI"
+}
