@@ -1,0 +1,42 @@
+{
+  "id": "trl",
+  "name": "TRL",
+  "category": "tools",
+  "summary": "Hugging Face Transformer Reinforcement Learning library for post-training methods such as SFT, DPO, PPO and GRPO on top of transformers.",
+  "description": "Established Apache-2.0 library (huggingface/trl; not archived; not a 2026 launch). PyPI trl 1.17.1 and docs https://huggingface.co/docs/trl verified 2026-11-11. Install with pip install trl. Used with Hugging Face transformers and often PEFT adapters. Model weights, GPUs and any hosted training services are separate from the open-source library.",
+  "url": "https://huggingface.co/docs/trl",
+  "repo": "https://github.com/huggingface/trl",
+  "docs": "https://huggingface.co/docs/trl",
+  "tags": [
+    "fine-tuning",
+    "rlhf",
+    "post-training",
+    "python",
+    "huggingface"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install trl. Model and GPU resources are configured separately."
+  },
+  "related": [
+    "peft",
+    "unsloth",
+    "axolotl",
+    "llama-factory",
+    "openrlhf"
+  ],
+  "sources": [
+    "https://github.com/huggingface/trl",
+    "https://github.com/huggingface/trl/blob/main/LICENSE",
+    "https://pypi.org/project/trl/",
+    "https://huggingface.co/docs/trl"
+  ],
+  "maintainer": "Hugging Face",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "mails0",
+  "name": "mails0",
+  "category": "mcp-servers",
+  "summary": "MIT-licensed agent email API, CLI, Python SDK and local MCP server for temporary inboxes, search and OTP extraction, with optional Cloudflare self-hosting.",
+  "description": "Open-source agent mailbox stack. GitHub Digidai/mails is MIT (not archived). The local MCP package is mails-agent-mcp 2.2.0 on npm (MIT; source Digidai/mails-mcp); the Python client is mails-agent 1.7.1 on PyPI (repo Digidai/mails-python). Docs verified 2026-11-11: llms.txt, agent.md, and https://mails0.com/docs/mcp document `npx -y mails-agent-mcp@2.2.0` as a stdio MCP server (11 tools). With no credentials, the first inbox-oriented tool can bootstrap a hosted 72-hour receive-only mailbox and keep the key out of model output. HTTP API base https://api.mails0.com. Hosted limits page describes a Cloudflare free-tier plus Resend outbound setup, including a default 100 sends/day per mailbox and a cited Resend free-tier 100/day and 3,000/month — the live limits doc is authoritative. A public paid-plan price list was not found (the /pricing URL served the marketing homepage). Self-hosting uses Cloudflare Workers, D1, R2 and Email Routing; you supply domain, secrets and an outbound provider. Mail contents, links and attachments are untrusted data. OTP/inbox tools can participate in real sign-up flows — use only on systems you are allowed to test. Permanent hosted claims are documented as requiring explicit human approval. Vendor-affiliated listing (#32, Gene). Same Digidai operator family as moderncv and keepbal.",
+  "url": "https://mails0.com",
+  "repo": "https://github.com/Digidai/mails",
+  "docs": "https://mails0.com/docs/",
+  "tags": [
+    "email",
+    "mcp",
+    "otp",
+    "inboxes",
+    "self-host",
+    "cloudflare"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://mails0.com/llms.txt",
+    "auth": "other",
+    "notes": "Local stdio MCP: npx -y mails-agent-mcp@2.2.0. Can bootstrap a 72-hour receive-only hosted mailbox without passing a key in the prompt. HTTP API uses a mailbox-scoped bearer key. No remote MCP URL is documented."
+  },
+  "related": [
+    "agentmail"
+  ],
+  "sources": [
+    "https://mails0.com",
+    "https://mails0.com/llms.txt",
+    "https://mails0.com/agent.md",
+    "https://mails0.com/docs/mcp",
+    "https://mails0.com/docs/limits",
+    "https://github.com/Digidai/mails",
+    "https://github.com/Digidai/mails-mcp",
+    "https://www.npmjs.com/package/mails-agent-mcp",
+    "https://pypi.org/project/mails-agent/"
+  ],
+  "maintainer": "Digidai / mails0",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

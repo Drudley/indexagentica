@@ -3,7 +3,7 @@
   "name": "Outlines",
   "category": "tools",
   "summary": "Structured LLM output library from .txt (dottxt): JSON/schema/grammar constraints with broad model integrations.",
-  "description": "Established Apache-2.0 structured-generation library (dottxt-ai/outlines; not archived). PyPI outlines 1.3.3 verified 2026-11-09. Docs at https://dottxt-ai.github.io/outlines/. Optional commercial/enterprise offerings from .txt are separate from the open-source package. Model inference costs are not included.",
+  "description": "Established Apache-2.0 structured-generation library (dottxt-ai/outlines; not archived). PyPI outlines 1.3.3 verified 2026-11-09. Docs at https://dottxt-ai.github.io/outlines/. Optional commercial/enterprise offerings from .txt are separate from the open-source package. Model inference costs are not included. Official docs disagree on LlamaCpp context-free grammar support, so this entry does not claim it either way: the models feature matrix marks LlamaCpp Grammar as unsupported (https://dottxt-ai.github.io/outlines/latest/features/models/); the LlamaCpp page says the model “supports all output types available in Outlines” and includes a Context-free grammar section (https://dottxt-ai.github.io/outlines/latest/features/models/llamacpp/); backends.md lists LlamaCpp as a steerable model that can use outlines_core or llguidance (not xgrammar) and shows Grammar supported by llguidance/xgrammar but not outlines_core (https://dottxt-ai.github.io/outlines/latest/features/advanced/backends/). Check those pages for the revision you are using.",
   "url": "https://github.com/dottxt-ai/outlines",
   "repo": "https://github.com/dottxt-ai/outlines",
   "docs": "https://dottxt-ai.github.io/outlines/",
@@ -29,12 +29,15 @@
     "https://github.com/dottxt-ai/outlines",
     "https://github.com/dottxt-ai/outlines/blob/main/LICENSE",
     "https://pypi.org/project/outlines/",
-    "https://dottxt-ai.github.io/outlines/"
+    "https://dottxt-ai.github.io/outlines/",
+    "https://dottxt-ai.github.io/outlines/latest/features/models/",
+    "https://dottxt-ai.github.io/outlines/latest/features/models/llamacpp/",
+    "https://dottxt-ai.github.io/outlines/latest/features/advanced/backends/"
   ],
   "maintainer": ".txt (dottxt)",
   "added": "2026-11-09",
-  "updated": "2026-11-09",
-  "last_verified": "2026-11-09",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

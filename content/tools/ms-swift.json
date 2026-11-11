@@ -1,0 +1,41 @@
+{
+  "id": "ms-swift",
+  "name": "ms-SWIFT",
+  "category": "tools",
+  "summary": "ModelScope SWIFT toolkit for training, fine-tuning, deploying and evaluating 100+ LLMs and multimodal models (Apache-2.0).",
+  "description": "Established Apache-2.0 toolkit (modelscope/ms-swift; not archived; not a 2026 launch). PyPI ms-swift 4.6.0 and English docs https://swift.readthedocs.io/en/latest/ verified 2026-11-11. Install with pip install ms-swift. Covers fine-tuning and related post-training / deployment workflows documented upstream. Model licenses, GPUs and any ModelScope or cloud hosting are separate.",
+  "url": "https://github.com/modelscope/ms-swift",
+  "repo": "https://github.com/modelscope/ms-swift",
+  "docs": "https://swift.readthedocs.io/en/latest/",
+  "tags": [
+    "fine-tuning",
+    "multimodal",
+    "modelscope",
+    "training",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install ms-swift."
+  },
+  "related": [
+    "llama-factory",
+    "axolotl",
+    "trl",
+    "unsloth"
+  ],
+  "sources": [
+    "https://github.com/modelscope/ms-swift",
+    "https://github.com/modelscope/ms-swift/blob/main/LICENSE",
+    "https://pypi.org/project/ms-swift/",
+    "https://swift.readthedocs.io/en/latest/"
+  ],
+  "maintainer": "ModelScope",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

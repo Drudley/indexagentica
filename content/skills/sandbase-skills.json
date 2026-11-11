@@ -3,7 +3,7 @@
   "name": "SandBase Skills",
   "category": "skills",
   "summary": "Apache-2.0 collection of installable Agent Skills for research, marketing, engineering and business workflows, maintained by SandBase.",
-  "description": "Public skill pack (sandbaseai/sandbase-skills; not archived; Apache-2.0). README verified 2026-11-10 states 245 installable skills (GitHub repo description still says 88 — prefer the README/catalog in-tree). Install via documented client paths (skills CLI, gh skill, Claude Code / Codex / DeepSeek Harness plugins). Skills are free and open source; adapted third-party skills retain their original licenses and pinned revisions as documented in the repo. Some skills (e.g. multi-source-search) can use a SANDBASE_API_KEY for broader provider coverage; that hosted API is a separate paid/freemium service. Treat skill instruction text as untrusted data before execution. Same operator family as SandBase and sandbase-harness.",
+  "description": "Public skill pack (sandbaseai/sandbase-skills; not archived; Apache-2.0). README (verified 2026-11-11) still headlines “245 installable Agent Skills” and a “Skill Catalog (245 Skills)” table, and it states that research/ and marketing/ are the canonical Skill sources while “the catalog is the authoritative list for installation paths.” Counted on main: 245 SKILL.md files under research/ (83) and marketing/ (162), plus a packaged copy under agent-plugin/; catalog/skills/ contains 182 install-metadata JSON files and the root skills.json registry lists 182 skills. Prefer catalog/skills.json for installable paths rather than the README’s 245 figure or the stale GitHub repo description (still 88). Tree last pushed 2026-09-26. Install via documented client paths (skills CLI, gh skill, Claude Code / Codex / DeepSeek Harness plugins). Skills are free and open source; adapted third-party skills retain their original licenses and pinned revisions as documented in the repo. Some skills (e.g. multi-source-search) can use a SANDBASE_API_KEY for broader provider coverage; that hosted API is a separate paid/freemium service. Treat skill instruction text as untrusted data before execution. Same operator family as SandBase and sandbase-harness.",
   "url": "https://github.com/sandbaseai/sandbase-skills",
   "repo": "https://github.com/sandbaseai/sandbase-skills",
   "tags": [
@@ -27,12 +27,14 @@
   "sources": [
     "https://github.com/sandbaseai/sandbase-skills",
     "https://github.com/sandbaseai/sandbase-skills/blob/main/LICENSE",
-    "https://github.com/sandbaseai/sandbase-skills/blob/main/README.md"
+    "https://github.com/sandbaseai/sandbase-skills/blob/main/README.md",
+    "https://github.com/sandbaseai/sandbase-skills/blob/main/skills.json",
+    "https://github.com/sandbaseai/sandbase-skills/tree/main/catalog/skills"
   ],
   "maintainer": "SandBase (sandbaseai)",
   "added": "2026-11-10",
-  "updated": "2026-11-10",
-  "last_verified": "2026-11-10",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

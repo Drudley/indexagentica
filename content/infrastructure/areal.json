@@ -1,0 +1,42 @@
+{
+  "id": "areal",
+  "name": "AReaL",
+  "category": "infrastructure",
+  "summary": "Apache-2.0 fully asynchronous reinforcement-learning framework for large reasoning models, with a public Python package and docs.",
+  "description": "Open RL training system (areal-project/AReaL; not archived). GitHub and PyPI license Apache-2.0. PyPI package areal 1.0.4 and site https://areal-ai.io verified 2026-11-11. This is an established research/training framework, not presented as a brand-new hosted product launch. GPU clusters, model weights and any third-party rollouts are separate. English docs at https://areal-ai.io/docs/en/intro.html (the older areal-project.github.io documentation URL returned HTTP 500 on 2026-11-11).",
+  "url": "https://areal-ai.io",
+  "repo": "https://github.com/areal-project/AReaL",
+  "docs": "https://areal-ai.io/docs/en/intro.html",
+  "tags": [
+    "reinforcement-learning",
+    "training",
+    "reasoning",
+    "python",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: pip install areal. Cluster and model setup follow upstream docs."
+  },
+  "related": [
+    "verl",
+    "skyrl",
+    "rllm",
+    "openrlhf"
+  ],
+  "sources": [
+    "https://areal-ai.io",
+    "https://github.com/areal-project/AReaL",
+    "https://github.com/areal-project/AReaL/blob/main/LICENSE",
+    "https://pypi.org/project/areal/",
+    "https://areal-ai.io/docs/en/intro.html"
+  ],
+  "maintainer": "AReaL authors",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

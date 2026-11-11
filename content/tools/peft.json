@@ -1,0 +1,41 @@
+{
+  "id": "peft",
+  "name": "PEFT",
+  "category": "tools",
+  "summary": "Hugging Face Parameter-Efficient Fine-Tuning library (LoRA and related methods) for adapting large models without full fine-tuning.",
+  "description": "Established Apache-2.0 library (huggingface/peft; not archived; not a 2026 launch). PyPI peft 0.21.2 and docs https://huggingface.co/docs/peft verified 2026-11-11. Install with pip install peft. Commonly paired with transformers and TRL. Model licenses, checkpoints and compute are separate.",
+  "url": "https://huggingface.co/docs/peft",
+  "repo": "https://github.com/huggingface/peft",
+  "docs": "https://huggingface.co/docs/peft",
+  "tags": [
+    "fine-tuning",
+    "lora",
+    "adapters",
+    "python",
+    "huggingface"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local Python package: pip install peft."
+  },
+  "related": [
+    "trl",
+    "unsloth",
+    "axolotl",
+    "llama-factory"
+  ],
+  "sources": [
+    "https://github.com/huggingface/peft",
+    "https://github.com/huggingface/peft/blob/main/LICENSE",
+    "https://pypi.org/project/peft/",
+    "https://huggingface.co/docs/peft"
+  ],
+  "maintainer": "Hugging Face",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

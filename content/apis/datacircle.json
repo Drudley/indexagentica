@@ -1,0 +1,40 @@
+{
+  "id": "datacircle",
+  "name": "Datacircle",
+  "category": "apis",
+  "summary": "Free no-key API and MCP that list and rank GTM/data-API pricing plans; sheet and API answers are licensed CC BY 4.0.",
+  "description": "Datacircle benchmarks go-to-market APIs and exposes the sheet through a public HTTP API and MCP. Verified 2026-11-11 without a key: GET https://api.datacircle.dev/v1 (index of calls), OpenAPI at /v1/openapi.json, GET /v1/apis returned a list of 145 API rows, and MCP initialize 200 at https://api.datacircle.dev/mcp (serverInfo datacircle 2.0.0). llms.txt and terms exist. Terms (updated 2026-11-06) state anyone can download the sheet (CSV/JSON/zip) and call the API and MCP with no key; both the file and API/MCP answers are under CC BY 4.0 with attribution to Datacircle; 60 calls per minute per IP; figures come from providers and can change — check the provider's own page before buying. Datacircle is not a party to purchases from listed providers. Vendor-affiliated listing (#33, wayne@datacircle.dev).",
+  "url": "https://datacircle.dev",
+  "docs": "https://api.datacircle.dev/v1/openapi.json",
+  "tags": [
+    "gtm",
+    "pricing",
+    "benchmarks",
+    "openapi",
+    "mcp",
+    "no-auth"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://datacircle.dev/llms.txt",
+    "openapi": "https://api.datacircle.dev/v1/openapi.json",
+    "auth": "none",
+    "notes": "No API key. Terms state a 60 requests/minute per-IP limit. Attribution required under CC BY 4.0. JSON-RPC initialize POST to https://api.datacircle.dev/mcp returned 200 (serverInfo datacircle 2.0.0); GET/HEAD of that URL 308 to https://datacircle.dev/docs/mcp (documentation page, not used as the MCP endpoint here)."
+  },
+  "sources": [
+    "https://datacircle.dev",
+    "https://datacircle.dev/llms.txt",
+    "https://datacircle.dev/terms",
+    "https://api.datacircle.dev/v1",
+    "https://api.datacircle.dev/v1/openapi.json",
+    "https://api.datacircle.dev/v1/apis",
+    "https://datacircle.dev/docs/mcp"
+  ],
+  "maintainer": "Datacircle",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

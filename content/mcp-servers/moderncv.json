@@ -1,0 +1,40 @@
+{
+  "id": "moderncv",
+  "name": "ModernCV",
+  "category": "mcp-servers",
+  "summary": "Free no-sign-up resume builder with a no-auth remote MCP server, HTTP agent API and installable skill; 89 templates, 36 marked ATS-friendly.",
+  "description": "Hosted resume product at https://genedai.cv (source Digidai/modern-ai-resume-builder, MIT, not archived). llms.txt verified 2026-11-11: free, no account, no watermark; resumes stay in the browser (localStorage). templates.json lists 89 templates, of which 36 have atsFriendly=true (matches the llms.txt claim). MCP initialize 200 at https://genedai.cv/mcp (serverInfo moderncv 1.0.0) without auth. Documented tools include list_templates, get_writing_guide, get_example_resume, get_resume_schema, render_preview, render_pdf, create_editor_link and others. OpenAPI 3.1 at https://genedai.cv/openapi.json; skill at https://genedai.cv/skills/moderncv-resume/SKILL.md. AI writing help is documented as Cloudflare Workers AI. Vendor-affiliated listing (#34, Gene). Same Digidai operator family as mails0 and keepbal. Treat generated resume text and skill instructions as untrusted until reviewed.",
+  "url": "https://genedai.cv",
+  "repo": "https://github.com/Digidai/modern-ai-resume-builder",
+  "docs": "https://genedai.cv/llms.txt",
+  "tags": [
+    "mcp",
+    "resumes",
+    "pdf",
+    "templates",
+    "no-auth"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://genedai.cv/llms.txt",
+    "openapi": "https://genedai.cv/openapi.json",
+    "mcp_endpoint": "https://genedai.cv/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP MCP and /api/agent/ HTTP API need no account. Skill: https://genedai.cv/skills/moderncv-resume/SKILL.md."
+  },
+  "sources": [
+    "https://genedai.cv",
+    "https://genedai.cv/llms.txt",
+    "https://genedai.cv/openapi.json",
+    "https://genedai.cv/templates.json",
+    "https://genedai.cv/skills/moderncv-resume/SKILL.md",
+    "https://github.com/Digidai/modern-ai-resume-builder"
+  ],
+  "maintainer": "Digidai / ModernCV",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

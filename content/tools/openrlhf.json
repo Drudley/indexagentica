@@ -1,0 +1,42 @@
+{
+  "id": "openrlhf",
+  "name": "OpenRLHF",
+  "category": "tools",
+  "summary": "Apache-2.0 high-performance RLHF / post-training framework built on Ray, with support for multiple reward and policy-optimization recipes.",
+  "description": "Established open-source RLHF toolkit (OpenRLHF/OpenRLHF; not archived; not a 2026 launch). GitHub license Apache-2.0. PyPI openrlhf 0.11.2 and docs https://openrlhf.readthedocs.io/ verified 2026-11-11. Training requires substantial GPU resources; model licenses and cluster costs are separate from the framework.",
+  "url": "https://openrlhf.readthedocs.io/",
+  "repo": "https://github.com/OpenRLHF/OpenRLHF",
+  "docs": "https://openrlhf.readthedocs.io/",
+  "tags": [
+    "rlhf",
+    "reinforcement-learning",
+    "post-training",
+    "ray",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: pip install openrlhf. Distributed GPU setup is documented separately."
+  },
+  "related": [
+    "trl",
+    "verl",
+    "skyrl",
+    "rllm",
+    "areal"
+  ],
+  "sources": [
+    "https://github.com/OpenRLHF/OpenRLHF",
+    "https://github.com/OpenRLHF/OpenRLHF/blob/main/LICENSE",
+    "https://pypi.org/project/openrlhf/",
+    "https://openrlhf.readthedocs.io/"
+  ],
+  "maintainer": "OpenRLHF authors",
+  "added": "2026-11-11",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

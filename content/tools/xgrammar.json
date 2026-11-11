@@ -3,7 +3,7 @@
   "name": "XGrammar",
   "category": "tools",
   "summary": "Fast portable structured-generation engine for LLM grammars and constrained decoding (MLC AI).",
-  "description": "Apache-2.0 structured-generation engine (mlc-ai/xgrammar; not archived). PyPI xgrammar 0.2.8 verified 2026-11-09. Docs at https://xgrammar.mlc.ai/. Designed for flexible grammar-constrained generation across backends. Model and runtime costs are separate.",
+  "description": "Apache-2.0 structured-generation engine (mlc-ai/xgrammar; not archived). PyPI xgrammar 0.2.9 verified 2026-11-11 (0.2.8 remains a prior release; 0.2.9 was uploaded 2026-11-09 and is not yanked). Docs at https://xgrammar.mlc.ai/. Designed for flexible grammar-constrained generation across backends. Model and runtime costs are separate.",
   "url": "https://xgrammar.mlc.ai/",
   "repo": "https://github.com/mlc-ai/xgrammar",
   "docs": "https://xgrammar.mlc.ai/",
@@ -29,12 +29,13 @@
     "https://github.com/mlc-ai/xgrammar",
     "https://github.com/mlc-ai/xgrammar/blob/main/LICENSE",
     "https://pypi.org/project/xgrammar/",
-    "https://xgrammar.mlc.ai/"
+    "https://xgrammar.mlc.ai/",
+    "https://pypi.org/project/xgrammar/0.2.9/"
   ],
   "maintainer": "MLC AI",
   "added": "2026-11-09",
-  "updated": "2026-11-09",
-  "last_verified": "2026-11-09",
+  "updated": "2026-11-11",
+  "last_verified": "2026-11-11",
   "submitted_by": "agentica-curator",
   "status": "active"
 }
