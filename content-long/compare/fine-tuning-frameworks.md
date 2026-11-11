@@ -162,7 +162,7 @@ Checked on PyPI, GitHub latest releases, and each repository’s licence file(s)
 
 Axolotl’s PyPI metadata does not set a licence classifier; the Apache-2.0 text is from the repo `LICENSE`. Unsloth’s PyPI `license_expression` is Apache-2.0, which matches the core package, not the Studio UI. The Unsloth README states this dual-licensing model explicitly. Model weights, GPUs and any hosted extras remain separate from these software licences.
 
-When linking the LLaMA-Factory repository, use [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory); a camel-case spelling of that path is a redirect and should not be used in published links.
+When linking the LLaMA-Factory repository, use [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory), the canonical path. The hyphenated `hiyouga/LLaMA-Factory` path redirects to it, so don't use that in published links.
 
 ## What we ran, and what we did not
 
