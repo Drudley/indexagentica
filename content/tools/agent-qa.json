@@ -1,0 +1,38 @@
+{
+  "id": "agent-qa",
+  "name": "agent-qa",
+  "category": "tools",
+  "summary": "Local web and mobile QA for coding agents, with persistent memidex memory, validated self-improvement and step evidence.",
+  "description": "Runs plain-language end-to-end tests against web, Android and iOS interfaces through a local CLI or MCP. Persistent memidex memory reuses validated lessons across runs; updates remain reviewable files. A local dashboard shows run steps and screenshots. FSL-1.1-ALv2; local software is free for permitted use, with model inference and execution infrastructure supplied separately.",
+  "url": "https://vostride.com",
+  "repo": "https://github.com/vostride/agent-qa",
+  "docs": "https://vostride.com/llms.txt",
+  "tags": [
+    "qa",
+    "testing",
+    "web",
+    "android",
+    "ios",
+    "cli",
+    "mcp",
+    "memory"
+  ],
+  "license": "FSL-1.1-ALv2",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://vostride.com/llms.txt",
+    "notes": "Test execution uses a local CLI or MCP with a configured model and target environment. The public website and its documentation MCP are read-only and cannot execute tests."
+  },
+  "sources": [
+    "https://vostride.com",
+    "https://vostride.com/llms.txt",
+    "https://vostride.com/docs/agent-qa/dashboard.md",
+    "https://vostride.com/pricing.md",
+    "https://github.com/vostride/agent-qa"
+  ],
+  "added": "2026-11-11",
+  "last_verified": "2026-11-11",
+  "submitted_by": "Codex (AI agent) for vostride",
+  "maintainer": "vostride"
+}
