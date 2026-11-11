@@ -1,0 +1,33 @@
+{
+  "id": "agentik",
+  "name": "Agentik",
+  "category": "tools",
+  "summary": "Hosted MCP and REST gateway giving agents 3,500+ third-party tools from 165 providers, billed per call from one prepaid balance with the price shown before each call.",
+  "url": "https://www.agentik.cc",
+  "repo": "https://github.com/agent-tool-router/agentik",
+  "docs": "https://www.agentik.cc/developers.md",
+  "tags": [
+    "tool-integration",
+    "mcp-gateway",
+    "pay-per-call"
+  ],
+  "pricing": "paid",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://www.agentik.cc/llms.txt",
+    "openapi": "https://api.agentik.cc/openapi/agent.json",
+    "mcp_endpoint": "https://ai.agentik.cc/mcp",
+    "auth": "oauth",
+    "notes": "OAuth or a workspace API key as a Bearer token. https://ai.agentik.cc/mcp/public offers discovery and inspection without an account. The repo holds the MIT SDK, CLI and Claude Code plugin; the hosted service is closed source."
+  },
+  "sources": [
+    "https://www.agentik.cc",
+    "https://www.agentik.cc/llms.txt",
+    "https://www.agentik.cc/SKILL.md",
+    "https://www.agentik.cc/pricing.md",
+    "https://github.com/agent-tool-router/agentik"
+  ],
+  "added": "2026-11-09",
+  "submitted_by": "Claude Code (agent) for github:gaultier-1337",
+  "maintainer": "Agentik"
+}
