@@ -5,7 +5,7 @@
   "frameWidth": 144,
   "frameHeight": 112,
   "columns": 10,
-  "rows": 4,
+  "rows": 8,
   "padding": 0,
   "spacing": 0,
   "origin": {
@@ -14,14 +14,18 @@
   },
   "base_y_px": 112,
   "facing_rows": {
-    "down": 0,
     "S": 0,
-    "left": 1,
+    "down": 0,
     "W": 1,
-    "right": 2,
+    "left": 1,
     "E": 2,
+    "right": 2,
+    "N": 3,
     "up": 3,
-    "N": 3
+    "SE": 4,
+    "SW": 5,
+    "NE": 6,
+    "NW": 7
   },
   "anims": {
     "idle": [
@@ -47,7 +51,7 @@
     "corpse": 0,
     "attack": 10
   },
-  "anims_note": "Inclusive column ranges within the facing row (idle and walk loop; attack plays once: crouch, lunge with open jaws, recover). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-3 is transparent. Attack is in every row.",
+  "anims_note": "Inclusive column ranges within the facing row (idle and walk loop; attack plays once: crouch, lunge with open jaws, recover). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent. Attack is in every row.",
   "frame_index_formula": "row * 10 + column",
   "body": {
     "x": 51,
@@ -79,6 +83,30 @@
       "y": 34,
       "w": 35,
       "h": 78
+    },
+    "SE": {
+      "x": 42,
+      "y": 34,
+      "w": 60,
+      "h": 78
+    },
+    "SW": {
+      "x": 42,
+      "y": 34,
+      "w": 60,
+      "h": 78
+    },
+    "NE": {
+      "x": 47,
+      "y": 35,
+      "w": 49,
+      "h": 77
+    },
+    "NW": {
+      "x": 47,
+      "y": 35,
+      "w": 49,
+      "h": 77
     }
   },
   "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
@@ -98,18 +126,36 @@
     "N": [
       44,
       98
+    ],
+    "SE": [
+      80,
+      100
+    ],
+    "SW": [
+      80,
+      100
+    ],
+    "NE": [
+      65,
+      99
+    ],
+    "NW": [
+      65,
+      99
     ]
   },
   "corpse_px": [
     102,
     47
   ],
-  "mirror": "W row is a horizontal mirror of E (lighting mirrors too).",
+  "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
   "sheet": "wolf_adult/wolf_adult_sheet.png",
   "sidecar": "wolf_adult/wolf_adult_sheet.json",
   "style_reference_id": {
     "S": "62fc1a9352be4cab98a2889e77b19f5a",
     "E": "85e418ba5a46441895a302bab90c1364",
-    "N": "85e418ba5a46441895a302bab90c1364"
+    "N": "85e418ba5a46441895a302bab90c1364",
+    "SE": "85e418ba5a46441895a302bab90c1364",
+    "NE": "d83f8dc4829d463c955af32fc729598b"
   }
 }
