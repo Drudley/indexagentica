@@ -3,7 +3,7 @@
   "name": "GoVisit Agent Skills Toolkit",
   "category": "skills",
   "summary": "MIT toolkit of 22 portable read-only Agent Skills (plus audience plugin bundles) that call GoVisit’s public travel read APIs.",
-  "description": "Vendor-affiliated listing (GitHub #43, janpopovic / GoVisit.ai / inHotel Sàrl). Same operator as govisit-tools-mcp. Public repo inhotel-io/govisit-toolkit (not archived; created 2026-11-01). Root LICENSE is MIT (Copyright 2026 inHotel Sàrl). Docs and README state toolkit files use MIT, while hosted services and returned data use the separate GoVisit Data Use License (last updated 2026-11-08): attributed travel-planning use is permitted; bulk extraction, resale, competing data products, and OTA/marketplace/referral-monetized use need a separate agreement. On main, skills/ contains 22 canonical SKILL.md folders. Audience plugin bundles reuse some of those skills: plugins/govisit 22, govisit-travel-planner 18, govisit-destination 13, govisit-local-business 10 (63 plugin SKILL.md copies in total). The Agent Skills discovery index at https://govisit.ai/.well-known/agent-skills/index.json also lists 22 packages. Public reads need no GoVisit API key; the AI tool may ask for network permission, and its own usage charges still apply. The hosted MCP server implementation is not in this repository.",
+  "description": "Vendor-affiliated listing (GitHub #43, janpopovic / GoVisit.ai / inHotel Sàrl). Same operator as govisit-tools-mcp. Public repo inhotel-io/govisit-toolkit (not archived; created 2026-11-01). Root LICENSE is MIT (Copyright 2026 inHotel Sàrl). Docs and README state toolkit files use MIT, while hosted services and returned data use the separate GoVisit Data Use License (last updated 2026-11-08): attributed travel-planning use is permitted; bulk extraction, resale, competing data products, and OTA/marketplace/referral-monetized use need a separate agreement. On main, skills/ contains 22 canonical SKILL.md folders. Audience plugin bundles reuse some of those skills: plugins/govisit 22, govisit-travel-planner 18, govisit-destination 13, govisit-local-business 10 (63 plugin SKILL.md copies in total). The Agent Skills discovery index at https://govisit.ai/.well-known/agent-skills/index.json also lists 22 packages. Public reads need no GoVisit API key; the AI tool may ask for network permission, and its own usage charges still apply. The hosted MCP server implementation is not in this repository. The same repo also contains tools/floating-chat, a separate optional widget (not one of the 22 skills). Its source depends on @sentry/react and, unless disableAnalyticsTracking is set, calls analytics.init(); Sentry is initialized only when the SENTRY_DSN environment variable is set (read from source, not executed).",
   "url": "https://govisit.ai/en/docs/developers/agent-skills/overview",
   "repo": "https://github.com/inhotel-io/govisit-toolkit",
   "docs": "https://govisit.ai/en/docs/developers/agent-skills/installation",
@@ -34,7 +34,8 @@
     "https://govisit.ai/en/docs/developers/agent-skills/installation",
     "https://govisit.ai/en/docs/general/data-use-license",
     "https://govisit.ai/.well-known/agent-skills/index.json",
-    "https://govisit.ai/llms.txt"
+    "https://govisit.ai/llms.txt",
+    "https://github.com/inhotel-io/govisit-toolkit/blob/main/tools/floating-chat/helpers/analytics.ts"
   ],
   "maintainer": "GoVisit.ai / inHotel Sàrl",
   "added": "2026-11-12",
