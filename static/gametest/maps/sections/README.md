@@ -30,3 +30,27 @@ python3 client/tools/author-ht-section.py
 
 Previews: `docs/map/ht-3x3-preview-ground.png` (ground only) and
 `docs/map/ht-3x3-preview.png` (ground plus planned hut / tree / bush markers).
+
+## Wild rings around the 3×3
+
+| Ring | Sections | Place |
+|------|----------|-------|
+| 1 | the 16 around the 3×3 (sx 7..11, sy 8..12 minus the 3×3) | Wild land, mostly tier-1 content. No buildings, fences or hedges. |
+| 2 | the 24 around ring 1 (sx 6..12, sy 7..13 minus the inner 5×5) | Wild land, mostly tier-2 content. |
+
+Terrain is the canon raster exactly as the engine generates it (`terrain.bin`,
+warped like `generateSection`): lakes stay impassable `shallow_water` with a
+1-tile sand rim, forest is grass with dense trees. Water exists only where the
+canon map has the lake (11_8 in ring 1; 11_7, 12_7, 12_8 in ring 2). Roads are
+the 3×3 crossings carried outward: the four highways run straight to ring 2's
+outer edge (`outer: true` in the edge contract), the secondary roads become
+2-wide stubs plus 1-wide trails, and the corner diagonals become trails; all
+trails end inside ring 1. Seams match on every authored pair, including the
+3×3's outer edges (the 3×3 files are never rewritten).
+
+```bash
+python3 client/tools/author-rings.py --ring 1     # or --ring 2; add --check to write nothing
+# staged, off by default: --boar-zones (TIER2-1), --fishing-spots (FISHING-1)
+```
+
+Overviews: `docs/map/ring1-overview.png`, `docs/map/ring2-overview.png`.
