@@ -3,11 +3,11 @@ id: fine-tuning-frameworks
 type: comparison
 title: "Fine-tuning frameworks compared — Axolotl, LLaMA-Factory and Unsloth"
 summary: "Compare Axolotl, LLaMA-Factory and Unsloth as SFT, LoRA/QLoRA and preference-tuning frameworks for tool-use models: documented methods, config style, chat/tool datasets, hardware backends, licences and current versions. Cross-links the agent RL stacks comparison."
-description: "A source-checked comparison of Axolotl, LLaMA-Factory and Unsloth for post-training tool-use and chat models. Covers documented methods (SFT, LoRA/QLoRA, DPO/ORPO/KTO, GRPO only where each project lists it), YAML/CLI/Python/UI config style, multi-turn chat-template and tool-calling dataset support, hardware backends, licences (including Unsloth's Apache-2.0/AGPL-3.0 split) and PyPI versions checked 2026-11-11. Positioned against the agent reinforcement-learning stacks comparison rather than as a substitute. No training run; vendor speed and VRAM figures are not treated as independent measurements."
+description: "A source-checked comparison of Axolotl, LLaMA-Factory and Unsloth for post-training tool-use and chat models. Covers documented methods (SFT, LoRA/QLoRA, DPO/ORPO/KTO, GRPO only where each project lists it), YAML/CLI/Python/UI config style, multi-turn chat-template and tool-calling dataset support, hardware backends, licences (including Unsloth's Apache-2.0/AGPL-3.0 split) and PyPI versions checked 2026-11-11. Positioned against the agent reinforcement-learning stacks comparison rather than as a substitute. No training run; vendor speed and VRAM figures are not treated as independent measurements. An Other options section added 2026-11-12 points to TRL, PEFT, ms-SWIFT and the deprecated torchtune entry, and to the recommended TRL+PEFT post-training stack."
 author: Agentica Author
 tags: [fine-tuning, training, lora, tool-calling, python]
-entries: [axolotl, llama-factory, unsloth]
-related: [agent-reinforcement-learning-stacks]
+entries: [axolotl, llama-factory, unsloth, trl, peft, ms-swift, torchtune]
+related: [agent-reinforcement-learning-stacks, post-training-tool-use-model]
 subjects: [axolotl, llama-factory, unsloth]
 criteria:
   - Config style
@@ -108,15 +108,75 @@ sources:
   - title: "unslothai/unsloth latest GitHub release"
     url: https://api.github.com/repos/unslothai/unsloth/releases/latest
     accessed: 2026-11-11
-last_verified: 2026-11-11
+  - title: "huggingface/trl README"
+    url: https://raw.githubusercontent.com/huggingface/trl/main/README.md
+    accessed: 2026-11-12
+  - title: "huggingface/trl LICENSE"
+    url: https://raw.githubusercontent.com/huggingface/trl/main/LICENSE
+    accessed: 2026-11-12
+  - title: "TRL PyPI metadata"
+    url: https://pypi.org/pypi/trl/json
+    accessed: 2026-11-12
+  - title: "huggingface/trl latest GitHub release"
+    url: https://api.github.com/repos/huggingface/trl/releases/latest
+    accessed: 2026-11-12
+  - title: "TRL documentation index"
+    url: https://huggingface.co/docs/trl/index
+    accessed: 2026-11-12
+  - title: "huggingface/peft README"
+    url: https://raw.githubusercontent.com/huggingface/peft/main/README.md
+    accessed: 2026-11-12
+  - title: "huggingface/peft LICENSE"
+    url: https://raw.githubusercontent.com/huggingface/peft/main/LICENSE
+    accessed: 2026-11-12
+  - title: "PEFT PyPI metadata"
+    url: https://pypi.org/pypi/peft/json
+    accessed: 2026-11-12
+  - title: "huggingface/peft latest GitHub release"
+    url: https://api.github.com/repos/huggingface/peft/releases/latest
+    accessed: 2026-11-12
+  - title: "PEFT documentation index"
+    url: https://huggingface.co/docs/peft/index
+    accessed: 2026-11-12
+  - title: "modelscope/ms-swift README"
+    url: https://raw.githubusercontent.com/modelscope/ms-swift/main/README.md
+    accessed: 2026-11-12
+  - title: "modelscope/ms-swift LICENSE"
+    url: https://raw.githubusercontent.com/modelscope/ms-swift/main/LICENSE
+    accessed: 2026-11-12
+  - title: "ms-swift PyPI metadata"
+    url: https://pypi.org/pypi/ms-swift/json
+    accessed: 2026-11-12
+  - title: "modelscope/ms-swift latest GitHub release"
+    url: https://api.github.com/repos/modelscope/ms-swift/releases/latest
+    accessed: 2026-11-12
+  - title: "ms-SWIFT documentation"
+    url: https://swift.readthedocs.io/en/latest/
+    accessed: 2026-11-12
+  - title: "meta-pytorch/torchtune README"
+    url: https://raw.githubusercontent.com/meta-pytorch/torchtune/main/README.md
+    accessed: 2026-11-12
+  - title: "meta-pytorch/torchtune LICENSE"
+    url: https://raw.githubusercontent.com/meta-pytorch/torchtune/main/LICENSE
+    accessed: 2026-11-12
+  - title: "torchtune PyPI metadata"
+    url: https://pypi.org/pypi/torchtune/json
+    accessed: 2026-11-12
+  - title: "The future of torchtune (GitHub issue #2883)"
+    url: https://github.com/meta-pytorch/torchtune/issues/2883
+    accessed: 2026-11-12
+  - title: "torchtune documentation"
+    url: https://meta-pytorch.org/torchtune/main/
+    accessed: 2026-11-12
+last_verified: 2026-11-12
 published: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 ## SFT and LoRA trainers, not agent RL stacks
 
 [Agent RL stacks compared](comparison:agent-reinforcement-learning-stacks) covers distributed training engines and harness gateways — [verl](entry:verl), [SkyRL](entry:skyrl), [Agent Lightning](entry:agent-lightning) and [OpenPipe ART](entry:openpipe-art) — whose job is multi-turn agent reinforcement learning. This page is one layer down the training stack: **post-training frameworks** you use to run supervised fine-tuning, LoRA/QLoRA and preference optimization on chat and tool-use models.
 
-The three directory entries are [Axolotl](entry:axolotl), [LLaMA-Factory](entry:llama-factory) and [Unsloth](entry:unsloth). They overlap on (Q)LoRA and chat data, and some also document GRPO or PPO, but they are not drop-in substitutes for those RL stacks. LLaMA-Factory’s README also lists Unsloth among optional training “tricks,” so the libraries can compose.
+The three directory entries are [Axolotl](entry:axolotl), [LLaMA-Factory](entry:llama-factory) and [Unsloth](entry:unsloth). They overlap on (Q)LoRA and chat data, and some also document GRPO or PPO, but they are not drop-in substitutes for those RL stacks. For a library-level recommended path that starts with [TRL](entry:trl) and [PEFT](entry:peft) and then scales out with OpenRLHF or AReaL, see [Post-training a tool-use model](stack:post-training-tool-use-model). Other trainers, including [ms-SWIFT](entry:ms-swift) and the deprecated [torchtune](entry:torchtune) entry, are listed under Other options below. LLaMA-Factory’s README also lists Unsloth among optional training “tricks,” so the libraries can compose.
 
 The comparison table is generated from the front matter. README and docs include vendor speed or VRAM figures (for example Unsloth’s “2× faster / 70% less VRAM” wording, or LLaMA-Factory’s starred estimated memory table). Those numbers are not independently verified here and are not used as selection criteria.
 
@@ -164,13 +224,24 @@ Axolotl’s PyPI metadata does not set a licence classifier; the Apache-2.0 text
 
 When linking the LLaMA-Factory repository, use [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory), the canonical path. The hyphenated `hiyouga/LLaMA-Factory` path redirects to it, so don't use that in published links.
 
+
+## Other options
+
+The table above stays a three-way comparison of [Axolotl](entry:axolotl), [LLaMA-Factory](entry:llama-factory) and [Unsloth](entry:unsloth). These related directory entries are not added as subjects, so the criteria rows stay focused on those YAML/UI-oriented frameworks.
+
+- **[TRL](entry:trl)** (PyPI and GitHub latest 1.17.1, Apache-2.0, Python >=3.11) is a Transformers-based trainer library. The README documents `SFTTrainer`, `GRPOTrainer`, `DPOTrainer`, `KTOTrainer` and `RewardTrainer`, a CLI (`trl sft`, `trl dpo`, `trl kto`), Accelerate DDP, DeepSpeed ZeRO and FSDP, and full PEFT integration for LoRA/QLoRA. Docs: [huggingface.co/docs/trl/index](https://huggingface.co/docs/trl/index).
+- **[PEFT](entry:peft)** (PyPI and GitHub latest 0.21.2, Apache-2.0, Python >=3.10) is the Hugging Face adapter library. The README quickstart uses `LoraConfig` and `get_peft_model`. Docs: [huggingface.co/docs/peft/index](https://huggingface.co/docs/peft/index).
+- Together they are the core of the recommended [post-training stack for a tool-use model](stack:post-training-tool-use-model).
+- **[ms-SWIFT](entry:ms-swift)** (PyPI and GitHub latest 4.6.0, Apache-2.0, Python >=3.9) is ModelScope's CLI-first training framework (`swift sft`, `swift rlhf`, `swift infer`, plus `megatron sft`). Its training-methods table lists pre-training, supervised fine-tuning, GRPO, GKD, PPO, DPO, KTO, reward modelling, CPO, SimPO, ORPO, embedding, reranker and sequence classification, with full-parameter, LoRA and QLoRA columns (and DeepSpeed / multi-machine support). A separate Megatron-SWIFT table and a GRPO-family table (GRPO, DAPO, GSPO, SAPO, CISPO, CHORD, RLOO, Reinforce++) are also documented. Docs: [swift.readthedocs.io/en/latest/](https://swift.readthedocs.io/en/latest/).
+- **[torchtune](entry:torchtune)** is **deprecated**. Its README states that it is no longer actively maintained and that development wound down in 2025, pointing at GitHub issue [#2883](https://github.com/meta-pytorch/torchtune/issues/2883) ("The future of torchtune"), which was still open on 12 November 2026. PyPI remains at 0.6.1 (BSD-3-Clause, uploaded 7 April 2025). The repository is not archived. Do not start a new training stack with it. Docs: [meta-pytorch.org/torchtune/main/](https://meta-pytorch.org/torchtune/main/).
+
 ## What we ran, and what we did not
 
 We did **not** install these packages or run CLI help against a live install. A useful smoke test (`axolotl config-schema`, `llamafactory-cli help`, or importing `FastLanguageModel`) would pull **PyTorch** and related CUDA/ROCm wheels, which is a large download and is not GPU-free in practice. No fine-tune was run, and no speed, memory or accuracy figure from project blogs or notebooks was reproduced.
 
 ## A safe selection sequence
 
-1. **Name the layer.** If you need a multi-turn agent RL *stack* (rollouts, rewards, a training backend), start from [Agent RL stacks compared](comparison:agent-reinforcement-learning-stacks). If you need SFT, (Q)LoRA or preference tuning of a chat/tool model, stay on this page.
+1. **Name the layer.** If you need a multi-turn agent RL *stack* (rollouts, rewards, a training backend), start from [Agent RL stacks compared](comparison:agent-reinforcement-learning-stacks). If you want the Hugging Face trainer layer (TRL and PEFT) and a documented scale-out path, use [Post-training a tool-use model](stack:post-training-tool-use-model). If you need a YAML/UI-oriented SFT, (Q)LoRA or preference-tuning framework, stay on this page.
 2. **List the methods you actually need.** If you need GRPO in the same project as SFT, Axolotl and Unsloth document it; LLaMA-Factory’s official approaches table does not.
 3. **Check the dataset schema.** Tool-call SFT is explicitly specified in Axolotl’s conversation docs and LLaMA-Factory’s ShareGPT format. Unsloth’s first-class documented path is multi-turn ShareGPT/ChatML plus a separate runtime tool-calling guide.
 4. **Match hardware and licence.** Note Unsloth’s AGPL-3.0 Studio UI if you will ship that component; Axolotl and LLaMA-Factory are Apache-2.0. Confirm CUDA versus ROCm versus NPU install docs before you pin a stack.
