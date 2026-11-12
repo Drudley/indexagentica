@@ -36,5 +36,24 @@
       "E": "e389122200f6457ab83483372d2f4d5a",
       "N": "e389122200f6457ab83483372d2f4d5a"
     }
+  },
+  "wolf_young": {
+    "sheet": "wolf_young/wolf_young_sheet.png",
+    "sidecar": "wolf_young/wolf_young_sheet.json",
+    "style_reference_id": {
+      "S": "62fc1a9352be4cab98a2889e77b19f5a",
+      "E": "85e418ba5a46441895a302bab90c1364",
+      "N": "85e418ba5a46441895a302bab90c1364"
+    },
+    "src_note": "S and N are the wolf_adult S / N generations scaled down to 44 / 43 px in code; E is its own juvenile generation."
+  },
+  "wolf_adult": {
+    "sheet": "wolf_adult/wolf_adult_sheet.png",
+    "sidecar": "wolf_adult/wolf_adult_sheet.json",
+    "style_reference_id": {
+      "S": "62fc1a9352be4cab98a2889e77b19f5a",
+      "E": "85e418ba5a46441895a302bab90c1364",
+      "N": "85e418ba5a46441895a302bab90c1364"
+    }
   }
 }
