@@ -15,7 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { SITE_URL } from './site.config.mjs';
+import { SITE_URL, isGameTestPath } from './site.config.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ENDPOINT = process.env.INDEXNOW_ENDPOINT || 'https://api.indexnow.org/indexnow';
@@ -35,7 +35,8 @@ export function parseSitemap(xml) {
   const m = new Map();
   for (const [, block] of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
     const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1]?.trim().replace(/&amp;/g, '&');
-    if (loc) m.set(loc, block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1]?.trim() || '');
+    if (!loc || isGameTestPath(loc)) continue; // never submit /gametest/
+    m.set(loc, block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1]?.trim() || '');
   }
   return m;
 }
@@ -56,7 +57,7 @@ async function diff(newPath = 'dist/sitemap.xml', outPath = 'indexnow/urls.txt',
   if (full) console.log('Full re-submission requested: listing every URL.');
   else try { oldMap = parseSitemap(await get(bust(`${SITE_URL}/sitemap.xml`))); }
   catch (e) { warn(`live sitemap unavailable (${e.message}); listing all ${newMap.size} URLs`); }
-  const urls = changedUrls(oldMap, newMap);
+  const urls = changedUrls(oldMap, newMap).filter((u) => !isGameTestPath(u));
   const removed = oldMap ? [...oldMap.keys()].filter((u) => !newMap.has(u)) : [];
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, urls.join('\n') + (urls.length ? '\n' : ''));
@@ -75,7 +76,7 @@ async function waitFor(label, url, ok, { tries = 30, every = 10000 } = {}) {
 }
 
 async function submit(listPath = 'indexnow/urls.txt', dryRun = false) {
-  const urls = fs.existsSync(listPath) ? fs.readFileSync(listPath, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) : [];
+  const urls = fs.existsSync(listPath) ? fs.readFileSync(listPath, 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !isGameTestPath(s)) : [];
   if (!urls.length) { console.log('IndexNow: nothing changed, no ping.'); return; }
   const key = findKey();
   if (!key) { warn('no key file in static/ (static/<key>.txt containing the key); skipping'); return; }

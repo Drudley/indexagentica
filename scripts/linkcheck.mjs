@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Zero-dependency link & freshness checker for all entries and published long-form items. Never modifies content.
+// /gametest/ is a studio passthrough and is ignored (never checked, never reported).
 // Entries: url, repo, docs, agent_access.{llms_txt,openapi,mcp_endpoint} and sources.
 // Long-form (content-long/, drafts skipped): sources (skills: metadata.sources) and external links in the body
 // (outside code blocks).
@@ -17,6 +18,7 @@ import path from 'node:path';
 import { ROOT } from './lib/categories.mjs';
 import { loadEntries } from './validate.mjs';
 import { loadLongform } from './lib/longform.mjs';
+import { isGameTestPath } from './site.config.mjs';
 
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > -1 ? process.argv[i + 1] : d; };
 const OUT = path.resolve(arg('--out', 'upkeep'));
@@ -61,7 +63,7 @@ const bodyLinks = (md) => {
   return [...out];
 };
 const refs = new Map(); // url -> [{ entry, field }]
-const add = (url, entry, field) => { if (typeof url !== 'string' || !url) return; if (!refs.has(url)) refs.set(url, []); refs.get(url).push({ entry, field }); };
+const add = (url, entry, field) => { if (typeof url !== 'string' || !url) return; if (isGameTestPath(url)) return; if (!refs.has(url)) refs.set(url, []); refs.get(url).push({ entry, field }); };
 for (const e of entries) {
   const d = e.data;
   if (e.longform) {

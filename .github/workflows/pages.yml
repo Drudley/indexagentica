@@ -71,7 +71,10 @@ jobs:
         with:
           path: dist
           # Without this the action's tar step excludes dotfiles, which would silently drop
-          # dist/.well-known/* (copied from static/) and .nojekyll.
+          # dist/.well-known/* (copied from static/), dist/gametest/ dotfiles, and .nojekyll.
+          # dist/gametest/ is a verbatim studio passthrough (see README.md#gametest); it is
+          # included in the artifact as-is. GitHub Pages sites have a 1 GB published-size
+          # limit; check-dist warns if static/gametest/ exceeds ~300 MB or any file is ≥100 MB.
           include-hidden-files: true
 
   deploy:

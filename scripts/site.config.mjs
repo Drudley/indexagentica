@@ -21,3 +21,17 @@ export const DOWNLOAD_BASE = (process.env.DOWNLOAD_BASE || 'https://mcp.indexage
 
 // Categories live in schema/categories.json (single source of truth; see scripts/sync.mjs).
 export const CATEGORIES = loadCategories();
+
+// Studio game-test passthrough. Copied byte-for-byte from static/gametest/ to dist/gametest/
+// and served at /gametest/. Not part of the directory: excluded from the sitemap, IndexNow,
+// llms.txt, the JSON API, usage/footer injection, HTML post-processing, content validation
+// and linkcheck. See README.md#gametest.
+export const GAMETEST_DIR = 'gametest';
+export function isGameTestPath(p) {
+  const s = String(p || '').replace(/\\/g, '/');
+  if (/^https?:\/\//i.test(s)) {
+    try { return isGameTestPath(new URL(s).pathname); } catch { return false; }
+  }
+  const n = s.replace(/^\/+/, '');
+  return n === GAMETEST_DIR || n.startsWith(GAMETEST_DIR + '/');
+}

@@ -31,6 +31,7 @@ content/<category>/<id>.json   one directory entry per file (see content/README.
 content-long/                  guides, comparisons, stacks, skills: markdown + front matter (see content-long/README.md)
 schema/longform/               JSON Schemas for long-form front matter
 static/                        copied verbatim into dist/ (dotfiles included, e.g. .well-known/); may not shadow generated files
+static/gametest/               studio game-test passthrough -> dist/gametest/ (noindex; not part of the directory — see below)
 schema/categories.json         categories: single source of truth (run scripts/sync.mjs after editing)
 schema/entry.schema.json       JSON Schema (draft 2020-12) for an entry; category enum generated
 schema/entry.template.json     copy-paste entry template (validated in CI)
@@ -39,7 +40,7 @@ scripts/validate.mjs           validator: schema, id==filename, category==folder
 scripts/sync.mjs               regenerates schema enum, issue form, content/README.md table, folders
 scripts/build.mjs              static generator: content/ + content-long/ -> dist/
 scripts/build-longform.mjs     long-form pages, raw files, skill zips, API, back-references
-scripts/check-dist.mjs         post-build checks: JSON parses, internal links resolve, page structure
+scripts/check-dist.mjs         post-build checks: JSON parses, internal links resolve, page structure; gametest hash-mirror
 scripts/linkcheck.mjs          link & freshness checker (used by the upkeep workflow)
 scripts/indexnow.mjs           IndexNow: diff live vs new sitemap, ping changed URLs after deploy
 scripts/issue-to-entry.mjs     issue-form body -> entry JSON (used by the submission workflow)
@@ -57,6 +58,33 @@ CNAME                          indexagentica.com (reference only; the domain is 
 ```
 
 Categories (from `schema/categories.json`): `skills`, `harnesses`, `mcp-servers`, `tools`, `protocols`, `apis`, `information`, `finance-payments`, `directories`, `infrastructure`, `evals-observability`.
+
+## gametest
+
+`static/gametest/` is owned by the game studio. The build copies it **byte-for-byte** to `dist/gametest/`, which GitHub Pages serves at `https://indexagentica.com/gametest/`. It is not part of the Index Agentica directory:
+
+- excluded from content/entry validation, the sitemap, IndexNow, `llms.txt` / `llms-full.txt`, all `/api/` outputs, footer/usage injection, and any HTML rewriting or minification
+- `robots.txt` has `Disallow: /gametest/` in every user-agent group
+- linkcheck and the upkeep Action ignore it
+- `check-dist` only verifies that `dist/gametest/` exists and hash-matches `static/gametest/` exactly, and warns if the folder exceeds about 300 MB or any file is 100 MB or more
+
+The placeholder `README.md` in that folder is copied as a file (`/gametest/README.md`); it is not turned into an HTML page. `/gametest/` itself is served only when `static/gametest/index.html` is present (404 otherwise).
+
+### For Game Coder
+
+- Use your **own clone** of this repo. Do not work in `/workspace/indexagentica`.
+- Write **only** inside `static/gametest/`. A Vite (or similar) build with `base: '/gametest/'` should emit `index.html` at `static/gametest/index.html` (and its assets next to it, typically `static/gametest/assets/`). That is what is served at `/gametest/`.
+- The site already writes a root `/.nojekyll`, so folders whose names start with `_` under `/gametest/` are served; you do not need a second `.nojekyll` in this folder.
+- `git pull --rebase origin main` before committing.
+- Commit messages start with `gametest:`.
+- Never force-push.
+- Avoid pushing between **07:00–09:00 CET** (directory Author/Curator window).
+- Keep individual files under 100 MB and the folder under about 300 MB (GitHub's file-size limit is 100 MB; a published Pages site may be no larger than 1 GB).
+- Push with:
+
+```bash
+git -c 'credential.helper=!gh auth git-credential' push
+```
 
 ## Usage
 

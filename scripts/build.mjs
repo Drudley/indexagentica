@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
-import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES, DOWNLOAD_BASE } from './site.config.mjs';
+import { SITE_NAME, TAGLINE, REPO, REPO_URL, SITE_URL, BASE_PATH, CNAME, CATEGORIES, DOWNLOAD_BASE, GAMETEST_DIR } from './site.config.mjs';
 // Remote MCP server + REST mirror (separate repo: https://github.com/Drudley/indexagentica-mcp).
 const MCP_BASE = 'https://mcp.indexagentica.com';
 const MCP_URL = `${MCP_BASE}/mcp`;
@@ -91,12 +91,15 @@ function write(rel, data) {
 const json = (o) => JSON.stringify(o, null, 2) + '\n';
 // static/ is copied verbatim (dotfiles and dot-directories such as .well-known included) after
 // everything else is generated; a static file may not shadow a generated one.
+// static/gametest/ is a separate byte-for-byte passthrough (copyGameTest): never rewritten,
+// never given a canonical/usage footer, and not announced in the sitemap, llms or API.
 const STATIC = path.join(ROOT, 'static');
 function copyStatic(dir = STATIC) {
   if (!fs.existsSync(dir)) return 0;
   let n = 0;
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const src = path.join(dir, e.name);
+    if (dir === STATIC && e.isDirectory() && e.name === GAMETEST_DIR) continue;
     if (e.isDirectory()) { n += copyStatic(src); continue; }
     if (!e.isFile()) continue;
     const rel = '/' + path.relative(STATIC, src).split(path.sep).join('/');
@@ -106,6 +109,32 @@ function copyStatic(dir = STATIC) {
     written.push(rel);
     n++;
   }
+  return n;
+}
+// Always creates dist/gametest/ so the path exists even if static/gametest/ is missing or empty.
+// Copies regular files (and empty directories) byte-for-byte; no HTML post-processing.
+function copyGameTest() {
+  const srcRoot = path.join(STATIC, GAMETEST_DIR);
+  const dstRoot = path.join(DIST, GAMETEST_DIR);
+  fs.mkdirSync(dstRoot, { recursive: true });
+  if (!fs.existsSync(srcRoot)) return 0;
+  let n = 0;
+  const walk = (src) => {
+    for (const e of fs.readdirSync(src, { withFileTypes: true })) {
+      const s = path.join(src, e.name);
+      const relInside = path.relative(srcRoot, s).split(path.sep).join('/');
+      const d = path.join(dstRoot, relInside);
+      if (e.isDirectory()) { fs.mkdirSync(d, { recursive: true }); walk(s); continue; }
+      if (!e.isFile()) continue;
+      const rel = '/' + GAMETEST_DIR + '/' + relInside;
+      if (fs.existsSync(path.join(DIST, rel))) { console.error(`static${rel} would overwrite a generated file; rename or remove it.`); process.exit(1); }
+      fs.mkdirSync(path.dirname(d), { recursive: true });
+      fs.copyFileSync(s, d);
+      written.push(rel);
+      n++;
+    }
+  };
+  walk(srcRoot);
   return n;
 }
 
@@ -636,19 +665,22 @@ const htmlPages = ['/', P.agents, P.schema, P.requested, ...CATEGORIES.map((c) =
 write(P.sitemap, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${htmlPages.map((p) => `  <url><loc>${esc(abs(p))}</loc>${lastmod(p) ? `<lastmod>${lastmod(p)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
 const BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'claude-web', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Googlebot', 'Bingbot', 'Applebot', 'Applebot-Extended', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'FacebookBot', 'Bytespider', 'Amazonbot', 'DuckAssistBot', 'MistralAI-User', 'YouBot', 'Diffbot', 'AI2Bot', 'Timpibot', 'xAI-Bot', 'GrokBot', 'SmitheryBot'];
 write(P.robots, `# ${SITE_NAME}: built by agents, for agents.
-# AI crawlers, agents and LLM trainers are explicitly welcome to read and index everything here.
+# AI crawlers, agents and LLM trainers are explicitly welcome to read and index the directory.
+# /gametest/ is a studio passthrough, not part of the directory, and must not be indexed.
 # Machine-readable index: ${abs(P.llms)}
 # Full content: ${abs(P.llmsFull)}
 # JSON API: ${abs(P.api)} (OpenAPI: ${abs(P.openapi)})
 # Guides, comparisons, stacks, skills: ${abs(LP.api)}
 
-${BOTS.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}
+${BOTS.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /gametest/`).join('\n\n')}
 
 User-agent: *
 Allow: /
+Disallow: /gametest/
 
 Sitemap: ${abs(P.sitemap)}
 `);
 
 const nStatic = copyStatic();
-console.log(`Built ${written.length} files (${nStatic} from static/) into dist/ (${plural(entries.length, 'entr')}, ${CATEGORIES.length} categories) for ${SITE_URL} (base path "${BASE_PATH || '/'}")${CNAME ? `, CNAME=${CNAME}` : ', no CNAME'}.`);
+const nGameTest = copyGameTest();
+console.log(`Built ${written.length} files (${nStatic + nGameTest} from static/, ${nGameTest} under /${GAMETEST_DIR}/) into dist/ (${plural(entries.length, 'entr')}, ${CATEGORIES.length} categories) for ${SITE_URL} (base path "${BASE_PATH || '/'}")${CNAME ? `, CNAME=${CNAME}` : ', no CNAME'}.`);

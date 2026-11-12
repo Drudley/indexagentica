@@ -94,3 +94,8 @@ python3 -m http.server -d dist 8080   # preview at http://localhost:8080/
 **Adding a category:** add `{slug, name, description}` to `schema/categories.json`, run `node scripts/sync.mjs` (updates the schema enum, the issue form dropdown, the table in `content/README.md`, and creates the folder), then `node scripts/validate.mjs`. The site, API, llms.txt and OpenAPI pick it up automatically.
 
 The tooling has no npm dependencies; please keep it that way.
+
+## gametest
+
+The game studio publishes test builds under `static/gametest/` (served at `/gametest/`, noindex, not part of the directory). That workflow lives in [README.md#gametest](README.md#gametest). Directory contributors should leave that folder alone.
+
