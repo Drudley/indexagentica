@@ -50,7 +50,7 @@ trails end inside ring 1. Seams match on every authored pair, including the
 
 ```bash
 python3 client/tools/author-rings.py --ring 1     # or --ring 2; add --check to write nothing
-# staged, off by default: --boar-zones (TIER2-1), --fishing-spots (FISHING-1)
+# on by default: boar zones (TIER2-1) and fishing spots (FISHING-1); --no-boar-zones / --no-fishing-spots turn them off
 ```
 
 Overviews: `docs/map/ring1-overview.png`, `docs/map/ring2-overview.png`.

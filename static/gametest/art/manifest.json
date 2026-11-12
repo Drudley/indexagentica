@@ -11271,5 +11271,34 @@
       "w": 160,
       "h": 85
     }
+  },
+  "ground": {
+    "json": "art/tiles/ground_square_sheet.json",
+    "pages": [
+      {
+        "png": "art/tiles/ground_square_sheet-0.png",
+        "ktx2": "art/tiles/ground_square_sheet-0.ktx2",
+        "width": 4096,
+        "height": 4096,
+        "gpu": {
+          "astc": "art/tiles/ground_square_sheet-0.astc.ktxz",
+          "bc7": "art/tiles/ground_square_sheet-0.bc7.ktxz",
+          "etc2": "art/tiles/ground_square_sheet-0.etc2.ktxz",
+          "bc3": "art/tiles/ground_square_sheet-0.bc3.ktxz"
+        }
+      },
+      {
+        "png": "art/tiles/ground_square_sheet-1.png",
+        "ktx2": "art/tiles/ground_square_sheet-1.ktx2",
+        "width": 4096,
+        "height": 3968,
+        "gpu": {
+          "astc": "art/tiles/ground_square_sheet-1.astc.ktxz",
+          "bc7": "art/tiles/ground_square_sheet-1.bc7.ktxz",
+          "etc2": "art/tiles/ground_square_sheet-1.etc2.ktxz",
+          "bc3": "art/tiles/ground_square_sheet-1.bc3.ktxz"
+        }
+      }
+    ]
   }
 }
