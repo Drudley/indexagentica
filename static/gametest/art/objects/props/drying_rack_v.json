@@ -1,0 +1,35 @@
+{
+  "type": "drying_rack_v",
+  "name": "drying_rack_v",
+  "file": "drying_rack_v.png",
+  "footprint_tiles": [
+    1,
+    2
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walkable NS rack, same cloth as drying_rack."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 260,
+  "canvas_px": [
+    136,
+    260
+  ],
+  "footprint_px": [
+    128,
+    256
+  ],
+  "overhang_px": {
+    "left": 4,
+    "right": 4,
+    "above": 4,
+    "below": 0
+  },
+  "facing": "NS",
+  "note": "North-south drying rack. Partner of drying_rack.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

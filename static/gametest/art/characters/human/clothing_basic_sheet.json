@@ -1,0 +1,207 @@
+{
+  "frames": {
+    "S": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "SE": {
+      "frame": {
+        "x": 78,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "E": {
+      "frame": {
+        "x": 156,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "NE": {
+      "frame": {
+        "x": 234,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "N": {
+      "frame": {
+        "x": 312,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "NW": {
+      "frame": {
+        "x": 390,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "W": {
+      "frame": {
+        "x": 468,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "SW": {
+      "frame": {
+        "x": 546,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 157
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    }
+  },
+  "meta": {
+    "app": "Sprite Artist",
+    "version": "1.0",
+    "image": "clothing_basic_sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 624,
+      "h": 157
+    },
+    "scale": "1"
+  }
+}

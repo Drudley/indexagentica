@@ -1,0 +1,32 @@
+{
+  "type": "ore_bin",
+  "name": "ore_bin",
+  "file": "ore_bin.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 149,
+  "canvas_px": [
+    204,
+    149
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 38,
+    "right": 38,
+    "above": 21,
+    "below": 0
+  },
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

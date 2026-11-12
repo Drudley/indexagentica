@@ -1,0 +1,33 @@
+{
+  "type": "coop",
+  "name": "coop",
+  "file": "coop.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 379,
+  "canvas_px": [
+    268,
+    379
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 6,
+    "right": 6,
+    "above": 123,
+    "below": 0
+  },
+  "note": "Chicken coop, 2x2, full collision of its own (not a variant of shed). Ramp on the south face.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "barn",
+  "name": "barn",
+  "file": "barn.png",
+  "footprint_tiles": [
+    5,
+    4
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Closed for now: solid footprint, painted south double doors (visual only, not a walk-in gap). Plan/catalogue door cells would be (2,3)–(3,3) on a later walk-in pass."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 608,
+  "canvas_px": [
+    656,
+    614
+  ],
+  "footprint_px": [
+    640,
+    512
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 96,
+    "below": 6
+  },
+  "heightTiles": 2,
+  "facing": "EW",
+  "note": "5x4 eave-front barn: long south wall, ridge east-west, large closed double doors on the south face. Partner of barn_v.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

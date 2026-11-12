@@ -1,0 +1,35 @@
+{
+  "type": "scarecrow",
+  "name": "scarecrow",
+  "file": "scarecrow.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walkable; the post sits at the 1x1 footprint centre."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 296,
+  "canvas_px": [
+    210,
+    296
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 41,
+    "right": 41,
+    "above": 168,
+    "below": 0
+  },
+  "heightTiles": 2,
+  "note": "Field scarecrow, heightTiles 2. Patched clothes use the batch 3 dye red / cloth blue.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

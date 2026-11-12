@@ -1,0 +1,68 @@
+{
+  "type": "keep",
+  "name": "keep",
+  "file": "keep.png",
+  "footprint_tiles": [
+    9,
+    6
+  ],
+  "collision": {
+    "mode": "all_except",
+    "open_cells": [
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "door_cells": [
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "note": "South door on local cells (3,5)–(5,5), matching OBJECTS-PLAN.md. Exterior only; the keep is solid."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 1024,
+  "heightTiles": 4,
+  "canvas_px": [
+    1184,
+    1024
+  ],
+  "footprint_px": [
+    1152,
+    768
+  ],
+  "overhang_px": {
+    "left": 16,
+    "right": 16,
+    "above": 256,
+    "below": 0
+  },
+  "door_opening_px": {
+    "x": 476,
+    "y": 672,
+    "w": 232,
+    "h": 328
+  },
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

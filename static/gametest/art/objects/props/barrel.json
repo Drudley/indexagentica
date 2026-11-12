@@ -1,0 +1,32 @@
+{
+  "type": "barrel",
+  "name": "barrel",
+  "file": "barrel.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 179,
+  "canvas_px": [
+    140,
+    179
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 6,
+    "right": 6,
+    "above": 51,
+    "below": 0
+  },
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

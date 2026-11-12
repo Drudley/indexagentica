@@ -1,0 +1,37 @@
+{
+  "type": "anvil",
+  "name": "anvil",
+  "file": "anvil.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended; stations.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Reused smithy-yard anvil, packed to a 1x1 station footprint. Type id anvil.",
+  "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
+  "construction": "Reused from the approved smithy-yard anvil (batch 2 workshop-props sprite 448a9c598afe4633ba54b75001c106f0, rect_px [462, 706, 109, 95] on smithy.png). Cropped, palette-snapped, 1px outline reinforced, soft shadow down-right. Packed to a 1x1 canvas.",
+  "node_id": "anvil",
+  "kind": "anvil"
+}

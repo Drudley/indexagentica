@@ -1,0 +1,36 @@
+{
+  "type": "jute",
+  "name": "jute",
+  "file": "jute.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 176,
+  "canvas_px": [
+    128,
+    176
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 48,
+    "below": 0
+  },
+  "note": "1x1 fibre node. Game type id 'jute'.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "node_id": "jute",
+  "kind": "gather_node"
+}

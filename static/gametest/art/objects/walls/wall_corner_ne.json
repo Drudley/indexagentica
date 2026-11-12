@@ -1,0 +1,35 @@
+{
+  "type": "wall_corner",
+  "name": "wall_corner_ne",
+  "file": "wall_corner_ne.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "heightTiles": 2,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "facing": "NE",
+  "note": "North-east town corner: walk to the west and south. Inner south face of the north wall is taken from wall_h so courses meet the west neighbour. World Builder will switch the 9_10 corners to wall_corner_nw/ne/sw/se (objects.json was not edited).",
+  "construction": "Composited in code from wall_h and wall_v_a so the H-arm face matches the curtain."
+}

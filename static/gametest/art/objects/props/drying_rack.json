@@ -1,0 +1,35 @@
+{
+  "type": "drying_rack",
+  "name": "drying_rack",
+  "file": "drying_rack.png",
+  "footprint_tiles": [
+    2,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walkable; cloth uses the new dye red / cloth blue."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 197,
+  "canvas_px": [
+    268,
+    197
+  ],
+  "footprint_px": [
+    256,
+    128
+  ],
+  "overhang_px": {
+    "left": 6,
+    "right": 6,
+    "above": 69,
+    "below": 0
+  },
+  "facing": "EW",
+  "note": "East-west drying rack. Partner of drying_rack_v.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

@@ -1,0 +1,38 @@
+{
+  "type": "pine",
+  "name": "pine_depleted",
+  "file": "pine_depleted.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Stump should block; the full tree is walk-under."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Harvested stump for gather type 'pine'. Optional depleted variant.",
+  "construction": "Code stump cut from the approved trees/pine_01.png trunk and roots; canopy removed; flat cut face with wood rings painted in the object palette. No new generate.",
+  "node_id": "pine",
+  "kind": "gather_node",
+  "depleted_of": "pine",
+  "variant": "depleted"
+}

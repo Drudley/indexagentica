@@ -1,0 +1,40 @@
+{
+  "rabbit": {
+    "sheet": "rabbit/rabbit_sheet.png",
+    "sidecar": "rabbit/rabbit_sheet.json",
+    "style_reference_id": {
+      "S": "62fc1a9352be4cab98a2889e77b19f5a",
+      "E": "1741a1e5fe0d40999c8a92ccbfb4407f",
+      "N": "1741a1e5fe0d40999c8a92ccbfb4407f",
+      "corpse": "083642aebdcd450c83c76767ee088c34"
+    }
+  },
+  "squirrel": {
+    "sheet": "squirrel/squirrel_sheet.png",
+    "sidecar": "squirrel/squirrel_sheet.json",
+    "style_reference_id": {
+      "S": "083642aebdcd450c83c76767ee088c34",
+      "E": "586932ffcfa24e75b1879639f7503741",
+      "N": "586932ffcfa24e75b1879639f7503741",
+      "corpse": "7971e83e5a874cd7931d0940506d281e"
+    }
+  },
+  "boar_young": {
+    "sheet": "boar_young/boar_young_sheet.png",
+    "sidecar": "boar_young/boar_young_sheet.json",
+    "style_reference_id": {
+      "S": "69591086b86f43c6a0e7352ebe510da8",
+      "E": "2087c84b168d441cafdc1b1426007216",
+      "N": "89e96c768cb549ae91396f26877e153e"
+    }
+  },
+  "boar_adult": {
+    "sheet": "boar_adult/boar_adult_sheet.png",
+    "sidecar": "boar_adult/boar_adult_sheet.json",
+    "style_reference_id": {
+      "S": "62fc1a9352be4cab98a2889e77b19f5a",
+      "E": "e389122200f6457ab83483372d2f4d5a",
+      "N": "e389122200f6457ab83483372d2f4d5a"
+    }
+  }
+}

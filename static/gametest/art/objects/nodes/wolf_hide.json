@@ -1,0 +1,36 @@
+{
+  "type": "wolf_hide",
+  "name": "wolf_hide",
+  "file": "wolf_hide.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended; nodes.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    176,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 24,
+    "right": 24,
+    "above": 0,
+    "below": 0
+  },
+  "note": "1x1 skinning stand-in until a creature pipeline exists. Game type id 'wolf_hide'.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+  "node_id": "wolf_hide",
+  "kind": "gather_node"
+}

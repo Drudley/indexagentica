@@ -1,0 +1,36 @@
+{
+  "type": "zinc",
+  "name": "zinc",
+  "file": "zinc.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended rock; nodes.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "1x1 zinc ore vein. Game type id 'zinc'.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+  "node_id": "zinc",
+  "kind": "gather_node"
+}

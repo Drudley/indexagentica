@@ -1,0 +1,35 @@
+{
+  "type": "wall_corner",
+  "name": "wall_corner",
+  "file": "wall_corner.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "heightTiles": 2,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "facing": "NW",
+  "note": "Alias of wall_corner_nw. Use wall_corner_ne/nw/se/sw at the four town corners.",
+  "construction": "Alias of wall_corner_nw."
+}

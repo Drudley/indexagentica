@@ -1,0 +1,25 @@
+{
+  "type": "tree_birch",
+  "name": "birch_01",
+  "file": "birch_01.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walk-under canopy."
+  },
+  "gather": "birch",
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 512,
+  "heightTiles": 3,
+  "canvas_px": [
+    128,
+    512
+  ],
+  "note": "Round-2 redo. Generated as a full loose 242×512 birch, then the crown was pulled inward (trunk and roots kept 1:1) so the sprite fits the required 128×512 walk-under canvas without a non-integer scale."
+}

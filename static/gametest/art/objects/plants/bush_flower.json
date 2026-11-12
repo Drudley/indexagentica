@@ -1,0 +1,34 @@
+{
+  "type": "bush_flower",
+  "name": "bush_flower",
+  "file": "bush_flower.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 129,
+  "canvas_px": [
+    162,
+    129
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 17,
+    "right": 17,
+    "above": 1,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "note": "Single flowering bush, 1x1, small bone-white blossoms (official 2026-11-12 accent).",
+  "style_reference_id": "7edb3ff6d4854970bb6b1dbdac3521d1"
+}

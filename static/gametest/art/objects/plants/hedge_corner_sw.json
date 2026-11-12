@@ -1,0 +1,35 @@
+{
+  "type": "hedge_corner",
+  "name": "hedge_corner_sw",
+  "file": "hedge_corner_sw.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "facing": "SW",
+  "note": "South-west hedge corner: arms run east and north. Walk to the east and north.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

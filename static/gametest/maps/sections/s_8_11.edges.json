@@ -1,0 +1,195 @@
+{
+  "section": {
+    "sx": 8,
+    "sy": 11,
+    "originTx": 1600,
+    "originTy": 2200,
+    "size": 200
+  },
+  "width": {
+    "grid": 2,
+    "diagonal": 1,
+    "connector": 1
+  },
+  "crossings": {
+    "N": {
+      "tiles": [
+        {
+          "local": [
+            100,
+            0
+          ],
+          "world": [
+            1700,
+            2200
+          ]
+        },
+        {
+          "local": [
+            101,
+            0
+          ],
+          "world": [
+            1701,
+            2200
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 8,
+        "sy": 10,
+        "lx": [
+          100,
+          101
+        ],
+        "ly": 199
+      },
+      "outer": false
+    },
+    "S": {
+      "tiles": [
+        {
+          "local": [
+            100,
+            199
+          ],
+          "world": [
+            1700,
+            2399
+          ]
+        },
+        {
+          "local": [
+            101,
+            199
+          ],
+          "world": [
+            1701,
+            2399
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 8,
+        "sy": 12,
+        "lx": [
+          100,
+          101
+        ],
+        "ly": 0
+      },
+      "outer": true
+    },
+    "W": {
+      "tiles": [
+        {
+          "local": [
+            0,
+            100
+          ],
+          "world": [
+            1600,
+            2300
+          ]
+        },
+        {
+          "local": [
+            0,
+            101
+          ],
+          "world": [
+            1600,
+            2301
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 7,
+        "sy": 11,
+        "lx": 199,
+        "ly": [
+          100,
+          101
+        ]
+      },
+      "outer": true
+    },
+    "E": {
+      "tiles": [
+        {
+          "local": [
+            199,
+            100
+          ],
+          "world": [
+            1799,
+            2300
+          ]
+        },
+        {
+          "local": [
+            199,
+            101
+          ],
+          "world": [
+            1799,
+            2301
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 9,
+        "sy": 11,
+        "lx": 0,
+        "ly": [
+          100,
+          101
+        ]
+      },
+      "outer": false
+    },
+    "NE": {
+      "tiles": [
+        {
+          "local": [
+            199,
+            0
+          ],
+          "world": [
+            1799,
+            2200
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 9,
+        "sy": 10,
+        "lx": 0,
+        "ly": 199
+      },
+      "outer": false
+    },
+    "SW": {
+      "tiles": [
+        {
+          "local": [
+            0,
+            199
+          ],
+          "world": [
+            1600,
+            2399
+          ]
+        }
+      ],
+      "neighbor": {
+        "sx": 7,
+        "sy": 12,
+        "lx": 199,
+        "ly": 0
+      },
+      "outer": true
+    }
+  },
+  "notes": "Grid highways are 2 tiles wide; diagonal approaches and HT corner connectors are 1 tile. Neighbour sections must stamp the listed local tiles on their adjoining edge (and set the outward path bit). outer=true marks a crossing on the 3\u00d73 block boundary."
+}

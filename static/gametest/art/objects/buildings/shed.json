@@ -1,0 +1,35 @@
+{
+  "type": "shed",
+  "name": "shed",
+  "file": "shed.png",
+  "footprint_tiles": [
+    3,
+    2
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Closed: solid 3x2 footprint with a painted south door (visual cell (1,1)). Not a walk-in."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 562,
+  "canvas_px": [
+    384,
+    562
+  ],
+  "footprint_px": [
+    384,
+    256
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 306,
+    "below": 0
+  },
+  "facing": "S",
+  "note": "Small toolshed, 3x2, visible closed south door.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "barn_v",
+  "name": "barn_v",
+  "file": "barn_v.png",
+  "footprint_tiles": [
+    4,
+    5
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Closed for now: solid footprint, painted south double doors (visual only). Catalogue default door is E (3,2)–(3,3); this sprite shows a south door instead, centred on the 4-tile south gable (visual cells (1,4)–(2,4)), because we only draw south fronts."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 750,
+  "canvas_px": [
+    528,
+    756
+  ],
+  "footprint_px": [
+    512,
+    640
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 110,
+    "below": 6
+  },
+  "heightTiles": 2,
+  "facing": "NS",
+  "note": "4x5 gable-front barn: narrower and deeper than barn, ridge north-south, closed double doors still on the south face. Same building, NS orientation.",
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}

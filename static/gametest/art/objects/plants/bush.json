@@ -1,0 +1,34 @@
+{
+  "type": "bush",
+  "name": "bush",
+  "file": "bush.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 135,
+  "canvas_px": [
+    164,
+    135
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 18,
+    "right": 18,
+    "above": 7,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "note": "Single bush, 1x1. Plan also allows this as an odd hedge-corner stand-in; dedicated hedge_corner_* pieces are provided as well.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

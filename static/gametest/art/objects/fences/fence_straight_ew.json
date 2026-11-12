@@ -1,0 +1,25 @@
+{
+  "type": "fence",
+  "name": "fence_straight_ew",
+  "file": "fence_straight_ew.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "facing": "EW",
+  "post_height_px": 96,
+  "note": "East-west segment. Post on the west edge, two rails to the east edge, cut so they meet the next tile's west post. Closing post at the east end of a run is the same shared post (see preview). All posts are 96 px tall, 1:1 from the source. Polish: only incoming-seam pixels were changed — the east rail ends were lightened where they were near-black, and the west post's left outline is broken at the two rail bands so a preceding tile's rails meet wood rather than a hard dark bar. Overall EW look is otherwise identical.",
+  "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale)."
+}

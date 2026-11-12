@@ -1,0 +1,22 @@
+{
+  "type": "well",
+  "name": "well",
+  "file": "well.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 212,
+  "canvas_px": [
+    154,
+    212
+  ],
+  "scale": "1.3x via free /resize to height=208 (native proportions, 1px outlines kept)"
+}

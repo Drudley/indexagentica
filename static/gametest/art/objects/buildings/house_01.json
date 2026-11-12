@@ -1,0 +1,48 @@
+{
+  "type": "house_small",
+  "name": "house_01",
+  "file": "house_01.png",
+  "footprint_tiles": [
+    8,
+    8
+  ],
+  "collision": {
+    "mode": "all_except",
+    "open_cells": [
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        7
+      ]
+    ],
+    "note": "South door at local (3,7)–(4,7). The doorway sits mostly in column 3 with a 10 px spill into column 4; both south cells are left open. Plan variant may move the door to N/E/W."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 1024,
+  "heightTiles": 2,
+  "canvas_px": [
+    1044,
+    1024
+  ],
+  "footprint_px": [
+    1024,
+    1024
+  ],
+  "overhang_px": {
+    "left": 10,
+    "right": 10
+  },
+  "door_opening_px": {
+    "x": 400,
+    "y": 714,
+    "w": 132,
+    "h": 194
+  },
+  "note": "Scaled so the door opening is 194×132 px: about 19% taller than the elf body (162 px) and wider than human/dwarf shoulders (74 px). The previous 3×3 / 384×384 cottage had a 70×48 px door, too short and too narrow. The roof is drawn inside the 8×8 canvas in 3/4 (same convention as the old 3×3), not extending above the footprint. This is larger than the OBJECTS-PLAN house_small 3×3 (and house_large 4×4); lots will need updating."
+}

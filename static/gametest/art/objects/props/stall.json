@@ -1,0 +1,35 @@
+{
+  "type": "stall",
+  "name": "stall",
+  "file": "stall.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 285,
+  "canvas_px": [
+    292,
+    285
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 18,
+    "right": 18,
+    "above": 29,
+    "below": 0
+  },
+  "heightTiles": 2,
+  "facing": "S",
+  "note": "Market stall with a dye-red and plaster striped awning. 2x2 full collision.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

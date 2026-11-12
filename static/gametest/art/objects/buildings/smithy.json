@@ -1,0 +1,785 @@
+{
+  "type": "smithy",
+  "name": "smithy",
+  "file": "smithy.png",
+  "footprint_tiles": [
+    5,
+    5
+  ],
+  "footprint_note": "Footprint unchanged from OBJECTS-PLAN.md / batch 2. Outdoor props sit in the below overhang and do not add footprint tiles.",
+  "collision": {
+    "mode": "edge_walls",
+    "open_cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "blocked_edges": [
+      [
+        0,
+        0,
+        "N"
+      ],
+      [
+        0,
+        4,
+        "S"
+      ],
+      [
+        1,
+        0,
+        "N"
+      ],
+      [
+        2,
+        0,
+        "N"
+      ],
+      [
+        3,
+        0,
+        "N"
+      ],
+      [
+        4,
+        0,
+        "N"
+      ],
+      [
+        4,
+        4,
+        "S"
+      ],
+      [
+        0,
+        0,
+        "W"
+      ],
+      [
+        4,
+        0,
+        "E"
+      ],
+      [
+        0,
+        1,
+        "W"
+      ],
+      [
+        4,
+        1,
+        "E"
+      ],
+      [
+        0,
+        2,
+        "W"
+      ],
+      [
+        4,
+        2,
+        "E"
+      ],
+      [
+        0,
+        3,
+        "W"
+      ],
+      [
+        4,
+        3,
+        "E"
+      ],
+      [
+        0,
+        4,
+        "W"
+      ],
+      [
+        4,
+        4,
+        "E"
+      ]
+    ],
+    "note": "Thin 12 px walls centred on perimeter tile edges. The whole footprint is walkable except tiles blocked by interior props. Door is a gap in the south edge."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 696,
+  "heightTiles": 2,
+  "canvas_px": [
+    656,
+    824
+  ],
+  "footprint_px": [
+    640,
+    640
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 56,
+    "below": 128
+  },
+  "door_opening_px": {
+    "x": 158,
+    "y": 496,
+    "w": 340,
+    "h": 200
+  },
+  "door": {
+    "cell": [
+      1,
+      4
+    ],
+    "edge": "S",
+    "cells": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ]
+  },
+  "interior_walkable_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "door_cells": [
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "blocked_edges": [
+    [
+      0,
+      0,
+      "N"
+    ],
+    [
+      0,
+      4,
+      "S"
+    ],
+    [
+      1,
+      0,
+      "N"
+    ],
+    [
+      2,
+      0,
+      "N"
+    ],
+    [
+      3,
+      0,
+      "N"
+    ],
+    [
+      4,
+      0,
+      "N"
+    ],
+    [
+      4,
+      4,
+      "S"
+    ],
+    [
+      0,
+      0,
+      "W"
+    ],
+    [
+      4,
+      0,
+      "E"
+    ],
+    [
+      0,
+      1,
+      "W"
+    ],
+    [
+      4,
+      1,
+      "E"
+    ],
+    [
+      0,
+      2,
+      "W"
+    ],
+    [
+      4,
+      2,
+      "E"
+    ],
+    [
+      0,
+      3,
+      "W"
+    ],
+    [
+      4,
+      3,
+      "E"
+    ],
+    [
+      0,
+      4,
+      "W"
+    ],
+    [
+      4,
+      4,
+      "E"
+    ]
+  ],
+  "roof_fade_trigger": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "layers": {
+    "base": "smithy_base.png",
+    "roof": "smithy_roof.png",
+    "combined": "smithy.png",
+    "note": "Shared sidecar for the walk-in split. base and roof are aligned on the same canvas, origin (0.5, 1), base_y_px at the south edge of the footprint. Composite base then roof to reconstruct the combined image. Hide the roof layer when the player is on a roof_fade_trigger cell."
+  },
+  "thin_edge_walls": {
+    "wall_thickness_px": 12,
+    "note": "Same model as house_01_5x5 (now house_medium): 12 px walls centred on the outer tile edges (6 px in, 6 px out)."
+  },
+  "props": [
+    {
+      "name": "forge",
+      "blocks": true,
+      "rect_px": [
+        142,
+        440,
+        89,
+        120
+      ],
+      "cells": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "quench",
+      "blocks": true,
+      "rect_px": [
+        33,
+        241,
+        66,
+        87
+      ],
+      "cells": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "bellows",
+      "blocks": true,
+      "rect_px": [
+        27,
+        164,
+        137,
+        68
+      ],
+      "cells": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "toolshelf",
+      "blocks": true,
+      "rect_px": [
+        481,
+        75,
+        130,
+        92
+      ],
+      "cells": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "tools",
+      "blocks": true,
+      "rect_px": [
+        488,
+        203,
+        112,
+        72
+      ],
+      "cells": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "crate_x",
+      "blocks": true,
+      "rect_px": [
+        500,
+        331,
+        79,
+        89
+      ],
+      "cells": [
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "barrel",
+      "blocks": true,
+      "rect_px": [
+        27,
+        75,
+        61,
+        100
+      ],
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "bucket",
+      "blocks": true,
+      "rect_px": [
+        513,
+        465,
+        62,
+        75
+      ],
+      "cells": [
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "rug",
+      "blocks": false,
+      "rect_px": [
+        206,
+        356,
+        119,
+        93
+      ],
+      "cells": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "lantern",
+      "blocks": false,
+      "rect_px": [
+        539,
+        548,
+        38,
+        79
+      ],
+      "cells": []
+    },
+    {
+      "name": "sign_smithy",
+      "blocks": false,
+      "rect_px": [
+        27,
+        487,
+        86,
+        107
+      ],
+      "cells": [],
+      "placement": "facade",
+      "note": "Hung on the south facade; does not block interior cells."
+    },
+    {
+      "name": "anvil",
+      "blocks": true,
+      "rect_px": [
+        462,
+        706,
+        109,
+        95
+      ],
+      "cells": [],
+      "placement": "front_yard",
+      "note": "Sits in the below overhang, south of base_y_px. Not in the footprint."
+    }
+  ],
+  "outdoor_props": [
+    {
+      "name": "anvil",
+      "blocks": true,
+      "rect_px": [
+        462,
+        706,
+        109,
+        95
+      ],
+      "cells": [],
+      "placement": "front_yard",
+      "note": "Sits in the below overhang, south of base_y_px. Not in the footprint."
+    }
+  ],
+  "yard": {
+    "below_px": 128,
+    "footprint_changed": false,
+    "note": "Front-yard / hanging props live in the below overhang (south of base_y_px) or on the facade. They are listed in outdoor_props and in props with placement front_yard or facade. They do not enlarge the footprint. The tile immediately south of the door is kept clear of blocking yard props so the entrance stays usable."
+  },
+  "flood_fill": {
+    "walkable_cells": 18,
+    "blocked_cells": 7,
+    "reachable_from_door": 18,
+    "trapped_cells": [],
+    "door_clear": true,
+    "pass": true
+  },
+  "walkin": {
+    "note": "Open-front stone smithy, south bay on (1,4)–(3,4). Slate roof, large chimney with smoke. Forge glow shows through the open front. Anvil and hanging sign outside, in the below yard / on the facade. Footprint stays 5x5."
+  },
+  "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
+  "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+}

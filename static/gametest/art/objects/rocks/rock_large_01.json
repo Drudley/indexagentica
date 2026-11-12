@@ -1,0 +1,21 @@
+{
+  "type": "rock_large",
+  "name": "rock_large_01",
+  "file": "rock_large_01.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 256,
+  "canvas_px": [
+    256,
+    256
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "timber_stack",
+  "name": "timber_stack",
+  "file": "timber_stack.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 286,
+  "canvas_px": [
+    264,
+    286
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 4,
+    "right": 4,
+    "above": 30,
+    "below": 0
+  },
+  "note": "2x2 stacked timber. Composed from two overlapping stamps of the sheet's log pile.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

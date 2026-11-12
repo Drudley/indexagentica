@@ -1,0 +1,35 @@
+{
+  "type": "fence",
+  "name": "fence_straight_ns_e",
+  "file": "fence_straight_ns_e.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 140,
+  "canvas_px": [
+    128,
+    140
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "facing": "NS",
+  "post_height_px": 96,
+  "connection_sides": {
+    "N": "ns_rail",
+    "S": "post"
+  },
+  "note": "North-south segment, post on the east and south of the 1×1 footprint. Two foreshortened 22 px log-top rails (EW log diameter) run north from the post, across the 32 px gap, and tuck into the next tile's post. 12 px overhang above the footprint. All posts 96 px, 1:1. Same recipe as fence_straight_ns, post and connections on the east edge. Use on the east wall of a pen.",
+  "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
+  "overhang_px": 12,
+  "post_side": "east"
+}

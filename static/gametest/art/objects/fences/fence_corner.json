@@ -1,0 +1,37 @@
+{
+  "type": "fence",
+  "name": "fence_corner",
+  "file": "fence_corner.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 140,
+  "canvas_px": [
+    128,
+    140
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "facing": "SW",
+  "post_height_px": 96,
+  "connection_sides": {
+    "E": "ew_rail",
+    "N": "ns_rail",
+    "S": "post",
+    "W": "post"
+  },
+  "note": "Alias of fence_corner_sw, kept so the previous path still resolves.",
+  "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
+  "overhang_px": 12,
+  "post_side": "west"
+}

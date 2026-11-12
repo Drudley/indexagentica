@@ -1,0 +1,102 @@
+{
+  "type": "gatehouse_ew",
+  "name": "gatehouse_ew",
+  "file": "gatehouse_ew.png",
+  "footprint_tiles": [
+    4,
+    6
+  ],
+  "collision": {
+    "mode": "all_except",
+    "open_cells": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "gate_cells": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "note": "EW passage on local cells (0,2)–(3,3), matching OBJECTS-PLAN.md. Gate cells unchanged."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 816,
+  "heightTiles": 3,
+  "canvas_px": [
+    528,
+    816
+  ],
+  "footprint_px": [
+    512,
+    768
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 48,
+    "below": 0
+  },
+  "construction": "Rebuilt in code for the batch 1 fix round: W and E arched mouths from the wall-kit arch, cobbled passage between them, a lintel connecting the wings, shorter towers (overhang above 48 px, was 160) so a wall_v immediately north stays readable."
+}

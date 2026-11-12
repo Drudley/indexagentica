@@ -1,0 +1,24 @@
+{
+  "type": "tree_pine",
+  "name": "pine_01",
+  "file": "pine_01.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walk-under canopy."
+  },
+  "gather": "pine",
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 512,
+  "heightTiles": 3,
+  "canvas_px": [
+    128,
+    512
+  ]
+}

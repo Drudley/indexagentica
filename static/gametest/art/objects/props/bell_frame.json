@@ -1,0 +1,34 @@
+{
+  "type": "bell_frame",
+  "name": "bell_frame",
+  "file": "bell_frame.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 335,
+  "canvas_px": [
+    308,
+    335
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 26,
+    "right": 26,
+    "above": 79,
+    "below": 0
+  },
+  "heightTiles": 2,
+  "note": "Town bell in a timber frame, 2x2.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

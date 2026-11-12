@@ -1,0 +1,31 @@
+{
+  "type": "fence",
+  "name": "fence_post",
+  "file": "fence_post.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "facing": "cap",
+  "post_height_px": 96,
+  "connection_sides": {},
+  "note": "End / cap post. Same 96 px shared post, west-south position as the EW and west-NS pieces. Place in the next tile to close an EW or NS run. The left face at EW rail height has a 1 px outline break so incoming EW rails meet wood, not a hard black seam.",
+  "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
+  "post_side": "west"
+}

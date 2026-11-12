@@ -1,0 +1,39 @@
+{
+  "type": "birch",
+  "name": "birch",
+  "file": "birch.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walk-under canopy, same as tree_pine / tree_birch."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 512,
+  "canvas_px": [
+    128,
+    512
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 384,
+    "below": 0
+  },
+  "heightTiles": 3,
+  "note": "Pixel-identical to approved art/objects/trees/birch_01.png. Gather type 'birch'. Canvas 128x512 exceeds the M3-001 192 px stub cap so the node matches the approved tree; Game Coder should treat it like the walk-under tree object (heightTiles 3, gather on or adjacent to the cell).",
+  "construction": "Pixel-identical copy of the approved trees/birch_01.png so the lumberjacking gather-node matches the walk-under tree object. Sidecar names the gathering type id.",
+  "node_id": "birch",
+  "kind": "gather_node",
+  "gather": "birch",
+  "source_tree": "trees/birch_01.png"
+}

@@ -1,0 +1,38 @@
+{
+  "type": "wall_v",
+  "name": "wall_v_c",
+  "file": "wall_v_c.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "heightTiles": 2,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "facing": "NS",
+  "variant_by_position": {
+    "rule": "tile_y_mod_3",
+    "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
+  },
+  "note": "Third tile of the 3-tile unique NS strip."
+}

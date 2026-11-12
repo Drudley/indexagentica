@@ -1,0 +1,35 @@
+{
+  "type": "wall_corner",
+  "name": "wall_corner_sw",
+  "file": "wall_corner_sw.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "heightTiles": 2,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "facing": "SW",
+  "note": "South-west town corner: walk to the east and north, with a south face. The map's four wall_corner placements need these four variants (no variant field is set in 9_10/objects.json).",
+  "construction": "Composited in code from the same wall-kit as wall_h / wall_v."
+}

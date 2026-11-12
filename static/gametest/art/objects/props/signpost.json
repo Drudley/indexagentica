@@ -1,0 +1,34 @@
+{
+  "type": "signpost",
+  "name": "signpost",
+  "file": "signpost.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walkable; post at the tile centre."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 223,
+  "canvas_px": [
+    164,
+    223
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 18,
+    "right": 18,
+    "above": 95,
+    "below": 0
+  },
+  "heightTiles": 2,
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

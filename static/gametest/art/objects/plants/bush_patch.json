@@ -1,0 +1,34 @@
+{
+  "type": "bush_patch",
+  "name": "bush_patch",
+  "file": "bush_patch.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 268,
+  "canvas_px": [
+    300,
+    268
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 22,
+    "right": 22,
+    "above": 12,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "note": "2x2 bush clump, composed from the sheet's wide clump plus two bushes.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

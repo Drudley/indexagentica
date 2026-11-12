@@ -1,0 +1,36 @@
+{
+  "type": "nightshade",
+  "name": "nightshade",
+  "file": "nightshade.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 156,
+  "canvas_px": [
+    140,
+    156
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 6,
+    "right": 6,
+    "above": 28,
+    "below": 0
+  },
+  "note": "1x1 herb node. Game type id 'nightshade'.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "node_id": "nightshade",
+  "kind": "gather_node"
+}

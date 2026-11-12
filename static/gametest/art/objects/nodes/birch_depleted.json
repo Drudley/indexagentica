@@ -1,0 +1,38 @@
+{
+  "type": "birch",
+  "name": "birch_depleted",
+  "file": "birch_depleted.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Stump should block; the full tree is walk-under."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 136,
+  "canvas_px": [
+    128,
+    136
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 8,
+    "below": 0
+  },
+  "note": "Harvested stump for gather type 'birch'. Optional depleted variant.",
+  "construction": "Code stump cut from the approved trees/birch_01.png trunk and roots; canopy removed; flat cut face with wood rings painted in the object palette. No new generate.",
+  "node_id": "birch",
+  "kind": "gather_node",
+  "depleted_of": "birch",
+  "variant": "depleted"
+}

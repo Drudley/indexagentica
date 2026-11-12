@@ -1,0 +1,34 @@
+{
+  "type": "bush_berry",
+  "name": "bush_berry",
+  "file": "bush_berry.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 131,
+  "canvas_px": [
+    164,
+    131
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 18,
+    "right": 18,
+    "above": 3,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "note": "Single berry bush, 1x1, dye-red berry clusters. Sits with bush / bush_patch.",
+  "style_reference_id": "7edb3ff6d4854970bb6b1dbdac3521d1"
+}

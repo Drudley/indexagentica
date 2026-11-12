@@ -1,0 +1,404 @@
+{
+  "type": "house_small",
+  "name": "house_small",
+  "file": "house_small.png",
+  "footprint_tiles": [
+    3,
+    3
+  ],
+  "footprint_note": "3x3 as in OBJECTS-PLAN.md. No yard strip; below is the 6 px wall stub. Footprint unchanged.",
+  "collision": {
+    "mode": "edge_walls",
+    "open_cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "blocked_edges": [
+      [
+        0,
+        0,
+        "N"
+      ],
+      [
+        0,
+        2,
+        "S"
+      ],
+      [
+        1,
+        0,
+        "N"
+      ],
+      [
+        2,
+        0,
+        "N"
+      ],
+      [
+        2,
+        2,
+        "S"
+      ],
+      [
+        0,
+        0,
+        "W"
+      ],
+      [
+        2,
+        0,
+        "E"
+      ],
+      [
+        0,
+        1,
+        "W"
+      ],
+      [
+        2,
+        1,
+        "E"
+      ],
+      [
+        0,
+        2,
+        "W"
+      ],
+      [
+        2,
+        2,
+        "E"
+      ]
+    ],
+    "note": "Thin 12 px walls centred on perimeter tile edges. The whole footprint is walkable except tiles blocked by interior props. Door is a gap in the south edge."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 440,
+  "heightTiles": 2,
+  "canvas_px": [
+    400,
+    446
+  ],
+  "footprint_px": [
+    384,
+    384
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 56,
+    "below": 6
+  },
+  "door_opening_px": {
+    "x": 150,
+    "y": 260,
+    "w": 100,
+    "h": 180
+  },
+  "door": {
+    "cell": [
+      1,
+      2
+    ],
+    "edge": "S",
+    "cells": [
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "interior_walkable_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "door_cells": [
+    [
+      1,
+      2
+    ]
+  ],
+  "blocked_edges": [
+    [
+      0,
+      0,
+      "N"
+    ],
+    [
+      0,
+      2,
+      "S"
+    ],
+    [
+      1,
+      0,
+      "N"
+    ],
+    [
+      2,
+      0,
+      "N"
+    ],
+    [
+      2,
+      2,
+      "S"
+    ],
+    [
+      0,
+      0,
+      "W"
+    ],
+    [
+      2,
+      0,
+      "E"
+    ],
+    [
+      0,
+      1,
+      "W"
+    ],
+    [
+      2,
+      1,
+      "E"
+    ],
+    [
+      0,
+      2,
+      "W"
+    ],
+    [
+      2,
+      2,
+      "E"
+    ]
+  ],
+  "roof_fade_trigger": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "layers": {
+    "base": "house_small_base.png",
+    "roof": "house_small_roof.png",
+    "combined": "house_small.png",
+    "note": "Shared sidecar for the walk-in split. base and roof are aligned on the same canvas, origin (0.5, 1), base_y_px at the south edge of the footprint. Composite base then roof to reconstruct the combined image. Hide the roof layer when the player is on a roof_fade_trigger cell."
+  },
+  "thin_edge_walls": {
+    "wall_thickness_px": 12,
+    "note": "Same model as house_01_5x5 (now house_medium): 12 px walls centred on the outer tile edges (6 px in, 6 px out)."
+  },
+  "props": [
+    {
+      "name": "bed",
+      "blocks": true,
+      "rect_px": [
+        14,
+        58,
+        79,
+        156
+      ],
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "hearth",
+      "blocks": true,
+      "rect_px": [
+        257,
+        56,
+        79,
+        110
+      ],
+      "cells": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "chest",
+      "blocks": true,
+      "rect_px": [
+        257,
+        203,
+        69,
+        72
+      ],
+      "cells": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "rug",
+      "blocks": false,
+      "rect_px": [
+        116,
+        190,
+        85,
+        66
+      ],
+      "cells": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "barrel",
+      "blocks": true,
+      "rect_px": [
+        18,
+        292,
+        42,
+        68
+      ],
+      "cells": []
+    },
+    {
+      "name": "candle",
+      "blocks": false,
+      "rect_px": [
+        308,
+        305,
+        46,
+        41
+      ],
+      "cells": []
+    }
+  ],
+  "outdoor_props": [],
+  "yard": {
+    "below_px": 6,
+    "footprint_changed": false,
+    "note": "No front-yard strip; below is the usual 6 px wall stub."
+  },
+  "flood_fill": {
+    "walkable_cells": 6,
+    "blocked_cells": 3,
+    "reachable_from_door": 6,
+    "trapped_cells": [],
+    "door_clear": true,
+    "pass": true
+  },
+  "walkin": {
+    "note": "Rustic 3x3 one-room cottage with a south door on (1,2). Also intended for countryside farm huts. Bed, small hearth, chest, rug, barrel and a candle. Path down the middle is clear."
+  },
+  "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
+  "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+}

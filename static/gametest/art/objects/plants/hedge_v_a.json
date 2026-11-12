@@ -1,0 +1,39 @@
+{
+  "type": "hedge_v",
+  "name": "hedge_v_a",
+  "file": "hedge_v_a.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "facing": "NS",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "variant_by_position": {
+    "rule": "tile_y_mod_3",
+    "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
+  },
+  "note": "Alias of hedge_v. Tileable north-south, heightTiles 1."
+}

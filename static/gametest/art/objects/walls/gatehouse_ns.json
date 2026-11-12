@@ -1,0 +1,102 @@
+{
+  "type": "gatehouse_ns",
+  "name": "gatehouse_ns",
+  "file": "gatehouse_ns.png",
+  "footprint_tiles": [
+    6,
+    4
+  ],
+  "collision": {
+    "mode": "all_except",
+    "open_cells": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "gate_cells": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "note": "NS passage on local cells (2,0)–(3,3), matching OBJECTS-PLAN.md."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 672,
+  "heightTiles": 3,
+  "canvas_px": [
+    784,
+    672
+  ],
+  "footprint_px": [
+    768,
+    512
+  ],
+  "overhang_px": {
+    "left": 8,
+    "right": 8,
+    "above": 160,
+    "below": 0
+  },
+  "construction": "Composited in code from the wall-kit (towers, arch, walk, face)."
+}

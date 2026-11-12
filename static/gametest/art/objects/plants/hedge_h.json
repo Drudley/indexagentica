@@ -1,0 +1,39 @@
+{
+  "type": "hedge_h",
+  "name": "hedge_h",
+  "file": "hedge_h.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "heightTiles": 1,
+  "facing": "EW",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "variant_by_position": {
+    "rule": "tile_x_mod_3",
+    "note": "Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
+  },
+  "note": "Alias of hedge_h_a. Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
+}

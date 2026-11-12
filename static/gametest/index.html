@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Game — M4</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #0b0f14;
+        overflow: hidden;
+        font-family: monospace;
+        color: #e8eef4;
+      }
+      #game-container {
+        width: 100%;
+        height: 100%;
+      }
+      #chat-input {
+        position: fixed;
+        left: 12px;
+        bottom: 12px;
+        width: min(420px, 70vw);
+        padding: 8px 10px;
+        border: 1px solid #334;
+        border-radius: 4px;
+        background: #0b0f14cc;
+        color: #e8eef4;
+        z-index: 20;
+        display: none;
+      }
+      #m4-ui {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b0f14f2;
+        overflow: auto;
+      }
+      #m4-ui.hidden { display: none; }
+      .m4-panel {
+        width: min(720px, 94vw);
+        background: #121820;
+        border: 1px solid #2a3544;
+        border-radius: 8px;
+        padding: 20px 22px;
+        box-shadow: 0 12px 40px #000a;
+      }
+      .m4-panel h1 { margin: 0 0 12px; font-size: 18px; }
+      .m4-panel h2 { margin: 16px 0 8px; font-size: 14px; color: #9ab; }
+      .m4-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0; align-items: center; }
+      .m4-panel label { display: block; font-size: 12px; color: #9ab; margin-bottom: 4px; }
+      .m4-panel input, .m4-panel select, .m4-panel button {
+        font-family: monospace;
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 4px;
+        border: 1px solid #345;
+        background: #0b0f14;
+        color: #e8eef4;
+      }
+      .m4-panel button {
+        cursor: pointer;
+        background: #1e3a5f;
+        border-color: #3a6ea5;
+      }
+      .m4-panel button.secondary { background: #222a33; border-color: #445; }
+      .m4-panel button:hover { filter: brightness(1.1); }
+      #m4-error { color: #f88; min-height: 1.2em; font-size: 12px; margin-top: 8px; }
+      #m4-preview {
+        background: #0b0f14;
+        border: 1px solid #2a3544;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-size: 12px;
+        line-height: 1.45;
+        white-space: pre-wrap;
+        min-height: 140px;
+      }
+      .m4-picks { display: flex; flex-wrap: wrap; gap: 6px; }
+      .m4-picks label.chip {
+        display: inline-flex;
+        gap: 4px;
+        align-items: center;
+        padding: 4px 8px;
+        border: 1px solid #345;
+        border-radius: 999px;
+        background: #0b0f14;
+        color: #cde;
+        cursor: pointer;
+        margin: 0;
+      }
+      .m4-picks input { accent-color: #6af; }
+      .char-slot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        border: 1px solid #2a3544;
+        border-radius: 6px;
+        margin: 6px 0;
+        background: #0b0f14;
+      }
+    </style>
+    <script type="module" crossorigin src="/gametest/assets/index-DhkEVgay.js"></script>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <div id="m4-ui">
+      <div class="m4-panel" id="m4-panel"></div>
+    </div>
+    <input id="chat-input" type="text" maxlength="120" placeholder="Chat (Enter)" autocomplete="off" />
+  </body>
+</html>

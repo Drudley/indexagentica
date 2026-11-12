@@ -1,0 +1,35 @@
+{
+  "type": "fence",
+  "name": "fence_corner_nw",
+  "file": "fence_corner_nw.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "facing": "NW",
+  "post_height_px": 96,
+  "connection_sides": {
+    "E": "ew_rail",
+    "S": "post",
+    "W": "post"
+  },
+  "note": "North-west L: west-south post, EW rails to the east (east ends seam-softened). NS rails arrive from the tile to the south.",
+  "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
+  "post_side": "west"
+}

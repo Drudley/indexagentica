@@ -1,0 +1,34 @@
+{
+  "type": "cart",
+  "name": "cart",
+  "file": "cart.png",
+  "footprint_tiles": [
+    2,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 231,
+  "canvas_px": [
+    350,
+    231
+  ],
+  "footprint_px": [
+    256,
+    128
+  ],
+  "overhang_px": {
+    "left": 47,
+    "right": 47,
+    "above": 103,
+    "below": 0
+  },
+  "facing": "EW",
+  "note": "Same cart as cart_v, east-west facing (side view, shaft to the east).",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+}

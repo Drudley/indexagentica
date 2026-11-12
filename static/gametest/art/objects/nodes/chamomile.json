@@ -1,0 +1,36 @@
+{
+  "type": "chamomile",
+  "name": "chamomile",
+  "file": "chamomile.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 146,
+  "canvas_px": [
+    128,
+    146
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 18,
+    "below": 0
+  },
+  "note": "1x1 herb node. Game type id 'chamomile'.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "node_id": "chamomile",
+  "kind": "gather_node"
+}

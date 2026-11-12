@@ -1,0 +1,34 @@
+{
+  "type": "wall_h",
+  "name": "wall_h",
+  "file": "wall_h.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 160,
+  "heightTiles": 2,
+  "canvas_px": [
+    128,
+    160
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 32,
+    "below": 0
+  },
+  "facing": "EW",
+  "style_reference_id": "25c7daf92b814d2394e236fd52040736"
+}

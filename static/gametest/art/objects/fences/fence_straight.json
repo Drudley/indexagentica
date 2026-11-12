@@ -1,0 +1,25 @@
+{
+  "type": "fence",
+  "name": "fence_straight",
+  "file": "fence_straight.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full"
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "facing": "EW",
+  "post_height_px": 96,
+  "note": "Alias of fence_straight_ew, kept so the previous path still resolves. Shares the same incoming-seam polish.",
+  "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale)."
+}

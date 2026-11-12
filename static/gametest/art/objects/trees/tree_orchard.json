@@ -1,0 +1,36 @@
+{
+  "type": "tree_orchard",
+  "name": "tree_orchard",
+  "file": "tree_orchard.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walk-under canopy; the 1x1 footprint and trunk sit at the canvas bottom-centre, same convention as pine_01 / birch_01."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 332,
+  "canvas_px": [
+    278,
+    332
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 75,
+    "right": 75,
+    "above": 204,
+    "below": 0
+  },
+  "heightTiles": 2,
+  "note": "Short orchard fruit tree (red apples). heightTiles 2, shorter than pine_01 / birch_01 / tree_broadleaf. Canopy may overhang the 1x1 trunk footprint.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "construction": "Cut from the same leafy sheet (sprite 7edb3ff6d4854970bb6b1dbdac3521d1). Outline, top-left light, brown trunk and root feet follow the approved pine_01 / birch_01 conventions. Collision is none (walk-under canopy); the 1x1 footprint sits at the trunk. Canopy overhang is recorded in overhang_px. Palette-snapped to the batch 3 leaf greens and house woods."
+}

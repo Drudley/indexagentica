@@ -1,0 +1,36 @@
+{
+  "type": "yarrow",
+  "name": "yarrow",
+  "file": "yarrow.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 154,
+  "canvas_px": [
+    142,
+    154
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 7,
+    "right": 7,
+    "above": 26,
+    "below": 0
+  },
+  "note": "1x1 herb node. Game type id 'yarrow'.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "node_id": "yarrow",
+  "kind": "gather_node"
+}

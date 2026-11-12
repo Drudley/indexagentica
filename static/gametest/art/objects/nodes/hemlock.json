@@ -1,0 +1,36 @@
+{
+  "type": "hemlock",
+  "name": "hemlock",
+  "file": "hemlock.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 155,
+  "canvas_px": [
+    136,
+    155
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 4,
+    "right": 4,
+    "above": 27,
+    "below": 0
+  },
+  "note": "1x1 herb node. Game type id 'hemlock'.",
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "node_id": "hemlock",
+  "kind": "gather_node"
+}

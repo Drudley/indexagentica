@@ -1,0 +1,33 @@
+{
+  "type": "haycock",
+  "name": "haycock",
+  "file": "haycock.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Walkable haycock; 1x1 footprint at the base."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 193,
+  "canvas_px": [
+    154,
+    193
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 13,
+    "right": 13,
+    "above": 65,
+    "below": 0
+  },
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+}
