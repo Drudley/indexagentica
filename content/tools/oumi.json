@@ -1,0 +1,44 @@
+{
+  "id": "oumi",
+  "name": "Oumi",
+  "category": "tools",
+  "summary": "Apache-2.0 end-to-end foundation-model platform for training, evaluation, inference and agentic/tool-use post-training, installable as PyPI oumi 0.9.",
+  "description": "Established project (repo oumi-ai/oumi; not archived; created 2024-05-07; not a 2026 launch). Root LICENSE is Apache-2.0. PyPI oumi 0.9 verified 2026-11-12 (not yanked; wheel uploaded 2026-09-16; project URLs point at this repository). README install: uv pip install oumi (optional oumi[gpu]), or pip; a git install is also documented. Docs at https://oumi.ai/docs/en/latest/index.html (HTTP 200). README news for v0.9 describes an end-to-end stack for agentic, tool-using models, including tool-calling SFT/DPO, executable tool environments, and GRPO over Oumi environments with verl. Executable environments can run tool or task code. GPU, cloud job runners (README mentions GCP, AWS, Azure, Lambda) and model-weight licenses are separate; no cloud accounts were used. Vendor: Oumi.",
+  "url": "https://oumi.ai",
+  "repo": "https://github.com/oumi-ai/oumi",
+  "docs": "https://oumi.ai/docs/en/latest/index.html",
+  "tags": [
+    "fine-tuning",
+    "reinforcement-learning",
+    "training",
+    "evaluation",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: uv pip install oumi or pip install oumi. GPU extras and cloud runners are optional and were not used."
+  },
+  "related": [
+    "trl",
+    "verl",
+    "axolotl",
+    "llama-factory",
+    "unsloth"
+  ],
+  "sources": [
+    "https://oumi.ai",
+    "https://github.com/oumi-ai/oumi",
+    "https://github.com/oumi-ai/oumi/blob/main/LICENSE",
+    "https://github.com/oumi-ai/oumi/blob/main/README.md",
+    "https://pypi.org/project/oumi/",
+    "https://oumi.ai/docs/en/latest/index.html"
+  ],
+  "maintainer": "Oumi",
+  "added": "2026-11-12",
+  "updated": "2026-11-12",
+  "last_verified": "2026-11-12",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "openenv",
+  "name": "OpenEnv",
+  "category": "infrastructure",
+  "summary": "BSD-3-Clause framework for building and serving isolated agentic RL environments over a Gymnasium-style reset/step/state API.",
+  "description": "Established open project (canonical repo openenv/OpenEnv; not archived; created 2025-10-01; not presented as a 2026 launch). GitHub paths huggingface/openenv and meta-pytorch/OpenEnv currently redirect to openenv/OpenEnv. SPDX BSD-3-Clause; LICENSE copyright 2026, Hugging Face, Inc. PyPI openenv 0.12.0 verified 2026-11-12 (not yanked; wheel uploaded 2026-11-05). README install is pip install openenv. Docs at https://huggingface.co/docs/openenv/index and https://huggingface.co/docs/openenv/main/en/index (both HTTP 200). README and the docs index describe a Gymnasium-style reset(), step() and state() API over WebSocket/HTTP, Docker-packaged environments that can run locally, on a cloud sandbox, or as a Hugging Face Space, and “40+ ready-to-use environments” in the environment catalog (https://huggingface.co/docs/openenv/environments). An exact catalog census was not taken beyond that documented claim. Integrations named in the README include TRL, Unsloth, SkyRL, ART and others. Environments may execute untrusted agent or task code in containers — treat them as potentially destructive sandboxes. GPU, model-weight and hosting costs are separate.",
+  "url": "https://huggingface.co/docs/openenv/index",
+  "repo": "https://github.com/openenv/OpenEnv",
+  "docs": "https://huggingface.co/docs/openenv/index",
+  "tags": [
+    "reinforcement-learning",
+    "environments",
+    "sandbox",
+    "open-source",
+    "gymnasium"
+  ],
+  "license": "BSD-3-Clause",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local/Python package: pip install openenv. Follow official docs to run or deploy environment containers. No signup was used."
+  },
+  "related": [
+    "trl",
+    "unsloth",
+    "skyrl",
+    "openpipe-art",
+    "verl",
+    "harbor",
+    "verifiers",
+    "nemo-gym",
+    "prime-rl"
+  ],
+  "sources": [
+    "https://github.com/openenv/OpenEnv",
+    "https://github.com/openenv/OpenEnv/blob/main/LICENSE",
+    "https://github.com/openenv/OpenEnv/blob/main/README.md",
+    "https://pypi.org/project/openenv/",
+    "https://huggingface.co/docs/openenv/index",
+    "https://huggingface.co/docs/openenv/environments"
+  ],
+  "maintainer": "OpenEnv / Hugging Face",
+  "added": "2026-11-12",
+  "updated": "2026-11-12",
+  "last_verified": "2026-11-12",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

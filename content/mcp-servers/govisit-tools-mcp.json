@@ -1,0 +1,43 @@
+{
+  "id": "govisit-tools-mcp",
+  "name": "GoVisit Tools MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted no-key Streamable HTTP MCP server with 22 read-only tools for published GoVisit travel places, destinations and documentation.",
+  "description": "Vendor-affiliated listing (GitHub #42, janpopovic / GoVisit.ai / inHotel Sàrl). Same operator as govisit-agent-skills-toolkit. Public Streamable HTTP MCP at https://govisit.ai/mcp requires no GoVisit API key. JSON-RPC initialize returned 200 on 2026-11-12 (serverInfo ai.govisit/tools 1.0.0); tools/list returned 22 read-only tools. Docs say a browser GET of the endpoint returns HTTP 405 and that MCP calls share the HTTP API request quota and execution limits (exact quota figures not taken from a separately verified table). Hosted tools and returned GoVisit Data are under the GoVisit Data Use License (last updated 2026-11-08), not MIT: attributed travel-planning use is permitted; bulk extraction, resale, redistribution as a feed or dataset, and competing data products are not; OTAs, metasearch, marketplaces, booking services, and apps that monetize travel referrals need a separate agreement. Attribution form is specified in that license. Third-party/pass-through content follows source notices. The MCP server implementation is not published as a GitHub repository. Public reads need no key; your client’s own usage charges still apply.",
+  "url": "https://govisit.ai/en/docs/developers/mcp/overview",
+  "docs": "https://govisit.ai/en/docs/developers/mcp/overview",
+  "tags": [
+    "mcp",
+    "travel",
+    "maps",
+    "destinations",
+    "places",
+    "discovery"
+  ],
+  "license": "proprietary",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://govisit.ai/llms.txt",
+    "openapi": "https://govisit.ai/.well-known/tool-api.openapi.json",
+    "mcp_endpoint": "https://govisit.ai/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP MCP; no GoVisit API key. GET of the endpoint is documented to return 405; use a Streamable HTTP MCP client. tools/list returned 22 tools on 2026-11-12. OpenAPI describes the shared HTTP tool API."
+  },
+  "related": [
+    "govisit-agent-skills-toolkit"
+  ],
+  "sources": [
+    "https://govisit.ai/en/docs/developers/mcp/overview",
+    "https://govisit.ai/en/docs/developers/overview",
+    "https://govisit.ai/en/docs/general/data-use-license",
+    "https://govisit.ai/llms.txt",
+    "https://govisit.ai/.well-known/tool-api.openapi.json",
+    "https://govisit.ai/.well-known/api-catalog"
+  ],
+  "maintainer": "GoVisit.ai / inHotel Sàrl",
+  "added": "2026-11-12",
+  "updated": "2026-11-12",
+  "last_verified": "2026-11-12",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

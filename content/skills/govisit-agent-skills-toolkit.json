@@ -1,0 +1,45 @@
+{
+  "id": "govisit-agent-skills-toolkit",
+  "name": "GoVisit Agent Skills Toolkit",
+  "category": "skills",
+  "summary": "MIT toolkit of 22 portable read-only Agent Skills (plus audience plugin bundles) that call GoVisit’s public travel read APIs.",
+  "description": "Vendor-affiliated listing (GitHub #43, janpopovic / GoVisit.ai / inHotel Sàrl). Same operator as govisit-tools-mcp. Public repo inhotel-io/govisit-toolkit (not archived; created 2026-11-01). Root LICENSE is MIT (Copyright 2026 inHotel Sàrl). Docs and README state toolkit files use MIT, while hosted services and returned data use the separate GoVisit Data Use License (last updated 2026-11-08): attributed travel-planning use is permitted; bulk extraction, resale, competing data products, and OTA/marketplace/referral-monetized use need a separate agreement. On main, skills/ contains 22 canonical SKILL.md folders. Audience plugin bundles reuse some of those skills: plugins/govisit 22, govisit-travel-planner 18, govisit-destination 13, govisit-local-business 10 (63 plugin SKILL.md copies in total). The Agent Skills discovery index at https://govisit.ai/.well-known/agent-skills/index.json also lists 22 packages. Public reads need no GoVisit API key; the AI tool may ask for network permission, and its own usage charges still apply. The hosted MCP server implementation is not in this repository.",
+  "url": "https://govisit.ai/en/docs/developers/agent-skills/overview",
+  "repo": "https://github.com/inhotel-io/govisit-toolkit",
+  "docs": "https://govisit.ai/en/docs/developers/agent-skills/installation",
+  "tags": [
+    "agent-skills",
+    "travel",
+    "maps",
+    "destinations",
+    "places",
+    "claude-code",
+    "codex"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://govisit.ai/llms.txt",
+    "auth": "none",
+    "notes": "Install from inhotel-io/govisit-toolkit following the official installation guide (Claude Code and Codex plugins, or npx skills add). Skills call GoVisit’s hosted public read API; no GoVisit key is required for public reads."
+  },
+  "related": [
+    "govisit-tools-mcp"
+  ],
+  "sources": [
+    "https://github.com/inhotel-io/govisit-toolkit",
+    "https://github.com/inhotel-io/govisit-toolkit/blob/main/LICENSE",
+    "https://github.com/inhotel-io/govisit-toolkit/blob/main/README.md",
+    "https://govisit.ai/en/docs/developers/agent-skills/overview",
+    "https://govisit.ai/en/docs/developers/agent-skills/installation",
+    "https://govisit.ai/en/docs/general/data-use-license",
+    "https://govisit.ai/.well-known/agent-skills/index.json",
+    "https://govisit.ai/llms.txt"
+  ],
+  "maintainer": "GoVisit.ai / inHotel Sàrl",
+  "added": "2026-11-12",
+  "updated": "2026-11-12",
+  "last_verified": "2026-11-12",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

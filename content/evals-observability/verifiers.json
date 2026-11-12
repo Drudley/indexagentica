@@ -1,0 +1,41 @@
+{
+  "id": "verifiers",
+  "name": "verifiers",
+  "category": "evals-observability",
+  "summary": "Prime Intellect’s MIT library for creating LLM reinforcement-learning environments and evals, with a matching PyPI package.",
+  "description": "Established Prime Intellect project (canonical repo PrimeIntellect-ai/verifiers; not archived; created 2025-01-22; willccbb/verifiers currently redirects here). Not presented as a brand-new 2026 launch. Root LICENSE is MIT (Copyright 2026 Prime Intellect). PyPI verifiers 0.4.1 verified 2026-11-12 (not yanked; wheel uploaded 2026-11-03; project URLs point at this repository). README describes it as a library for creating environments to train and evaluate LLMs, tightly integrated with Prime Intellect’s Environments Hub, the prime-rl trainer, and a Hosted Training platform. The Environments Hub and Hosted Training are Prime Intellect products (https://app.primeintellect.ai/…); they may require accounts and can incur real compute cost — no signup or spending was done. Environments can execute task or agent code. Repo docs/ and AGENTS.md are in-tree guides; no separate docs hostname was used. Same operator family as prime-rl.",
+  "url": "https://github.com/PrimeIntellect-ai/verifiers",
+  "repo": "https://github.com/PrimeIntellect-ai/verifiers",
+  "docs": "https://github.com/PrimeIntellect-ai/verifiers/tree/main/docs",
+  "tags": [
+    "reinforcement-learning",
+    "environments",
+    "evals",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: verifiers 0.4.1 on PyPI. Hosted Prime Intellect Environments Hub / training dashboards were not signed into."
+  },
+  "related": [
+    "prime-rl",
+    "openenv",
+    "harbor",
+    "nemo-gym"
+  ],
+  "sources": [
+    "https://github.com/PrimeIntellect-ai/verifiers",
+    "https://github.com/PrimeIntellect-ai/verifiers/blob/main/LICENSE",
+    "https://github.com/PrimeIntellect-ai/verifiers/blob/main/README.md",
+    "https://github.com/PrimeIntellect-ai/verifiers/tree/main/docs",
+    "https://pypi.org/project/verifiers/"
+  ],
+  "maintainer": "Prime Intellect",
+  "added": "2026-11-12",
+  "updated": "2026-11-12",
+  "last_verified": "2026-11-12",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
