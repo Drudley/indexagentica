@@ -1,0 +1,44 @@
+{
+  "type": "inn_sign",
+  "name": "inn sign",
+  "file": "inn_sign.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Wall-hung above the door under the eaves; the door cell (101,98) stays walkable and nothing covers the door."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Inn sign (foaming tankard) for the Hearthcrown inn, NPCS-1. Hangs on the wall ABOVE the door, under the eaves, never in front of it. Place on the door tile (101,98) of inn_1 (house_01_5x5 / house_medium, door cell (2,4)) with origin (0.5,1) at the tile bottom-centre, then draw it offset_y_px = -196 (196 px up). Canvas y 0..128 then covers house y 372..500: hooks on the eave beam (house y ~460), board house y 464..492, door frame starts at y ~500, door opening at 516. Render rule: draw after (above) inn_1 and use inn_1's base y (the door tile south edge) for depth sorting, not the offset draw position, so the house never hides it and the player walking through the door passes in front of it.",
+  "node_id": "inn_sign",
+  "kind": "inn_sign",
+  "mount": "wall",
+  "mount_position": "above_door",
+  "offset_y_px": -196,
+  "draw_offset_px": {
+    "x": 0,
+    "y": -196
+  },
+  "depth_base": "host building base y (door tile south edge); render after inn_1",
+  "render_order": "after inn_1 (the building it hangs on), same depth base y"
+}

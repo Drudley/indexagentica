@@ -1,0 +1,35 @@
+{
+  "type": "bar_counter",
+  "name": "bar counter",
+  "file": "bar_counter.png",
+  "footprint_tiles": [
+    2,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Both footprint cells blocked."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    256,
+    128
+  ],
+  "footprint_px": [
+    256,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Inn bar counter, 2x1, for the inn_1 common room (replaces the table + stools stand-in). Panelled front, foot rail, plank top with tankards, two bottles, a rag and a small keg with a tap at the right end. Origin (0.5,1) is the bottom centre of the 2-tile footprint.",
+  "node_id": "bar_counter",
+  "kind": "bar_counter"
+}
