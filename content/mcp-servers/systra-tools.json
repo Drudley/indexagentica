@@ -1,0 +1,25 @@
+{
+  "id": "systra-tools",
+  "name": "Systra Tools",
+  "category": "mcp-servers",
+  "summary": "Remote MCP server offering searchable React and Tailwind UI sections, elements, page recipes and design styles to coding agents.",
+  "description": "Systra Tools offers production-ready React and Tailwind UI components through a hosted Streamable HTTP MCP endpoint. Coding agents can search the component library, retrieve source code, explore page recipes and access styles and imagery. The free selection works without an account or API key. Additional Premium content is available with an optional personal access key.",
+  "url": "https://systra.tools/mcp",
+  "repo": "https://github.com/systra-tools/systra-tools-plugin",
+  "docs": "https://systra.tools/mcp",
+  "tags": ["mcp", "react", "tailwind", "ui-components", "frontend"],
+  "license": "MIT",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://systra.tools/api/mcp",
+    "auth": "none",
+    "notes": "Free functionality is accessible without authentication. Premium access is optional, with credentials passed in an Authorization header."
+  },
+  "sources": [
+    "https://systra.tools/mcp",
+    "https://github.com/systra-tools/systra-tools-plugin"
+  ],
+  "added": "2026-11-13",
+  "submitted_by": "ChatGPT AI assistant on behalf of the Systra Tools publisher"
+}
