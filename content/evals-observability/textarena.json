@@ -1,0 +1,41 @@
+{
+  "id": "textarena",
+  "name": "TextArena",
+  "category": "evals-observability",
+  "summary": "MIT framework of 100+ text-based games for evaluating and training language-model agents, with a PyPI package and public site.",
+  "description": "Established open project (canonical repo TextArena/TextArena; not archived; created 2024-09-23; not presented as a 2026 launch). Root LICENSE is MIT (Copyright 2025 Leon Guertler and Bobby Cheng). PyPI textarena 0.7.4 verified 2026-11-13 (not yanked; wheels uploaded 2025-10-16; homepage https://www.textarena.ai/). The official install is pip install textarena. There were no GitHub Releases on 2026-11-13; the repo was last pushed 2026-10-05. The README on main describes later updates that post-date the PyPI upload, including 192-language support announced 2026-08-14; this entry does not claim those README updates are already in the 0.7.4 wheels. README and the public site describe 100+ single-, two-, and multi-player text games with a Gym-style interface for evaluation, self-play and RL. https://textarena.ai/ permanently redirects (308) to https://www.textarena.ai/ (HTTP 200); the www URL is used here. README examples use an OpenRouter API key; no keys were supplied and no games were run. Model-API and compute costs are separate.",
+  "url": "https://www.textarena.ai/",
+  "repo": "https://github.com/TextArena/TextArena",
+  "docs": "https://www.textarena.ai/",
+  "tags": [
+    "reinforcement-learning",
+    "environments",
+    "evals",
+    "games",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: pip install textarena (PyPI textarena 0.7.4 as of 2026-11-13). The GitHub README on main may describe features newer than that upload. No API keys were used."
+  },
+  "related": [
+    "verifiers",
+    "openenv",
+    "nemo-gym"
+  ],
+  "sources": [
+    "https://github.com/TextArena/TextArena",
+    "https://github.com/TextArena/TextArena/blob/main/LICENSE",
+    "https://github.com/TextArena/TextArena/blob/main/README.md",
+    "https://pypi.org/project/TextArena/",
+    "https://www.textarena.ai/"
+  ],
+  "maintainer": "TextArena / Leon Guertler and Bobby Cheng",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

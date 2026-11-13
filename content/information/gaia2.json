@@ -1,0 +1,40 @@
+{
+  "id": "gaia2",
+  "name": "Gaia2",
+  "category": "information",
+  "summary": "CC-BY-4.0 follow-up to GAIA: 800 dynamic, time-aware agent scenarios released on Hugging Face and run with Meta’s ARE framework.",
+  "description": "Established 2025 benchmark (Hugging Face dataset meta-agents-research-environments/gaia2; card license cc-by-4.0; not presented as a brand-new 2026 launch). Follow-up to the original GAIA benchmark already listed as gaia-benchmark. Scenarios run in Meta Agents Research Environments (ARE), listed separately. The dataset card describes 800 validation scenarios that test execution, search, adaptability, time, ambiguity, agent-to-agent collaboration, and noise in environments where time flows and events can arrive. dataset_info lists five capability configs (adaptability, ambiguity, execution, search, time) with 160 validation examples each (800 total), plus a demo split of 3 and a mini config of 160 validation examples. The same card's prose also calls mini “200 representative scenarios”; that count difference is recorded, not resolved. Card wording: the data is released CC-by 4.0 “and is intended for benchmarking purposes only.” Synthetic portions are outputs of Llama 3.3 and Llama 4 Maverick and remain subject to those Llama licenses, including a naming requirement if that portion is used to create, train, fine-tune, or otherwise improve a distributed AI model (the name must begin with “Llama”). Third-party content keeps its own licenses. The card states scenarios use fictional/simulated user data and that no real PII is intentionally included. A multilingual extension, facebook/omnilingual-gaia2, is pointed to from the ARE README and was not separately inventoried here. Running the official evaluator uses the ARE package and typically a model API — no keys or runs were used.",
+  "url": "https://huggingface.co/datasets/meta-agents-research-environments/gaia2",
+  "repo": "https://github.com/facebookresearch/meta-agents-research-environments",
+  "docs": "https://facebookresearch.github.io/meta-agents-research-environments/user_guide/gaia2_evaluation.html",
+  "tags": [
+    "benchmark",
+    "agent-evaluation",
+    "dataset",
+    "gaia",
+    "open-source"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Hugging Face dataset. Official runs go through the ARE package (pip install meta-agents-research-environments). No download-gated access was encountered; no evaluation was executed."
+  },
+  "related": [
+    "gaia-benchmark",
+    "meta-agents-research-environments"
+  ],
+  "sources": [
+    "https://huggingface.co/datasets/meta-agents-research-environments/gaia2",
+    "https://huggingface.co/datasets/meta-agents-research-environments/gaia2/raw/main/README.md",
+    "https://huggingface.co/blog/gaia2",
+    "https://facebookresearch.github.io/meta-agents-research-environments/user_guide/gaia2_evaluation.html",
+    "https://github.com/facebookresearch/meta-agents-research-environments"
+  ],
+  "maintainer": "Meta / facebookresearch",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

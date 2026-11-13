@@ -1,0 +1,41 @@
+{
+  "id": "meta-agents-research-environments",
+  "name": "Meta Agents Research Environments (ARE)",
+  "category": "evals-observability",
+  "summary": "MIT research platform from Meta for simulating dynamic, multi-step agent tasks, including official Gaia2 evaluation.",
+  "description": "Established Meta project (repo facebookresearch/meta-agents-research-environments; not archived; created 2025-09-11; last pushed 2026-09-30; not presented as a brand-new 2026 launch). Root LICENSE is MIT (Copyright Meta Platforms, Inc. and affiliates). Vendor: Meta. PyPI meta-agents-research-environments 1.2.0 verified 2026-11-13 (not yanked; files uploaded 2025-11-11; project URLs point at this repository). There were no GitHub Releases on 2026-11-13; because the repo has been pushed since that PyPI upload, this entry notes that the 1.2.0 wheels may lag main. README install is pip install meta-agents-research-environments (optional [gui] extra). Docs at https://facebookresearch.github.io/meta-agents-research-environments/ and the Gaia2 evaluation guide (both HTTP 200). README describes evolving simulated environments, multi-step tasks, and official Gaia2 evaluation (800 scenarios). A container-based Gaia2-CLI stack lives under gaia2-cli/. Simulated apps can include write actions (mail, contacts, and similar in-sim tools). Model-API and compute costs for evaluations are separate; no keys or benchmark runs were used.",
+  "url": "https://facebookresearch.github.io/meta-agents-research-environments/",
+  "repo": "https://github.com/facebookresearch/meta-agents-research-environments",
+  "docs": "https://facebookresearch.github.io/meta-agents-research-environments/user_guide/gaia2_evaluation.html",
+  "tags": [
+    "evals",
+    "environments",
+    "simulation",
+    "gaia2",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Python package: pip install meta-agents-research-environments (PyPI 1.2.0 as of 2026-11-13). Official Gaia2 runs also need the Hugging Face dataset. No API keys were used."
+  },
+  "related": [
+    "gaia2",
+    "gaia-benchmark"
+  ],
+  "sources": [
+    "https://github.com/facebookresearch/meta-agents-research-environments",
+    "https://github.com/facebookresearch/meta-agents-research-environments/blob/main/LICENSE",
+    "https://github.com/facebookresearch/meta-agents-research-environments/blob/main/README.md",
+    "https://pypi.org/project/meta-agents-research-environments/",
+    "https://facebookresearch.github.io/meta-agents-research-environments/",
+    "https://facebookresearch.github.io/meta-agents-research-environments/user_guide/gaia2_evaluation.html"
+  ],
+  "maintainer": "Meta / facebookresearch",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

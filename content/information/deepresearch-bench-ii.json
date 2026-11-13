@@ -1,0 +1,40 @@
+{
+  "id": "deepresearch-bench-ii",
+  "name": "DeepResearch Bench II",
+  "category": "information",
+  "summary": "Apache-2.0 evaluation pipeline and 132-task deep-research benchmark with 9,430 expert-derived rubrics and mixed data licenses.",
+  "description": "Research benchmark (repo imlrz/DeepResearch-Bench-II; not archived; not presented as a brand-new 2026 launch). Dual license, stated in the README and DATA_LICENSE: the evaluation code is Apache-2.0; tasks, rubrics and annotations follow each source article. DATA_LICENSE (verified 2026-11-13) records 129 tasks as CC BY 4.0, idx=26 and idx=110 as CC BY-NC 4.0 (commercial use not permitted), and idx=119 as CC0. README describes 132 expert-grounded research tasks and 9,430 fine-grained binary rubrics across information recall, analysis, and presentation, plus an LLM-judge scoring pipeline. A May 2026 README note says each tasks_and_rubrics.jsonl entry now carries a per-task license field. Official judging has used Gemini 2.5 Pro and, per an August 2026 README note, a default evaluator migrated to GPT-5.5; leaderboard submission requires a working judge key — no keys were supplied and nothing was submitted. Companion dataset and leaderboard spaces on Hugging Face (muset-ai/DeepResearch-Bench-II-Dataset and muset-ai/DeepResearch-Bench-Leaderboard) returned HTTP 200. Judge-model and API costs are separate.",
+  "url": "https://github.com/imlrz/DeepResearch-Bench-II",
+  "repo": "https://github.com/imlrz/DeepResearch-Bench-II",
+  "docs": "https://github.com/imlrz/DeepResearch-Bench-II/blob/main/README.md",
+  "tags": [
+    "benchmark",
+    "deep-research",
+    "evals",
+    "rubrics",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Code and task files are in the public GitHub repo. Official scoring calls a judge model API; no keys were used and no reports were submitted."
+  },
+  "related": [
+    "gaia-benchmark"
+  ],
+  "sources": [
+    "https://github.com/imlrz/DeepResearch-Bench-II",
+    "https://github.com/imlrz/DeepResearch-Bench-II/blob/main/LICENSE",
+    "https://github.com/imlrz/DeepResearch-Bench-II/blob/main/README.md",
+    "https://github.com/imlrz/DeepResearch-Bench-II/blob/main/DATA_LICENSE",
+    "https://huggingface.co/datasets/muset-ai/DeepResearch-Bench-II-Dataset",
+    "https://huggingface.co/spaces/muset-ai/DeepResearch-Bench-Leaderboard"
+  ],
+  "maintainer": "DeepResearch Bench II authors",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

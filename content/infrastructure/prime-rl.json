@@ -3,7 +3,7 @@
   "name": "prime-rl",
   "category": "infrastructure",
   "summary": "Prime Intellect’s Apache-2.0 asynchronous RL training framework, installed from git/uv (no verified PyPI package) and integrated with verifiers environments.",
-  "description": "Established Prime Intellect project (repo PrimeIntellect-ai/prime-rl; not archived; not presented as a brand-new 2026 launch). Root LICENSE is Apache-2.0. PyPI packages named prime-rl and prime_rl returned HTTP 404 on 2026-11-12; this entry does not invent an installable PyPI name. README documents a manual install (git clone, submodules, uv sync) and a one-line curl of scripts/install.sh (that script was not executed). It also states you currently need at least one NVIDIA GPU, and it points to Prime Intellect’s compute platform for renting GPUs — that is a paid vendor service and was not used. In-repo docs live under docs/ (overview, training, eval, scaling, and others). Native integration with verifiers and the Environments Hub is claimed in the README. Training stacks can execute model and environment code at scale. Same operator family as verifiers.",
+  "description": "Established Prime Intellect project (repo PrimeIntellect-ai/prime-rl; not archived; not presented as a brand-new 2026 launch). Root LICENSE is Apache-2.0. PyPI packages named prime-rl and prime_rl returned HTTP 404 on 2026-11-12 and again on 2026-11-13; this entry does not invent an installable PyPI name. GitHub latest release v0.10.0 was published 2026-10-13T22:20:01Z (not draft or prerelease). README documents a manual install (git clone, submodules, uv sync) and a one-line curl of scripts/install.sh (that script was not executed). It also states you currently need at least one NVIDIA GPU, and it points to Prime Intellect’s compute platform for renting GPUs — that is a paid vendor service and was not used. In-repo docs live under docs/ (overview, training, eval, scaling, and others). Native integration with verifiers and the Environments Hub is claimed in the README. Training stacks can execute model and environment code at scale. Same operator family as verifiers.",
   "url": "https://github.com/PrimeIntellect-ai/prime-rl",
   "repo": "https://github.com/PrimeIntellect-ai/prime-rl",
   "docs": "https://github.com/PrimeIntellect-ai/prime-rl/blob/main/docs/overview.md",
@@ -30,12 +30,13 @@
     "https://github.com/PrimeIntellect-ai/prime-rl",
     "https://github.com/PrimeIntellect-ai/prime-rl/blob/main/LICENSE",
     "https://github.com/PrimeIntellect-ai/prime-rl/blob/main/README.md",
-    "https://github.com/PrimeIntellect-ai/prime-rl/blob/main/docs/overview.md"
+    "https://github.com/PrimeIntellect-ai/prime-rl/blob/main/docs/overview.md",
+    "https://github.com/PrimeIntellect-ai/prime-rl/releases/tag/v0.10.0"
   ],
   "maintainer": "Prime Intellect",
   "added": "2026-11-12",
-  "updated": "2026-11-12",
-  "last_verified": "2026-11-12",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

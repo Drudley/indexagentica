@@ -3,7 +3,7 @@
   "name": "NeMo RL",
   "category": "infrastructure",
   "summary": "NVIDIA Apache-2.0 post-training / reinforcement-learning library for large-scale model training, with official docs and NGC containers.",
-  "description": "Established NVIDIA project (canonical repo NVIDIA-NeMo/RL; not archived; created 2025-03-16; not a 2026 launch). Older GitHub paths NVIDIA/NeMo-RL and NVIDIA/nemo-rl redirect to NVIDIA-NeMo/RL. Root LICENSE is Apache-2.0. GitHub latest release v0.8.0 was published 2026-11-06T22:22:08Z. PyPI package nemo-rl is 0.0.0 (uploaded 2025-06-03, homepage still lists github.com/NVIDIA/NeMo-RL) and is not treated as the current install path. Official README quick start uses the NGC container nvcr.io/nvidia/nemo-rl:latest plus a git clone of NVIDIA-NeMo/RL, or a bare-metal setup described in the installation guide. Docs: https://docs.nvidia.com/nemo/rl/latest/index.html and the installation guide at https://docs.nvidia.com/nemo/rl/latest/about/installation.html (both HTTP 200). Training uses GPUs and may pull gated model weights; those costs and any cloud or NGC access are separate. This library can run training jobs that execute model and environment code — follow upstream safety guidance. Vendor: NVIDIA.",
+  "description": "Established NVIDIA project (canonical repo NVIDIA-NeMo/RL; not archived; created 2025-03-16; not a 2026 launch). Older GitHub paths NVIDIA/NeMo-RL and NVIDIA/nemo-rl redirect to NVIDIA-NeMo/RL. Root LICENSE is Apache-2.0. GitHub latest release v0.8.0 was published 2026-11-06T22:22:08Z (re-confirmed 2026-11-13). PyPI package nemo-rl is still 0.0.0 (uploaded 2025-06-03, homepage still lists github.com/NVIDIA/NeMo-RL) and is not treated as the current install path. Official README quick start uses the NGC container nvcr.io/nvidia/nemo-rl:latest plus a git clone of NVIDIA-NeMo/RL, or a bare-metal setup described in the installation guide. Docs: https://docs.nvidia.com/nemo/rl/latest/index.html and the installation guide at https://docs.nvidia.com/nemo/rl/latest/about/installation.html (both HTTP 200). Training uses GPUs and may pull gated model weights; those costs and any cloud or NGC access are separate. This library can run training jobs that execute model and environment code — follow upstream safety guidance. Vendor: NVIDIA.",
   "url": "https://docs.nvidia.com/nemo/rl/latest/index.html",
   "repo": "https://github.com/NVIDIA-NeMo/RL",
   "docs": "https://docs.nvidia.com/nemo/rl/latest/about/installation.html",
@@ -37,8 +37,8 @@
   ],
   "maintainer": "NVIDIA",
   "added": "2026-11-12",
-  "updated": "2026-11-12",
-  "last_verified": "2026-11-12",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

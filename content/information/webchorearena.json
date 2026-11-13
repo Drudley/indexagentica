@@ -1,0 +1,41 @@
+{
+  "id": "webchorearena",
+  "name": "WebChoreArena",
+  "category": "information",
+  "summary": "Apache-2.0 benchmark of 532 tedious web-chore tasks built on the WebArena sites, for evaluating browsing agents.",
+  "description": "Research benchmark (repo WebChoreArena/WebChoreArena; not archived; created 2025-05-13; last pushed 2026-07-09; not presented as a brand-new 2026 launch). Root LICENSE is Apache-2.0. Project page https://webchorearena.github.io/ and arXiv 2506.01952 (both HTTP 200 on 2026-11-13). README and the homepage describe 532 curated tasks that extend WebArena toward labor-intensive chores, grouped as massive-memory, calculation, and long-term-memory tasks, on the four existing WebArena simulation websites. Running the benchmark requires a separately deployed WebArena environment and the resets described in the README, including before cross-site tasks. README evaluation examples use model API keys (Azure OpenAI, Anthropic, and Google Gemini are named); no keys were supplied and no evaluator was started. Upstream WebArena components keep their own terms. Agent runs can change the simulated sites — treat them as potentially destructive evaluation environments.",
+  "url": "https://webchorearena.github.io/",
+  "repo": "https://github.com/WebChoreArena/WebChoreArena",
+  "docs": "https://github.com/WebChoreArena/WebChoreArena/blob/main/README.md",
+  "tags": [
+    "benchmark",
+    "web-agents",
+    "webarena",
+    "evals",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source benchmark on GitHub. Official evaluation needs a WebArena deployment and model API keys; none were used here."
+  },
+  "related": [
+    "webarena",
+    "visualwebarena",
+    "browsergym"
+  ],
+  "sources": [
+    "https://github.com/WebChoreArena/WebChoreArena",
+    "https://github.com/WebChoreArena/WebChoreArena/blob/main/LICENSE",
+    "https://github.com/WebChoreArena/WebChoreArena/blob/main/README.md",
+    "https://webchorearena.github.io/",
+    "https://arxiv.org/abs/2506.01952"
+  ],
+  "maintainer": "WebChoreArena authors / The University of Tokyo",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

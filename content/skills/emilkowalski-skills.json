@@ -3,7 +3,7 @@
   "name": "Emil Kowalski's Skills",
   "category": "skills",
   "summary": "Skills for designers and engineers from Emil Kowalski, focused on design engineering.",
-  "url": "https://emilkowal.ski/skill",
+  "url": "https://aiforui.dev/skills",
   "repo": "https://github.com/emilkowalski/skills",
   "tags": [
     "agent-skills",
@@ -18,11 +18,13 @@
   ],
   "sources": [
     "https://github.com/emilkowalski/skills",
-    "https://skills.sh"
+    "https://skills.sh",
+    "https://aiforui.dev/skills"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-15",
-  "last_verified": "2026-10-15",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
   "submitted_by": "agentica-curator",
-  "maintainer": "Emil Kowalski"
+  "maintainer": "Emil Kowalski",
+  "docs": "https://aiforui.dev/skills"
 }

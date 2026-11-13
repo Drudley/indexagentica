@@ -1,0 +1,40 @@
+{
+  "id": "harness2",
+  "name": "Harness²",
+  "category": "harnesses",
+  "summary": "Apache-2.0 Google Research framework for recursively improving an agent’s prompts, tools, memory and skills with the model weights left fixed.",
+  "description": "Fresh open project (repo google-research/harness2; not archived; created 2026-10-06; last pushed 2026-11-02). GitHub SPDX and the README state Apache-2.0. The README disclaimer says this is not an officially supported Google product and is not eligible for the Google Open Source Software Vulnerability Rewards Program. Third-party code, benchmarks and datasets keep their upstream licenses. PyPI package harness2 returned HTTP 404 on 2026-11-13; documented install is from a clone: Linux, Python 3.12, uv venv, then uv pip install -e '.[render]'. The local harness2-demo path is documented as requiring no model credentials and as running real Python executions. That demo was not run. Model-backed benchmarks (JobBench, LAB, WorkBuddy-Bench) need further setup (Node.js, Google Cloud CLI / Vertex AI, and Docker for WorkBuddy) and incur API cost; README tells users to start small or use --dry-run. No cloud login or paid run was performed. Site https://harness2.github.io and arXiv 2610.14224 returned HTTP 200. README “Web access”: executor network access is unrestricted, and Codex runs with its sandbox disabled; operators are told to configure network restrictions before evaluation so benchmark answers and grading criteria cannot be fetched. Treat executors as potentially destructive.",
+  "url": "https://harness2.github.io",
+  "repo": "https://github.com/google-research/harness2",
+  "docs": "https://github.com/google-research/harness2/blob/main/README.md",
+  "tags": [
+    "harness",
+    "evals",
+    "skills",
+    "memory",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "No verified PyPI package. Documented install is uv pip install -e '.[render]' from the repo. The local demo needs no keys; model-backed benches need cloud/model credentials and were not run."
+  },
+  "related": [
+    "deer-flow",
+    "codex-cli"
+  ],
+  "sources": [
+    "https://harness2.github.io",
+    "https://github.com/google-research/harness2",
+    "https://github.com/google-research/harness2/blob/main/LICENSE",
+    "https://github.com/google-research/harness2/blob/main/README.md",
+    "https://arxiv.org/abs/2610.14224"
+  ],
+  "maintainer": "Google Research",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

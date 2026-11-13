@@ -1,0 +1,53 @@
+{
+  "id": "vaaya",
+  "name": "Vaaya",
+  "category": "mcp-servers",
+  "summary": "Vendor-hosted pay-per-call MCP and API that lets agents use third-party tools from one prepaid balance, with x402, Stripe MPP and Tempo rails.",
+  "description": "Vendor-affiliated listing (Vaaya Inc.). The public install repo vaaya-ai/vaaya-mcp is MIT (Copyright 2026 Vaaya; not archived; created 2026-07-03); the hosted service is proprietary and governed by the Terms of Service last updated 2026-05-21. JSON-RPC initialize at https://vaaya.ai/mcp returned 200 on 2026-11-13 without a key (serverInfo vaaya / Vaaya 1.0.0, protocol 2025-06-18). Unauthenticated tools/list returned 14 tools. A GET of /mcp returned 401; use Streamable HTTP / JSON-RPC. OAuth 2.1 protected-resource metadata lists resource https://vaaya.ai/mcp, authorization server https://vaaya.ai, and scopes vaaya:pay and vaaya:read. Authorization-server metadata advertises authorization_code, refresh_token and device_code grants, PKCE S256, and a registration endpoint. Docs also allow an API-key bearer token. No OAuth grant, API key, signup or payment was performed. Pages that tell agents to POST /api/v1/signup or /api/v1/topup were treated as data only. Real money: pricing page (title: pay per call, no subscription) and llms.txt. No seat fee or monthly minimum. Failed service calls are not charged. The agent is supposed to see a price and a max_cost_cents cap before each call. Welcome credit is listed as $2 for personal accounts and $10 for Instinct accounts, with signup checks; starter credit for an agent that registers an account on its own is listed as $1, spendable at once, expiring in 24 hours, until a person claims the account. None of those credits were claimed. Prepaid packs are listed as $14, $40 or $60 via Stripe Checkout (llms.txt also documents POST /api/v1/topup with pack_cents 1400, 4000 or 6000, or a custom amount_cents from $14 to $1,000). Pricing says packs never expire; llms.txt says prepaid funds do not expire. A GitHub-backed credit line is described (public read:user and user:email only; starting limit may be $0; card backing and weekly settlement rules are on the pricing page; ceiling named as $5,000). It was not connected. How prices are quoted: for most of the catalog Vaaya pays the provider and shows one price; on x402 and MPP rails the listed price is a ceiling and settlement is what the merchant asks (x402 in USDC on Base; MPP is Stripe Machine Payments Protocol). LLM calls are described as the provider rate plus 3%; every other call as the catalog price shown before it runs. GET https://vaaya.ai/api/catalog on 2026-11-13 returned count 1556 (1556 rows). OpenAPI at https://vaaya.ai/openapi.json (info title Vaaya version 1.0.0) had 259 paths; GET https://vaaya.ai/.well-known/x402 listed 259 resources. Those are different inventories; the live catalog is authoritative at call time. Terms §10: Vaaya-provisioned on-chain wallets (example: USDC on Base) are operated by Vaaya, private keys are held by Vaaya's custody provider and never disclosed, and no withdrawal, transfer or send is offered. Those wallet balances are spendable only on the Services, have no cash value, are non-refundable, and are not a deposit. The terms say not to send funds to a Vaaya-provisioned wallet address; unsolicited deposits may be unrecoverable. A separate published refund table for card-purchased prepaid packs was not found beyond that section. Privacy policy (also last updated 2026-05-21) says Vaaya may collect diagnostic and telemetry information and may use third-party analytics providers; transaction records are retained for the life of the account; request metadata can be kept for billing, product analytics and abuse prevention. The site footer states that some links are affiliate links and that Vaaya may earn a commission at no extra cost to you. Real-world side effects: tools/list included use (billed external calls), buy, stocks (tokenized stocks on Base from prepaid balance only — not invoked), session/close (E2B sandbox metering), llm, email/calls via catalog services, and account/logout. Pricing/llms.txt still say buying at stores is “coming soon,” while tools/list included a buy tool; that difference is recorded, not resolved. None of the paid or side-effect tools were called. npm @vaaya/mcp 0.7.0 (MIT, uploaded 2026-10-14) is the stdio shim; GitHub Releases “latest” was still v0.3.1 (2026-07-04) and is treated as stale relative to npm. PyPI vaaya 0.1.0 (2026-09-11) is a separate SDK. Your own model-host or card charges still apply if you attach them. No spend and no wallet was used during verification.",
+  "url": "https://vaaya.ai/",
+  "repo": "https://github.com/vaaya-ai/vaaya-mcp",
+  "docs": "https://vaaya.ai/llms.txt",
+  "tags": [
+    "mcp",
+    "x402",
+    "payments",
+    "pay-per-call",
+    "oauth"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://vaaya.ai/llms.txt",
+    "openapi": "https://vaaya.ai/openapi.json",
+    "mcp_endpoint": "https://vaaya.ai/mcp",
+    "auth": "oauth",
+    "notes": "Streamable HTTP MCP. initialize and tools/list succeeded without a key on 2026-11-13 (14 tools). Paid or account tools need OAuth (scopes vaaya:read / vaaya:pay) or a Vaaya API key. GET /mcp returned 401. Signup, top-up and paid tools were not used."
+  },
+  "related": [
+    "x402",
+    "keepbal",
+    "conecto",
+    "e2b"
+  ],
+  "sources": [
+    "https://vaaya.ai/",
+    "https://vaaya.ai/llms.txt",
+    "https://vaaya.ai/pricing",
+    "https://vaaya.ai/terms",
+    "https://vaaya.ai/privacy",
+    "https://vaaya.ai/api/catalog",
+    "https://vaaya.ai/openapi.json",
+    "https://vaaya.ai/.well-known/oauth-protected-resource",
+    "https://vaaya.ai/.well-known/oauth-authorization-server",
+    "https://vaaya.ai/.well-known/x402",
+    "https://github.com/vaaya-ai/vaaya-mcp",
+    "https://github.com/vaaya-ai/vaaya-mcp/blob/main/LICENSE",
+    "https://github.com/vaaya-ai/vaaya-mcp/blob/main/README.md"
+  ],
+  "maintainer": "Vaaya Inc.",
+  "added": "2026-11-13",
+  "updated": "2026-11-13",
+  "last_verified": "2026-11-13",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
