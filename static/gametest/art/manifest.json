@@ -8389,6 +8389,41 @@
       "note": "Low flat-topped shrub, 1x1, shorter than bush. Good as filler along paths and fences.",
       "style_reference_id": "7edb3ff6d4854970bb6b1dbdac3521d1"
     },
+    "art/objects/props/alchemy_bench.json": {
+      "type": "alchemy_bench",
+      "name": "alchemy bench",
+      "file": "alchemy_bench.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "full",
+        "note": "Recommended; stations.json currently adds no collision."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 128,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 0,
+        "below": 0
+      },
+      "note": "Alchemy bench. Type id alchemy_bench. Dark plank table with a retort on a ring stand over a small iron burner (tiny flame) feeding a receiver flask, a tall green flask, a round violet flask, three test tubes in a rack and a mortar and pestle.",
+      "node_id": "alchemy_bench",
+      "kind": "alchemy_bench"
+    },
     "art/objects/props/anvil.json": {
       "type": "anvil",
       "name": "anvil",
@@ -8662,6 +8697,41 @@
       "note": "North-south drying rack. Partner of drying_rack.",
       "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
     },
+    "art/objects/props/gemcutting_bench.json": {
+      "type": "gemcutting_bench",
+      "name": "gemcutting bench",
+      "file": "gemcutting_bench.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "full",
+        "note": "Recommended; stations.json currently adds no collision."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 128,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 0,
+        "below": 0
+      },
+      "note": "Gemcutting bench. Type id gemcutting_bench. Wooden plank bench with a stone grinding wheel in a frame (crank right, water trough below) and a few cut coloured stones on a tray at the left.",
+      "node_id": "gemcutting_bench",
+      "kind": "gemcutting_bench"
+    },
     "art/objects/props/haycock.json": {
       "type": "haycock",
       "name": "haycock",
@@ -8730,6 +8800,41 @@
       "note": "Plan footprint 1x2, collision none. Posts at the north and south ends of the rail.",
       "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
     },
+    "art/objects/props/jewelry_bench.json": {
+      "type": "jewelry_bench",
+      "name": "jewelry bench",
+      "file": "jewelry_bench.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "full",
+        "note": "Recommended; stations.json currently adds no collision."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 128,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 0,
+        "below": 0
+      },
+      "note": "Jewelry bench. Type id jewelry_bench. Small jeweller's bench with three drawers and a bench pin; steel ring mandrel with a gold ring, a T-stake bench anvil, a loupe, pliers, file, tweezers, gold wire and a red stone.",
+      "node_id": "jewelry_bench",
+      "kind": "jewelry_bench"
+    },
     "art/objects/props/notice_board.json": {
       "type": "notice_board",
       "name": "notice_board",
@@ -8795,6 +8900,41 @@
         "below": 0
       },
       "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+    },
+    "art/objects/props/runecarving_bench.json": {
+      "type": "runecarving_bench",
+      "name": "runecarving bench",
+      "file": "runecarving_bench.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "full",
+        "note": "Recommended; stations.json currently adds no collision."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 128,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 0,
+        "below": 0
+      },
+      "note": "Runecarving bench. Type id runecarving_bench. Grey stone slab on two block pedestals; an upright tablet with four carved runes (cut grooves, no glow), a second stone being carved, chisel, wooden mallet and stone chips.",
+      "node_id": "runecarving_bench",
+      "kind": "runecarving_bench"
     },
     "art/objects/props/scarecrow.json": {
       "type": "scarecrow",
@@ -11257,16 +11397,44 @@
       "w": 128,
       "h": 128
     },
-    "art/objects/props/anvil.png": {
+    "art/objects/props/alchemy_bench.png": {
       "page": 0,
       "x": 392,
       "y": 1625,
       "w": 128,
       "h": 128
     },
-    "art/objects/plants/shrub_low.png": {
+    "art/objects/props/anvil.png": {
       "page": 0,
       "x": 522,
+      "y": 1625,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/props/gemcutting_bench.png": {
+      "page": 0,
+      "x": 652,
+      "y": 1625,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/props/jewelry_bench.png": {
+      "page": 0,
+      "x": 782,
+      "y": 1625,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/props/runecarving_bench.png": {
+      "page": 0,
+      "x": 912,
+      "y": 1625,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/plants/shrub_low.png": {
+      "page": 0,
+      "x": 1042,
       "y": 1625,
       "w": 160,
       "h": 85

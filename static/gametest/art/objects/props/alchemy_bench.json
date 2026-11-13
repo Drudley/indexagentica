@@ -1,0 +1,35 @@
+{
+  "type": "alchemy_bench",
+  "name": "alchemy bench",
+  "file": "alchemy_bench.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended; stations.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Alchemy bench. Type id alchemy_bench. Dark plank table with a retort on a ring stand over a small iron burner (tiny flame) feeding a receiver flask, a tall green flask, a round violet flask, three test tubes in a rack and a mortar and pestle.",
+  "node_id": "alchemy_bench",
+  "kind": "alchemy_bench"
+}

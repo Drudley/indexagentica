@@ -1,0 +1,35 @@
+{
+  "type": "gemcutting_bench",
+  "name": "gemcutting bench",
+  "file": "gemcutting_bench.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended; stations.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Gemcutting bench. Type id gemcutting_bench. Wooden plank bench with a stone grinding wheel in a frame (crank right, water trough below) and a few cut coloured stones on a tray at the left.",
+  "node_id": "gemcutting_bench",
+  "kind": "gemcutting_bench"
+}

@@ -1,0 +1,35 @@
+{
+  "type": "runecarving_bench",
+  "name": "runecarving bench",
+  "file": "runecarving_bench.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Recommended; stations.json currently adds no collision."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Runecarving bench. Type id runecarving_bench. Grey stone slab on two block pedestals; an upright tablet with four carved runes (cut grooves, no glow), a second stone being carved, chisel, wooden mallet and stone chips.",
+  "node_id": "runecarving_bench",
+  "kind": "runecarving_bench"
+}
