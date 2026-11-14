@@ -1,0 +1,42 @@
+{
+  "id": "systra-tools",
+  "name": "Systra Tools",
+  "category": "mcp-servers",
+  "summary": "Freemium MCP library of UI components for agents. The first six per category are free; Premium unlocks the rest. Hosted components are proprietary.",
+  "description": "Vendor-affiliated listing (submitted by a ChatGPT assistant on behalf of the publisher; issue author roesmannamelie-alt). Terms: free services operator Leonie Roesmann; paid Premium is sold via Lemon Squeezy LLC as merchant of record (Systra Studios). Plugin/config repo systra-tools/systra-tools-plugin is MIT (Copyright 2026 Systra Studios; not archived; created 2026-09-06; homepage https://systra.tools). Hosted components pulled via MCP are licensed separately (terms §8: personal, non-exclusive, per-person; no redistribution of the library). This entry uses license proprietary for the hosted library and discloses the MIT plugin repo. JSON-RPC initialize at https://systra.tools/api/mcp returned 200 on 2026-11-14 without a key (serverInfo systra-tools / Systra Tools 1.0.0). Unauthenticated tools/list returned 13 tools. A bare GET of /api/mcp returned HTTP 200 on 2026-11-14 with server-info JSON (name systra-tools, version 1.0.0, transport streamable-http, components 711). Use a Streamable HTTP JSON-RPC POST for initialize and tools/list. Initialize instructions and the README: the first six components per category are free with no key. Pricing page (HTTP 200): Premium 19 €/month, 179 €/year (−21%), or 449 € lifetime; agency license 1,490 € once for up to five named people; prices include VAT; cancel monthly or yearly to end of period; copied code may stay in projects after cancel. https://systra.tools/cancellation-policy (HTTP 200; https://systra.tools/widerruf 301s there) applies to consumers under § 13 BGB: a 14-day statutory withdrawal right, without giving a reason, counted from the day the contract is concluded, and addressed to Lemon Squeezy, LLC as merchant of record, not the library operator. The page says the authoritative cancellation policy is the one Lemon Squeezy provides during the order process and in the order confirmation; this page is an additional notice of statutory rights. For a contract for digital content not stored on a physical medium, the right of withdrawal expires once performance of the contract has begun after the customer has expressly agreed that performance may begin before the withdrawal period expires and has confirmed awareness that this consent means the right is lost once performance begins. The page says that express consent to immediate performance is collected before checkout (no purchase is started unless the confirmation is ticked) and that the time of consent is documented on the order. llms.txt (200): 711 components in 29 categories as of 2026-11-13. Terms as of 15 October 2026. Cookie/terms: necessary storage is always on; Google Analytics and the Meta pixel run only with consent. No signup or API key was created. pricing freemium. Privacy policy (https://systra.tools/privacy, HTTP 200): controller Leonie Roesmann, Münster, Germany. The site is hosted via Lovable Labs (Lovable Labs AB, Stockholm) and delivered through Cloudflare; server logs may include IP address, time, page, bytes, browser and OS, stored for a limited time. Necessary cookies and local storage are always used, including Cloudflare’s __cf_bm bot-detection cookie. Google Analytics 4 and the Meta pixel (plus Meta Conversions API with hashed email/account id on selected events) load only with cookie-banner consent; first-party copy/checkout events are also described as running only with statistics consent. None of those optional tags were opted into here. Accounts and login use Supabase; Sign in with Google is optional. Premium payments go through Lemon Squeezy as an independent controller; buying without an account is described as automatically creating one from the Lemon Squeezy order email. If you use “MCP access,” the policy says they generate a personal key, store it with the account, and record the connecting AI client’s name and version and last connection time; regenerating the key ends connected-app access. The free initialize/tools/list path used here had no key; the personal-key or Premium unlock flow was not used and its wire auth is unverified.",
+  "url": "https://systra.tools/",
+  "repo": "https://github.com/systra-tools/systra-tools-plugin",
+  "docs": "https://systra.tools/llms.txt",
+  "tags": [
+    "mcp",
+    "ui-components",
+    "frontend",
+    "freemium",
+    "vendor"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://systra.tools/llms.txt",
+    "mcp_endpoint": "https://systra.tools/api/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP MCP. initialize and tools/list succeeded without a key on 2026-11-14 (13 tools; first six components per category are free). A bare GET /api/mcp returned 200 server-info JSON (name, version 1.0.0, transport streamable-http, components 711); use a Streamable HTTP JSON-RPC POST for initialize and tools/list. Premium prices are on https://systra.tools/pricing. No key or signup was created. Privacy: GA/Meta only with consent (not opted in); MCP personal keys and client name/version are stored if you use account MCP access — not used here. Premium wire auth unverified. Lemon Squeezy is merchant of record."
+  },
+  "sources": [
+    "https://systra.tools/",
+    "https://systra.tools/llms.txt",
+    "https://systra.tools/pricing",
+    "https://systra.tools/terms",
+    "https://github.com/systra-tools/systra-tools-plugin",
+    "https://github.com/systra-tools/systra-tools-plugin/blob/main/LICENSE",
+    "https://github.com/systra-tools/systra-tools-plugin/blob/main/README.md",
+    "https://systra.tools/privacy",
+    "https://systra.tools/cancellation-policy"
+  ],
+  "maintainer": "Systra Studios / Leonie Roesmann",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

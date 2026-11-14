@@ -1,0 +1,50 @@
+{
+  "id": "litellm",
+  "name": "LiteLLM",
+  "category": "tools",
+  "summary": "MIT Python SDK and self-hosted AI gateway that calls 100+ LLM providers in the OpenAI format. Paid Enterprise is separate and quote-based.",
+  "description": "Vendor-affiliated open project (Berri AI / BerriAI/litellm; not archived; not presented as a 2026 launch). GitHub license metadata is NOASSERTION because the root LICENSE is split: content under litellm/enterprise/ is under the BerriAI Enterprise license in litellm/enterprise/LICENSE.md (Copyright (c) 2024 - present Berrie AI Inc., spelling as in that file); everything else is MIT (Copyright (c) 2023 Berri AI). This entry uses license MIT for the open-source SDK/gateway and discloses the enterprise directory split. The enterprise LICENSE.md says that software may only be used in production with a valid BerriAI Enterprise license and agreement; it was not used here. https://litellm.ai 301s to https://www.litellm.ai/ (HTTP 200). Docs https://docs.litellm.ai/docs/ were HTTP 200. PyPI litellm 1.109.1 (not yanked; first file uploaded 2026-11-12T01:59:54Z = 2026-11-12 02:59:54 Europe/Stockholm). GitHub latest release v1.109.1 was published 2026-11-12T02:07:01Z = 2026-11-12 03:07:01 Europe/Stockholm (not draft/prerelease). Pricing page (https://www.litellm.ai/pricing, HTTP 200): Open Source is $0, free forever to self-host, with no license fee for production OSS use. Enterprise is annual, talk-to-sales, sized to annual gateway request capacity, deployment architecture and support needs, and is described as never per token; a 30-day Enterprise trial key is offered on the Enterprise page and was not requested. No numeric Enterprise list prices were published on that page. Official incident posts describe two 2026 supply-chain events. The 24 March 2026 post (last updated 27 March 2026, with later notes through 30 March) says PyPI packages litellm==1.82.7 and litellm==1.82.8 “were live on March 24, 2026 from 10:39 UTC for about 40 minutes before being quarantined by PyPI.” It says those versions included a credential stealer that harvested environment variables, SSH keys, cloud-provider credentials (AWS, GCP, Azure), Kubernetes tokens and database passwords and exfiltrated them via POST to models.litellm.cloud, which the post says is not an official BerriAI / LiteLLM domain; it also says those versions have already been removed from PyPI, and that customers running the official LiteLLM Proxy Docker image were not impacted because that path pins dependencies in requirements.txt. The same post’s “Who is affected” section also lists installs or upgrades via pip on 24 March 2026 between 10:39 UTC and 16:00 UTC, a wider window than the “about 40 minutes” live period; both figures are recorded as written. The 21 October 2026 post (last updated 20:30 UTC that day) says a malicious litellm==1.107.0 “was live for approximately 2 hours (11:39 UTC to 13:23 UTC)” and, more precisely, that all seven wheels were live from 11:39:51 to 13:23 UTC; it has since been pulled. That post describes the package as containing compiled malware that steals credentials and loads remote-code execution tools. It does not give one end time for both container registries: Docker Hub tags v1.107.0, latest, main-latest and main-stable “were compromised from 11:46 UTC to 14:20 UTC” (pointed at compromised image index sha256:1bbcb1443bc962e45f5aad53fe3d2c30600e0379715fb6c664cdd3ac126c339e from 11:46:56 to 14:20 UTC), with the v1.107.0 image removed and the others pointed at secure sources; the same tag names on GHCR “pointed to the compromised image indexes … from 11:46:56 UTC until they were made unavailable by 13:51 UTC.” The 23 October 2026 attack-chain post, which that October 21 post later calls the canonical record of how the attack happened, agrees those publication and removal times (PyPI quarantined by 13:23; GHCR unavailable by 13:51; Docker Hub tags removed or repointed at 14:20). As of 2026-11-14, PyPI no longer lists 1.82.7, 1.82.8 or 1.107.0, and the current PyPI version remains litellm 1.109.1 (not yanked; first file uploaded 2026-11-12T01:59:54Z = 2026-11-12 02:59:54 Europe/Stockholm). The self-hosted proxy stores provider credentials (encrypted with LITELLM_SALT_KEY when that is set; otherwise the master key is also the at-rest encryption key) and uses LITELLM_MASTER_KEY as the admin credential and default Admin UI password. Official security best practices say applications and users should use scoped virtual keys, not the master key; store provider credentials, the master key and the salt key in a secret manager; and run the gateway on a private network when possible, exposing only the routes clients need. By default the proxy also serves Swagger UI, ReDoc and the OpenAPI schema without authentication unless that is disabled. Related catalog entry litellm-mcp-gateway covers the MCP gateway surface and is not duplicated here. Upstream model-provider fees still apply when you attach keys. No signup, trial key or spend was used.",
+  "url": "https://www.litellm.ai/",
+  "repo": "https://github.com/BerriAI/litellm",
+  "docs": "https://docs.litellm.ai/docs/",
+  "tags": [
+    "llm-gateway",
+    "sdk",
+    "openai-compatible",
+    "proxy",
+    "freemium"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source SDK/gateway (PyPI litellm 1.109.1 as of 2026-11-14). Self-host OSS is $0; Enterprise is quote-based and was not used. litellm/enterprise/ has a separate license. No install, trial key or spend. Official posts document compromised PyPI 1.82.7/1.82.8 (2026-03-24) and 1.107.0 plus Docker Hub/GHCR tags (2026-10-21); current PyPI is 1.109.1. The self-hosted proxy holds provider credentials and a master key; docs say use virtual keys, keep secrets in a secret manager, and prefer a private network."
+  },
+  "related": [
+    "litellm-mcp-gateway",
+    "vllm",
+    "ollama"
+  ],
+  "sources": [
+    "https://www.litellm.ai/",
+    "https://www.litellm.ai/pricing",
+    "https://docs.litellm.ai/docs/",
+    "https://github.com/BerriAI/litellm",
+    "https://github.com/BerriAI/litellm/blob/main/LICENSE",
+    "https://github.com/BerriAI/litellm/blob/main/litellm/enterprise/LICENSE.md",
+    "https://github.com/BerriAI/litellm/blob/main/README.md",
+    "https://github.com/BerriAI/litellm/releases/tag/v1.109.1",
+    "https://pypi.org/project/litellm/",
+    "https://pypi.org/project/litellm/1.109.1/",
+    "https://docs.litellm.ai/blog/security-update-march-2026",
+    "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+    "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
+    "https://docs.litellm.ai/docs/proxy/security_best_practices"
+  ],
+  "maintainer": "Berri AI",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
