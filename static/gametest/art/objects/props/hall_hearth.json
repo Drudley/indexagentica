@@ -1,0 +1,35 @@
+{
+  "type": "hall_hearth",
+  "name": "hall hearth",
+  "file": "hall_hearth.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Blocks its footprint cells."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Freestanding round stone fire pit for the keep great hall.",
+  "node_id": "hall_hearth",
+  "kind": "hall_hearth"
+}

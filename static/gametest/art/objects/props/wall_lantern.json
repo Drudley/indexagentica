@@ -1,0 +1,35 @@
+{
+  "type": "wall_lantern",
+  "name": "wall lantern",
+  "file": "wall_lantern.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Does not block movement."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Iron wall lantern; mount on a wall face. Walkable, never blocks.",
+  "node_id": "wall_lantern",
+  "kind": "wall_lantern"
+}

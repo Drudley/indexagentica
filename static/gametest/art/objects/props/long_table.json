@@ -1,0 +1,35 @@
+{
+  "type": "long_table",
+  "name": "long table",
+  "file": "long_table.png",
+  "footprint_tiles": [
+    2,
+    2
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Blocks its footprint cells."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 256,
+  "canvas_px": [
+    256,
+    256
+  ],
+  "footprint_px": [
+    256,
+    256
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Feast table, 2x2, for the keep great hall; stools are separate hall_stool props.",
+  "node_id": "long_table",
+  "kind": "long_table"
+}

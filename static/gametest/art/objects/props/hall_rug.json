@@ -1,0 +1,35 @@
+{
+  "type": "hall_rug",
+  "name": "hall rug",
+  "file": "hall_rug.png",
+  "footprint_tiles": [
+    3,
+    5
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Does not block movement."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 640,
+  "canvas_px": [
+    384,
+    640
+  ],
+  "footprint_px": [
+    384,
+    640
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Red aisle runner for the keep great hall, gate to dais. Walkable.",
+  "node_id": "hall_rug",
+  "kind": "hall_rug"
+}

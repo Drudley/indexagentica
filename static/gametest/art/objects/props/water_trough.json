@@ -1,0 +1,35 @@
+{
+  "type": "water_trough",
+  "name": "water trough",
+  "file": "water_trough.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "full",
+    "note": "Blocks its tile."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 128,
+  "canvas_px": [
+    128,
+    128
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 0,
+    "below": 0
+  },
+  "note": "Wooden stock trough with iron bands and water (FARMS-1).",
+  "node_id": "water_trough",
+  "kind": "water_trough"
+}

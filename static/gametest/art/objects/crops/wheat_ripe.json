@@ -1,0 +1,38 @@
+{
+  "type": "crop_wheat_ripe",
+  "name": "Wheat field (ripe)",
+  "file": "wheat_ripe.png",
+  "crop": "wheat",
+  "stage": "ripe",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Crop rows are walkable ground decoration."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 192,
+  "canvas_px": [
+    128,
+    192
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 64,
+    "below": 0
+  },
+  "ground": "tilled",
+  "decorative": true,
+  "note": "DECORATIVE ONLY: no item, no harvesting (Niklas: farms grow only wheat, for now just scenery). Four rows of wheat on one tilled_f tile; rows sit on the four east-west furrow ridges (canvas y 76/108/140/172). Place only on tiles whose four corners are tilled. Tall stems use the 64 px above the tile; sort by base y like other props.",
+  "kind": "crop_decor"
+}
