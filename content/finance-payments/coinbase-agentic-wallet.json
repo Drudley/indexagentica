@@ -3,8 +3,8 @@
   "name": "Coinbase Agentic Wallet",
   "category": "finance-payments",
   "summary": "Wallet tooling that lets AI agents hold, spend, trade and earn stablecoins with guardrails, via the awal CLI + skills or an MCP server.",
-  "description": "Two modes: the Agentic Wallet CLI (`npx awal`, skills via `npx skills add coinbase/agentic-wallet-skills`) for send/trade/x402, and the Agentic Wallet MCP server (`npx @coinbase/payments-mcp`) for discovering and paying for x402 services from any MCP client.",
-  "url": "https://docs.cdp.coinbase.com/agentic-wallet/welcome",
+  "description": "Vendor-affiliated Coinbase product (real-money wallets, transfers, trades and x402 payments — none were used during verification). Two documented modes: the Agentic Wallet CLI (`npx awal`, skills via `npx skills add coinbase/agentic-wallet-skills`) and the MCP server (`npx @coinbase/payments-mcp`). Those commands were not executed. As of 2026-11-14 the former CDP docs URLs https://docs.cdp.coinbase.com/agentic-wallet/welcome and https://docs.cdp.coinbase.com/agentic-wallet/cli/skills/overview return HTTP 404, and those /agentic-wallet paths are absent from the current https://docs.cdp.coinbase.com/llms.txt. This entry is not retargeted to Coinbase Wallet MCP / wallet-mcp.coinbase.com / `npx skills add coinbase/agents --skill wallet-mcp`, which is a different product (connects to a Coinbase Wallet, formerly Base App). Still-live surfaces for this product: github.com/coinbase/agentic-wallet-skills (not archived; last pushed 2026-08-04; MIT via LICENSE.md, Copyright 2026 Coinbase; a root file named LICENSE returns 404). npm awal 2.12.2 lists Apache-2.0 (uploaded 2026-10-08); its npm homepage still points at github.com/coinbase/awal, which returned 404. npm @coinbase/payments-mcp 1.0.5 lists Apache-2.0; repo coinbase/payments-mcp exists (LICENSE present; last pushed 2025-10-22). Official deprecation of Agentic Wallet was not found; status remains active. npm web pages may be 403 and are not used as sources. No signup, wallet or spend was used.",
+  "url": "https://github.com/coinbase/payments-mcp",
   "tags": [
     "wallet",
     "stablecoins",
@@ -14,7 +14,9 @@
   ],
   "status": "active",
   "agent_access": {
-    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt"
+    "llms_txt": "https://docs.cdp.coinbase.com/llms.txt",
+    "auth": "other",
+    "notes": "CDP /agentic-wallet docs returned 404 on 2026-11-14 and are absent from the current CDP llms.txt (kept only as the general CDP file). Live sources are the skills and payments-mcp GitHub repos. CLI/MCP installs and any wallet or x402 calls were not run. Not Coinbase Wallet MCP."
   },
   "related": [
     "coinbase-agentic-wallet-skills",
@@ -22,11 +24,19 @@
     "cdp-x402"
   ],
   "sources": [
-    "https://docs.cdp.coinbase.com/agentic-wallet/welcome"
+    "https://github.com/coinbase/payments-mcp",
+    "https://github.com/coinbase/payments-mcp/blob/main/README.md",
+    "https://github.com/coinbase/payments-mcp/blob/main/LICENSE",
+    "https://github.com/coinbase/agentic-wallet-skills",
+    "https://github.com/coinbase/agentic-wallet-skills/blob/main/README.md",
+    "https://github.com/coinbase/agentic-wallet-skills/blob/main/LICENSE.md",
+    "https://docs.cdp.coinbase.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
   "submitted_by": "agentica-curator",
-  "maintainer": "Coinbase"
+  "maintainer": "Coinbase",
+  "repo": "https://github.com/coinbase/payments-mcp",
+  "docs": "https://github.com/coinbase/agentic-wallet-skills/blob/main/README.md"
 }

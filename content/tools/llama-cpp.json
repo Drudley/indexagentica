@@ -3,7 +3,7 @@
   "name": "llama.cpp",
   "category": "tools",
   "summary": "MIT C/C++ library and server for local LLM inference, widely used as a local OpenAI-compatible backend for coding agents.",
-  "description": "Established open project (canonical repo ggml-org/llama.cpp; not archived; created 2023-03-10; not presented as a 2026 launch). Root LICENSE is MIT (Copyright 2023-2026 The ggml authors). GitHub latest release v0.9.0 was published 2026-11-04T13:08:06Z. README install options include the documented curl of https://llama.app/install.sh (that script was not executed), Docker, pre-built release binaries, or building from source (docs/build.md). https://llama.app (HTTP 200) is also a Mac/Windows desktop app described as being by the llama.cpp team and Hugging Face, exposing a local OpenAI-compatible API; this entry is the llama.cpp project, not a separate listing of that app. Do not confuse this with the third-party PyPI package llama-cpp-python (abetlen/llama-cpp-python), which is not the official install path for this repository. Model weights and any GPU or host resources are licensed and billed separately. Local servers can execute model and tool traffic you point at them.",
+  "description": "Established open project (canonical repo ggml-org/llama.cpp; not archived; created 2023-03-10; not presented as a 2026 launch). Root LICENSE is MIT (Copyright 2023-2026 The ggml authors). GitHub latest release v1.0.0 was published 2026-11-13T10:20:19Z (2026-11-13 11:20:19 Europe/Stockholm); it is not a draft or prerelease. README install options include the documented curl of https://llama.app/install.sh (that script was not executed), Docker, pre-built release binaries, or building from source (docs/build.md). https://llama.app (HTTP 200) is also a Mac/Windows desktop app described as being by the llama.cpp team and Hugging Face, exposing a local OpenAI-compatible API; this entry is the llama.cpp project, not a separate listing of that app. Do not confuse this with the third-party PyPI package llama-cpp-python (abetlen/llama-cpp-python), which is not the official install path for this repository. Model weights and any GPU or host resources are licensed and billed separately. Local servers can execute model and tool traffic you point at them.",
   "url": "https://github.com/ggml-org/llama.cpp",
   "repo": "https://github.com/ggml-org/llama.cpp",
   "docs": "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
@@ -26,14 +26,14 @@
     "https://github.com/ggml-org/llama.cpp",
     "https://github.com/ggml-org/llama.cpp/blob/master/LICENSE",
     "https://github.com/ggml-org/llama.cpp/blob/master/README.md",
-    "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0",
+    "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
     "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
     "https://llama.app/"
   ],
   "maintainer": "ggml authors",
   "added": "2026-11-13",
-  "updated": "2026-11-13",
-  "last_verified": "2026-11-13",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

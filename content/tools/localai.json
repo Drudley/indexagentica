@@ -1,0 +1,45 @@
+{
+  "id": "localai",
+  "name": "LocalAI",
+  "category": "tools",
+  "summary": "MIT self-hosted OpenAI-compatible engine that runs LLM, vision, voice and image backends locally, with Docker images as the documented install.",
+  "description": "Established open project (canonical repo mudler/LocalAI; not archived; created 2023-03-18; last pushed 2026-11-14; not presented as a 2026 launch). github.com/go-skynet/LocalAI 301s to mudler/LocalAI and is not used as a URL, repo or source. Root LICENSE is MIT (Copyright (c) 2023-2025 Ettore Di Giacinto (mudler@localai.io)). Site https://localai.io/ and docs https://localai.io/docs/ were HTTP 200; https://localai.io/docs 301s to the trailing-slash URL and is not used. GitHub latest release v4.12.1 was published 2026-10-23T10:27:00Z = 2026-10-23 11:27:00 Europe/Stockholm (not draft/prerelease). PyPI project localai 0.0.26 is a different package (vietanhdev/pautobot, “Private AutoGPT Robot”) and is not the official install path; do not pip install localai for this project. README documented install is Docker (for example docker run -ti --name local-ai -p 8080:8080 localai/localai:latest, plus GPU-tagged images). Those commands were not executed. README: a small core pulls backends (llama.cpp, vLLM, SGLang, whisper.cpp, MLX and others are named) as OCI images when a model needs them. A built-in agent can read files and run commands on the host, asking for approval before changes — treat that agent as potentially destructive. Add-ons (Studio, Talk, Voice, Face, Simple Office, Sandbox and more) install from a signed catalog. macOS DMG is documented as not signed by Apple (quarantine xattr note in the README). Model weights and any GPU or host resources are licensed and billed separately.",
+  "url": "https://localai.io/",
+  "repo": "https://github.com/mudler/LocalAI",
+  "docs": "https://localai.io/docs/",
+  "tags": [
+    "inference",
+    "openai-compatible",
+    "local-models",
+    "docker",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source self-hosted engine. Documented install is Docker images such as localai/localai:latest, not PyPI localai (that name is a different project). GitHub latest is v4.12.1. No containers were started. The built-in agent can run host commands."
+  },
+  "related": [
+    "llama-cpp",
+    "ollama",
+    "vllm",
+    "sglang",
+    "mlx-lm"
+  ],
+  "sources": [
+    "https://localai.io/",
+    "https://localai.io/docs/",
+    "https://localai.io/basics/getting_started/",
+    "https://github.com/mudler/LocalAI",
+    "https://github.com/mudler/LocalAI/blob/master/LICENSE",
+    "https://github.com/mudler/LocalAI/blob/master/README.md",
+    "https://github.com/mudler/LocalAI/releases/tag/v4.12.1"
+  ],
+  "maintainer": "Ettore Di Giacinto",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

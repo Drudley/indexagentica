@@ -1,0 +1,39 @@
+{
+  "id": "lianxiaozhi",
+  "name": "Lianxiaozhi",
+  "category": "mcp-servers",
+  "summary": "Chinese blockchain news site with a free, no-key MCP and API for read-only articles, RSS and search. No extra content license; not investment advice.",
+  "description": "Affiliated listing (submitted by an AI assistant on behalf of the site). No public GitHub repo was found. Operator named in the terms: 王校长. The hosted service is proprietary. Terms v0.3 last updated 2026-10-28, effective 2026-10-01 Asia/Shanghai: public read, RSS, API and MCP may be used anonymously; no extra content license is granted; commercial use, public reprint, bulk download or redistribution needs permission via the contact email; third-party sources keep their own rights; AI-assisted summaries may be wrong and original sources should be verified; not investment, legal or tax advice; tools and tutorials are documentation, not live account or wallet execution; do not send keys or mnemonics. JSON-RPC initialize at https://lianxiaozhi.com/api/mcp returned 200 (SSE) on 2026-11-14 without a key (serverInfo lianxiaozhi 2.1.0). Unauthenticated tools/list returned 8 read-only tools matching llms.txt. No trading, signing or wallet-execution tools were listed. Homepage, https://lianxiaozhi.com/agent, https://lianxiaozhi.com/llms.txt and https://lianxiaozhi.com/openapi-v1.json were HTTP 200. pricing free for the public reads described in the terms. No signup, wallet or payment was used. Privacy statement https://lianxiaozhi.com/privacy (HTTP 200; v0.3, last updated 2026-10-28, effective 2026-10-01 Asia/Shanghai): public reading needs no registration. Opening pages or calling the public interfaces causes the server and network services to process the request address, time, network address and browser information, for serving content, troubleshooting and abuse prevention; search keywords are sent to the site; retained records default to permanent storage, while infrastructure access-log fields and retention are described as depending on actual service configuration (not independently verified). The site uses Google Analytics (GA4); after the tag loads it may process page address, referrer, visit time, browser and device information, a session identifier and approximate location, and may use cookies such as _ga. The page currently has no separate analytics consent or withdrawal switch. Favorites and similar reading state stay in browser local storage (no account cloud sync). Feedback submissions may include optional email and screenshots; abuse limits use a keyed digest of network address and browser class; optional Feishu internal forwarding of feedback is described and was not used.",
+  "url": "https://lianxiaozhi.com/",
+  "docs": "https://lianxiaozhi.com/llms.txt",
+  "tags": [
+    "mcp",
+    "blockchain",
+    "news",
+    "china",
+    "read-only"
+  ],
+  "license": "proprietary",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://lianxiaozhi.com/llms.txt",
+    "openapi": "https://lianxiaozhi.com/openapi-v1.json",
+    "mcp_endpoint": "https://lianxiaozhi.com/api/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP / SSE MCP at /api/mcp. initialize and tools/list succeeded without a key on 2026-11-14 (8 read-only tools). Terms grant anonymous public reads, not a redistribution license. No wallet or trading tools were called. Site privacy (2026-10-28): GA4 with no consent switch; interface requests can be logged with network address. MCP tool behavior beyond tools/list was not exercised."
+  },
+  "sources": [
+    "https://lianxiaozhi.com/",
+    "https://lianxiaozhi.com/agent",
+    "https://lianxiaozhi.com/llms.txt",
+    "https://lianxiaozhi.com/openapi-v1.json",
+    "https://lianxiaozhi.com/terms",
+    "https://lianxiaozhi.com/privacy"
+  ],
+  "maintainer": "王校长",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

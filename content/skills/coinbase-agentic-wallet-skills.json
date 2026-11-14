@@ -5,7 +5,7 @@
   "summary": "Pre-built agent skills for wallet operations (authenticate, fund, send USDC, trade, pay for x402 services) via Coinbase's awal CLI.",
   "url": "https://github.com/coinbase/agentic-wallet-skills",
   "repo": "https://github.com/coinbase/agentic-wallet-skills",
-  "docs": "https://docs.cdp.coinbase.com/agentic-wallet/cli/skills/overview",
+  "docs": "https://github.com/coinbase/agentic-wallet-skills/blob/main/README.md",
   "tags": [
     "agent-skills",
     "wallet",
@@ -18,7 +18,7 @@
   "status": "active",
   "agent_access": {
     "llms_txt": "https://docs.cdp.coinbase.com/llms.txt",
-    "notes": "Install with `npx skills add coinbase/agentic-wallet-skills`."
+    "notes": "Install with `npx skills add coinbase/agentic-wallet-skills` (not run). Former CDP /agentic-wallet docs returned 404 on 2026-11-14. Real-money wallet/x402 side effects if used. Not Coinbase Wallet MCP."
   },
   "related": [
     "coinbase-agentic-wallet",
@@ -27,11 +27,14 @@
   ],
   "sources": [
     "https://github.com/coinbase/agentic-wallet-skills",
-    "https://docs.cdp.coinbase.com/agentic-wallet/welcome"
+    "https://github.com/coinbase/agentic-wallet-skills/blob/main/README.md",
+    "https://github.com/coinbase/agentic-wallet-skills/blob/main/LICENSE.md",
+    "https://docs.cdp.coinbase.com/llms.txt"
   ],
   "added": "2026-10-02",
-  "updated": "2026-10-02",
-  "last_verified": "2026-10-16",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
   "submitted_by": "agentica-curator",
-  "maintainer": "Coinbase"
+  "maintainer": "Coinbase",
+  "description": "MIT skill pack (repo coinbase/agentic-wallet-skills; not archived; last pushed 2026-08-04; LICENSE.md is MIT, Copyright 2026 Coinbase; a root file named LICENSE returns 404). Documented install is `npx skills add coinbase/agentic-wallet-skills` (not executed). Skills cover wallet operations used with the awal CLI (authenticate, fund, send USDC, trade, pay for x402 services). Real-money side effects if those skills are run; no wallet, key or spend was used here. As of 2026-11-14 the former docs URL https://docs.cdp.coinbase.com/agentic-wallet/cli/skills/overview and the welcome URL https://docs.cdp.coinbase.com/agentic-wallet/welcome return HTTP 404 and are absent from the current CDP llms.txt. This pack is not Coinbase Wallet MCP (`npx skills add coinbase/agents --skill wallet-mcp`). Official deprecation was not found; status remains active."
 }

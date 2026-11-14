@@ -1,0 +1,48 @@
+{
+  "id": "vllm",
+  "name": "vLLM",
+  "category": "tools",
+  "summary": "Apache-2.0 high-throughput LLM inference and serving engine with an OpenAI-compatible API, installable via uv or pip.",
+  "description": "Established open project (repo vllm-project/vllm; not archived; created 2023-02-09; originally developed in the Sky Computing Lab; not presented as a 2026 launch). Root LICENSE is Apache-2.0. Site https://vllm.ai and docs https://docs.vllm.ai/en/latest/ were HTTP 200 on 2026-11-14; the docs root https://docs.vllm.ai 302s to /en/latest/ and is not used here. PyPI vllm 0.33.0 (not yanked; first wheel uploaded 2026-11-02T10:12:56Z = 2026-11-02 11:12:56 Europe/Stockholm). GitHub Releases “latest” is tag v0.33.0rc3, published 2026-11-02T10:10:05Z = 2026-11-02 11:10:05 Europe/Stockholm, with prerelease=false despite “rc3” in the tag name. A git tag v0.33.0 also exists (annotated tag; https://github.com/vllm-project/vllm/releases/tag/v0.33.0 is HTTP 200) but the GitHub Releases API has no Release object for v0.33.0 (404). Prefer stating PyPI 0.33.0 and that the GitHub latest release tag is v0.33.0rc3. README install: uv pip install vllm, or pip, or build from source. Documented install commands were not executed. Model weights and any GPU or host resources are licensed and billed separately. Local or cluster servers can execute the model and tool traffic you point at them.",
+  "url": "https://vllm.ai/",
+  "repo": "https://github.com/vllm-project/vllm",
+  "docs": "https://docs.vllm.ai/en/latest/",
+  "tags": [
+    "inference",
+    "openai-compatible",
+    "serving",
+    "gpu",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source Python package. Documented install is uv pip install vllm or pip (PyPI vllm 0.33.0 as of 2026-11-14). GitHub latest release tag is v0.33.0rc3 (prerelease=false). No install was run."
+  },
+  "related": [
+    "sglang",
+    "llama-cpp",
+    "ollama",
+    "localai",
+    "mlx-lm"
+  ],
+  "sources": [
+    "https://vllm.ai/",
+    "https://github.com/vllm-project/vllm",
+    "https://github.com/vllm-project/vllm/blob/main/LICENSE",
+    "https://github.com/vllm-project/vllm/blob/main/README.md",
+    "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+    "https://github.com/vllm-project/vllm/releases/tag/v0.33.0",
+    "https://docs.vllm.ai/en/latest/",
+    "https://docs.vllm.ai/en/latest/getting_started/installation/",
+    "https://pypi.org/project/vllm/",
+    "https://pypi.org/project/vllm/0.33.0/"
+  ],
+  "maintainer": "vLLM project",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "mlx-lm",
+  "name": "MLX LM",
+  "category": "tools",
+  "summary": "MIT Python package for text generation and fine-tuning of large language models on Apple silicon with MLX.",
+  "description": "Established open project (repo ml-explore/mlx-lm; not archived; created 2025-03-11; LICENSE Copyright © 2023 Apple Inc.; not presented as a 2026 launch). Root LICENSE is MIT. PyPI mlx-lm 0.32.2 (not yanked; uploaded 2026-10-16T02:49:33Z = 2026-10-16 03:49:33 Europe/Stockholm). GitHub latest release v0.32.2 was published 2026-10-16T02:49:02Z = 2026-10-16 03:49:02 Europe/Stockholm (not draft/prerelease). README install: pip install mlx-lm, or conda install -c conda-forge mlx-lm. Documented commands were not executed. README also describes Hugging Face Hub integration, quantization, LoRA and full fine-tuning (including quantized models), and distributed inference via mx.distributed. This is the mlx-lm package, not a separate listing of the broader MLX framework. Model weights are licensed separately. Apple silicon is the documented target.",
+  "url": "https://github.com/ml-explore/mlx-lm",
+  "repo": "https://github.com/ml-explore/mlx-lm",
+  "docs": "https://github.com/ml-explore/mlx-lm/blob/main/README.md",
+  "tags": [
+    "inference",
+    "fine-tuning",
+    "apple-silicon",
+    "local-models",
+    "open-source"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source Python package. Documented install is pip install mlx-lm or conda install -c conda-forge mlx-lm (PyPI mlx-lm 0.32.2 as of 2026-11-14). Not executed. Targets Apple silicon."
+  },
+  "related": [
+    "llama-cpp",
+    "ollama",
+    "mlc-llm",
+    "vllm"
+  ],
+  "sources": [
+    "https://github.com/ml-explore/mlx-lm",
+    "https://github.com/ml-explore/mlx-lm/blob/main/LICENSE",
+    "https://github.com/ml-explore/mlx-lm/blob/main/README.md",
+    "https://github.com/ml-explore/mlx-lm/releases/tag/v0.32.2",
+    "https://pypi.org/project/mlx-lm/",
+    "https://pypi.org/project/mlx-lm/0.32.2/"
+  ],
+  "maintainer": "Apple / ml-explore",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

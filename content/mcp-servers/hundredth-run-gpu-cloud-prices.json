@@ -1,0 +1,41 @@
+{
+  "id": "hundredth-run-gpu-cloud-prices",
+  "name": "Hundredth Run GPU Cloud Prices",
+  "category": "mcp-servers",
+  "summary": "CC BY 4.0 GPU cloud price dataset and free no-key MCP (list, cheapest, get prices). Some outbound provider links are affiliates.",
+  "description": "Vendor-affiliated listing (Hundredth Run). Repo hundredthrun/gpu-cloud-prices is not archived (created 2026-11-05; last pushed 2026-11-14). GitHub license metadata is NOASSERTION because LICENSE is dual: the data is CC BY 4.0 (attribution “Hundredth Run compute desk” plus the site URL); scripts/ and tests/ are MIT (Copyright 2026 Hundredth Run). This entry uses license CC-BY-4.0 for the published dataset and discloses the MIT code split. This is price data, not a payment product; no spend was made. JSON-RPC initialize at https://hundredthrun-compute-desk.pages.dev/mcp returned 200 on 2026-11-14 without a key (serverInfo hundredth-run-gpu-prices / “Hundredth Run GPU Cloud Prices” 1.0.0). Unauthenticated tools/list returned 3 tools: list_gpus, cheapest_gpu, and get_prices. A GET of /mcp returned 405; use Streamable HTTP / JSON-RPC. Site https://hundredthrun-compute-desk.pages.dev/open-data, llms.txt, and OpenAPI /api/v1/openapi.json were HTTP 200. Live GET /api/v1/prices.json on 2026-11-14: count 220, 26 providers, date_checked_latest 2026-11-13, 10 unique GPU names, license CC BY 4.0. Conflicts recorded, not resolved: the README still says 25 providers and that refresh is daily; the open-data page says files update when the data is refreshed, about once a week; MCP initialize instructions said refreshed weekly; llms.txt on this date says last data check Nov 13, 2026 and 26 providers / 220 rows. Affiliate disclosure on the open-data page: some outbound provider links are affiliate links and they may earn a commission if you sign up, at no extra cost to you. Official MCP registry name io.github.hundredthrun/gpu-cloud-prices. No signup or wallet was used. No privacy policy was found on 2026-11-14: https://hundredthrun-compute-desk.pages.dev/privacy and the repo file PRIVACY.md both returned 404. MCP or API access-log and analytics practices are therefore unverified, except what the open-data page itself states. That page also offers an optional monthly “Index” email (first edition early December 2026) and says “We keep your email to send the Index updates. We do not sell it,” with unsubscribe by reply; it was not subscribed to.",
+  "url": "https://hundredthrun-compute-desk.pages.dev/open-data",
+  "repo": "https://github.com/hundredthrun/gpu-cloud-prices",
+  "docs": "https://hundredthrun-compute-desk.pages.dev/llms.txt",
+  "tags": [
+    "mcp",
+    "gpu",
+    "pricing-data",
+    "open-data",
+    "affiliates"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": "free",
+  "agent_access": {
+    "llms_txt": "https://hundredthrun-compute-desk.pages.dev/llms.txt",
+    "openapi": "https://hundredthrun-compute-desk.pages.dev/api/v1/openapi.json",
+    "mcp_endpoint": "https://hundredthrun-compute-desk.pages.dev/mcp",
+    "auth": "none",
+    "notes": "Streamable HTTP MCP. initialize and tools/list succeeded without a key on 2026-11-14 (3 tools: list_gpus, cheapest_gpu, get_prices). GET /mcp returned 405. Dataset is CC BY 4.0; scripts/ and tests/ are MIT. No spend. No privacy policy page was found (site /privacy and repo PRIVACY.md 404). MCP/API telemetry besides the public affiliate and newsletter wording is unverified. Optional Index email was not subscribed to."
+  },
+  "sources": [
+    "https://hundredthrun-compute-desk.pages.dev/open-data",
+    "https://hundredthrun-compute-desk.pages.dev/llms.txt",
+    "https://hundredthrun-compute-desk.pages.dev/api/v1/openapi.json",
+    "https://hundredthrun-compute-desk.pages.dev/api/v1/prices.json",
+    "https://github.com/hundredthrun/gpu-cloud-prices",
+    "https://github.com/hundredthrun/gpu-cloud-prices/blob/main/LICENSE",
+    "https://github.com/hundredthrun/gpu-cloud-prices/blob/main/README.md"
+  ],
+  "maintainer": "Hundredth Run",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

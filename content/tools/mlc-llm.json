@@ -1,0 +1,45 @@
+{
+  "id": "mlc-llm",
+  "name": "MLC LLM",
+  "category": "tools",
+  "summary": "Apache-2.0 compiler and deployment engine for running LLMs natively on NVIDIA, AMD, Apple, Intel, web, iOS and Android.",
+  "description": "Established open project (repo mlc-ai/mlc-llm; not archived; created 2023-04-29; last pushed 2026-11-13; not presented as a 2026 launch). Root LICENSE is Apache-2.0. Site https://llm.mlc.ai/ (HTTP 200). Docs https://llm.mlc.ai/docs/ were HTTP 200; https://llm.mlc.ai/docs 301s there and is not used. The install page title still reads “mlc-llm 0.1.0 documentation”. The GitHub Releases API had no “latest” release (404) on 2026-11-14. There is no PyPI project named mlc-llm (404). PyPI mlc-ai 0.1 (“Machine learning for systems”, homepage github.com/mlc-ai) is a different package and is not the install path for this project. Install docs (https://llm.mlc.ai/docs/install/mlc_llm, HTTP 200) describe nightly prebuilt pip wheels from https://mlc.ai/wheels/ (200; the URL without a trailing slash 301s and is not used), for example: python -m pip install --pre -U -f https://mlc.ai/wheels mlc-llm-nightly-cpu mlc-ai-nightly-cpu, plus platform-specific wheels (cu128, cu130, rocm61, rocm62 and others on that page). A conda environment is recommended. Build-from-source instructions are also documented. None of those commands were executed. Quick start shows MLCEngine and `mlc_llm serve` with Hugging Face MLC model IDs. Model weights and any GPU or host resources are licensed and billed separately.",
+  "url": "https://llm.mlc.ai/",
+  "repo": "https://github.com/mlc-ai/mlc-llm",
+  "docs": "https://llm.mlc.ai/docs/",
+  "tags": [
+    "inference",
+    "compiler",
+    "local-models",
+    "mobile",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source project. Documented install is nightly wheels via python -m pip install --pre -U -f https://mlc.ai/wheels … (not on PyPI as mlc-llm). No “latest” GitHub Release on 2026-11-14. Commands were not run."
+  },
+  "related": [
+    "mlx-lm",
+    "vllm",
+    "sglang",
+    "llama-cpp",
+    "localai"
+  ],
+  "sources": [
+    "https://llm.mlc.ai/",
+    "https://llm.mlc.ai/docs/",
+    "https://llm.mlc.ai/docs/install/mlc_llm",
+    "https://mlc.ai/wheels/",
+    "https://github.com/mlc-ai/mlc-llm",
+    "https://github.com/mlc-ai/mlc-llm/blob/main/LICENSE",
+    "https://github.com/mlc-ai/mlc-llm/blob/main/README.md"
+  ],
+  "maintainer": "MLC",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sglang",
+  "name": "SGLang",
+  "category": "tools",
+  "summary": "Apache-2.0 inference framework for LLM, vision-language and diffusion models, optimized for agentic workloads and large-scale serving.",
+  "description": "Established open project (repo sgl-project/sglang; not archived; not presented as a 2026 launch). Root LICENSE is Apache-2.0; the PyPI license appendix names Copyright 2023-2024 SGLang Team. https://sglang.io 308s to https://www.sglang.io/ (HTTP 200); https://docs.sglang.ai 301s to https://docs.sglang.io/. This entry uses the final URLs. Docs https://docs.sglang.io/ and quickstart https://docs.sglang.io/docs/get-started/quickstart were HTTP 200 on 2026-11-14. https://cookbook.sglang.io/ 302s to https://docs.sglang.io/cookbook/ and is not used as a URL or source. PyPI sglang 0.5.23 (not yanked; wheels uploaded 2026-10-30T01:34:33Z = 2026-10-30 02:34:33 Europe/Stockholm and following). GitHub latest release v0.5.23 was published 2026-11-02T22:14:10Z = 2026-11-02 23:14:10 Europe/Stockholm (not draft/prerelease). README documented install in an activated environment: uv pip install --prerelease=allow sglang. That --prerelease=allow flag is as written in the README even though 0.5.23 is a non-yanked PyPI release; the command was not executed. README also describes a Docker path from lmsysorg/sglang:dev and contact sglang@lmsys.org for enterprise adoption. Model weights and any GPU or host resources are licensed and billed separately.",
+  "url": "https://www.sglang.io/",
+  "repo": "https://github.com/sgl-project/sglang",
+  "docs": "https://docs.sglang.io/",
+  "tags": [
+    "inference",
+    "serving",
+    "agentic",
+    "multimodal",
+    "open-source"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Open-source Python package. README install is uv pip install --prerelease=allow sglang (PyPI sglang 0.5.23 as of 2026-11-14). The command was not run. GPU and model costs are separate."
+  },
+  "related": [
+    "vllm",
+    "llama-cpp",
+    "ollama",
+    "localai",
+    "mlx-lm"
+  ],
+  "sources": [
+    "https://www.sglang.io/",
+    "https://github.com/sgl-project/sglang",
+    "https://github.com/sgl-project/sglang/blob/main/LICENSE",
+    "https://github.com/sgl-project/sglang/blob/main/README.md",
+    "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+    "https://docs.sglang.io/",
+    "https://docs.sglang.io/docs/get-started/quickstart",
+    "https://pypi.org/project/sglang/",
+    "https://pypi.org/project/sglang/0.5.23/"
+  ],
+  "maintainer": "SGLang Team",
+  "added": "2026-11-14",
+  "updated": "2026-11-14",
+  "last_verified": "2026-11-14",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
