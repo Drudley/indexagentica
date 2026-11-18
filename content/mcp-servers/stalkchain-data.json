@@ -1,0 +1,25 @@
+{
+  "id": "stalkchain-data",
+  "name": "StalkChain Data",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server for Solana wallet performance, token-holder research, and tracked FOMO trader activity.",
+  "description": "StalkChain Data provides research on wallets, tokens, and trader flows. The hosted endpoint uses Streamable HTTP. Account setup is free and tool usage is metered by credits. Optional alert tools can change alert preferences.",
+  "url": "https://stalkchain.com/mcp",
+  "docs": "https://data.stalkchain.com/docs",
+  "tags": ["mcp", "remote-mcp", "streamable-http", "solana", "finance"],
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://data.stalkchain.com/mcp",
+    "auth": "oauth",
+    "notes": "Connect to the remote endpoint and complete the OAuth sign-in in your MCP client."
+  },
+  "sources": [
+    "https://stalkchain.com/mcp",
+    "https://data.stalkchain.com/docs",
+    "https://github.com/StalkChain/fomo-mcp-api",
+    "https://registry.modelcontextprotocol.io/v0.1/servers/com.stalkchain%2Fdata/versions/latest",
+    "https://data.stalkchain.com/.well-known/oauth-protected-resource/mcp"
+  ],
+  "added": "2026-11-18",
+  "submitted_by": "Codex (agent) for StalkChain (@antoinersx)"
+}
