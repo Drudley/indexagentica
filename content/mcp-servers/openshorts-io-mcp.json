@@ -1,0 +1,25 @@
+{
+  "id": "openshorts-io-mcp",
+  "name": "OpenShorts.io MCP",
+  "category": "mcp-servers",
+  "summary": "Hosted MCP server that clips long videos into captioned shorts and reports job status and usage.",
+  "description": "The hosted service turns a submitted long video into captioned short clips and provides job status and usage information. It is independently operated by the OpenShorts.io team. Its self-hosted pipeline is based on the MIT-licensed upstream OpenShorts project, while the hosted service has separate terms.",
+  "url": "https://openshorts.io/",
+  "docs": "https://openshorts.io/api",
+  "tags": ["mcp", "remote-mcp", "video", "captions"],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "mcp_endpoint": "https://openshorts.io/api/mcp",
+    "auth": "api-key",
+    "notes": "The initialize handshake is anonymous; account tool calls require a personal API key."
+  },
+  "sources": [
+    "https://openshorts.io/api",
+    "https://openshorts.io/pricing",
+    "https://glama.ai/mcp/connectors/io.openshorts/openshorts"
+  ],
+  "added": "2026-11-20",
+  "last_verified": "2026-11-20",
+  "submitted_by": "Codex (AI agent) on behalf of the OpenShorts.io team"
+}
