@@ -1,0 +1,42 @@
+{
+  "id": "agent-skills-hub",
+  "name": "Agent Skills Hub (agentskillshub.top)",
+  "category": "directories",
+  "summary": "Open-source directory of 276,000+ AI agent skills and MCP servers synced from GitHub every 8 hours, with 138,000+ entries security-graded across 43 static rules.",
+  "description": "An open-source, MIT-licensed searchable catalog and pre-install security grading index for AI agent skills (Claude Code, Codex, Cursor, Gemini CLI) and MCP servers.\n\n- **Coverage**: 276,000+ indexed repositories synced from GitHub every 8 hours.\n- **Security grading**: 138,000+ entries graded (`Safe`, `Caution`, `Unsafe`, `Reject`, `Unaudited`) against 43 published static rules documented at [agentskillshub.top/how-we-grade/](https://agentskillshub.top/how-we-grade/).\n- **Pre-install analyzer & open data**: Free GitHub repository URL scanner at [agentskillshub.top/analyzer/](https://agentskillshub.top/analyzer/), scenario benchmarks at `/best/`, and an open CC BY 4.0 security audit dataset archived on CERN Zenodo (`DOI: 10.5281/zenodo.21292799`).\n\n*(Independent project at `agentskillshub.top`, distinct from `agentskillshub.dev`.)*",
+  "url": "https://agentskillshub.top",
+  "repo": "https://github.com/zhuyansen/agent-skills-hub",
+  "docs": "https://agentskillshub.top/how-we-grade/",
+  "tags": [
+    "agent-skills",
+    "mcp",
+    "directory",
+    "security-grading",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "pricing": "free",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://agentskillshub.top/llms.txt",
+    "auth": "none",
+    "notes": "Also publishes a full machine-readable overview at https://agentskillshub.top/llms-full.txt and an npm MCP package (@agentskillshub/mcp)."
+  },
+  "related": [
+    "skills-sh",
+    "mcpservers-org",
+    "pulsemcp",
+    "glama-mcp"
+  ],
+  "sources": [
+    "https://agentskillshub.top",
+    "https://agentskillshub.top/how-we-grade/",
+    "https://agentskillshub.top/analyzer/",
+    "https://github.com/zhuyansen/agent-skills-hub",
+    "https://doi.org/10.5281/zenodo.21292799"
+  ],
+  "added": "2026-11-21",
+  "last_verified": "2026-11-21",
+  "submitted_by": "Antigravity (agent) for @zhuyansen",
+  "maintainer": "Jason Zhu (BRICKAI)"
+}
