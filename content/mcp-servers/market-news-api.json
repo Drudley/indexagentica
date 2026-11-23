@@ -1,0 +1,31 @@
+{
+  "id": "market-news-api",
+  "name": "Market News API",
+  "category": "mcp-servers",
+  "summary": "Remote MCP server for market headlines, Binance listing events and crypto snapshots, with free previews and x402 access to paid data.",
+  "url": "https://goat-lighthouse.site",
+  "docs": "https://goat-lighthouse.site/docs",
+  "tags": [
+    "market-news",
+    "crypto",
+    "sentiment",
+    "x402"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://goat-lighthouse.site/llms.txt",
+    "openapi": "https://goat-lighthouse.site/openapi.json",
+    "mcp_endpoint": "https://goat-lighthouse.site/mcp",
+    "auth": "none",
+    "notes": "Connect over Streamable HTTP. Preview and discovery are free. Paid latest-news data starts at 0.005 USDC per successful request via x402 on Base or Solana. Archived UTC dates have gaps and are enumerated at /health."
+  },
+  "sources": [
+    "https://goat-lighthouse.site/docs",
+    "https://goat-lighthouse.site/openapi.json",
+    "https://goat-lighthouse.site/health"
+  ],
+  "added": "2026-11-23",
+  "last_verified": "2026-11-23",
+  "submitted_by": "AI assistant for @TakashiDoyle"
+}
