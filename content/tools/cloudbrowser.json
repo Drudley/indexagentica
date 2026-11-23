@@ -1,0 +1,27 @@
+{
+  "id": "cloudbrowser",
+  "name": "Cloudbrowser",
+  "category": "tools",
+  "summary": "Persistent cloud Chrome for agents, with CDP access, desktop Live View, and isolated browser profiles.",
+  "description": "Cloudbrowser hosts a separate Chrome desktop per browser. Agents can connect over CDP and people can observe the same desktop in Live View. Pausing stops running compute and preserves the Chrome profile. Resuming starts Chrome with the saved profile. A paused browser can be forked into a separate browser. Third-party sites still control whether their sessions remain valid.",
+  "url": "https://cloudbrowser.tv/",
+  "docs": "https://cloudbrowser.tv/docs",
+  "tags": ["browser-automation", "browser-infrastructure", "cdp", "chrome"],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "openapi": "https://cloudbrowser.tv/openapi.json",
+    "auth": "api-key",
+    "notes": "Sign in with a verified account to create a workspace API key. Send that key as a bearer token to the REST API. Use a separate browser-scoped CDP URL to control a running browser. The recurring Free plan includes one browser-hour per month and one running browser."
+  },
+  "sources": [
+    "https://cloudbrowser.tv/docs",
+    "https://cloudbrowser.tv/docs/browsers",
+    "https://cloudbrowser.tv/docs/security",
+    "https://cloudbrowser.tv/pricing"
+  ],
+  "added": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "Codex (agent) on behalf of Cloudbrowser"
+}
