@@ -1,0 +1,41 @@
+{
+  "id": "nimbus-mcp",
+  "name": "Nimbus MCP",
+  "category": "mcp-servers",
+  "summary": "Nimbus BCI Inc. hosted and local MCP for EEG and BCI, with 63 official tools. Apache-2.0 repo; hosted Pro is gated; 18+.",
+  "description": "nimbusbci/nimbus-mcp is the official Model Context Protocol server from Nimbus BCI Inc., a Delaware corporation (hello@nimbusbci.com). Official Terms of Service (https://www.nimbusbci.com/terms, effective and last updated 1 January 2026) cover the Nimbus Studio platform, the Nimbus SDKs (Julia and Python), and associated software and services, and require that you are at least 18 years of age or the age of majority in your jurisdiction. These Terms are governed by the laws of the State of Delaware. Official wording: fees are non-refundable except as required by law or as specified in Section 7.5. Section 7.5 (Refund Policy): the free tier has no fees and no refunds applicable; for paid subscriptions, refunds may be provided at their discretion within 14 days of initial purchase; no refunds for partial subscription periods or unused features. Official privacy policy is at https://www.nimbusbci.com/privacy. Official repository LICENSE is Apache License 2.0. The repo is not archived; created 2026-10-04 and last pushed 2026-11-04T14:30:22Z (2026-11-04 15:30:22 Europe/Stockholm). Official product overview is https://www.nimbusbci.com/mcp (HTTP 200; the apex /mcp 308-redirects to the www URL). Official docs are https://docs.nimbusbci.com/ (HTTP 200). Official README and MCP overview: 63 MCP tools; public datasets include MOABB and BNCI; run locally against a local backend or use the hosted server; OAuth or a Bearer NIMBUS_TOKEN. Official FAQ on the MCP overview: the server is open source and free to use with a Nimbus account; catalog browsing and runs on public datasets work on the free tier; calibration workflows and custom data uploads require a Studio Pro plan ($29/month). Official README: the Local Free tier starts anonymously against the local backend and needs no Nimbus Studio login for templates, local data, execution, plots, stats, BIDS export and local-only storage; login is requested only at first cloud value; some hosted or cloud features return {ok: false, tierGate: true, requiredTier: \"pro\"} on free accounts; exports (BIDS and similar) are never gated at any tier. Official README also states that the Nimbus engine (the nimbus-bci SDK), Nimbus Studio, the backend and the hosted services remain proprietary. Official MCP overview FAQ: live streaming and calibration are confirm-gated (the tool call must carry an explicit confirmation, so the agent has to ask first); idle streams stop themselves after 15 minutes. Official Terms also put consent responsibility on the user, including a mention of the Illinois Biometric Information Privacy Act (BIPA). Hardware control was not invoked. Documented uvx nimbus-mcp login and other installs were not executed. Tools were not called; no account, token, or spend.",
+  "url": "https://www.nimbusbci.com/mcp",
+  "repo": "https://github.com/nimbusbci/nimbus-mcp",
+  "docs": "https://docs.nimbusbci.com/",
+  "tags": [
+    "mcp",
+    "eeg",
+    "bci",
+    "vendor",
+    "datasets"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "agent_access": {
+    "mcp_endpoint": "https://nimbus-mcp.fly.dev/mcp",
+    "auth": "other",
+    "notes": "Official hosted MCP is Streamable HTTP at https://nimbus-mcp.fly.dev/mcp, with OAuth or Bearer NIMBUS_TOKEN. Bare GET and GET with Accept: application/json or text/event-stream returned HTTP 401 with an empty body and WWW-Authenticate Bearer resource_metadata=\"https://nimbus-mcp.fly.dev/.well-known/oauth-protected-resource/mcp\". Unauthenticated initialize returned HTTP 200 text/event-stream, serverInfo name nimbus, version 0.14.21 (a session id was issued; it is not published). A tools/list POST without that session returned HTTP 400 \"Bad Request: Missing session ID\"; tools were not listed through the session and no tools were called. Documented login/install was not run; no account, token, or spend. Official wording requires explicit user confirmation before stream or calibration start."
+  },
+  "sources": [
+    "https://www.nimbusbci.com/mcp",
+    "https://docs.nimbusbci.com/",
+    "https://www.nimbusbci.com/terms",
+    "https://www.nimbusbci.com/privacy",
+    "https://github.com/nimbusbci/nimbus-mcp",
+    "https://github.com/nimbusbci/nimbus-mcp/blob/main/README.md",
+    "https://github.com/nimbusbci/nimbus-mcp/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/nimbusbci/nimbus-mcp/main/README.md",
+    "https://nimbus-mcp.fly.dev/.well-known/oauth-protected-resource/mcp"
+  ],
+  "maintainer": "Nimbus BCI Inc.",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "adobe-skills",
+  "name": "Adobe Skills",
+  "category": "skills",
+  "summary": "Official Adobe Agent Skills monorepo of 19 marketplace plugins plus Adobe for Creativity. Apache-2.0; several register vendor MCP servers.",
+  "description": "adobe/skills is the official GitHub monorepo for Agent Skills used with Adobe products. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-02-05 and last pushed 2026-11-23T21:12:39Z (2026-11-23 22:12:39 Europe/Stockholm). GitHub lists homepage https://www.adobe.com/ai/overview.html (HTTP 200). Official README marketplace table names 19 plugins: adobe-analytics, adobe-cja, adobe-for-developers, aem-edge-delivery-services, aem-eds-content-ops, aem-eds-personalization, aem-forms-edge-delivery-services, aem-project-management, aem-cloud-service, aem-6-5-lts, app-builder, commerce-app-management, commerce-app-migration, commerce-app-review, run-workflow, semrush, stardust, web, and workfront. Official wording: the README does not list individual skills so that it does not go stale. Official wording also names one more plugin in the repository but not in its marketplace: adobe-for-creativity (Adobe Creative Cloud tools for images, design and video), installed from the plugin directory of the Claude desktop app. Official MCP table: adobe-for-creativity registers https://adobe-creativity.adobe.io/mcp and is said to work in the Claude desktop app or Claude Cowork; every other client, Claude Code CLI included, gets a bare HTTP 403, including for OAuth discovery documents. run-workflow registers https://run-workflow.adobe.io/mcp and requires an enterprise account with a Firefly Services or Firefly Creative Production entitlement (a personal Adobe account signs in and is then refused). adobe-analytics and adobe-cja use https://aa-mcp.adobe.io/mcp and https://cja-mcp.adobe.io/mcp and need Adobe IMS headers (Authorization, x-gw-ims-org-id, x-gw-ims-user-id) on every request. adobe-for-developers registers https://adp-connector.adobe.io/mcp (Adobe IMS sign-in). semrush uses https://mcp.semrush.com/v2/mcp, which you add yourself, with OAuth. aem-cloud-service documents a local Dispatcher MCP (AEM_DEPLOYMENT_MODE=cloud) and an AEM MCP Server for migration findings; aem-6-5-lts documents Dispatcher MCP with AEM_DEPLOYMENT_MODE=ams, and official issue #519 reports that no Dispatcher MCP for AMS is available today. Official wording: these servers sign you in with Adobe IMS or the vendor's OAuth; a client without a browser at hand, such as a headless or cloud agent, cannot complete that sign-in. Documented marketplace and skills.sh installs were not executed. Paid Adobe, Firefly and Semrush usage is separate and was not purchased. This listing describes the skills pack, not those hosted MCP products.",
+  "url": "https://github.com/adobe/skills",
+  "repo": "https://github.com/adobe/skills",
+  "docs": "https://github.com/adobe/skills/blob/main/README.md",
+  "tags": [
+    "adobe",
+    "skills",
+    "mcp",
+    "official"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Official pack is a public Apache-2.0 GitHub monorepo. The listing itself has no hosted MCP endpoint. Several plugins document Adobe or vendor MCP servers that typically need Adobe IMS or product credentials. Official known limits include HTTP 403 (including OAuth discovery) on adobe-creativity.adobe.io for clients other than the Claude desktop app or Claude Cowork, and a browser-based sign-in that a headless or cloud agent cannot complete. Installs and vendor MCP calls were not executed. No Adobe account or spend."
+  },
+  "sources": [
+    "https://github.com/adobe/skills",
+    "https://github.com/adobe/skills/blob/main/README.md",
+    "https://github.com/adobe/skills/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/adobe/skills/main/README.md",
+    "https://raw.githubusercontent.com/adobe/skills/main/LICENSE",
+    "https://www.adobe.com/ai/overview.html"
+  ],
+  "maintainer": "Adobe",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

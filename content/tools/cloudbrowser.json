@@ -1,0 +1,43 @@
+{
+  "id": "cloudbrowser",
+  "name": "Cloudbrowser",
+  "category": "tools",
+  "summary": "Hosted persistent Chrome for agents with CDP, profile pause/resume and Live View. Freemium; proprietary; 18+; US law.",
+  "description": "Vendor-affiliated listing (GitHub pull request #56 was submitted by Codex on behalf of Cloudbrowser; claims below were checked on official cloudbrowser.tv pages — the PR text was not used as a source). Cloudbrowser is the hosted service at https://cloudbrowser.tv/. Official Terms (effective and last updated 5 November 2026) say the website, Console, API and CLI are operated under the CloudBrowser.tv name in the United States. You must be at least 18 and legally able to enter the agreement. Applicable United States law governs to the extent permitted by law, without removing mandatory protections where you live; the Terms do not require arbitration or waive statutory consumer rights. Published contact for legal, billing and closure questions is zuch@sandbox0.ai (that address appears on the official Terms). A saved browser profile may contain cookies, login sessions and local storage. CDP links provide full browser control. Live View defaults to read-only and requires the recipient to sign in and accept access. You must have permission to access the websites, accounts and data you use through the Service. Official Acceptable Use Policy (same date): use only for lawful authorized activity; prohibited examples include unauthorized access, credential theft, phishing, malware, fraud, scams, impersonation, exploitation of children, bypassing billing or Free-plan limits, and sharing sessions without the required rights. Pricing (https://cloudbrowser.tv/pricing and official llms.txt): start on Free without a payment — 1 browser-hour per UTC month and 1 running browser; when the allowance is exhausted, browsers pause until an upgrade or the next UTC month, with no Free overage. Basic is $20/month with 250 hours, 10 running browsers and $0.08/hour overage. Pro is $99/month with 1,250 hours, 100 running browsers and $0.06/hour overage. Model-provider usage is separate. Paid plans renew monthly through Stripe; upgrades are prorated; downgrades and cancellations take effect at the next period; incurred charges including unbilled overage remain payable. Refund requests are reviewed individually; refunds required by law remain available. Browser storage allowances and retention periods are not yet fixed. Privacy (same date): Auth0 for accounts; Stripe for payment (the application does not store full card numbers); limited website analytics as in the Cookie Policy; they say they do not sell personal information or use it for cross-context behavioral advertising; browser contents are not sent to website analytics; the Service is intended for adults and is not directed to children under 18. OpenAPI 3.1 is titled Cloudbrowser REST API version 0.6.0 at https://cloudbrowser.tv/openapi.json, production server https://cloudbrowser.tv/api/v1. No public repository for this product was used: the GitHub org CloudBrowser only showed 2018 API wrapper repos, which are not this service. The hosted product is proprietary. Documented CLI install and Auth0 signup were not executed. No account, API key, or spend.",
+  "url": "https://cloudbrowser.tv/",
+  "docs": "https://cloudbrowser.tv/docs",
+  "tags": [
+    "browser",
+    "cdp",
+    "sandbox",
+    "vendor",
+    "proprietary"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "openapi": "https://cloudbrowser.tv/openapi.json",
+    "llms_txt": "https://cloudbrowser.tv/llms.txt",
+    "auth": "api-key",
+    "notes": "No hosted MCP endpoint is documented on the cited pages. Official access is the REST API at https://cloudbrowser.tv/api/v1, a Go CLI, and CDP URLs issued for a browser. Register or sign in through Auth0 and verify email to start on Free; agents and CI can use a workspace API key in CLOUDBROWSER_API_KEY. CLI install and login were not executed. No account or key was created. Host trust: CDP can fully control the cloud Chrome, including cookies and logins in the saved profile."
+  },
+  "sources": [
+    "https://cloudbrowser.tv/",
+    "https://cloudbrowser.tv/docs",
+    "https://cloudbrowser.tv/docs/browsers",
+    "https://cloudbrowser.tv/docs/security",
+    "https://cloudbrowser.tv/docs/billing",
+    "https://cloudbrowser.tv/pricing",
+    "https://cloudbrowser.tv/llms.txt",
+    "https://cloudbrowser.tv/openapi.json",
+    "https://cloudbrowser.tv/legal/terms",
+    "https://cloudbrowser.tv/legal/privacy",
+    "https://cloudbrowser.tv/legal/acceptable-use"
+  ],
+  "maintainer": "CloudBrowser.tv",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

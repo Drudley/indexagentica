@@ -1,0 +1,45 @@
+{
+  "id": "market-news-api",
+  "name": "Market News API",
+  "category": "mcp-servers",
+  "summary": "Remote MCP and REST for crypto, stock, forex and Binance headlines with optional AI scores. Freemium; x402 or USDC passes; proprietary hosted service.",
+  "description": "Vendor-affiliated listing (GitHub pull request #55 was filed by an assistant for @TakashiDoyle; every claim below was checked on official goat-lighthouse.site pages and read-only probes — the PR text was not used as a source). Market News API is the hosted service at https://goat-lighthouse.site/ (HTTP 200). Official OpenAPI 3.1.0 (title \"Market News API: Crypto, Stocks, Forex & Binance Announcements\", version news402-worker-v25.52) lists contact email takashi.doyle2025@gmail.com and https://goat-lighthouse.site/support. No legal entity name was found on the cited pages. The hosted product is proprietary; no public license file was published there. Request and delivery terms (https://goat-lighthouse.site/terms): an unpaid request returns HTTP 402 with a PAYMENT-REQUIRED offer; HEAD and OPTIONS never charge; input, matching data and feed freshness are checked before payment settlement; a quote alone does not confirm matching data. One key per buyer for access passes; shared or abused keys are revoked. The MCP endpoint supplies free discovery and quote preparation; paid MCP tools accept x402 payment in the tool call; paid REST routes also remain available. Transfer checkouts: send the exact amount shown, USDC on Base or USDC or USDT on Solana; new checkouts expire 72 hours after creation. The Terms do not state an explicit minimum age or governing law. No refund policy was found on the cited pages. Pricing (https://goat-lighthouse.site/pricing and llms.txt): 7-day pass $3 or 30-day pass $9, paid once in USDC, or pay per request (examples: GET /v1/news/latest $0.005; /v1/news/batch $0.10; /v1/events/listings $0.01; /v1/announcements/history $0.25). Free delayed headlines at /v1/free/latest; /health is free. Official wording: scores are the model's estimate of effect on crypto prices; keyword labels can miss or misclassify; historical AI scores were added after capture and are retrospective; capture times are not a delivery guarantee. Privacy (https://goat-lighthouse.site/privacy): Cloudflare hosts the service; settled x402 purchases can record time, route, query parameters, amount, network, payer wallet address when supplied, and transaction ID; Base x402 may go to Coinbase Developer Platform when configured; Solana x402 uses the configured facilitator, normally PayAI. The Worker does not request wallet private keys or recovery phrases. A free unpaid GET of https://goat-lighthouse.site/v1/news/latest returned HTTP 402 with a PAYMENT-REQUIRED header and JSON error \"PAYMENT-SIGNATURE header is required\" quoting $0.005 per request; the offer was not signed and no payment was sent. Tools were not called.",
+  "url": "https://goat-lighthouse.site/",
+  "docs": "https://goat-lighthouse.site/docs",
+  "tags": [
+    "mcp",
+    "x402",
+    "news",
+    "crypto",
+    "freemium"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "mcp_endpoint": "https://goat-lighthouse.site/mcp",
+    "llms_txt": "https://goat-lighthouse.site/llms.txt",
+    "openapi": "https://goat-lighthouse.site/openapi.json",
+    "auth": "none",
+    "notes": "Official docs: the MCP at https://goat-lighthouse.site/mcp is Streamable HTTP. Free catalogue, sample and quote-preparation tools need no account, key, wallet or payment; paid data tools accept x402 in the tool call. Bare GET and GET with Accept: application/json or text/event-stream returned HTTP 405 application/json {\"error\":\"Use POST for MCP\"} with Allow: POST, OPTIONS. Unauthenticated initialize returned HTTP 200, serverInfo name market-news-api, title Market News API, version news402-worker-v25.52, protocolVersion 2025-03-26. Unauthenticated tools/list returned HTTP 200; listed tools include market_catalogue (free) and news_sample (free historical or delayed view). Official pricing page says 15 tools, dual-mode quote/pay. Tools were not called; no wallet, pass, or spend."
+  },
+  "related": [
+    "x402"
+  ],
+  "sources": [
+    "https://goat-lighthouse.site/",
+    "https://goat-lighthouse.site/docs",
+    "https://goat-lighthouse.site/llms.txt",
+    "https://goat-lighthouse.site/pricing",
+    "https://goat-lighthouse.site/terms",
+    "https://goat-lighthouse.site/privacy",
+    "https://goat-lighthouse.site/openapi.json",
+    "https://goat-lighthouse.site/health",
+    "https://goat-lighthouse.site/support"
+  ],
+  "maintainer": "Market News API",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

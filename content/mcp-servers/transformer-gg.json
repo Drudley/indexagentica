@@ -1,0 +1,39 @@
+{
+  "id": "transformer-gg",
+  "name": "Transformer.gg",
+  "category": "mcp-servers",
+  "summary": "North Bay Opco I, Inc. marketplace for paid X and LinkedIn posts, with hosted MCP. No subscription; 18+; 80/20 fee; Florida law.",
+  "description": "Vendor-affiliated listing (listing-queue #51 was submitted by the Transformer.gg team; claims below were checked on official transformer.gg pages and read-only MCP probes — the queue text was not used as a source). Do not use campaign query-string URLs as the product URL. Transformer.gg is operated by North Bay Opco I, Inc., a Delaware corporation, mailing address 777 Brickell Ave, Suite 500 PMB 1074, Miami, FL 33131 (support@transformer.gg). Terms last updated 23 November 2026 govern the website, API, MCP server, CLI and dashboard. You must be at least 18 (or the age of majority where you live, if higher) and able to enter a binding contract. These Terms are governed by the laws of the State of Florida; the Federal Arbitration Act governs a binding individual arbitration agreement (class actions waived; you may opt out within 30 days). Official pricing and llms.txt: no subscription, seats or minimums. Brands set the payout per offer. Creators keep 80% of the payout and of any sales commission (Transformer keeps 20%), or 90% (Transformer keeps 10%) on every deal with a brand that signs up from the creator's brand page. Example on official pages: a $250 X post pays the creator $200 (or $225 on a referred brand). Creators never pay to join or to receive offers. Sending an offer is free; when the creator accepts, the brand's saved Stripe card is charged automatically (balance first; a 72-hour pay link only if that charge fails). Payment is held until the Transformer team confirms the post; money from a declined or expired offer, or a withdrawal before acceptance, goes back to the brand's balance; after payment either side can open a dispute, which freezes the payment until an admin releases or refunds it. Offers are binding if accepted in time. Every sponsored post on Transformer carries X's Paid partnership label on X, or a clear paid partnership disclosure on LinkedIn. Official llms.txt also lists LinkedIn as a current platform alongside X. The hosted product is proprietary. Auth for the MCP is OAuth or an API key (Authorization: Bearer tf_live_…). No account, key, wallet, or spend; tools were not called.",
+  "url": "https://transformer.gg/",
+  "docs": "https://transformer.gg/docs",
+  "tags": [
+    "mcp",
+    "marketplace",
+    "x",
+    "payments",
+    "vendor"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "mcp_endpoint": "https://transformer.gg/mcp",
+    "llms_txt": "https://transformer.gg/llms.txt",
+    "auth": "other",
+    "notes": "Official error body: sign in with OAuth or use an API key as Authorization: Bearer tf_live_…. Bare GET and GET with Accept: application/json or text/event-stream, and unauthenticated initialize and tools/list POSTs, all returned HTTP 401 application/json with that message and WWW-Authenticate Bearer resource_metadata=\"https://transformer.gg/.well-known/oauth-protected-resource/mcp\", scope=\"mcp\". Tools were not called; no account, API key, or spend."
+  },
+  "sources": [
+    "https://transformer.gg/",
+    "https://transformer.gg/docs",
+    "https://transformer.gg/pricing",
+    "https://transformer.gg/llms.txt",
+    "https://transformer.gg/terms",
+    "https://transformer.gg/privacy",
+    "https://transformer.gg/.well-known/oauth-protected-resource/mcp"
+  ],
+  "maintainer": "North Bay Opco I, Inc.",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

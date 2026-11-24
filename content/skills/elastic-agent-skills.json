@@ -1,0 +1,39 @@
+{
+  "id": "elastic-agent-skills",
+  "name": "Elastic Agent Skills",
+  "category": "skills",
+  "summary": "Official Apache-2.0 Agent Skills pack (Technical Preview) with 31 named skills across Cloud, Elasticsearch, Kibana, Observability and Security.",
+  "description": "elastic/agent-skills is the official Agent Skills repository for Elastic products. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-03-06 and last pushed 2026-11-23T16:03:29Z (2026-11-23 17:03:29 Europe/Stockholm). Official README marks the pack as Technical Preview (early release under active development; expect changes) and lists 31 named skills in five official groups: Cloud (cloud-onboarding, cloud-provisioning), Elasticsearch (elasticsearch-anomaly-detection, elasticsearch-anomaly-detection-explainer, elasticsearch-cluster-health, elasticsearch-esql, elasticsearch-index-design, elasticsearch-ingest, elasticsearch-onboarding, elasticsearch-query-optimization, elasticsearch-reindex, elasticsearch-search-relevance), Kibana (kibana-agent-builder, kibana-alerting-rules, kibana-anomaly-detection, kibana-cases, kibana-context-engine, kibana-dashboards, kibana-workflows), Observability (observability-csp-investigation, observability-k8s-investigation, observability-llm-obs, observability-onboarding, observability-service-reliability, observability-sre-triage), and Security (security-alert-analysis, security-alert-triage, security-case-management, security-detection-rule-management, security-generate-security-sample-data, security-ml-integrations). Documented skill installs were not executed. Elastic Cloud usage is separate and was not purchased. This pack is distinct from the already catalogued elastic-agent-builder-mcp.",
+  "url": "https://github.com/elastic/agent-skills",
+  "repo": "https://github.com/elastic/agent-skills",
+  "docs": "https://github.com/elastic/agent-skills/blob/main/README.md",
+  "tags": [
+    "elastic",
+    "skills",
+    "official",
+    "elasticsearch"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Apache-2.0 GitHub pack marked Technical Preview on the official README. No hosted MCP endpoint is documented on this repository. Documented installs were not executed. Elastic Cloud usage is separate and was not purchased."
+  },
+  "related": [
+    "elastic-agent-builder-mcp"
+  ],
+  "sources": [
+    "https://github.com/elastic/agent-skills",
+    "https://github.com/elastic/agent-skills/blob/main/README.md",
+    "https://github.com/elastic/agent-skills/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/elastic/agent-skills/main/README.md",
+    "https://raw.githubusercontent.com/elastic/agent-skills/main/LICENSE",
+    "https://api.github.com/repos/elastic/agent-skills"
+  ],
+  "maintainer": "Elastic",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "weaviate-agent-skills",
+  "name": "Weaviate Agent Skills",
+  "category": "skills",
+  "summary": "Official BSD-3-Clause Agent Skills pack from Weaviate B.V. for collections, query, import, Query Agent and cookbook workflows.",
+  "description": "weaviate/agent-skills is the official Agent Skills repository from Weaviate B.V. Official LICENSE is the BSD 3-Clause License, Copyright (c) 2020-2026 Weaviate B.V. The repository is not archived; created 2026-02-05 and last pushed 2026-11-09T14:47:18Z (2026-11-09 15:47:18 Europe/Stockholm). Official README Available Skills: Create Collections; Explore Collections (Aggregation, Metadata, Schema); Query Collections (Keyword-, Vector-, Hybrid Search, with filter support); Import Data (supports multi-vector and PDF ingestion); and Query Agent. Official Cookbooks: Multimodal PDF Ingestion; Data Explorer; Retrieval Augmented Generation (Basic, Advanced, Agentic); Agents; Query Agent Chatbot; and Frontend Interface (optional). Official security note: the scripts and cookbooks rely on some widely adopted third-party packages; Weaviate is not responsible for the security of third-party components, as new vulnerabilities may arise at any time; the user should run their own security scans before executing any code and review packages flagged for known issues. This review did not run or install the skills. Documented `npx skills add weaviate/agent-skills` and plugin installs were not executed. Weaviate Cloud usage is separate and was not purchased. This pack is distinct from the already catalogued weaviate entry.",
+  "url": "https://github.com/weaviate/agent-skills",
+  "repo": "https://github.com/weaviate/agent-skills",
+  "docs": "https://github.com/weaviate/agent-skills/blob/main/README.md",
+  "tags": [
+    "weaviate",
+    "skills",
+    "official",
+    "vector"
+  ],
+  "license": "BSD-3-Clause",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public BSD-3-Clause GitHub pack. No hosted MCP endpoint is documented on this repository. Official README warns that third-party packages should be scanned before execution; documented npx and plugin installs were not run. Weaviate Cloud usage is separate and was not purchased."
+  },
+  "related": [
+    "weaviate"
+  ],
+  "sources": [
+    "https://github.com/weaviate/agent-skills",
+    "https://github.com/weaviate/agent-skills/blob/main/README.md",
+    "https://github.com/weaviate/agent-skills/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/weaviate/agent-skills/main/README.md",
+    "https://raw.githubusercontent.com/weaviate/agent-skills/main/LICENSE",
+    "https://api.github.com/repos/weaviate/agent-skills"
+  ],
+  "maintainer": "Weaviate B.V.",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

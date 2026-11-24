@@ -1,0 +1,39 @@
+{
+  "id": "clickhouse-agent-skills",
+  "name": "ClickHouse Agent Skills",
+  "category": "skills",
+  "summary": "Official Apache-2.0 Agent Skills pack for ClickHouse, ClickHouse Cloud, chDB, Postgres infra and ClickStack.",
+  "description": "ClickHouse/agent-skills is the official Agent Skills pack for ClickHouse and ClickHouse Cloud. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-01-15 and last pushed 2026-11-19T19:42:08Z (2026-11-19 20:42:08 Europe/Stockholm). Official README lists eight skills: clickhouse-best-practices (36 rules covering schema design, query optimization, native full-text search, and data ingestion), clickhouse-architecture-advisor (5 decision frameworks for workload-aware architecture decisions for real-time ClickHouse deployments), clickhouse-js-node-troubleshooting, chdb-datastore, chdb-sql, infra-clickhouse (local and cloud workflows for running ClickHouse with clickhousectl), infra-postgres (local Docker-backed Postgres and managed ClickHouse Cloud Postgres services, described as beta), and clickstack-otel-collector (OpenTelemetry Collector wiring for Managed ClickStack). Documented installs (`npx skills add clickhouse/agent-skills` and `clickhousectl skills`) were not executed. ClickHouse Cloud usage is separate and was not purchased. This pack is distinct from the already catalogued clickhouse-mcp-server.",
+  "url": "https://github.com/ClickHouse/agent-skills",
+  "repo": "https://github.com/ClickHouse/agent-skills",
+  "docs": "https://github.com/ClickHouse/agent-skills/blob/main/README.md",
+  "tags": [
+    "clickhouse",
+    "skills",
+    "official",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Apache-2.0 GitHub pack. No hosted MCP endpoint is documented on this repository. Documented npx and clickhousectl skill installs were not executed. ClickHouse Cloud usage is separate and was not purchased."
+  },
+  "related": [
+    "clickhouse-mcp-server"
+  ],
+  "sources": [
+    "https://github.com/ClickHouse/agent-skills",
+    "https://github.com/ClickHouse/agent-skills/blob/main/README.md",
+    "https://github.com/ClickHouse/agent-skills/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/ClickHouse/agent-skills/main/README.md",
+    "https://raw.githubusercontent.com/ClickHouse/agent-skills/main/LICENSE",
+    "https://api.github.com/repos/ClickHouse/agent-skills"
+  ],
+  "maintainer": "ClickHouse",
+  "added": "2026-11-24",
+  "updated": "2026-11-24",
+  "last_verified": "2026-11-24",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
