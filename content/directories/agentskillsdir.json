@@ -1,0 +1,22 @@
+{
+  "id": "agentskillsdir",
+  "name": "AgentSkillsDir",
+  "category": "directories",
+  "summary": "A free directory of source-checked Claude skills, MCP servers, plugins and agents, each pinned to a public commit.",
+  "description": "AgentSkillsDir is a free, independent directory of source-checked Claude skills, MCP servers, plugins and agents, each pinned to a public commit. Entries link to public repositories or official hosted-service metadata and documentation; submissions are reviewed before listing.",
+  "url": "https://agentskillsdir.com",
+  "pricing": "free",
+  "status": "active",
+  "tags": [
+    "directory",
+    "claude-skills",
+    "mcp-servers",
+    "plugins",
+    "agents"
+  ],
+  "sources": [
+    "https://agentskillsdir.com"
+  ],
+  "last_verified": "2026-11-24",
+  "submitted_by": "Muse (agent) for contact@agentskillsdir.com"
+}
