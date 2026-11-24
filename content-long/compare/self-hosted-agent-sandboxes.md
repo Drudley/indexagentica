@@ -2,13 +2,13 @@
 id: self-hosted-agent-sandboxes
 type: comparison
 title: Self-hosted sandboxes for agents compared
-summary: "Six ways to isolate agent-run code on hardware you control (OpenSandbox, AIO Sandbox, microsandbox, Kubernetes Agent Sandbox, Anthropic's sandbox-runtime and Docker Sandboxes' local mode) compared on isolation, where they run, agent interface, network and secret controls, maturity and license."
+summary: "Eight ways to isolate agent-run code on hardware you control (OpenSandbox, AIO Sandbox, microsandbox, Kubernetes Agent Sandbox, sandbox-runtime, Docker Sandboxes, Eclipse Enclave, sandbox-mcp) compared on isolation, host, interface, network, maturity and license."
 description: "A primary-source comparison of sandboxes you can run yourself, from an OS-level process wrapper to microVMs on a laptop to Kubernetes-scale platforms. It explains which boundary each one actually provides and which defaults to change before an agent uses it. Hosted sandbox services are covered in the code sandboxes comparison."
 author: Agentica Author
 tags: [sandbox, self-hosted, code-execution, microvm, kubernetes, security, isolation, infrastructure]
-entries: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes, microsandbox-mcp, e2b, daytona, e2b-desktop, cua, claude-code, kubernetes-mcp-server]
+entries: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes, microsandbox-mcp, e2b, daytona, e2b-desktop, cua, claude-code, kubernetes-mcp-server, eclipse-enclave, windows-sandbox-mcp]
 related: [code-sandboxes, run-untrusted-code-in-a-sandbox, coding-agent-harnesses, devops-mcp-servers, cloud-browsers-for-agents, coding-agent-starter, mcp-gateways, self-host-a-code-execution-api]
-subjects: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes]
+subjects: [opensandbox, aio-sandbox, microsandbox, kubernetes-agent-sandbox, sandbox-runtime, docker-sandboxes, eclipse-enclave, windows-sandbox-mcp]
 criteria:
   - Isolation boundary
   - Runs on
@@ -59,7 +59,21 @@ rows:
     Network and secrets: "Network policies and credential handling per environment (local and cloud are separate); org-wide network, filesystem and MCP policies are a paid add-on"
     Maturity: "Generally available product from Docker"
     License: "proprietary"
-verdict: "For one developer's coding agent, start with Docker Sandboxes (microVMs, free locally) or microsandbox (microVMs in your own code). sandbox-runtime is the lightest, but it is a process wrapper whose reads are open unless you deny them. For many sandboxes on your own cluster, use OpenSandbox if you want a full platform with egress policies and a credential vault, or Kubernetes Agent Sandbox if you already run gVisor or Kata and want plain Kubernetes resources. Use AIO Sandbox when an agent needs a browser, shell and editor in one place, but treat it as a container with seccomp off, not a VM."
+  eclipse-enclave:
+    Isolation boundary: "One container per session on Docker or Podman. Official docs: it is \"not a hardened container-escape boundary.\" The project is a writable host bind mount by default, so agent changes are real host changes. Experimental QEMU microVM backend."
+    Runs on: "Your Linux or macOS machine, or Windows through WSL2; needs rootful Docker with buildx or Podman (rootless works) and Git 2.26+. Refuses to run as root"
+    Agent interface: "enclave CLI that starts Claude Code, Codex, Copilot, OpenCode or Pi inside the sandbox in YOLO mode, with no confirmation prompts; can attach the Theia IDE"
+    Network and secrets: "On Docker and Podman only: a gateway allowlists domains, logs allowed and blocked requests, and releases HTTP secrets to matching hosts. The experimental QEMU backend has no gateway, no restricted egress, no network log, and no HTTP secret release."
+    Maturity: "Eclipse Foundation project; 1.0 announced 2026-11-19; latest GitHub release v1.0.1 (2026-10-31)"
+    License: "MIT"
+  windows-sandbox-mcp:
+    Isolation boundary: "Windows Sandbox: a disposable Windows 11 VM that boots fresh and is deleted when it closes"
+    Runs on: "Your Windows 11 24H2 (build 26100) or later PC, Pro, Enterprise or Education; not Home or Windows Server"
+    Agent interface: "sbx CLI on its own, plus an optional stdio MCP server (sandbox_start, sandbox_copy_in, UI Automation clicks and typing, screenshots, sandbox_detonate)"
+    Network and secrets: "Network on, firewall or off per sandbox (off removes the network adapter); detonation runs with no network by default; no secret-injection feature documented"
+    Maturity: "One-maintainer project by Scott Hanselman, created 2026-11-06; latest release v1.2.0 (2026-11-07)"
+    License: "MIT"
+verdict: "One developer's coding agent: Docker Sandboxes (free local microVMs), microsandbox (microVMs in your code), or Eclipse Enclave (unattended agent behind a Docker/Podman domain allowlist; a container by default, and not a hardened escape boundary). sandbox-runtime is lightest but leaves reads open. On your own cluster: OpenSandbox for a full platform, Kubernetes Agent Sandbox over gVisor or Kata. AIO Sandbox for browser, shell and editor in one container (seccomp off). sandbox-mcp to test or detonate Windows software in a throwaway Windows VM."
 sources:
   - {title: OpenSandbox README, url: "https://github.com/opensandbox-group/OpenSandbox", accessed: 2026-10-20}
   - {title: OpenSandbox website, url: "https://open-sandbox.ai/", accessed: 2026-10-20}
@@ -70,7 +84,14 @@ sources:
   - {title: Anthropic sandbox-runtime README, url: "https://github.com/anthropics/sandbox-runtime", accessed: 2026-10-20}
   - {title: Docker Sandboxes docs, url: "https://docs.docker.com/ai/sandboxes/", accessed: 2026-10-20}
   - {title: Docker Sandboxes product page, url: "https://www.docker.com/products/docker-sandboxes/", accessed: 2026-10-20}
-last_verified: 2026-10-20
+  - {title: Eclipse Enclave README, url: "https://github.com/eclipse-enclave/enclave", accessed: 2026-11-24}
+  - {title: Eclipse Enclave docs, url: "https://enclave.eclipse.dev/docs/", accessed: 2026-11-24}
+  - {title: Eclipse Enclave security boundaries, url: "https://github.com/eclipse-enclave/enclave/blob/main/docs/security/README.md", accessed: 2026-11-24}
+  - {title: Eclipse Enclave backends (including experimental QEMU), url: "https://github.com/eclipse-enclave/enclave/blob/main/docs/backends.md", accessed: 2026-11-24}
+  - {title: "Eclipse Foundation, Eclipse Enclave 1.0 announcement", url: "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-launches-eclipse-enclave-10-bringing-security-and-choice", accessed: 2026-11-24}
+  - {title: sandbox-mcp README, url: "https://github.com/shanselman/sandbox-mcp", accessed: 2026-11-24}
+  - {title: sandbox-mcp v1.2.0 release, url: "https://github.com/shanselman/sandbox-mcp/releases/tag/v1.2.0", accessed: 2026-11-24}
+last_verified: 2026-11-24
 published: 2026-10-20
 ---
 
@@ -78,15 +99,15 @@ published: 2026-10-20
 
 These sandboxes run on machines you control: a laptop, a server or your own Kubernetes cluster. Hosted services such as [E2B](entry:e2b) and [Daytona](entry:daytona) are compared in [code sandboxes](comparison:code-sandboxes). [Run untrusted code in a sandbox](guide:run-untrusted-code-in-a-sandbox) explains why an agent needs one at all.
 
-Facts here come from each project's README or docs as of 2026-10-20, plus the release dates on GitHub. Unlike the [DevOps MCP servers comparison](comparison:devops-mcp-servers), we did not run these sandboxes for this piece. Boot-time figures are each project's own.
+Facts here come from each project's README or docs as of 2026-10-20 (Eclipse Enclave and sandbox-mcp as of 2026-11-24), plus the release dates on GitHub. Unlike the [DevOps MCP servers comparison](comparison:devops-mcp-servers), we did not run these sandboxes for this piece. Boot-time figures are each project's own.
 
 ## The boundary is the main difference
 
-The six fall into three groups, from strongest to weakest isolation:
+The eight fall into three groups, from strongest to weakest isolation:
 
-- **A virtual machine per sandbox.** [microsandbox](entry:microsandbox), [Docker Sandboxes](entry:docker-sandboxes) and [OpenSandbox's](entry:opensandbox) Fast Sandbox runtime on Kubernetes give each sandbox its own guest kernel. Code that escapes a process still has to break out of a VM.
+- **A virtual machine per sandbox.** [microsandbox](entry:microsandbox), [Docker Sandboxes](entry:docker-sandboxes) and [OpenSandbox's](entry:opensandbox) Fast Sandbox runtime on Kubernetes give each sandbox its own guest kernel. So does [sandbox-mcp](entry:windows-sandbox-mcp), which drives Windows Sandbox, a disposable Windows 11 VM on your own PC, and is the only Windows guest here. Code that escapes a process still has to break out of a VM.
 - **Whatever runtime you configure.** [Kubernetes Agent Sandbox](entry:kubernetes-agent-sandbox) manages pods and leaves isolation to a `RuntimeClass` such as gVisor or Kata Containers. Its README is explicit that it orchestrates and does not isolate by itself. On the default runtime, a Sandbox is an ordinary container.
-- **A container or a process wrapper.** OpenSandbox's local Docker mode and [AIO Sandbox](entry:aio-sandbox) are containers. AIO's documented `docker run` lines add `--security-opt seccomp=unconfined`, which removes Docker's default system-call filter. Anthropic's [sandbox-runtime](entry:sandbox-runtime) (`srt`) uses no container at all. It restricts one process tree with Seatbelt on macOS, bubblewrap on Linux, or a dedicated user account and firewall rules on Windows.
+- **A container or a process wrapper.** OpenSandbox's local Docker mode and [AIO Sandbox](entry:aio-sandbox) are containers, and so is [Eclipse Enclave](entry:eclipse-enclave) on its default Docker or Podman backend (its QEMU microVM backend is experimental). AIO's documented `docker run` lines add `--security-opt seccomp=unconfined`, which removes Docker's default system-call filter. Anthropic's [sandbox-runtime](entry:sandbox-runtime) (`srt`) uses no container at all. It restricts one process tree with Seatbelt on macOS, bubblewrap on Linux, or a dedicated user account and firewall rules on Windows.
 
 Choose the boundary based on what the agent runs. Code the model wrote from untrusted input, such as a web page, an issue or an email, calls for a VM. A trusted coding agent running your own tests can use a process or container wrapper, as long as its files and network are locked down.
 
@@ -95,15 +116,17 @@ Choose the boundary based on what the agent runs. Code the model wrote from untr
 - **sandbox-runtime reads are open.** By default, network access and writes are denied, but reads are allowed everywhere. Add `denyRead` entries for places like `~/.ssh` and other credential folders (the README's example blocks `~/.ssh/id_rsa`). Network traffic goes through proxies on the host that enforce `allowedDomains` and `deniedDomains`, covering both HTTP(S) and other TCP traffic.
 - **AIO Sandbox is open without a key.** If `SANDBOX_API_KEY` is not set, the API, MCP endpoint, VNC and Jupyter accept anyone who can reach port 8080. The README binds the port to `127.0.0.1` for that reason. Set the key, and in the cloud put the container behind a reverse proxy or Ingress instead of publishing the port.
 - **Egress is opt-in almost everywhere.** OpenSandbox has per-sandbox egress policies, and microsandbox has host and port allowlists per sandbox. Docker Sandboxes has network policies, with central org policies as a paid add-on. For Kubernetes Agent Sandbox, use your cluster's NetworkPolicies. Without one of these, an agent that reads a malicious page can send your data anywhere.
-- **Keep real secrets out of the sandbox.** OpenSandbox's Credential Vault and microsandbox's host-bound secrets both aim to let sandboxed code call an API without ever holding the real key. Prefer that over passing tokens as environment variables.
+- **Enclave runs the agent with no prompts.** Its README says the agent runs "in YOLO mode, without confirmation prompts". Official security docs say Enclave "is not a hardened container-escape boundary." The project is a writable host bind mount by default, so agent changes are real host changes; `--project-mount readonly` makes it read-only. The domain allowlist, `enclave network log`, and HTTP secret release apply only to the default Docker/Podman backend. The experimental QEMU backend has no gateway, no restricted egress, no network log, and no HTTP secret release, so that allowlist advice does not apply there. Keep the Docker/Podman allowlist short and check `enclave network log` after a run. Logins and agent memory persist on the host between sessions, so treat that store as sensitive.
+- **sandbox-mcp starts with networking on.** Pass `--network off` (or `firewall`) for untrusted files; `sbx detonate` already defaults to no network. Dependencies are never installed unless you opt in with `--provision`, and downloads then happen on the host.
+- **Keep real secrets out of the sandbox.** OpenSandbox's Credential Vault and microsandbox's host-bound secrets both aim to let sandboxed code call an API without ever holding the real key. On Docker and Podman, Enclave's gateway does the same, inserting secrets into outbound requests so the agent only sees placeholders (this HTTP secret release is not available on the experimental QEMU backend). Prefer that over passing tokens as environment variables.
 
 ## How agents drive them
 
-- **MCP:** OpenSandbox, AIO Sandbox (at `/mcp`) and microsandbox ([microsandbox-mcp](entry:microsandbox-mcp)) expose sandboxes as MCP tools, so any MCP client can create one and run code in it. Docker Sandboxes takes the opposite approach: its MCP gateway gives MCP servers to the agent running inside the sandbox.
+- **MCP:** OpenSandbox, AIO Sandbox (at `/mcp`) and microsandbox ([microsandbox-mcp](entry:microsandbox-mcp)) expose sandboxes as MCP tools, so any MCP client can create one and run code in it. [sandbox-mcp](entry:windows-sandbox-mcp) offers an optional stdio MCP server over the same engine as its `sbx` CLI. Docker Sandboxes takes the opposite approach: its MCP gateway gives MCP servers to the agent running inside the sandbox.
 - **SDKs:** OpenSandbox (Python, Java/Kotlin, TypeScript, C#/.NET, Go), microsandbox (TypeScript, Rust, Python, Go, Ruby), AIO Sandbox (Python, TypeScript, Go) and Kubernetes Agent Sandbox (Go, Python).
-- **Wrap the whole agent:** Docker Sandboxes' `sbx` and `srt` put the coding agent itself inside the sandbox ([Claude Code](entry:claude-code), Codex and others) rather than giving the agent a tool. For the harness side, see [coding agent harnesses compared](comparison:coding-agent-harnesses).
+- **Wrap the whole agent:** Docker Sandboxes' `sbx`, `srt` and Eclipse Enclave's `enclave` put the coding agent itself inside the sandbox ([Claude Code](entry:claude-code), Codex and others) rather than giving the agent a tool. For the harness side, see [coding agent harnesses compared](comparison:coding-agent-harnesses).
 - **Desktops and browsers:** AIO Sandbox puts a VNC browser next to the shell with a shared file system. For full desktops, see [E2B Desktop](entry:e2b-desktop) and [Cua](entry:cua).
 
 ## Scale and evaluation workloads
 
-For many short-lived sandboxes, such as eval runs or RL rollouts, OpenSandbox (resource pools and batch creation) and Kubernetes Agent Sandbox (`SandboxWarmPool` and `SandboxClaim`) both keep warm capacity so agents do not wait for a cold start. The laptop-oriented options (microsandbox, `srt`, local Docker Sandboxes) are built for one developer's machine. Whatever you choose, the agent that manages the cluster should not run inside the same trust boundary as the code it launches. The [DevOps MCP servers comparison](comparison:devops-mcp-servers) covers giving an agent read-only access to Kubernetes through the [Kubernetes MCP Server](entry:kubernetes-mcp-server).
+For many short-lived sandboxes, such as eval runs or RL rollouts, OpenSandbox (resource pools and batch creation) and Kubernetes Agent Sandbox (`SandboxWarmPool` and `SandboxClaim`) both keep warm capacity so agents do not wait for a cold start. The laptop-oriented options (microsandbox, `srt`, local Docker Sandboxes, Enclave, sandbox-mcp) are built for one developer's machine. Whatever you choose, the agent that manages the cluster should not run inside the same trust boundary as the code it launches. The [DevOps MCP servers comparison](comparison:devops-mcp-servers) covers giving an agent read-only access to Kubernetes through the [Kubernetes MCP Server](entry:kubernetes-mcp-server).
