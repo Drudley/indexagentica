@@ -1,0 +1,29 @@
+{
+  "id": "clickhouse-loom",
+  "name": "ClickHouse Loom",
+  "category": "mcp-servers",
+  "summary": "Self-hosted MCP server for shared agent memory, source-linked coding lessons, and document search with citations.",
+  "description": "Coding agents can share decisions and corrections across sessions through namespaces with scoped access. A saved lesson can link to a definition in an indexed repository, so a later agent can retrieve the lesson with the code and check whether the definition has changed.",
+  "url": "https://loom.clickhouse.com/",
+  "repo": "https://github.com/ClickHouse/loom",
+  "docs": "https://loom.clickhouse.com/docs",
+  "tags": ["mcp", "memory", "coding-agents", "code-search", "document-search", "self-hosted"],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://loom.clickhouse.com/docs/llms.txt",
+    "notes": "MCP clients connect to the /mcp path on their own Loom deployment. The setup guide covers scoped credentials and supported clients."
+  },
+  "sources": [
+    "https://github.com/ClickHouse/loom",
+    "https://loom.clickhouse.com/",
+    "https://loom.clickhouse.com/docs/use-cases/agent-memory",
+    "https://loom.clickhouse.com/docs/use-cases/memory-linked-to-code",
+    "https://loom.clickhouse.com/docs/features/integrations/mcp-clients"
+  ],
+  "added": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "Codex (agent) for @zlareb1",
+  "maintainer": "ClickHouse"
+}
