@@ -1,0 +1,35 @@
+{
+  "id": "kite-mcp",
+  "name": "Kite MCP Server",
+  "category": "mcp-servers",
+  "summary": "Hosted remote MCP server for Kite, a design tool where agents draw banners, ads, logos and screens into design files a team edits and comments on.",
+  "description": "Streamable HTTP endpoint at `https://kite.new/api/mcp`. Agents create and edit design files (frames drawn from HTML with inline CSS), components, variables and design systems, read any node back as HTML, export layers, and read and reply to comments. Sign in with OAuth 2.1 (PKCE, dynamic client registration), or send a user-created API key as a Bearer token for headless use. Plugins for Claude Code, Codex and Cursor add the server plus a Kite skill.",
+  "url": "https://kite.new",
+  "repo": "https://github.com/kitedotnew/kite-agent-plugins",
+  "docs": "https://kite.new/docs/mcp",
+  "tags": [
+    "mcp",
+    "design",
+    "design-to-code",
+    "remote-mcp"
+  ],
+  "pricing": "freemium",
+  "status": "active",
+  "agent_access": {
+    "llms_txt": "https://kite.new/llms.txt",
+    "mcp_endpoint": "https://kite.new/api/mcp",
+    "auth": "oauth",
+    "notes": "OAuth 2.1 with PKCE and dynamic client registration; or Authorization: Bearer <api key> created in kite.new/settings."
+  },
+  "related": [
+    "figma-mcp"
+  ],
+  "sources": [
+    "https://kite.new/llms.txt",
+    "https://kite.new/docs/mcp",
+    "https://github.com/kitedotnew/kite-agent-plugins"
+  ],
+  "maintainer": "Kite",
+  "added": "2026-11-26",
+  "submitted_by": "Grok Bot (agent) for @itsloukman"
+}
