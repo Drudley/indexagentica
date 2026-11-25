@@ -1,0 +1,39 @@
+{
+  "id": "fastscribe-mcp",
+  "name": "FastScribe MCP Server",
+  "category": "mcp-servers",
+  "summary": "Remote MCP at fastscribe.org/api/mcp for public-video transcription, job listing and transcript export. Freemium credits; proprietary; no legal entity named on cited pages.",
+  "description": "Vendor-affiliated listing (GitHub issue #60 was filed by Codex on behalf of FastScribe; claims below were checked on official fastscribe.org pages and read-only MCP probes — the issue text was not used as a source). Official llms.txt: FastScribe at fastscribe.org transcribes uploaded audio/video and supported public social-video links, and is independent of other services using the FastScribe name. Terms of Service (https://fastscribe.org/terms, dated 2025/03/10) and Privacy Policy (https://fastscribe.org/privacy, dated 2026/07/14) are published under the FastScribe name; no legal entity, minimum age, or governing law was found on the cited pages. Contact on official pricing.txt and the Terms refund section is support@fastscribe.org. Copyright line on official pages: © 2026 FastScribe. Official Terms: Pro subscriptions are billed in advance (monthly or annually) and renew until cancelled (cancellation takes effect at the end of the current cycle); subscription fees are non-refundable in principle, with a 7-day money-back guarantee for first-time subscribers if usage has not exceeded 10% of the plan's monthly quota, prorated refund or extension for verified outages lasting more than 72 hours, and full refunds for billing errors caused by FastScribe. Credit packages are one-time purchases; unused purchased credits are valid for 365 days; a package that remains completely unused within 7 days of purchase is eligible for a full refund; once any credits from a package have been consumed, that package is non-refundable. Official wording: first-time buyers retain any statutory withdrawal rights (such as the 14-day cooling-off period in the EU/UK) until the credits are used for the first time. Free signup credits (for example the 120-minute welcome credit) are promotional, have no cash value, are non-refundable, and expire 30 days after grant. Refund requests go to support@fastscribe.org. Official pricing.txt (generated from the current application configuration) and the credits help page (last updated 2026-11-13): guest allowance 15 credits before signup; free signup 120 credits, valid 30 days, not a recurring monthly allowance; free accounts have a daily limit of 3 transcription jobs and concurrency up to 3; Pro is $20.00/month or $120.00/year where available, with unlimited uploaded-file transcription while subscribed (without consuming credits), 2000 credits per month for social links and AI tools (valid 30 days), an annual bonus of 6,500 credits valid 365 days, and concurrency up to 10. Credit packages: $9.90/1200, $14.90/2500, $39.90/7500, $69.90/15000, expiring after 365 days. Public social-video URLs cost 3 credits per started minute, minimum 3. Upload limit 1 GB per file for free and Pro under the standard configuration. Official inputs: YouTube, TikTok, Instagram, X/Twitter and Facebook; Vimeo and SoundCloud page URLs are not supported; Bilibili is not supported. Official wording: review transcript wording, names, numbers and subtitle timing before publication. Official Privacy Policy: they do not sell personal data, use extension data for personalized advertising, or use browsing activity unrelated to the requested FastScribe feature; for social-video transcription, the submitted video URL may be sent to Supadata, their transcription data provider. Official MCP help (last updated 2026-11-13): Streamable HTTP at https://fastscribe.org/api/mcp; without an Authorization: Bearer token, only get_pricing_and_limits works; transcribe_url, get_transcript and list_transcripts need an access token created under Settings > Security; transcribe_url spends credits (3 per started minute); the MCP server transcribes public video links only, up to 60 minutes each, and cannot upload a local file. Tokens can be revoked. Tools were not called; no account, token, or spend.",
+  "url": "https://fastscribe.org/",
+  "docs": "https://fastscribe.org/help/mcp-server",
+  "tags": [
+    "mcp",
+    "transcription",
+    "freemium",
+    "vendor"
+  ],
+  "license": "proprietary",
+  "pricing": "freemium",
+  "agent_access": {
+    "mcp_endpoint": "https://fastscribe.org/api/mcp",
+    "llms_txt": "https://fastscribe.org/llms.txt",
+    "auth": "other",
+    "notes": "Official help: Streamable HTTP at https://fastscribe.org/api/mcp. Without Authorization: Bearer <access token>, only get_pricing_and_limits works; the other tools need a token from Settings > Security. Bare GET and GET with Accept: application/json or text/event-stream returned HTTP 405 application/json JSON-RPC error \"Method not allowed\" with Allow: POST. Unauthenticated initialize returned HTTP 200, serverInfo name fastscribe, version 1.0.0, protocolVersion 2025-03-26. Unauthenticated tools/list returned HTTP 200 with four tools: get_pricing_and_limits (no account), transcribe_url, get_transcript and list_transcripts. Tools were not called; no account, token, or spend."
+  },
+  "sources": [
+    "https://fastscribe.org/",
+    "https://fastscribe.org/llms.txt",
+    "https://fastscribe.org/help/mcp-server",
+    "https://fastscribe.org/help/credits-and-billing",
+    "https://fastscribe.org/pricing",
+    "https://fastscribe.org/pricing.txt",
+    "https://fastscribe.org/terms",
+    "https://fastscribe.org/privacy"
+  ],
+  "maintainer": "FastScribe",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

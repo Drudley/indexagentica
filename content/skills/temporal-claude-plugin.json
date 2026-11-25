@@ -1,0 +1,36 @@
+{
+  "id": "temporal-claude-plugin",
+  "name": "Temporal Plugin for Claude Code",
+  "category": "skills",
+  "summary": "Official MIT Claude Code plugin (Public Preview) from Temporal, with skills for app development, observability, ops, serverless workers and Cloud setup.",
+  "description": "temporalio/claude-temporal-plugin is the official Claude Code plugin for working with Temporal — developing applications, using the CLI, managing a server, and working with Temporal Cloud. Official LICENSE is MIT. The repository is not archived; created 2026-02-02 and last pushed 2026-11-24T14:26:00Z (2026-11-24 15:26:00 Europe/Stockholm). Official README marks the plugin as Public Preview and says it will continue to evolve. Official What's Included: temporal-developer (workflows, activities, workers, signals, queries, updates, non-determinism, saga patterns, versioning and testing across Python, TypeScript, Go and Java SDKs); temporal-observability (metrics, dashboards and alerting for Temporal Cloud, self-hosted service and SDKs); temporal-ops (administering Temporal Cloud or self-hosted environments with the temporal and tcld CLIs); temporal-serverless (deploying Temporal Workers on AWS Lambda or GCP Cloud Run); and temporal-cloud-setup, which official wording says runs only when you invoke /temporal:temporal-cloud-setup and asks before each step. Official README: skill content is derived from temporalio/skill-temporal-developer, which can be installed alone if only the skill is needed; sibling official repos are named for Cursor (temporalio/cursor-temporal-plugin) and OpenAI Codex (temporalio/codex-temporal-plugin) and are not this listing. Documented `/plugin marketplace add temporalio/claude-temporal-plugin` and `/plugin install temporal@temporal-marketplace` were not executed. Temporal Cloud or other paid Temporal usage is separate and was not purchased.",
+  "url": "https://github.com/temporalio/claude-temporal-plugin",
+  "repo": "https://github.com/temporalio/claude-temporal-plugin",
+  "docs": "https://github.com/temporalio/claude-temporal-plugin/blob/main/README.md",
+  "tags": [
+    "temporal",
+    "skills",
+    "claude",
+    "official"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public MIT GitHub plugin marked Public Preview on the official README. No hosted MCP endpoint is documented on this repository. Documented Claude Code plugin installs were not executed. Official temporal-cloud-setup asks before each step; that skill was not invoked. Temporal Cloud usage is separate and was not purchased."
+  },
+  "sources": [
+    "https://github.com/temporalio/claude-temporal-plugin",
+    "https://github.com/temporalio/claude-temporal-plugin/blob/main/README.md",
+    "https://github.com/temporalio/claude-temporal-plugin/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/temporalio/claude-temporal-plugin/main/README.md",
+    "https://raw.githubusercontent.com/temporalio/claude-temporal-plugin/main/LICENSE",
+    "https://api.github.com/repos/temporalio/claude-temporal-plugin"
+  ],
+  "maintainer": "Temporal Technologies",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "aiprocurement-club",
+  "name": "AIProcurement.club",
+  "category": "mcp-servers",
+  "summary": "Netherlands-hosted procurement MCP and pay-per-run workbench. 47 unauth-listed tools; ADA on Cardano; no formal Terms page; not professional advice.",
+  "description": "Vendor-affiliated listing (GitHub issue #59 was filed by Codex for AIProcurement.club; claims below were checked on official aiprocurement.club pages, public JSON contracts, and read-only MCP probes — the issue text was not used as a source). The site is at https://aiprocurement.club/ (HTTP 200). Official Privacy, Cookies and Disclaimer say the site is served from the Netherlands (EU) and is operated with users in the European Union in mind. Official contact is hello@aiprocurement.club. No legal entity name, minimum age, or formal Terms of Service page was found: https://aiprocurement.club/terms and several /legal and /tos variants returned HTTP 404. Official Disclaimer: nothing on the site is legal, tax, procurement, or professional advice; it is general information only; you remain responsible for your own decisions and for complying with applicable law, contracts, and internal policies. Official Privacy Policy is a high-level GDPR summary, not a full register of processing activities. Official pricing page and llms.txt: no subscription is required; catalogue prices are USD list prices per individual service run (featured: RFP evidence review $10; finance business case, contract review and supplier risk review $15 each). Official service catalogue JSON lists 28 agents (one at $10, twenty-seven at $15). Official marketplace object names checkoutAsset ADA on cardano:mainnet and a 16-agent ProcureAI primary market; official buyer guide attributes imported procedures to Martin Bacigal / ProcureAI.tech, with a hosted-execution grant for listed versions and https://procureai.tech/terms.html for those procedure terms. Official payments JSON (fetched 2026-11-25): payments required; ADA on Cardano mainnet is enabled (15 canonical block confirmations; settlement described as probabilistic); USDT on Ethereum is listed but enabled false, reason \"This payment method is temporarily unavailable.\" Official llms.txt and buyer guide: create an ADA invoice without signing in, save the private receipt, pay, then authorize processing; payment submission is not confirmed settlement; obtain buyer approval before a payment and explicit consent before external source processing. Official wording: a live request sends the supplied text to external AI processing services; inputs and outcomes are saved; automatic retention deletion is not provided; results are generated decision support and human review remains required. Official refund-adjacent wording in the buyer guide: restored credit is permission to retry the service, not an automatic cash refund. Official llms.txt: hosted MCP at https://mcp.aiprocurement.club/mcp (Streamable HTTP) exposes specialists, published workflows and result recovery; listing tools needs no key; running one needs a scoped service key as a bearer token, explicit processing consent and a confirmed one-run credit; with none available the call returns HTTP 402 and creates no run; the tools do not create invoices or transfer money. A documented local stdio adapter was not executed. Tools were not called; no account, key, wallet, invoice, or spend.",
+  "url": "https://aiprocurement.club/",
+  "docs": "https://aiprocurement.club/agent-services/for-agents",
+  "tags": [
+    "mcp",
+    "procurement",
+    "cardano",
+    "vendor"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "mcp_endpoint": "https://mcp.aiprocurement.club/mcp",
+    "llms_txt": "https://aiprocurement.club/llms.txt",
+    "openapi": "https://aiprocurement.club/v1/openapi.json",
+    "auth": "other",
+    "notes": "Official llms.txt: Streamable HTTP at https://mcp.aiprocurement.club/mcp; tools/list needs no key; running a paid tool needs a scoped Bearer service key, explicit processing consent, and a confirmed one-run credit (HTTP 402 if none, and no run is created). The tools do not create invoices or transfer money. Bare GET and GET with Accept: application/json or text/event-stream returned HTTP 405 application/json {\"error\":\"Use stateless JSON POST.\"} with Allow: POST, OPTIONS. Unauthenticated initialize returned HTTP 200, serverInfo name procureai-skills, version 1.1.0, protocolVersion 2025-03-26. Unauthenticated tools/list returned HTTP 200 with 47 tools (28 catalogue specialists, 7 procurement_workflow__* tools, and result, document and evidence tools). Tools were not called; no account, key, wallet, invoice, or spend."
+  },
+  "sources": [
+    "https://aiprocurement.club/",
+    "https://aiprocurement.club/llms.txt",
+    "https://aiprocurement.club/agent-services/for-agents",
+    "https://aiprocurement.club/agent-services/guide",
+    "https://aiprocurement.club/pricing",
+    "https://aiprocurement.club/privacy",
+    "https://aiprocurement.club/cookies",
+    "https://aiprocurement.club/disclaimer",
+    "https://aiprocurement.club/contact",
+    "https://aiprocurement.club/v1/openapi.json",
+    "https://aiprocurement.club/v1/agent-services/catalogue",
+    "https://aiprocurement.club/v1/agent-services/payments",
+    "https://procureai.tech/terms.html"
+  ],
+  "maintainer": "AIProcurement.club",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

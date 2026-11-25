@@ -1,0 +1,40 @@
+{
+  "id": "auth0-agent-skills",
+  "name": "Auth0 Agent Skills",
+  "category": "skills",
+  "summary": "Official Apache-2.0 Auth0 Agent Skills pack: a single router skill that detects the project framework and loads matching Auth0 setup references.",
+  "description": "auth0/agent-skills is the official GitHub pack of AI agent skills that help coding assistants implement Auth0 authentication. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-01-23 and last pushed 2026-11-24T05:57:31Z (2026-11-24 06:57:31 Europe/Stockholm). Official documentation is at https://auth0.com/docs/quickstart/agent-skills (HTTP 200). Official README: a single `auth0` skill covers web, mobile, desktop, and API authentication; its router reads project files, detects the framework, and loads matching reference files (for example a Next.js reference for a Next.js project) to install the right SDK, create auth routes, configure environment variables, and wire up login and logout. Official Prerequisites mention an Auth0 account (free). Official install paths include the Claude Code plugins marketplace (`auth0@claude-plugins-official`), the Cursor marketplace, an OpenAI-compatible skills-only plugin (official wording: Auth0 must submit it through the OpenAI plugin submission portal; approval is required before it appears in the universal ChatGPT and Codex directory), Antigravity and Gemini installs from a local clone (the Gemini manifest lives at plugins/auth0/, not the repo root), `npx skills add auth0/agent-skills`, and ClawHub. Those documented installs were not executed. This pack is distinct from the already catalogued auth0-for-ai-agents entry. Paid Auth0 usage is separate and was not purchased. No Auth0 account was created.",
+  "url": "https://github.com/auth0/agent-skills",
+  "repo": "https://github.com/auth0/agent-skills",
+  "docs": "https://auth0.com/docs/quickstart/agent-skills",
+  "tags": [
+    "auth0",
+    "authentication",
+    "skills",
+    "official"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public Apache-2.0 GitHub pack and official docs at https://auth0.com/docs/quickstart/agent-skills. No hosted MCP endpoint is documented on this repository. Documented marketplace, plugin and npx installs were not executed. An Auth0 account is listed as a prerequisite on the official README; no account was created and no Auth0 usage was purchased."
+  },
+  "related": [
+    "auth0-for-ai-agents"
+  ],
+  "sources": [
+    "https://github.com/auth0/agent-skills",
+    "https://github.com/auth0/agent-skills/blob/main/README.md",
+    "https://github.com/auth0/agent-skills/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/auth0/agent-skills/main/README.md",
+    "https://raw.githubusercontent.com/auth0/agent-skills/main/LICENSE",
+    "https://api.github.com/repos/auth0/agent-skills",
+    "https://auth0.com/docs/quickstart/agent-skills"
+  ],
+  "maintainer": "Auth0",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

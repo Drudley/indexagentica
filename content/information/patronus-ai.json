@@ -1,0 +1,44 @@
+{
+  "id": "patronus-ai",
+  "name": "Patronus AI",
+  "category": "information",
+  "summary": "Patronus AI, Inc. behavioral research lab for post-training data and simulated environments. 18+; California law; sales-led pricing; proprietary platform.",
+  "description": "Patronus AI, Inc. is the company behind https://www.patronus.ai/ (HTTP 200; the apex patronus.ai 301-redirects to www). Official company and home Markdown: it is a behavioral research lab for AI, founded in 2023 by Anand Kannappan and Rebecca Qian, that studies where models fail and builds training data and simulated environments to improve them, across alignment, coding, knowledge work, science and computer use. Official contact page and llms.txt: to sell or license data, go to https://data.patronus.ai/ (HTTP 200) or write to data@patronus.ai; general contact is https://www.patronus.ai/contact. Official post-training data page describes RL environments measured by training open models on held-out tasks, and points readers to Talk to us rather than a public price list. No dollar plan amounts were copied because https://www.patronus.ai/pricing 301-redirects to /contact and no official pricing-page amounts were extracted. Official Terms of Use (https://www.patronus.ai/terms-of-use, last updated 14 July 2023; /terms 301-redirects there) are entered into with Patronus AI, Inc., and the Platform is intended only for access and use by individuals at least eighteen (18) years old. These Terms are governed by the internal laws of the State of California. Official wording: at the Company's sole discretion, it may require you to submit disputes to arbitration. No refund policy was found in the cited Terms. Official Privacy Policy (https://www.patronus.ai/privacy-policy, last updated 7 August 2024; /privacy 301-redirects there) is published by Patronus AI, Inc. The hosted platform and commercial data offerings are proprietary. Featured official research includes GlobeBench, which is catalogued separately. No account, signup, or spend.",
+  "url": "https://www.patronus.ai/",
+  "docs": "https://www.patronus.ai/post-training-data",
+  "tags": [
+    "evals",
+    "datasets",
+    "research",
+    "vendor"
+  ],
+  "license": "proprietary",
+  "pricing": "paid",
+  "agent_access": {
+    "llms_txt": "https://www.patronus.ai/llms.txt",
+    "auth": "none",
+    "notes": "Official marketing, research, llms.txt, Terms of Use and Privacy Policy pages are public and need no login. Commercial post-training data is sales-led: official pages point to https://data.patronus.ai/ and https://www.patronus.ai/contact; /pricing 301-redirects to /contact. No account was created and no data was licensed or purchased."
+  },
+  "related": [
+    "globebench"
+  ],
+  "sources": [
+    "https://www.patronus.ai/",
+    "https://www.patronus.ai/company",
+    "https://www.patronus.ai/post-training-data",
+    "https://www.patronus.ai/llms.txt",
+    "https://www.patronus.ai/terms-of-use",
+    "https://www.patronus.ai/privacy-policy",
+    "https://www.patronus.ai/contact",
+    "https://data.patronus.ai/",
+    "https://cdn.patronus.ai/site/md/index.md",
+    "https://cdn.patronus.ai/site/md/company.md",
+    "https://cdn.patronus.ai/site/md/post-training-data.md"
+  ],
+  "maintainer": "Patronus AI, Inc.",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

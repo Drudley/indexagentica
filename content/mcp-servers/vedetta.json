@@ -1,0 +1,48 @@
+{
+  "id": "vedetta",
+  "name": "Vedetta",
+  "category": "mcp-servers",
+  "summary": "Pay-per-call market-intelligence API and MIT stdio MCP: free track-record, cached routes $0.01, live desk $0.05 USDC on Base or Solana. Not financial advice; no Terms page.",
+  "description": "Vendor-affiliated listing (GitHub issue #58 was submitted by @lacryptorina, the operator; claims below were checked on official vedetta.dethboy.com pages, the GitHub repo, npm, and unpaid HTTP probes — the issue text was not used as a source). Vedetta is a pay-per-call market-intelligence desk at https://vedetta.dethboy.com/ (HTTP 200). Official llms.txt and vedetta.md: no signup and no API key; payment is authentication; descriptive market research only — not financial advice. Official contact on the x402 catalog is vedetta@dethboy.com. No Terms, Privacy, or /legal page was found: https://vedetta.dethboy.com/terms, /privacy and /legal all returned HTTP 404. Official Base x402 catalog (https://vedetta.dethboy.com/.well-known/x402.json) and Solana catalog (https://vedetta.dethboy.com/.well-known/x402-sol.json, rail enabled): 23 routes total, one free plus 22 paid. Official free route: GET /v1/track-record (HTTP 200, no wallet). Official paid prices: eight cached routes at $0.01 USDC (feed, snapshot, history, screener, route, korra/calls, korra/news, korra/lean) and fourteen live desk routes at $0.05 USDC (ask, consensus, pulse, theme, equity, macro, prediction, trend, house-view, news-read, event, odds, narrative, social). Official Base rail uses USDC on Base; official Solana rail uses USDC on Solana. Official catalog names the Coinbase Developer Platform facilitator URL for the Base rail. A free unpaid GET of https://vedetta.dethboy.com/v1/track-record returned HTTP 200. A free unpaid GET of https://vedetta.dethboy.com/v1/snapshot?asset=BTC returned HTTP 402 Payment Required with maxAmountRequired 10000 (official $0.01 USDC); the offer was not signed and no payment was sent. Official wording on paid routes includes that there is no charge if the desk fails to answer. Official MCP is the stdio npm package vedetta-mcp (latest 2.0.9, MIT, published 2026-11-19T21:38:16Z = 2026-11-19 22:38:16 Europe/Stockholm). Official README: without EVM_PRIVATE_KEY the server still starts, free tools work, and paid tools return the live 402 offer; the key never leaves your machine; do not run the package unless you intend to. Official README also says a hosted /mcp, if used, stays Bearer-token gated; that path is not documented as a public URL in llms.txt, so this listing does not set an mcp_endpoint. Documented npx install was not executed. The GitHub repository lacryptorina/vedetta-mcp is not archived, created 2026-08-04, last pushed 2026-11-19T21:36:26Z (2026-11-19 22:36:26 Europe/Stockholm); official LICENSE is MIT, Copyright (c) 2026 Vedetta. The hosted API is otherwise proprietary.",
+  "url": "https://vedetta.dethboy.com/",
+  "repo": "https://github.com/lacryptorina/vedetta-mcp",
+  "docs": "https://vedetta.dethboy.com/llms.txt",
+  "tags": [
+    "mcp",
+    "x402",
+    "usdc",
+    "market-data",
+    "vendor"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "agent_access": {
+    "llms_txt": "https://vedetta.dethboy.com/llms.txt",
+    "openapi": "https://vedetta.dethboy.com/openapi.json",
+    "auth": "other",
+    "notes": "Official access is the HTTP API (payment is authentication) and the stdio npm package vedetta-mcp (optional EVM_PRIVATE_KEY for paid tools). No API key or signup is required for the free track-record route. A free unpaid GET of /v1/track-record returned HTTP 200. A free unpaid GET of /v1/snapshot?asset=BTC returned HTTP 402 with an official $0.01 USDC (maxAmountRequired 10000) offer; the offer was not signed and no payment, wallet, or spend was used. Documented npx vedetta-mcp was not run. Official README mentions a Bearer-gated hosted /mcp if used; no public MCP URL is given in official llms.txt, so mcp_endpoint is omitted."
+  },
+  "related": [
+    "x402"
+  ],
+  "sources": [
+    "https://vedetta.dethboy.com/",
+    "https://vedetta.dethboy.com/llms.txt",
+    "https://vedetta.dethboy.com/vedetta.md",
+    "https://vedetta.dethboy.com/.well-known/x402.json",
+    "https://vedetta.dethboy.com/.well-known/x402-sol.json",
+    "https://vedetta.dethboy.com/openapi.json",
+    "https://github.com/lacryptorina/vedetta-mcp",
+    "https://github.com/lacryptorina/vedetta-mcp/blob/main/README.md",
+    "https://github.com/lacryptorina/vedetta-mcp/blob/main/LICENSE",
+    "https://raw.githubusercontent.com/lacryptorina/vedetta-mcp/main/README.md",
+    "https://raw.githubusercontent.com/lacryptorina/vedetta-mcp/main/LICENSE",
+    "https://registry.npmjs.org/vedetta-mcp"
+  ],
+  "maintainer": "Vedetta",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

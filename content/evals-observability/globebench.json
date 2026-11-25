@@ -1,0 +1,38 @@
+{
+  "id": "globebench",
+  "name": "GlobeBench",
+  "category": "evals-observability",
+  "summary": "Patronus AI Apache-2.0 benchmark of 1,632 items testing whether a language model can act as a text-based world model. Upstream item licenses vary.",
+  "description": "GlobeBench is Patronus AI's official benchmark for text-based world models, described at https://www.patronus.ai/benchmarks/globebench (HTTP 200) and in official site Markdown. Official wording: it evaluates whether a language model can act as a text-based world model — given an agent's trajectory of actions and environment observations, it must predict the environment's response to the next action. Official size: 1,632 execution-grounded items across five domains (Code 526, Enterprise 381, Games 334, Math and Science 198, Dialogue 193) and 19 simulation skills. Official pages also publish a leaderboard of 32 models, with CSV and JSON result downloads, and note that paper rows come from arXiv 2610.22708v1 (Table 1, 15 October 2026) while a NeurIPS 2026 Workshop on Evaluation of Interactive Agents version evaluated 12 models; this listing does not treat any single score as a current ranking. Official Q&A on that page: the items and model results are on Hugging Face at https://huggingface.co/datasets/PatronusAI/globebench, and the evaluation harness, model outputs, judge records and reproduction instructions are on GitHub at https://github.com/patronus-ai/globebench. Official license wording: the code and the items authored by Patronus AI are released under Apache-2.0; items adapted from upstream projects keep their source license, recorded per item in metadata.source_license; one item derived from python-chess is GPL-3.0-or-later; model outputs may also be subject to the respective providers' terms; see THIRD_PARTY_NOTICES.md in the GitHub repository. The repository is not archived; created 2026-10-14 and last pushed 2026-10-15T22:35:39Z (2026-10-16 00:35:39 Europe/Stockholm). Official LICENSE on main is Apache License 2.0. Documented evaluation runs were not executed. Related company listing: patronus-ai.",
+  "url": "https://www.patronus.ai/benchmarks/globebench",
+  "repo": "https://github.com/patronus-ai/globebench",
+  "docs": "https://github.com/patronus-ai/globebench/blob/main/README.md",
+  "tags": [
+    "evals",
+    "benchmark",
+    "world-model",
+    "datasets"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Public official leaderboard, Hugging Face dataset and Apache-2.0 GitHub harness need no login. Official pages warn that some items keep upstream licenses (including one GPL-3.0-or-later item) and that model outputs may be subject to provider terms. The harness and any model calls were not run."
+  },
+  "related": [
+    "patronus-ai"
+  ],
+  "sources": [
+    "https://www.patronus.ai/benchmarks/globebench",
+    "https://cdn.patronus.ai/site/md/benchmarks/globebench.md",
+    "https://github.com/patronus-ai/globebench",
+    "https://huggingface.co/datasets/PatronusAI/globebench",
+    "https://arxiv.org/abs/2610.22708"
+  ],
+  "maintainer": "Patronus AI, Inc.",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

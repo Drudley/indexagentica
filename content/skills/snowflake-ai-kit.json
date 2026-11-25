@@ -1,0 +1,42 @@
+{
+  "id": "snowflake-ai-kit",
+  "name": "Snowflake AI Kit",
+  "category": "skills",
+  "summary": "Official Snowflake Inc. plugin kit that routes coding-agent prompts to Cortex Code. Kit content is Apache-2.0; bundled skills use the Snowflake Skills License.",
+  "description": "Snowflake-Labs/snowflake-ai-kit is the official plugin kit from Snowflake Inc. for connecting AI coding agents to Snowflake. Official README: one plugin for Claude Code, OpenAI Codex, Devin CLI and Devin Desktop automatically detects Snowflake prompts and routes them to Cortex Code, where 55+ built-in skills handle SQL, data governance, dynamic tables, ML and more; a separate Devin plugin can connect through a Snowflake Managed MCP Server instead, with no local Cortex Code CLI. Official examples of those built-in skills include agent-studio, query-semantic-view, data-quality, dynamic-tables, cost-intelligence, machine-learning, iceberg, data-governance, cortex-ai-function-studio, deploy-to-spcs, lineage, dbt-projects-on-snowflake, snowflake-notebooks, security-investigation and workload-performance-analysis. Official wording: do not install both Devin options, because Devin may then use the MCP plugin's tools instead of routing to Cortex Code. Official Cursor note: works natively if you enable third-party skills; no separate plugin needed. The repository is not archived; created 2026-03-10 and last pushed 2026-11-25T05:04:15Z (2026-11-25 06:04:15 Europe/Stockholm). Official license split, in the README's License section: Copyright (c) Snowflake Inc. All rights reserved; skills are licensed under the Snowflake Skills License (LICENSE-SKILLS.md); all other content is Apache 2.0 (LICENSE). Official LICENSE-SKILLS.md (copyright 2026 Snowflake Inc.): use of the skills is governed by your agreement with Snowflake for the Service, or if no separate agreement exists, by Snowflake's Terms of Service; additional restrictions include that you may not extract or retain copies of the skills outside use with the Service, reproduce them except for temporary copies during authorized use, create derivative works, or distribute, sublicense or transfer them to any third party. This listing therefore records the skills as proprietary under that official Skills License, not as Apache-2.0. Official README also describes an opt-in remote MCP backend that delegates through the host's authenticated Snowflake-managed MCP connection, with different approval, file-access and session behavior; local Cortex Code CLI mode remains the default. Official Cortex Code CLI docs: https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-cli (HTTP 200). Documented plugin installs, install.sh, install.ps1, and curl|bash Devin CLI install were not executed. This pack is distinct from the already catalogued snowflake-managed-mcp. Snowflake or Cortex usage is separate and was not purchased. No Snowflake account was created.",
+  "url": "https://github.com/Snowflake-Labs/snowflake-ai-kit",
+  "repo": "https://github.com/Snowflake-Labs/snowflake-ai-kit",
+  "docs": "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-cli",
+  "tags": [
+    "snowflake",
+    "skills",
+    "cortex",
+    "official"
+  ],
+  "license": "proprietary",
+  "pricing": "unknown",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Official kit is a public GitHub repository. Local mode needs the Cortex Code CLI and a Snowflake connection; an opt-in remote mode uses a host MCP connection to a Snowflake-managed MCP server, with official wording that approval, file-access and session behavior differ. A separate official Devin plugin talks to Snowflake Managed MCP over HTTPS with OAuth or a role-restricted PAT. Documented installs and the bundled installer were not executed. No Snowflake account, key, or spend. Distinct from snowflake-managed-mcp."
+  },
+  "related": [
+    "snowflake-managed-mcp"
+  ],
+  "sources": [
+    "https://github.com/Snowflake-Labs/snowflake-ai-kit",
+    "https://github.com/Snowflake-Labs/snowflake-ai-kit/blob/main/README.md",
+    "https://github.com/Snowflake-Labs/snowflake-ai-kit/blob/main/LICENSE",
+    "https://github.com/Snowflake-Labs/snowflake-ai-kit/blob/main/LICENSE-SKILLS.md",
+    "https://raw.githubusercontent.com/Snowflake-Labs/snowflake-ai-kit/main/README.md",
+    "https://raw.githubusercontent.com/Snowflake-Labs/snowflake-ai-kit/main/LICENSE",
+    "https://raw.githubusercontent.com/Snowflake-Labs/snowflake-ai-kit/main/LICENSE-SKILLS.md",
+    "https://api.github.com/repos/Snowflake-Labs/snowflake-ai-kit",
+    "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-cli"
+  ],
+  "maintainer": "Snowflake Inc.",
+  "added": "2026-11-25",
+  "updated": "2026-11-25",
+  "last_verified": "2026-11-25",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
