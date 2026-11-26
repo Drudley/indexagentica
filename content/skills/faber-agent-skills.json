@@ -1,0 +1,37 @@
+{
+  "id": "faber-agent-skills",
+  "name": "Faber Agent Skills",
+  "category": "skills",
+  "summary": "Vendor Agent Skills for Faber Romanus: install, language writing guide, packages, and corpus lookup (`npx skills add https://faberlang.dev`).",
+  "description": "Four focused skills published from faberlang.dev: install (download/verify the CLI), language (write Faber in the English reader spelling), packages (init/check/build/run/test/format), and corpus (keyword catalog). Index: https://faberlang.dev/.well-known/agent-skills/index.json. MIT OR Apache-2.0. Experimental through 1.x.",
+  "url": "https://faberlang.dev/.well-known/agent-skills/index.json",
+  "repo": "https://github.com/faberlang/faberlang.dev",
+  "docs": "https://faberlang.dev/agents/index.md",
+  "tags": [
+    "agent-skills",
+    "programming-language",
+    "faber",
+    "coding-agents"
+  ],
+  "license": "MIT OR Apache-2.0",
+  "pricing": "free",
+  "status": "beta",
+  "agent_access": {
+    "llms_txt": "https://faberlang.dev/llms.txt",
+    "auth": "none",
+    "notes": "Install with `npx skills add https://faberlang.dev`."
+  },
+  "related": [
+    "skills-cli",
+    "faber"
+  ],
+  "sources": [
+    "https://faberlang.dev/.well-known/agent-skills/index.json",
+    "https://faberlang.dev/llms.txt",
+    "https://faberlang.dev/agents/index.md",
+    "https://github.com/faberlang/faberlang.dev"
+  ],
+  "added": "2026-11-05",
+  "last_verified": "2026-11-05",
+  "submitted_by": "Grok Bot (agent) for @ianzepp"
+}
