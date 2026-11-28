@@ -2,13 +2,13 @@
 id: official-vendor-skill-packs
 type: comparison
 title: Official vendor Agent Skills packs compared
-summary: "Compare 11 official vendor Agent Skills packs (AWS, Microsoft, Stripe, Playwright, PlanetScale, Notion, PostHog, Firecrawl, ElevenLabs, CrewAI, Mastra) on documented install steps, scope, and how each handles approvals, credentials and sandbox or test modes."
-description: "A source-checked comparison of official vendor Agent Skills packs listed in the directory on 16 November 2026: aws-skills, microsoft-skills, stripe-skills, playwright-skills, planetscale-skills, notion-skills, posthog-skills, firecrawl-skills, elevenlabs-skills, crewai-skills and mastra-skills. For each pack it records the install commands or steps published in official docs or the official repo, how narrowly the pack is scoped (what the skills cover, any published count, and which surfaces — plugins, CLI, MCP, well-known indexes), and what those same sources say about approvals, destructive operations, credentials, and test or sandbox modes. Where a vendor is silent, the cell says not documented. It does not repeat the installers-and-registries comparison, invent skill totals, or run the installers. Distinct from MCP-server comparisons."
+summary: "Compare 12 official vendor Agent Skills packs (AWS, Microsoft, Stripe, Playwright, PlanetScale, Notion, PostHog, Firecrawl, ElevenLabs, CrewAI, Mastra, Adobe) on documented install steps, scope, and how each handles approvals, credentials and sandbox or test modes."
+description: "A source-checked comparison of official vendor Agent Skills packs listed in the directory (eleven on 16 November 2026, adobe-skills checked on 28 November 2026): aws-skills, microsoft-skills, stripe-skills, playwright-skills, planetscale-skills, notion-skills, posthog-skills, firecrawl-skills, elevenlabs-skills, crewai-skills, mastra-skills and adobe-skills. For each pack it records the install commands or steps published in official docs or the official repo, how narrowly the pack is scoped (what the skills cover, any published count, and which surfaces — plugins, CLI, MCP, well-known indexes), and what those same sources say about approvals, destructive operations, credentials, and test or sandbox modes. Where a vendor is silent, the cell says not documented. It does not repeat the installers-and-registries comparison, invent skill totals, or run the installers. Distinct from MCP-server comparisons."
 author: Agentica Author
 tags: [agent-skills, vendor, plugins, install, safety, approvals]
-entries: ["aws-skills", "microsoft-skills", "stripe-skills", "playwright-skills", "planetscale-skills", "notion-skills", "posthog-skills", "firecrawl-skills", "elevenlabs-skills", "crewai-skills", "mastra-skills", "agent-skills-spec", "skills-cli", "aws-mcp-servers", "stripe-mcp", "notion-mcp", "playwright-mcp", "azure-skills", crewai, mastra]
-related: [agent-skill-packs-and-installers, install-and-vet-a-vendor-skill-pack, add-mcp-servers-to-claude-code, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, pick-an-mcp-server, discover-agent-interfaces, give-your-coding-agent-up-to-date-docs, payment-processor-mcp-servers, work-management-mcp-servers, database-mcp-servers]
-subjects: ["aws-skills", "microsoft-skills", "stripe-skills", "playwright-skills", "planetscale-skills", "notion-skills", "posthog-skills", "firecrawl-skills", "elevenlabs-skills", "crewai-skills", "mastra-skills"]
+entries: ["aws-skills", "microsoft-skills", "stripe-skills", "playwright-skills", "planetscale-skills", "notion-skills", "posthog-skills", "firecrawl-skills", "elevenlabs-skills", "crewai-skills", "mastra-skills", "adobe-skills", "agent-skills-spec", "skills-cli", "aws-mcp-servers", "stripe-mcp", "notion-mcp", "playwright-mcp", "azure-skills", crewai, mastra]
+related: [agent-skill-packs-and-installers, install-and-vet-a-vendor-skill-pack, add-mcp-servers-to-claude-code, connect-an-agent-to-a-remote-mcp-server, connect-remote-mcp, pick-an-mcp-server, discover-agent-interfaces, give-your-coding-agent-up-to-date-docs, payment-processor-mcp-servers, work-management-mcp-servers, database-mcp-servers, database-and-search-skill-packs]
+subjects: ["aws-skills", "microsoft-skills", "stripe-skills", "playwright-skills", "planetscale-skills", "notion-skills", "posthog-skills", "firecrawl-skills", "elevenlabs-skills", "crewai-skills", "mastra-skills", "adobe-skills"]
 criteria:
   - How to install
   - Scope and surfaces
@@ -70,7 +70,12 @@ rows:
     Scope and surfaces: "Two official skills, also at https://mastra.ai/.well-known/skills/. `mastra` is a comprehensive framework skill (setup, docs lookup, troubleshooting, migrations, API CLI, Platform deploy, traces). `mastra-factory` covers the Factory CLI: connection, inspection and user-authorized operations."
     Approvals and destructive ops: "The main `mastra` skill has no pack-level approval contract in the README. `mastra-factory` is documented to cover user-authorized operations and “safe mutations” (details in its factory-cli reference). That is specific to Factory, not a general gate for every Mastra action."
     Credentials and sandbox modes: "Factory notes in the README include first-use CLI/login checks and connecting to your own deployment. A pack-level test-mode or sandbox-key default for Mastra Platform is not documented in the README."
-verdict: "If you need a documented approval model, start with PlanetScale’s Class A–E contract and read-only first pass — no other pack in this set publishes a comparable gate. For everything else, use only the vendor’s official install steps, and treat silence on approvals, keys and test modes as not documented rather than as a default allow. Stripe, AWS and similar packs can reach live accounts through bundled MCP or CLI credentials; Microsoft’s catalog is large and its published skill-count figures disagree, so install selectively. This is not an installers, MCP-server or quality ranking."
+  adobe-skills:
+    How to install: "Claude Code: `/plugin marketplace add adobe/skills`, then `/plugin install aem-edge-delivery-services@adobe-skills`. Copilot CLI: `copilot plugin marketplace add adobe/skills`. Any agent: `npx skills add adobe/skills --list`, `--skill <name>` or `--all`. Antigravity uses `agy plugin install <URL>`."
+    Scope and surfaces: "Apache-2.0 monorepo with 19 marketplace plugins by product or job (AEM Edge Delivery, AEM Cloud Service, App Builder, Commerce, Analytics, CJA, Firefly workflow, Workfront, Semrush and more). The README does not list individual skills; `--list` prints them."
+    Approvals and destructive ops: "No pack-wide approval model. Per the README, adobe-for-developers asks for approval before destructive Developer Console tools run, but the hook that enforces it runs in Claude Code and Copilot CLI only, not Antigravity (issue #666)."
+    Credentials and sandbox modes: "Hosted MCP servers use Adobe IMS or vendor OAuth; Analytics and CJA need IMS headers on every request; run-workflow needs an enterprise Firefly entitlement. `npx skills` installs skills only, without MCP servers or hooks. No test mode documented."
+verdict: "If you need a documented approval model, start with PlanetScale’s Class A–E contract and read-only first pass; no other pack in this set publishes a comparable pack-wide gate (Adobe documents an approval hook for destructive Developer Console tools in two clients). For everything else, use only the vendor’s official install steps, and treat silence on approvals, keys and test modes as not documented. Stripe, AWS and similar packs can reach live accounts; install selectively, pin, and read scripts first. Not a quality ranking."
 sources:
   - title: AWS Agent Toolkit README
     url: https://raw.githubusercontent.com/aws/agent-toolkit-for-aws/main/README.md
@@ -135,14 +140,20 @@ sources:
   - title: "Mastra well-known skills index"
     url: https://mastra.ai/.well-known/skills/index.json
     accessed: 2026-11-17
-last_verified: 2026-11-17
+  - title: "Adobe skills README"
+    url: https://raw.githubusercontent.com/adobe/skills/main/README.md
+    accessed: 2026-11-28
+  - title: "Adobe skills LICENSE"
+    url: https://raw.githubusercontent.com/adobe/skills/main/LICENSE
+    accessed: 2026-11-28
+last_verified: 2026-11-28
 published: 2026-11-17
 ---
 
 
 ## Who this is for
 
-This page compares **official vendor Agent Skills packs** — folders of `SKILL.md` files (and, in some cases, plugins or CLI installers) published by the product vendor. The eleven subjects are the vendor packs added to the directory on 16 November 2026: [AWS](entry:aws-skills), [Microsoft](entry:microsoft-skills), [Stripe](entry:stripe-skills), [Playwright](entry:playwright-skills), [PlanetScale](entry:planetscale-skills), [Notion](entry:notion-skills), [PostHog](entry:posthog-skills), [Firecrawl](entry:firecrawl-skills), [ElevenLabs](entry:elevenlabs-skills), [CrewAI](entry:crewai-skills) and [Mastra](entry:mastra-skills).
+This page compares **official vendor Agent Skills packs** — folders of `SKILL.md` files (and, in some cases, plugins or CLI installers) published by the product vendor. The first eleven subjects are the vendor packs added to the directory on 16 November 2026: [AWS](entry:aws-skills), [Microsoft](entry:microsoft-skills), [Stripe](entry:stripe-skills), [Playwright](entry:playwright-skills), [PlanetScale](entry:planetscale-skills), [Notion](entry:notion-skills), [PostHog](entry:posthog-skills), [Firecrawl](entry:firecrawl-skills), [ElevenLabs](entry:elevenlabs-skills), [CrewAI](entry:crewai-skills) and [Mastra](entry:mastra-skills). [Adobe](entry:adobe-skills) was added on 28 November 2026. The data-platform packs (ClickHouse, Elastic, Weaviate, MongoDB, Redis) are compared in [Skill packs for databases and search](comparison:database-and-search-skill-packs); a comparison holds at most 12 subjects.
 
 It is not a comparison of skill *installers*, registries or harness search paths. That is [Agent skill packs, skills CLIs and registries](comparison:agent-skill-packs-and-installers), which covers the [Agent Skills](entry:agent-skills-spec) format, [skills CLI](entry:skills-cli), and community or first-party packs such as Anthropic’s and Vercel’s. How to add a *remote MCP server* to a client is a different job: see [Connect a remote MCP server](skill:connect-remote-mcp), [Connect an agent to a remote MCP server](guide:connect-an-agent-to-a-remote-mcp-server) and [Add MCP servers to Claude Code](guide:add-mcp-servers-to-claude-code). Several packs here *bundle* MCP config; that does not make this an MCP-server comparison ([Pick an MCP server](skill:pick-an-mcp-server) is the workflow for that).
 
@@ -152,7 +163,7 @@ The build renders the comparison table from the front matter. The notes below on
 
 ## How this was checked
 
-Facts come from official vendor docs or the official repository, fetched on 17 November 2026. Where a README or docs page is silent, the cell says **not documented**. Directory entries were last verified on 16 November 2026; anything that changed in the official sources overnight is called out.
+Facts come from official vendor docs or the official repository, fetched on 17 November 2026. Where a README or docs page is silent, the cell says **not documented**. The first eleven packs were checked on 17 November 2026 and Adobe on 28 November 2026 (README and LICENSE file; Apache-2.0, last pushed 2026-11-28 04:34 Europe/Stockholm). Directory entries for the first eleven were last verified on 16 November 2026; anything that changed in the official sources overnight is called out.
 
 No installer was run. Commands are copied from official pages, not from a trial install. That includes documented `curl | sh` and `install.ps1` snippets (Stripe CLI): they are quoted as the vendor wrote them, not executed here. No API keys, cloud accounts or paid calls were used.
 
@@ -172,6 +183,10 @@ A few commands are easy to miss in the table cells:
 
 Well-known discovery appears where the vendor published it: Stripe at `https://docs.stripe.com/.well-known/skills/index.json` (11 skills on 17 November 2026) and Mastra at `https://mastra.ai/.well-known/skills/`. [Discover a site's agent interfaces](skill:discover-agent-interfaces) is the general probe for those files.
 
+## Adobe, added 28 November 2026
+
+[Adobe’s pack](entry:adobe-skills) is a monorepo of 19 marketplace plugins, several of which register hosted MCP servers that need Adobe sign-in. `npx skills` and `gh upskill` copy skills only, without MCP servers or hooks, so a destructive-tool approval hook the README describes for `adobe-for-developers` does not travel with them. Treat the pack as third-party code: pin to a commit, read `SKILL.md` and plugin hooks in a throwaway clone, and use a least-privilege Adobe role. See [Install and vet a vendor skill pack](guide:install-and-vet-a-vendor-skill-pack).
+
 ## Approvals, credentials and what “not documented” means
 
 [PlanetScale](entry:planetscale-skills) is the only pack in this set that publishes a full approval contract (Class A–E), a read-only first assessment, and an explicit opt-in for autonomy. Cite that README if you need a model to compare others against. Silence in another vendor’s README is not the same as “the pack is read-only” or “the pack will ask first.”
@@ -182,4 +197,4 @@ Microsoft’s catalog is large (Azure SDK and Foundry). Its README also says the
 
 ## What this page does not claim
 
-No quality, latency or “best pack” ranking. No unofficial skill counts. No claim that a documented eval harness or mock test (`pnpm harness … --mock` in Microsoft’s README, ElevenLabs isolated evals) is a live-production sandbox. Entry last_verified dates remain 16 November 2026 unless Curator updates them. No accounts were created and no installers were executed for this page.
+No quality, latency or “best pack” ranking. No unofficial skill counts. No claim that a documented eval harness or mock test (`pnpm harness … --mock` in Microsoft’s README, ElevenLabs isolated evals) is a live-production sandbox. Entry last_verified dates are the Curator’s, not this page’s. No accounts were created and no installers were executed for this page.

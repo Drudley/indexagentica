@@ -2,13 +2,13 @@
 id: cloud-browsers-for-agents
 type: comparison
 title: Cloud browsers for AI agents
-summary: Browserbase, Steel, Browserless, Hyperbrowser, Kernel and Anchor Browser compared on how agents connect, MCP servers, pricing, free allowances, login persistence, recordings, self-hosting and whether an agent can get access without a human signing up.
-description: "A primary-source comparison of six hosted browser services that agents drive over CDP with Playwright or Puppeteer, or through MCP. Prices and limits are list prices from each vendor's pricing page or docs on 2026-10-12. Units differ (browser hours, 30-second units, per-second rates, credits), so estimate with your own session lengths before choosing on price."
+summary: Browserbase, Steel, Browserless, Hyperbrowser, Kernel, Anchor Browser and Cloudbrowser compared on how agents connect, MCP servers, pricing, free allowances, login persistence, recordings, self-hosting and whether an agent can get access without a human signing up.
+description: "A primary-source comparison of seven hosted browser services that agents drive over CDP with Playwright or Puppeteer, or through MCP. Prices and limits are list prices from each vendor's pricing page or docs on 2026-10-12 (Cloudbrowser added 2026-11-28). Units differ (browser hours, 30-second units, per-second rates, credits), so estimate with your own session lengths before choosing on price."
 author: Agentica Author
 tags: [browser-automation, headless-browser, cloud, mcp, web-agents]
-entries: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser, stagehand, browser-use, playwright, playwright-mcp, playwright-cli, agent-browser, lightpanda, skyvern, machine-payments-protocol, web-bot-auth]
+entries: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser, cloudbrowser, stagehand, browser-use, playwright, playwright-mcp, playwright-cli, agent-browser, lightpanda, skyvern, machine-payments-protocol, web-bot-auth]
 related: [code-sandboxes, agent-payment-rails, research-agent, connect-an-agent-to-a-remote-mcp-server, agent-benchmarks]
-subjects: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser]
+subjects: [browserbase, steel, browserless, hyperbrowser, kernel, anchor-browser, cloudbrowser]
 criteria:
   - How agents connect
   - Official MCP server
@@ -73,7 +73,16 @@ rows:
     Recordings: Session recording on by default; live view
     Open source or self-host: "Platform is closed; bring-your-own-cloud and on-premises on Enterprise"
     Agent access without a human sign-up: "Yes: Agent Access issues an API key after the agent solves a short puzzle (1 credit anonymous, 5 credits with a verified-email OIDC token)"
-verdict: "Kernel (pay per browser over MPP, no account) and Anchor (puzzle-based API key) are the only two here that an agent can start without a human creating an account. For self-hosting, Steel's Apache-2.0 steel-browser is the most permissive, but it runs one session at a time; Browserless self-hosting is SSPL or commercial. Browserbase fits teams already on Stagehand. Kernel's per-second billing with free standby suits sessions that idle between steps. Billing units differ, so price your own session lengths."
+  cloudbrowser:
+    How agents connect: "Browser-level CDP over authenticated WSS (docs show playwright-cli and agent-browser attaching); REST API (OpenAPI 0.6.0); Go CLI. The docs say end-to-end integrations are not yet verified."
+    Official MCP server: "None found in the llms.txt, docs index or OpenAPI used"
+    Browser price: "Free; Basic $20/mo with 250 browser-hours, then $0.08/h; Pro $99/mo with 1,250 h, then $0.06/h. Model-provider usage is separate"
+    Free allowance: "Free plan: 1 browser-hour per UTC month and 1 running browser; browsers pause when it runs out, with no Free overage"
+    Login persistence: "Persistent Chrome profile kept on pause; fork a paused browser into an independent profile. External website sessions may not survive resume"
+    Recordings: "Live View of the full desktop (read-only by default, optional read and write). Recordings or replays are not documented; recent blocked-request logs are not available"
+    Open source or self-host: "Closed hosted service; no self-hosting documented. OpenAPI says Chrome runs on Fly Sprites"
+    Agent access without a human sign-up: "Not documented; register through Auth0 and verify email, then agents and CI use a workspace API key (CLOUDBROWSER_API_KEY)"
+verdict: "Kernel (pay per browser over MPP, no account) and Anchor (puzzle-based API key) are the only ones here an agent can start without a human creating an account. Steel's Apache-2.0 steel-browser is the most permissive to self-host, but runs one session at a time. Browserbase fits teams on Stagehand. Cloudbrowser is a young, closed service: persistent profiles, Live View and a domain allowlist, but no documented MCP server or recordings. Price your own session lengths."
 sources:
   - {title: Browserbase plans, url: "https://docs.browserbase.com/account/billing/plans", accessed: 2026-10-12}
   - {title: Browserbase MCP server, url: "https://docs.browserbase.com/integrations/mcp/introduction", accessed: 2026-10-12}
@@ -81,16 +90,16 @@ sources:
   - {title: Browserbase docs index (llms.txt), url: "https://docs.browserbase.com/llms.txt", accessed: 2026-10-12}
   - {title: browserbase/mcp-server-browserbase (archived), url: "https://github.com/browserbase/mcp-server-browserbase", accessed: 2026-10-12}
   - {title: Stagehand repository, url: "https://github.com/browserbase/stagehand", accessed: 2026-10-12}
-  - {title: Steel pricing and limits, url: "https://docs.steel.dev/overview/pricinglimits", accessed: 2026-10-12}
-  - {title: Steel Local vs Steel Cloud, url: "https://docs.steel.dev/overview/self-hosting/steel-local-vs-steel-cloud", accessed: 2026-10-12}
-  - {title: Steel docs index (llms.txt), url: "https://docs.steel.dev/llms.txt", accessed: 2026-10-12}
+  - {title: Steel pricing and limits, url: "https://steel.dev/docs/platform/pricing", accessed: 2026-10-12}
+  - {title: Steel Local vs Steel Cloud, url: "https://steel.dev/docs/self-hosting/steel-browser", accessed: 2026-10-12}
+  - {title: Steel docs index (llms.txt), url: "https://steel.dev/llms.txt", accessed: 2026-10-12}
   - {title: steel-dev/steel-browser, url: "https://github.com/steel-dev/steel-browser", accessed: 2026-10-12}
   - {title: steel-dev/steel-mcp-server, url: "https://github.com/steel-dev/steel-mcp-server", accessed: 2026-10-12}
   - {title: Browserless pricing, url: "https://www.browserless.io/pricing", accessed: 2026-10-12}
   - {title: Browserless unit consumption, url: "https://docs.browserless.io/overview/unit-consumption", accessed: 2026-10-12}
   - {title: Browserless MCP setup, url: "https://docs.browserless.io/mcp/browserless-mcp-server/setup", accessed: 2026-10-12}
   - {title: Browserless docs index (llms.txt), url: "https://docs.browserless.io/llms.txt", accessed: 2026-10-12}
-  - {title: Browserless license, url: "https://github.com/browserless/browserless/blob/main/LICENSE", accessed: 2026-10-12}
+  - {title: Browserless license, url: "https://raw.githubusercontent.com/browserless/browserless/main/LICENSE", accessed: 2026-10-12}
   - {title: Hyperbrowser pricing (docs), url: "https://hyperbrowser.ai/docs/pricing", accessed: 2026-10-12}
   - {title: Hyperbrowser MCP, url: "https://hyperbrowser.ai/docs/integrations/model-context-protocol", accessed: 2026-10-12}
   - {title: Hyperbrowser recordings, url: "https://hyperbrowser.ai/docs/sessions/recordings", accessed: 2026-10-12}
@@ -107,29 +116,36 @@ sources:
   - {title: Anchor hosted MCP, url: "https://docs.anchorbrowser.io/advanced/mcp", accessed: 2026-10-12}
   - {title: Anchor session recording, url: "https://docs.anchorbrowser.io/essentials/recording", accessed: 2026-10-12}
   - {title: Anchor managed authentication, url: "https://docs.anchorbrowser.io/essentials/managed-authentication", accessed: 2026-10-12}
-last_verified: 2026-10-12
+  - {title: Cloudbrowser docs index (llms.txt), url: "https://cloudbrowser.tv/llms.txt", accessed: 2026-11-28}
+  - {title: Cloudbrowser pricing, url: "https://cloudbrowser.tv/pricing", accessed: 2026-11-28}
+  - {title: Cloudbrowser browser lifecycle, url: "https://cloudbrowser.tv/docs/browsers", accessed: 2026-11-28}
+  - {title: Cloudbrowser connect your tools, url: "https://cloudbrowser.tv/docs/connections", accessed: 2026-11-28}
+  - {title: Cloudbrowser access and link security, url: "https://cloudbrowser.tv/docs/security", accessed: 2026-11-28}
+  - {title: Cloudbrowser usage and billing, url: "https://cloudbrowser.tv/docs/billing", accessed: 2026-11-28}
+  - {title: Cloudbrowser OpenAPI, url: "https://cloudbrowser.tv/openapi.json", accessed: 2026-11-28}
+last_verified: 2026-11-28
 published: 2026-10-12
 ---
 
 ## What this compares
 
-All six services run Chromium in the cloud so your agent doesn't have to manage a browser fleet. The table covers what decides a choice for agent work: how the agent attaches, whether there is an MCP server, what a browser hour costs, what you get free, how logins survive between sessions, whether you can watch a failed run afterwards, and whether you can run it yourself.
+All seven services run Chromium in the cloud so your agent doesn't have to manage a browser fleet. The table covers what decides a choice for agent work: how the agent attaches, whether there is an MCP server, what a browser hour costs, what you get free, how logins survive between sessions, whether you can watch a failed run afterwards, and whether you can run it yourself.
 
-Every price and limit comes from the vendor's own pricing page or docs as of 2026-10-12. Vendors bill in different units: Browserbase and Steel in browser hours billed per minute, Browserless in 30-second units, Kernel per second, and Hyperbrowser and Anchor in credits. A one-line hourly comparison would mislead, so work out the cost for your own session lengths.
+Every price and limit comes from the vendor's own pricing page or docs as of 2026-10-12 (Cloudbrowser: 2026-11-28). Vendors bill in different units: Browserbase and Steel in browser hours billed per minute, Browserless in 30-second units, Kernel per second, Hyperbrowser and Anchor in credits, and Cloudbrowser in browser-hours per month with overage. A one-line hourly comparison would mislead, so work out the cost for your own session lengths.
 
 ## Pick by situation
 
 - **The agent has to start without you.** [Kernel](entry:kernel) sells a single browser over the [Machine Payments Protocol](entry:machine-payments-protocol). The agent `POST`s to `https://api.onkernel.com/mpp/browsers`, gets an HTTP `402` offer, pays $0.50 through Stripe's Link CLI for one stealth headful browser for 30 minutes, and gets back a `cdp_ws_url`. No account or API key is involved, but a person still approves the Link payment. [Anchor Browser](entry:anchor-browser)'s Agent Access issues an API key with a small credit allowance to an agent that solves a short puzzle (`GET /v1/agent-access/challenge`, then `POST /v1/agent-access`).
-- **You already have Playwright or Puppeteer scripts.** All six accept a CDP connection, so usually only the connect URL changes. Browserless documents it as replacing `launch()` with `connect()` (Puppeteer) or using `connectOverCDP()` (Playwright).
-- **You want MCP, not code.** Browserbase, Browserless, Kernel and Anchor run hosted Streamable HTTP endpoints, so there is nothing to install. Steel and Hyperbrowser ship MCP servers you run locally over stdio. For how to wire a remote server into a client, see [Connect an agent to a remote MCP server](guide:connect-an-agent-to-a-remote-mcp-server).
+- **You already have Playwright or Puppeteer scripts.** All seven accept a CDP connection, so usually only the connect URL changes. Browserless documents it as replacing `launch()` with `connect()` (Puppeteer) or using `connectOverCDP()` (Playwright).
+- **You want MCP, not code.** Browserbase, Browserless, Kernel and Anchor run hosted Streamable HTTP endpoints, so there is nothing to install. Steel and Hyperbrowser ship MCP servers you run locally over stdio. Cloudbrowser has none documented; use its CDP URL or REST API. For how to wire a remote server into a client, see [Connect an agent to a remote MCP server](guide:connect-an-agent-to-a-remote-mcp-server).
 - **You need to self-host.** Steel's `steel-browser` is Apache-2.0 and runs in Docker, but self-hosted Steel runs one session at a time and has no CAPTCHA solving or Credentials API. Browserless self-hosts from Docker under SSPL-1.0, or under a paid commercial license for closed-source or CI use. Kernel open-sources its browser images (`kernel-images`, Apache-2.0), but not the managed platform with pools, profiles and auth.
-- **Logins have to persist.** Every service here can reuse cookies and storage across sessions (contexts or profiles). Kernel and Anchor go further with managed authentication that re-runs a login when it expires. Store as little as you can. A saved profile is a live credential.
+- **Logins have to persist.** Every service here can reuse cookies and storage across sessions (contexts or profiles). Kernel and Anchor go further with managed authentication that re-runs a login when it expires. Cloudbrowser keeps a persistent Chrome profile per browser. Store as little as you can. A saved profile is a live credential.
 
 ## Hosted browser or local framework
 
 A cloud browser is infrastructure. You still need something that decides what to click:
 
-- [Playwright](entry:playwright) and [Puppeteer](entry:puppeteer) are deterministic scripting libraries. Every service above accepts their CDP connection.
+- [Playwright](entry:playwright) and [Puppeteer](entry:puppeteer) are deterministic scripting libraries. Every service above accepts their CDP connection (Cloudbrowser documents it with playwright-cli and agent-browser).
 - [Stagehand](entry:stagehand) (MIT, by Browserbase) and [Browser Use](entry:browser-use) (MIT) add LLM-driven actions and extraction on top of a browser. Both can point at a remote browser.
 - [Playwright MCP](entry:playwright-mcp) and [Playwright CLI](entry:playwright-cli) (both Apache-2.0, Microsoft) and Vercel Labs' [agent-browser](entry:agent-browser) (Apache-2.0) give a coding agent a local browser with no cloud account.
 - [Skyvern](entry:skyvern) (AGPL-3.0) drives the browser from screenshots. [Lightpanda](entry:lightpanda) (AGPL-3.0) is a headless browser built from scratch rather than a Chromium wrapper.
@@ -137,6 +153,9 @@ A cloud browser is infrastructure. You still need something that decides what to
 A local browser is enough for development and for sites that don't block datacenter traffic. Move to a hosted one when you need concurrency, residential proxies, CAPTCHA handling, session recordings, or isolation from the machine your agent runs on. Pages are untrusted input either way. Treat any text a page shows the agent as data, not instructions.
 
 ## Notes on the table
+
+- **Cloudbrowser links are bearer secrets.** Its docs say a CDP link gives full Chrome control to anyone holding the URL, links do not expire until the owner revokes them, and a saved profile may hold cookies and sessions. Keep URLs out of logs and prompts, name one link per agent, revoke after use, and use a throwaway profile for untrusted pages. New browsers default to unrestricted website access; set the domain allow-list or block-all yourself. Its docs warn the domain rules are not a strict URL allowlist, and allowed destinations can still receive data.
+- **Cloudbrowser's Free plan needs an account.** One browser-hour per month; paid plans renew on their subscription anniversary, with cards and invoices managed through Stripe. Paid plans bill overage ($0.08/h Basic, $0.06/h Pro), and no spend-cap setting is documented in the sources used, so check usage before long runs. Storage and retention terms are listed as still being finalized.
 
 - **Free tiers are small on purpose.** Browserbase's free hour, Browserless's 2-minute session cap and Steel's 15-minute Launch sessions are fine for trying an integration, not for running an agent.
 - **CAPTCHA solving and proxies are often paid add-ons.** Browserbase has no proxies or CAPTCHA solving on the free plan. Steel requires a $10 deposit on Launch before CAPTCHA solving or Steel proxies work. Kernel's free plan has no configurable proxies.
