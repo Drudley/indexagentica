@@ -98,11 +98,13 @@ async function get(url, extra = {}) {
   }
 }
 
-const listedInLlms = (llms, { id, path, route }) => {
+const listedInLlms = (llms, { id, page, md, path, route }) => {
   if (!llms) return false;
-  if (llms.includes(path) || llms.includes(path.replace(/\/$/, ''))) return true;
+  const paths = [page, md, path].filter(Boolean);
+  for (const p of paths) {
+    if (llms.includes(p) || llms.includes(p.replace(/\/$/, ''))) return true;
+  }
   if (llms.includes(`/${route}/${id}.md`) || llms.includes(`/${route}/${id}`)) return true;
-  // entries
   if (route === 'entries' && (llms.includes(`/entries/${id}/`) || llms.includes(`/entries/${id}.md`) || llms.includes(`/entries/${id}`))) return true;
   return llms.includes(id);
 };
