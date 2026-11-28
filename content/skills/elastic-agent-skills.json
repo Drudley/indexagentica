@@ -2,8 +2,8 @@
   "id": "elastic-agent-skills",
   "name": "Elastic Agent Skills",
   "category": "skills",
-  "summary": "Official Apache-2.0 Agent Skills pack (Technical Preview) with 31 named skills across Cloud, Elasticsearch, Kibana, Observability and Security.",
-  "description": "elastic/agent-skills is the official Agent Skills repository for Elastic products. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-03-06 and last pushed 2026-11-23T16:03:29Z (2026-11-23 17:03:29 Europe/Stockholm). Official README marks the pack as Technical Preview (early release under active development; expect changes) and lists 31 named skills in five official groups: Cloud (cloud-onboarding, cloud-provisioning), Elasticsearch (elasticsearch-anomaly-detection, elasticsearch-anomaly-detection-explainer, elasticsearch-cluster-health, elasticsearch-esql, elasticsearch-index-design, elasticsearch-ingest, elasticsearch-onboarding, elasticsearch-query-optimization, elasticsearch-reindex, elasticsearch-search-relevance), Kibana (kibana-agent-builder, kibana-alerting-rules, kibana-anomaly-detection, kibana-cases, kibana-context-engine, kibana-dashboards, kibana-workflows), Observability (observability-csp-investigation, observability-k8s-investigation, observability-llm-obs, observability-onboarding, observability-service-reliability, observability-sre-triage), and Security (security-alert-analysis, security-alert-triage, security-case-management, security-detection-rule-management, security-generate-security-sample-data, security-ml-integrations). Documented skill installs were not executed. Elastic Cloud usage is separate and was not purchased. This pack is distinct from the already catalogued elastic-agent-builder-mcp.",
+  "summary": "Official Apache-2.0 Agent Skills pack (Technical Preview) with 32 named skills across Cloud, Elasticsearch, Kibana, Observability and Security.",
+  "description": "elastic/agent-skills is the official Agent Skills repository for Elastic products. Official LICENSE is Apache License 2.0. The repository is not archived; created 2026-03-06 and last pushed 2026-11-25T12:11:28Z (2026-11-25 13:11:28 Europe/Stockholm). Official README marks the pack as Technical Preview (early release under active development; expect changes) and lists 32 named skills in five official groups (re-counted 2026-11-28 from the README tables; a duplicate plugins/ tree has the same 32 names): Cloud (cloud-onboarding, cloud-provisioning), Elasticsearch (elasticsearch-anomaly-detection, elasticsearch-anomaly-detection-explainer, elasticsearch-cluster-health, elasticsearch-esql, elasticsearch-index-design, elasticsearch-ingest, elasticsearch-onboarding, elasticsearch-query-optimization, elasticsearch-reindex, elasticsearch-search-relevance), Kibana (kibana-agent-builder, kibana-alerting-rules, kibana-anomaly-detection, kibana-cases, kibana-context-engine, kibana-dashboards, kibana-workflows), Observability (observability-csp-investigation, observability-k8s-investigation, observability-llm-obs, observability-onboarding, observability-service-reliability, observability-sre-triage), and Security (security-alert-analysis, security-alert-triage, security-case-management, security-detection-rule-management, security-generate-security-sample-data, security-ml-integrations, and security-threat-hunting). Documented skill installs were not executed. Elastic Cloud usage is separate and was not purchased. This pack is distinct from the already catalogued elastic-agent-builder-mcp.",
   "url": "https://github.com/elastic/agent-skills",
   "repo": "https://github.com/elastic/agent-skills",
   "docs": "https://github.com/elastic/agent-skills/blob/main/README.md",
@@ -32,8 +32,8 @@
   ],
   "maintainer": "Elastic",
   "added": "2026-11-24",
-  "updated": "2026-11-24",
-  "last_verified": "2026-11-24",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

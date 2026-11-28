@@ -1,0 +1,39 @@
+{
+  "id": "mcpjam-inspector",
+  "name": "MCPJam",
+  "category": "evals-observability",
+  "summary": "Open-source testing and evals platform for MCP server developers: inspector, OAuth debugger, cross-client evals and CI checks, run via npx or the hosted app. Apache-2.0; free tier plus paid plans.",
+  "url": "https://www.mcpjam.com/",
+  "repo": "https://github.com/MCPJam/inspector",
+  "docs": "https://docs.mcpjam.com/",
+  "tags": [
+    "mcp",
+    "testing",
+    "evals",
+    "inspector",
+    "oauth",
+    "ci",
+    "debugging"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "maintainer": "MCPJam",
+  "description": "MCPJam (repository MCPJam/inspector, README and LICENSE say Apache-2.0; the GitHub license API shows NOASSERTION, so check the LICENSE file; not archived). README: 'testing and evaluations platform for MCP server developers': interactively test tools, prompts, resources and authorization across 18 client configurations and 170+ models, trace every JSON-RPC message and OAuth exchange, run cross-client evals, and automate conformance and behaviour checks in CI/CD. Access: use the hosted app at https://app.mcpjam.com, or run locally with `npx @mcpjam/inspector@latest` (HTTP/S and local stdio servers). MCPJam is a client-side testing tool, not an MCP server; it needs no MCP endpoint of its own. Pricing page (fetched 2026-11-28): Free $0/month, no card, 200 credits per day, unlimited seats, with playground, OAuth debugger, evals, 30-day trace history and CI/CD checks; Pro from $24/month billed annually (more tiers exist; see the page). Hosted use sends your MCP traffic and test runs through MCPJam's service, so avoid pointing it at production servers holding sensitive data unless the terms suit you (editorial). No telemetry statement was found in the README. Documented npx and hosted sign-ups were not executed and no account was created.",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Run locally with npx @mcpjam/inspector@latest or use the hosted app; it connects to the MCP servers you give it. Free tier has daily credits; paid plans on the pricing page. No hosted MCP endpoint of its own. Not run; no account created."
+  },
+  "sources": [
+    "https://www.mcpjam.com/",
+    "https://www.mcpjam.com/pricing",
+    "https://docs.mcpjam.com/",
+    "https://github.com/MCPJam/inspector",
+    "https://raw.githubusercontent.com/MCPJam/inspector/main/README.md",
+    "https://api.github.com/repos/MCPJam/inspector"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

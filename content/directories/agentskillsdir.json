@@ -3,7 +3,7 @@
   "name": "AgentSkillsDir",
   "category": "directories",
   "summary": "Free Orbitlane Labs LLC directory of source-pinned Claude skills, MCP servers, plugins and agents. Not a security audit; not agent-skills-hub.",
-  "description": "Vendor-affiliated listing (GitHub pull request #57 was submitted by an agent for contact@agentskillsdir.com; claims below were checked on official pages). AgentSkillsDir is the directory at https://agentskillsdir.com/ (www 301-redirects to the apex; trailing slashes on /about and /terms 307-redirect to the no-slash URLs). It is operated by Orbitlane Labs LLC, 30 N Gould St Ste R, Sheridan, Wyoming 82801, United States (contact@orbitlanelabs.com; directory mail contact@agentskillsdir.com and submit@agentskillsdir.com). Official About: it is an independent directory, not affiliated with any listed publisher. (Editorial note, not from the About page: it is a different site from Agent Skills Hub (agentskillshub.top), which is catalogued separately.) As of this fetch, official About, refund and footer counts are 345 Claude skills, 42 MCP servers, 10 plugins, 2 agents, 4 applications and 3 model notes. Official method: short editorial summaries from pinned public repositories or, for hosted MCP services, official Registry metadata and publisher documentation; repository commits pin source; Registry versions identify metadata, not server code; they record the date checked and do not install or execute entries. Official wording: listed is not a security review; they do not have star, download or install counts and do not rank by them; repository licensing can differ from individual skill terms. Terms of Use last updated 19 October 2026 and refund policy last updated 17 October 2026: the current service is free; no payments or ads are active; submitting and listing are free; they do not sell placements or accept payment for listings. The refund page says there is therefore no purchase or refund workflow; if you see a charge you believe is connected to AgentSkillsDir, contact contact@orbitlanelabs.com. Optional analytics requires consent (also in llms.txt). No public GitHub repository was found. No signup or spend.",
+  "description": "Vendor-affiliated listing (GitHub pull request #57 was submitted by an agent for contact@agentskillsdir.com; claims below were checked on official pages). AgentSkillsDir is the directory at https://agentskillsdir.com/ (www 301-redirects to the apex; trailing slashes on /about and /terms 307-redirect to the no-slash URLs). It is operated by Orbitlane Labs LLC, 30 N Gould St Ste R, Sheridan, Wyoming 82801, United States (contact@orbitlanelabs.com; directory mail contact@agentskillsdir.com and submit@agentskillsdir.com). Official About: it is an independent directory, not affiliated with any listed publisher. (Editorial note, not from the About page: it is a different site from Agent Skills Hub (agentskillshub.top), which is catalogued separately.) As of this fetch, official About, refund and footer counts are 345 Claude skills, 42 MCP servers, 10 plugins, 2 agents, 4 applications and 3 model notes. Official method: short editorial summaries from pinned public repositories or, for hosted MCP services, official Registry metadata and publisher documentation; repository commits pin source; Registry versions identify metadata, not server code; they record the date checked and do not install or execute entries. Official wording: listed is not a security review; they do not have star, download or install counts and do not rank by them; repository licensing can differ from individual skill terms. Terms of Use last updated 19 October 2026 and refund policy last updated 17 October 2026: the current service is free; no payments or ads are active; submitting and listing are free; they do not sell placements or accept payment for listings. The refund page says there is therefore no purchase or refund workflow; if you see a charge you believe is connected to AgentSkillsDir, contact contact@orbitlanelabs.com. Optional analytics requires consent (also in llms.txt). Re-checked 2026-11-28: the home page's 'How we rank' link points to https://agentskillsdir.com/about#ranking (page returns 200 and has a 'How lists are ordered' section); a guessed https://agentskillsdir.com/how-we-rank returns 404, but that URL is not the link target, so a 404 on 'How we rank' was not reproduced. The site also has https://agentskillsdir.com/methodology (200, collection and scoring methodology: GitHub topic search, 25-star and 90-day-push thresholds, 100-point quality formula, static-risk formula, manual refresh). Plain scripted requests to agentskillsdir.com from the curator's box were answered with a Vercel Security Checkpoint (HTTP 429) page, so agents without a browser may be blocked by the edge. No public GitHub repository was found. No signup or spend.",
   "url": "https://agentskillsdir.com/",
   "docs": "https://agentskillsdir.com/about",
   "tags": [
@@ -17,7 +17,7 @@
   "agent_access": {
     "llms_txt": "https://agentskillsdir.com/llms.txt",
     "auth": "none",
-    "notes": "Public catalog, llms.txt, About, Terms and Privacy need no login. No hosted MCP endpoint is offered for the directory itself. Official pages say payments and advertising are inactive and optional analytics requires consent. No account was created."
+    "notes": "Public catalog, llms.txt, About, Terms and Privacy need no login. No hosted MCP endpoint is offered for the directory itself. Official pages say payments and advertising are inactive and optional analytics requires consent. Scripted curl requests from the curator box got a Vercel Security Checkpoint (HTTP 429) on 2026-11-28; pages were readable via a fetch service. No account was created."
   },
   "related": [
     "agent-skills-hub",
@@ -29,12 +29,13 @@
     "https://agentskillsdir.com/about",
     "https://agentskillsdir.com/terms",
     "https://agentskillsdir.com/privacy",
-    "https://agentskillsdir.com/refund"
+    "https://agentskillsdir.com/refund",
+    "https://agentskillsdir.com/methodology"
   ],
   "maintainer": "Orbitlane Labs LLC",
   "added": "2026-11-24",
-  "updated": "2026-11-25",
-  "last_verified": "2026-11-24",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
   "submitted_by": "agentica-curator",
   "status": "active"
 }

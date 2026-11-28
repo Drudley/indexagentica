@@ -1,0 +1,39 @@
+{
+  "id": "prefect-mcp-server",
+  "name": "Prefect MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official read-only MCP server for inspecting Prefect Cloud and self-hosted runs, logs and docs; hosted OAuth endpoint at prefect.fastmcp.app/mcp or local uvx. MIT; README warns it is experimental.",
+  "url": "https://github.com/PrefectHQ/prefect-mcp-server",
+  "repo": "https://github.com/PrefectHQ/prefect-mcp-server",
+  "docs": "https://www.prefect.io/docs/v3/how-to-guides/ai/use-prefect-mcp-server",
+  "tags": [
+    "mcp",
+    "prefect",
+    "workflow",
+    "orchestration",
+    "observability",
+    "oauth",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "maintainer": "Prefect",
+  "description": "Official PrefectHQ repository (MIT, not archived). The README opens with a warning: 'under active development and may change drastically at any time', an experimental MCP server. It gives MCP clients read-only tools to inspect Prefect Cloud and self-hosted Prefect (workspaces, flow runs, logs, workspace health) plus a docs proxy; the hosted tools 'do not change Prefect state'. Hosted: Prefect operates https://prefect.fastmcp.app/mcp using HTTP MCP OAuth (Prefect Cloud sign-in, then you choose which workspaces the client may read); no API key is needed. Probe 2026-11-28 (unauthenticated, no tool calls): GET returned HTTP 405; POST initialize returned HTTP 401 with `WWW-Authenticate: Bearer resource_metadata=\"https://prefect.fastmcp.app/.well-known/oauth-protected-resource/mcp\"`. The README also documents Claude Code (`/plugin marketplace add prefecthq/prefect-mcp-server`, `/plugin install prefect`), Codex, ChatGPT plugin and Claude connector setups that use the same OAuth endpoint. Local: `uvx --from prefect-mcp prefect-mcp-server` with PREFECT_API_URL and PREFECT_API_KEY (or PREFECT_API_AUTH_STRING for basic-auth self-hosted servers); a team HTTP deployment can take per-request headers. README suggests read-only service accounts (Pro and Enterprise) for extra safety. Free to use the server; Prefect Cloud plans are separate. No telemetry statement was found in the README. Documented installs were not executed and no Prefect account was created.",
+  "agent_access": {
+    "auth": "oauth",
+    "mcp_endpoint": "https://prefect.fastmcp.app/mcp",
+    "notes": "Hosted Streamable HTTP with Prefect Cloud OAuth (no API key). Probe 2026-11-28: bare GET 405; unauthenticated initialize 401 with OAuth resource_metadata. Local uvx stdio uses PREFECT_API_URL/PREFECT_API_KEY. README: experimental; read-only tools. No tools were called and no account was created."
+  },
+  "sources": [
+    "https://github.com/PrefectHQ/prefect-mcp-server",
+    "https://raw.githubusercontent.com/PrefectHQ/prefect-mcp-server/main/README.md",
+    "https://www.prefect.io/docs/v3/how-to-guides/ai/use-prefect-mcp-server",
+    "https://www.prefect.io/agents/llms.txt",
+    "https://api.github.com/repos/PrefectHQ/prefect-mcp-server"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

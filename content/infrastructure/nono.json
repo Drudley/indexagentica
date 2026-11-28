@@ -1,0 +1,38 @@
+{
+  "id": "nono",
+  "name": "nono",
+  "category": "infrastructure",
+  "summary": "Open-source agent runtime security tool: kernel-enforced sandboxing for coding agents, their tools, credentials and skills, as one unprivileged binary on macOS, Linux and WSL2. Apache-2.0, pre-1.0.",
+  "url": "https://nono.sh/",
+  "repo": "https://github.com/nolabs-ai/nono",
+  "docs": "https://nono.sh/docs/introduction",
+  "tags": [
+    "sandbox",
+    "security",
+    "agents",
+    "runtime",
+    "credentials",
+    "kernel",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "maintainer": "nolabs-ai",
+  "description": "Repository nolabs-ai/nono (Apache-2.0, not archived; created 2026-01-31; README says it is built by the team behind Sigstore). README note: in the lead-up to a 1.0 release APIs are stabilizing and may still change. Described as a complete agent runtime security tool: sandbox tools in their own ephemeral sandboxes with explicit permissions for files, network, environment variables and credentials (the README's example: the aws CLI can use a credential but curl cannot), and protect the skills and instructions agents follow. Works with Claude Code, Codex, Copilot, OpenCode, Goose, OpenClaw, Hermes, Pi or agents built on ADK, Mastra, Pydantic AI and LangChain. Single binary, no root; runs on laptops, Kubernetes pods, CI, containers or microVMs; supports macOS, Linux and Windows via WSL2. Install disclosure: `curl -fsSL https://nono.sh/install.sh | sh` (pipes a remote script to a shell; inspect first), `brew install nono`, nix, or distro packages; none were executed. It is a local tool: no hosted endpoint, MCP server or account is documented, and no pricing beyond free open source. No telemetry statement was found in the README. Sandboxing reduces but does not remove risk; test your agent's workflows under the policy before relying on it (editorial).",
+  "agent_access": {
+    "auth": "none",
+    "notes": "Local CLI/runtime; no account, hosted endpoint or MCP server documented. Install script is curl|sh (also brew, nix). README: pre-1.0, APIs may change. Not installed or run."
+  },
+  "sources": [
+    "https://nono.sh/",
+    "https://nono.sh/docs/introduction",
+    "https://github.com/nolabs-ai/nono",
+    "https://raw.githubusercontent.com/nolabs-ai/nono/main/README.md",
+    "https://api.github.com/repos/nolabs-ai/nono"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "smolvm",
+  "name": "smolvm (smol machines)",
+  "category": "infrastructure",
+  "summary": "Branchable microVMs for AI agents: local sandboxing and embeddable SDKs (Node, Python, Rust, Go) with checkpoint/branch, plus optional pay-as-you-go smol cloud. Apache-2.0; $100 sign-up credit.",
+  "url": "https://smolmachines.com/",
+  "repo": "https://github.com/smol-machines/smolvm",
+  "docs": "https://smolmachines.com/docs/sdk",
+  "tags": [
+    "sandbox",
+    "microvm",
+    "vm",
+    "agents",
+    "checkpoint",
+    "embeddable",
+    "rust"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "maintainer": "smol machines",
+  "description": "Repository smol-machines/smolvm (Apache-2.0, not archived; created 2025-12-18). README: 'Branchable microVMs for AI agents'. Local: real VMs with their own kernel, free on your own laptop or servers, boot in under a second, any OCI image, Smolfile declarative config, optional bucket mounts and network policy. Branching: save a running machine mid-execution, rewind it, or branch live copy-on-write children; checkpoints capture RAM, CPU state and disks. Pack a machine into a single .smolmachine file and push it to an OCI registry. Embeddable SDKs run in your process with no daemon: `npm install smolmachines`, `pip install smolmachines`, `cargo add smolmachines`, Go module github.com/smol-machines/smol/sdk/go. Install disclosure: the README's one-liner is `curl -sSL https://smolmachines.com/install.sh | bash` (also `brew install smol-machines/tap/smolvm`); it pipes a remote script to a shell, so inspect it first. Not executed here. Hosted option: smol cloud (https://smolmachines.com/pricing, fetched 2026-11-28, labelled beta): new accounts get $100.00 one-time credit; pay-as-you-go at $0.04 per running machine-hour plus $0.05 per vCPU-hour, $0.0162 per GB-hour memory, $0.0001 per GB-hour disk and $0.05 per GB egress, with plans Standard $0/month (20 machines), Pro $20 + usage, Startup $150 + usage and Enterprise custom; 1-minute minimum per machine. The hosted API needs an account and API key (SMOL_CLOUD_TOKEN). No telemetry statement was found in the README. No account was created and no spend occurred.",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Local CLI/SDKs need no account. Hosted smol cloud uses an API key (SMOL_CLOUD_TOKEN) from a console account with usage billing; $100 sign-up credit per pricing page. No MCP endpoint documented. Install script is curl|bash; not run. No account created."
+  },
+  "sources": [
+    "https://smolmachines.com/",
+    "https://smolmachines.com/pricing",
+    "https://smolmachines.com/docs/sdk",
+    "https://github.com/smol-machines/smolvm",
+    "https://raw.githubusercontent.com/smol-machines/smolvm/main/README.md",
+    "https://api.github.com/repos/smol-machines/smolvm"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

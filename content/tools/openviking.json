@@ -1,0 +1,39 @@
+{
+  "id": "openviking",
+  "name": "OpenViking",
+  "category": "tools",
+  "summary": "Open-source context database for AI agents that stores knowledge, memory and skills as a viking:// virtual filesystem; self-host or use Volcengine/BytePlus hosting. AGPL-3.0 (network copyleft).",
+  "url": "https://openviking.ai/",
+  "repo": "https://github.com/volcengine/OpenViking",
+  "docs": "https://docs.openviking.ai/",
+  "tags": [
+    "memory",
+    "context-database",
+    "rag",
+    "agents",
+    "skills",
+    "knowledge",
+    "agpl"
+  ],
+  "license": "AGPL-3.0",
+  "pricing": "freemium",
+  "maintainer": "Volcengine",
+  "description": "Repository volcengine/OpenViking (AGPL-3.0 per the GitHub license API and README badge, not archived; created 2026-01-05; recently pushed). README: 'the Context Database for AI Agents', one filesystem for knowledge, memory and skills; context is organized under a `viking://` virtual filesystem that agents browse and search by directory, with a live demo (studio.openviking.ai) and a self-hostable Web Studio. Licensing disclosure: AGPL-3.0 is network copyleft, so offering a modified OpenViking as a network service obliges you to publish your changes; read the license before embedding it in a product. Self-hosting per the README: `uv tool install openviking --upgrade && openviking-server init` (needs uv, Python 3.10+ and a model provider with an embedding model and a VLM; init supports Volcengine, OpenAI, Codex OAuth, Kimi, GLM and local Ollama and writes ~/.openviking/ov.conf). You supply your own model-provider API key, and your content is sent to that provider for embedding and summarising. Hosted options: OpenViking Service hosted by Volcengine (README: first 50 files free) and a BytePlus-hosted instance (Asia Pacific, Johor) that takes your instance API key; pricing beyond the free allowance was not verified. The README's memory evaluation used Volcengine Doubao models. No telemetry statement was found in the README. Nothing was installed or signed up for, and no keys were used.",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Self-hosted server (uv tool install openviking; openviking-server init) with your own model-provider key, or hosted service by Volcengine/BytePlus with an instance API key. No public MCP endpoint was verified. AGPL-3.0. Not installed or run; no account created."
+  },
+  "sources": [
+    "https://openviking.ai/",
+    "https://docs.openviking.ai/",
+    "https://docs.openviking.ai/en/guides/01-configuration",
+    "https://github.com/volcengine/OpenViking",
+    "https://raw.githubusercontent.com/volcengine/OpenViking/main/README.md",
+    "https://api.github.com/repos/volcengine/OpenViking"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

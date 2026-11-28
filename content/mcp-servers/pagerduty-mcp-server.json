@@ -1,0 +1,38 @@
+{
+  "id": "pagerduty-mcp-server",
+  "name": "PagerDuty MCP Server",
+  "category": "mcp-servers",
+  "summary": "PagerDuty-hosted MCP server (US and EU endpoints, OAuth 2.1/CIMD) for incidents, on-call, services and change events. The older self-hosted pagerduty-mcp-server repo is archived and deprecated.",
+  "url": "https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server",
+  "repo": "https://github.com/PagerDuty/pagerduty-mcp-server",
+  "docs": "https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server",
+  "tags": [
+    "mcp",
+    "pagerduty",
+    "incident-management",
+    "on-call",
+    "sre",
+    "oauth",
+    "deprecated-repo"
+  ],
+  "license": "proprietary",
+  "pricing": "unknown",
+  "maintainer": "PagerDuty",
+  "description": "Two things share this name. (1) Current: the PagerDuty-hosted MCP server, documented at https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server. Agents act with the permissions of the PagerDuty user who signs in; they can list and triage incidents, check on-call, look up services, teams and escalation policies, review change events, and take actions such as acknowledging, resolving or adding notes to incidents. Docs list US endpoint https://mcp.pagerduty.com/mcp and EU endpoint https://mcp.eu.pagerduty.com/mcp. Auth is OAuth 2.1 with Client ID Metadata Documents (CIMD, for listed clients after an admin installs the client app once) or a client ID and secret from an OAuth app you register in PagerDuty; Dynamic Client Registration is not supported. AI-agent tools (such as Paige, PagerDuty's SRE agent) require PagerDuty Advance, the Reliability Platform or AI Actions; some tools are Early Access. Probe 2026-11-28 (unauthenticated, no tool calls): GET and POST initialize on the US endpoint both returned HTTP 401 with `WWW-Authenticate: Bearer ... resource_metadata=\"https://mcp.pagerduty.com/.well-known/oauth-protected-resource/mcp\"`. (2) Dead repo: github.com/PagerDuty/pagerduty-mcp-server (Apache-2.0) is deprecated, archived and read-only; its README and the docs both say development moved to the hosted server, and the old local server (`uvx pagerduty-mcp` with a PAGERDUTY_USER_API_KEY, read-only tools by default, --enable-write-tools to modify) should not be chosen for new use. Pricing for the hosted MCP is not stated on the docs page; a PagerDuty account is required and plan terms are separate. No account was created and nothing was installed.",
+  "agent_access": {
+    "auth": "oauth",
+    "mcp_endpoint": "https://mcp.pagerduty.com/mcp",
+    "notes": "Hosted Streamable HTTP, OAuth 2.1 (CIMD or registered client id/secret; no DCR). US https://mcp.pagerduty.com/mcp, EU https://mcp.eu.pagerduty.com/mcp. Probe 2026-11-28: unauthenticated GET and initialize both 401 with OAuth resource_metadata. The old local repo is archived; do not use it for new setups. No tool calls, no sign-in."
+  },
+  "sources": [
+    "https://docs.pagerduty.com/ai-automation/advance/pagerduty-mcp-server",
+    "https://github.com/PagerDuty/pagerduty-mcp-server",
+    "https://raw.githubusercontent.com/PagerDuty/pagerduty-mcp-server/main/README.md",
+    "https://api.github.com/repos/PagerDuty/pagerduty-mcp-server"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "clerk-skills",
+  "name": "Clerk Skills",
+  "category": "skills",
+  "summary": "Clerk's official Agent Skills pack and plugin for Claude Code, Codex, Cursor, Copilot CLI and Antigravity, bundling a hosted Clerk MCP server (mcp.clerk.com/mcp) with per-call analytics.",
+  "url": "https://github.com/clerk/skills",
+  "repo": "https://github.com/clerk/skills",
+  "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
+  "tags": [
+    "skills",
+    "clerk",
+    "authentication",
+    "agent-skills",
+    "plugin",
+    "mcp",
+    "telemetry"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "maintainer": "Clerk",
+  "description": "Official repository github.com/clerk/skills (not archived; GitHub description 'AI Skills to enhance working with Clerk'). The README says the license is MIT; however the GitHub license API reported no detected license file on 2026-11-28, so verify the license text in the repository root before redistributing. Skills follow the Agent Skills format. Installs documented in the README (none executed): `npx skills add clerk/skills` (skills only); Claude Code `/plugin marketplace add clerk/skills` then `/plugin install clerk@clerk-skills`; Codex `codex plugin marketplace add clerk/skills` then `codex plugin add clerk@clerk` (replaces an earlier clerk-skills@clerk plugin that no longer updates); Cursor `cursor-agent plugin marketplace add https://github.com/clerk/skills`; Antigravity `agy plugin install https://github.com/clerk/skills`; GitHub Copilot CLI `copilot plugin marketplace add clerk/skills`. The `clerk` plugin also wires in the Clerk-hosted MCP server at https://mcp.clerk.com/mcp (streamable HTTP; sign in with a Clerk Dashboard account). README: it acts as you, so it can only do what your workspace role allows, never returns secret keys, and flags change-making tools so agents can ask first. Telemetry disclosure: for product analytics the MCP server sends Clerk an event for each tool call (tool name, success, your Clerk user ID, AI client, and when applicable the application ID and whether it was a dry run), without other inputs or results. Probe 2026-11-28 (unauthenticated, no tool calls): GET returned HTTP 405; POST initialize returned HTTP 200 with serverInfo 'Clerk MCP Server' 1.0.0 and tools, resources and an io.modelcontextprotocol/skills extension. The skills are free; Clerk plans (clerk.com/pricing) are separate. No Clerk account was created.",
+  "agent_access": {
+    "auth": "other",
+    "mcp_endpoint": "https://mcp.clerk.com/mcp",
+    "notes": "Skills install via npx skills or agent plugins (not run). The bundled hosted MCP server needs a Clerk Dashboard sign-in and sends per-tool-call analytics to Clerk (tool name, success, user ID, client, app ID). Probe 2026-11-28: bare GET 405; unauthenticated initialize 200. No tool calls, no sign-in."
+  },
+  "sources": [
+    "https://github.com/clerk/skills",
+    "https://raw.githubusercontent.com/clerk/skills/main/README.md",
+    "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
+    "https://clerk.com/pricing",
+    "https://api.github.com/repos/clerk/skills"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "fivetran-mcp",
+  "name": "Fivetran MCP Server",
+  "category": "mcp-servers",
+  "summary": "Fivetran's MCP server exposing the Fivetran API (connections, destinations, syncs) to agents, read-only by default via FIVETRAN_SCOPE; run it yourself with uvx or Docker. MIT.",
+  "url": "https://github.com/fivetran/fivetran-mcp",
+  "repo": "https://github.com/fivetran/fivetran-mcp",
+  "docs": "https://fivetran.com/docs/getting-started",
+  "tags": [
+    "mcp",
+    "fivetran",
+    "data-pipelines",
+    "etl",
+    "elt",
+    "python"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "maintainer": "Fivetran",
+  "description": "Repository fivetran/fivetran-mcp (MIT, not archived). README: an MCP server to ask questions about your Fivetran environment such as whether a Postgres connection last synced successfully or any connections are broken. It exposes list_endpoints and get_schema discovery tools plus one execution tool per allowed resource/action pair (for example connections_read, connections_write, destinations_delete), generated from the Fivetran OpenAPI definition. Safety disclosure from the README: FIVETRAN_SCOPE defaults to `read` and can be raised to `read/write` or `read/write/delete`; because the manifest carries every API endpoint, credential endpoints (system keys, user API keys, which can outlive the session) are reachable within whatever scope you grant and are controlled only by DISALLOWED_ACTIONS (README gives a recommended denylist). Write and delete tools carry advisory confirmation text only; the server does not enforce confirmation. Access: run it yourself, no hosted endpoint (none listed). `uvx --from git+https://github.com/fivetran/fivetran-mcp fivetran-mcp` (README warns the PyPI names fivetran-mcp and mcp-fivetran belong to unrelated projects, so install from the git URL), needing Python 3.10+, FIVETRAN_API_KEY and FIVETRAN_API_SECRET. A streamable-http mode exists, but the README says its OAuth resource-server support is scaffolding only and not yet functional, so HTTP mode works today only with header forwarding. Free software; a Fivetran account and plan are separate. No telemetry statement was found. Documented installs were not executed; no Fivetran account or keys were used.",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Self-run stdio (uvx from the git URL, or pip/Docker); FIVETRAN_API_KEY + FIVETRAN_API_SECRET, scope read by default (FIVETRAN_SCOPE, DISALLOWED_ACTIONS). Optional streamable-http mode uses header forwarding; OAuth there is non-functional scaffolding per README. No hosted endpoint. Not installed or run."
+  },
+  "sources": [
+    "https://github.com/fivetran/fivetran-mcp",
+    "https://raw.githubusercontent.com/fivetran/fivetran-mcp/main/README.md",
+    "https://api.github.com/repos/fivetran/fivetran-mcp",
+    "https://fivetran.com/docs/getting-started"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

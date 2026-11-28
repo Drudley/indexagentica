@@ -1,0 +1,37 @@
+{
+  "id": "okta-mcp-server",
+  "name": "Okta MCP Server",
+  "category": "mcp-servers",
+  "summary": "Official open-source local MCP server for Okta admin tasks (users, groups, apps, policies, brands) with OAuth device or private-key-JWT auth and scope-based tool loading. Apache-2.0.",
+  "url": "https://github.com/okta/okta-mcp-server",
+  "repo": "https://github.com/okta/okta-mcp-server",
+  "docs": "https://developer.okta.com/",
+  "tags": [
+    "mcp",
+    "okta",
+    "identity",
+    "iam",
+    "admin",
+    "oauth",
+    "python"
+  ],
+  "license": "Apache-2.0",
+  "pricing": "open-source",
+  "maintainer": "Okta",
+  "description": "Official Okta repository (github.com/okta/okta-mcp-server, Apache-2.0, not archived, GitHub description 'Okta Self-Hosted MCP Server'). The README calls it the Okta Open Source MCP Server, Generally Available, and says it lets LLM agents perform Okta management operations (users, groups, applications, policies, device assurance policies, brands, themes, custom pages, email templates, custom domains and more) through the Okta Admin Management APIs using the Okta Python SDK. Access: local stdio only; no hosted endpoint is documented, so none is listed. Requires Python 3.13+ and uv, or Docker (README recommends Docker), plus an Okta organization and an Okta application you register. Configuration is by environment variables OKTA_ORG_URL, OKTA_CLIENT_ID and OKTA_SCOPES. Auth: Device Authorization Grant for interactive use, or Private Key JWT for unattended server-to-server use. Safety wording from the README: destructive operations (deletes, deactivations) ask for confirmation through the MCP Elicitation API (with a fallback for clients that lack it), and tools are registered at startup only when the OAuth scopes in OKTA_SCOPES allow them. An agent connected to this server can change identity data in a real Okta org, so grant the narrowest scopes and use a non-production org first (editorial). No telemetry statement was found in the README. The server is free open source; an Okta subscription is separate. Documented docker/uv installs were not executed; no Okta account or credentials were created or used.",
+  "agent_access": {
+    "auth": "oauth",
+    "notes": "Local stdio server (Docker or uv, Python 3.13+). Auth is an Okta OAuth app: Device Authorization Grant or Private Key JWT; env vars OKTA_ORG_URL, OKTA_CLIENT_ID, OKTA_SCOPES. No hosted MCP endpoint documented. Installs were not run and no Okta account was used."
+  },
+  "sources": [
+    "https://github.com/okta/okta-mcp-server",
+    "https://raw.githubusercontent.com/okta/okta-mcp-server/main/README.md",
+    "https://api.github.com/repos/okta/okta-mcp-server",
+    "https://developer.okta.com/"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

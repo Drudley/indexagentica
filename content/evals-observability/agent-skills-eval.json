@@ -1,0 +1,37 @@
+{
+  "id": "agent-skills-eval",
+  "name": "agent-skills-eval",
+  "category": "evals-observability",
+  "summary": "Open-source test runner for Agent Skills: runs each skill's evals with and without the skill, has a judge model grade both outputs, and writes an HTML report. MIT; needs your own model API keys.",
+  "url": "https://darkrishabh.github.io/agent-skills-eval/",
+  "repo": "https://github.com/darkrishabh/agent-skills-eval",
+  "docs": "https://darkrishabh.github.io/agent-skills-eval/",
+  "tags": [
+    "evals",
+    "agent-skills",
+    "skills",
+    "testing",
+    "llm-judge",
+    "typescript",
+    "npm"
+  ],
+  "license": "MIT",
+  "pricing": "open-source",
+  "maintainer": "darkrishabh",
+  "description": "Community project (repository darkrishabh/agent-skills-eval, MIT, not archived; npm agent-skills-eval; docs on GitHub Pages). Not an Anthropic or agentskills.io product. README: write a SKILL.md and evals, run the same prompts twice (with_skill loaded and a without_skill baseline, enabled by `--baseline`), have a judge model grade each output against the eval's expected_output and assertions, and get artifacts plus a static HTML report. Provides a CLI for CI and a TypeScript SDK with custom providers. Access: local CLI, `npx agent-skills-eval ./skills --target gpt-4o-mini --judge gpt-4o-mini --baseline` per the README quickstart; no hosted service or MCP endpoint is documented. The README's config example reads a provider key from an environment variable (apiKeyEnv: OPENAI_API_KEY), so runs call a model provider with your key and incur that provider's costs (editorial: evals run skill content and prompts through those models). Free software. No telemetry statement was found in the README. Documented npx runs were not executed and no model keys were used.",
+  "agent_access": {
+    "auth": "api-key",
+    "notes": "Local CLI/SDK; you supply model-provider API keys (README example uses OPENAI_API_KEY) for target and judge models. No hosted endpoint or MCP server documented. Not run."
+  },
+  "sources": [
+    "https://github.com/darkrishabh/agent-skills-eval",
+    "https://raw.githubusercontent.com/darkrishabh/agent-skills-eval/main/README.md",
+    "https://darkrishabh.github.io/agent-skills-eval/",
+    "https://api.github.com/repos/darkrishabh/agent-skills-eval"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bitwarden-mcp-server",
+  "name": "Bitwarden MCP Server",
+  "category": "mcp-servers",
+  "summary": "Local-only MCP server in the bitwarden GitHub org giving agents vault and organization-admin access through the Bitwarden CLI and Public API. GPL-3.0; README warns never to host it or expose it.",
+  "url": "https://github.com/bitwarden/mcp-server",
+  "repo": "https://github.com/bitwarden/mcp-server",
+  "docs": "https://bitwarden.com/help/cli/",
+  "tags": [
+    "mcp",
+    "bitwarden",
+    "password-manager",
+    "secrets",
+    "vault",
+    "security",
+    "npm"
+  ],
+  "license": "GPL-3.0",
+  "pricing": "open-source",
+  "maintainer": "Bitwarden",
+  "description": "Repository github.com/bitwarden/mcp-server (GPL-3.0 per the GitHub license API, not archived; npm package @bitwarden/mcp-server). Two interfaces: vault management and CLI tools through the Bitwarden CLI (unlock/lock, list/get/create/edit/delete items, folders, attachments, password and TOTP generation, Bitwarden Send, device approval) and organization administration through the Bitwarden Public API (collections, members, groups, policies, audit logs, subscriptions and billing info, bulk import). High-risk disclosure, from the README warning: the server 'is designed exclusively for local use and must never be hosted publicly or exposed over a network'. Granting an assistant access means it can read vault items including passwords and secure notes, create/modify/delete items, reach organization secrets and admin functions, and may reveal credentials in its responses. README tells users never to deploy it to cloud hosting, containers or public servers, never to share config files containing session tokens, and to consider self-hosted or local LLMs. Access: local stdio only (no hosted endpoint, none listed). Node.js 22+ and the Bitwarden CLI; config uses `npx -y @bitwarden/mcp-server` with BW_SESSION (from `bw unlock --raw`); organization features add BW_CLIENT_ID/BW_CLIENT_SECRET (organization API key), optional BW_API_BASE_URL/BW_IDENTITY_URL for self-hosted Bitwarden, BW_ALLOWED_DIRECTORIES (required for file tools) and BW_CLI_PATH. Organization administration needs a Teams or Enterprise organization with owner/admin rights. Free software (GPL-3.0 copyleft applies if you redistribute modified code); Bitwarden subscription terms are separate. Documented installs were not executed; no Bitwarden account, vault or credentials were used.",
+  "agent_access": {
+    "auth": "other",
+    "notes": "Local stdio only. Auth by BW_SESSION token from the Bitwarden CLI; org admin adds BW_CLIENT_ID/BW_CLIENT_SECRET. README: never host or expose it; it can read and change vault secrets. No hosted MCP endpoint. Not installed or run; no Bitwarden account used."
+  },
+  "sources": [
+    "https://github.com/bitwarden/mcp-server",
+    "https://raw.githubusercontent.com/bitwarden/mcp-server/main/README.md",
+    "https://api.github.com/repos/bitwarden/mcp-server",
+    "https://bitwarden.com/help/cli/"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "socket-mcp",
+  "name": "Socket MCP",
+  "category": "mcp-servers",
+  "summary": "Socket's MCP server for dependency security scores (depscore) plus organization, alert and threat-feed tools; hosted at mcp.socket.dev with Socket OAuth, or self-hosted npm package. MIT.",
+  "url": "https://github.com/SocketDev/socket-mcp",
+  "repo": "https://github.com/SocketDev/socket-mcp",
+  "docs": "https://github.com/SocketDev/socket-mcp/blob/main/docs/service.md",
+  "tags": [
+    "mcp",
+    "socket",
+    "supply-chain",
+    "dependencies",
+    "security",
+    "oauth",
+    "npm"
+  ],
+  "license": "MIT",
+  "pricing": "freemium",
+  "maintainer": "Socket",
+  "description": "Repository SocketDev/socket-mcp (MIT per README and GitHub, not archived; npm @socketsecurity/mcp; README says 'early development and rapidly evolving'). Lets assistants score a package, audit a package.json or find risky dependencies; tools named in the README are depscore, organizations, alerts and threat_feed, covering ecosystems such as npm, PyPI, cargo, Maven, NuGet, RubyGems and Go. Hosted server: https://mcp.socket.dev/ (Streamable HTTP). README: sign-in through your MCP client's OAuth flow is required for every tool call, including package scoring; no API key to copy. Probe 2026-11-28 (unauthenticated, no tool calls): GET returned HTTP 405 (JSON); POST initialize returned HTTP 200 as text/event-stream with protocolVersion 2025-06-18, serverInfo name 'socket' version 0.4.0 and a tools capability; tools/list was answered without sign-in and included depscore (calling tools needs OAuth per the README). OAuth behaviour varies by client: the README's tested-clients table says Claude Code needed an explicit authenticate step, Codex may show an invalid_scope page before retrying, and only `organizations` and `depscore` were tested. Self-hosting: stdio uses a saved browser OAuth session (a SOCKET_API_TOKEN env var is a discouraged fallback); HTTP mode can report server errors to Sentry only if SOCKET_MCP_SENTRY_DSN is set, and stdio never reports. Pricing: the README states no MCP-specific fee; a Socket account is required and Socket's plans (socket.dev/pricing, 2026-11-28: Free $0 per dev seat with 1,000 scans/month, Team $25, Business $50, Enterprise custom) apply to usage. Documented installs and OAuth sign-in were not run; no Socket account was created.",
+  "agent_access": {
+    "auth": "oauth",
+    "mcp_endpoint": "https://mcp.socket.dev/",
+    "notes": "Hosted Streamable HTTP; per README every tool call needs Socket OAuth. Probe 2026-11-28: bare GET 405; unauthenticated initialize 200 (serverInfo socket 0.4.0); unauthenticated tools/list listed depscore. No tool was called, no sign-in done. Self-host via npm; optional Sentry in HTTP mode only."
+  },
+  "sources": [
+    "https://github.com/SocketDev/socket-mcp",
+    "https://raw.githubusercontent.com/SocketDev/socket-mcp/main/README.md",
+    "https://github.com/SocketDev/socket-mcp/blob/main/docs/service.md",
+    "https://socket.dev/pricing",
+    "https://api.github.com/repos/SocketDev/socket-mcp"
+  ],
+  "added": "2026-11-28",
+  "updated": "2026-11-28",
+  "last_verified": "2026-11-28",
+  "submitted_by": "agentica-curator",
+  "status": "active"
+}
