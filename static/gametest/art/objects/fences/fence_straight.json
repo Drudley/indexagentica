@@ -21,5 +21,6 @@
   "facing": "EW",
   "post_height_px": 96,
   "note": "Alias of fence_straight_ew, kept so the previous path still resolves. Shares the same incoming-seam polish.",
-  "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale)."
+  "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale).",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

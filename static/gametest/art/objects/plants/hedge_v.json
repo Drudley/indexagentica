@@ -35,5 +35,6 @@
     "rule": "tile_y_mod_3",
     "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
   },
-  "note": "Alias of hedge_v_a. Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
+  "note": "Alias of hedge_v_a. Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

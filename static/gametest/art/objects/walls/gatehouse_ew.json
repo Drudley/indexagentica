@@ -98,5 +98,6 @@
     "above": 48,
     "below": 0
   },
-  "construction": "Rebuilt in code for the batch 1 fix round: W and E arched mouths from the wall-kit arch, cobbled passage between them, a lintel connecting the wings, shorter towers (overhang above 48 px, was 160) so a wall_v immediately north stays readable."
+  "construction": "Rebuilt in code for the batch 1 fix round: W and E arched mouths from the wall-kit arch, cobbled passage between them, a lintel connecting the wings, shorter towers (overhang above 48 px, was 160) so a wall_v immediately north stays readable.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

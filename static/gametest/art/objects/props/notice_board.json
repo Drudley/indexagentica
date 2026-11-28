@@ -30,5 +30,6 @@
     "below": 0
   },
   "heightTiles": 1,
-  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+  "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

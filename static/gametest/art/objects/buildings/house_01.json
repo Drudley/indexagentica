@@ -44,5 +44,6 @@
     "w": 132,
     "h": 194
   },
-  "note": "Scaled so the door opening is 194×132 px: about 19% taller than the elf body (162 px) and wider than human/dwarf shoulders (74 px). The previous 3×3 / 384×384 cottage had a 70×48 px door, too short and too narrow. The roof is drawn inside the 8×8 canvas in 3/4 (same convention as the old 3×3), not extending above the footprint. This is larger than the OBJECTS-PLAN house_small 3×3 (and house_large 4×4); lots will need updating."
+  "note": "Scaled so the door opening is 194×132 px: about 19% taller than the elf body (162 px) and wider than human/dwarf shoulders (74 px). The previous 3×3 / 384×384 cottage had a 70×48 px door, too short and too narrow. The roof is drawn inside the 8×8 canvas in 3/4 (same convention as the old 3×3), not extending above the footprint. This is larger than the OBJECTS-PLAN house_small 3×3 (and house_large 4×4); lots will need updating.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

@@ -27,5 +27,6 @@
   "connection_sides": {},
   "note": "End / cap post. Same 96 px shared post, west-south position as the EW and west-NS pieces. Place in the next tile to close an EW or NS run. The left face at EW rail height has a 1 px outline break so incoming EW rails meet wood, not a hard black seam.",
   "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
-  "post_side": "west"
+  "post_side": "west",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

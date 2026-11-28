@@ -33,5 +33,6 @@
   "note": "South-east L: east-south post, EW rails from the west edge to the post (incoming seam softened so rails enter the post), chunky foreshortened NS rails to the north (tiles with fence_straight_ns_e).",
   "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
   "overhang_px": 12,
-  "post_side": "east"
+  "post_side": "east",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

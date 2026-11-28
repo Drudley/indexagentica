@@ -54,101 +54,102 @@
   "anims_note": "Inclusive column ranges within the facing row (idle and walk loop; attack plays once: crouch, lunge with open jaws, recover). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent. Attack is in every row.",
   "frame_index_formula": "row * 10 + column",
   "body": {
-    "x": 51,
-    "y": 32,
-    "w": 41,
-    "h": 80
+    "x": 60,
+    "y": 38,
+    "w": 24,
+    "h": 68
   },
   "body_by_facing": {
     "S": {
-      "x": 51,
-      "y": 32,
-      "w": 41,
-      "h": 80
+      "x": 60,
+      "y": 38,
+      "w": 24,
+      "h": 68
     },
     "W": {
-      "x": 36,
-      "y": 36,
-      "w": 71,
-      "h": 76
+      "x": 18,
+      "y": 32,
+      "w": 104,
+      "h": 64
     },
     "E": {
-      "x": 36,
-      "y": 36,
-      "w": 71,
-      "h": 76
+      "x": 22,
+      "y": 32,
+      "w": 104,
+      "h": 64
     },
     "N": {
-      "x": 54,
-      "y": 34,
-      "w": 35,
-      "h": 78
+      "x": 60,
+      "y": 22,
+      "w": 24,
+      "h": 82
     },
     "SE": {
-      "x": 42,
-      "y": 34,
-      "w": 60,
-      "h": 78
+      "x": 36,
+      "y": 40,
+      "w": 76,
+      "h": 64
     },
     "SW": {
-      "x": 42,
-      "y": 34,
-      "w": 60,
-      "h": 78
+      "x": 32,
+      "y": 40,
+      "w": 76,
+      "h": 64
     },
     "NE": {
-      "x": 47,
-      "y": 35,
-      "w": 49,
-      "h": 77
+      "x": 36,
+      "y": 24,
+      "w": 76,
+      "h": 80
     },
     "NW": {
-      "x": 47,
-      "y": 35,
-      "w": 49,
-      "h": 77
+      "x": 32,
+      "y": 24,
+      "w": 76,
+      "h": 80
     }
   },
-  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
   "sprite_px_by_facing": {
     "S": [
-      51,
-      100
+      28,
+      72
     ],
     "W": [
-      102,
-      102
+      108,
+      68
     ],
     "E": [
-      102,
-      102
+      108,
+      68
     ],
     "N": [
-      44,
-      98
+      28,
+      86
     ],
     "SE": [
       80,
-      100
+      68
     ],
     "SW": [
       80,
-      100
+      68
     ],
     "NE": [
-      65,
-      99
+      80,
+      84
     ],
     "NW": [
-      65,
-      99
+      80,
+      84
     ]
   },
   "corpse_px": [
-    102,
-    47
+    108,
+    50
   ],
-  "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+  "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+  "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
   "sheet": "wolf_adult/wolf_adult_sheet.png",
   "sidecar": "wolf_adult/wolf_adult_sheet.json",
   "style_reference_id": {
@@ -157,5 +158,12 @@
     "N": "85e418ba5a46441895a302bab90c1364",
     "SE": "85e418ba5a46441895a302bab90c1364",
     "NE": "d83f8dc4829d463c955af32fc729598b"
-  }
+  },
+  "ground_line_px": 92,
+  "art_grid": {
+    "authoring_px_per_tile": 64,
+    "export_scale": 2,
+    "palette": "art/palette/master64.hex"
+  },
+  "gait": "diagonal-pair trot: FL with HR, FR with HL. Walk 0: FL+HR planted forward, FR+HL planted back; 1: FL+HR under the body, FR+HL swing (body up 1 art px); 2 and 3 mirror 0 and 1. A planted paw moves back exactly 3.8 art px (7.6 px) per frame, so it never slides."
 }

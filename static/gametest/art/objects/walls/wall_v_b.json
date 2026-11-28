@@ -34,5 +34,6 @@
     "rule": "tile_y_mod_3",
     "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
   },
-  "note": "Second tile of the 3-tile unique NS strip."
+  "note": "Second tile of the 3-tile unique NS strip.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

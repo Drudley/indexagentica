@@ -815,5 +815,6 @@
     "old_name": "house_01_5x5",
     "old_id": "house_01_5x5",
     "note": "This 5x5 walk-in cottage was previously typed house_small by mistake. It is the medium house. File names remain house_01_5x5.png / _base / _roof so existing path loads still work. Do not treat this sprite as house_small; the real house_small is the new 3x3 cottage."
-  }
+  },
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

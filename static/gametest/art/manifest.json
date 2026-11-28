@@ -35,7 +35,8 @@
       "heightTiles": 2,
       "facing": "EW",
       "note": "5x4 eave-front barn: long south wall, ridge east-west, large closed double doors on the south face. Partner of barn_v.",
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/barn_v.json": {
       "type": "barn_v",
@@ -71,7 +72,8 @@
       "heightTiles": 2,
       "facing": "NS",
       "note": "4x5 gable-front barn: narrower and deeper than barn, ridge north-south, closed double doors still on the south face. Same building, NS orientation.",
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/carpenter.json": {
       "type": "carpenter",
@@ -888,7 +890,8 @@
         "note": "Timber-framed carpenter, south door on (2,4). Log pile and sawhorse in the below yard (footprint stays 5x5). Interior: workbench, planks, tool shelf, chest, crate, stool, lantern."
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
-      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/coop.json": {
       "type": "coop",
@@ -921,7 +924,8 @@
         "below": 0
       },
       "note": "Chicken coop, 2x2, full collision of its own (not a variant of shed). Ramp on the south face.",
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/herb_shed.json": {
       "type": "herb_shed",
@@ -1539,7 +1543,8 @@
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
       "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
-      "recolour_note": "Front-yard herb garden plants recoloured 2026-11-11 with the batch 3 leaf greens (and a dye-red flower). Only those pixels on the roof and combined layers; the wooden planter, drying rack and base are unchanged. base under roof still equals combined."
+      "recolour_note": "Front-yard herb garden plants recoloured 2026-11-11 with the batch 3 leaf greens (and a dye-red flower). Only those pixels on the roof and combined layers; the wooden planter, drying rack and base are unchanged. base under roof still equals combined.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/house_01.json": {
       "type": "house_small",
@@ -1587,7 +1592,8 @@
         "w": 132,
         "h": 194
       },
-      "note": "Scaled so the door opening is 194×132 px: about 19% taller than the elf body (162 px) and wider than human/dwarf shoulders (74 px). The previous 3×3 / 384×384 cottage had a 70×48 px door, too short and too narrow. The roof is drawn inside the 8×8 canvas in 3/4 (same convention as the old 3×3), not extending above the footprint. This is larger than the OBJECTS-PLAN house_small 3×3 (and house_large 4×4); lots will need updating."
+      "note": "Scaled so the door opening is 194×132 px: about 19% taller than the elf body (162 px) and wider than human/dwarf shoulders (74 px). The previous 3×3 / 384×384 cottage had a 70×48 px door, too short and too narrow. The roof is drawn inside the 8×8 canvas in 3/4 (same convention as the old 3×3), not extending above the footprint. This is larger than the OBJECTS-PLAN house_small 3×3 (and house_large 4×4); lots will need updating.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/house_01_5x5.json": {
       "type": "house_medium",
@@ -2406,7 +2412,8 @@
         "old_name": "house_01_5x5",
         "old_id": "house_01_5x5",
         "note": "This 5x5 walk-in cottage was previously typed house_small by mistake. It is the medium house. File names remain house_01_5x5.png / _base / _roof so existing path loads still work. Do not treat this sprite as house_small; the real house_small is the new 3x3 cottage."
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/house_01_5x5_inn_base.json": {
       "type": "house_01_5x5_inn_base",
@@ -3176,7 +3183,8 @@
           ],
           "note": "bar_counter footprint [2,1] on cells (3,2)-(4,2) (where the table stood), origin (0.5,1) at the south edge of row 2, centre x between cells 3 and 4. Keeps the door path (2,4)-(2,3)-(2,2) and the hearth clear; patrons stand on row 3, the keeper on row 1."
         }
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/house_large.json": {
       "type": "house_large",
@@ -3778,7 +3786,8 @@
         "note": "Family home on a 4x4 footprint. Two beds, hearth, table with two stools, cupboard, chest, rug, barrel and a lantern. South double door on (1,3)–(2,3). Mid path clear."
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
-      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/house_small.json": {
       "type": "house_small",
@@ -4182,7 +4191,8 @@
         "note": "Rustic 3x3 one-room cottage with a south door on (1,2). Also intended for countryside farm huts. Bed, small hearth, chest, rug, barrel and a candle. Path down the middle is clear."
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
-      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/hut.json": {
       "type": "hut",
@@ -4537,7 +4547,8 @@
         "note": "Rustic 3x3 one-room cottage with a south door on (1,2). Also intended for countryside farm huts. Bed, small hearth, chest, rug, barrel and a candle. Path down the middle is clear."
       },
       "style_reference_id": null,
-      "note": "Poorer countryside walk-in hut, distinct from town house_small. Same 3x3 model, 12 px edge walls, south door. 9_10 and neighbouring sections currently place the 15 solo dwellings as type house_small (all door_s); World Builder can retarget those to hut. Door-side variants were not drawn."
+      "note": "Poorer countryside walk-in hut, distinct from town house_small. Same 3x3 model, 12 px edge walls, south door. 9_10 and neighbouring sections currently place the 15 solo dwellings as type house_small (all door_s); World Builder can retarget those to hut. Door-side variants were not drawn.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/shed.json": {
       "type": "shed",
@@ -4572,7 +4583,8 @@
       },
       "facing": "S",
       "note": "Small toolshed, 3x2, visible closed south door.",
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/smithy.json": {
       "type": "smithy",
@@ -5357,7 +5369,8 @@
         "note": "Open-front stone smithy, south bay on (1,4)–(3,4). Slate roof, large chimney with smoke. Forge glow shows through the open front. Anvil and hanging sign outside, in the below yard / on the facade. Footprint stays 5x5."
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
-      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/tannery.json": {
       "type": "tannery",
@@ -6199,7 +6212,8 @@
         "note": "Weathered-roof tannery, south door on (2,4). Hide frames and vats out front in the below yard (footprint stays 5x5). Interior: vats, hide frames, barrel, crate, bucket, shelves, lantern."
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
-      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south."
+      "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/buildings/weaver.json": {
       "type": "weaver",
@@ -6986,7 +7000,8 @@
       },
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
       "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
-      "recolour_note": "Hanging cloth and yard cloth rack recoloured 2026-11-11 with the batch 3 dye red and cloth blue. Only those pixels on the roof and combined layers; base is unchanged. base under roof still equals combined."
+      "recolour_note": "Hanging cloth and yard cloth rack recoloured 2026-11-11 with the batch 3 dye red and cloth blue. Only those pixels on the roof and combined layers; base is unchanged. base under roof still equals combined.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/castle/keep.json": {
       "type": "keep",
@@ -10269,7 +10284,8 @@
             72
           ]
         ]
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/crops/wheat_ripe.json": {
       "type": "crop_wheat_ripe",
@@ -10382,7 +10398,8 @@
       "note": "Alias of fence_corner_sw, kept so the previous path still resolves.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
       "overhang_px": 12,
-      "post_side": "west"
+      "post_side": "west",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_corner_ne.json": {
       "type": "fence",
@@ -10417,7 +10434,8 @@
       },
       "note": "North-east L: east-south post, EW rails from the west edge to the post (incoming seam softened). NS rails arrive from the tile to the south.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
-      "post_side": "east"
+      "post_side": "east",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_corner_nw.json": {
       "type": "fence",
@@ -10452,7 +10470,8 @@
       },
       "note": "North-west L: west-south post, EW rails to the east (east ends seam-softened). NS rails arrive from the tile to the south.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
-      "post_side": "west"
+      "post_side": "west",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_corner_se.json": {
       "type": "fence",
@@ -10489,7 +10508,8 @@
       "note": "South-east L: east-south post, EW rails from the west edge to the post (incoming seam softened so rails enter the post), chunky foreshortened NS rails to the north (tiles with fence_straight_ns_e).",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
       "overhang_px": 12,
-      "post_side": "east"
+      "post_side": "east",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_corner_sw.json": {
       "type": "fence",
@@ -10526,7 +10546,8 @@
       "note": "South-west L: west-south post, EW rails to the east (tiles with fence_straight_ew; east ends seam-softened), chunky foreshortened NS rails to the north (tiles with fence_straight_ns).",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
       "overhang_px": 12,
-      "post_side": "west"
+      "post_side": "west",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_post.json": {
       "type": "fence",
@@ -10557,7 +10578,8 @@
       "connection_sides": {},
       "note": "End / cap post. Same 96 px shared post, west-south position as the EW and west-NS pieces. Place in the next tile to close an EW or NS run. The left face at EW rail height has a 1 px outline break so incoming EW rails meet wood, not a hard black seam.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
-      "post_side": "west"
+      "post_side": "west",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_straight.json": {
       "type": "fence",
@@ -10582,7 +10604,8 @@
       "facing": "EW",
       "post_height_px": 96,
       "note": "Alias of fence_straight_ew, kept so the previous path still resolves. Shares the same incoming-seam polish.",
-      "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale)."
+      "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale).",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_straight_ew.json": {
       "type": "fence",
@@ -10607,7 +10630,8 @@
       "facing": "EW",
       "post_height_px": 96,
       "note": "East-west segment. Post on the west edge, two rails to the east edge, cut so they meet the next tile's west post. Closing post at the east end of a run is the same shared post (see preview). All posts are 96 px tall, 1:1 from the source. Polish: only incoming-seam pixels were changed — the east rail ends were lightened where they were near-black, and the west post's left outline is broken at the two rail bands so a preceding tile's rails meet wood rather than a hard dark bar. Overall EW look is otherwise identical.",
-      "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale)."
+      "construction": "Composited at 1:1 from shared post and rail pieces extracted from the pilot fence_straight (no further scale).",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_straight_ns.json": {
       "type": "fence",
@@ -10642,7 +10666,8 @@
       "note": "North-south segment, post on the west and south of the 1×1 footprint. Two foreshortened 22 px log-top rails (EW log diameter) run north from the post, across the 32 px gap, and tuck into the next tile's post. 12 px overhang above the footprint. All posts 96 px, 1:1.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
       "overhang_px": 12,
-      "post_side": "west"
+      "post_side": "west",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/fences/fence_straight_ns_e.json": {
       "type": "fence",
@@ -10677,7 +10702,8 @@
       "note": "North-south segment, post on the east and south of the 1×1 footprint. Two foreshortened 22 px log-top rails (EW log diameter) run north from the post, across the 32 px gap, and tuck into the next tile's post. 12 px overhang above the footprint. All posts 96 px, 1:1. Same recipe as fence_straight_ns, post and connections on the east edge. Use on the east wall of a pen.",
       "construction": "Composited at 1:1 from the shared post and rail set (pilot fence_straight). No new generation.",
       "overhang_px": 12,
-      "post_side": "east"
+      "post_side": "east",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/nodes/birch.json": {
       "type": "birch",
@@ -11125,6 +11151,80 @@
       "kind": "gather_node",
       "depleted_of": "hemlock",
       "variant": "depleted"
+    },
+    "art/objects/nodes/hemp.json": {
+      "type": "hemp",
+      "name": "hemp",
+      "file": "hemp.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "none",
+        "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 176,
+      "canvas_px": [
+        128,
+        176
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 48,
+        "below": 0
+      },
+      "note": "1x1 wild fibre node (Niklas: hemp comes only from wild bushes). Game type id 'hemp' does not exist yet; Game Coder adds it.",
+      "node_id": "hemp",
+      "kind": "gather_node",
+      "construction": "REMAKE-1 R3 batch 2: code-drawn by Sprite Artist with art/tools/build_remake_props.py (master palette, 0 credits)."
+    },
+    "art/objects/nodes/hemp_depleted.json": {
+      "type": "hemp",
+      "name": "hemp_depleted",
+      "file": "hemp_depleted.png",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "collision": {
+        "mode": "none",
+        "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "base_y_px": 128,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "footprint_px": [
+        128,
+        128
+      ],
+      "overhang_px": {
+        "left": 0,
+        "right": 0,
+        "above": 0,
+        "below": 0
+      },
+      "note": "1x1 wild fibre node (Niklas: hemp comes only from wild bushes). Game type id 'hemp' does not exist yet; Game Coder adds it.",
+      "node_id": "hemp",
+      "kind": "gather_node",
+      "depleted_of": "jute",
+      "variant": "depleted",
+      "construction": "REMAKE-1 R3 batch 2: code-drawn by Sprite Artist with art/tools/build_remake_props.py (master palette, 0 credits)."
     },
     "art/objects/nodes/jute.json": {
       "type": "jute",
@@ -11965,7 +12065,8 @@
       "facing": "NW",
       "note": "Alias of hedge_corner_nw. World Builder can use hedge_corner_nw/ne/sw/se at turns; 9_10 currently has no hedge_corner placements (bush was the plan's odd-corner stand-in).",
       "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
-      "alias_of": "hedge_corner"
+      "alias_of": "hedge_corner",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_corner_ne.json": {
       "type": "hedge_corner",
@@ -12000,7 +12101,8 @@
       "heightTiles": 1,
       "facing": "NE",
       "note": "North-east hedge corner: arms run west and south. Walk to the west and south.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_corner_nw.json": {
       "type": "hedge_corner",
@@ -12036,7 +12138,8 @@
       "facing": "NW",
       "note": "North-west hedge corner: arms run east and south. Walk to the east and south. Alias of hedge_corner.",
       "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
-      "alias_of": "hedge_corner"
+      "alias_of": "hedge_corner",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_corner_se.json": {
       "type": "hedge_corner",
@@ -12071,7 +12174,8 @@
       "heightTiles": 1,
       "facing": "SE",
       "note": "South-east hedge corner: arms run west and north. Walk to the west and north.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_corner_sw.json": {
       "type": "hedge_corner",
@@ -12106,7 +12210,8 @@
       "heightTiles": 1,
       "facing": "SW",
       "note": "South-west hedge corner: arms run east and north. Walk to the east and north.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_h.json": {
       "type": "hedge_h",
@@ -12145,7 +12250,8 @@
         "rule": "tile_x_mod_3",
         "note": "Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
       },
-      "note": "Alias of hedge_h_a. Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
+      "note": "Alias of hedge_h_a. Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_h_a.json": {
       "type": "hedge_h",
@@ -12184,7 +12290,8 @@
         "rule": "tile_x_mod_3",
         "note": "Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
       },
-      "note": "Alias of hedge_h. Tileable east-west, heightTiles 1."
+      "note": "Alias of hedge_h. Tileable east-west, heightTiles 1.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_h_b.json": {
       "type": "hedge_h",
@@ -12222,7 +12329,8 @@
       "variant_by_position": {
         "rule": "tile_x_mod_3",
         "note": "Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_h_c.json": {
       "type": "hedge_h",
@@ -12260,7 +12368,8 @@
       "variant_by_position": {
         "rule": "tile_x_mod_3",
         "note": "Pick hedge_h_a when tile x % 3 == 0, hedge_h_b when x % 3 == 1, hedge_h_c when x % 3 == 2. hedge_h is an alias of hedge_h_a. The three tiles share the same 8 px left/right seam so a,b,c cycle along an east-west run."
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_v.json": {
       "type": "hedge_v",
@@ -12299,7 +12408,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
       },
-      "note": "Alias of hedge_v_a. Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
+      "note": "Alias of hedge_v_a. Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_v_a.json": {
       "type": "hedge_v",
@@ -12338,7 +12448,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
       },
-      "note": "Alias of hedge_v. Tileable north-south, heightTiles 1."
+      "note": "Alias of hedge_v. Tileable north-south, heightTiles 1.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_v_b.json": {
       "type": "hedge_v",
@@ -12376,7 +12487,8 @@
       "variant_by_position": {
         "rule": "tile_y_mod_3",
         "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/hedge_v_c.json": {
       "type": "hedge_v",
@@ -12414,7 +12526,8 @@
       "variant_by_position": {
         "rule": "tile_y_mod_3",
         "note": "Pick hedge_v_a when tile y % 3 == 0, hedge_v_b when y % 3 == 1, hedge_v_c when y % 3 == 2. hedge_v is an alias of hedge_v_a. Same pattern as wall_v. The three tiles were built from one foliage texture so a,b,c cycle along a north-south run."
-      }
+      },
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/plants/shrub_low.json": {
       "type": "shrub_low",
@@ -12483,7 +12596,8 @@
       },
       "note": "Alchemy bench. Type id alchemy_bench. Dark plank table with a retort on a ring stand over a small iron burner (tiny flame) feeding a receiver flask, a tall green flask, a round violet flask, three test tubes in a rack and a mortar and pestle.",
       "node_id": "alchemy_bench",
-      "kind": "alchemy_bench"
+      "kind": "alchemy_bench",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/anvil.json": {
       "type": "anvil",
@@ -12520,7 +12634,8 @@
       "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
       "construction": "Reused from the approved smithy-yard anvil (batch 2 workshop-props sprite 448a9c598afe4633ba54b75001c106f0, rect_px [462, 706, 109, 95] on smithy.png). Cropped, palette-snapped, 1px outline reinforced, soft shadow down-right. Packed to a 1x1 canvas.",
       "node_id": "anvil",
-      "kind": "anvil"
+      "kind": "anvil",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/bar_counter.json": {
       "type": "bar_counter",
@@ -12555,7 +12670,8 @@
       },
       "note": "Inn bar counter, 2x1, for the inn_1 common room (replaces the table + stools stand-in). Panelled front, foot rail, plank top with tankards, two bottles, a rag and a small keg with a tap at the right end. Origin (0.5,1) is the bottom centre of the 2-tile footprint.",
       "node_id": "bar_counter",
-      "kind": "bar_counter"
+      "kind": "bar_counter",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/barrel.json": {
       "type": "barrel",
@@ -12587,7 +12703,8 @@
         "above": 51,
         "below": 0
       },
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/bed.json": {
       "type": "bed",
@@ -12622,7 +12739,8 @@
       },
       "note": "Plain timber bed (keep barracks and solar), 1x2 north-south.",
       "node_id": "bed",
-      "kind": "bed"
+      "kind": "bed",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/bell_frame.json": {
       "type": "bell_frame",
@@ -12656,7 +12774,8 @@
       },
       "heightTiles": 2,
       "note": "Town bell in a timber frame, 2x2.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/cart.json": {
       "type": "cart",
@@ -12690,7 +12809,8 @@
       },
       "facing": "EW",
       "note": "Same cart as cart_v, east-west facing (side view, shaft to the east).",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/cart_v.json": {
       "type": "cart_v",
@@ -12724,7 +12844,8 @@
       },
       "facing": "NS",
       "note": "Same cart as cart, north-south facing (rear/front view).",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/chest.json": {
       "type": "chest",
@@ -12759,7 +12880,8 @@
       },
       "note": "Iron-banded wooden chest.",
       "node_id": "chest",
-      "kind": "chest"
+      "kind": "chest",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/crate.json": {
       "type": "crate",
@@ -12791,7 +12913,8 @@
         "above": 53,
         "below": 0
       },
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/drying_rack.json": {
       "type": "drying_rack",
@@ -12826,7 +12949,8 @@
       },
       "facing": "EW",
       "note": "East-west drying rack. Partner of drying_rack_v.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/drying_rack_v.json": {
       "type": "drying_rack_v",
@@ -12861,7 +12985,8 @@
       },
       "facing": "NS",
       "note": "North-south drying rack. Partner of drying_rack.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/gemcutting_bench.json": {
       "type": "gemcutting_bench",
@@ -12896,7 +13021,8 @@
       },
       "note": "Gemcutting bench. Type id gemcutting_bench. Wooden plank bench with a stone grinding wheel in a frame (crank right, water trough below) and a few cut coloured stones on a tray at the left.",
       "node_id": "gemcutting_bench",
-      "kind": "gemcutting_bench"
+      "kind": "gemcutting_bench",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/hall_hearth.json": {
       "type": "hall_hearth",
@@ -12931,7 +13057,8 @@
       },
       "note": "Freestanding round stone fire pit for the keep great hall.",
       "node_id": "hall_hearth",
-      "kind": "hall_hearth"
+      "kind": "hall_hearth",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/hall_rug.json": {
       "type": "hall_rug",
@@ -12966,7 +13093,8 @@
       },
       "note": "Red aisle runner for the keep great hall, gate to dais. Walkable.",
       "node_id": "hall_rug",
-      "kind": "hall_rug"
+      "kind": "hall_rug",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/hall_stool.json": {
       "type": "hall_stool",
@@ -13001,7 +13129,8 @@
       },
       "note": "Three-legged stool placed beside the long tables.",
       "node_id": "hall_stool",
-      "kind": "hall_stool"
+      "kind": "hall_stool",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/hay_bale.json": {
       "type": "hay_bale",
@@ -13036,7 +13165,8 @@
       },
       "note": "Square straw bale with twine bands (FARMS-1).",
       "node_id": "hay_bale",
-      "kind": "hay_bale"
+      "kind": "hay_bale",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/haycock.json": {
       "type": "haycock",
@@ -13069,7 +13199,8 @@
         "above": 65,
         "below": 0
       },
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/hitching_post.json": {
       "type": "hitching_post",
@@ -13104,7 +13235,8 @@
       },
       "facing": "NS",
       "note": "Plan footprint 1x2, collision none. Posts at the north and south ends of the rail.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/inn_sign.json": {
       "type": "inn_sign",
@@ -13148,7 +13280,8 @@
         "y": -196
       },
       "depth_base": "host building base y (door tile south edge); render after inn_1",
-      "render_order": "after inn_1 (the building it hangs on), same depth base y"
+      "render_order": "after inn_1 (the building it hangs on), same depth base y",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/jewelry_bench.json": {
       "type": "jewelry_bench",
@@ -13183,7 +13316,8 @@
       },
       "note": "Jewelry bench. Type id jewelry_bench. Small jeweller's bench with three drawers and a bench pin; steel ring mandrel with a gold ring, a T-stake bench anvil, a loupe, pliers, file, tweezers, gold wire and a red stone.",
       "node_id": "jewelry_bench",
-      "kind": "jewelry_bench"
+      "kind": "jewelry_bench",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/long_table.json": {
       "type": "long_table",
@@ -13218,7 +13352,8 @@
       },
       "note": "Feast table, 2x2, for the keep great hall; stools are separate hall_stool props.",
       "node_id": "long_table",
-      "kind": "long_table"
+      "kind": "long_table",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/lord_seat.json": {
       "type": "lord_seat",
@@ -13253,7 +13388,8 @@
       },
       "note": "High seat for the keep dais (CASTLE-1).",
       "node_id": "lord_seat",
-      "kind": "lord_seat"
+      "kind": "lord_seat",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/notice_board.json": {
       "type": "notice_board",
@@ -13287,7 +13423,8 @@
         "below": 0
       },
       "heightTiles": 1,
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/ore_bin.json": {
       "type": "ore_bin",
@@ -13319,7 +13456,8 @@
         "above": 21,
         "below": 0
       },
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/runecarving_bench.json": {
       "type": "runecarving_bench",
@@ -13354,7 +13492,8 @@
       },
       "note": "Runecarving bench. Type id runecarving_bench. Grey stone slab on two block pedestals; an upright tablet with four carved runes (cut grooves, no glow), a second stone being carved, chisel, wooden mallet and stone chips.",
       "node_id": "runecarving_bench",
-      "kind": "runecarving_bench"
+      "kind": "runecarving_bench",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/scarecrow.json": {
       "type": "scarecrow",
@@ -13389,7 +13528,8 @@
       },
       "heightTiles": 2,
       "note": "Field scarecrow, heightTiles 2. Patched clothes use the batch 3 dye red / cloth blue.",
-      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+      "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/signpost.json": {
       "type": "signpost",
@@ -13423,7 +13563,8 @@
         "below": 0
       },
       "heightTiles": 2,
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/stall.json": {
       "type": "stall",
@@ -13458,7 +13599,8 @@
       "heightTiles": 2,
       "facing": "S",
       "note": "Market stall with a dye-red and plaster striped awning. 2x2 full collision.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/timber_stack.json": {
       "type": "timber_stack",
@@ -13491,7 +13633,8 @@
         "below": 0
       },
       "note": "2x2 stacked timber. Composed from two overlapping stamps of the sheet's log pile.",
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/wall_lantern.json": {
       "type": "wall_lantern",
@@ -13526,7 +13669,8 @@
       },
       "note": "Iron wall lantern; mount on a wall face. Walkable, never blocks.",
       "node_id": "wall_lantern",
-      "kind": "wall_lantern"
+      "kind": "wall_lantern",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/watch_fire.json": {
       "type": "watch_fire",
@@ -13560,7 +13704,8 @@
         "below": 0
       },
       "heightTiles": 1,
-      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c"
+      "style_reference_id": "bb6781cc9000427c8ba91a05e3496e2c",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/water_trough.json": {
       "type": "water_trough",
@@ -13595,7 +13740,8 @@
       },
       "note": "Wooden stock trough with iron bands and water (FARMS-1).",
       "node_id": "water_trough",
-      "kind": "water_trough"
+      "kind": "water_trough",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/props/well.json": {
       "type": "well",
@@ -13617,7 +13763,2853 @@
         154,
         212
       ],
-      "scale": "1.3x via free /resize to height=208 (native proportions, 1px outlines kept)"
+      "scale": "1.3x via free /resize to height=208 (native proportions, 1px outlines kept)",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
+    },
+    "art/objects/remake_buildings_map.json": {
+      "batch": "REMAKE-1 R3 64px redraw (2026-11-27)",
+      "builder": "art/tools/build_remake64_buildings.py",
+      "authoring_px_per_tile": 64,
+      "export_scale": 2,
+      "palette": "art/palette/master64.hex",
+      "source_ref": "810b7a6",
+      "summary": "Every file keeps its path, key, canvas size, origin, base_y, footprint, door, blocked_edges and roof_fade_trigger. Pixels restyled only; no key changes, no new or removed files.",
+      "files": [
+        {
+          "file": "art/objects/buildings/barn.png",
+          "key": "barn",
+          "canvas_px": [
+            656,
+            614
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 608,
+          "footprint_tiles": [
+            5,
+            4
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/barn_v.png",
+          "key": "barn_v",
+          "canvas_px": [
+            528,
+            756
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 750,
+          "footprint_tiles": [
+            4,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/carpenter.png",
+          "key": "carpenter",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/carpenter_base.png",
+          "key": "carpenter_base",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/carpenter_roof.png",
+          "key": "carpenter_roof",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/coop.png",
+          "key": "coop",
+          "canvas_px": [
+            268,
+            379
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 379,
+          "footprint_tiles": [
+            2,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/herb_shed.png",
+          "key": "herb_shed",
+          "canvas_px": [
+            528,
+            696
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 568,
+          "footprint_tiles": [
+            4,
+            4
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/herb_shed_base.png",
+          "key": "herb_shed_base",
+          "canvas_px": [
+            528,
+            696
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/herb_shed_roof.png",
+          "key": "herb_shed_roof",
+          "canvas_px": [
+            528,
+            696
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_01.png",
+          "key": "house_01",
+          "canvas_px": [
+            1044,
+            1024
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 1024,
+          "footprint_tiles": [
+            8,
+            8
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_01_5x5.png",
+          "key": "house_01_5x5",
+          "canvas_px": [
+            656,
+            702
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_01_5x5_base.png",
+          "key": "house_01_5x5_base",
+          "canvas_px": [
+            656,
+            702
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_01_5x5_inn_base.png",
+          "key": "house_01_5x5_inn_base",
+          "canvas_px": [
+            656,
+            702
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_01_5x5_roof.png",
+          "key": "house_01_5x5_roof",
+          "canvas_px": [
+            656,
+            702
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_large.png",
+          "key": "house_large",
+          "canvas_px": [
+            528,
+            574
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 568,
+          "footprint_tiles": [
+            4,
+            4
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_large_base.png",
+          "key": "house_large_base",
+          "canvas_px": [
+            528,
+            574
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_large_roof.png",
+          "key": "house_large_roof",
+          "canvas_px": [
+            528,
+            574
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_small.png",
+          "key": "house_small",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 440,
+          "footprint_tiles": [
+            3,
+            3
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_small_base.png",
+          "key": "house_small_base",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/house_small_roof.png",
+          "key": "house_small_roof",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/hut.png",
+          "key": "hut",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 440,
+          "footprint_tiles": [
+            3,
+            3
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/hut_base.png",
+          "key": "hut_base",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/hut_roof.png",
+          "key": "hut_roof",
+          "canvas_px": [
+            400,
+            446
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/shed.png",
+          "key": "shed",
+          "canvas_px": [
+            384,
+            562
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 562,
+          "footprint_tiles": [
+            3,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/smithy.png",
+          "key": "smithy",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/smithy_base.png",
+          "key": "smithy_base",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/smithy_roof.png",
+          "key": "smithy_roof",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/tannery.png",
+          "key": "tannery",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/tannery_base.png",
+          "key": "tannery_base",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/tannery_roof.png",
+          "key": "tannery_roof",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/weaver.png",
+          "key": "weaver",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 696,
+          "footprint_tiles": [
+            5,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/weaver_base.png",
+          "key": "weaver_base",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/buildings/weaver_roof.png",
+          "key": "weaver_roof",
+          "canvas_px": [
+            656,
+            824
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/castle/keep.png",
+          "key": "keep",
+          "canvas_px": [
+            1952,
+            1672
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 1664,
+          "footprint_tiles": [
+            15,
+            11
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/castle/keep_base.png",
+          "key": "keep_base",
+          "canvas_px": [
+            1952,
+            1672
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/castle/keep_roof.png",
+          "key": "keep_roof",
+          "canvas_px": [
+            1952,
+            1672
+          ],
+          "origin": null,
+          "base_y_px": null,
+          "footprint_tiles": null,
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_corner.png",
+          "key": "fence_corner",
+          "canvas_px": [
+            128,
+            140
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 140,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_corner_ne.png",
+          "key": "fence_corner_ne",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_corner_nw.png",
+          "key": "fence_corner_nw",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_corner_se.png",
+          "key": "fence_corner_se",
+          "canvas_px": [
+            128,
+            140
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 140,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_corner_sw.png",
+          "key": "fence_corner_sw",
+          "canvas_px": [
+            128,
+            140
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 140,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_post.png",
+          "key": "fence_post",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_straight.png",
+          "key": "fence_straight",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_straight_ew.png",
+          "key": "fence_straight_ew",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_straight_ns.png",
+          "key": "fence_straight_ns",
+          "canvas_px": [
+            128,
+            140
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 140,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/fences/fence_straight_ns_e.png",
+          "key": "fence_straight_ns_e",
+          "canvas_px": [
+            128,
+            140
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 140,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_corner.png",
+          "key": "hedge_corner",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_corner_ne.png",
+          "key": "hedge_corner_ne",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_corner_nw.png",
+          "key": "hedge_corner_nw",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_corner_se.png",
+          "key": "hedge_corner_se",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_corner_sw.png",
+          "key": "hedge_corner_sw",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_h.png",
+          "key": "hedge_h",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_h_a.png",
+          "key": "hedge_h_a",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_h_b.png",
+          "key": "hedge_h_b",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_h_c.png",
+          "key": "hedge_h_c",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_v.png",
+          "key": "hedge_v",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_v_a.png",
+          "key": "hedge_v_a",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_v_b.png",
+          "key": "hedge_v_b",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/plants/hedge_v_c.png",
+          "key": "hedge_v_c",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/alchemy_bench.png",
+          "key": "alchemy_bench",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/anvil.png",
+          "key": "anvil",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/bar_counter.png",
+          "key": "bar_counter",
+          "canvas_px": [
+            256,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            2,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/barrel.png",
+          "key": "barrel",
+          "canvas_px": [
+            140,
+            179
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 179,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/bed.png",
+          "key": "bed",
+          "canvas_px": [
+            128,
+            256
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 256,
+          "footprint_tiles": [
+            1,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/bell_frame.png",
+          "key": "bell_frame",
+          "canvas_px": [
+            308,
+            335
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 335,
+          "footprint_tiles": [
+            2,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/cart.png",
+          "key": "cart",
+          "canvas_px": [
+            350,
+            231
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 231,
+          "footprint_tiles": [
+            2,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/cart_v.png",
+          "key": "cart_v",
+          "canvas_px": [
+            218,
+            265
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 265,
+          "footprint_tiles": [
+            1,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/chest.png",
+          "key": "chest",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/crate.png",
+          "key": "crate",
+          "canvas_px": [
+            130,
+            181
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 181,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/drying_rack.png",
+          "key": "drying_rack",
+          "canvas_px": [
+            268,
+            197
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 197,
+          "footprint_tiles": [
+            2,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/drying_rack_v.png",
+          "key": "drying_rack_v",
+          "canvas_px": [
+            136,
+            260
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 260,
+          "footprint_tiles": [
+            1,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/gemcutting_bench.png",
+          "key": "gemcutting_bench",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/hall_hearth.png",
+          "key": "hall_hearth",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/hall_rug.png",
+          "key": "hall_rug",
+          "canvas_px": [
+            384,
+            640
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 640,
+          "footprint_tiles": [
+            3,
+            5
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/hall_stool.png",
+          "key": "hall_stool",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/hay_bale.png",
+          "key": "hay_bale",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/haycock.png",
+          "key": "haycock",
+          "canvas_px": [
+            154,
+            193
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 193,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/hitching_post.png",
+          "key": "hitching_post",
+          "canvas_px": [
+            136,
+            260
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 260,
+          "footprint_tiles": [
+            1,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/inn_sign.png",
+          "key": "inn_sign",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/jewelry_bench.png",
+          "key": "jewelry_bench",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/long_table.png",
+          "key": "long_table",
+          "canvas_px": [
+            256,
+            256
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 256,
+          "footprint_tiles": [
+            2,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/lord_seat.png",
+          "key": "lord_seat",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/notice_board.png",
+          "key": "notice_board",
+          "canvas_px": [
+            180,
+            176
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 176,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/ore_bin.png",
+          "key": "ore_bin",
+          "canvas_px": [
+            204,
+            149
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 149,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/runecarving_bench.png",
+          "key": "runecarving_bench",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/scarecrow.png",
+          "key": "scarecrow",
+          "canvas_px": [
+            210,
+            296
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 296,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/signpost.png",
+          "key": "signpost",
+          "canvas_px": [
+            164,
+            223
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 223,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/stall.png",
+          "key": "stall",
+          "canvas_px": [
+            292,
+            285
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 285,
+          "footprint_tiles": [
+            2,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/timber_stack.png",
+          "key": "timber_stack",
+          "canvas_px": [
+            264,
+            286
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 286,
+          "footprint_tiles": [
+            2,
+            2
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/wall_lantern.png",
+          "key": "wall_lantern",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/watch_fire.png",
+          "key": "watch_fire",
+          "canvas_px": [
+            156,
+            206
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 206,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/water_trough.png",
+          "key": "water_trough",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/props/well.png",
+          "key": "well",
+          "canvas_px": [
+            154,
+            212
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 212,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/gatehouse_ew.png",
+          "key": "gatehouse_ew",
+          "canvas_px": [
+            528,
+            816
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 816,
+          "footprint_tiles": [
+            4,
+            6
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/gatehouse_ns.png",
+          "key": "gatehouse_ns",
+          "canvas_px": [
+            784,
+            672
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 672,
+          "footprint_tiles": [
+            6,
+            4
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_corner.png",
+          "key": "wall_corner",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_corner_ne.png",
+          "key": "wall_corner_ne",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_corner_nw.png",
+          "key": "wall_corner_nw",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_corner_se.png",
+          "key": "wall_corner_se",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_corner_sw.png",
+          "key": "wall_corner_sw",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_h.png",
+          "key": "wall_h",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_v.png",
+          "key": "wall_v",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_v_a.png",
+          "key": "wall_v_a",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_v_b.png",
+          "key": "wall_v_b",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        },
+        {
+          "file": "art/objects/walls/wall_v_c.png",
+          "key": "wall_v_c",
+          "canvas_px": [
+            128,
+            160
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 160,
+          "footprint_tiles": [
+            1,
+            1
+          ],
+          "changed": "pixels only"
+        }
+      ],
+      "walkin_reports": {
+        "tannery": {
+          "door_cells": [
+            139,
+            258,
+            188,
+            347
+          ],
+          "windows": [
+            [
+              20,
+              250,
+              57,
+              290,
+              0
+            ],
+            [
+              84,
+              250,
+              121,
+              290,
+              0
+            ],
+            [
+              212,
+              250,
+              249,
+              290,
+              0
+            ],
+            [
+              276,
+              250,
+              313,
+              290,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            653
+          ],
+          "roof_x": [
+            0,
+            655
+          ]
+        },
+        "weaver": {
+          "door_cells": [
+            139,
+            258,
+            188,
+            347
+          ],
+          "windows": [
+            [
+              20,
+              250,
+              57,
+              290,
+              1175
+            ],
+            [
+              84,
+              250,
+              121,
+              290,
+              0
+            ],
+            [
+              212,
+              250,
+              249,
+              290,
+              0
+            ],
+            [
+              276,
+              250,
+              313,
+              290,
+              521
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            653
+          ],
+          "roof_x": [
+            0,
+            655
+          ]
+        },
+        "carpenter": {
+          "door_cells": [
+            139,
+            258,
+            188,
+            347
+          ],
+          "windows": [
+            [
+              20,
+              250,
+              57,
+              290,
+              0
+            ],
+            [
+              84,
+              250,
+              121,
+              290,
+              0
+            ],
+            [
+              212,
+              250,
+              249,
+              290,
+              0
+            ],
+            [
+              276,
+              250,
+              313,
+              290,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            653
+          ],
+          "roof_x": [
+            0,
+            655
+          ]
+        },
+        "smithy": {
+          "windows": [
+            [
+              20,
+              250,
+              57,
+              290,
+              1144
+            ],
+            [
+              276,
+              250,
+              313,
+              290,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            653
+          ],
+          "roof_x": [
+            0,
+            655
+          ]
+        },
+        "herb_shed": {
+          "door_cells": [
+            75,
+            194,
+            124,
+            283
+          ],
+          "windows": [
+            [
+              24,
+              186,
+              51,
+              215,
+              0
+            ],
+            [
+              152,
+              186,
+              179,
+              215,
+              0
+            ],
+            [
+              216,
+              186,
+              243,
+              215,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            525
+          ],
+          "roof_x": [
+            0,
+            527
+          ]
+        },
+        "house_large": {
+          "door_cells": [
+            82,
+            194,
+            181,
+            283
+          ],
+          "windows": [
+            [
+              20,
+              186,
+              57,
+              226,
+              0
+            ],
+            [
+              212,
+              186,
+              249,
+              226,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            525
+          ],
+          "roof_x": [
+            0,
+            527
+          ]
+        },
+        "house_small": {
+          "door_cells": [
+            75,
+            130,
+            124,
+            219
+          ],
+          "windows": [
+            [
+              24,
+              122,
+              51,
+              151,
+              0
+            ],
+            [
+              152,
+              122,
+              179,
+              151,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            397
+          ],
+          "roof_x": [
+            0,
+            399
+          ]
+        },
+        "hut": {
+          "door_cells": [
+            75,
+            130,
+            124,
+            219
+          ],
+          "windows": [
+            [
+              24,
+              122,
+              51,
+              151,
+              0
+            ],
+            [
+              152,
+              122,
+              179,
+              151,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            397
+          ],
+          "roof_x": [
+            0,
+            399
+          ]
+        },
+        "house_01_5x5": {
+          "door_cells": [
+            139,
+            258,
+            188,
+            347
+          ],
+          "windows": [
+            [
+              81,
+              252,
+              123,
+              295,
+              0
+            ],
+            [
+              205,
+              252,
+              251,
+              295,
+              0
+            ]
+          ],
+          "outdoor_cells_on_door": 0,
+          "base_x": [
+            2,
+            653
+          ],
+          "roof_x": [
+            0,
+            655
+          ]
+        }
+      }
+    },
+    "art/objects/remake_props_map.json": {
+      "batch": "REMAKE-1 R3 batch 2 (2026-11-25)",
+      "builder": "art/tools/build_remake_props.py",
+      "summary": "Every existing file keeps its path, atlas/texture key, canvas size, origin (0.5,1), base_y_px and footprint. Only the pixels changed (plus a 'remake' note in each sidecar). Two new files are added for the wild hemp bush.",
+      "unchanged_keys": [
+        {
+          "file": "art/objects/crops/wheat_ripe.png",
+          "canvas_px": [
+            128,
+            192
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 192,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/crops/wheat_young.png",
+          "canvas_px": [
+            128,
+            192
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 192,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/birch.png",
+          "canvas_px": [
+            128,
+            512
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 512,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/birch_depleted.png",
+          "canvas_px": [
+            128,
+            136
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 136,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/boar_hide.png",
+          "canvas_px": [
+            176,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/boar_hide_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/chamomile.png",
+          "canvas_px": [
+            128,
+            146
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 146,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/chamomile_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/copper.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/copper_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/cotton.png",
+          "canvas_px": [
+            136,
+            156
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 156,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/cotton_depleted.png",
+          "canvas_px": [
+            130,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/hemlock.png",
+          "canvas_px": [
+            136,
+            155
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 155,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/hemlock_depleted.png",
+          "canvas_px": [
+            134,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/jute.png",
+          "canvas_px": [
+            128,
+            176
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 176,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/jute_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/mint.png",
+          "canvas_px": [
+            142,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/mint_depleted.png",
+          "canvas_px": [
+            142,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/nightshade.png",
+          "canvas_px": [
+            140,
+            156
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 156,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/nightshade_depleted.png",
+          "canvas_px": [
+            134,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/peppermint.png",
+          "canvas_px": [
+            140,
+            156
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 156,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/peppermint_depleted.png",
+          "canvas_px": [
+            140,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/pine.png",
+          "canvas_px": [
+            128,
+            512
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 512,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/pine_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/silver.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/silver_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/wolf_hide.png",
+          "canvas_px": [
+            176,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/wolf_hide_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/yarrow.png",
+          "canvas_px": [
+            142,
+            154
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 154,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/yarrow_depleted.png",
+          "canvas_px": [
+            142,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/zinc.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/zinc_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/plants/bush.png",
+          "canvas_px": [
+            164,
+            135
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 135,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/plants/bush_berry.png",
+          "canvas_px": [
+            164,
+            131
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 131,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/plants/bush_flower.png",
+          "canvas_px": [
+            162,
+            129
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 129,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/plants/bush_patch.png",
+          "canvas_px": [
+            300,
+            268
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 268,
+          "footprint_tiles": [
+            2,
+            2
+          ]
+        },
+        {
+          "file": "art/objects/plants/shrub_low.png",
+          "canvas_px": [
+            160,
+            85
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 85,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/rocks/rock_large_01.png",
+          "canvas_px": [
+            256,
+            256
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 256,
+          "footprint_tiles": [
+            2,
+            2
+          ]
+        },
+        {
+          "file": "art/objects/trees/birch_01.png",
+          "canvas_px": [
+            128,
+            512
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 512,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/trees/pine_01.png",
+          "canvas_px": [
+            128,
+            512
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 512,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/trees/tree_broadleaf.png",
+          "canvas_px": [
+            422,
+            484
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 484,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/trees/tree_orchard.png",
+          "canvas_px": [
+            278,
+            332
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 332,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        }
+      ],
+      "new_keys": [
+        {
+          "file": "art/objects/nodes/hemp.png",
+          "canvas_px": [
+            128,
+            176
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 176,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        },
+        {
+          "file": "art/objects/nodes/hemp_depleted.png",
+          "canvas_px": [
+            128,
+            128
+          ],
+          "origin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "base_y_px": 128,
+          "footprint_tiles": [
+            1,
+            1
+          ]
+        }
+      ],
+      "new_keys_note": "nodes/hemp(.png/.json) and nodes/hemp_depleted: type id 'hemp' (1x1, collision none, same sidecar shape as jute). Not in shared/src/world/objectTypes.ts yet.",
+      "remake64": {
+        "date": "2026-11-27",
+        "builder": "art/tools/build_remake64_props.py",
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex",
+        "changed": "pixels only: same files, keys, canvas sizes, origins, base_y, footprints"
+      }
     },
     "art/objects/rocks/rock_large_01.json": {
       "type": "rock_large",
@@ -13861,7 +16853,8 @@
         "above": 48,
         "below": 0
       },
-      "construction": "Rebuilt in code for the batch 1 fix round: W and E arched mouths from the wall-kit arch, cobbled passage between them, a lintel connecting the wings, shorter towers (overhang above 48 px, was 160) so a wall_v immediately north stays readable."
+      "construction": "Rebuilt in code for the batch 1 fix round: W and E arched mouths from the wall-kit arch, cobbled passage between them, a lintel connecting the wings, shorter towers (overhang above 48 px, was 160) so a wall_v immediately north stays readable.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/gatehouse_ns.json": {
       "type": "gatehouse_ns",
@@ -13963,7 +16956,8 @@
         "above": 160,
         "below": 0
       },
-      "construction": "Composited in code from the wall-kit (towers, arch, walk, face)."
+      "construction": "Composited in code from the wall-kit (towers, arch, walk, face).",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_corner.json": {
       "type": "wall_corner",
@@ -13998,7 +16992,8 @@
       },
       "facing": "NW",
       "note": "Alias of wall_corner_nw. Use wall_corner_ne/nw/se/sw at the four town corners.",
-      "construction": "Alias of wall_corner_nw."
+      "construction": "Alias of wall_corner_nw.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_corner_ne.json": {
       "type": "wall_corner",
@@ -14033,7 +17028,8 @@
       },
       "facing": "NE",
       "note": "North-east town corner: walk to the west and south. Inner south face of the north wall is taken from wall_h so courses meet the west neighbour. World Builder will switch the 9_10 corners to wall_corner_nw/ne/sw/se (objects.json was not edited).",
-      "construction": "Composited in code from wall_h and wall_v_a so the H-arm face matches the curtain."
+      "construction": "Composited in code from wall_h and wall_v_a so the H-arm face matches the curtain.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_corner_nw.json": {
       "type": "wall_corner",
@@ -14068,7 +17064,8 @@
       },
       "facing": "NW",
       "note": "North-west town corner: walk to the east and south. Alias of wall_corner. Inner south face of the north wall is taken from wall_h so courses meet the east neighbour. World Builder will switch the 9_10 corners to wall_corner_nw/ne/sw/se (objects.json was not edited).",
-      "construction": "Composited in code from wall_h and wall_v_a so the H-arm face matches the curtain."
+      "construction": "Composited in code from wall_h and wall_v_a so the H-arm face matches the curtain.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_corner_se.json": {
       "type": "wall_corner",
@@ -14103,7 +17100,8 @@
       },
       "facing": "SE",
       "note": "South-east town corner: walk to the west and north, with a south face. The map's four wall_corner placements need these four variants (no variant field is set in 9_10/objects.json).",
-      "construction": "Composited in code from the same wall-kit as wall_h / wall_v."
+      "construction": "Composited in code from the same wall-kit as wall_h / wall_v.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_corner_sw.json": {
       "type": "wall_corner",
@@ -14138,7 +17136,8 @@
       },
       "facing": "SW",
       "note": "South-west town corner: walk to the east and north, with a south face. The map's four wall_corner placements need these four variants (no variant field is set in 9_10/objects.json).",
-      "construction": "Composited in code from the same wall-kit as wall_h / wall_v."
+      "construction": "Composited in code from the same wall-kit as wall_h / wall_v.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_h.json": {
       "type": "wall_h",
@@ -14172,7 +17171,8 @@
         "below": 0
       },
       "facing": "EW",
-      "style_reference_id": "25c7daf92b814d2394e236fd52040736"
+      "style_reference_id": "25c7daf92b814d2394e236fd52040736",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_v.json": {
       "type": "wall_v",
@@ -14210,7 +17210,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
       },
-      "note": "Alias of wall_v_a."
+      "note": "Alias of wall_v_a.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_v_a.json": {
       "type": "wall_v",
@@ -14248,7 +17249,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
       },
-      "note": "Alias of wall_v. First tile of the 3-tile unique NS strip."
+      "note": "Alias of wall_v. First tile of the 3-tile unique NS strip.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_v_b.json": {
       "type": "wall_v",
@@ -14286,7 +17288,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
       },
-      "note": "Second tile of the 3-tile unique NS strip."
+      "note": "Second tile of the 3-tile unique NS strip.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/objects/walls/wall_v_c.json": {
       "type": "wall_v",
@@ -14324,7 +17327,8 @@
         "rule": "tile_y_mod_3",
         "note": "Pick wall_v_a when tile y % 3 == 0, wall_v_b when y % 3 == 1, wall_v_c when y % 3 == 2. wall_v is an alias of wall_v_a. The three tiles were sliced from one 3-tile unique strip so a,b,c cycle seamlessly."
       },
-      "note": "Third tile of the 3-tile unique NS strip."
+      "note": "Third tile of the 3-tile unique NS strip.",
+      "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
     },
     "art/creatures/boar_adult/boar_adult_sheet.json": {
       "id": "boar_adult",
@@ -14333,7 +17337,7 @@
       "frameWidth": 144,
       "frameHeight": 112,
       "columns": 7,
-      "rows": 4,
+      "rows": 8,
       "padding": 0,
       "spacing": 0,
       "origin": {
@@ -14342,14 +17346,18 @@
       },
       "base_y_px": 112,
       "facing_rows": {
-        "down": 0,
         "S": 0,
-        "left": 1,
+        "down": 0,
         "W": 1,
-        "right": 2,
+        "left": 1,
         "E": 2,
+        "right": 2,
+        "N": 3,
         "up": 3,
-        "N": 3
+        "SE": 4,
+        "SW": 5,
+        "NE": 6,
+        "NW": 7
       },
       "anims": {
         "idle": [
@@ -14370,70 +17378,117 @@
         "walk": 8,
         "corpse": 0
       },
-      "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-3 is transparent.",
+      "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
       "frame_index_formula": "row * 7 + column",
       "body": {
-        "x": 42,
-        "y": 38,
-        "w": 58,
-        "h": 74
+        "x": 50,
+        "y": 22,
+        "w": 44,
+        "h": 76
       },
       "body_by_facing": {
         "S": {
-          "x": 42,
-          "y": 38,
-          "w": 58,
-          "h": 74
+          "x": 50,
+          "y": 22,
+          "w": 44,
+          "h": 76
         },
         "W": {
-          "x": 23,
-          "y": 52,
-          "w": 98,
-          "h": 60
+          "x": 4,
+          "y": 30,
+          "w": 132,
+          "h": 66
         },
         "E": {
-          "x": 23,
-          "y": 52,
-          "w": 98,
-          "h": 60
+          "x": 8,
+          "y": 30,
+          "w": 132,
+          "h": 66
         },
         "N": {
-          "x": 45,
-          "y": 40,
-          "w": 54,
-          "h": 72
+          "x": 50,
+          "y": 26,
+          "w": 44,
+          "h": 78
+        },
+        "SE": {
+          "x": 26,
+          "y": 24,
+          "w": 98,
+          "h": 76
+        },
+        "SW": {
+          "x": 20,
+          "y": 24,
+          "w": 98,
+          "h": 76
+        },
+        "NE": {
+          "x": 26,
+          "y": 26,
+          "w": 98,
+          "h": 78
+        },
+        "NW": {
+          "x": 20,
+          "y": 26,
+          "w": 98,
+          "h": 78
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          73,
-          92
+          48,
+          80
         ],
         "W": [
-          140,
-          80
+          136,
+          70
         ],
         "E": [
-          140,
-          80
+          136,
+          70
         ],
         "N": [
-          68,
-          90
+          48,
+          82
+        ],
+        "SE": [
+          102,
+          80
+        ],
+        "SW": [
+          102,
+          80
+        ],
+        "NE": [
+          102,
+          82
+        ],
+        "NW": [
+          102,
+          82
         ]
       },
       "corpse_px": [
-        140,
-        62
+        136,
+        56
       ],
-      "mirror": "W row is a horizontal mirror of E (lighting mirrors too).",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
       "sheet": "boar_adult/boar_adult_sheet.png",
       "sidecar": "boar_adult/boar_adult_sheet.json",
       "style_reference_id": {
         "S": "62fc1a9352be4cab98a2889e77b19f5a",
         "E": "e389122200f6457ab83483372d2f4d5a",
         "N": "e389122200f6457ab83483372d2f4d5a"
+      },
+      "ground_line_px": 92,
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
       }
     },
     "art/creatures/boar_young/boar_young_sheet.json": {
@@ -14443,7 +17498,7 @@
       "frameWidth": 80,
       "frameHeight": 64,
       "columns": 7,
-      "rows": 4,
+      "rows": 8,
       "padding": 0,
       "spacing": 0,
       "origin": {
@@ -14452,14 +17507,18 @@
       },
       "base_y_px": 64,
       "facing_rows": {
-        "down": 0,
         "S": 0,
-        "left": 1,
+        "down": 0,
         "W": 1,
-        "right": 2,
+        "left": 1,
         "E": 2,
+        "right": 2,
+        "N": 3,
         "up": 3,
-        "N": 3
+        "SE": 4,
+        "SW": 5,
+        "NE": 6,
+        "NW": 7
       },
       "anims": {
         "idle": [
@@ -14480,70 +17539,117 @@
         "walk": 8,
         "corpse": 0
       },
-      "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-3 is transparent.",
+      "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
       "frame_index_formula": "row * 7 + column",
       "body": {
         "x": 28,
-        "y": 27,
+        "y": 18,
         "w": 24,
-        "h": 37
+        "h": 36
       },
       "body_by_facing": {
         "S": {
           "x": 28,
-          "y": 27,
+          "y": 18,
           "w": 24,
-          "h": 37
+          "h": 36
         },
         "W": {
-          "x": 13,
-          "y": 35,
-          "w": 53,
-          "h": 29
+          "x": 4,
+          "y": 20,
+          "w": 70,
+          "h": 34
         },
         "E": {
-          "x": 13,
-          "y": 35,
-          "w": 53,
-          "h": 29
+          "x": 6,
+          "y": 20,
+          "w": 70,
+          "h": 34
         },
         "N": {
-          "x": 27,
-          "y": 29,
-          "w": 25,
-          "h": 35
+          "x": 28,
+          "y": 18,
+          "w": 24,
+          "h": 40
+        },
+        "SE": {
+          "x": 16,
+          "y": 20,
+          "w": 52,
+          "h": 36
+        },
+        "SW": {
+          "x": 12,
+          "y": 20,
+          "w": 52,
+          "h": 36
+        },
+        "NE": {
+          "x": 16,
+          "y": 20,
+          "w": 52,
+          "h": 38
+        },
+        "NW": {
+          "x": 12,
+          "y": 20,
+          "w": 52,
+          "h": 38
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          30,
-          46
+          28,
+          40
         ],
         "W": [
-          76,
-          39
+          74,
+          38
         ],
         "E": [
-          76,
-          39
+          74,
+          38
         ],
         "N": [
-          31,
+          28,
           44
+        ],
+        "SE": [
+          56,
+          40
+        ],
+        "SW": [
+          56,
+          40
+        ],
+        "NE": [
+          56,
+          42
+        ],
+        "NW": [
+          56,
+          42
         ]
       },
       "corpse_px": [
-        76,
-        30
+        74,
+        32
       ],
-      "mirror": "W row is a horizontal mirror of E (lighting mirrors too).",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
       "sheet": "boar_young/boar_young_sheet.png",
       "sidecar": "boar_young/boar_young_sheet.json",
       "style_reference_id": {
         "S": "69591086b86f43c6a0e7352ebe510da8",
         "E": "2087c84b168d441cafdc1b1426007216",
         "N": "89e96c768cb549ae91396f26877e153e"
+      },
+      "ground_line_px": 52,
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
       }
     },
     "art/creatures/rabbit/rabbit_sheet.json": {
@@ -14597,101 +17703,102 @@
       "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
       "frame_index_formula": "row * 7 + column",
       "body": {
-        "x": 15,
-        "y": 22,
-        "w": 18,
-        "h": 26
+        "x": 18,
+        "y": 14,
+        "w": 12,
+        "h": 28
       },
       "body_by_facing": {
         "S": {
-          "x": 15,
-          "y": 22,
-          "w": 18,
-          "h": 26
+          "x": 18,
+          "y": 14,
+          "w": 12,
+          "h": 28
         },
         "W": {
-          "x": 12,
-          "y": 24,
-          "w": 22,
-          "h": 24
+          "x": 10,
+          "y": 12,
+          "w": 26,
+          "h": 30
         },
         "E": {
           "x": 12,
-          "y": 24,
-          "w": 22,
-          "h": 24
+          "y": 12,
+          "w": 26,
+          "h": 30
         },
         "N": {
-          "x": 15,
-          "y": 22,
-          "w": 17,
-          "h": 26
+          "x": 18,
+          "y": 12,
+          "w": 12,
+          "h": 30
         },
         "SE": {
-          "x": 12,
-          "y": 25,
+          "x": 14,
+          "y": 14,
           "w": 22,
-          "h": 23
+          "h": 28
         },
         "SW": {
           "x": 12,
-          "y": 25,
+          "y": 14,
           "w": 22,
-          "h": 23
+          "h": 28
         },
         "NE": {
           "x": 14,
-          "y": 23,
-          "w": 19,
-          "h": 25
+          "y": 12,
+          "w": 22,
+          "h": 30
         },
         "NW": {
-          "x": 14,
-          "y": 23,
-          "w": 19,
-          "h": 25
+          "x": 12,
+          "y": 12,
+          "w": 22,
+          "h": 30
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          22,
+          16,
           32
         ],
         "W": [
-          31,
-          32
+          30,
+          34
         ],
         "E": [
-          31,
-          32
+          30,
+          34
         ],
         "N": [
-          21,
-          32
+          16,
+          34
         ],
         "SE": [
-          29,
-          30
+          26,
+          32
         ],
         "SW": [
-          29,
-          30
+          26,
+          32
         ],
         "NE": [
-          25,
-          32
+          26,
+          34
         ],
         "NW": [
-          25,
-          32
+          26,
+          34
         ]
       },
       "corpse_px": [
-        44,
-        15
+        30,
+        20
       ],
-      "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
       "sheet": "rabbit/rabbit_sheet.png",
       "sidecar": "rabbit/rabbit_sheet.json",
       "style_reference_id": {
@@ -14701,6 +17808,12 @@
         "corpse": "083642aebdcd450c83c76767ee088c34",
         "SE": "1741a1e5fe0d40999c8a92ccbfb4407f",
         "NE": "083642aebdcd450c83c76767ee088c34"
+      },
+      "ground_line_px": 40,
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
       }
     },
     "art/creatures/sources.json": {
@@ -14822,101 +17935,102 @@
       "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
       "frame_index_formula": "row * 7 + column",
       "body": {
-        "x": 17,
-        "y": 24,
-        "w": 14,
+        "x": 18,
+        "y": 16,
+        "w": 12,
         "h": 24
       },
       "body_by_facing": {
         "S": {
-          "x": 17,
-          "y": 24,
-          "w": 14,
+          "x": 18,
+          "y": 16,
+          "w": 12,
           "h": 24
         },
         "W": {
-          "x": 15,
-          "y": 28,
-          "w": 18,
-          "h": 20
+          "x": 14,
+          "y": 16,
+          "w": 28,
+          "h": 26
         },
         "E": {
-          "x": 15,
-          "y": 28,
-          "w": 18,
-          "h": 20
+          "x": 6,
+          "y": 16,
+          "w": 28,
+          "h": 26
         },
         "N": {
-          "x": 16,
-          "y": 24,
-          "w": 14,
+          "x": 18,
+          "y": 18,
+          "w": 12,
           "h": 24
         },
         "SE": {
-          "x": 14,
-          "y": 26,
-          "w": 19,
-          "h": 22
+          "x": 10,
+          "y": 16,
+          "w": 22,
+          "h": 24
         },
         "SW": {
-          "x": 14,
-          "y": 26,
-          "w": 19,
-          "h": 22
+          "x": 16,
+          "y": 16,
+          "w": 22,
+          "h": 24
         },
         "NE": {
-          "x": 13,
-          "y": 26,
-          "w": 20,
-          "h": 22
+          "x": 10,
+          "y": 18,
+          "w": 22,
+          "h": 24
         },
         "NW": {
-          "x": 13,
-          "y": 26,
-          "w": 20,
-          "h": 22
+          "x": 16,
+          "y": 18,
+          "w": 22,
+          "h": 24
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          18,
-          30
+          16,
+          28
         ],
         "W": [
-          26,
-          26
-        ],
-        "E": [
-          26,
-          26
-        ],
-        "N": [
-          17,
+          32,
           30
         ],
+        "E": [
+          32,
+          30
+        ],
+        "N": [
+          16,
+          28
+        ],
         "SE": [
-          25,
+          26,
           28
         ],
         "SW": [
-          25,
+          26,
           28
         ],
         "NE": [
-          27,
+          26,
           28
         ],
         "NW": [
-          27,
+          26,
           28
         ]
       },
       "corpse_px": [
-        44,
-        12
+        32,
+        18
       ],
-      "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
       "sheet": "squirrel/squirrel_sheet.png",
       "sidecar": "squirrel/squirrel_sheet.json",
       "style_reference_id": {
@@ -14926,6 +18040,12 @@
         "corpse": "7971e83e5a874cd7931d0940506d281e",
         "SE": "586932ffcfa24e75b1879639f7503741",
         "NE": "7971e83e5a874cd7931d0940506d281e"
+      },
+      "ground_line_px": 40,
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
       }
     },
     "art/creatures/wolf_adult/wolf_adult_sheet.json": {
@@ -14984,101 +18104,102 @@
       "anims_note": "Inclusive column ranges within the facing row (idle and walk loop; attack plays once: crouch, lunge with open jaws, recover). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent. Attack is in every row.",
       "frame_index_formula": "row * 10 + column",
       "body": {
-        "x": 51,
-        "y": 32,
-        "w": 41,
-        "h": 80
+        "x": 60,
+        "y": 38,
+        "w": 24,
+        "h": 68
       },
       "body_by_facing": {
         "S": {
-          "x": 51,
-          "y": 32,
-          "w": 41,
-          "h": 80
+          "x": 60,
+          "y": 38,
+          "w": 24,
+          "h": 68
         },
         "W": {
-          "x": 36,
-          "y": 36,
-          "w": 71,
-          "h": 76
+          "x": 18,
+          "y": 32,
+          "w": 104,
+          "h": 64
         },
         "E": {
-          "x": 36,
-          "y": 36,
-          "w": 71,
-          "h": 76
+          "x": 22,
+          "y": 32,
+          "w": 104,
+          "h": 64
         },
         "N": {
-          "x": 54,
-          "y": 34,
-          "w": 35,
-          "h": 78
+          "x": 60,
+          "y": 22,
+          "w": 24,
+          "h": 82
         },
         "SE": {
-          "x": 42,
-          "y": 34,
-          "w": 60,
-          "h": 78
+          "x": 36,
+          "y": 40,
+          "w": 76,
+          "h": 64
         },
         "SW": {
-          "x": 42,
-          "y": 34,
-          "w": 60,
-          "h": 78
+          "x": 32,
+          "y": 40,
+          "w": 76,
+          "h": 64
         },
         "NE": {
-          "x": 47,
-          "y": 35,
-          "w": 49,
-          "h": 77
+          "x": 36,
+          "y": 24,
+          "w": 76,
+          "h": 80
         },
         "NW": {
-          "x": 47,
-          "y": 35,
-          "w": 49,
-          "h": 77
+          "x": 32,
+          "y": 24,
+          "w": 76,
+          "h": 80
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          51,
-          100
+          28,
+          72
         ],
         "W": [
-          102,
-          102
+          108,
+          68
         ],
         "E": [
-          102,
-          102
+          108,
+          68
         ],
         "N": [
-          44,
-          98
+          28,
+          86
         ],
         "SE": [
           80,
-          100
+          68
         ],
         "SW": [
           80,
-          100
+          68
         ],
         "NE": [
-          65,
-          99
+          80,
+          84
         ],
         "NW": [
-          65,
-          99
+          80,
+          84
         ]
       },
       "corpse_px": [
-        102,
-        47
+        108,
+        50
       ],
-      "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
       "sheet": "wolf_adult/wolf_adult_sheet.png",
       "sidecar": "wolf_adult/wolf_adult_sheet.json",
       "style_reference_id": {
@@ -15087,7 +18208,14 @@
         "N": "85e418ba5a46441895a302bab90c1364",
         "SE": "85e418ba5a46441895a302bab90c1364",
         "NE": "d83f8dc4829d463c955af32fc729598b"
-      }
+      },
+      "ground_line_px": 92,
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
+      },
+      "gait": "diagonal-pair trot: FL with HR, FR with HL. Walk 0: FL+HR planted forward, FR+HL planted back; 1: FL+HR under the body, FR+HL swing (body up 1 art px); 2 and 3 mirror 0 and 1. A planted paw moves back exactly 3.8 art px (7.6 px) per frame, so it never slides."
     },
     "art/creatures/wolf_young/wolf_young_sheet.json": {
       "id": "wolf_young",
@@ -15145,102 +18273,102 @@
       "anims_note": "Inclusive column ranges within the facing row (idle and walk loop; attack plays once: crouch, lunge with open jaws, recover). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent. Attack is in every row.",
       "frame_index_formula": "row * 10 + column",
       "body": {
-        "x": 31,
-        "y": 29,
-        "w": 18,
-        "h": 35
+        "x": 34,
+        "y": 24,
+        "w": 12,
+        "h": 34
       },
       "body_by_facing": {
         "S": {
-          "x": 31,
-          "y": 29,
-          "w": 18,
-          "h": 35
-        },
-        "W": {
-          "x": 19,
-          "y": 31,
-          "w": 42,
-          "h": 33
-        },
-        "E": {
-          "x": 19,
-          "y": 31,
-          "w": 42,
-          "h": 33
-        },
-        "N": {
-          "x": 32,
-          "y": 30,
-          "w": 15,
+          "x": 34,
+          "y": 24,
+          "w": 12,
           "h": 34
         },
+        "W": {
+          "x": 10,
+          "y": 20,
+          "w": 56,
+          "h": 34
+        },
+        "E": {
+          "x": 14,
+          "y": 20,
+          "w": 56,
+          "h": 34
+        },
+        "N": {
+          "x": 34,
+          "y": 14,
+          "w": 12,
+          "h": 44
+        },
         "SE": {
-          "x": 26,
-          "y": 30,
-          "w": 26,
+          "x": 20,
+          "y": 24,
+          "w": 42,
           "h": 34
         },
         "SW": {
-          "x": 26,
-          "y": 30,
-          "w": 26,
+          "x": 18,
+          "y": 24,
+          "w": 42,
           "h": 34
         },
         "NE": {
-          "x": 29,
-          "y": 30,
-          "w": 21,
-          "h": 34
+          "x": 20,
+          "y": 16,
+          "w": 42,
+          "h": 42
         },
         "NW": {
-          "x": 29,
-          "y": 30,
-          "w": 21,
-          "h": 34
+          "x": 18,
+          "y": 16,
+          "w": 42,
+          "h": 42
         }
       },
-      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+      "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
       "sprite_px_by_facing": {
         "S": [
-          22,
-          44
+          16,
+          38
         ],
         "W": [
           60,
-          44
+          38
         ],
         "E": [
           60,
-          44
+          38
         ],
         "N": [
-          19,
-          43
+          16,
+          48
         ],
         "SE": [
-          35,
-          44
+          46,
+          38
         ],
         "SW": [
-          35,
-          44
+          46,
+          38
         ],
         "NE": [
-          28,
-          43
+          46,
+          46
         ],
         "NW": [
-          28,
-          43
+          46,
+          46
         ]
       },
       "corpse_px": [
-        59,
-        21
+        60,
+        28
       ],
-      "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
-      "diagonals": "SE / NE are the adult 3/4 generations scaled down in code, SW / NW are mirrors.",
+      "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+      "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
       "sheet": "wolf_young/wolf_young_sheet.png",
       "sidecar": "wolf_young/wolf_young_sheet.json",
       "style_reference_id": {
@@ -15250,7 +18378,14 @@
         "SE": "85e418ba5a46441895a302bab90c1364",
         "NE": "d83f8dc4829d463c955af32fc729598b"
       },
-      "src_note": "S, N, SE and NE are the wolf_adult generations scaled down to 44 / 43 / 44 / 43 px in code; E is its own juvenile generation."
+      "src_note": "S, N, SE and NE are the wolf_adult generations scaled down to 44 / 43 / 44 / 43 px in code; E is its own juvenile generation.",
+      "ground_line_px": 52,
+      "art_grid": {
+        "authoring_px_per_tile": 64,
+        "export_scale": 2,
+        "palette": "art/palette/master64.hex"
+      },
+      "gait": "diagonal-pair trot: FL with HR, FR with HL. Walk 0: FL+HR planted forward, FR+HL planted back; 1: FL+HR under the body, FR+HL swing (body up 1 art px); 2 and 3 mirror 0 and 1. A planted paw moves back exactly 2.0 art px (4.0 px) per frame, so it never slides."
     }
   },
   "atlasPages": [
@@ -15460,205 +18595,212 @@
       "w": 180,
       "h": 176
     },
-    "art/objects/nodes/jute.png": {
+    "art/objects/nodes/hemp.png": {
       "page": 0,
       "x": 2,
       "y": 1037,
       "w": 128,
       "h": 176
     },
-    "art/objects/plants/hedge_corner_ne.png": {
+    "art/objects/nodes/jute.png": {
       "page": 0,
       "x": 132,
+      "y": 1037,
+      "w": 128,
+      "h": 176
+    },
+    "art/objects/plants/hedge_corner_ne.png": {
+      "page": 0,
+      "x": 262,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_corner_nw.png": {
       "page": 0,
-      "x": 262,
+      "x": 392,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_corner_se.png": {
       "page": 0,
-      "x": 392,
+      "x": 522,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_corner_sw.png": {
       "page": 0,
-      "x": 522,
+      "x": 652,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_corner.png": {
       "page": 0,
-      "x": 652,
+      "x": 782,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_h_a.png": {
       "page": 0,
-      "x": 782,
+      "x": 912,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_h_b.png": {
       "page": 0,
-      "x": 912,
+      "x": 1042,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_h_c.png": {
       "page": 0,
-      "x": 1042,
+      "x": 1172,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_h.png": {
       "page": 0,
-      "x": 1172,
+      "x": 1302,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_v_a.png": {
       "page": 0,
-      "x": 1302,
+      "x": 1432,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_v_b.png": {
       "page": 0,
-      "x": 1432,
+      "x": 1562,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_v_c.png": {
       "page": 0,
-      "x": 1562,
+      "x": 1692,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/plants/hedge_v.png": {
       "page": 0,
-      "x": 1692,
+      "x": 1822,
       "y": 1037,
       "w": 128,
       "h": 160
     },
     "art/objects/walls/wall_corner_ne.png": {
       "page": 0,
-      "x": 1822,
-      "y": 1037,
-      "w": 128,
-      "h": 160
-    },
-    "art/objects/walls/wall_corner_nw.png": {
-      "page": 0,
       "x": 2,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_corner_se.png": {
+    "art/objects/walls/wall_corner_nw.png": {
       "page": 0,
       "x": 132,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_corner_sw.png": {
+    "art/objects/walls/wall_corner_se.png": {
       "page": 0,
       "x": 262,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_corner.png": {
+    "art/objects/walls/wall_corner_sw.png": {
       "page": 0,
       "x": 392,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_h.png": {
+    "art/objects/walls/wall_corner.png": {
       "page": 0,
       "x": 522,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_v_a.png": {
+    "art/objects/walls/wall_h.png": {
       "page": 0,
       "x": 652,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_v_b.png": {
+    "art/objects/walls/wall_v_a.png": {
       "page": 0,
       "x": 782,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_v_c.png": {
+    "art/objects/walls/wall_v_b.png": {
       "page": 0,
       "x": 912,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/walls/wall_v.png": {
+    "art/objects/walls/wall_v_c.png": {
       "page": 0,
       "x": 1042,
       "y": 1215,
       "w": 128,
       "h": 160
     },
-    "art/objects/nodes/nightshade.png": {
+    "art/objects/walls/wall_v.png": {
       "page": 0,
       "x": 1172,
+      "y": 1215,
+      "w": 128,
+      "h": 160
+    },
+    "art/objects/nodes/nightshade.png": {
+      "page": 0,
+      "x": 1302,
       "y": 1215,
       "w": 140,
       "h": 156
     },
     "art/objects/nodes/peppermint.png": {
       "page": 0,
-      "x": 1314,
+      "x": 1444,
       "y": 1215,
       "w": 140,
       "h": 156
     },
     "art/objects/nodes/cotton.png": {
       "page": 0,
-      "x": 1456,
+      "x": 1586,
       "y": 1215,
       "w": 136,
       "h": 156
     },
     "art/objects/nodes/hemlock.png": {
       "page": 0,
-      "x": 1594,
+      "x": 1724,
       "y": 1215,
       "w": 136,
       "h": 155
     },
     "art/objects/nodes/yarrow.png": {
       "page": 0,
-      "x": 1732,
+      "x": 1862,
       "y": 1215,
       "w": 142,
       "h": 154
@@ -15873,149 +19015,156 @@
       "w": 128,
       "h": 128
     },
-    "art/objects/nodes/jute_depleted.png": {
+    "art/objects/nodes/hemp_depleted.png": {
       "page": 0,
       "x": 522,
+      "y": 1658,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/nodes/jute_depleted.png": {
+      "page": 0,
+      "x": 652,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/pine_depleted.png": {
       "page": 0,
-      "x": 652,
+      "x": 782,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/silver_depleted.png": {
       "page": 0,
-      "x": 782,
+      "x": 912,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/silver.png": {
       "page": 0,
-      "x": 912,
+      "x": 1042,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/wolf_hide_depleted.png": {
       "page": 0,
-      "x": 1042,
+      "x": 1172,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/zinc_depleted.png": {
       "page": 0,
-      "x": 1172,
+      "x": 1302,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/nodes/zinc.png": {
       "page": 0,
-      "x": 1302,
+      "x": 1432,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/props/alchemy_bench.png": {
       "page": 0,
-      "x": 1432,
+      "x": 1562,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/props/anvil.png": {
       "page": 0,
-      "x": 1562,
+      "x": 1692,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/props/chest.png": {
       "page": 0,
-      "x": 1692,
+      "x": 1822,
       "y": 1658,
       "w": 128,
       "h": 128
     },
     "art/objects/props/gemcutting_bench.png": {
       "page": 0,
-      "x": 1822,
-      "y": 1658,
-      "w": 128,
-      "h": 128
-    },
-    "art/objects/props/hall_hearth.png": {
-      "page": 0,
       "x": 2,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/hall_stool.png": {
+    "art/objects/props/hall_hearth.png": {
       "page": 0,
       "x": 132,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/hay_bale.png": {
+    "art/objects/props/hall_stool.png": {
       "page": 0,
       "x": 262,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/inn_sign.png": {
+    "art/objects/props/hay_bale.png": {
       "page": 0,
       "x": 392,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/jewelry_bench.png": {
+    "art/objects/props/inn_sign.png": {
       "page": 0,
       "x": 522,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/lord_seat.png": {
+    "art/objects/props/jewelry_bench.png": {
       "page": 0,
       "x": 652,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/runecarving_bench.png": {
+    "art/objects/props/lord_seat.png": {
       "page": 0,
       "x": 782,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/wall_lantern.png": {
+    "art/objects/props/runecarving_bench.png": {
       "page": 0,
       "x": 912,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/props/water_trough.png": {
+    "art/objects/props/wall_lantern.png": {
       "page": 0,
       "x": 1042,
       "y": 1788,
       "w": 128,
       "h": 128
     },
-    "art/objects/plants/shrub_low.png": {
+    "art/objects/props/water_trough.png": {
       "page": 0,
       "x": 1172,
+      "y": 1788,
+      "w": 128,
+      "h": 128
+    },
+    "art/objects/plants/shrub_low.png": {
+      "page": 0,
+      "x": 1302,
       "y": 1788,
       "w": 160,
       "h": 85

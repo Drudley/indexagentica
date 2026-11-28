@@ -31,5 +31,6 @@
   },
   "note": "Jewelry bench. Type id jewelry_bench. Small jeweller's bench with three drawers and a bench pin; steel ring mandrel with a gold ring, a T-stake bench anvil, a loupe, pliers, file, tweezers, gold wire and a red stone.",
   "node_id": "jewelry_bench",
-  "kind": "jewelry_bench"
+  "kind": "jewelry_bench",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

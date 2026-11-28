@@ -766,5 +766,6 @@
       ],
       "note": "bar_counter footprint [2,1] on cells (3,2)-(4,2) (where the table stood), origin (0.5,1) at the south edge of row 2, centre x between cells 3 and 4. Keeps the door path (2,4)-(2,3)-(2,2) and the hearth clear; patrons stand on row 3, the keeper on row 1."
     }
-  }
+  },
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

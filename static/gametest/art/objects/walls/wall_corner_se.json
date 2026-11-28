@@ -31,5 +31,6 @@
   },
   "facing": "SE",
   "note": "South-east town corner: walk to the west and north, with a south face. The map's four wall_corner placements need these four variants (no variant field is set in 9_10/objects.json).",
-  "construction": "Composited in code from the same wall-kit as wall_h / wall_v."
+  "construction": "Composited in code from the same wall-kit as wall_h / wall_v.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

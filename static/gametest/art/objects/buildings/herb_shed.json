@@ -614,5 +614,6 @@
   },
   "style_reference_id": "b7438dd3060e4e82bcb3ec9351a7ce9d",
   "construction": "Walk-in building composited in code on the house_01_5x5 model. Workshop props from sprite 448a9c598afe4633ba54b75001c106f0; extras (lantern, signs, cloth, garden, logs, crates) from sprite bb6781cc9000427c8ba91a05e3496e2c (style_reference_id b7438dd3060e4e82bcb3ec9351a7ce9d). Cottage furniture from b7438dd3060e4e82bcb3ec9351a7ce9d. Shingles from house_01_5x5_roof (4a6a12b36853494898c23bbb78d4c706), recolored in-palette for slate / weathered / terracotta; herb_shed thatch is drawn in code. Palette-snapped to the 18-colour house palette. All doors face south.",
-  "recolour_note": "Front-yard herb garden plants recoloured 2026-11-11 with the batch 3 leaf greens (and a dye-red flower). Only those pixels on the roof and combined layers; the wooden planter, drying rack and base are unchanged. base under roof still equals combined."
+  "recolour_note": "Front-yard herb garden plants recoloured 2026-11-11 with the batch 3 leaf greens (and a dye-red flower). Only those pixels on the roof and combined layers; the wooden planter, drying rack and base are unchanged. base under roof still equals combined.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

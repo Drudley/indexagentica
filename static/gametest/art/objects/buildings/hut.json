@@ -351,5 +351,6 @@
     "note": "Rustic 3x3 one-room cottage with a south door on (1,2). Also intended for countryside farm huts. Bed, small hearth, chest, rug, barrel and a candle. Path down the middle is clear."
   },
   "style_reference_id": null,
-  "note": "Poorer countryside walk-in hut, distinct from town house_small. Same 3x3 model, 12 px edge walls, south door. 9_10 and neighbouring sections currently place the 15 solo dwellings as type house_small (all door_s); World Builder can retarget those to hut. Door-side variants were not drawn."
+  "note": "Poorer countryside walk-in hut, distinct from town house_small. Same 3x3 model, 12 px edge walls, south door. 9_10 and neighbouring sections currently place the 15 solo dwellings as type house_small (all door_s); World Builder can retarget those to hut. Door-side variants were not drawn.",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

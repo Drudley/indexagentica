@@ -49,101 +49,102 @@
   "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
   "frame_index_formula": "row * 7 + column",
   "body": {
-    "x": 15,
-    "y": 22,
-    "w": 18,
-    "h": 26
+    "x": 18,
+    "y": 14,
+    "w": 12,
+    "h": 28
   },
   "body_by_facing": {
     "S": {
-      "x": 15,
-      "y": 22,
-      "w": 18,
-      "h": 26
+      "x": 18,
+      "y": 14,
+      "w": 12,
+      "h": 28
     },
     "W": {
-      "x": 12,
-      "y": 24,
-      "w": 22,
-      "h": 24
+      "x": 10,
+      "y": 12,
+      "w": 26,
+      "h": 30
     },
     "E": {
       "x": 12,
-      "y": 24,
-      "w": 22,
-      "h": 24
+      "y": 12,
+      "w": 26,
+      "h": 30
     },
     "N": {
-      "x": 15,
-      "y": 22,
-      "w": 17,
-      "h": 26
+      "x": 18,
+      "y": 12,
+      "w": 12,
+      "h": 30
     },
     "SE": {
-      "x": 12,
-      "y": 25,
+      "x": 14,
+      "y": 14,
       "w": 22,
-      "h": 23
+      "h": 28
     },
     "SW": {
       "x": 12,
-      "y": 25,
+      "y": 14,
       "w": 22,
-      "h": 23
+      "h": 28
     },
     "NE": {
       "x": 14,
-      "y": 23,
-      "w": 19,
-      "h": 25
+      "y": 12,
+      "w": 22,
+      "h": 30
     },
     "NW": {
-      "x": 14,
-      "y": 23,
-      "w": 19,
-      "h": 25
+      "x": 12,
+      "y": 12,
+      "w": 22,
+      "h": 30
     }
   },
-  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
   "sprite_px_by_facing": {
     "S": [
-      22,
+      16,
       32
     ],
     "W": [
-      31,
-      32
+      30,
+      34
     ],
     "E": [
-      31,
-      32
+      30,
+      34
     ],
     "N": [
-      21,
-      32
+      16,
+      34
     ],
     "SE": [
-      29,
-      30
+      26,
+      32
     ],
     "SW": [
-      29,
-      30
+      26,
+      32
     ],
     "NE": [
-      25,
-      32
+      26,
+      34
     ],
     "NW": [
-      25,
-      32
+      26,
+      34
     ]
   },
   "corpse_px": [
-    44,
-    15
+    30,
+    20
   ],
-  "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+  "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+  "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
   "sheet": "rabbit/rabbit_sheet.png",
   "sidecar": "rabbit/rabbit_sheet.json",
   "style_reference_id": {
@@ -153,5 +154,11 @@
     "corpse": "083642aebdcd450c83c76767ee088c34",
     "SE": "1741a1e5fe0d40999c8a92ccbfb4407f",
     "NE": "083642aebdcd450c83c76767ee088c34"
+  },
+  "ground_line_px": 40,
+  "art_grid": {
+    "authoring_px_per_tile": 64,
+    "export_scale": 2,
+    "palette": "art/palette/master64.hex"
   }
 }

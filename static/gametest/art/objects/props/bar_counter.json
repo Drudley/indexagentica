@@ -31,5 +31,6 @@
   },
   "note": "Inn bar counter, 2x1, for the inn_1 common room (replaces the table + stools stand-in). Panelled front, foot rail, plank top with tankards, two bottles, a rag and a small keg with a tap at the right end. Origin (0.5,1) is the bottom centre of the 2-tile footprint.",
   "node_id": "bar_counter",
-  "kind": "bar_counter"
+  "kind": "bar_counter",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

@@ -49,101 +49,102 @@
   "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
   "frame_index_formula": "row * 7 + column",
   "body": {
-    "x": 17,
-    "y": 24,
-    "w": 14,
+    "x": 18,
+    "y": 16,
+    "w": 12,
     "h": 24
   },
   "body_by_facing": {
     "S": {
-      "x": 17,
-      "y": 24,
-      "w": 14,
+      "x": 18,
+      "y": 16,
+      "w": 12,
       "h": 24
     },
     "W": {
-      "x": 15,
-      "y": 28,
-      "w": 18,
-      "h": 20
+      "x": 14,
+      "y": 16,
+      "w": 28,
+      "h": 26
     },
     "E": {
-      "x": 15,
-      "y": 28,
-      "w": 18,
-      "h": 20
+      "x": 6,
+      "y": 16,
+      "w": 28,
+      "h": 26
     },
     "N": {
-      "x": 16,
-      "y": 24,
-      "w": 14,
+      "x": 18,
+      "y": 18,
+      "w": 12,
       "h": 24
     },
     "SE": {
-      "x": 14,
-      "y": 26,
-      "w": 19,
-      "h": 22
+      "x": 10,
+      "y": 16,
+      "w": 22,
+      "h": 24
     },
     "SW": {
-      "x": 14,
-      "y": 26,
-      "w": 19,
-      "h": 22
+      "x": 16,
+      "y": 16,
+      "w": 22,
+      "h": 24
     },
     "NE": {
-      "x": 13,
-      "y": 26,
-      "w": 20,
-      "h": 22
+      "x": 10,
+      "y": 18,
+      "w": 22,
+      "h": 24
     },
     "NW": {
-      "x": 13,
-      "y": 26,
-      "w": 20,
-      "h": 22
+      "x": 16,
+      "y": 18,
+      "w": 22,
+      "h": 24
     }
   },
-  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
   "sprite_px_by_facing": {
     "S": [
-      18,
-      30
+      16,
+      28
     ],
     "W": [
-      26,
-      26
-    ],
-    "E": [
-      26,
-      26
-    ],
-    "N": [
-      17,
+      32,
       30
     ],
+    "E": [
+      32,
+      30
+    ],
+    "N": [
+      16,
+      28
+    ],
     "SE": [
-      25,
+      26,
       28
     ],
     "SW": [
-      25,
+      26,
       28
     ],
     "NE": [
-      27,
+      26,
       28
     ],
     "NW": [
-      27,
+      26,
       28
     ]
   },
   "corpse_px": [
-    44,
-    12
+    32,
+    18
   ],
-  "mirror": "W, SW and NW rows are horizontal mirrors of E, SE and NE (lighting mirrors too).",
+  "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
+  "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
   "sheet": "squirrel/squirrel_sheet.png",
   "sidecar": "squirrel/squirrel_sheet.json",
   "style_reference_id": {
@@ -153,5 +154,11 @@
     "corpse": "7971e83e5a874cd7931d0940506d281e",
     "SE": "586932ffcfa24e75b1879639f7503741",
     "NE": "7971e83e5a874cd7931d0940506d281e"
+  },
+  "ground_line_px": 40,
+  "art_grid": {
+    "authoring_px_per_tile": 64,
+    "export_scale": 2,
+    "palette": "art/palette/master64.hex"
   }
 }

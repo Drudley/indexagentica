@@ -32,5 +32,6 @@
   "heightTiles": 2,
   "facing": "NS",
   "note": "4x5 gable-front barn: narrower and deeper than barn, ridge north-south, closed double doors still on the south face. Same building, NS orientation.",
-  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3"
+  "style_reference_id": "5cd3d57a3b3b4ad1a326647ef886f4e3",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

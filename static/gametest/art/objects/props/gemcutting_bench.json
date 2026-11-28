@@ -31,5 +31,6 @@
   },
   "note": "Gemcutting bench. Type id gemcutting_bench. Wooden plank bench with a stone grinding wheel in a frame (crank right, water trough below) and a few cut coloured stones on a tray at the left.",
   "node_id": "gemcutting_bench",
-  "kind": "gemcutting_bench"
+  "kind": "gemcutting_bench",
+  "remake": "REMAKE-1 R3 64px redraw (2026-11-27): restyled in code by Sprite Artist with art/tools/build_remake64_buildings.py (master64 palette, 2-px art grid = 64 art-px per tile, #140A09 outline; walk-in doors/windows redrawn). Canvas, origin, base_y, footprint, door, blocked_edges and fade trigger unchanged. 0 credits."
 }

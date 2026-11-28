@@ -5,7 +5,7 @@
   "frameWidth": 144,
   "frameHeight": 112,
   "columns": 7,
-  "rows": 4,
+  "rows": 8,
   "padding": 0,
   "spacing": 0,
   "origin": {
@@ -14,14 +14,18 @@
   },
   "base_y_px": 112,
   "facing_rows": {
-    "down": 0,
     "S": 0,
-    "left": 1,
+    "down": 0,
     "W": 1,
-    "right": 2,
+    "left": 1,
     "E": 2,
+    "right": 2,
+    "N": 3,
     "up": 3,
-    "N": 3
+    "SE": 4,
+    "SW": 5,
+    "NE": 6,
+    "NW": 7
   },
   "anims": {
     "idle": [
@@ -42,69 +46,116 @@
     "walk": 8,
     "corpse": 0
   },
-  "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-3 is transparent.",
+  "anims_note": "Inclusive column ranges within the facing row (idle and walk loop). Corpse is row 0 column 6 only (frame index 6), faces right (E); column 6 of rows 1-7 is transparent.",
   "frame_index_formula": "row * 7 + column",
   "body": {
-    "x": 42,
-    "y": 38,
-    "w": 58,
-    "h": 74
+    "x": 50,
+    "y": 22,
+    "w": 44,
+    "h": 76
   },
   "body_by_facing": {
     "S": {
-      "x": 42,
-      "y": 38,
-      "w": 58,
-      "h": 74
+      "x": 50,
+      "y": 22,
+      "w": 44,
+      "h": 76
     },
     "W": {
-      "x": 23,
-      "y": 52,
-      "w": 98,
-      "h": 60
+      "x": 4,
+      "y": 30,
+      "w": 132,
+      "h": 66
     },
     "E": {
-      "x": 23,
-      "y": 52,
-      "w": 98,
-      "h": 60
+      "x": 8,
+      "y": 30,
+      "w": 132,
+      "h": 66
     },
     "N": {
-      "x": 45,
-      "y": 40,
-      "w": 54,
-      "h": 72
+      "x": 50,
+      "y": 26,
+      "w": 44,
+      "h": 78
+    },
+    "SE": {
+      "x": 26,
+      "y": 24,
+      "w": 98,
+      "h": 76
+    },
+    "SW": {
+      "x": 20,
+      "y": 24,
+      "w": 98,
+      "h": 76
+    },
+    "NE": {
+      "x": 26,
+      "y": 26,
+      "w": 98,
+      "h": 78
+    },
+    "NW": {
+      "x": 20,
+      "y": 26,
+      "w": 98,
+      "h": 78
     }
   },
-  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette; use for click / hit tests. Ground contact is the frame bottom row (base_y_px).",
+  "body_note": "Frame-local px (top-left of the frame), from the idle frame-0 silhouette inset by the 1 art-px outline; use for click / hit tests. The origin stays at the frame bottom (base_y_px); standing feet sit on ground_line_px.",
   "sprite_px_by_facing": {
     "S": [
-      73,
-      92
+      48,
+      80
     ],
     "W": [
-      140,
-      80
+      136,
+      70
     ],
     "E": [
-      140,
-      80
+      136,
+      70
     ],
     "N": [
-      68,
-      90
+      48,
+      82
+    ],
+    "SE": [
+      102,
+      80
+    ],
+    "SW": [
+      102,
+      80
+    ],
+    "NE": [
+      102,
+      82
+    ],
+    "NW": [
+      102,
+      82
     ]
   },
   "corpse_px": [
-    140,
-    62
+    136,
+    56
   ],
-  "mirror": "W row is a horizontal mirror of E (lighting mirrors too).",
+  "mirror": "None: every row is its own rendering (light stays top-left in all 8 facings).",
   "sheet": "boar_adult/boar_adult_sheet.png",
   "sidecar": "boar_adult/boar_adult_sheet.json",
   "style_reference_id": {
     "S": "62fc1a9352be4cab98a2889e77b19f5a",
     "E": "e389122200f6457ab83483372d2f4d5a",
     "N": "e389122200f6457ab83483372d2f4d5a"
+  },
+  "ground_line_px": 92,
+  "diagonals": "SE / SW / NE / NW are rendered from the same 3D puppet as S / W / E / N (REMAKE-1 batch 4).",
+  "art_grid": {
+    "authoring_px_per_tile": 64,
+    "export_scale": 2,
+    "palette": "art/palette/master64.hex"
   }
 }

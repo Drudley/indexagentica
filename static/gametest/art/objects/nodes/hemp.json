@@ -1,0 +1,36 @@
+{
+  "type": "hemp",
+  "name": "hemp",
+  "file": "hemp.png",
+  "footprint_tiles": [
+    1,
+    1
+  ],
+  "collision": {
+    "mode": "none",
+    "note": "Small plant; walkable. Gather still requires adjacency (not standing on the tile)."
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 1
+  },
+  "base_y_px": 176,
+  "canvas_px": [
+    128,
+    176
+  ],
+  "footprint_px": [
+    128,
+    128
+  ],
+  "overhang_px": {
+    "left": 0,
+    "right": 0,
+    "above": 48,
+    "below": 0
+  },
+  "note": "1x1 wild fibre node (Niklas: hemp comes only from wild bushes). Game type id 'hemp' does not exist yet; Game Coder adds it.",
+  "node_id": "hemp",
+  "kind": "gather_node",
+  "construction": "REMAKE-1 R3 batch 2: code-drawn by Sprite Artist with art/tools/build_remake_props.py (master palette, 0 credits)."
+}
